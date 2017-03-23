@@ -1,0 +1,21 @@
+<div class="smMa desktop_centered bc_container js_breadcrumbs clearfix">
+    <div class="bc_label mobile">Gå tilbake til:</div>
+    <div class="bc_label desktop">Du er her:</div>
+    <div class="bc_list_container">
+        <ul class="bc_list">
+            
+            {{# breadcrumbs.start }}
+                <li><a href="{{ url }}" title="{{ tittel }}">{{ tittel }}</a></li>
+            {{/ breadcrumbs.start }}
+            
+            {{# breadcrumbs.sisteLink }}
+                <li class="bc_last_link"><a href="{{ url }}" title="{{ tittel }}">{{ tittel }}</a></li>
+            {{/ breadcrumbs.sisteLink }}
+            
+            {{# breadcrumbs.aktuellSide }}
+                <li class="bc_current">{{ tittel }}</li>
+            {{/ breadcrumbs.aktuellSide }}
+            
+        </ul>
+    </div>
+</div>

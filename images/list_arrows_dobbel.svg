@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="32px" viewBox="0 0 14 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>list_arrows_dobbel</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="list_arrows_dobbel" sketch:type="MSArtboardGroup" fill="#3B65A3">
+            <path d="M2.3,18 L5,21.5 L2.30000003,25 L3.50000002,26 L7,21.5 L3.5500001,17.0500004 L2.3,18 Z M8.3,18 L11,21.5 L8.30000003,25 L9.50000002,26 L13,21.5 L9.5500001,17.0500004 L8.3,18 Z" id="Arrows" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

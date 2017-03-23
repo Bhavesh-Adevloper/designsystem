@@ -1,0 +1,25 @@
+<ul class="element_list">
+    {{# skjemaliste }}
+    <li>
+        <a href="{{ url }}" title="{{ tittel }}" class="title_cell">
+            {{ tittel }}
+        </a>
+        <span class="meta_info_container">
+            <span class="meta_info_cell form_date" title="Dato opprettet">{{ datoOpprettet }}</span>
+            <span class="meta_info_cell last_cell_right">
+                <a href="#" title="Slett skjema" class="delete_form">Slett</a>
+            </span>
+        </span>
+        {{# skjemaliste_kan_slettes }}
+            <span class="are_you_sure">
+                <span>Er du sikker?</span>
+                <span>
+                    <a title="Avbryt" class="avbryt" href="#">Nei</a>
+                </span>
+                <span>/</span>
+                <a title="Ja, fjern favoritt" href="">Ja</a>
+            </span>
+        {{/ skjemaliste_kan_slettes }}
+    </li>
+    {{/ skjemaliste }}
+</ul>

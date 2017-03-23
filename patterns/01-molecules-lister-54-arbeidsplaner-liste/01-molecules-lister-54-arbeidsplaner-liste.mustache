@@ -1,0 +1,81 @@
+<ul class="schedules_list">
+    {{# schedulesList }}
+    <li>
+        
+        {{# fileListHeader1 }}
+            <h3 class="schedules_list_header_1">{{ fileListHeader1 }}</h3>
+        {{/ fileListHeader1 }}        
+           
+        <ul class="file_list">
+            
+            {{# child1 }}
+                <li class="file_list_sub_1">                    
+                    {{# fileListHeader2 }}
+                        <h4 class="schedules_list_header_2">{{ fileListHeader2 }}</h4>
+                    {{/ fileListHeader2 }}
+                    
+                    <ul class="file_list_2">
+            
+                        {{# child2 }}
+                            <li>                    
+                                {{# fileListHeader3 }}
+                                    <h5 class="schedules_list_header_3">{{ fileListHeader3 }}</h5>
+                                {{/ fileListHeader3 }}
+
+                                <ul class="file_list_3">
+            
+                                    {{# child3 }}
+                                        <li>                    
+                                            {{# fileListHeader4 }}
+                                                <h6 class="schedules_list_header_4">{{ fileListHeader4 }}</h6>
+                                            {{/ fileListHeader4 }}
+
+                                            <ul class="file_list_4">
+                                                {{# fileList4 }}
+                                                <li>
+                                                    <a href="#" title="{{ tittel }}" class="file_link">
+                                                        {{ tittel }}
+                                                    </a>
+                                                </li>
+                                                {{/ fileList4 }}
+                                            </ul>                    
+                                        </li>
+                                    {{/ child3 }}
+                                    
+                                    {{# fileList3 }}
+                                    <li>
+                                        <a href="#" title="{{ tittel }}" class="file_link">
+                                            {{ tittel }}
+                                        </a>
+                                    </li>
+                                    {{/ fileList3 }}
+                                    
+                                </ul>                    
+                            </li>
+                        {{/ child2 }}
+                        
+                        {{# fileList2 }}
+                        <li>
+                            <a href="#" title="{{ tittel }}" class="file_link">
+                                {{ tittel }}
+                            </a>
+                        </li>
+                        {{/ fileList2 }}
+                        
+                    </ul>                    
+                </li>
+            {{/ child1 }}
+            
+            {{# fileList1 }}
+            <li>
+                <a href="#" title="{{ tittel }}" class="file_link">
+                    {{ tittel }}
+                </a>
+            </li>
+            {{/ fileList1 }}
+            
+        </ul>        
+        
+    </li>
+    {{/ schedulesList }}
+</ul>

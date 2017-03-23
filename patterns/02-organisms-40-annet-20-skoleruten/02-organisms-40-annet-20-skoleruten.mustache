@@ -1,0 +1,23 @@
+<p class="mbxl">
+    Alle datoer gjelder fra og med til og med.
+    <br>
+    <span id="vis_passerte" class="toggle_passerte">
+        Oversikten viser kommende ferier og fridager.
+        <a href="#" title="Vis passerte ferie og fridager" class="toggle_holidays_link">Vis passerte ferie og fridager.</a>
+    </span>
+</p>
+
+{{# skoleruten }}
+    <section class="holidays_section mbj">
+        {{> molecules-moduloverskrift-h3:holidays_section_header|mbm(tittel: "{{ skolerutenTittel }}") }}
+
+        <a href="{{ url }}" title="Legg Ferie og fridager for {{ skolerutenTittel }}” i kalenderen din" class="important_link add_holidays_link mbm">
+            Legg &quot;Ferie og fridager for {{ skolerutenTittel }}&quot; i kalenderen din
+        </a>
+        
+        {{# ferieMaaned }}
+        {{> molecules-skoleruten }}
+        {{/ ferieMaaned }}
+        
+    </section>
+{{/ skoleruten }}

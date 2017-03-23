@@ -1,0 +1,58 @@
+{{> organisms-header-6 }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">  
+    
+    {{> molecules-sideoverskrift-h1:mbs(sidetittel: "{{ organisasjon.tittel }}") }}  
+
+    <div class="page_header_info">
+        <p>
+            Organisasjonsnummer: 865497586258
+            &nbsp;&#8226;&nbsp;
+             {{# linkliste }}
+                <a href="{{ url }}" title="{{ tittel }}">
+                    {{ tittel }}</a>{{# visTegn }}&nbsp;&nbsp;&#8226;&nbsp;{{/ visTegn }}
+            {{/ linkliste }}            
+        </p>
+    </div>
+
+
+    <div class="row">
+        <div class="col_md_12 col_lg_9">
+
+            <div class="article_content">
+
+<div style="opacity: .5;">
+                {{> molecules-moduloverskrift-h2:mbs(tittel: "Maler") }}
+                {{# maler }}
+                {{> molecules-element-liste-skjema }}
+                {{/ maler }}
+</div>
+                
+                {{> molecules-moduloverskrift-h2-med-lenke:mbs(url: "{{ link.pages-saker }}", tittel: "Saker") }}
+                <p>Listen viser byggesaker og noen andre sakstyper. Du kan ha saker med kommunen som ikke vises i denne oversikten.</p>
+                {{# saker }}
+                {{> molecules-saker-liste }}
+                {{/ saker }}               
+                {{# visFlereSaker }}
+                {{> molecules-minside-les-mer }}
+                {{/ visFlereSaker }}                
+                
+                
+                {{> molecules-moduloverskrift-h2-med-lenke:mbs(url: "{{ link.pages-eiendommer }}", tittel: "Eiendommer") }}
+                {{# eiendommer }}
+                {{> molecules-element-liste-eiendommer }}
+                {{/ eiendommer }}
+                
+                {{# visFlereEiendommer }}
+                {{> molecules-minside-les-mer }}
+                {{/ visFlereEiendommer }}                
+                
+            </div>
+
+            {{> molecules-tilbakemelding }}
+
+        </div>
+    </div>
+
+</main>
+{{> organisms-footer }}

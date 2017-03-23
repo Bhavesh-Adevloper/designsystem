@@ -1,0 +1,60 @@
+<section class="mbj">    
+    {{> molecules-moduloverskrift-h2-med-lenke(tittel: "Program", url: "#") }}
+    
+    <div class="outer_event_container">
+
+        <div id="js_arrangement" class="row_no_clearfix equal_height_container">
+            {{# enkeltArrangement}}
+            <div class="col_md_6 col_lg_6 equal_height_item">
+                <div class="inner_event_container">
+                    {{# bilde }}
+                    <div class="event_image_container">
+                        <a href="{{ url }}" title="{{ tittel }}" class="event_image_link">
+                            <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="event_image" />
+                        </a>
+                    </div>
+                    {{/ bilde }}
+                    <div class="event_story_container">
+                        <h2 class="event_story_title">
+                            <a href="{{ url }}" title="{{ tittel }}">
+                                <span class="read_more_link_24">{{ tittel }}</span>
+                            </a>
+                        </h2>
+                        {{# dato }}
+                            <p class="event_story_date">
+                                {{ dato }}
+                            </p>
+                        {{/ dato }}
+                        {{# billettLink }}
+                            {{> atoms-kjop-billett }}
+                        {{/ billettLink }}
+                    </div>
+                </div>
+            </div>
+            {{/ enkeltArrangement}}
+        </div>
+
+        <script type="text/javascript">
+            // CSS-class change for odd or even
+            function arrangementOddEven(){
+                var arrangement = $('#js_arrangement');
+                if (arrangement.children().length % 2 == 0) {
+                    arrangement.addClass("even");
+                } else {
+                    arrangement.addClass("odd");
+                    arrangement.children().first().removeClass("col_md_6");
+                    arrangement.children().first().removeClass("col_lg_6");
+                    arrangement.children().first().addClass("col_md_12 col_lg_12");
+                }
+                arrangement.parent(".outer_event_container").addClass("counter_" + arrangement.children().length); 
+            }
+
+            $(document).ready(function() {
+                arrangementOddEven();
+            });
+        </script>
+
+    </div>
+    
+    {{> molecules-les-mer:event_read_more_link_container }}
+</section>

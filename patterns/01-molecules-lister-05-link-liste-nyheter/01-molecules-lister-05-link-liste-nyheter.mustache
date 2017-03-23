@@ -1,0 +1,17 @@
+<ul class="link_list with_date {{ styleModifier }}">
+    {{# viktigNyhet }}
+        <li class="important_news_item">
+            {{> molecules-modul-viktig-nyhet }}
+        </li>
+    {{/ viktigNyhet }}
+    {{# linkliste }}
+        <li>
+            <a href="{{ url }}" title="{{ tittel }}">
+                <span class="title">{{ tittel }}</span>
+                {{# dato }}
+                    <span class="date">{{ dato }}</span>
+                {{/ dato }}
+            </a>
+        </li>
+    {{/ linkliste }}
+</ul>

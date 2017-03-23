@@ -1,0 +1,63 @@
+<h1>Underavdelinger</h1>
+
+<div class="portlett-5 full_page_portlett">
+    
+    <ul id="listeavbarn">
+        <li>
+            <a href="#" title="Lorem ipsum dolor sit (37 characters)">
+                Lorem ipsum dolor sit (37 characters)
+            </a>
+        </li>
+	</ul>
+</div>
+
+
+                
+
+
+
+
+
+<style type="text/css">
+    form#sok { margin-bottom: 20px; }
+</style>
+
+<script type="text/javascript">
+    $( document ).ready( function() {
+        if ( document.getElementById( 'sok' ) != null ) {
+            document.getElementById( 'sok' ).style.display = "block";
+            $( "#searchId" ).keyup( function() {
+                doFilter();
+            } );
+            if($( "#searchId" ).val().length &gt; 0) {
+            	doFilter();
+            }
+            $( "#searchId" ).focus();
+        }
+    } );
+    
+    function doFilter() {
+    	var search = $( "#searchId" ).val().toLowerCase();
+        $( "#listeavbarn li" ).each( function() {
+            if ( search.length &gt; 0 ) {
+                var text = $( this ).text().toLowerCase();
+                if ( text.indexOf( search ) &gt; -1 ) {
+                    $( this ).show();
+                }
+                else {
+                    $( this ).hide();
+                }
+            }
+            else {
+                $( this ).show();
+
+            }
+        } );
+    }
+</script>
+
+
+
+
+
+          

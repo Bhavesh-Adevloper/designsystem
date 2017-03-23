@@ -1,0 +1,32 @@
+{{> organisms-header-6 }}
+{{> organisms-brodsmuler }}
+
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">    
+    <article>
+    
+        {{> molecules-sideoverskrift-h1:mbs(visH2: "true", title: "{{ innbygger.tittel }}", sidetittel: "Saker") }}
+        <div class="page_header_info">
+            <p>Listen viser byggesaker og noen andre sakstyper. Du kan ha saker med kommunen som ikke vises i denne oversikten.</p>
+        </div>
+
+        <div class="row">
+            <div class="col_md_12 col_lg_9">
+
+                <div class="case_search_container">
+                    <form action="#">
+                        <input type="search" class="search_input" accesskey="4" placeholder="Søk etter saker">
+                        <button><span class="icon searchglass_icon">Søk</span></button>
+                    </form>
+                </div>
+
+                {{> molecules-saker-liste }}
+
+                <p class="load_more_cases"><a href="#" title="Flere saker">Last inn flere saker</a></p>
+
+                {{> molecules-tilbakemelding }}
+
+            </div>
+        </div>
+    </article>    
+</main>
+{{> organisms-footer }}

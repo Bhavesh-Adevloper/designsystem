@@ -1,0 +1,270 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    {{> molecules-sideoverskrift-h1:mbl(sidetittel: "{{ sidetittel }}") }}
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+            
+            {{# meny }}
+            {{> molecules-org-meny }}
+            {{/ meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+            
+            {{# varsel }}
+            {{> molecules-varsel }}
+            {{/ varsel }}
+            
+            {{# notis }}
+            {{> molecules-notis }}
+            {{/ notis }}
+            
+            {{# eksternURL }}
+            {{> molecules-ekstern-url }}
+            {{/ eksternURL }}
+            
+            {{# kontaktLiten }}
+            {{> organisms-kontakt-liten }}
+            {{/ kontaktLiten }}
+            
+            {{# profil }}
+            {{> organisms-modul-med-overskrift }}
+            {{/ profil }}
+            
+            {{# tjenester }}
+            {{> organisms-tjenester-og-skjema-liten }}
+            {{/ tjenester }}
+
+            {{# etjenester100 }}
+            {{> organisms-modul-med-overskrift }}
+            {{/ etjenester100 }}
+            
+            
+            
+            <section class="mbj">
+                <h2 class="module_header mbms">
+                    Modul med overskrifter
+                </h2>
+                <div class="module_container">
+                    <div class="module_image_container">
+                        <a href="#" title="Les mer om oss" class="module_image_link">
+                            <img src="https://www.bergen.kommune.no/bk/multimedia/archive/00127/sistenytt_ill_127412a.gif" alt="Siste nytt" class="module_image">
+                        </a>
+                    </div>
+                    <div class="module_content_container">
+                        <div class="module_content_excerpt">                        
+                            <h1>H1 overskrift</h1>
+                            <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci.</p>
+                            <h2>H2 overskrift</h2>
+                            <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci.</p>
+                            <h3>H3 overskrift</h3>
+                            <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci.</p>
+                            <h4>H4 overskrift</h4>
+                            <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci.</p>
+                            <h5>H5 overskrift</h5>
+                            <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci.</p>
+                            <h6>H6 overskrift</h6>
+                            <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="mbj">
+                <h2 class="module_header mbms">
+                    Modul uten lenke videre
+                </h2>
+                <div class="module_container">
+                    <div class="module_image_container">
+                        <img src="https://www.bergen.kommune.no/bk/multimedia/archive/00139/presseillustrasjon_139273a.jpg" alt="Test" class="module_image" />
+                    </div>
+                    <div class="module_content_container">
+                        <div class="module_content_excerpt">
+                            <p>
+                                Bilder, pressemeldinger med abonnementstjeneste, pressekontakter og nyhetsbrev finner du på Presserommet. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="mbj">
+                {{> molecules-moduloverskrift-h2:mbm(tittel: "Tall og fakta") }}
+                {{> organisms-modul-tall-og-fakta }}
+            </section>
+                        
+            <div class="clearfix"></div>
+            <section class="row_no_clearfix equal_height_container mbxl">
+                
+                {{# etjenester50 }}
+                    <div class="col_md_6 col_lg_6 equal_height_item">
+                        {{> molecules-tout }}
+                    </div>
+                {{/ etjenester50 }}
+                
+                
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    <div class="tout_container">
+                        <h2 class="tout_header">
+                            <a href="#" title="Registering av vannmålerstand">
+                                Registering av vannmålerstand
+                            </a>
+                        </h2>
+                        <img src="https://www.bergen.kommune.no/bk/multimedia/archive/00117/vannmaaler_117104a.jpg" alt="Registering av vannmålerstand" class="tout_img">
+                        <div class="tout_excerpt">
+                            <a href="#">Logg inn</a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    <div class="tout_container">
+                        <h2 class="tout_header">
+                            Bookingsystem
+                        </h2>
+                        <img src="http://bergen.kommune.no/bk/multimedia/archive/00080/logo_aktivby_150_80244a.gif" alt="Bookingsystem" class="tout_img">
+                        <div class="tout_excerpt">
+                            Bookingsystem for Radiostasjonen, kanoer og aktivitetsområder på Fløyen.<br>
+                            <a href="#">Åpne Aktiv By</a><p></p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    <div class="tout_container">
+                        <div class="tout_excerpt">
+                            <a href="#" title="Booking" class="tout_img_link">
+                                <img src="https://www.bergen.kommune.no/bk/multimedia/archive/00080/logo_aktivby_150_80244a.gif">
+                            </a>
+                            <p>
+                                <a href="#">Bookingsystem for kulturhus og idrettsanlegg</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    <div class="tout_container">
+                        <h2 class="tout_header">
+                            Etjeneste med overskrifter
+                        </h2>
+                        <div class="tout_excerpt">
+                            <h1>H1 overskrift</h1>
+                            <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci.</p>
+                            <h2>H2 overskrift</h2>
+                            <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci.</p>
+                            <h3>H3 overskrift</h3>
+                            <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci.</p>
+                            <h4>H4 overskrift</h4>
+                            <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci.</p>
+                            <h5>H5 overskrift</h5>
+                            <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci.</p>
+                            <h6>H6 overskrift</h6>
+                            <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    <div class="tout_container">
+                        <h2 class="tout_header">
+                            Liste med tekst uten lenker
+                        </h2>
+                        <div class="tout_excerpt">                            
+                            <ul>
+                                <li>Bybudsjettet</li>
+                                <li>Kommunens årsmelding</li>
+                                <li>Retningslinjer sosiale medier som gjelder både her og der</li>
+                                <li>Org. kart for Bergen kommune</li>
+                                <li>Offentlighetsloven</li>
+                                <li>Kunngjorte planer/avtaler</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    <div class="tout_container">
+                        <h2 class="tout_header">
+                            Etterspurte dokumenter
+                        </h2>
+                        <div class="tout_excerpt">                            
+                            <ul>
+                                <li><a href="#">Bybudsjettet</a></li>
+                                <li><a href="#">Kommunens årsmelding</a></li>
+                                <li><a href="#">Retningslinjer sosiale medier som gjelder både her og der</a></li>
+                                <li><a href="#">Org. kart for Bergen kommune</a></li>
+                                <li><a href="#">Offentlighetsloven</a></li>
+                                <li><a href="#">Kunngjorte planer/avtaler</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    <div class="tout_container etjeneste">
+                        <h2 class="tout_header">
+                            Alt om arealplaner
+                        </h2>
+                        <img src="https://www.bergen.kommune.no/bk/multimedia/archive/00126/Areaplan_nav_126557a.jpg" alt="" class="tout_img">
+                        <div class="tout_excerpt">
+                            Les om kommunens forvaltning av arealer, finn gjeldende planer og se kunngjøringer.<br>
+                            <ul>
+                                <li><a href="#">Åpne arealplansiden</a></li>
+                                <li><a href="#">Finn reguleringsplaner i Planarkivet</a></li>
+                                <li><a href="#">Les veileder til Planarkivet</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    <div class="tout_container">
+                        <h2 class="tout_header">
+                            <a href="#" title="Satsinger innen helsestasjonsvirksomheten">
+                                Satsinger innen helsestasjonsvirksomheten 
+                            </a>
+                        </h2>
+                        <a href="#" title="Satsinger innen helsestasjonsvirksomheten" class="tout_img_link">
+                            <img src="https://www.bergen.kommune.no/bk/multimedia/archive/00117/litebarn_117623a.jpg" alt="Satsinger innen helsestasjonsvirksomheten" class="tout_img" />
+                        </a>
+                        <div class="tout_excerpt">                              
+                            Fylkestrafikk-sikkerhetsutvalgssekretariatslederfunksjonene<br>
+                            <a href="/omkommunen/avdelinger/byradsavd-for-helse-og-omsorg/6505/6549/7663/7668">Les mer</a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    {{> molecules-tout-stoltzen }}
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                {{# aktuelletema }}
+                    <div class="col_md_6 col_lg_6 equal_height_item">
+                        {{> molecules-tout }}
+                    </div>
+                {{/ aktuelletema }}
+                
+            </section>
+            
+        </div>
+    </div>
+</main>
+{{> organisms-footer }}

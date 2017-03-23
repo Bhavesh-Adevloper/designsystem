@@ -1,0 +1,29 @@
+<div class="module_container {{ styleModifier }}">
+    {{# bilde }}
+    <div class="module_image_container">
+        <a href="{{ url }}" title="Les mer om oss" class="module_image_link">
+            <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="module_image" />
+        </a>
+        {{# byrad }}
+        <p class="councilor">
+            Se egen side for:<br>
+            <a href="{{ url }}" title="Byrådet sin side">
+                <span class="read_more_link">{{ tittel }}</span>
+            </a>
+        </p>
+        {{/ byrad }}
+    </div>
+    {{/ bilde }}
+    <div class="module_content_container">
+        <div class="module_content_excerpt">
+            <p>
+                {{ ingress }}
+            </p>
+            {{# lesMerLink }}
+            <p>
+                <a href="{{ url }}" title="Les mer om oss"><span class="read_more_link">Les mer om oss</span></a>
+            </p>
+            {{/ lesMerLink }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+{{> organisms-header-2 }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    <div class="page_header">
+        <h1>Avdelinger</h1>
+    </div>
+
+    <div class="row">
+        <div class="col_md_12 col_lg_9">
+
+            <ul class="link_list">
+                <li>
+                    <a href="{{ organisasjonsenhet.url }}" title="{{ organisasjonsenhet.tittel }}">
+                        {{ organisasjonsenhet.tittel }}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ link.pages-barnevernvakten }}" title="">
+                        Barnevernvakten
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ link.pages-privat-barnehage }}" title="">
+                        Bergen miljøbarnehage
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ link.pages-blokkhaugen-barnehage }}" title="">
+                        Blokkhaugen barnehage
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</main>
+{{> organisms-footer }}

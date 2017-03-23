@@ -1,0 +1,74 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    {{> molecules-sideoverskrift-h1:mbl(sidetittel: "{{ sidetittel }}") }}
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+            
+            {{# meny }}
+            {{> molecules-org-meny }}
+            {{/ meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+            
+            {{# varsel }}
+            {{> molecules-varsel:mbxxl }}
+            {{/ varsel }}
+            
+            {{# notis }}
+            {{> molecules-notis:mbxxl }}
+            {{/ notis }}
+            
+            {{# sisteNytt }}
+            {{> organisms-siste-nytt }}
+            {{/ sisteNytt }}
+            
+            {{# tjenester }}
+            {{> organisms-tjenester-og-skjema-liten }}
+            {{/ tjenester }}
+            
+            {{# kontaktLiten }}
+            {{> organisms-kontakt-liten }}
+            {{/ kontaktLiten }}
+
+            {{# etjenester100 }}
+            {{> organisms-modul-med-overskrift }}
+            {{/ etjenester100 }}
+                        
+            <div class="clearfix"></div>
+            <section class="row_no_clearfix equal_height_container mbxl">
+                
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    <div class="tout_container">
+                        <h2 class="tout_header">
+                            Inneklimaet i skolene
+                        </h2>
+                        <div class="tout_excerpt">
+                            Flere av skolene i Bergen har ikke godkjent inneklima.
+                            <br>
+                            <a href="/aktuelt/tema/inneklimaet-i-skolen"> Les om arbeidet med å utbedre inneklimaet og skolebyggene</a>
+                        </div>
+                    </div>
+                </div>
+                
+                {{# etjenester50 }}
+                    <div class="col_md_6 col_lg_6 equal_height_item">
+                        {{> molecules-tout }}
+                    </div>
+                {{/ etjenester50 }}
+                
+                {{# aktuelletema }}
+                    <div class="col_md_6 col_lg_6 equal_height_item">
+                        {{> molecules-tout }}
+                    </div>
+                {{/ aktuelletema }}
+                
+            </section>
+            
+        </div>
+    </div>
+</main>
+{{> organisms-footer }}

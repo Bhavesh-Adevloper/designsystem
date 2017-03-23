@@ -1,0 +1,36 @@
+<div class="invoice_table">
+    <div class="invoice_table_caption">
+        Faktura for 2016
+    </div>
+    
+    <div class="div_table_desktop_header_row">
+        <div class="div_table_cell div_table_row_title">Faktura</div>
+        <div class="div_table_cell div_table_row_content">Fakturanr.</div>
+        <div class="div_table_cell div_table_row_content">Forfallsdato</div>
+        <div class="div_table_cell div_table_row_content">Beløp</div>
+    </div>
+    
+    {{# fakturaer }}
+    <div class="div_table_row">
+        <div class="div_table_cell div_table_row_title">
+            <a href="{{ url }}" title="Faktura" class="invoice_link" target="_blank">
+                <span class="file_icon {{ filikon }}"><span>{{ filtype }}</span></span>
+                {{ tittel }}
+            </a>
+        </div>
+        <div class="div_table_cell div_table_row_content">
+            <span class="div_table_mobile_header">Fakturanr.</span>
+            {{ nummer }}
+        </div>
+        <div class="div_table_cell div_table_row_content">
+            <span class="div_table_mobile_header">Forfallsdato</span>
+            {{ dato }}
+        </div>
+        <div class="div_table_cell div_table_row_content">
+            <span class="div_table_mobile_header">Beløp</span>
+            {{ belop }}
+        </div>
+    </div>
+    {{/ fakturaer }}
+    
+</div>

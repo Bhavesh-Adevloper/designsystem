@@ -1,0 +1,10 @@
+<section class="mbj">
+    
+    {{> molecules-moduloverskrift-h2-med-lenke:mbxs(tittel: "Siste nytt", url: "{{ link.pages-artikkelliste }}") }}
+    
+    {{> molecules-link-liste-nyheter:mbms }}
+    
+    {{# sisteNyttLesMer}}
+    {{> molecules-les-mer }}
+    {{/ sisteNyttLesMer}}
+</section>

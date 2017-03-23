@@ -1,0 +1,34 @@
+<nav id="js_org_menu_container" class="org_menu_container mbl">
+    <a href="" title="Meny" class="org_menu_mobile_header">
+        Meny
+        <span class="icon"></span>
+    </a>
+    <ul class="org_menu">
+        {{# orgMenyListe }}
+            {{# harIkkeUndermeny }}
+            <li class="{{ aktivStil }}">
+                <a title="{{ tittel }}" href="{{ url }}" class="org_menu_link">
+                    {{ tittel }}
+                </a>
+            </li>
+            {{/ harIkkeUndermeny }}
+            {{# harUndermeny }}
+            <li class="with_org_sub_menu {{ aktivStil }}">
+                <a title="{{ tittel }}" href="{{ url }}" class="org_menu_link">
+                    {{ tittel }}
+                </a>
+                <a href="" title="Undermeny" class="org_sub_menu_toggle_link"><span class="icon">Undermeny</span></a>
+                <ul>
+                    {{# linkliste }}
+                    <li class="{{ aktivStilSub }}">
+                        <a title="{{ tittel }}" href="{{ url }}" class="org_sub_menu_link">
+                            {{ tittel }}
+                        </a>
+                    </li>
+                    {{/ linkliste }}
+                </ul>
+            </li>
+            {{/ harUndermeny }}
+        {{/ orgMenyListe }}
+    </ul>
+</nav>

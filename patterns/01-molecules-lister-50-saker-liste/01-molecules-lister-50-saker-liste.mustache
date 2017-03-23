@@ -1,0 +1,30 @@
+<div class="case_list_container">
+     <ul class="case_list">
+        {{# sakerliste }}
+        <li>
+            <h3 class="case_title">
+                <a href="{{ url }}" title="{{ tittel }}">
+                    {{ tittel }}
+                </a>
+            </h3>
+            <span class="case_id_container">
+                <span class="case_id_label">Saksnr.:</span>
+                <span class="case_id {{ saksnummer_finnes_ikke_stil }}">{{ saksnummer }}</span>
+            </span>
+            <span class="case_date_container">
+                <span class="case_last_updated_label">Oppdatert:</span>
+                <span class="case_last_updated">{{ oppdatertDato }}</span>
+            </span>
+        </li>
+        {{/ sakerliste }}
+        {{# visBraArkivLink }}
+            <li class="braarkiv_link">
+                <h3 class="case_title">
+                    <a href="#" title="Byggesaker fra før 2006">
+                        Vis byggesaker fra før 2006
+                    </a>
+                </h3>
+            </li>
+        {{/ visBraArkivLink }}
+    </ul>
+</div>

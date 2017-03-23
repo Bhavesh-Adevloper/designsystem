@@ -1,0 +1,27 @@
+{{> organisms-header-2 }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ skoleNavn }}", url: "{{ skoleURL }}") }}
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+
+            {{> molecules-org-meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+            
+            {{> molecules-moduloverskrift-h1(tittel: "Arbeidsplaner") }}
+            
+            {{> molecules-arbeidsplaner-liste }}
+            
+            <a href="https://bergen.itslearning.com/index.aspx" title="Itslearning - Logg inn" class="itslearning_link">
+                <span class="itslearning_logo"></span>
+                <span class="schedules_itslearning_link_text">Logg inn</span>
+            </a>
+
+        </div>
+    </div>
+</main>
+{{> organisms-footer }}

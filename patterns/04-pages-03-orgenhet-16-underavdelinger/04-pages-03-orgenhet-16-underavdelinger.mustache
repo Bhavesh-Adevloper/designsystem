@@ -1,0 +1,60 @@
+{{> organisms-header-2 }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ organisasjonsenhet.tittel }}", url: "{{ organisasjonsenhet.url }}") }}
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+
+            {{> molecules-org-meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+            
+            
+            <div class="mbj">
+                {{> molecules-moduloverskrift-h1:mbs(tittel: "Underavdelinger") }}
+
+                {{# underavdelinger1 }}
+                <div id="sok" class="filter_search_input_container" style="display:none;">
+                    <input type="text" id="searchId" placeholder="Filtrer" class="filter_search_input" />
+                </div>
+                {{> molecules-link-liste:mbj }}
+                {{/ underavdelinger1 }}
+            </div>
+            
+            
+            <div class="mbj">
+                <!-- Hvis listen inneholder mer enn 10 elementer -->
+                {{> molecules-moduloverskrift-h1:mbs(tittel: "Underavdelinger - mer enn 10") }}
+
+                {{# underavdelinger2 }}
+                <div id="sok" class="filter_search_input_container">
+                    <input type="text" id="searchId" placeholder="Filtrer" class="filter_search_input" />
+                </div>
+                {{> molecules-link-liste:mbj }}
+                {{/ underavdelinger2 }}
+            </div>
+            
+            
+            <div class="mbj">
+                <!-- Hvis listen inneholder skoler og barnehager -->
+                {{> molecules-moduloverskrift-h1:mbs(tittel: "Underavdelinger - mer enn 10 - med skoler og barnehager-lenke") }}
+
+                {{# underavdelinger3 }}
+                <div id="sok" class="filter_search_input_container">
+                    <input type="text" id="searchId" placeholder="Filtrer" class="filter_search_input" />
+                </div>
+                <p class="filter_shortcut_container">
+                    Eller vil alle: <a href="#" title="skoler">skoler</a>, <a href="#" title="barnehager">barnehager</a>
+                </p>
+                {{> molecules-link-liste:mbj }}
+                {{/ underavdelinger3 }}
+            </div>
+            
+
+        </div>
+    </div>
+</main>
+{{> organisms-footer }}

@@ -1,0 +1,11 @@
+<div class="tout_container">
+    <h2 class="tout_header">
+        <a href="{{ url }}" title="{{ tittel }}">{{ tittel }}</a>
+    </h2>
+    {{# imgLandscape }}
+        <a href="{{ url }}" title="{{ tittel }}" class="tout_img_link">
+            <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="tout_img" />
+        </a>
+    {{/ imgLandscape }}
+    <div class="tout_excerpt">{{ ingress }}</div>
+</div>

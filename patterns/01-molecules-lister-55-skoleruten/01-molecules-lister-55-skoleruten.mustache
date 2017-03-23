@@ -1,0 +1,24 @@
+<div class="holidays_container">
+    <h4 class="holidays_header">{{ månedÅr }}</h3>
+    <ul class="holidays_list">
+        {{# ferieListe }}
+            <li class="holidays_list_item">
+                <div class="holiday_date">
+                    <strong>{{ dato }}</strong>
+                </div>
+                <div class="holiday_title_container">
+                    <div class="holiday_title">
+                        <strong>{{ ferietittel }}</strong>
+                    </div>
+                    {{# HarFerieExtraInfo }}
+                        <ul class="holiday_additional_info_list">
+                        {{# ferieExtraInfo }}
+                            <li>{{ ekstraInfo }}</li>
+                        {{/ ferieExtraInfo }}
+                        </ul>
+                    {{/ HarFerieExtraInfo }}
+                </div>
+            </li>
+        {{/ ferieListe }}
+    </ul>
+</div>

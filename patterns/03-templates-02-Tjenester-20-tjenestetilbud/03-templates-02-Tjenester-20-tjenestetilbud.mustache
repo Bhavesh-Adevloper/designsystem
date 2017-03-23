@@ -1,0 +1,40 @@
+{{> organisms-header-varianter }}
+
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+    <article>
+        {{> molecules-sideoverskrift-h1 }}
+
+        <div class="row">
+            <div class="col_md_12 col_lg_4 float_change">
+                
+                {{# mestbruktoverskrift }}
+                {{> molecules-moduloverskrift-h2:mbs }}
+                {{/ mestbruktoverskrift }}
+                
+                {{# mestbruktliste }}
+                {{> molecules-link-liste-enkel }}
+                {{/ mestbruktliste }}
+                
+            </div>
+            <div class="col_md_12 col_lg_8">
+                
+                <div class="row_no_clearfix service_link_container equal_height_container">
+                    {{# navigasjonStor }}
+                    {{> molecules-navigasjonsboks-stor }}
+                    {{/ navigasjonStor }}
+                    
+                    {{# navigasjonLiten }}
+                    {{> molecules-navigasjonsboks-liten }}
+                    {{/ navigasjonLiten }}
+                </div>
+                    
+            </div>
+        </div>
+        
+        {{# feilmelding }}
+        {{> organisms-service-snarvei }}
+        {{/ feilmelding }}
+        
+    </article>
+</main>
+{{> organisms-footer }}

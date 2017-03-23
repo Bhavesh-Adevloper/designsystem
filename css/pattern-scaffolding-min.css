@@ -1,0 +1,161 @@
+/**
+ * This stylesheet is for styles you want to include only when displaying demo
+ * styles for grids, animations, color swatches, etc.
+ * These styles will not be your production CSS.
+ */
+#sg-patterns {
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  width: 92%;
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.demo-animate {
+  background: #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer; }
+
+.sg-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.sg-colors li {
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  padding: 0.3em;
+  margin: 0 0.5em 0.5em 0;
+  min-width: 5em;
+  max-width: 14em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  list-style-image: none; }
+
+.sg-swatch {
+  display: block;
+  height: 3em;
+  margin-bottom: 0.3em;
+  border-radius: 5px; }
+
+.sg-label {
+  font-size: 90%;
+  line-height: 1; }
+
+/* Custom styles
+/* ************************** */
+/* Clearfix */
+.sg-pattern-example {
+  *zoom: 1; }
+
+.sg-pattern-example:before,
+.sg-pattern-example:after {
+  content: "";
+  display: table;
+  line-height: 0; }
+
+.sg-pattern-example:after {
+  clear: both; }
+
+.sg-pattern-category-title {
+  font: "HelveticaNeue", "Helvetica", "Arial", sans-serif; }
+
+.sg-pattern-category-title a {
+  text-transform: uppercase;
+  color: #24890d; }
+
+.sg-pattern-extra {
+  border-top-color: #24890d !important; }
+
+.sg-pattern-extra-toggle {
+  color: #fff !important;
+  outline: 0 none !important;
+  border-color: #24890d !important;
+  background-color: #24890d !important; }
+
+.sg-pattern-extra.active {
+  border-color: #24890d !important; }
+
+.sg-pattern-extra.active + .sg-pattern-example {
+  padding: 0 12px;
+  margin: 0 -12px;
+  background: url(../examples/patternlab_background.svg) repeat 0 0 #ffffff; }
+
+.sg-pattern .sg-pattern-title a {
+  color: #000 !important; }
+
+.sg-pattern-extra-info {
+  color: #000 !important; }
+
+/* Intro */
+.intro_header {
+  margin-top: 0;
+  text-transform: uppercase; }
+
+.intro_sub_header {
+  text-transform: uppercase;
+  margin: 0 0 4px;
+  font-size: 1rem;
+  font-weight: 400; }
+
+/* Layout */
+.sg-grid-content {
+  display: block;
+  border: 1px solid #bdcfe4;
+  background-color: #f5f8fb;
+  min-height: 1.5rem;
+  margin-bottom: 0.75em;
+  border-radius: 5px;
+  padding: 0.5rem;
+  text-align: center; }
+
+.sg-spacer-content {
+  display: block;
+  border: 1px solid #bdcfe4;
+  background-color: #f5f8fb;
+  min-height: 1.5rem;
+  border-radius: 5px;
+  padding: 0.5rem; }
+
+/* Logo */
+.sg-main a.logo {
+  float: left;
+  height: 6.5rem;
+  width: 12.75rem;
+  border: 1px solid #e0e0e0;
+  margin: 0 2rem .5rem 0;
+  border-radius: 5px; }
+
+.sg-main a.logo span {
+  margin: 1rem 0 0 1rem; }
+
+.sg-main .share_and_print_logo {
+  display: inline-block;
+  max-height: 9rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px; }
+
+/* Typo */
+.typo_header {
+  margin-top: 0; }
+
+.typo_header.italic {
+  font-style: italic; }
+
+.typo_header.light {
+  font-weight: 300; }
+
+.typo_header.regular {
+  font-weight: 400; }
+
+.typo_header.semibold {
+  font-weight: 600; }

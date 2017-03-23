@@ -1,0 +1,30 @@
+<div class="bk360_members_table with_4_table_cells">
+    <div class="bk360_members_table_caption">
+        Medlemmer
+    </div>
+    
+    <div class="div_table_desktop_header_row">
+        <div class="div_table_cell div_table_row_title">Navn</div>
+        <div class="div_table_cell div_table_row_content">Parti</div>
+        <div class="div_table_cell div_table_row_content">Rolle</div>
+    </div>
+    
+    {{# enkelliste }}
+    <div class="div_table_row">
+        <div class="div_table_cell div_table_row_title">
+            <a href="{{ url }}" title="Faktura" class="member_name">
+                {{ tittel }}
+            </a>
+        </div>
+        <div class="div_table_cell div_table_row_content">
+            <span class="div_table_mobile_header">Parti</span>
+            {{ tittel }}
+        </div>
+        <div class="div_table_cell div_table_row_content">
+            <span class="div_table_mobile_header">Rolle</span>
+            {{ tittel }}
+        </div>
+    </div>
+    {{/ enkelliste }}
+    
+</div>
