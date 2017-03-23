@@ -1,2 +1,2 @@
-# designsystem
-Live version: https://bergenkommune.github.io/designsystem of the latest build.
+# Bergen kommunes DesignSystem
+https://bergenkommune.github.io/designsystem
