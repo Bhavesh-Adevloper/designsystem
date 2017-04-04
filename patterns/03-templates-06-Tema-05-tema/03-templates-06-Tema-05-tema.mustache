@@ -13,34 +13,14 @@
 
         </div>
         <div class="col_md_12 col_lg_8 org_main_col">
-            
-            {{# varsel }}
-            {{> molecules-varsel:mbxxl }}
-            {{/ varsel }}
-            
-            {{# notis }}
-            {{> molecules-notis:mbxxl }}
-            {{/ notis }}
-            
-            {{# eksternURL }}
-            {{> molecules-ekstern-url }}
-            {{/ eksternURL }}
-            
-            {{# kontaktLiten }}
-            {{> organisms-kontakt-liten }}
-            {{/ kontaktLiten }}
-            
-            {{# profil }}
-            {{> organisms-modul-med-overskrift }}
-            {{/ profil }}
-            
+
+            {{# escenic }}
+            {{> organisms-escenic-luftkvalitet }}
+            {{/ escenic }}
+                        
             {{# tjenester }}
             {{> organisms-tjenester-og-skjema-liten }}
             {{/ tjenester }}
-            
-            {{# sisteNytt }}
-            {{> organisms-siste-nytt }}
-            {{/ sisteNytt }}
 
             {{# etjenester100 }}
             {{> organisms-modul-med-overskrift }}
@@ -63,7 +43,16 @@
                 
             </section>
             
+            {{# tilbakemelding }}
+            {{> molecules-tilbakemelding }}
+            {{/ tilbakemelding }}
+            
         </div>
     </div>
+            
+    {{# kontaktbyline }}
+    {{> organisms-kontakt-byline }}
+    {{/ kontaktbyline }}
+    
 </main>
 {{> organisms-footer }}

@@ -1729,6 +1729,132 @@ h1.article_header {
         float: right;
         text-align: right; } }
 
+.frontpage {
+  margin-bottom: 56px;
+  margin-bottom: 3.5rem;
+  *zoom: 1; }
+  .frontpage:before, .frontpage:after {
+    content: "";
+    display: table;
+    line-height: 0; }
+  .frontpage:after {
+    clear: both; }
+  .frontpage .teaser_title_hidden_ruu {
+    display: none; }
+  .frontpage .teaser_kicker {
+    margin: 0;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-transform: uppercase; }
+  .frontpage .teaser_title {
+    margin: 0 0 6px;
+    margin: 0 0 0.375rem; }
+    .frontpage .teaser_title a {
+      text-decoration: none; }
+      .frontpage .teaser_title a:hover {
+        text-decoration: underline; }
+  .frontpage .image_link {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 6px;
+    margin-bottom: 0.375rem;
+    position: relative; }
+    .frontpage .image_link img {
+      width: 100%; }
+  .frontpage .frontpageIngress {
+    margin-bottom: 12px;
+    margin-bottom: 0.75rem; }
+  .frontpage .readmore_hidden_ruu {
+    display: none; }
+  .frontpage .henvisningsliste {
+    margin: 10px 0 0;
+    float: left;
+    clear: left;
+    width: 100%; }
+  .frontpage .toppsak,
+  .frontpage .sak {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 12px;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e7d5a6;
+    border-bottom: 0.0625rem solid #e7d5a6;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem; }
+  .frontpage .clearit {
+    *zoom: 1; }
+    .frontpage .clearit:before, .frontpage .clearit:after {
+      content: "";
+      display: table;
+      line-height: 0; }
+    .frontpage .clearit:after {
+      clear: both; }
+  .frontpage .bunn {
+    margin-top: 15px; }
+  .frontpage .toarchive {
+    *zoom: 1; }
+    .frontpage .toarchive:before, .frontpage .toarchive:after {
+      content: "";
+      display: table;
+      line-height: 0; }
+    .frontpage .toarchive:after {
+      clear: both; }
+  @media (min-width: 700px) {
+    .frontpage .saker_container .sak {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .frontpage .saker_container .sak .excerpt_image_container_ruu {
+        float: left;
+        margin: 3px 24px 12px 0;
+        margin: 0.1875rem 1.5rem 0.75rem 0;
+        width: 48%; }
+      .frontpage .saker_container .sak .excerpt_image_container_ruu,
+      .frontpage .saker_container .sak .excerpt_story_container_ruu {
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        -webkit-align-items: stretch;
+        -moz-align-items: stretch;
+        align-items: stretch;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -moz-box-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        flex: 1; }
+    .frontpage .bunnsaker {
+      *zoom: 1;
+      padding-bottom: 12px;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid #e7d5a6;
+      border-bottom: 0.0625rem solid #e7d5a6;
+      margin-bottom: 24px;
+      margin-bottom: 1.5rem; }
+      .frontpage .bunnsaker:before, .frontpage .bunnsaker:after {
+        content: "";
+        display: table;
+        line-height: 0; }
+      .frontpage .bunnsaker:after {
+        clear: both; }
+    .frontpage .venstrebunn {
+      clear: left;
+      float: left;
+      margin-right: 2%; }
+    .frontpage .hoyrebunn {
+      float: right;
+      margin-left: 2%; }
+    .frontpage .venstrebunn,
+    .frontpage .hoyrebunn {
+      width: 48%; }
+      .frontpage .venstrebunn .sak,
+      .frontpage .hoyrebunn .sak {
+        padding-bottom: 0;
+        border-bottom: 0 none;
+        margin-bottom: 0; } }
+
 .rssicon_floatRight a,
 .rssicon a {
   position: relative;

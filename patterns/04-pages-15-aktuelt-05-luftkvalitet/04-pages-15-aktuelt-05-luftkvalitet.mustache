@@ -1,0 +1,88 @@
+{{> organisms-header-1 }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    {{> molecules-sideoverskrift-h1:mbl(sidetittel: "{{ sidetittel }}") }}
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+            
+            {{# meny }}
+            {{> molecules-org-meny }}
+            {{/ meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+            
+            
+            <!--
+                Dette er en kopi fra template tema-sidemal
+            -->
+
+            {{# escenic }}
+            {{> organisms-escenic-luftkvalitet }}
+            {{/ escenic }}
+                        
+            {{# tjenester }}
+            {{> organisms-tjenester-og-skjema-liten }}
+            {{/ tjenester }}
+
+            {{# etjenester100 }}
+            {{> organisms-modul-med-overskrift }}
+            {{/ etjenester100 }}
+                        
+            <div class="clearfix"></div>
+            <section class="row_no_clearfix equal_height_container mbxl">
+                
+                {{# etjenester50 }}
+                    <div class="col_md_6 col_lg_6 equal_height_item">
+                        {{> molecules-tout }}
+                    </div>
+                {{/ etjenester50 }}
+                
+                
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    <div class="tout_container">
+                        <h2 class="tout_header">
+                            Nyttige lenker
+                        </h2>
+                        <div class="tout_excerpt">
+                            <ul>
+                                <li>
+                                    <a href="http://www.luftkvalitet.info/home.aspx?type=Area&amp;id={03206c07-9d57-4af7-92eb-e66ee800dcac}" target="_blank" title="Sjekk hvordan luftkvaliteten ved målestasjonene i Bergen er akkurat nå, på nettsiden luftkvalitet.info - Åpnes i nytt vindu">Sjekk luftkvaliteten nå</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" title="Åpnes i nytt vindu">Tiltaksutredning for bedre luftkvalitet i Bergen </a> (pdf)
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" title="Åpnes i nytt vindu">Contingency plan for episodes of high air pollution</a> (pdf)
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" title="Les bystyrets vedtatte handlingsplan for bedre luft i Bergen - Åpnes i nytt vindu">Les "Klima- og miljøhandlingsplan for Bergen" (pdf)</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                {{# aktuelletema }}
+                    <div class="col_md_6 col_lg_6 equal_height_item">
+                        {{> molecules-tout }}
+                    </div>
+                {{/ aktuelletema }}
+                
+            </section>
+            
+            {{# tilbakemelding }}
+            {{> molecules-tilbakemelding }}
+            {{/ tilbakemelding }}
+            
+        </div>
+    </div>
+            
+    {{# kontaktbyline }}
+    {{> organisms-kontakt-byline }}
+    {{/ kontaktbyline }}
+    
+</main>
+{{> organisms-footer }}
