@@ -35,32 +35,6 @@
                 {{/ visFlereSaker }}
                 
                 
-                
-                {{> molecules-moduloverskrift-h2:mbs(tittel: "Barnehage og skole") }}
-                <ul class="link_list mbj">     
-                    <li>
-                        <a href="https://bergen.ist-asp.com/bergenpub/login.htm" class="title_cell" title="">
-                            Søk plass i barnehage/SFO
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.bergen.kommune.no/skjema/Info.aspx?ShortName=BK048-SKOLE-permisjon_undervisning" class="title_cell" title="Permisjon/fri fra skolen" target="_blank">
-                            Søk permisjon/fri fra skolen
-                        </a>
-                    </li>
-                </ul>
-                
-                
-                {{> molecules-moduloverskrift-h2:mbs(tittel: "Parkering og piggdekk") }}
-                <ul class="link_list mbj">     
-                    <li>
-                        <a href="https://bergen.ist-asp.com/bergenpub/login.htm" class="title_cell" title="">
-                            Boligsoneparkering / piggdekkoblat / parkeringsbøter
-                        </a>
-                    </li>
-                </ul>
-                
-                
                 {{> molecules-moduloverskrift-h2-med-lenke:mbs(url: "{{ link.pages-fakturaer }}", tittel: "Fakturaoversikt") }}
                 <p>Faktura vises kun for fakturamottaker.</p>
                 {{> molecules-fakturaer }}                
@@ -76,43 +50,16 @@
 
 
                 {{> molecules-moduloverskrift-h2-med-lenke:mbs(url: "{{ link.pages-lonnsslipper }}", tittel: "Lønnsslipper") }}
-                {{> molecules-vedlegg-liste }}                
+                {{> molecules-vedlegg-liste }}
                 {{# visFlereLonnsslipper }}
                 {{> molecules-minside-les-mer }}
                 {{/ visFlereLonnsslipper }}
             
                 
-                
-
-                {{# mestbruktoverskrift }}
-                {{> molecules-moduloverskrift-h2:mbs }}
-                {{/ mestbruktoverskrift }}
-
-                {{# mestbruktliste }}
-                {{> molecules-link-liste-enkel }}
-                {{/ mestbruktliste }}
-
-               
-                
-                
-                <div class="promo_box">
-                    <div class="icon promo_box_icon" style="width: 74px; height: 74px; background-position: -10px 5px;"></div>
-                    <h4 class="promo_header">Viktige kommunale tjenester</h4>
-                    <p>
-                        <a href="https://bergen.ist-asp.com/bergenpub/login.htm" class="title_cell" title="">
-                            Barnehageplass/SFO
-                        </a>
-                        &nbsp;•
-                        <a href="https://www.bergen.kommune.no/skjema/Info.aspx?ShortName=BK048-SKOLE-permisjon_undervisning" class="title_cell" title="Permisjon/fri fra skolen" target="_blank">
-                            Permisjon/fri fra skolen
-                        </a>
-                        &nbsp;•
-                        <a href="https://bergen.ist-asp.com/bergenpub/login.htm" class="title_cell" title="">
-                            Parkering/piggdekkoblat/parkeringsbøter
-                        </a>
-                    </p>
-                </div>
-                
+                {{> molecules-moduloverskrift-h2:mbs(tittel: "Nyttige tjenester") }}
+                {{# nyttigetjenester }}
+                {{> molecules-link-liste }}
+                {{/ nyttigetjenester }}
                 
 
                 {{# personPromo }}
