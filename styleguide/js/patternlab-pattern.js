@@ -111,21 +111,16 @@ var urlHandler = {
   /**
   * get the real file name for a given pattern name
   * @param  {String}       the shorthand partials syntax for a given pattern
-  * @param  {Boolean}      with the file name should be returned with the full rendered suffix or not
   *
   * @return {String}       the real file path
   */
-  getFileName: function (name, withRenderedSuffix) {
+  getFileName: function (name) {
     
     var baseDir     = "patterns";
     var fileName    = "";
     
     if (name === undefined) {
       return fileName;
-    }
-    
-    if (withRenderedSuffix === undefined) {
-      withRenderedSuffix = true;
     }
     
     if (name == "all") {
@@ -162,18 +157,13 @@ var urlHandler = {
     }
     
     var regex = /\//g;
-    if ((name.indexOf("viewall-") !== -1) && (name.indexOf("viewall-") === 0) && (fileName !== "")) {
+    if ((name.indexOf("viewall-") != -1) && (fileName !== "")) {
       fileName = baseDir+"/"+fileName.replace(regex,"-")+"/index.html";
     } else if (fileName !== "") {
-      fileName = baseDir+"/"+fileName.replace(regex,"-")+"/"+fileName.replace(regex,"-");
-      if (withRenderedSuffix) {
-        var fileSuffixRendered = ((config.outputFileSuffixes !== undefined) && (config.outputFileSuffixes.rendered !== undefined)) ? config.outputFileSuffixes.rendered : '';
-        fileName = fileName+fileSuffixRendered+".html";
-      }
+      fileName = baseDir+"/"+fileName.replace(regex,"-")+"/"+fileName.replace(regex,"-")+".html";
     }
     
     return fileName;
-    
   },
   
   /**
@@ -245,7 +235,7 @@ var urlHandler = {
         history.pushState(data, null, addressReplacement);
       }
       document.getElementById("title").innerHTML = "Pattern Lab - "+pattern;
-      if (document.getElementById("sg-raw") !== null) {
+      if (document.getElementById("sg-raw") !== undefined) {
         document.getElementById("sg-raw").setAttribute("href",urlHandler.getFileName(pattern));
       }
     }
@@ -276,9 +266,7 @@ var urlHandler = {
     var obj = JSON.stringify({ "event": "patternLab.updatePath", "path": iFramePath });
     document.getElementById("sg-viewport").contentWindow.postMessage( obj, urlHandler.targetOrigin);
     document.getElementById("title").innerHTML = "Pattern Lab - "+patternName;
-    if (document.getElementById("sg-raw") !== null) {
-      document.getElementById("sg-raw").setAttribute("href",urlHandler.getFileName(patternName));
-    }
+    document.getElementById("sg-raw").setAttribute("href",urlHandler.getFileName(patternName));
     
     /*
     if (wsnConnected !== undefined) {

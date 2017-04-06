@@ -2,7 +2,7 @@
 <html id="patternlab-html">
   <head id="patternlab-head">
     
-    <title id="title">Designsystem - Bergen kommune</title>
+    <title id="title">Bk - Pattern Lab</title>
     <meta charset="UTF-8">
     
     <!-- never cache patterns -->
@@ -18,7 +18,7 @@
     <!-- load the pattern lab css -->
     <link rel="stylesheet" href="styleguide/css/styleguide.min.css" media="all" />
     <link rel="stylesheet" href="styleguide/css/prism-typeahead.min.css" media="all" />
-    <link rel="stylesheet" href="css/sg_header_custom_style.css" media="all" />
+    <link rel="stylesheet" href="styleguide/css/sg_header_custom_style.css" media="all" />
     
   </head>
   <body id="patternlab-body">
@@ -63,13 +63,11 @@
     
     <!-- mustache templates -->
     <script type="text/mustache" id="pl-pattern-nav-template">
-{{^ ishControlsHide.views-all }}
-  <li><a href="styleguide/html/styleguide.html" class="sg-pop" data-patternpartial="all">Alle komponenter</a></li>
-{{/ ishControlsHide.views-all }}
+    <li><a href="styleguide/html/styleguide.html" class="sg-pop" data-patternpartial="all">Alle komponenter</a></li>
       {{# patternTypes }}
-  <li><a class="sg-acc-handle">{{ patternTypeUC }}</a><ol class="sg-acc-panel">
+  <li class="sg-nav-{{ patternTypeLC }}"><a class="sg-acc-handle">{{ patternTypeUC }}</a><ol class="sg-acc-panel">
   {{# patternTypeItems }}
-    <li><a class="sg-acc-handle">{{ patternSubtypeUC }}</a><ol class="sg-acc-panel sg-sub-nav">
+    <li class="sg-nav-{{ patternSubtypeLC }}"><a class="sg-acc-handle">{{ patternSubtypeUC }}</a><ol class="sg-acc-panel sg-sub-nav">
     {{# patternSubtypeItems }}
       <li><a href="patterns/{{ patternPath }}" class="sg-pop  {{# patternState }}sg-pattern-state {{ patternState }}{{/ patternState }}" data-patternpartial="{{ patternPartial }}">{{ patternName }}</a></li>
     {{/ patternSubtypeItems }}
@@ -80,6 +78,7 @@
   {{/ patternItems }}
   </ol></li>
 {{/ patternTypes }}
+
     </script>
     
     <script type="text/mustache" id="pl-ish-controls-template">
