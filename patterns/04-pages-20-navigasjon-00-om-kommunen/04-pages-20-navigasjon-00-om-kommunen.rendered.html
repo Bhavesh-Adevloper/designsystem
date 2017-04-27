@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title>Bergen kommune</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="stylesheet" href="../../css/style.css?1493296924480" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1493296924480" media="all" />
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1493296924480" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1493296924480" media="all" />
+
+    <!-- End Pattern Lab -->
+    
+    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../js/portalen-functions.js"></script>
+  
+  </head>
+  <body class="">
+    
+
+
+<div id="skiplink_container">
+    <div class="desktop_centered">
+        <a href="#innhold" class="skiplink">Hopp til innhold</a>
+    </div>
+</div>
+
+<!--
+Logget inn eller ikke:
+https://github.com/pattern-lab/patternlab-php/issues/304
+-->
+<header id="global_header">
+    <div class="desktop_centered">
+        
+        <div class="header_container">
+            
+            <a href="&#x2F;patterns&#x2F;04-pages-00-forside&#x2F;04-pages-00-forside.rendered.html" title="Gå til forsiden" class="logo" rel="home" accesskey="1">
+    <span>Bergen kommune</span>
+</a>
+<img class="share_and_print_logo" src="../../images/logo_320x320.png" alt="Logo Bergen kommune">
+
+            <a class="js_open_mobile_main_nav nav_toggle_btn" href="#">Meny<span class="icon nav_toggle_icon"></span></a>
+            
+<!--		
+            <div class="login_container">
+                <a href="&#x2F;patterns&#x2F;04-pages-02-minside-00-minside-velger&#x2F;04-pages-02-minside-00-minside-velger.rendered.html" title="Min side" class="login_link">
+                  <span class="icon login_icon"></span>
+                  <span class="text">Min side</span>
+                </a>
+            </div>
+-->
+
+            <div class="login_container">
+                <a href="&#x2F;patterns&#x2F;04-pages-02-minside-00-minside-velger&#x2F;04-pages-02-minside-00-minside-velger.rendered.html" title="Min side - Hvem representerer du?" class="login_link">
+                    <span class="icon login_icon"></span>
+                    <span class="text">Min side</span>
+                </a>
+                <span class="seperator"></span>
+                <a href="&#x2F;patterns&#x2F;04-pages-00-forside&#x2F;04-pages-00-forside.rendered.html" title="Logg ut" class="logout_link">
+                    <span class="icon logout_icon"></span>
+                    <span class="text">Logg ut</span>
+                </a>
+            </div>
+
+            <div class="main_search_container">
+                <form action="#">
+                    <label for="search" class="screen-reader-text">Søk:</label>
+                    <input placeholder="Hva leter du etter?" id="search" accesskey="4" class="search_input" type="search">
+                    <button><span class="icon searchglass_icon">Søk</span></button>
+                </form>
+            </div>
+        </div>
+        
+        <nav class="js_main_nav main_nav main_nav_collapsed">
+            <a class="js_close_mobile_main_nav hide_nav_toggle_area" href="#" title="Lukk menyen"></a>
+            <div class="nav_container">
+                <a class="js_close_mobile_main_nav close_nav_btn icon close_icon" href="#" title="Lukk menyen">Lukk menyen</a>
+                <ul class="main_nav_list">
+                    <li><a href="&#x2F;patterns&#x2F;04-pages-15-aktuelt-00-aktuelt&#x2F;04-pages-15-aktuelt-00-aktuelt.rendered.html" title="Aktuelt"><span>Aktuelt</span></a></li>
+                    <li class="active"><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-00-om-kommunen&#x2F;04-pages-20-navigasjon-00-om-kommunen.rendered.html" title="Om kommunen"><span>Om kommunen</span></a></li>
+                    <li><a href="&#x2F;patterns&#x2F;04-pages-01-tjenester-00-tjenestetilbud&#x2F;04-pages-01-tjenester-00-tjenestetilbud.rendered.html" title="Tjenestetilbud"><span>Tjenestetilbud</span></a></li>
+                    <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-04-politikk&#x2F;04-pages-20-navigasjon-04-politikk.rendered.html" title="Politikk"><span>Politikk</span></a></li>
+                    <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-06-ledige-stillinger&#x2F;04-pages-20-navigasjon-06-ledige-stillinger.rendered.html" title="Ledige stillinger"><span>Ledige stillinger</span></a></li>
+                </ul>
+                <ul class="secondary_nav">
+                    <li>
+                        <a href="#" title="English">
+                            <span class="icon inline_icon english_icon white"></span>
+                            English
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Presse">
+                            <span class="icon inline_icon press_icon white"></span>
+                            Presse
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Kontaktinformasjon">
+                            <span class="icon inline_icon info_icon white"></span>
+                            Kontaktinformasjon
+                        </a>
+                    </li>
+                </ul>
+                <a href="&#x2F;patterns&#x2F;04-pages-00-forside&#x2F;04-pages-00-forside.rendered.html" title="Logg ut" class="mobile_logout_link">
+                    <span class="icon logout_icon white"></span>
+                    <span class="text">Logg ut</span>
+                </a>
+            </div>
+        </nav>
+    
+    </div>
+</header>
+
+
+
+
+
+
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    <div class="page_header ">
+    <h1>
+        Om kommunen
+    </h1>
+</div>
+
+    <div class="clearfix"></div>
+<div class="row_no_clearfix service_link_container equal_height_container">
+        <div class="col_md_4 col_lg_4 clear_col_md_4 clear_col_lg_4 equal_height_item">
+            <div class="cat_1_big_link_container">
+                <h2 class="cat_1_header">
+                    <a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-09-ansatte&#x2F;04-pages-20-navigasjon-09-ansatte.rendered.html" title="Ansatte" class="cat_1_link">
+                        Ansatte
+                    </a>
+                </h2>
+
+                <a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-09-ansatte&#x2F;04-pages-20-navigasjon-09-ansatte.rendered.html" title="Ansatte" id="skole-og-utdanning" class="service_icon"></a>
+                <!--        
+                    <ul class="cat_1_shortcuts_list">
+                        <li><a href="" title="Tittel">Tittel</a></li>
+                    </ul>
+                -->
+            </div>
+        </div>
+        <div class="col_md_4 col_lg_4 clear_col_md_4 clear_col_lg_4 equal_height_item">
+            <div class="cat_1_big_link_container">
+                <h2 class="cat_1_header">
+                    <a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-08-avdelinger&#x2F;04-pages-20-navigasjon-08-avdelinger.rendered.html" title="Avdelinger" class="cat_1_link">
+                        Avdelinger
+                    </a>
+                </h2>
+
+                <a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-08-avdelinger&#x2F;04-pages-20-navigasjon-08-avdelinger.rendered.html" title="Avdelinger" id="skole-og-utdanning" class="service_icon"></a>
+                <!--        
+                    <ul class="cat_1_shortcuts_list">
+                        <li><a href="" title="Tittel">Tittel</a></li>
+                    </ul>
+                -->
+            </div>
+        </div>
+        <div class="col_md_4 col_lg_4 clear_col_md_4 clear_col_lg_4 equal_height_item">
+            <div class="cat_1_big_link_container">
+                <h2 class="cat_1_header">
+                    <a href="#" title="Bydelene" class="cat_1_link">
+                        Bydelene
+                    </a>
+                </h2>
+
+                <a href="#" title="Bydelene" id="skole-og-utdanning" class="service_icon"></a>
+                <!--        
+                    <ul class="cat_1_shortcuts_list">
+                        <li><a href="" title="Tittel">Tittel</a></li>
+                    </ul>
+                -->
+            </div>
+        </div>
+        <div class="col_md_4 col_lg_4 clear_col_md_4 clear_col_lg_4 equal_height_item">
+            <div class="cat_1_big_link_container">
+                <h2 class="cat_1_header">
+                    <a href="#" title="Offentlig innsyn" class="cat_1_link">
+                        Offentlig innsyn
+                    </a>
+                </h2>
+
+                <a href="#" title="Offentlig innsyn" id="skole-og-utdanning" class="service_icon"></a>
+                <!--        
+                    <ul class="cat_1_shortcuts_list">
+                        <li><a href="" title="Tittel">Tittel</a></li>
+                    </ul>
+                -->
+            </div>
+        </div>
+        <div class="col_md_4 col_lg_4 clear_col_md_4 clear_col_lg_4 equal_height_item">
+            <div class="cat_1_big_link_container">
+                <h2 class="cat_1_header">
+                    <a href="#" title="Årsmelding" class="cat_1_link">
+                        Årsmelding
+                    </a>
+                </h2>
+
+                <a href="#" title="Årsmelding" id="skole-og-utdanning" class="service_icon"></a>
+                <!--        
+                    <ul class="cat_1_shortcuts_list">
+                        <li><a href="" title="Tittel">Tittel</a></li>
+                    </ul>
+                -->
+            </div>
+        </div>
+        <div class="col_md_4 col_lg_4 clear_col_md_4 clear_col_lg_4 equal_height_item">
+            <div class="cat_1_big_link_container">
+                <h2 class="cat_1_header">
+                    <a href="#" title="Kart over Bergen" class="cat_1_link">
+                        Kart over Bergen
+                    </a>
+                </h2>
+
+                <a href="#" title="Kart over Bergen" id="skole-og-utdanning" class="service_icon"></a>
+                <!--        
+                    <ul class="cat_1_shortcuts_list">
+                        <li><a href="" title="Tittel">Tittel</a></li>
+                    </ul>
+                -->
+            </div>
+        </div>
+        <div class="col_md_4 col_lg_4 clear_col_md_4 clear_col_lg_4 equal_height_item">
+            <div class="cat_1_big_link_container">
+                <h2 class="cat_1_header">
+                    <a href="#" title="Fakta om Bergen" class="cat_1_link">
+                        Fakta om Bergen
+                    </a>
+                </h2>
+
+                <a href="#" title="Fakta om Bergen" id="skole-og-utdanning" class="service_icon"></a>
+                <!--        
+                    <ul class="cat_1_shortcuts_list">
+                        <li><a href="" title="Tittel">Tittel</a></li>
+                    </ul>
+                -->
+            </div>
+        </div>
+        <div class="col_md_4 col_lg_4 clear_col_md_4 clear_col_lg_4 equal_height_item">
+            <div class="cat_1_big_link_container">
+                <h2 class="cat_1_header">
+                    <a href="#" title="Organisasjonskart" class="cat_1_link">
+                        Organisasjonskart
+                    </a>
+                </h2>
+
+                <a href="#" title="Organisasjonskart" id="skole-og-utdanning" class="service_icon"></a>
+                <!--        
+                    <ul class="cat_1_shortcuts_list">
+                        <li><a href="" title="Tittel">Tittel</a></li>
+                    </ul>
+                -->
+            </div>
+        </div>
+        <div class="col_md_4 col_lg_4 clear_col_md_4 clear_col_lg_4 equal_height_item">
+            <div class="cat_1_big_link_container">
+                <h2 class="cat_1_header">
+                    <a href="#" title="Arealplaner" class="cat_1_link">
+                        Arealplaner
+                    </a>
+                </h2>
+
+                <a href="#" title="Arealplaner" id="skole-og-utdanning" class="service_icon"></a>
+                <!--        
+                    <ul class="cat_1_shortcuts_list">
+                        <li><a href="" title="Tittel">Tittel</a></li>
+                    </ul>
+                -->
+            </div>
+        </div>
+        <div class="col_md_4 col_lg_4 clear_col_md_4 clear_col_lg_4 equal_height_item">
+            <div class="cat_1_big_link_container">
+                <h2 class="cat_1_header">
+                    <a href="#" title="Ny i Bergen" class="cat_1_link">
+                        Ny i Bergen
+                    </a>
+                </h2>
+
+                <a href="#" title="Ny i Bergen" id="skole-og-utdanning" class="service_icon"></a>
+                <!--        
+                    <ul class="cat_1_shortcuts_list">
+                        <li><a href="" title="Tittel">Tittel</a></li>
+                    </ul>
+                -->
+            </div>
+        </div>
+        <div class="col_md_4 col_lg_4 clear_col_md_4 clear_col_lg_4 equal_height_item">
+            <div class="cat_1_big_link_container">
+                <h2 class="cat_1_header">
+                    <a href="#" title="Kontakt oss" class="cat_1_link">
+                        Kontakt oss
+                    </a>
+                </h2>
+
+                <a href="#" title="Kontakt oss" id="skole-og-utdanning" class="service_icon"></a>
+                <!--        
+                    <ul class="cat_1_shortcuts_list">
+                        <li><a href="" title="Tittel">Tittel</a></li>
+                    </ul>
+                -->
+            </div>
+        </div>
+</div>
+    
+</main>
+
+  <footer>
+    <div class="footer_mountain_container"><div class="mountains"></div></div>
+
+<!--
+    <div class="chat_link_area">
+        
+        <script language="javascript" type="text/javascript">
+            ed24ChatObj = {
+                'entrypoint':'Bergen_Main'
+                ,'mainid':'A303'
+                ,'Online':'<span class="icon chat_icon"></span>Spør kommunen<span class="icon online_icon"></span>'
+                ,'Offline':'<span class="icon chat_icon"></span>Spør kommunen<span class="icon offline_icon"></span>'
+                ,'Busy':'<span class="icon chat_icon"></span>Spør kommunen<span class="icon online_icon"></span>'
+                ,'webserverAddress':'http://login.edialog24.com'
+                ,'urlToOpen':'http://login.edialog24.com/chattemplate/Bergen_Main/index.html'
+                ,'windowSettings':'width=600,height=800,status=0,scrollbars=0,titlebar=0'
+            };
+        </script>
+        <script type="text/javascript" src="js/eDialog24EntrypointScript3.js"></script>
+            
+        <a href="#" id="ed24DivOnline" class="chat_link js_chat_link" title="Spør kommunen"></a>
+        <a href="#" id="ed24DivOffline" class="chat_link js_chat_link" title="Spør kommunen"></a>
+        <a href="#" id="ed24DivBusy" class="chat_link js_chat_link" title="Spør kommunen"></a>
+        
+    </div>
+-->
+      
+    <div class="footer_link_container">
+      <div class="footer_links">
+    
+          <a href="#" title="Kontaktinformasjon" class="contact_link">
+            <span class="link_outer">
+              <span class="link_inner">
+                <span class="icon inline_icon info_icon"></span>
+                Kontaktinformasjon
+              </span>
+            </span>
+          </a>
+
+          <a href="#" title="Nettstedskart" class="sitemap_link">
+            <span class="link_outer">
+              <span class="link_inner">
+                <span class="icon inline_icon world_icon"></span>
+                Nettstedskart
+              </span>
+            </span>
+          </a>
+
+          <a href="#" title="English" class="english_link">
+            <span class="link_outer">
+              <span class="link_inner">
+                <span class="icon inline_icon english_icon"></span>
+                English
+              </span>
+            </span>
+          </a>
+
+          <a href="#" title="Presse" class="press_link">
+            <span class="link_outer">
+              <span class="link_inner">
+                <span class="icon inline_icon press_icon"></span>
+                Presse
+              </span>
+            </span>
+          </a>
+
+          <a href="#" title="For ansatte" class="intern_link">
+            <span class="link_outer">
+              <span class="link_inner">
+                <span class="icon inline_icon profile_icon"></span>
+                For ansatte
+              </span>
+            </span>
+          </a>
+
+          <a href="http://www.facebook.com/bergenkommune/" title="Facebook" class="facebook_link some_footer_link">
+          <span class="link_outer">
+            <span class="link_inner">
+              <span class="icon facebook_icon"></span>
+              <span class="some_footer_link_text">Facebook</span>              
+            </span>
+          </span>
+          </a>
+
+          <a href="http://www.twitter.com/bergenkommune/" title="Twitter" class="twitter_link some_footer_link">
+          <span class="link_outer">
+            <span class="link_inner">
+              <span class="icon twitter_icon"></span>
+              <span class="some_footer_link_text">Twitter</span>              
+            </span>
+          </span>
+          </a>
+
+          <a href="http://www.instagram.com/bergenkommune_ung/" title="Instagram" class="instagram_link some_footer_link">
+          <span class="link_outer">
+            <span class="link_inner">
+              <span class="icon instagram_icon"></span>
+              <span class="some_footer_link_text">Instagram</span>              
+            </span>
+          </span>
+          </a>
+          
+      </div>
+    </div>
+    
+    <p class="cookie_info">
+        <!-- URL: /omkommunen/kontakt-oss/article-103324 -->
+        <a href="#" title="Personvern og informasjonskapsler">Personvern og informasjonskapsler</a>
+    </p>
+      
+  </footer>  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"templates-navigasjon-1","lineagePath":"../../patterns/03-templates-08-Navigasjon-10-navigasjon-1/03-templates-08-Navigasjon-10-navigasjon-1.rendered.html"}],"lineage":[{"lineagePattern":"templates-navigasjon-1","lineagePath":"../../patterns/03-templates-08-Navigasjon-10-navigasjon-1/03-templates-08-Navigasjon-10-navigasjon-1.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"navigasjon"},"patternExtension":"mustache","patternName":"Om Kommunen","patternPartial":"pages-om-kommunen","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1493296924480">
+  (function() {
+    if (self != top) {
+      var cb = '1493296924480';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1493296924480">
+  (function() {
+    if (self != top) {
+      var cb = '1493296924480';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+  
+  </body>
+</html>

@@ -101,7 +101,7 @@
 .sg-pattern-extra.active + .sg-pattern-example {
     padding: 0 12px;
     margin: 0 -12px;
-    background: url(../examples/patternlab_background.svg) repeat 0 0 #ffffff;
+    background: url(../images/examples/patternlab_background.svg) repeat 0 0 #ffffff;
 }
 
 .sg-pattern .sg-pattern-title a {
