@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1493379063660,
+  "timestamp": 1493391559169,
   "graph": {
     "options": {
       "directed": true,
@@ -260,8 +260,8 @@
         "v": "01-molecules/02-innhold/18-modul.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-04-OrgEnhet-35-byradsavdeling/03-templates-04-OrgEnhet-35-byradsavdeling.rendered.html",
-          "lineagePattern": "templates-byradsavdeling"
+          "lineagePath": "../../patterns/04-pages-15-aktuelt-00-aktuelt/04-pages-15-aktuelt-00-aktuelt.rendered.html",
+          "lineagePattern": "pages-aktuelt"
         }
       },
       {
@@ -1714,6 +1714,11 @@
       },
       {
         "v": "03-templates/04-OrgEnhet/40-barnehage.mustache",
+        "w": "01-molecules/02-innhold/18-modul.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/04-OrgEnhet/40-barnehage.mustache",
         "w": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
         "value": {}
       },
@@ -2665,6 +2670,11 @@
       {
         "v": "04-pages/15-aktuelt/00-aktuelt.mustache",
         "w": "02-organisms/00-global/_01-header-1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-aktuelt/00-aktuelt.mustache",
+        "w": "01-molecules/02-innhold/18-modul.mustache",
         "value": {}
       },
       {

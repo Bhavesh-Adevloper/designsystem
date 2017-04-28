@@ -15,6 +15,15 @@
     </div>
     {{/ bilde }}
     <div class="module_content_container">
+        {{# modulTittel }}
+            <h2 class="module_content_title">
+                <a href="{{ url }}" title="{{ modulTittel }}">
+                    <span class="read_more_link_large">
+                        {{ modulTittel }}
+                    </span>
+                </a>
+            </h2>
+        {{/ modulTittel }}
         <div class="module_content_excerpt">
             <p>
                 {{ ingress }}

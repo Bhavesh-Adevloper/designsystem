@@ -34,25 +34,7 @@
             <section class="mbj">
                 {{> molecules-moduloverskrift-h2-med-lenke:mbm }}
                 {{# barnehageprofilartikkel }}
-                    <div class="module_container module_box_style module_equal_heights">
-                        {{# bilde }}
-                        <div class="module_image_container">
-                            <a href="{{ url }}" title="{{ tittel }}" class="module_image_link">
-                                <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="module_image" />
-                            </a>
-                        </div>
-                        {{/ bilde }}
-                        <div class="module_content_container">
-                            <a href="{{ url }}" title="{{ tittel }}" class="module_content_title">
-                                <span class="read_more_link_large">{{ tittel }}</span>
-                            </a>
-                            <div class="module_content_excerpt">
-                                <p>
-                                    {{ ingress }}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    {{> molecules-modul:module_box_style|module_equal_heights }}
                 {{/ barnehageprofilartikkel }}
             </section>
             {{/ profil }}
