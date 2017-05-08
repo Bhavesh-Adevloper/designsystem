@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1493391559169,
+  "timestamp": 1493986980527,
   "graph": {
     "options": {
       "directed": true,
@@ -260,8 +260,8 @@
         "v": "01-molecules/02-innhold/18-modul.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-15-aktuelt-00-aktuelt/04-pages-15-aktuelt-00-aktuelt.rendered.html",
-          "lineagePattern": "pages-aktuelt"
+          "lineagePath": "../../patterns/03-templates-04-OrgEnhet-40-barnehage/03-templates-04-OrgEnhet-40-barnehage.rendered.html",
+          "lineagePattern": "templates-barnehage"
         }
       },
       {
@@ -552,16 +552,16 @@
         "v": "02-organisms/00-global/_01-header-1.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-99-diverse-25-fakta/04-pages-99-diverse-25-fakta.rendered.html",
-          "lineagePattern": "pages-fakta"
+          "lineagePath": "../../patterns/04-pages-15-aktuelt-07-personalrommet/04-pages-15-aktuelt-07-personalrommet.rendered.html",
+          "lineagePattern": "pages-personalrommet"
         }
       },
       {
         "v": "02-organisms/00-global/_02-header-2.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-99-diverse-21-Politikker/04-pages-99-diverse-21-Politikker.rendered.html",
-          "lineagePattern": "pages-Politikker"
+          "lineagePath": "../../patterns/04-pages-99-diverse-25-fakta/04-pages-99-diverse-25-fakta.rendered.html",
+          "lineagePattern": "pages-fakta"
         }
       },
       {
@@ -2674,11 +2674,6 @@
       },
       {
         "v": "04-pages/15-aktuelt/00-aktuelt.mustache",
-        "w": "01-molecules/02-innhold/18-modul.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/15-aktuelt/00-aktuelt.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -3074,7 +3069,7 @@
       },
       {
         "v": "04-pages/99-diverse/25-fakta.mustache",
-        "w": "02-organisms/00-global/_01-header-1.mustache",
+        "w": "02-organisms/00-global/_02-header-2.mustache",
         "value": {}
       },
       {
