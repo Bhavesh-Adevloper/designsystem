@@ -2316,7 +2316,7 @@ h1.article_header {
       height: 30px;
       height: 1.875rem;
       background: transparent;
-      background: linear-gradient(90deg, transparent, #fff); }
+      background: linear-gradient(to right, transparent, #fff); }
   .bc_list {
     width: 600px;
     width: 37.5rem; }
@@ -2375,8 +2375,8 @@ h1.article_header {
     height: 32px;
     height: 2rem;
     opacity: .6;
-    background: #fff;
-    background: linear-gradient(90deg, #fff, transparent); }
+    background: transparent;
+    background: linear-gradient(to right, #fff, transparent); }
   .bc_list_container {
     width: calc(100% - 4.8125rem);
     margin-bottom: 38px;
@@ -6030,20 +6030,12 @@ footer {
     height: 3.5rem; }
   .select_year_gradient_container:before {
     left: 0;
-    /* FF3.6-15 */
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
-    /* IE6-9 */ }
+    background: transparent;
+    background: linear-gradient(to left, transparent, #fff); }
   .select_year_gradient_container:after {
     right: 0;
-    /* FF3.6-15 */
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
-    /* IE6-9 */ }
+    background: transparent;
+    background: linear-gradient(to right, transparent, #fff); }
   .select_year_gradient_container .show_more {
     display: none;
     cursor: pointer;
