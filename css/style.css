@@ -2316,7 +2316,7 @@ h1.article_header {
       height: 30px;
       height: 1.875rem;
       background: transparent;
-      background: linear-gradient(to right, transparent, #fff); }
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff); }
   .bc_list {
     width: 600px;
     width: 37.5rem; }
@@ -2376,7 +2376,7 @@ h1.article_header {
     height: 2rem;
     opacity: .6;
     background: transparent;
-    background: linear-gradient(to right, #fff, transparent); }
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0)); }
   .bc_list_container {
     width: calc(100% - 4.8125rem);
     margin-bottom: 38px;
@@ -6031,11 +6031,11 @@ footer {
   .select_year_gradient_container:before {
     left: 0;
     background: transparent;
-    background: linear-gradient(to left, transparent, #fff); }
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff); }
   .select_year_gradient_container:after {
     right: 0;
     background: transparent;
-    background: linear-gradient(to right, transparent, #fff); }
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff); }
   .select_year_gradient_container .show_more {
     display: none;
     cursor: pointer;
