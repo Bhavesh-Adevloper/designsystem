@@ -1618,8 +1618,8 @@ h1.article_header {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #e7d5a6;
   border-bottom: 0.0625rem solid #e7d5a6;
-  margin: 32px 0 8px;
-  margin: 2rem 0 0.5rem; }
+  margin: 24px 0 8px;
+  margin: 1.5rem 0 0.5rem; }
   .article_footer_print_link_container:before, .article_footer_print_link_container:after {
     content: "";
     display: table;
@@ -1645,9 +1645,7 @@ h1.article_header {
   *zoom: 1;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
+  line-height: 1.5; }
   .articleinfo:before, .articleinfo:after {
     content: "";
     display: table;
@@ -7615,6 +7613,34 @@ a.itslearning_link {
 
 .mbn {
   margin-bottom: 0; }
+
+@media (max-width: 699px) {
+  .mbxs--m {
+    margin-bottom: 4px;
+    margin-bottom: 0.25rem; }
+  .mbs--m {
+    margin-bottom: 8px;
+    margin-bottom: 0.5rem; }
+  .mbms--m {
+    margin-bottom: 12px;
+    margin-bottom: 0.75rem; }
+  .mbm--m {
+    margin-bottom: 16px;
+    margin-bottom: 1rem; }
+  .mbl--m {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem; }
+  .mbxl--m {
+    margin-bottom: 32px;
+    margin-bottom: 2rem; }
+  .mbxxl--m {
+    margin-bottom: 40px;
+    margin-bottom: 2.5rem; }
+  .mbj--m {
+    margin-bottom: 56px;
+    margin-bottom: 3.5rem; }
+  .mbn--m {
+    margin-bottom: 0; } }
 
 @media (min-width: 700px) {
   .mbl .read_more_link_container {
