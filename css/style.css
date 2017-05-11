@@ -4438,6 +4438,30 @@ footer {
       margin: 0 24px 0 0;
       margin: 0 1.5rem 0 0; } }
 
+.tout_container .tout_excerpt .air_quality_list li {
+  background-image: none;
+  padding-left: 0; }
+  .tout_container .tout_excerpt .air_quality_list li .air_quality_colorbox {
+    display: inline-block;
+    width: 16px;
+    width: 1rem;
+    height: 16px;
+    height: 1rem;
+    margin-right: 4px;
+    margin-right: 0.25rem;
+    position: relative;
+    top: 2px;
+    top: 0.125rem;
+    border-radius: 50%; }
+  .tout_container .tout_excerpt .air_quality_list li a:focus,
+  .tout_container .tout_excerpt .air_quality_list li a:hover,
+  .tout_container .tout_excerpt .air_quality_list li a:active {
+    text-decoration: none; }
+    .tout_container .tout_excerpt .air_quality_list li a:focus .air_quality_station_name,
+    .tout_container .tout_excerpt .air_quality_list li a:hover .air_quality_station_name,
+    .tout_container .tout_excerpt .air_quality_list li a:active .air_quality_station_name {
+      text-decoration: underline; }
+
 .service_link_container {
   margin-bottom: 100px;
   margin-bottom: 6.25rem; }
