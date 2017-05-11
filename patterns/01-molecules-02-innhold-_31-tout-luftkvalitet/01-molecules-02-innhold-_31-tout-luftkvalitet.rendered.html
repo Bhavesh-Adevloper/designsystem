@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title>Bergen kommune</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="stylesheet" href="../../css/style.css?1494488754195" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1494488754195" media="all" />
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1494488754195" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1494488754195" media="all" />
+
+    <!-- End Pattern Lab -->
+    
+    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../js/portalen-functions.js"></script>
+    <script type="text/javascript" src="../../js/fixPatternLinks.js"></script>
+  
+  </head>
+  <body class="">
+    
+<div class="tout_container etjeneste">
+    <h2 class="tout_header">
+        Luftkvalitet akkurat nå
+    </h2>
+    <div class="tout_excerpt">
+        <ul class="air_quality_list">    
+            <li>
+                <a href="http://luftkvalitet.info/home/overview.aspx?type=Station&amp;id={ceade2ac-e62f-4e50-af7c-347e402fff27}" title="Rolland, Åsane - Lite: Liten eller ingen helserisiko." target="_blank">
+                    <span class="air_quality_colorbox" style="background-color: #6ee86e"></span>
+                    <span class="air_quality_station_name">Rolland, Åsane</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://luftkvalitet.info/home/overview.aspx?type=Station&amp;id={751808f5-d561-4737-9185-4ecc0e834975}" title="Loddefjord - Lite: Liten eller ingen helserisiko." target="_blank">
+                    <span class="air_quality_colorbox" style="background-color: #6ee86e"></span>
+                    <span class="air_quality_station_name">Loddefjord</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://luftkvalitet.info/home/overview.aspx?type=Station&amp;id={5b0ff070-e6e6-4f60-88a3-bd923ac3a7e6}" title="Rådhuset - Lite: Liten eller ingen helserisiko." target="_blank">
+                    <span class="air_quality_colorbox" style="background-color: #6ee86e"></span>
+                    <span class="air_quality_station_name">Rådhuset</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://luftkvalitet.info/home/overview.aspx?type=Station&amp;id={4ff685c1-ad51-4468-b2fc-08345d11f447}" title="Danmarks plass - Lite: Liten eller ingen helserisiko." target="_blank">
+                    <span class="air_quality_colorbox" style="background-color: #6ee86e"></span>
+                    <span class="air_quality_station_name">Danmarks plass</span>
+                </a>
+            </li>
+
+        </ul>
+        <p>
+            Kilde: <a href="http://luftkvalitet.info/home.aspx?type=Area&id={03206c07-9d57-4af7-92eb-e66ee800dcac}">NILU</a>
+        </p>
+    </div>
+</div>  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-etjeneste-eksempler","lineagePath":"../../patterns/04-pages-03-orgenhet-99-etjeneste-eksempler/04-pages-03-orgenhet-99-etjeneste-eksempler.rendered.html"}],"lineageR":[{"lineagePattern":"pages-etjeneste-eksempler","lineagePath":"../../patterns/04-pages-03-orgenhet-99-etjeneste-eksempler/04-pages-03-orgenhet-99-etjeneste-eksempler.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"innhold"},"patternExtension":"mustache","patternName":"Tout Luftkvalitet","patternPartial":"molecules-tout-luftkvalitet","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1494488754195">
+  (function() {
+    if (self != top) {
+      var cb = '1494488754195';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1494488754195">
+  (function() {
+    if (self != top) {
+      var cb = '1494488754195';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+  
+  </body>
+</html>
