@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1494588010948,
+  "timestamp": 1494919686249,
   "graph": {
     "options": {
       "directed": true,
@@ -624,6 +624,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
           "lineagePattern": "pages-etjeneste-eksempler"
+        }
+      },
+      {
+        "v": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-01-Hva-skjer-00-hvaskjer/03-templates-01-Hva-skjer-00-hvaskjer.rendered.html",
+          "lineagePattern": "templates-hvaskjer"
         }
       },
       {
@@ -1306,6 +1314,11 @@
       {
         "v": "03-templates/01-Hva-skjer/00-hvaskjer.mustache",
         "w": "02-organisms/00-global/_01-header-1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Hva-skjer/00-hvaskjer.mustache",
+        "w": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
         "value": {}
       },
       {
