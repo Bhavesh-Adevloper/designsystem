@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1494919686249,
+  "timestamp": 1494944481449,
   "graph": {
     "options": {
       "directed": true,
@@ -630,8 +630,8 @@
         "v": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-01-Hva-skjer-00-hvaskjer/03-templates-01-Hva-skjer-00-hvaskjer.rendered.html",
-          "lineagePattern": "templates-hvaskjer"
+          "lineagePath": "../../patterns/03-templates-01-Hva-skjer-00-hva-skjer/03-templates-01-Hva-skjer-00-hva-skjer.rendered.html",
+          "lineagePattern": "templates-hva-skjer"
         }
       },
       {
@@ -737,11 +737,11 @@
         }
       },
       {
-        "v": "03-templates/01-Hva-skjer/00-hvaskjer.mustache",
+        "v": "03-templates/01-Hva-skjer/00-hva-skjer.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-01-hva-skjer-00-hvaskjer/04-pages-01-hva-skjer-00-hvaskjer.rendered.html",
-          "lineagePattern": "pages-hvaskjer"
+          "lineagePath": "../../patterns/04-pages-01-hva-skjer-00-hva-skjer/04-pages-01-hva-skjer-00-hva-skjer.rendered.html",
+          "lineagePattern": "pages-hva-skjer"
         }
       },
       {
@@ -827,7 +827,7 @@
         }
       },
       {
-        "v": "04-pages/01-hva-skjer/00-hvaskjer.mustache",
+        "v": "04-pages/01-hva-skjer/00-hva-skjer.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -1312,17 +1312,17 @@
         "value": {}
       },
       {
-        "v": "03-templates/01-Hva-skjer/00-hvaskjer.mustache",
+        "v": "03-templates/01-Hva-skjer/00-hva-skjer.mustache",
         "w": "02-organisms/00-global/_01-header-1.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/01-Hva-skjer/00-hvaskjer.mustache",
+        "v": "03-templates/01-Hva-skjer/00-hva-skjer.mustache",
         "w": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/01-Hva-skjer/00-hvaskjer.mustache",
+        "v": "03-templates/01-Hva-skjer/00-hva-skjer.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -1887,8 +1887,8 @@
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/00-hvaskjer.mustache",
-        "w": "03-templates/01-Hva-skjer/00-hvaskjer.mustache",
+        "v": "04-pages/01-hva-skjer/00-hva-skjer.mustache",
+        "w": "03-templates/01-Hva-skjer/00-hva-skjer.mustache",
         "value": {}
       },
       {

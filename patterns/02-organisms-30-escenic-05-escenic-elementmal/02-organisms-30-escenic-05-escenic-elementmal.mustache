@@ -8,13 +8,16 @@
     {{/ imgLandscape }}
     <div class="excerpt_story_container_ruu">
         <div class="sakstittel_ruu">
-            <h3 class="teaser_title">
-                <a href="#">
+            {{# stikktittel }}
+                <h3 class="teaser_kicker">{{ stikktittel }}</h3>
+            {{/ stikktittel }}
+            <h2 class="teaser_title">
+                <a href="{{ url }}" title="{{ tittel }}">
                     <span class="read_more_link_large">
                         {{ tittel }}
                     </span>
                 </a>
-            </h3>
+            </h2>
         </div>
         {{# ingress }}
         <p class="story_excerpt">		
