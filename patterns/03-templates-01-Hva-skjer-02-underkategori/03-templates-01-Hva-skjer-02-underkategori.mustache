@@ -1,0 +1,108 @@
+{{> organisms-header-1 }}
+<main id="innhold" tabindex="-1">
+        
+    <div class="hvaskjer_grid">        
+        
+        <div class="smMa desktop_centered">
+
+            {{> molecules-sideoverskrift-h2-med-lenke:mbl|page_header--hvaskjer(sidetittel: "Hva skjer", url: "{{ link.pages-hva-skjer }}") }}
+            
+            {{# meny }}
+            {{> molecules-hva-skjer-meny }}
+            {{/ meny }}
+            
+            {{> molecules-sideoverskrift-h1:mbl(sidetittel: "{{ sidetittel }}") }}
+            
+            
+            <!-- Escenic: toppsak -->
+            <div class="toppsak">                
+                {{# toppsak }}
+                    {{> organisms-escenic-elementmal }}
+                {{/ toppsak }}                
+            </div>
+            
+            
+            
+            
+            <!-- Escenic: Saker -->
+            <div class="row">
+                <div class="col_md_6 col_lg_6">                    
+                    {{# sakerSak1 }}
+                        {{> organisms-escenic-elementmal }}
+                    {{/ sakerSak1 }}
+                </div>
+                <div class="col_md_6 col_lg_6">                    
+                    {{# sakerSak2 }}
+                        {{> organisms-escenic-elementmal }}
+                    {{/ sakerSak2 }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col_md_4 col_lg_4">                    
+                    {{# sakerSak3 }}
+                        {{> organisms-escenic-elementmal }}
+                    {{/ sakerSak3 }}
+                </div>
+                <div class="col_md_4 col_lg_4">                    
+                    {{# sakerSak4 }}
+                        {{> organisms-escenic-elementmal }}
+                    {{/ sakerSak4 }}
+                </div>
+                <div class="col_md_4 col_lg_4">                    
+                    {{# sakerSak5 }}
+                        {{> organisms-escenic-elementmal }}
+                    {{/ sakerSak5 }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col_md_6 col_lg_6">                    
+                    {{# sakerSak6 }}
+                        {{> organisms-escenic-elementmal }}
+                    {{/ sakerSak6 }}
+                </div>
+                <div class="col_md_6 col_lg_6">                    
+                    {{# sakerSak7 }}
+                        {{> organisms-escenic-elementmal }}
+                    {{/ sakerSak7 }}
+                </div>
+            </div>
+
+            <div class="row teaser_small_container">
+                <div class="col_md_6 col_lg_6">                    
+                    {{# sakerSak8 }}
+                        {{> organisms-escenic-elementmal }}
+                    {{/ sakerSak8 }}
+                </div>
+                <div class="col_md_6 col_lg_6">                    
+                    {{# sakerSak9 }}
+                        {{> organisms-escenic-elementmal }}
+                    {{/ sakerSak9 }}                    
+                </div>
+            </div>
+
+        </div><!-- end .smMa desktop_centered -->
+            
+            
+            
+            
+            
+            
+            
+        <div class="smMa desktop_centered">            
+            
+                
+            
+            <!-- TEMPLATE:   archiveLink_jsp -->
+            <div class="toarchive">
+                <a href="#" class="readmore" title="Arkiv">Arkiv</a>
+            </div>
+        
+        
+        </div><!-- end .smMa desktop_centered -->
+    </div><!-- end .hvaskjer_grid -->
+    
+    
+</main>
+{{> organisms-footer }}

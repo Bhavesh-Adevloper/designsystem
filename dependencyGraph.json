@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1494944481449,
+  "timestamp": 1495109994391,
   "graph": {
     "options": {
       "directed": true,
@@ -455,6 +455,14 @@
         }
       },
       {
+        "v": "01-molecules/navigasjon/hva-skjer-meny.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-01-hva-skjer-04-hs-uk-artikkel/04-pages-01-hva-skjer-04-hs-uk-artikkel.rendered.html",
+          "lineagePattern": "pages-hs-uk-artikkel"
+        }
+      },
+      {
         "v": "01-molecules/navigasjon/navigasjonsboks-liten.mustache",
         "value": {
           "compileState": "clean",
@@ -560,7 +568,7 @@
         "v": "02-organisms/00-global/_01-header-1.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-01-hva-skjer-07-personalrommet/04-pages-01-hva-skjer-07-personalrommet.rendered.html",
+          "lineagePath": "../../patterns/04-pages-01-hva-skjer-17-personalrommet/04-pages-01-hva-skjer-17-personalrommet.rendered.html",
           "lineagePattern": "pages-personalrommet"
         }
       },
@@ -630,8 +638,8 @@
         "v": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-01-Hva-skjer-00-hva-skjer/03-templates-01-Hva-skjer-00-hva-skjer.rendered.html",
-          "lineagePattern": "templates-hva-skjer"
+          "lineagePath": "../../patterns/04-pages-01-hva-skjer-02-kultur-og-idrett/04-pages-01-hva-skjer-02-kultur-og-idrett.rendered.html",
+          "lineagePattern": "pages-kultur-og-idrett"
         }
       },
       {
@@ -700,7 +708,7 @@
         "v": "02-organisms/40-annet/62-modul-nyheter-liste.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-01-hva-skjer-04-aktuelle-tema/04-pages-01-hva-skjer-04-aktuelle-tema.rendered.html",
+          "lineagePath": "../../patterns/04-pages-01-hva-skjer-14-aktuelle-tema/04-pages-01-hva-skjer-14-aktuelle-tema.rendered.html",
           "lineagePattern": "pages-aktuelle-tema"
         }
       },
@@ -724,7 +732,7 @@
         "v": "02-organisms/40-annet/_98-escenic-luftkvalitet.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-01-hva-skjer-05-luftkvalitet/04-pages-01-hva-skjer-05-luftkvalitet.rendered.html",
+          "lineagePath": "../../patterns/04-pages-01-hva-skjer-15-luftkvalitet/04-pages-01-hva-skjer-15-luftkvalitet.rendered.html",
           "lineagePattern": "pages-luftkvalitet"
         }
       },
@@ -732,7 +740,7 @@
         "v": "02-organisms/40-annet/_99-escenic-personalrommet.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-01-hva-skjer-07-personalrommet/04-pages-01-hva-skjer-07-personalrommet.rendered.html",
+          "lineagePath": "../../patterns/04-pages-01-hva-skjer-17-personalrommet/04-pages-01-hva-skjer-17-personalrommet.rendered.html",
           "lineagePattern": "pages-personalrommet"
         }
       },
@@ -742,6 +750,12 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-01-hva-skjer-00-hva-skjer/04-pages-01-hva-skjer-00-hva-skjer.rendered.html",
           "lineagePattern": "pages-hva-skjer"
+        }
+      },
+      {
+        "v": "03-templates/01-Hva-skjer/02-underkategori.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -833,19 +847,37 @@
         }
       },
       {
-        "v": "04-pages/01-hva-skjer/04-aktuelle-tema.mustache",
+        "v": "04-pages/01-hva-skjer/02-kultur-og-idrett.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/01-hva-skjer/05-luftkvalitet.mustache",
+        "v": "04-pages/01-hva-skjer/03-hs-artikkel.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/01-hva-skjer/07-personalrommet.mustache",
+        "v": "04-pages/01-hva-skjer/04-hs-uk-artikkel.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/01-hva-skjer/14-aktuelle-tema.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -1318,11 +1350,51 @@
       },
       {
         "v": "03-templates/01-Hva-skjer/00-hva-skjer.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Hva-skjer/00-hva-skjer.mustache",
+        "w": "01-molecules/navigasjon/hva-skjer-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Hva-skjer/00-hva-skjer.mustache",
         "w": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
         "value": {}
       },
       {
         "v": "03-templates/01-Hva-skjer/00-hva-skjer.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Hva-skjer/02-underkategori.mustache",
+        "w": "02-organisms/00-global/_01-header-1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Hva-skjer/02-underkategori.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Hva-skjer/02-underkategori.mustache",
+        "w": "01-molecules/navigasjon/hva-skjer-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Hva-skjer/02-underkategori.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Hva-skjer/02-underkategori.mustache",
+        "w": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Hva-skjer/02-underkategori.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -1892,137 +1964,207 @@
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/04-aktuelle-tema.mustache",
+        "v": "04-pages/01-hva-skjer/02-kultur-og-idrett.mustache",
+        "w": "02-organisms/00-global/_01-header-1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/02-kultur-og-idrett.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/02-kultur-og-idrett.mustache",
+        "w": "01-molecules/navigasjon/hva-skjer-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/02-kultur-og-idrett.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/02-kultur-og-idrett.mustache",
+        "w": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/02-kultur-og-idrett.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/03-hs-artikkel.mustache",
+        "w": "02-organisms/00-global/_01-header-1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/03-hs-artikkel.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/03-hs-artikkel.mustache",
+        "w": "01-molecules/navigasjon/hva-skjer-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/03-hs-artikkel.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/04-hs-uk-artikkel.mustache",
+        "w": "02-organisms/00-global/_01-header-1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/04-hs-uk-artikkel.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/04-hs-uk-artikkel.mustache",
+        "w": "01-molecules/navigasjon/hva-skjer-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/04-hs-uk-artikkel.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/14-aktuelle-tema.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/04-aktuelle-tema.mustache",
+        "v": "04-pages/01-hva-skjer/14-aktuelle-tema.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/04-aktuelle-tema.mustache",
+        "v": "04-pages/01-hva-skjer/14-aktuelle-tema.mustache",
         "w": "02-organisms/40-annet/62-modul-nyheter-liste.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/04-aktuelle-tema.mustache",
+        "v": "04-pages/01-hva-skjer/14-aktuelle-tema.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/05-luftkvalitet.mustache",
+        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
         "w": "02-organisms/00-global/_01-header-1.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/05-luftkvalitet.mustache",
+        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/05-luftkvalitet.mustache",
+        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
         "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/05-luftkvalitet.mustache",
+        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
         "w": "01-molecules/navigasjon/org-meny.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/05-luftkvalitet.mustache",
+        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
         "w": "02-organisms/40-annet/_98-escenic-luftkvalitet.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/05-luftkvalitet.mustache",
+        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
         "w": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/05-luftkvalitet.mustache",
+        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
         "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/05-luftkvalitet.mustache",
+        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
         "w": "01-molecules/02-innhold/30-tout.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/05-luftkvalitet.mustache",
+        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
         "w": "01-molecules/02-innhold/_31-tout-luftkvalitet.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/05-luftkvalitet.mustache",
+        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
         "w": "02-organisms/20-kontakt/kontakt-byline.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/05-luftkvalitet.mustache",
+        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
         "w": "01-molecules/02-innhold/50-tilbakemelding.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/05-luftkvalitet.mustache",
+        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/07-personalrommet.mustache",
+        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
         "w": "02-organisms/00-global/_01-header-1.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/07-personalrommet.mustache",
+        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/07-personalrommet.mustache",
+        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
         "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/07-personalrommet.mustache",
+        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
         "w": "01-molecules/navigasjon/org-meny.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/07-personalrommet.mustache",
+        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
         "w": "02-organisms/40-annet/_99-escenic-personalrommet.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/07-personalrommet.mustache",
+        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
         "w": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/07-personalrommet.mustache",
+        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
         "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/07-personalrommet.mustache",
+        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
         "w": "01-molecules/02-innhold/30-tout.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/07-personalrommet.mustache",
+        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
         "w": "02-organisms/20-kontakt/kontakt-byline.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/07-personalrommet.mustache",
+        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
         "w": "01-molecules/02-innhold/50-tilbakemelding.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/01-hva-skjer/07-personalrommet.mustache",
+        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },

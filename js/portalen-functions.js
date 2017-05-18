@@ -122,6 +122,24 @@ function orgMenuToggle() {
 }
 
 
+// Mobile menu toggle
+function mobMenuToggle() {
+    
+    $("#js_mob_menu_container").addClass("mob_menu_collapsed");
+    $(".mob_menu_header").click( function() {
+        if ( $(this).parent().hasClass("mob_menu_collapsed")) {
+            $(this).parent().removeClass("mob_menu_collapsed");
+            $(this).parent().addClass("mob_menu_expanded");
+            return false;
+        } else {
+            $(this).parent().addClass("mob_menu_collapsed");
+            $(this).parent().removeClass("mob_menu_expanded");
+            return false;
+        }
+    });
+}
+
+
 
 
 // Different heights for the page 'Tjenestekategori'
@@ -258,6 +276,7 @@ $(document).ready(function () {
     addCategoryHeights();
     feedbackToggle();
     orgMenuToggle();
+    mobMenuToggle();
     breadcrumbs();
     $(".js_chat_link").click(function() { return false; });
     selectYear();
