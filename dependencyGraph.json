@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1495109994391,
+  "timestamp": 1495113635922,
   "graph": {
     "options": {
       "directed": true,
@@ -474,8 +474,8 @@
         "v": "01-molecules/navigasjon/navigasjonsboks-stor.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-03-Tjenester-20-tjenestetilbud/03-templates-03-Tjenester-20-tjenestetilbud.rendered.html",
-          "lineagePattern": "templates-tjenestetilbud"
+          "lineagePath": "../../patterns/03-templates-_00-forside/03-templates-_00-forside.rendered.html",
+          "lineagePattern": "templates-forside"
         }
       },
       {
@@ -1945,7 +1945,17 @@
       },
       {
         "v": "03-templates/_00-forside.mustache",
-        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "w": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/_00-forside.mustache",
+        "w": "01-molecules/navigasjon/navigasjonsboks-stor.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/_00-forside.mustache",
+        "w": "02-organisms/40-annet/30-service-snarvei.mustache",
         "value": {}
       },
       {

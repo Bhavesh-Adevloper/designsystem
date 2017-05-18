@@ -1,12 +1,45 @@
 {{> organisms-header }}
-<main id="innhold" tabindex="-1" class="smMa desktop_centered">    
-    <article>
-        
-        {{> molecules-sideoverskrift-h1(sidetittel: "Forside") }}
-        
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+            
+    <div class="hvaskjer_grid mbn">
+        <div class="row">
+            <div class="col_md_6 col_lg_6">                    
+                <!-- Escenic: toppsak -->           
+                {{# toppsak }}
+                    {{> organisms-escenic-elementmal }}
+                {{/ toppsak }}
+            </div>
+            <div class="col_md_6 col_lg_6"> 
+                
+                <ul>
+                    <li><h2 style="margin: 0;"><a href="{{ link.pages-hs-uk-artikkel }}" title="">KulTur 28. mai</a></h2></li>
 
-        <p>Kommer..</p>
+                    <li><h2 style="margin: 0;"><a href="{{ link.pages-artikkel }}" title="">Dette er en testartikkel</a></h2></li>
 
-    </article>    
+                    <li><h2 style="margin: 0;"><a href="{{ link.pages-artikkel-2 }}" title="">Eiendomsskatt</a></h2></li>
+                </ul>
+                
+                <h3><a href="{{ link.pages-hva-skjer }}" title="">Hva skjer</a></h3>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <div class="row_no_clearfix service_link_container equal_height_container">
+        {{# navigasjonStor }}
+        {{> molecules-navigasjonsboks-stor }}
+        {{/ navigasjonStor }}
+    </div>
+
+    {{# feilmelding }}
+    {{> organisms-service-snarvei }}
+    {{/ feilmelding }}
+            
+     
+
+   
 </main>
 {{> organisms-footer }}
