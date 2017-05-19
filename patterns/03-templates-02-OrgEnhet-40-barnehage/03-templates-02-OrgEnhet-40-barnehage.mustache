@@ -61,49 +61,17 @@
             <div class="clearfix"></div>
             <section class="row_no_clearfix equal_height_container mbxl">
                 
-                <div class="col_md_6 col_lg_6 equal_height_item">
-                    <div class="tout_container">
-                        <h2 class="tout_header">
-                            <a href="#" title="Visjon for bergensbarnehagene">
-                                Visjon for bergensbarnehagene
-                            </a>
-                        </h2>
-                        <a href="#" title="Booking" class="tout_img_link">
-                            <img src="https://www.bergen.kommune.no/bk/multimedia/archive/00108/barnehage_visjon_108909a.gif" alt="Visjon logo" class="tout_img">
-                        </a>
-                        <div class="tout_excerpt">
-                            <p>Bergen skal bli Norges beste by å vokse opp i. De kommunale barnehagene i Bergen skal gi alle barn et mangfoldig tilbud av høy faglig kvalitet.</p>
-<p><a href="/omkommunen/avdelinger/seksjon-barnehage/9100">Våre verdier</a></p>
-                        </div>
+                {{# visjon }}
+                    <div class="col_md_6 col_lg_6 equal_height_item">
+                        {{> molecules-tout-visjoner }}
                     </div>
-                </div>
+                {{/ visjon }}
                 
-                <div class="col_md_6 col_lg_6 equal_height_item">
-                    <div class="tout_container">
-                        <h2 class="tout_header">
-                            Viktige barnehagelenker
-                        </h2>
-                        <div class="tout_excerpt">
-                            <ul>
-                                <li>
-                                    <a href="http://www.bergen.kommune.no/basic30/dldoclink.asp?docid=BKDOK-2008-00244" class="external_link">Vedtekter for kommunale barnehager i Bergen<span class="external_icon">&nbsp;</span></a>
-                                </li>
-                                <li>
-                                    <a href="http://www.bergen.kommune.no/basic30/dldoclink.asp?docid=BKDOK-2015-00155" class="external_link">Særskilte vedtekter for Søre Skogvei, Ny-Krohnborg og Solheimslien barnehager<span class="external_icon">&nbsp;</span></a>
-                                </li>
-                                <li>
-                                    <a href="http://www.udir.no/nullmobbing/" title="Nettsted mot mobbing" class="external_link">Nullmobbing.no<span class="external_icon">&nbsp;</span></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.bufdir.no/foreldrehverdag/" class="external_link">Foreldrehverdag.no<span class="external_icon">&nbsp;</span></a>
-                                </li>
-                                <li>
-                                    <a href="/personalrommet">Personalrommet, nettsted for ansatte i skole og barnehage</a>
-                                </li>
-                            </ul>
-                        </div>
+                {{# viktigebarnehagelenker }}
+                    <div class="col_md_6 col_lg_6 equal_height_item">
+                        {{> molecules-tout-viktige-barnehagelenker }}
                     </div>
-                </div>
+                {{/ viktigebarnehagelenker }}
                 
                 {{# etjenester50 }}
                     <div class="col_md_6 col_lg_6 equal_height_item">

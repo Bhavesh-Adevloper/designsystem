@@ -41,18 +41,11 @@
             <div class="clearfix"></div>
             <section class="row_no_clearfix equal_height_container mbxl">
                 
-                <div class="col_md_6 col_lg_6 equal_height_item">
-                    <div class="tout_container">
-                        <h2 class="tout_header">
-                            Inneklimaet i skolene
-                        </h2>
-                        <div class="tout_excerpt">
-                            Flere av skolene i Bergen har ikke godkjent inneklima.
-                            <br>
-                            <a href="https://www.bergen.kommune.no/aktuelt/tema/inneklimaet-i-skolen"> Les om arbeidet med å utbedre inneklimaet og skolebyggene</a>
-                        </div>
+                {{# inneklima }}
+                    <div class="col_md_6 col_lg_6 equal_height_item">
+                        {{> molecules-inneklima }}
                     </div>
-                </div>
+                {{/ inneklima }}
                 
                 {{# etjenester50 }}
                     <div class="col_md_6 col_lg_6 equal_height_item">

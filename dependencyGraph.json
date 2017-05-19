@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1495190195180,
+  "timestamp": 1495198080054,
   "graph": {
     "options": {
       "directed": true,
@@ -326,6 +326,38 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
           "lineagePattern": "pages-etjeneste-eksempler"
+        }
+      },
+      {
+        "v": "01-molecules/02-innhold/_32-tout-viktige-skolelenker.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-02-OrgEnhet-37-skole/03-templates-02-OrgEnhet-37-skole.rendered.html",
+          "lineagePattern": "templates-skole"
+        }
+      },
+      {
+        "v": "01-molecules/02-innhold/_33-tout-inneklima.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-02-OrgEnhet-38-leirskole/03-templates-02-OrgEnhet-38-leirskole.rendered.html",
+          "lineagePattern": "templates-leirskole"
+        }
+      },
+      {
+        "v": "01-molecules/02-innhold/_34-tout-viktige-barnehagelenker.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-02-OrgEnhet-40-barnehage/03-templates-02-OrgEnhet-40-barnehage.rendered.html",
+          "lineagePattern": "templates-barnehage"
+        }
+      },
+      {
+        "v": "01-molecules/02-innhold/_35-tout-visjoner.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-02-OrgEnhet-40-barnehage/03-templates-02-OrgEnhet-40-barnehage.rendered.html",
+          "lineagePattern": "templates-barnehage"
         }
       },
       {
@@ -1725,6 +1757,16 @@
       },
       {
         "v": "03-templates/02-OrgEnhet/37-skole.mustache",
+        "w": "01-molecules/02-innhold/_32-tout-viktige-skolelenker.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/02-OrgEnhet/37-skole.mustache",
+        "w": "01-molecules/02-innhold/_33-tout-inneklima.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/02-OrgEnhet/37-skole.mustache",
         "w": "01-molecules/02-innhold/30-tout.mustache",
         "value": {}
       },
@@ -1781,6 +1823,11 @@
       {
         "v": "03-templates/02-OrgEnhet/38-leirskole.mustache",
         "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/02-OrgEnhet/38-leirskole.mustache",
+        "w": "01-molecules/02-innhold/_33-tout-inneklima.mustache",
         "value": {}
       },
       {
@@ -1866,6 +1913,16 @@
       {
         "v": "03-templates/02-OrgEnhet/40-barnehage.mustache",
         "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/02-OrgEnhet/40-barnehage.mustache",
+        "w": "01-molecules/02-innhold/_35-tout-visjoner.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/02-OrgEnhet/40-barnehage.mustache",
+        "w": "01-molecules/02-innhold/_34-tout-viktige-barnehagelenker.mustache",
         "value": {}
       },
       {
