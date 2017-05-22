@@ -1,11 +1,14 @@
 {{> organisms-header-1 }}
+{{> organisms-brodsmuler }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
 
+    <!--
     {{> molecules-sideoverskrift-h2-med-lenke:mbl|page_header--hvaskjer(sidetittel: "Hva skjer", url: "{{ link.pages-hva-skjer }}") }}
-
+    
     {{# meny }}
     {{> molecules-hva-skjer-meny }}
     {{/ meny }}
+    -->
 
 
     <div class="row">
@@ -13,7 +16,7 @@
 
 
 
-                    <div id="article_multipurpose">
+                    <div id="article_multipurpose" class="mbxxl">
 
                         <div id="topPicture" class="related_image">
                             <a href='#' class='lightbox image_link' title='Dette er en testartikkel bildeteksten. &lt;div class=&quot;photographer&quot;&gt;BILDE: KRISTIN HAUGE KLEMSDAL&lt;/div&gt;'>
@@ -76,6 +79,11 @@
                             </div><!-- end module -->
                         </div><!-- end newsDetail -->
                     </div><!-- end article_multipurpose -->
+
+
+                <a href="{{ link.pages-kultur-og-idrett }}" title="" class="button">
+                    &lt; Tilbake til Hva skjer
+                </a>
 
 
 

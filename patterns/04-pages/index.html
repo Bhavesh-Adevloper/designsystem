@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1495198078612" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1495198078612" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1495203169595" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1495203169595" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <!-- never cache patterns -->
@@ -16,8 +16,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1495198078612" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1495198078612" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1495203169595" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1495203169595" media="all" />
 
     <!-- End Pattern Lab -->
     
@@ -177,9 +177,10 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                     Kultur og idrett
                 </a>
             </li>
-            <li class="hvaskjer_additional_menu_container">
-                <a title="Mer" href="#" class="open_additional_menu_link">
+            <li id="js_hvaskjer_additional_menu_container" class="hvaskjer_additional_menu_container">
+                <a title="Mer" href="#" class="toggle_additional_menu_link">
                     Mer
+                    <span class="icon"></span>
                 </a>
                 <ul class="hvaskjer_additional_menu">
                         <li class="">
@@ -784,9 +785,10 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                     Kultur og idrett
                 </a>
             </li>
-            <li class="hvaskjer_additional_menu_container">
-                <a title="Mer" href="#" class="open_additional_menu_link">
+            <li id="js_hvaskjer_additional_menu_container" class="hvaskjer_additional_menu_container">
+                <a title="Mer" href="#" class="toggle_additional_menu_link">
                     Mer
+                    <span class="icon"></span>
                 </a>
                 <ul class="hvaskjer_additional_menu">
                         <li class="">
@@ -1286,8 +1288,24 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 </header>
 
 
+<div class="smMa desktop_centered bc_container js_breadcrumbs clearfix">
+    <div class="bc_label mobile">Gå tilbake til:</div>
+    <div class="bc_label desktop">Du er her:</div>
+    <div class="bc_list_container">
+        <ul class="bc_list">
+            
+                <li><a href="&#x2F;patterns&#x2F;04-pages-00-forside&#x2F;04-pages-00-forside.rendered.html" title="Forside">Forside</a></li>
+            
+                <li class="bc_last_link"><a href="&#x2F;patterns&#x2F;04-pages-01-hva-skjer-00-hva-skjer&#x2F;04-pages-01-hva-skjer-00-hva-skjer.rendered.html" title="Hva skjer">Hva skjer</a></li>
+            
+                <li class="bc_current">Spør oss om trafikk under sykkel-VM</li>
+            
+        </ul>
+    </div>
+</div>
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
 
+    <!--
     <div class="h2_page_header_with_link mbl page_header--hvaskjer">
     <h2>
         <a href="&#x2F;patterns&#x2F;04-pages-01-hva-skjer-00-hva-skjer&#x2F;04-pages-01-hva-skjer-00-hva-skjer.rendered.html" title="Hva skjer" class="page_header_link">
@@ -1295,7 +1313,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         </a>
     </h2>
 </div>
-
+    
     <nav id="js_mob_menu_container" class="mob_menu_container mbl">
     <a href="" title="Meny" class="mob_menu_header">
         Meny
@@ -1312,9 +1330,10 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                     Kultur og idrett
                 </a>
             </li>
-            <li class="hvaskjer_additional_menu_container">
-                <a title="Mer" href="#" class="open_additional_menu_link">
+            <li id="js_hvaskjer_additional_menu_container" class="hvaskjer_additional_menu_container">
+                <a title="Mer" href="#" class="toggle_additional_menu_link">
                     Mer
+                    <span class="icon"></span>
                 </a>
                 <ul class="hvaskjer_additional_menu">
                         <li class="">
@@ -1341,6 +1360,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
             </li>
     </ul>
 </nav>
+    -->
 
 
     <div class="row">
@@ -1348,7 +1368,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 
 
 
-                    <div id="article_multipurpose">
+                    <div id="article_multipurpose" class="mbxxl">
 
                         <div id="topPicture" class="related_image">
                             <a href='#' class='lightbox image_link' title='Dette er en testartikkel bildeteksten. &lt;div class=&quot;photographer&quot;&gt;BILDE: KRISTIN HAUGE KLEMSDAL&lt;/div&gt;'>
@@ -1411,6 +1431,11 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                             </div><!-- end module -->
                         </div><!-- end newsDetail -->
                     </div><!-- end article_multipurpose -->
+
+
+                <a href="&#x2F;patterns&#x2F;04-pages-01-hva-skjer-02-kultur-og-idrett&#x2F;04-pages-01-hva-skjer-02-kultur-og-idrett.rendered.html" title="" class="button">
+                    &lt; Tilbake til Hva skjer
+                </a>
 
 
 
@@ -1534,7 +1559,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
   </footer>
   </div>
   <script type="text/json" id="sg-pattern-data-pages-hs-artikkel" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-header-1","lineagePath":"../../patterns/02-organisms-00-global-_01-header-1/02-organisms-00-global-_01-header-1.rendered.html"},{"lineagePattern":"molecules-sideoverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-10-sideoverskrift-h2-med-lenke/01-molecules-00-overskrifter-10-sideoverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-hva-skjer-meny","lineagePath":"../../patterns/01-molecules-navigasjon-hva-skjer-meny/01-molecules-navigasjon-hva-skjer-meny.rendered.html"},{"lineagePattern":"organisms-footer","lineagePath":"../../patterns/02-organisms-00-global-01-footer/02-organisms-00-global-01-footer.rendered.html"}],"lineage":[{"lineagePattern":"organisms-header-1","lineagePath":"../../patterns/02-organisms-00-global-_01-header-1/02-organisms-00-global-_01-header-1.rendered.html"},{"lineagePattern":"molecules-sideoverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-10-sideoverskrift-h2-med-lenke/01-molecules-00-overskrifter-10-sideoverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-hva-skjer-meny","lineagePath":"../../patterns/01-molecules-navigasjon-hva-skjer-meny/01-molecules-navigasjon-hva-skjer-meny.rendered.html"},{"lineagePattern":"organisms-footer","lineagePath":"../../patterns/02-organisms-00-global-01-footer/02-organisms-00-global-01-footer.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"hva-skjer"},"patternExtension":"mustache","patternName":"Hs Artikkel","patternPartial":"pages-hs-artikkel","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-header-1","lineagePath":"../../patterns/02-organisms-00-global-_01-header-1/02-organisms-00-global-_01-header-1.rendered.html"},{"lineagePattern":"organisms-brodsmuler","lineagePath":"../../patterns/02-organisms-00-global-02-brodsmuler/02-organisms-00-global-02-brodsmuler.rendered.html"},{"lineagePattern":"molecules-sideoverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-10-sideoverskrift-h2-med-lenke/01-molecules-00-overskrifter-10-sideoverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-hva-skjer-meny","lineagePath":"../../patterns/01-molecules-navigasjon-hva-skjer-meny/01-molecules-navigasjon-hva-skjer-meny.rendered.html"},{"lineagePattern":"organisms-footer","lineagePath":"../../patterns/02-organisms-00-global-01-footer/02-organisms-00-global-01-footer.rendered.html"}],"lineage":[{"lineagePattern":"organisms-header-1","lineagePath":"../../patterns/02-organisms-00-global-_01-header-1/02-organisms-00-global-_01-header-1.rendered.html"},{"lineagePattern":"organisms-brodsmuler","lineagePath":"../../patterns/02-organisms-00-global-02-brodsmuler/02-organisms-00-global-02-brodsmuler.rendered.html"},{"lineagePattern":"molecules-sideoverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-10-sideoverskrift-h2-med-lenke/01-molecules-00-overskrifter-10-sideoverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-hva-skjer-meny","lineagePath":"../../patterns/01-molecules-navigasjon-hva-skjer-meny/01-molecules-navigasjon-hva-skjer-meny.rendered.html"},{"lineagePattern":"organisms-footer","lineagePath":"../../patterns/02-organisms-00-global-01-footer/02-organisms-00-global-01-footer.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"hva-skjer"},"patternExtension":"mustache","patternName":"Hs Artikkel","patternPartial":"pages-hs-artikkel","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="pages-hs-uk-artikkel" class="sg-pattern">
@@ -1645,8 +1670,25 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 </header>
 
 
+<div class="smMa desktop_centered bc_container js_breadcrumbs clearfix">
+    <div class="bc_label mobile">Gå tilbake til:</div>
+    <div class="bc_label desktop">Du er her:</div>
+    <div class="bc_list_container">
+        <ul class="bc_list">
+            
+                <li><a href="&#x2F;patterns&#x2F;04-pages-00-forside&#x2F;04-pages-00-forside.rendered.html" title="Forside">Forside</a></li>
+                <li><a href="&#x2F;patterns&#x2F;04-pages-01-hva-skjer-00-hva-skjer&#x2F;04-pages-01-hva-skjer-00-hva-skjer.rendered.html" title="Hva skjer">Hva skjer</a></li>
+            
+                <li class="bc_last_link"><a href="&#x2F;patterns&#x2F;04-pages-01-hva-skjer-02-kultur-og-idrett&#x2F;04-pages-01-hva-skjer-02-kultur-og-idrett.rendered.html" title="Kultur og idrett">Kultur og idrett</a></li>
+            
+                <li class="bc_current">KulTur 28. mai</li>
+            
+        </ul>
+    </div>
+</div>
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
 
+    <!--
     <div class="h2_page_header_with_link mbl page_header--hvaskjer">
     <h2>
         <a href="&#x2F;patterns&#x2F;04-pages-01-hva-skjer-00-hva-skjer&#x2F;04-pages-01-hva-skjer-00-hva-skjer.rendered.html" title="Hva skjer" class="page_header_link">
@@ -1671,9 +1713,10 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                     Kultur og idrett
                 </a>
             </li>
-            <li class="hvaskjer_additional_menu_container">
-                <a title="Mer" href="#" class="open_additional_menu_link">
+            <li id="js_hvaskjer_additional_menu_container" class="hvaskjer_additional_menu_container">
+                <a title="Mer" href="#" class="toggle_additional_menu_link">
                     Mer
+                    <span class="icon"></span>
                 </a>
                 <ul class="hvaskjer_additional_menu">
                         <li class="">
@@ -1700,7 +1743,8 @@ https://github.com/pattern-lab/patternlab-php/issues/304
             </li>
     </ul>
 </nav>
-
+    -->
+    
 
     <div class="row">
         <div class="col_md_12 col_lg_8 org_main_col">
@@ -1897,7 +1941,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
   </footer>
   </div>
   <script type="text/json" id="sg-pattern-data-pages-hs-uk-artikkel" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-header-1","lineagePath":"../../patterns/02-organisms-00-global-_01-header-1/02-organisms-00-global-_01-header-1.rendered.html"},{"lineagePattern":"molecules-sideoverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-10-sideoverskrift-h2-med-lenke/01-molecules-00-overskrifter-10-sideoverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-hva-skjer-meny","lineagePath":"../../patterns/01-molecules-navigasjon-hva-skjer-meny/01-molecules-navigasjon-hva-skjer-meny.rendered.html"},{"lineagePattern":"organisms-footer","lineagePath":"../../patterns/02-organisms-00-global-01-footer/02-organisms-00-global-01-footer.rendered.html"}],"lineage":[{"lineagePattern":"organisms-header-1","lineagePath":"../../patterns/02-organisms-00-global-_01-header-1/02-organisms-00-global-_01-header-1.rendered.html"},{"lineagePattern":"molecules-sideoverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-10-sideoverskrift-h2-med-lenke/01-molecules-00-overskrifter-10-sideoverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-hva-skjer-meny","lineagePath":"../../patterns/01-molecules-navigasjon-hva-skjer-meny/01-molecules-navigasjon-hva-skjer-meny.rendered.html"},{"lineagePattern":"organisms-footer","lineagePath":"../../patterns/02-organisms-00-global-01-footer/02-organisms-00-global-01-footer.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"hva-skjer"},"patternExtension":"mustache","patternName":"Hs Uk Artikkel","patternPartial":"pages-hs-uk-artikkel","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-header-1","lineagePath":"../../patterns/02-organisms-00-global-_01-header-1/02-organisms-00-global-_01-header-1.rendered.html"},{"lineagePattern":"organisms-brodsmuler","lineagePath":"../../patterns/02-organisms-00-global-02-brodsmuler/02-organisms-00-global-02-brodsmuler.rendered.html"},{"lineagePattern":"molecules-sideoverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-10-sideoverskrift-h2-med-lenke/01-molecules-00-overskrifter-10-sideoverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-hva-skjer-meny","lineagePath":"../../patterns/01-molecules-navigasjon-hva-skjer-meny/01-molecules-navigasjon-hva-skjer-meny.rendered.html"},{"lineagePattern":"organisms-footer","lineagePath":"../../patterns/02-organisms-00-global-01-footer/02-organisms-00-global-01-footer.rendered.html"}],"lineage":[{"lineagePattern":"organisms-header-1","lineagePath":"../../patterns/02-organisms-00-global-_01-header-1/02-organisms-00-global-_01-header-1.rendered.html"},{"lineagePattern":"organisms-brodsmuler","lineagePath":"../../patterns/02-organisms-00-global-02-brodsmuler/02-organisms-00-global-02-brodsmuler.rendered.html"},{"lineagePattern":"molecules-sideoverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-10-sideoverskrift-h2-med-lenke/01-molecules-00-overskrifter-10-sideoverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-hva-skjer-meny","lineagePath":"../../patterns/01-molecules-navigasjon-hva-skjer-meny/01-molecules-navigasjon-hva-skjer-meny.rendered.html"},{"lineagePattern":"organisms-footer","lineagePath":"../../patterns/02-organisms-00-global-01-footer/02-organisms-00-global-01-footer.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"hva-skjer"},"patternExtension":"mustache","patternName":"Hs Uk Artikkel","patternPartial":"pages-hs-uk-artikkel","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="pages-aktuelle-tema" class="sg-pattern">
@@ -8837,6 +8881,111 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         </p>
     </div>
 </div>
+                </div>               
+                
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    <div class="tout_container">
+    <h2 class="tout_header">
+        <a href="#" title="Visjon for bergensbarnehagene">
+            Visjon for bergensbarnehagene
+        </a>
+    </h2>
+    <a href="#" title="Booking" class="tout_img_link">
+        <img src="https://www.bergen.kommune.no/bk/multimedia/archive/00108/barnehage_visjon_108909a.gif" alt="Visjon logo" class="tout_img">
+    </a>
+    <div class="tout_excerpt">
+        <p>Bergen skal bli Norges beste by å vokse opp i. De kommunale barnehagene i Bergen skal gi alle barn et mangfoldig tilbud av høy faglig kvalitet.</p>
+<p><a href="/omkommunen/avdelinger/seksjon-barnehage/9100">Våre verdier</a></p>
+    </div>
+</div>
+                </div>
+
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    <div class="tout_container">
+    <h2 class="tout_header">
+        Viktige barnehagelenker
+    </h2>
+    <div class="tout_excerpt">
+        <ul>
+            <li>
+                <a href="http://www.bergen.kommune.no/basic30/dldoclink.asp?docid=BKDOK-2008-00244" class="external_link">Vedtekter for kommunale barnehager i Bergen<span class="external_icon">&nbsp;</span></a>
+            </li>
+            <li>
+                <a href="http://www.bergen.kommune.no/basic30/dldoclink.asp?docid=BKDOK-2015-00155" class="external_link">Særskilte vedtekter for Søre Skogvei, Ny-Krohnborg og Solheimslien barnehager<span class="external_icon">&nbsp;</span></a>
+            </li>
+            <li>
+                <a href="http://www.udir.no/nullmobbing/" title="Nettsted mot mobbing" class="external_link">Nullmobbing.no<span class="external_icon">&nbsp;</span></a>
+            </li>
+            <li>
+                <a href="https://www.bufdir.no/foreldrehverdag/" class="external_link">Foreldrehverdag.no<span class="external_icon">&nbsp;</span></a>
+            </li>
+            <li>
+                <a href="/personalrommet">Personalrommet, nettsted for ansatte i skole og barnehage</a>
+            </li>
+        </ul>
+    </div>
+</div>
+                </div>
+                
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    <div class="tout_container">
+    <h2 class="tout_header">
+        Viktige skolelenker
+    </h2>
+    <div class="tout_excerpt">
+        <ul>
+            <li>
+                <a href="http://www.bibsyst.no/kundeliste/skole.php#bergen">
+                    Søk i skolebiblioteket
+                </a>
+            </li>
+            <li>
+                <a href="https://bergen.itslearning.com/index.aspx">
+                    It's learning: Logg inn
+                </a>
+            </li>
+            <li>
+                <a href="http://www.udir.no/nullmobbing/" title="Nettsted mot mobbing">
+                    Nullmobbing.no
+                </a>
+            </li>
+            <li>
+                <a href="https://www.bufdir.no/foreldrehverdag/">
+                    Foreldrehverdag.no
+                </a>
+            </li>
+            <li>
+                <a href="http://www.fug.no/">
+                    FUG, Foreldreutvalget for grunnopplæringen
+                </a>
+            </li>
+            <li>
+                <a href="https://www.bergen.kommune.no/aktuelt/personalrommet">
+                    Personalrommet, nettsted for ansatte i skole og barnehage
+                </a>
+            </li>
+            <li>
+                <a href="http://www.skolemelk.no">skolemelk.no</a>
+            </li>
+            <li>
+                <a href="http://www.skolefrukt.no">skolefrukt.no</a>
+            </li>
+        </ul>
+    </div>
+</div>
+                </div>
+
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    <div class="tout_container">
+    <h2 class="tout_header">
+        Inneklimaet i skolene
+    </h2>
+    <div class="tout_excerpt">
+        Flere av skolene i Bergen har ikke godkjent inneklima.
+        <br>
+        <a href="https://www.bergen.kommune.no/aktuelt/tema/inneklimaet-i-skolen"> Les om arbeidet med å utbedre inneklimaet og skolebyggene</a>
+    </div>
+</div>
                 </div>
                 
                 
@@ -9009,7 +9158,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
   </footer>
   </div>
   <script type="text/json" id="sg-pattern-data-pages-etjeneste-eksempler" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-header-varianter","lineagePath":"../../patterns/02-organisms-00-global-_00-header-varianter/02-organisms-00-global-_00-header-varianter.rendered.html"},{"lineagePattern":"organisms-brodsmuler","lineagePath":"../../patterns/02-organisms-00-global-02-brodsmuler/02-organisms-00-global-02-brodsmuler.rendered.html"},{"lineagePattern":"molecules-sideoverskrift-h1","lineagePath":"../../patterns/01-molecules-00-overskrifter-00-sideoverskrift-h1/01-molecules-00-overskrifter-00-sideoverskrift-h1.rendered.html"},{"lineagePattern":"molecules-org-meny","lineagePath":"../../patterns/01-molecules-navigasjon-org-meny/01-molecules-navigasjon-org-meny.rendered.html"},{"lineagePattern":"molecules-varsel","lineagePath":"../../patterns/01-molecules-02-innhold-05-varsel/01-molecules-02-innhold-05-varsel.rendered.html"},{"lineagePattern":"molecules-notis","lineagePath":"../../patterns/01-molecules-02-innhold-06-notis/01-molecules-02-innhold-06-notis.rendered.html"},{"lineagePattern":"molecules-ekstern-url","lineagePath":"../../patterns/01-molecules-02-innhold-11-ekstern-url/01-molecules-02-innhold-11-ekstern-url.rendered.html"},{"lineagePattern":"organisms-kontakt-liten","lineagePath":"../../patterns/02-organisms-20-kontakt-kontakt-liten/02-organisms-20-kontakt-kontakt-liten.rendered.html"},{"lineagePattern":"organisms-modul-med-overskrift","lineagePath":"../../patterns/02-organisms-40-annet-06-modul-med-overskrift/02-organisms-40-annet-06-modul-med-overskrift.rendered.html"},{"lineagePattern":"organisms-tjenester-og-skjema-liten","lineagePath":"../../patterns/02-organisms-40-annet-08-tjenester-og-skjema-liten/02-organisms-40-annet-08-tjenester-og-skjema-liten.rendered.html"},{"lineagePattern":"molecules-moduloverskrift-h2","lineagePath":"../../patterns/01-molecules-00-overskrifter-30-moduloverskrift-h2/01-molecules-00-overskrifter-30-moduloverskrift-h2.rendered.html"},{"lineagePattern":"organisms-modul-tall-og-fakta","lineagePath":"../../patterns/02-organisms-40-annet-_06-modul-tall-og-fakta/02-organisms-40-annet-_06-modul-tall-og-fakta.rendered.html"},{"lineagePattern":"molecules-tout","lineagePath":"../../patterns/01-molecules-02-innhold-30-tout/01-molecules-02-innhold-30-tout.rendered.html"},{"lineagePattern":"molecules-tout-stoltzen","lineagePath":"../../patterns/01-molecules-02-innhold-_30-tout-stoltzen/01-molecules-02-innhold-_30-tout-stoltzen.rendered.html"},{"lineagePattern":"molecules-tout-luftkvalitet","lineagePath":"../../patterns/01-molecules-02-innhold-_31-tout-luftkvalitet/01-molecules-02-innhold-_31-tout-luftkvalitet.rendered.html"},{"lineagePattern":"organisms-footer","lineagePath":"../../patterns/02-organisms-00-global-01-footer/02-organisms-00-global-01-footer.rendered.html"}],"lineage":[{"lineagePattern":"organisms-header-varianter","lineagePath":"../../patterns/02-organisms-00-global-_00-header-varianter/02-organisms-00-global-_00-header-varianter.rendered.html"},{"lineagePattern":"organisms-brodsmuler","lineagePath":"../../patterns/02-organisms-00-global-02-brodsmuler/02-organisms-00-global-02-brodsmuler.rendered.html"},{"lineagePattern":"molecules-sideoverskrift-h1","lineagePath":"../../patterns/01-molecules-00-overskrifter-00-sideoverskrift-h1/01-molecules-00-overskrifter-00-sideoverskrift-h1.rendered.html"},{"lineagePattern":"molecules-org-meny","lineagePath":"../../patterns/01-molecules-navigasjon-org-meny/01-molecules-navigasjon-org-meny.rendered.html"},{"lineagePattern":"molecules-varsel","lineagePath":"../../patterns/01-molecules-02-innhold-05-varsel/01-molecules-02-innhold-05-varsel.rendered.html"},{"lineagePattern":"molecules-notis","lineagePath":"../../patterns/01-molecules-02-innhold-06-notis/01-molecules-02-innhold-06-notis.rendered.html"},{"lineagePattern":"molecules-ekstern-url","lineagePath":"../../patterns/01-molecules-02-innhold-11-ekstern-url/01-molecules-02-innhold-11-ekstern-url.rendered.html"},{"lineagePattern":"organisms-kontakt-liten","lineagePath":"../../patterns/02-organisms-20-kontakt-kontakt-liten/02-organisms-20-kontakt-kontakt-liten.rendered.html"},{"lineagePattern":"organisms-modul-med-overskrift","lineagePath":"../../patterns/02-organisms-40-annet-06-modul-med-overskrift/02-organisms-40-annet-06-modul-med-overskrift.rendered.html"},{"lineagePattern":"organisms-tjenester-og-skjema-liten","lineagePath":"../../patterns/02-organisms-40-annet-08-tjenester-og-skjema-liten/02-organisms-40-annet-08-tjenester-og-skjema-liten.rendered.html"},{"lineagePattern":"molecules-moduloverskrift-h2","lineagePath":"../../patterns/01-molecules-00-overskrifter-30-moduloverskrift-h2/01-molecules-00-overskrifter-30-moduloverskrift-h2.rendered.html"},{"lineagePattern":"organisms-modul-tall-og-fakta","lineagePath":"../../patterns/02-organisms-40-annet-_06-modul-tall-og-fakta/02-organisms-40-annet-_06-modul-tall-og-fakta.rendered.html"},{"lineagePattern":"molecules-tout","lineagePath":"../../patterns/01-molecules-02-innhold-30-tout/01-molecules-02-innhold-30-tout.rendered.html"},{"lineagePattern":"molecules-tout-stoltzen","lineagePath":"../../patterns/01-molecules-02-innhold-_30-tout-stoltzen/01-molecules-02-innhold-_30-tout-stoltzen.rendered.html"},{"lineagePattern":"molecules-tout-luftkvalitet","lineagePath":"../../patterns/01-molecules-02-innhold-_31-tout-luftkvalitet/01-molecules-02-innhold-_31-tout-luftkvalitet.rendered.html"},{"lineagePattern":"organisms-footer","lineagePath":"../../patterns/02-organisms-00-global-01-footer/02-organisms-00-global-01-footer.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"orgenhet"},"patternExtension":"mustache","patternName":"Etjeneste Eksempler","patternPartial":"pages-etjeneste-eksempler","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-header-varianter","lineagePath":"../../patterns/02-organisms-00-global-_00-header-varianter/02-organisms-00-global-_00-header-varianter.rendered.html"},{"lineagePattern":"organisms-brodsmuler","lineagePath":"../../patterns/02-organisms-00-global-02-brodsmuler/02-organisms-00-global-02-brodsmuler.rendered.html"},{"lineagePattern":"molecules-sideoverskrift-h1","lineagePath":"../../patterns/01-molecules-00-overskrifter-00-sideoverskrift-h1/01-molecules-00-overskrifter-00-sideoverskrift-h1.rendered.html"},{"lineagePattern":"molecules-org-meny","lineagePath":"../../patterns/01-molecules-navigasjon-org-meny/01-molecules-navigasjon-org-meny.rendered.html"},{"lineagePattern":"molecules-varsel","lineagePath":"../../patterns/01-molecules-02-innhold-05-varsel/01-molecules-02-innhold-05-varsel.rendered.html"},{"lineagePattern":"molecules-notis","lineagePath":"../../patterns/01-molecules-02-innhold-06-notis/01-molecules-02-innhold-06-notis.rendered.html"},{"lineagePattern":"molecules-ekstern-url","lineagePath":"../../patterns/01-molecules-02-innhold-11-ekstern-url/01-molecules-02-innhold-11-ekstern-url.rendered.html"},{"lineagePattern":"organisms-kontakt-liten","lineagePath":"../../patterns/02-organisms-20-kontakt-kontakt-liten/02-organisms-20-kontakt-kontakt-liten.rendered.html"},{"lineagePattern":"organisms-modul-med-overskrift","lineagePath":"../../patterns/02-organisms-40-annet-06-modul-med-overskrift/02-organisms-40-annet-06-modul-med-overskrift.rendered.html"},{"lineagePattern":"organisms-tjenester-og-skjema-liten","lineagePath":"../../patterns/02-organisms-40-annet-08-tjenester-og-skjema-liten/02-organisms-40-annet-08-tjenester-og-skjema-liten.rendered.html"},{"lineagePattern":"molecules-moduloverskrift-h2","lineagePath":"../../patterns/01-molecules-00-overskrifter-30-moduloverskrift-h2/01-molecules-00-overskrifter-30-moduloverskrift-h2.rendered.html"},{"lineagePattern":"organisms-modul-tall-og-fakta","lineagePath":"../../patterns/02-organisms-40-annet-_06-modul-tall-og-fakta/02-organisms-40-annet-_06-modul-tall-og-fakta.rendered.html"},{"lineagePattern":"molecules-tout","lineagePath":"../../patterns/01-molecules-02-innhold-30-tout/01-molecules-02-innhold-30-tout.rendered.html"},{"lineagePattern":"molecules-tout-stoltzen","lineagePath":"../../patterns/01-molecules-02-innhold-_30-tout-stoltzen/01-molecules-02-innhold-_30-tout-stoltzen.rendered.html"},{"lineagePattern":"molecules-tout-luftkvalitet","lineagePath":"../../patterns/01-molecules-02-innhold-_31-tout-luftkvalitet/01-molecules-02-innhold-_31-tout-luftkvalitet.rendered.html"},{"lineagePattern":"molecules-tout-visjoner","lineagePath":"../../patterns/01-molecules-02-innhold-_35-tout-visjoner/01-molecules-02-innhold-_35-tout-visjoner.rendered.html"},{"lineagePattern":"molecules-tout-viktige-barnehagelenker","lineagePath":"../../patterns/01-molecules-02-innhold-_34-tout-viktige-barnehagelenker/01-molecules-02-innhold-_34-tout-viktige-barnehagelenker.rendered.html"},{"lineagePattern":"molecules-tout-viktige-skolelenker","lineagePath":"../../patterns/01-molecules-02-innhold-_32-tout-viktige-skolelenker/01-molecules-02-innhold-_32-tout-viktige-skolelenker.rendered.html"},{"lineagePattern":"molecules-tout-inneklima","lineagePath":"../../patterns/01-molecules-02-innhold-_33-tout-inneklima/01-molecules-02-innhold-_33-tout-inneklima.rendered.html"},{"lineagePattern":"organisms-footer","lineagePath":"../../patterns/02-organisms-00-global-01-footer/02-organisms-00-global-01-footer.rendered.html"}],"lineage":[{"lineagePattern":"organisms-header-varianter","lineagePath":"../../patterns/02-organisms-00-global-_00-header-varianter/02-organisms-00-global-_00-header-varianter.rendered.html"},{"lineagePattern":"organisms-brodsmuler","lineagePath":"../../patterns/02-organisms-00-global-02-brodsmuler/02-organisms-00-global-02-brodsmuler.rendered.html"},{"lineagePattern":"molecules-sideoverskrift-h1","lineagePath":"../../patterns/01-molecules-00-overskrifter-00-sideoverskrift-h1/01-molecules-00-overskrifter-00-sideoverskrift-h1.rendered.html"},{"lineagePattern":"molecules-org-meny","lineagePath":"../../patterns/01-molecules-navigasjon-org-meny/01-molecules-navigasjon-org-meny.rendered.html"},{"lineagePattern":"molecules-varsel","lineagePath":"../../patterns/01-molecules-02-innhold-05-varsel/01-molecules-02-innhold-05-varsel.rendered.html"},{"lineagePattern":"molecules-notis","lineagePath":"../../patterns/01-molecules-02-innhold-06-notis/01-molecules-02-innhold-06-notis.rendered.html"},{"lineagePattern":"molecules-ekstern-url","lineagePath":"../../patterns/01-molecules-02-innhold-11-ekstern-url/01-molecules-02-innhold-11-ekstern-url.rendered.html"},{"lineagePattern":"organisms-kontakt-liten","lineagePath":"../../patterns/02-organisms-20-kontakt-kontakt-liten/02-organisms-20-kontakt-kontakt-liten.rendered.html"},{"lineagePattern":"organisms-modul-med-overskrift","lineagePath":"../../patterns/02-organisms-40-annet-06-modul-med-overskrift/02-organisms-40-annet-06-modul-med-overskrift.rendered.html"},{"lineagePattern":"organisms-tjenester-og-skjema-liten","lineagePath":"../../patterns/02-organisms-40-annet-08-tjenester-og-skjema-liten/02-organisms-40-annet-08-tjenester-og-skjema-liten.rendered.html"},{"lineagePattern":"molecules-moduloverskrift-h2","lineagePath":"../../patterns/01-molecules-00-overskrifter-30-moduloverskrift-h2/01-molecules-00-overskrifter-30-moduloverskrift-h2.rendered.html"},{"lineagePattern":"organisms-modul-tall-og-fakta","lineagePath":"../../patterns/02-organisms-40-annet-_06-modul-tall-og-fakta/02-organisms-40-annet-_06-modul-tall-og-fakta.rendered.html"},{"lineagePattern":"molecules-tout","lineagePath":"../../patterns/01-molecules-02-innhold-30-tout/01-molecules-02-innhold-30-tout.rendered.html"},{"lineagePattern":"molecules-tout-stoltzen","lineagePath":"../../patterns/01-molecules-02-innhold-_30-tout-stoltzen/01-molecules-02-innhold-_30-tout-stoltzen.rendered.html"},{"lineagePattern":"molecules-tout-luftkvalitet","lineagePath":"../../patterns/01-molecules-02-innhold-_31-tout-luftkvalitet/01-molecules-02-innhold-_31-tout-luftkvalitet.rendered.html"},{"lineagePattern":"molecules-tout-visjoner","lineagePath":"../../patterns/01-molecules-02-innhold-_35-tout-visjoner/01-molecules-02-innhold-_35-tout-visjoner.rendered.html"},{"lineagePattern":"molecules-tout-viktige-barnehagelenker","lineagePath":"../../patterns/01-molecules-02-innhold-_34-tout-viktige-barnehagelenker/01-molecules-02-innhold-_34-tout-viktige-barnehagelenker.rendered.html"},{"lineagePattern":"molecules-tout-viktige-skolelenker","lineagePath":"../../patterns/01-molecules-02-innhold-_32-tout-viktige-skolelenker/01-molecules-02-innhold-_32-tout-viktige-skolelenker.rendered.html"},{"lineagePattern":"molecules-tout-inneklima","lineagePath":"../../patterns/01-molecules-02-innhold-_33-tout-inneklima/01-molecules-02-innhold-_33-tout-inneklima.rendered.html"},{"lineagePattern":"organisms-footer","lineagePath":"../../patterns/02-organisms-00-global-01-footer/02-organisms-00-global-01-footer.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"orgenhet"},"patternExtension":"mustache","patternName":"Etjeneste Eksempler","patternPartial":"pages-etjeneste-eksempler","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="viewall-pages-skole-og-barnehage" class="sg-pattern-category">
@@ -25747,10 +25896,10 @@ https://github.com/pattern-lab/patternlab-php/issues/304
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1495198078612">
+<script id="pl-js-polyfill-insert-1495203169595">
   (function() {
     if (self != top) {
-      var cb = '1495198078612';
+      var cb = '1495203169595';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -25760,10 +25909,10 @@ https://github.com/pattern-lab/patternlab-php/issues/304
   })();
 </script>
 
-<script id="pl-js-insert-1495198078612">
+<script id="pl-js-insert-1495203169595">
   (function() {
     if (self != top) {
-      var cb = '1495198078612';
+      var cb = '1495203169595';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

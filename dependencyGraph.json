@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1495198080054,
+  "timestamp": 1495203171342,
   "graph": {
     "options": {
       "directed": true,
@@ -332,32 +332,32 @@
         "v": "01-molecules/02-innhold/_32-tout-viktige-skolelenker.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-02-OrgEnhet-37-skole/03-templates-02-OrgEnhet-37-skole.rendered.html",
-          "lineagePattern": "templates-skole"
+          "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
+          "lineagePattern": "pages-etjeneste-eksempler"
         }
       },
       {
         "v": "01-molecules/02-innhold/_33-tout-inneklima.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-02-OrgEnhet-38-leirskole/03-templates-02-OrgEnhet-38-leirskole.rendered.html",
-          "lineagePattern": "templates-leirskole"
+          "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
+          "lineagePattern": "pages-etjeneste-eksempler"
         }
       },
       {
         "v": "01-molecules/02-innhold/_34-tout-viktige-barnehagelenker.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-02-OrgEnhet-40-barnehage/03-templates-02-OrgEnhet-40-barnehage.rendered.html",
-          "lineagePattern": "templates-barnehage"
+          "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
+          "lineagePattern": "pages-etjeneste-eksempler"
         }
       },
       {
         "v": "01-molecules/02-innhold/_35-tout-visjoner.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-02-OrgEnhet-40-barnehage/03-templates-02-OrgEnhet-40-barnehage.rendered.html",
-          "lineagePattern": "templates-barnehage"
+          "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
+          "lineagePattern": "pages-etjeneste-eksempler"
         }
       },
       {
@@ -2067,6 +2067,11 @@
       },
       {
         "v": "04-pages/01-hva-skjer/03-hs-artikkel.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/03-hs-artikkel.mustache",
         "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {}
       },
@@ -2083,6 +2088,11 @@
       {
         "v": "04-pages/01-hva-skjer/04-hs-uk-artikkel.mustache",
         "w": "02-organisms/00-global/_01-header-1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/04-hs-uk-artikkel.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
@@ -2473,6 +2483,26 @@
       {
         "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
         "w": "01-molecules/02-innhold/_31-tout-luftkvalitet.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
+        "w": "01-molecules/02-innhold/_35-tout-visjoner.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
+        "w": "01-molecules/02-innhold/_34-tout-viktige-barnehagelenker.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
+        "w": "01-molecules/02-innhold/_32-tout-viktige-skolelenker.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
+        "w": "01-molecules/02-innhold/_33-tout-inneklima.mustache",
         "value": {}
       },
       {

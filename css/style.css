@@ -7713,7 +7713,7 @@ a.itslearning_link {
     position: absolute !important; } }
 
 @media (max-width: 1019px) {
-  .open_additional_menu_link {
+  .toggle_additional_menu_link {
     display: none; }
   .hvaskjer_additional_menu {
     padding: 0;
@@ -7745,10 +7745,31 @@ a.itslearning_link {
         padding: 0.6875rem 0.75rem; }
         .hvaskjer_menu li a:hover {
           background-color: #fbf7ed; }
+        .hvaskjer_menu li a.toggle_additional_menu_link {
+          position: relative;
+          z-index: 30;
+          padding-right: 45px;
+          padding-right: 2.8125rem; }
+          .hvaskjer_menu li a.toggle_additional_menu_link .icon {
+            position: absolute;
+            top: 9px;
+            top: 0.5625rem;
+            right: 5px;
+            right: 0.3125rem;
+            background-position: -256px -32px; }
+      .hvaskjer_menu li.expanded {
+        border-radius: 0.1875rem 0.1875rem 0 0; }
+      .hvaskjer_menu li.collapsed .toggle_additional_menu_link .icon {
+        background-position: -256px 0; }
   .hvaskjer_additional_menu_container {
     position: relative; }
+    .hvaskjer_additional_menu_container.expanded {
+      box-shadow: 0 2px 4px #a3a3a3;
+      box-shadow: 0 0.125rem 0.25rem #a3a3a3; }
+      .hvaskjer_additional_menu_container.expanded .hvaskjer_additional_menu {
+        box-shadow: 0 4px 4px #a3a3a3;
+        box-shadow: 0 0.25rem 0.25rem #a3a3a3; }
   .hvaskjer_additional_menu {
-    display: none;
     position: absolute;
     z-index: 20;
     top: 46px;
@@ -7776,7 +7797,9 @@ a.itslearning_link {
         padding: 9px 13px;
         padding: 0.5625rem 0.8125rem; }
       .hvaskjer_additional_menu li:last-child {
-        border-bottom: 0; } }
+        border-bottom: 0; }
+    .collapsed .hvaskjer_additional_menu {
+      display: none; } }
 
 .bk360_body {
   min-height: 300px;
