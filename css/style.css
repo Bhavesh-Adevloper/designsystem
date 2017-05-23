@@ -7722,8 +7722,12 @@ a.itslearning_link {
       border-bottom: 0; } }
 
 @media (min-width: 1020px) {
+  .hvaskjer_menu_container {
+    margin: -22px 0 32px;
+    margin: -1.375rem 0 2rem; }
   .hvaskjer_menu {
-    padding: 0; }
+    padding: 0;
+    margin: 0; }
     .hvaskjer_menu li {
       display: inline-block;
       list-style-image: none;
