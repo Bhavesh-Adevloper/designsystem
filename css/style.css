@@ -1971,15 +1971,23 @@ h1.article_header {
         float: left;
         margin: 3px 24px 12px 0;
         margin: 0.1875rem 1.5rem 0.75rem 0;
-        -webkit-flex-basis: 60%;
-            -ms-flex-preferred-size: 60%;
-                flex-basis: 60%;
+        -webkit-flex-basis: 66%;
+            -ms-flex-preferred-size: 66%;
+                flex-basis: 66%;
         -webkit-flex-grow: 0;
             -ms-flex-positive: 0;
                 flex-grow: 0;
         -webkit-flex-shrink: 0;
             -ms-flex-negative: 0;
                 flex-shrink: 0; }
+      .hvaskjer_grid .toppsak .sak .teaser_title {
+        font-size: 30px;
+        font-size: 1.875rem;
+        line-height: 1.33333; }
+        .hvaskjer_grid .toppsak .sak .teaser_title .read_more_link_large {
+          padding-right: 13px;
+          padding-right: 0.8125rem;
+          background: transparent url("../images/blue_list_style_image_large.svg") no-repeat right 15px; }
       .hvaskjer_grid .toppsak .sak .excerpt_image_container_ruu,
       .hvaskjer_grid .toppsak .sak .excerpt_story_container_ruu {
         -ms-flex-align: stretch;
