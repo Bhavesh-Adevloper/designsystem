@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1496303302899,
+  "timestamp": 1496394247312,
   "graph": {
     "options": {
       "directed": true,
@@ -141,6 +141,66 @@
         }
       },
       {
+        "v": "00-atoms/15-knapper/25-kalender-knapp.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/15-knapper/26-sok-knapp.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-15-skjema-sokefilter/01-molecules-15-skjema-sokefilter.rendered.html",
+          "lineagePattern": "molecules-sokefilter"
+        }
+      },
+      {
+        "v": "00-atoms/20-skjema-element/01-etikett.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/20-skjema-element/01-hjelpetekst.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-15-skjema-sokefilter/01-molecules-15-skjema-sokefilter.rendered.html",
+          "lineagePattern": "molecules-sokefilter"
+        }
+      },
+      {
+        "v": "00-atoms/20-skjema-element/11-tekstfelt.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-17-politiker-og-utvalg-02-politikere/04-pages-17-politiker-og-utvalg-02-politikere.rendered.html",
+          "lineagePattern": "pages-politikere"
+        }
+      },
+      {
+        "v": "00-atoms/20-skjema-element/12-avkryssingsboks.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-15-skjema-sokefilter-avkrysningsbokser/01-molecules-15-skjema-sokefilter-avkrysningsbokser.rendered.html",
+          "lineagePattern": "molecules-sokefilter-avkrysningsbokser"
+        }
+      },
+      {
+        "v": "00-atoms/20-skjema-element/12-tekstomrade.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-15-skjema-kontaktskjema-med-captcha/01-molecules-15-skjema-kontaktskjema-med-captcha.rendered.html",
+          "lineagePattern": "molecules-kontaktskjema-med-captcha"
+        }
+      },
+      {
+        "v": "00-atoms/20-skjema-element/15-nedtrekksliste.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-15-skjema-sokefilter/01-molecules-15-skjema-sokefilter.rendered.html",
+          "lineagePattern": "molecules-sokefilter"
+        }
+      },
+      {
         "v": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
         "value": {
           "compileState": "clean",
@@ -152,8 +212,8 @@
         "v": "01-molecules/00-overskrifter/01-sideoverskrift-h1-med-print.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-10-tjenester-02-tjenestebeskrivelse/04-pages-10-tjenester-02-tjenestebeskrivelse.rendered.html",
-          "lineagePattern": "pages-tjenestebeskrivelse"
+          "lineagePath": "../../patterns/04-pages-17-politiker-og-utvalg-11-motekalender/04-pages-17-politiker-og-utvalg-11-motekalender.rendered.html",
+          "lineagePattern": "pages-motekalender"
         }
       },
       {
@@ -361,6 +421,28 @@
         }
       },
       {
+        "v": "01-molecules/15-skjema/kontaktskjema-med-captcha.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-17-politiker-og-utvalg-01-politiske-utvalg/04-pages-17-politiker-og-utvalg-01-politiske-utvalg.rendered.html",
+          "lineagePattern": "pages-politiske-utvalg"
+        }
+      },
+      {
+        "v": "01-molecules/15-skjema/sokefilter.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-18-offentlig-journal-postjournal/04-pages-18-offentlig-journal-postjournal.rendered.html",
+          "lineagePattern": "pages-postjournal"
+        }
+      },
+      {
         "v": "01-molecules/les-mer/30-les-mer.mustache",
         "value": {
           "compileState": "clean",
@@ -495,6 +577,14 @@
         }
       },
       {
+        "v": "01-molecules/navigasjon/lenkeboks-med-forklaring.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-20-navigasjon-04-politikk/04-pages-20-navigasjon-04-politikk.rendered.html",
+          "lineagePattern": "pages-politikk"
+        }
+      },
+      {
         "v": "01-molecules/navigasjon/navigasjonsboks-liten.mustache",
         "value": {
           "compileState": "clean",
@@ -546,6 +636,14 @@
         "v": "01-molecules/tabeller/06-medlemmer.mustache",
         "value": {
           "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-molecules/tabeller/09-flex-tabell.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-18-offentlig-journal-postjournal/04-pages-18-offentlig-journal-postjournal.rendered.html",
+          "lineagePattern": "pages-postjournal"
         }
       },
       {
@@ -624,8 +722,8 @@
         "v": "02-organisms/00-global/_04-header-4.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/02-organisms-00-global-_00-header-varianter/02-organisms-00-global-_00-header-varianter.rendered.html",
-          "lineagePattern": "organisms-header-varianter"
+          "lineagePath": "../../patterns/04-pages-20-navigasjon-04-politikk/04-pages-20-navigasjon-04-politikk.rendered.html",
+          "lineagePattern": "pages-politikk"
         }
       },
       {
@@ -664,6 +762,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
           "lineagePattern": "pages-etjeneste-eksempler"
+        }
+      },
+      {
+        "v": "02-organisms/20-kontakt/kontaktinformasjon-person.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-17-politiker-og-utvalg-04-en-politiker/04-pages-17-politiker-og-utvalg-04-en-politiker.rendered.html",
+          "lineagePattern": "pages-en-politiker"
         }
       },
       {
@@ -1095,6 +1201,66 @@
         }
       },
       {
+        "v": "04-pages/17-politiker-og-utvalg/01-politiske-utvalg.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/02-politikere.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/03-politiske-saker.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/04-en-politiker.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/05-politiske-sporsmal-og-svar.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/06-et-mote.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/10-en-sak.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/11-motekalender.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/18-offentlig-journal/dokument.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/18-offentlig-journal/postjournal.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "04-pages/20-navigasjon/00-om-kommunen.mustache",
         "value": {
           "compileState": "clean"
@@ -1210,6 +1376,51 @@
       }
     ],
     "edges": [
+      {
+        "v": "01-molecules/15-skjema/kontaktskjema-med-captcha.mustache",
+        "w": "00-atoms/20-skjema-element/11-tekstfelt.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/15-skjema/kontaktskjema-med-captcha.mustache",
+        "w": "00-atoms/20-skjema-element/01-hjelpetekst.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/15-skjema/kontaktskjema-med-captcha.mustache",
+        "w": "00-atoms/20-skjema-element/12-tekstomrade.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/15-skjema/kontaktskjema-med-captcha.mustache",
+        "w": "00-atoms/15-knapper/26-sok-knapp.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser.mustache",
+        "w": "00-atoms/20-skjema-element/12-avkryssingsboks.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/15-skjema/sokefilter.mustache",
+        "w": "00-atoms/20-skjema-element/11-tekstfelt.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/15-skjema/sokefilter.mustache",
+        "w": "00-atoms/20-skjema-element/01-hjelpetekst.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/15-skjema/sokefilter.mustache",
+        "w": "00-atoms/20-skjema-element/15-nedtrekksliste.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/15-skjema/sokefilter.mustache",
+        "w": "00-atoms/15-knapper/26-sok-knapp.mustache",
+        "value": {}
+      },
       {
         "v": "01-molecules/lister/05-link-liste-nyheter.mustache",
         "w": "01-molecules/02-innhold/19-modul-viktig-nyhet.mustache",
@@ -3091,13 +3302,308 @@
         "value": {}
       },
       {
+        "v": "04-pages/17-politiker-og-utvalg/01-politiske-utvalg.mustache",
+        "w": "02-organisms/00-global/_04-header-4.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/01-politiske-utvalg.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/01-politiske-utvalg.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/01-politiske-utvalg.mustache",
+        "w": "00-atoms/20-skjema-element/11-tekstfelt.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/01-politiske-utvalg.mustache",
+        "w": "01-molecules/15-skjema/sokefilter-avkrysningsbokser.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/01-politiske-utvalg.mustache",
+        "w": "01-molecules/tabeller/09-flex-tabell.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/01-politiske-utvalg.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/02-politikere.mustache",
+        "w": "02-organisms/00-global/_04-header-4.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/02-politikere.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/02-politikere.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/02-politikere.mustache",
+        "w": "00-atoms/20-skjema-element/11-tekstfelt.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/02-politikere.mustache",
+        "w": "01-molecules/tabeller/09-flex-tabell.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/02-politikere.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/03-politiske-saker.mustache",
+        "w": "02-organisms/00-global/_04-header-4.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/03-politiske-saker.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/03-politiske-saker.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/03-politiske-saker.mustache",
+        "w": "01-molecules/15-skjema/sokefilter.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/03-politiske-saker.mustache",
+        "w": "01-molecules/tabeller/09-flex-tabell.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/03-politiske-saker.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/04-en-politiker.mustache",
+        "w": "02-organisms/00-global/_04-header-4.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/04-en-politiker.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/04-en-politiker.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/04-en-politiker.mustache",
+        "w": "02-organisms/20-kontakt/kontaktinformasjon-person.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/04-en-politiker.mustache",
+        "w": "01-molecules/tabeller/09-flex-tabell.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/04-en-politiker.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/05-politiske-sporsmal-og-svar.mustache",
+        "w": "02-organisms/00-global/_04-header-4.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/05-politiske-sporsmal-og-svar.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/05-politiske-sporsmal-og-svar.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/05-politiske-sporsmal-og-svar.mustache",
+        "w": "01-molecules/15-skjema/sokefilter.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/05-politiske-sporsmal-og-svar.mustache",
+        "w": "01-molecules/tabeller/09-flex-tabell.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/05-politiske-sporsmal-og-svar.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/06-et-mote.mustache",
+        "w": "02-organisms/00-global/_04-header-4.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/06-et-mote.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/06-et-mote.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/06-et-mote.mustache",
+        "w": "01-molecules/tabeller/09-flex-tabell.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/06-et-mote.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/10-en-sak.mustache",
+        "w": "02-organisms/00-global/_04-header-4.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/10-en-sak.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/10-en-sak.mustache",
+        "w": "01-molecules/tabeller/09-flex-tabell.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/10-en-sak.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/11-motekalender.mustache",
+        "w": "02-organisms/00-global/_04-header-4.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/11-motekalender.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/11-motekalender.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/11-motekalender.mustache",
+        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/11-motekalender.mustache",
+        "w": "01-molecules/00-overskrifter/01-sideoverskrift-h1-med-print.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/17-politiker-og-utvalg/11-motekalender.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/18-offentlig-journal/dokument.mustache",
+        "w": "02-organisms/00-global/_04-header-4.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/18-offentlig-journal/dokument.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/18-offentlig-journal/dokument.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/18-offentlig-journal/dokument.mustache",
+        "w": "01-molecules/tabeller/09-flex-tabell.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/18-offentlig-journal/dokument.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/18-offentlig-journal/postjournal.mustache",
+        "w": "02-organisms/00-global/_04-header-4.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/18-offentlig-journal/postjournal.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/18-offentlig-journal/postjournal.mustache",
+        "w": "01-molecules/15-skjema/sokefilter.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/18-offentlig-journal/postjournal.mustache",
+        "w": "01-molecules/tabeller/09-flex-tabell.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/18-offentlig-journal/postjournal.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
         "v": "04-pages/20-navigasjon/00-om-kommunen.mustache",
         "w": "03-templates/08-Navigasjon/10-navigasjon-1.mustache",
         "value": {}
       },
       {
         "v": "04-pages/20-navigasjon/04-politikk.mustache",
-        "w": "03-templates/08-Navigasjon/10-navigasjon-1.mustache",
+        "w": "02-organisms/00-global/_04-header-4.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/20-navigasjon/04-politikk.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/20-navigasjon/04-politikk.mustache",
+        "w": "01-molecules/navigasjon/lenkeboks-med-forklaring.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/20-navigasjon/04-politikk.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {

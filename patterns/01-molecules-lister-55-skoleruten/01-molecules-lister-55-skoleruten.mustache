@@ -4,7 +4,8 @@
         {{# ferieListe }}
             <li class="holidays_list_item">
                 <div class="holiday_date">
-                    <strong>{{ dato }}</strong>
+                    <span><strong>{{ dato }}</strong></span>
+                    <span {{#politikk}}class="holiday_date--sas"{{/politikk}}>{{# klslett }}<strong>{{ klslett }}</strong>{{/ klslett }} </span>
                 </div>
                 <div class="holiday_title_container">
                     <div class="holiday_title">

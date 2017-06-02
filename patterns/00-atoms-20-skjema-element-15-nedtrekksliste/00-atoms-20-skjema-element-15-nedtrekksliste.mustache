@@ -1,0 +1,8 @@
+<div class="form-element {{styleModifier}}">
+    <label class="form-element__label form-element__label--dropdown-icon"> <div class="form-element__label form-element__label--dropdown">{{nedtrekksliste.etikett}}</div>
+        <select class="form-element__dropdown">
+            <option class="form-element__dropdown-item">{{nedtrekksliste.placeholder}}</option>
+            {{#nedtrekksliste.alternativer}}<option class="form-element__dropdown-item" value="{{alternativ}}">{{alternativ}}</option>{{/nedtrekksliste.alternativer}}
+        </select>
+    </label>
+</div>

@@ -1,0 +1,82 @@
+{{> organisms-header-4 }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+    {{> molecules-sideoverskrift-h2-med-lenke:mbl(sidetittel: "Bergen bystyre") }}
+
+    <div class="row">
+        <div class="col_md_4 col_lg_4 mbl">
+            {{> molecules-org-meny }}
+        </div>
+
+        <div class="col_md_8 col_lg_8">
+            {{> molecules-sideoverskrift-h1-med-print:mbl(sidetittel: "Møtekalender") }}
+            <p class="mbxl">
+                <span id="vis_passerte" class="toggle_passerte">
+                    Tabellen viser kommende møter. <a href="#" title="Vis passerte ferie og fridager" class="toggle_holidays_link">Vis tidligere møter.</a>
+                </span>
+            </p>
+            <a href="{{ url }}" title="Legg Ferie og fridager for {{ skolerutenTittel }}” i kalenderen din"
+               class="important_link add_holidays_link mbm">
+                Legg til "Møter i {{ sidetittel }} 2017&quot; i kalenderen din
+            </a>
+
+            <div class="holidays_container">
+                <h4 class="holidays_header">Januar 2017</h4>
+                <ul class="holidays_list">
+                    <li class="holidays_list_item">
+                        <div class="holiday_date">
+                            <span class="holiday_date__date"><time>26.01</time></span>
+                            <span class="holiday_date__time"><time>kl 0900</time></span>
+                        </div>
+                        <div class="holiday_title_container">
+                            <div class="holiday_title">
+                                <div class="meeting_title">
+                                    <a href="#" class="meeting_title_link">Møte i Kontrollutvalget </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="holidays_list_item">
+                        <div class="holiday_date">
+                            <span class="holiday_date__date"><time>26.01</time></span>
+                            <span class="holiday_date__time"><time>kl 0900</time></span>
+                        </div>
+                        <div class="holiday_title_container">
+                            <div class="holiday_title">
+                                <a href="#" class="meeting_title_link"> Møte i Kontrollutvalget </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="holidays_container">
+                <h4 class="holidays_header">Januar 2017</h4>
+                <ul class="holidays_list">
+                    <li class="holidays_list_item">
+                        <div class="holiday_date">
+                            <span class="holiday_date__date"><time>26.01</time></span>
+                            <span class="holiday_date__time"><time>kl 0900</time></span>
+                        </div>
+                        <div class="holiday_title_container">
+                            <div class="holiday_title">
+                                <div class="meeting_title">
+                                    <a href="#" class="meeting_title_link">Møte i Kontrollutvalget </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="read_more_link_container read_more_link_container--top-border {{ styleModifier }}">
+                <a title="{{ lesMerTekst }}" class="read_more_link" href="{{ url }}">
+                    {{ lesMerTekst }}
+                    {{# antall }}
+                        ({{ antall }})
+                    {{/ antall }}
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+{{> organisms-footer }}

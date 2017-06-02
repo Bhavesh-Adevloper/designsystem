@@ -1,0 +1,61 @@
+<div class="contact-information-person">
+
+        {{#rolleTopp}}
+        Prosjektleder - <a href="{{ link.pages-VA-etaten }}" title="Vann- og avløpsetaten">Vann- og avløpsetaten</a>
+        <br>
+        {{/rolleTopp}}
+        {{#tekst}}
+        Her står teksten "arbeidsoppgave" fra fellesweb. Den kan være lang men den ignorerer alle line-breaks. Uansett.
+        {{/tekst}}
+
+    <dl class="contact-information-person__info-list">
+
+        <!-- Rolle -->
+        <!-- Postnr -->
+        <!-- Poststed -->
+        {{#feltMedEtikett}}
+        <dt class="contact-information-person__label"> {{etikett}}:</dt>
+        <dd class="contact-information-person__content"> {{{innhold}}} </dd>
+        {{/feltMedEtikett}}
+
+        <!--Telefon-->
+        {{#telefon}}
+        <dt class="contact-information-person__label contact-information-person__label--srt">Telefon:</dt>
+        <dd class="contact-information-person__content contact-information-person__content--with-icon">
+            <a href="tel:{{telefon}}">
+                <span class="contact-information-person__icon phone_icon medium_size"></span>
+                {{telefon}}
+            </a>
+        </dd>
+        {{/telefon}}
+
+        <!--Mobil-->
+        {{#mobil}}
+        <dt class="contact-information-person__label contact-information-person__label--srt">Mobil:</dt>
+        <dd class="contact-information-person__content contact-information-person__content--with-icon">
+            <a href="tel:{{mobil}}">
+                <span class="contact-information-person__icon cellphone_icon medium_size"></span>
+                {{mobil}}
+            </a>
+        </dd>
+        {{/mobil}}
+
+        <!--E-post-->
+        {{#epost}}
+        <dt class="contact-information-person__label contact-information-person__label--srt">E-post:</dt>
+        <dd class="contact-information-person__content contact-information-person__content--email contact-information-person__content--with-icon">
+            <a href="mailto: {{epost}}" title="{{epost}}">
+                <span class="contact-information-person__icon email_icon medium_size"></span>
+                {{epost}}
+            </a>
+        </dd>
+        {{/epost}}
+
+    </dl>
+
+    {{#bilde}}
+    <div class="contact-information-person__image">
+        <img src="{{ img.avatar.src }}" alt="{{ img.avatar.alt }}" class="module_image" />
+    </div>
+    {{/bilde}}
+</div>

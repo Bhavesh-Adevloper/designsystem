@@ -1,0 +1,26 @@
+{{> organisms-header-4 }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+    {{> molecules-sideoverskrift-h1:mbl(sidetittel: "Geir Steinar Dale") }}
+
+    <div class="row">
+        <div class="col_md_8 col_lg_8 mbxxl">
+            {{#kontaktinfo}}{{> organisms-kontaktinformasjon-person}}{{/kontaktinfo}}
+        </div>
+
+        <div class="col_md_8 col_lg_8 mbxxl">
+            {{#nverv}}{{> molecules-flex-tabell }}{{/nverv}}
+        </div>
+
+        <div class="col_md_12 col_lg_12 mbj">
+            {{#interesser}}{{> molecules-flex-tabell }}{{/interesser}}
+        </div>
+
+        <div class="col_md_12 col_lg_12">
+            {{#verv}}{{> molecules-flex-tabell }}{{/verv}}
+        </div>
+
+    </div>
+
+</main>
+{{> organisms-footer }}
