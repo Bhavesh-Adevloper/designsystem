@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1496394247312,
+  "timestamp": 1496414691667,
   "graph": {
     "options": {
       "directed": true,
@@ -1574,11 +1574,6 @@
       {
         "v": "02-organisms/40-annet/12-arrangement.mustache",
         "w": "01-molecules/les-mer/30-les-mer.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-organisms/40-annet/20-skoleruten.mustache",
-        "w": "01-molecules/00-overskrifter/40-moduloverskrift-h3.mustache",
         "value": {}
       },
       {
