@@ -4712,18 +4712,6 @@ footer {
     .tout_container .tout_excerpt .air_quality_list li a:active .air_quality_station_name {
       text-decoration: underline; }
 
-.button--search {
-  background-color: #6f94c3;
-  box-shadow: inset 0 -2px 0 0 rgba(58, 87, 163, 0.32), inset 0 2px 0 0 rgba(255, 255, 255, 0.32);
-  color: #fff;
-  line-height: 1.2;
-  font-size: 20px;
-  font-size: 1.25rem;
-  padding: 7px 33px;
-  padding: 0.4375rem 2.0625rem; }
-  .button--search:disabled {
-    box-shadow: none; }
-
 .contact-information-person {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4782,6 +4770,49 @@ footer {
   .contact-information-person__image img {
     height: auto;
     width: 150px; }
+
+.file-link {
+  display: inline-block;
+  position: relative;
+  margin-left: -3px;
+  margin-left: -0.1875rem;
+  padding: 4px 4px 4px 33px;
+  padding: 0.25rem 0.25rem 0.25rem 2.0625rem; }
+  .file-link .file-icon {
+    display: block;
+    position: absolute;
+    width: 32px;
+    width: 2rem;
+    height: 32px;
+    height: 2rem;
+    top: 4px;
+    top: 0.25rem;
+    left: 3px;
+    left: 0.1875rem;
+    background: url(../images/file.svg) no-repeat 0 0 transparent; }
+    .file-link .file-icon.pdf {
+      background-image: url(../images/pdf.svg); }
+    .file-link .file-icon.doc, .file-link .file-icon.docx {
+      background-image: url(../images/doc.svg); }
+    .file-link .file-icon.ppt {
+      background-image: url(../images/ppt.svg); }
+    .file-link .file-icon.xls, .file-link .file-icon.xlsx {
+      background-image: url(../images/xls.svg); }
+    .file-link .file-icon.html {
+      background-image: url(../images/html.svg); }
+    .file-link .file-icon.skjema {
+      background-image: url("../images/mainSprite.svg?v=20170307");
+      background-position: -167px -99px; }
+  .file-link .file-info {
+    color: #535353;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5; }
+  .file-link:hover, .file-link:active {
+    text-decoration: none; }
+    .file-link:hover .file-title, .file-link:active .file-title {
+      text-decoration: underline; }
 
 .flex-table {
   width: 100%; }
@@ -6545,8 +6576,6 @@ footer {
     left: 3px;
     left: 0.1875rem;
     background: url(../images/file.svg) no-repeat 0 0 transparent; }
-    .invoice_link .file_icon span {
-      opacity: 0; }
     .invoice_link .file_icon.papirfaktura {
       background-image: url(../images/pdf.svg); }
     .invoice_link .file_icon.doc-faktura {
@@ -7886,9 +7915,9 @@ li.with_org_sub_menu {
         .service_application_list .file_list li .file_link:hover, .service_application_list .file_list li .file_link:active {
           text-decoration: underline; }
 
-.schedules_list {
+.schedules_list_0 {
   padding-left: 0; }
-  .schedules_list > li {
+  .schedules_list_0 > li {
     list-style-image: none;
     border: 1px solid #e7d5a6;
     border: 0.0625rem solid #e7d5a6;
@@ -7896,13 +7925,13 @@ li.with_org_sub_menu {
     margin-bottom: 1.25rem;
     border-radius: 0.1875rem;
     *zoom: 1; }
-    .schedules_list > li:before, .schedules_list > li:after {
+    .schedules_list_0 > li:before, .schedules_list_0 > li:after {
       content: "";
       display: table;
       line-height: 0; }
-    .schedules_list > li:after {
+    .schedules_list_0 > li:after {
       clear: both; }
-    .schedules_list > li .schedules_list_header_1 {
+    .schedules_list_0 > li .schedules_list_header_1 {
       font-weight: 400;
       font-style: normal;
       font-size: 20px;
@@ -7918,7 +7947,7 @@ li.with_org_sub_menu {
       border-bottom: 1px solid #e7d5a6;
       border-bottom: 0.0625rem solid #e7d5a6;
       border-radius: 0.1875rem 0.1875rem 0 0; }
-    .schedules_list > li .schedules_list_header_2 {
+    .schedules_list_0 > li .schedules_list_header_2 {
       font-weight: 400;
       font-style: normal;
       font-size: 18px;
@@ -7926,7 +7955,7 @@ li.with_org_sub_menu {
       line-height: 1.33333;
       margin: 12px 0 0 16px;
       margin: 0.75rem 0 0 1rem; }
-    .schedules_list > li .schedules_list_header_3 {
+    .schedules_list_0 > li .schedules_list_header_3 {
       font-weight: 400;
       font-style: normal;
       font-size: 18px;
@@ -7934,7 +7963,7 @@ li.with_org_sub_menu {
       line-height: 1.33333;
       margin: 4px 0 0 18px;
       margin: 0.25rem 0 0 1.125rem; }
-    .schedules_list > li .schedules_list_header_4 {
+    .schedules_list_0 > li .schedules_list_header_4 {
       font-weight: 400;
       font-style: normal;
       font-size: 18px;
@@ -7942,48 +7971,29 @@ li.with_org_sub_menu {
       line-height: 1.33333;
       margin: 4px 0 0 20px;
       margin: 0.25rem 0 0 1.25rem; }
-  .schedules_list .file_list {
+  .schedules_list_0 .schedules_list_1 {
+    clear: both;
+    padding: 0;
     margin: 6px 0 8px;
     margin: 0.375rem 0 0.5rem; }
-    .schedules_list .file_list li {
+    .schedules_list_0 .schedules_list_1 li {
+      list-style: none;
       margin: 0; }
-    .schedules_list .file_list .file_list_sub_1 {
+    .schedules_list_0 .schedules_list_1 .schedules_list_item_1 {
       border-bottom: 1px solid #f5edd8;
       border-bottom: 0.0625rem solid #f5edd8;
       margin-bottom: 6px;
       margin-bottom: 0.375rem; }
-      .schedules_list .file_list .file_list_sub_1:last-child {
+      .schedules_list_0 .schedules_list_1 .schedules_list_item_1:last-child {
         border-bottom: 0 none; }
-    .schedules_list .file_list .file_list_2,
-    .schedules_list .file_list .file_list_3,
-    .schedules_list .file_list .file_list_4 {
+    .schedules_list_0 .schedules_list_1 .schedules_list_2,
+    .schedules_list_0 .schedules_list_1 .schedules_list_3,
+    .schedules_list_0 .schedules_list_1 .schedules_list_4 {
       padding-left: 13px;
       padding-left: 0.8125rem; }
-  .schedules_list .schedules_link {
-    position: relative;
-    display: inline-block;
-    font-size: 18px;
-    font-size: 1.125rem;
-    line-height: 1.33333;
-    padding: 4px 12px 4px 45px;
-    padding: 0.25rem 0.75rem 0.25rem 2.8125rem;
-    margin: 2px 0;
-    margin: 0.125rem 0;
-    text-decoration: none; }
-    .schedules_list .schedules_link:before {
-      position: absolute;
-      top: 1px;
-      top: 0.0625rem;
-      left: 8px;
-      left: 0.5rem;
-      content: "";
-      width: 32px;
-      width: 2rem;
-      height: 32px;
-      height: 2rem;
-      background: url("../images/mainSprite.svg?v=20170307") no-repeat -160px -96px transparent; }
-    .schedules_list .schedules_link:hover, .schedules_list .schedules_link:active {
-      text-decoration: underline; }
+  .schedules_list_0 .file-link {
+    margin: 3px 0 3px 12px;
+    margin: 0.1875rem 0 0.1875rem 0.75rem; }
 
 a.itslearning_link {
   display: inline-block;

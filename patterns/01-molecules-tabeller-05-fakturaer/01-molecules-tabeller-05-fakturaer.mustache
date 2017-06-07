@@ -14,7 +14,9 @@
     <div class="div_table_row">
         <div class="div_table_cell div_table_row_title">
             <a href="{{ url }}" title="Faktura" class="invoice_link" target="_blank">
-                <span class="file_icon {{ filikon }}"><span>{{ filtype }}</span></span>
+                <span class="file_icon {{ filikon }}">
+                    <span class="screen-reader-text">{{ filtype }}</span>
+                </span>
                 {{ tittel }}
             </a>
         </div>

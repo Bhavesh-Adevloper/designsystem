@@ -1,4 +1,4 @@
-<ul class="schedules_list">
+<ul class="schedules_list_0">
     {{# schedulesList }}
     <li>
         
@@ -6,15 +6,15 @@
             <h3 class="schedules_list_header_1">{{ fileListHeader1 }}</h3>
         {{/ fileListHeader1 }}        
            
-        <ul class="file_list">
+        <ul class="schedules_list_1">
             
             {{# child1 }}
-                <li class="file_list_sub_1">                    
+                <li class="schedules_list_item_1">                    
                     {{# fileListHeader2 }}
                         <h4 class="schedules_list_header_2">{{ fileListHeader2 }}</h4>
                     {{/ fileListHeader2 }}
                     
-                    <ul class="file_list_2">
+                    <ul class="schedules_list_2">
             
                         {{# child2 }}
                             <li>                    
@@ -22,7 +22,7 @@
                                     <h5 class="schedules_list_header_3">{{ fileListHeader3 }}</h5>
                                 {{/ fileListHeader3 }}
 
-                                <ul class="file_list_3">
+                                <ul class="schedules_list_3">
             
                                     {{# child3 }}
                                         <li>                    
@@ -30,11 +30,15 @@
                                                 <h6 class="schedules_list_header_4">{{ fileListHeader4 }}</h6>
                                             {{/ fileListHeader4 }}
 
-                                            <ul class="file_list_4">
+                                            <ul class="schedules_list_4">
                                                 {{# fileList4 }}
                                                 <li>
-                                                    <a href="#" title="{{ tittel }}" class="schedules_link">
-                                                        {{ tittel }}
+                                                    <a href="{{ url }}" title="{{ tittel }}" class="file-link" target="_blank">
+                                                        <span class="file-icon {{ fileType }}"></span>
+                                                        <span class="file-title">{{ tittel }}</span>                    
+                                                        {{# fileType }}
+                                                            <span class="file-info">[{{ fileType }}]</span>
+                                                        {{/ fileType }}
                                                     </a>
                                                 </li>
                                                 {{/ fileList4 }}
@@ -44,8 +48,12 @@
                                     
                                     {{# fileList3 }}
                                     <li>
-                                        <a href="#" title="{{ tittel }}" class="schedules_link">
-                                            {{ tittel }}
+                                        <a href="{{ url }}" title="{{ tittel }}" class="file-link" target="_blank">
+                                            <span class="file-icon {{ fileType }}"></span>
+                                            <span class="file-title">{{ tittel }}</span>
+                                            {{# fileType }}
+                                                <span class="file-info">[{{ fileType }}]</span>
+                                            {{/ fileType }}
                                         </a>
                                     </li>
                                     {{/ fileList3 }}
@@ -56,8 +64,12 @@
                         
                         {{# fileList2 }}
                         <li>
-                            <a href="#" title="{{ tittel }}" class="schedules_link">
-                                {{ tittel }}
+                            <a href="{{ url }}" title="{{ tittel }}" class="file-link" target="_blank">
+                                <span class="file-icon {{ fileType }}"></span>
+                                <span class="file-title">{{ tittel }}</span>
+                                {{# fileType }}
+                                    <span class="file-info">[{{ fileType }}]</span>
+                                {{/ fileType }}
                             </a>
                         </li>
                         {{/ fileList2 }}
@@ -68,8 +80,12 @@
             
             {{# fileList1 }}
             <li>
-                <a href="#" title="{{ tittel }}" class="schedules_link">
-                    {{ tittel }}
+                <a href="{{ url }}" title="{{ tittel }}" class="file-link" target="_blank">
+                    <span class="file-icon {{ fileType }}"></span>
+                    <span class="file-title">{{ tittel }}</span>
+                    {{# fileType }}
+                        <span class="file-info">[{{ fileType }}]</span>
+                    {{/ fileType }}
                 </a>
             </li>
             {{/ fileList1 }}
@@ -79,13 +95,21 @@
     </li>
     {{/ schedulesList }}
     <li>
-        <a href="#" title="{{ tittel }}" class="schedules_link">
-            {{ tittel }}
+        <a href="{{ url }}" title="{{ tittel }}" class="file-link" target="_blank">
+            <span class="file-icon {{ fileType }}"></span>
+            <span class="file-title">{{ tittel }}</span>
+            {{# fileType }}
+                <span class="file-info">[{{ fileType }}]</span>
+            {{/ fileType }}
         </a>
     </li>
     <li>
-        <a href="#" title="{{ tittel }}" class="schedules_link">
-            {{ tittel }}
+        <a href="{{ url }}" title="{{ tittel }}" class="file-link" target="_blank">
+            <span class="file-icon {{ fileType }}"></span>
+            <span class="file-title">{{ tittel }}</span>
+            {{# fileType }}
+                <span class="file-info">[{{ fileType }}]</span>
+            {{/ fileType }}
         </a>
     </li>
 </ul>
