@@ -1775,6 +1775,10 @@ h1.article_header {
         float: right;
         text-align: right; } }
 
+.module + .row_no_clearfix.equal_height_container.mbxl {
+  margin-top: 56px;
+  margin-top: 3.5rem; }
+
 .frontpage {
   margin-bottom: 56px;
   margin-bottom: 3.5rem;
@@ -4969,7 +4973,7 @@ footer {
       width: auto;
       font-size: 20px; }
       .flex-table__cell--linkarrow:before {
-        background: url(../../../images/default_list_style_image.svg) no-repeat right top;
+        background: url(../images/default_list_style_image.svg) no-repeat right top;
         content: '';
         width: 5px;
         margin: 8px 5px 0 0;
