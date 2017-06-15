@@ -1,0 +1,73 @@
+{{> organisms-header-4 }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ organisasjonsenhet.tittel }}", url: "{{ organisasjonsenhet.url }}") }}
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+
+            {{> molecules-org-meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+            
+            <div class="rssicon_floatRight">
+                <a href="/rss/rss.do?sectionId=7051" type="application/rss+xml" rel="alternate" title="Abonner med RSS">RSS - abonner</a>
+            </div>
+            
+            {{> molecules-moduloverskrift-h1(tittel: "Byråder") }}
+            
+            {{> organisms-modul-liste:mbj }}
+            
+            <div class="row_no_clearfix equal_height_container mbxl">
+                
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    <div class="tout_container">
+                        <h2 class="tout_header">
+                             Politiske saker
+                        </h2>
+                        <img src="https://www.bergen.kommune.no/bk/multimedia/archive/00093/Ikon_politiske_saker_93604a.jpg" alt="Politiske saker" class="tout_img">
+                        <div class="tout_excerpt">
+                            <p>Få oversikt over møter, finn saksdokumenter eller spørsmål stilt i styrer, råd og utvalg.
+<br><a href="http://www3.bergen.kommune.no/bksak/default.asp" target="_blank" title="">Åpne politiske saker og spørsmålsregister</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    <div class="tout_container">
+                        <h2 class="tout_header">
+                             Politikerregister
+                        </h2>
+                        <img src="https://www.bergen.kommune.no/bk/multimedia/archive/00093/Politikerregisteret__93605a.jpg" alt="Politikerregister" class="tout_img">
+                        <div class="tout_excerpt">
+                            <p>Oversikt over politikere i Bergen kommune, og deres politiske verv og økonomiske interesser.<br><a href="http://www3.bergen.kommune.no/wwwsru/default.asp" target="_blank" title="">Åpne politikerregisteret</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    <div class="tout_container">
+                        <h2 class="tout_header">
+                             Gaveregister
+                        </h2>
+                        <div class="tout_excerpt">
+                            <p>
+                                Ønsker du innsyn i gaveregisteret for byrådene sender du en epost til:
+                                <a href="mailto:byradsleder@bergen.kommune.no">byradsleder@bergen.kommune.no</a>
+                                <br><br>
+                                <a href="http://www.bergen.kommune.no/basic30/dldoclink.asp?docid=BKDOK-2016-00486" target="_blank" class="external_link" title="">Les Retningslinjer for folkevalgte for å gi og ta imot gaver</a> <br>
+                                Registeret er offentlig.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</main>
+
+{{> organisms-footer }}

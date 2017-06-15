@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1497517566709,
+  "timestamp": 1497527769419,
   "graph": {
     "options": {
       "directed": true,
@@ -843,11 +843,11 @@
         }
       },
       {
-        "v": "02-organisms/40-annet/62-modul-nyheter-liste.mustache",
+        "v": "02-organisms/40-annet/62-modul-liste.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-01-hva-skjer-14-aktuelle-tema/04-pages-01-hva-skjer-14-aktuelle-tema.rendered.html",
-          "lineagePattern": "pages-aktuelle-tema"
+          "lineagePath": "../../patterns/04-pages-02-orgenhet-20-medlemmer/04-pages-02-orgenhet-20-medlemmer.rendered.html",
+          "lineagePattern": "pages-medlemmer"
         }
       },
       {
@@ -1070,6 +1070,12 @@
       },
       {
         "v": "04-pages/02-orgenhet/18-kontakt.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/02-orgenhet/20-medlemmer.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -2318,7 +2324,7 @@
       },
       {
         "v": "04-pages/01-hva-skjer/14-aktuelle-tema.mustache",
-        "w": "02-organisms/40-annet/62-modul-nyheter-liste.mustache",
+        "w": "02-organisms/40-annet/62-modul-liste.mustache",
         "value": {}
       },
       {
@@ -2608,6 +2614,41 @@
       },
       {
         "v": "04-pages/02-orgenhet/18-kontakt.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/02-orgenhet/20-medlemmer.mustache",
+        "w": "02-organisms/00-global/_04-header-4.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/02-orgenhet/20-medlemmer.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/02-orgenhet/20-medlemmer.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/02-orgenhet/20-medlemmer.mustache",
+        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/02-orgenhet/20-medlemmer.mustache",
+        "w": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/02-orgenhet/20-medlemmer.mustache",
+        "w": "02-organisms/40-annet/62-modul-liste.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/02-orgenhet/20-medlemmer.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
