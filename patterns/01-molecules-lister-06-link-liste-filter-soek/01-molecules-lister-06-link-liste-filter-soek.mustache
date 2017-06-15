@@ -1,0 +1,21 @@
+<ul class="link_list js_filter_search_result_list {{ styleModifier }}">
+    {{# linkliste }}
+    <li>
+        <a href="{{ url }}" title="{{ tittel }}" class="js_highlight_filter_search_result">
+            {{ tittel }}
+        </a>
+                <!--
+        {{# kontekst.jspf }}
+            <div class="meta">
+                <c:forEach items="${barn.kontekst}" var="kontekst">
+                    ${kontekst.ledetekst}
+                    <c:forEach items="${kontekst.emner}" var="emne" varStatus="status">
+                        <tm:link var="emne.topic">${emne.navn}</tm:link><c:if test="${!status.last}">, </c:if>
+                    </c:forEach>
+                </c:forEach>
+            </div>
+        {{/ kontekst.jspf }}
+                -->
+    </li>
+    {{/ linkliste }}
+</ul>

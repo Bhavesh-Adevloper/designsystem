@@ -286,7 +286,62 @@ function selectYear() {
         return false;
     });
 }
-                               
+
+// Filtersoek
+function filterSearch() {
+    if ( document.getElementById( "js_filter_search" ) != null ) {
+        // Focus
+        $(".js_filter_search_input").focus();
+        // Do filter
+        $(".js_filter_search_input").on("keyup click input", function () {
+            if (this.value.length > 0) {
+                $(".js_clear_search").show();
+                $(".js_filter_search_result_list li").removeClass("match").addClass("hidden").filter(function () {
+                    return $(this).text().toLowerCase().indexOf($(".js_filter_search_input").val().toLowerCase()) != -1;
+                }).addClass("match").removeClass("hidden");
+                // Highlight only if class exists
+                if( $(".js_highlight_filter_search_result").length ) {
+                    highlightResults(".js_filter_search_result_list li.match .js_highlight_filter_search_result", this.value);
+                }
+            }
+            else {
+                $(".js_clear_search").hide();
+                $(".js_filter_search_result_list li").removeClass("hidden match");
+            }            
+            // No more matches
+            if($(".js_filter_search_result_list li").not(".hidden").length > 0 ) {
+                $(".js_empty_filter_search").hide();
+            } else {
+                $(".js_empty_filter_search").show();
+            }
+            // Cancel search
+            clearFilter();
+        });
+    }
+}
+var highlightResults = function (selector, inputValue) {
+    $(selector).each(function () {
+        var matchStart = $(this).text().toLowerCase().indexOf("" + inputValue.toLowerCase() + "");
+        var matchEnd = matchStart + inputValue.length - 1;
+        var beforeMatch = $(this).text().slice(0, matchStart);
+        var matchText = $(this).text().slice(matchStart, matchEnd + 1);
+        var afterMatch = $(this).text().slice(matchEnd + 1);
+        $(this).html(beforeMatch + "<span class='list_highlight'>" + matchText + "</span>" + afterMatch);
+    });
+};
+function clearFilter() {
+    $( ".js_clear_search" ).click(function () {
+        $( ".js_clear_search" ).hide();
+        $( ".js_empty_filter_search" ).hide();
+        $( ".js_filter_search_input" ).val('').focus();
+        $( ".js_filter_search_result_list li" ).removeClass("hidden match");
+    });
+}
+
+
+
+
+
 
 
 $(document).ready(function () {
@@ -300,6 +355,7 @@ $(document).ready(function () {
     $(".js_chat_link").click(function() { return false; });
     selectYear();
     horisontalScroll();
+    filterSearch();
 });
 
 $(window).bind("load", function() {

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1496917400975,
+  "timestamp": 1497517566709,
   "graph": {
     "options": {
       "directed": true,
@@ -480,6 +480,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/02-organisms-40-annet-10-siste-nytt/02-organisms-40-annet-10-siste-nytt.rendered.html",
           "lineagePattern": "organisms-siste-nytt"
+        }
+      },
+      {
+        "v": "01-molecules/lister/06-link-liste-filter-soek.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-02-orgenhet-16-underavdelinger/04-pages-02-orgenhet-16-underavdelinger.rendered.html",
+          "lineagePattern": "pages-underavdelinger"
         }
       },
       {
@@ -2556,6 +2564,11 @@
       {
         "v": "04-pages/02-orgenhet/16-underavdelinger.mustache",
         "w": "01-molecules/lister/04-link-liste.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/02-orgenhet/16-underavdelinger.mustache",
+        "w": "01-molecules/lister/06-link-liste-filter-soek.mustache",
         "value": {}
       },
       {

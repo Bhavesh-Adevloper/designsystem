@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title>Bergen kommune</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="stylesheet" href="../../css/style.css?1497517564735" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1497517564735" media="all" />
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1497517564735" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1497517564735" media="all" />
+
+    <!-- End Pattern Lab -->
+    
+    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../js/portalen-functions.js"></script>
+    <script type="text/javascript" src="../../js/fixPatternLinks.js"></script>
+  
+  </head>
+  <body class="">
+    
+<ul class="link_list js_filter_search_result_list ">
+    <li>
+        <a href="#" title="Lorem ipsum dolor sit (37 characters)" class="js_highlight_filter_search_result">
+            Lorem ipsum dolor sit (37 characters)
+        </a>
+                <!--
+                -->
+    </li>
+    <li>
+        <a href="#" title="Lorem ipsum dolor sit (37 characters)" class="js_highlight_filter_search_result">
+            Lorem ipsum dolor sit (37 characters)
+        </a>
+                <!--
+                -->
+    </li>
+    <li>
+        <a href="#" title="Lorem ipsum dolor sit (37 characters)" class="js_highlight_filter_search_result">
+            Lorem ipsum dolor sit (37 characters)
+        </a>
+                <!--
+                -->
+    </li>
+</ul>  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-underavdelinger","lineagePath":"../../patterns/04-pages-02-orgenhet-16-underavdelinger/04-pages-02-orgenhet-16-underavdelinger.rendered.html"}],"lineageR":[{"lineagePattern":"pages-underavdelinger","lineagePath":"../../patterns/04-pages-02-orgenhet-16-underavdelinger/04-pages-02-orgenhet-16-underavdelinger.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"lister"},"patternExtension":"mustache","patternName":"Link Liste Filter Soek","patternPartial":"molecules-link-liste-filter-soek","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1497517564735">
+  (function() {
+    if (self != top) {
+      var cb = '1497517564735';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1497517564735">
+  (function() {
+    if (self != top) {
+      var cb = '1497517564735';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+  
+  </body>
+</html>
