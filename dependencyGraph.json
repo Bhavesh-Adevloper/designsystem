@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1497527769419,
+  "timestamp": 1497867621346,
   "graph": {
     "options": {
       "directed": true,
@@ -776,8 +776,8 @@
         "v": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-01-hva-skjer-02-kultur-og-idrett/04-pages-01-hva-skjer-02-kultur-og-idrett.rendered.html",
-          "lineagePattern": "pages-kultur-og-idrett"
+          "lineagePath": "../../patterns/03-templates-_00-forside/03-templates-_00-forside.rendered.html",
+          "lineagePattern": "templates-forside"
         }
       },
       {
@@ -893,7 +893,9 @@
       {
         "v": "03-templates/01-Hva-skjer/02-underkategori.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-01-hva-skjer-02-kultur-og-idrett/04-pages-01-hva-skjer-02-kultur-og-idrett.rendered.html",
+          "lineagePattern": "pages-kultur-og-idrett"
         }
       },
       {
@@ -2234,32 +2236,7 @@
       },
       {
         "v": "04-pages/01-hva-skjer/02-kultur-og-idrett.mustache",
-        "w": "02-organisms/00-global/_01-header-1.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/02-kultur-og-idrett.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/02-kultur-og-idrett.mustache",
-        "w": "01-molecules/navigasjon/hva-skjer-meny.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/02-kultur-og-idrett.mustache",
-        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/02-kultur-og-idrett.mustache",
-        "w": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/02-kultur-og-idrett.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
+        "w": "03-templates/01-Hva-skjer/02-underkategori.mustache",
         "value": {}
       },
       {
