@@ -5,7 +5,9 @@
         
         <div class="smMa desktop_centered">
 
-            {{> molecules-sideoverskrift-h2-med-lenke:mbl|page_header--hvaskjer(sidetittel: "Hva skjer", url: "{{ link.pages-hva-skjer }}") }}
+            <div class="page_header_container--hvaskjer">
+                {{> molecules-sideoverskrift-h2-med-lenke:mbl(sidetittel: "Hva skjer", url: "{{ link.pages-hva-skjer }}") }}
+            </div>
             
             {{# meny }}
             {{> molecules-hva-skjer-meny }}

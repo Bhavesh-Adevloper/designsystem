@@ -5,12 +5,18 @@
         
         <div class="smMa desktop_centered">
             
-            {{> molecules-sideoverskrift-h1:mbl|page_header--hvaskjer(sidetittel: "Hva skjer") }}
+            <div class="page_header_container--hvaskjer">
+                {{> molecules-sideoverskrift-h1:mbl(sidetittel: "Hva skjer") }}
+            </div>
             
             {{# meny }}
             {{> molecules-hva-skjer-meny }}
             {{/ meny }}
+
+        </div><!-- end .smMa desktop_centered -->
             
+        
+        <div class="smMa desktop_centered">
             
             <!-- Escenic: toppsak -->
             <div class="toppsak">                

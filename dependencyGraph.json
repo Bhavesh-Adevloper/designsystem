@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1497867621346,
+  "timestamp": 1498031546358,
   "graph": {
     "options": {
       "directed": true,
@@ -572,8 +572,8 @@
         "v": "01-molecules/navigasjon/hva-skjer-meny.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-01-hva-skjer-04-hs-uk-artikkel/04-pages-01-hva-skjer-04-hs-uk-artikkel.rendered.html",
-          "lineagePattern": "pages-hs-uk-artikkel"
+          "lineagePath": "../../patterns/03-templates-01-Hva-skjer-02-underkategori/03-templates-01-Hva-skjer-02-underkategori.rendered.html",
+          "lineagePattern": "templates-underkategori"
         }
       },
       {
@@ -698,8 +698,8 @@
         "v": "02-organisms/00-global/_01-header-1.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-01-hva-skjer-17-personalrommet/04-pages-01-hva-skjer-17-personalrommet.rendered.html",
-          "lineagePattern": "pages-personalrommet"
+          "lineagePath": "../../patterns/04-pages-50-escenic-04-pressemelding/04-pages-50-escenic-04-pressemelding.rendered.html",
+          "lineagePattern": "pages-pressemelding"
         }
       },
       {
@@ -1306,6 +1306,12 @@
       },
       {
         "v": "04-pages/50-escenic/02-artikkel-2.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/50-escenic/04-pressemelding.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -2251,16 +2257,6 @@
       },
       {
         "v": "04-pages/01-hva-skjer/03-hs-artikkel.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/03-hs-artikkel.mustache",
-        "w": "01-molecules/navigasjon/hva-skjer-meny.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/03-hs-artikkel.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -2272,16 +2268,6 @@
       {
         "v": "04-pages/01-hva-skjer/04-hs-uk-artikkel.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/04-hs-uk-artikkel.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/04-hs-uk-artikkel.mustache",
-        "w": "01-molecules/navigasjon/hva-skjer-meny.mustache",
         "value": {}
       },
       {
@@ -3701,6 +3687,31 @@
       },
       {
         "v": "04-pages/50-escenic/02-artikkel-2.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/50-escenic/04-pressemelding.mustache",
+        "w": "02-organisms/00-global/_01-header-1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/50-escenic/04-pressemelding.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/50-escenic/04-pressemelding.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/50-escenic/04-pressemelding.mustache",
+        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/50-escenic/04-pressemelding.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
