@@ -1,13 +1,13 @@
-<div class="sak {{ styleModifier }}">
-    {{# imgLandscape }}
-        <div class="excerpt_image_container_ruu">
-            <a href="{{ url }}" title="{{ tittel }}" class="image_link">
-                <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}">
-            </a>
-        </div>
-    {{/ imgLandscape }}
-    <div class="excerpt_story_container_ruu">
-        <div class="sakstittel_ruu">
+<div class="module {{ styleModifier }}">
+    <div class="moduleStory">
+        {{# imgLandscape }}
+            <div class="excerpt_image_container_ruu">
+                <a href="{{ url }}" title="{{ tittel }}">
+                    <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}">
+                </a>
+            </div>
+        {{/ imgLandscape }}
+        <div class="excerpt_story_container_ruu">            
             {{# stikktittel }}
                 <h3 class="teaser_kicker">{{ stikktittel }}</h3>
             {{/ stikktittel }}
@@ -18,11 +18,11 @@
                     </span>
                 </a>
             </h2>
+            {{# ingress }}
+            <p class="story_excerpt">		
+                {{ ingress }}
+            </p>
+            {{/ ingress }}
         </div>
-        {{# ingress }}
-        <p class="story_excerpt">		
-            {{ ingress }}
-        </p>
-        {{/ ingress }}
     </div>
 </div>
