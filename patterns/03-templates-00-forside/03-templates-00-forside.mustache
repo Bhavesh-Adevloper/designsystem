@@ -1,0 +1,25 @@
+{{> organisms-header }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+    
+    <h1 class="screen-reader-text">Bergen kommune - Forside</h1>
+    
+    {{# hvaskjer }}
+        {{> organisms-forsidenyheter }}
+    {{/ hvaskjer }}
+    
+
+    <div class="row_no_clearfix service_link_container equal_height_container">
+        {{# navigasjonStor }}
+        {{> molecules-navigasjonsboks-stor:col_md_6|col_lg_4|clear_col_md_6|clear_col_lg_4 }}
+        {{/ navigasjonStor }}
+    </div>
+
+    {{# feilmelding }}
+    {{> organisms-service-snarvei }}
+    {{/ feilmelding }}
+            
+     
+
+   
+</main>
+{{> organisms-footer }}

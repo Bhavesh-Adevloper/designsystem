@@ -1,0 +1,52 @@
+<div class="frontpage_news mbj">
+    <div class="row">
+        <div class="col_md_6 col_lg_6 float_change">
+            <h2 class="module_header frontpage_news_header">
+                <a href="{{ link.pages-hva-skjer }}" title="Hva skjer i kommunen">
+                    Hva skjer i kommunen
+                </a>
+            </h2>
+        </div>
+        <div class="col_md_6 col_lg_6">
+
+            {{# viktigNyhet }}
+                <a href="{{ url }}" title="{{ tittel }}" class="frontpage_news_promo module_box_style {{ noImageClass }}">                    
+                    {{# imgLandscape }}
+                        <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}">
+                    {{/ imgLandscape }}
+                    <h3 class="promo_title">
+                        {{ tittel }}
+                    </h3>
+                    {{# viktigNyhetIngress }}
+                    <p class="promo_excerpt">		
+                        {{ ingress }}
+                    </p>
+                    {{/ viktigNyhetIngress }}
+                </a>
+            {{/ viktigNyhet }}
+
+        </div>
+        <div class="col_md_6 col_lg_6"> 
+
+            <ul class="link_list frontpage_news_link_list">
+                {{# linkliste }}
+                    <li>
+                        <h3 class="frontpage_news_list_header">
+                            <a href="{{ url }}" title="{{ tittel }}">{{ tittel }}</a>
+                        </h3>
+                    </li>
+                {{/ linkliste }}
+            </ul>
+
+            <div class="read_more_link_container frontpage_news_read_more_link_container">
+                <a href="{{ link.pages-hva-skjer }}" title="Hva skjer">
+                    <span class="read_more_link_medium">
+                        Gå til Hva skjer
+                    </span>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+</div>
