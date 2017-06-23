@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1498130490382,
+  "timestamp": 1498216257609,
   "graph": {
     "options": {
       "directed": true,
@@ -776,8 +776,8 @@
         "v": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-_00-forside/03-templates-_00-forside.rendered.html",
-          "lineagePattern": "templates-forside"
+          "lineagePath": "../../patterns/03-templates-01-Hva-skjer-02-underkategori/03-templates-01-Hva-skjer-02-underkategori.rendered.html",
+          "lineagePattern": "templates-underkategori"
         }
       },
       {
@@ -2208,11 +2208,6 @@
       {
         "v": "03-templates/_00-forside.mustache",
         "w": "02-organisms/00-global/00-header.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/_00-forside.mustache",
-        "w": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
         "value": {}
       },
       {

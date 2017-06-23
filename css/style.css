@@ -1950,6 +1950,8 @@ h1.article_header {
       text-decoration: none; }
       .hvaskjer_grid .teaser_title a:hover {
         text-decoration: underline; }
+  .hvaskjer_grid .excerpt_image_container_ruu a {
+    display: block; }
   .hvaskjer_grid .excerpt_image_container_ruu img {
     display: block;
     width: 100%;
@@ -2292,6 +2294,68 @@ h1.article_header {
     text-decoration: none; }
   .listImagePages .current {
     color: #cb0000; }
+
+@media (min-width: 700px) {
+  .frontpage_news {
+    margin-top: 6px;
+    margin-top: 0.375rem; } }
+
+.frontpage_news .module_header.frontpage_news_header {
+  margin-bottom: 16px;
+  margin-bottom: 1rem; }
+  @media (min-width: 700px) {
+    .frontpage_news .module_header.frontpage_news_header {
+      margin: 16px 0 2px;
+      margin: 1rem 0 0.125rem; } }
+
+.frontpage_news .module_box_style {
+  display: block;
+  width: 100%;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  margin-top: 0;
+  border: 0 none; }
+  @media (min-width: 700px) {
+    .frontpage_news .module_box_style {
+      margin-bottom: 0; } }
+
+.frontpage_news .frontpage_news_promo img {
+  display: block;
+  width: 100%; }
+
+.frontpage_news .frontpage_news_promo .promo_title {
+  margin: 0;
+  padding: 12px 6px 12px 12px;
+  padding: 0.75rem 0.375rem 0.75rem 0.75rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  background: transparent url("../images/default_list_style_image.svg") no-repeat 1px 20px; }
+  @media (min-width: 700px) {
+    .frontpage_news .frontpage_news_promo .promo_title {
+      font-size: 24px;
+      font-size: 1.5rem;
+      line-height: 1.25;
+      padding-bottom: 18px;
+      padding-bottom: 1.125rem;
+      background-position: 1px 24px; } }
+
+.frontpage_news .frontpage_news_promo .promo_excerpt {
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem; }
+
+.frontpage_news .frontpage_news_link_list {
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem; }
+  .frontpage_news .frontpage_news_link_list .frontpage_news_list_header {
+    margin: 0; }
+
+.frontpage_news .frontpage_news_read_more_link_container {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2; }
 
 #lightcase-case {
   text-shadow: none;
