@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1498216257609,
+  "timestamp": 1498221073083,
   "graph": {
     "options": {
       "directed": true,
@@ -596,8 +596,8 @@
         "v": "01-molecules/navigasjon/navigasjonsboks-stor.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-_00-forside/03-templates-_00-forside.rendered.html",
-          "lineagePattern": "templates-forside"
+          "lineagePath": "../../patterns/03-templates-03-Tjenester-20-tjenestetilbud/03-templates-03-Tjenester-20-tjenestetilbud.rendered.html",
+          "lineagePattern": "templates-tjenestetilbud"
         }
       },
       {
@@ -851,6 +851,14 @@
         }
       },
       {
+        "v": "02-organisms/40-annet/70-forsidenyheter.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-00-forside/03-templates-00-forside.rendered.html",
+          "lineagePattern": "templates-forside"
+        }
+      },
+      {
         "v": "02-organisms/40-annet/_06-modul-tall-og-fakta.mustache",
         "value": {
           "compileState": "clean",
@@ -880,6 +888,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-01-hva-skjer-17-personalrommet/04-pages-01-hva-skjer-17-personalrommet.rendered.html",
           "lineagePattern": "pages-personalrommet"
+        }
+      },
+      {
+        "v": "03-templates/00-forside.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-00-forside-02-forside-enkel-nyhet/04-pages-00-forside-02-forside-enkel-nyhet.rendered.html",
+          "lineagePattern": "pages-forside-enkel-nyhet"
         }
       },
       {
@@ -967,15 +983,13 @@
         }
       },
       {
-        "v": "03-templates/_00-forside.mustache",
+        "v": "04-pages/00-forside/00-forside.mustache",
         "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-00-forside/04-pages-00-forside.rendered.html",
-          "lineagePattern": "pages-forside"
+          "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/00-forside.mustache",
+        "v": "04-pages/00-forside/02-forside-enkel-nyhet.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -1583,6 +1597,31 @@
       {
         "v": "02-organisms/40-annet/20-skoleruten.mustache",
         "w": "01-molecules/lister/55-skoleruten.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/00-forside.mustache",
+        "w": "02-organisms/00-global/00-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/00-forside.mustache",
+        "w": "02-organisms/40-annet/70-forsidenyheter.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/00-forside.mustache",
+        "w": "01-molecules/navigasjon/navigasjonsboks-stor.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/00-forside.mustache",
+        "w": "02-organisms/40-annet/30-service-snarvei.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/00-forside.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {
@@ -2206,28 +2245,13 @@
         "value": {}
       },
       {
-        "v": "03-templates/_00-forside.mustache",
-        "w": "02-organisms/00-global/00-header.mustache",
+        "v": "04-pages/00-forside/00-forside.mustache",
+        "w": "03-templates/00-forside.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/_00-forside.mustache",
-        "w": "01-molecules/navigasjon/navigasjonsboks-stor.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/_00-forside.mustache",
-        "w": "02-organisms/40-annet/30-service-snarvei.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/_00-forside.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/00-forside.mustache",
-        "w": "03-templates/_00-forside.mustache",
+        "v": "04-pages/00-forside/02-forside-enkel-nyhet.mustache",
+        "w": "03-templates/00-forside.mustache",
         "value": {}
       },
       {
