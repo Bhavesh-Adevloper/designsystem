@@ -4,11 +4,26 @@
     {{> molecules-sideoverskrift-h1:mbl(sidetittel: "Politiske saker") }}
 
     <div class="row">
-        <div class="col_md_6 col_lg_6 mbxxl">
+
+        <div class="col_md_12 col_lg_8 mbxxl">
+            <div class="notice_container {{ styleModifier }}">
+                <div class="notice_inner">
+                    <div>
+                        <p>Kort og presist tekst om at det eksisterer to løsninger for tiden. Aliquam sed iaculis nibh, laoreet laoreet lorem. Vestibulum massa dui, facilisis at tristique eu, convallis et nisi. In malesuada non ante id mattis.</p>
+                    </div>
+                </div>
+                <div class="notice_inner__actions">
+                    <p><a href="#"> Mer informasjon</a></p>
+                    <button class="button"> Til den eldre løsningen</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col_md_12 col_lg_4 clear_left mbxxl">
             {{#sok}} {{> molecules-sokefilter}} {{/sok}}
         </div>
 
-        <div class="col_md_8 col_lg_8">
+        <div class="col_md_12 col_lg_8 clear_left">
             {{> molecules-flex-tabell }}
         </div>
 

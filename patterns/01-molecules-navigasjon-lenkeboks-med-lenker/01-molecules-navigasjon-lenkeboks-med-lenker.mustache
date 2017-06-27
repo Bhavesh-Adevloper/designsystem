@@ -1,0 +1,17 @@
+<div class="linkbox {{ styleModifier }}">
+    <h2 class="linkbox__header">
+        <a href="{{ url }}" title="{{ tittel }}" class="linkbox__header-link">
+            {{ tittel }}
+        </a>
+    </h2>
+    <div class="linkbox__content">
+        <ul>
+            {{# linkliste }}
+                <li><a href="{{ url }}" title="{{ tittel }}">{{ tittel }}</a></li>
+            {{/ linkliste }}
+        </ul>
+    </div>
+    <div class="linkbox__category-link-container">
+        <a href="{{ url }}" title="{{ tittel }}">Mer om {{ tittel }}</a>
+    </div>
+</div>

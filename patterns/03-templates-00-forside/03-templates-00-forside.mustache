@@ -4,19 +4,83 @@
     <h1 class="screen-reader-text">Bergen kommune - Forside</h1>
     
     {{# hvaskjer }}
-        {{> organisms-forsidenyheter }}
+        {{> organisms-forsidenyheter:mbj }}
     {{/ hvaskjer }}
     
-
-    <div class="row_no_clearfix service_link_container equal_height_container">
-        {{# navigasjonStor }}
-        {{> molecules-navigasjonsboks-stor:col_md_6|col_lg_4|clear_col_md_6|clear_col_lg_4 }}
-        {{/ navigasjonStor }}
-    </div>
+    
+    {{# tjenester }}
+        {{> organisms-forsidetjenester }}
+    {{/ tjenester }}
+        
 
     {{# feilmelding }}
-    {{> organisms-service-snarvei }}
+        {{> organisms-service-snarvei:clearfix|mbj }}
     {{/ feilmelding }}
+    
+    
+    <div class="row_no_clearfix equal_height_container mbxl">
+        <div class="col_md_4 col_lg_4 equal_height_item">
+            
+            {{# luftkvalitet }}
+                {{> molecules-tout-luftkvalitet-forside }}
+            {{/ luftkvalitet }}
+            
+            {{# sykkel-vm }}
+                {{> molecules-tout-sykkel-vm }}
+            {{/ sykkel-vm }}
+            
+        </div>
+        <div class="col_md_4 col_lg_4 equal_height_item">
+            
+            <div class="tout_container">
+                <h2 class="tout_header">
+                    Planer
+                </h2>
+                <div class="tout_excerpt">
+                    <ul>
+                        <li>
+                            <a href="https://www.bergen.kommune.no/omkommunen/arealplaner" title="Arealplaner">Arealplaner</a>
+                        </li>
+                        <li>
+                            <a href="https://www.bergen.kommune.no/aktuelt/kunngjoringer" title="Kunngjorte planer">Kunngjorte planer</a>
+                        </li>
+                        <li>
+                            <a href="https://www.bergen.kommune.no/tjenestetilbud/bolig-og-eiendom/eiendom/eiendomsregister/basiskart-naboliste-matrikkelbrev-planinfo" title="Kart og naboliste">Kart og naboliste</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col_md_4 col_lg_4 equal_height_item">
+                        
+            <div class="tout_container">
+                <h2 class="tout_header">
+                    Offentlig innsyn
+                </h2>
+                <div class="tout_excerpt">
+                    <ul>
+                        <li>
+                            <a href="http://www3.bergen.kommune.no/offentligjournal/" title="Postjournal">Postjournal</a>
+                        </li>
+                        <li>
+                            <a href="https://www.bergen.kommune.no/omkommunen/offentlig-innsyn/" title="Innsyn">Innsyn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col_md_10 col_lg_8 col_md_offset_1 col_lg_offset_2">
+            <h2 class="module_header">
+                Kontakt
+            </h2>
+        </div>
+    </div>
+    
             
      
 

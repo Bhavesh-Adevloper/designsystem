@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1498221073083,
+  "timestamp": 1498570327015,
   "graph": {
     "options": {
       "directed": true,
@@ -373,6 +373,14 @@
         }
       },
       {
+        "v": "01-molecules/02-innhold/_31-tout-luftkvalitet-forside.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-00-forside/03-templates-00-forside.rendered.html",
+          "lineagePattern": "templates-forside"
+        }
+      },
+      {
         "v": "01-molecules/02-innhold/_31-tout-luftkvalitet.mustache",
         "value": {
           "compileState": "clean",
@@ -406,6 +414,14 @@
       },
       {
         "v": "01-molecules/02-innhold/_35-tout-visjoner.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
+          "lineagePattern": "pages-etjeneste-eksempler"
+        }
+      },
+      {
+        "v": "01-molecules/02-innhold/_36-tout-sykkel-vm.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
@@ -577,7 +593,15 @@
         }
       },
       {
-        "v": "01-molecules/navigasjon/lenkeboks-med-forklaring.mustache",
+        "v": "01-molecules/navigasjon/lenkeboks-med-lenker.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-40-annet-71-forsidetjenester/02-organisms-40-annet-71-forsidetjenester.rendered.html",
+          "lineagePattern": "organisms-forsidetjenester"
+        }
+      },
+      {
+        "v": "01-molecules/navigasjon/lenkeboks.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-20-navigasjon-04-politikk/04-pages-20-navigasjon-04-politikk.rendered.html",
@@ -852,6 +876,14 @@
       },
       {
         "v": "02-organisms/40-annet/70-forsidenyheter.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-00-forside/03-templates-00-forside.rendered.html",
+          "lineagePattern": "templates-forside"
+        }
+      },
+      {
+        "v": "02-organisms/40-annet/71-forsidetjenester.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-00-forside/03-templates-00-forside.rendered.html",
@@ -1600,6 +1632,11 @@
         "value": {}
       },
       {
+        "v": "02-organisms/40-annet/71-forsidetjenester.mustache",
+        "w": "01-molecules/navigasjon/lenkeboks-med-lenker.mustache",
+        "value": {}
+      },
+      {
         "v": "03-templates/00-forside.mustache",
         "w": "02-organisms/00-global/00-header.mustache",
         "value": {}
@@ -1611,12 +1648,22 @@
       },
       {
         "v": "03-templates/00-forside.mustache",
-        "w": "01-molecules/navigasjon/navigasjonsboks-stor.mustache",
+        "w": "02-organisms/40-annet/71-forsidetjenester.mustache",
         "value": {}
       },
       {
         "v": "03-templates/00-forside.mustache",
         "w": "02-organisms/40-annet/30-service-snarvei.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/00-forside.mustache",
+        "w": "01-molecules/02-innhold/_31-tout-luftkvalitet-forside.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/00-forside.mustache",
+        "w": "01-molecules/02-innhold/_36-tout-sykkel-vm.mustache",
         "value": {}
       },
       {
@@ -2701,6 +2748,16 @@
       },
       {
         "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
+        "w": "01-molecules/02-innhold/_36-tout-sykkel-vm.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
+        "w": "02-organisms/40-annet/30-service-snarvei.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
         "w": "01-molecules/02-innhold/_30-tout-stoltzen.mustache",
         "value": {}
       },
@@ -3611,7 +3668,7 @@
       },
       {
         "v": "04-pages/20-navigasjon/04-politikk.mustache",
-        "w": "01-molecules/navigasjon/lenkeboks-med-forklaring.mustache",
+        "w": "01-molecules/navigasjon/lenkeboks.mustache",
         "value": {}
       },
       {
