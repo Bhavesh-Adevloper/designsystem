@@ -1474,7 +1474,7 @@ h1.article_header {
     width: 2rem;
     height: 28px;
     height: 1.75rem;
-    background: rgba(0, 0, 0, 0.2) url("../images/mainSprite.svg?v=20170307") no-repeat -288px -194px;
+    background: rgba(0, 0, 0, 0.2) url("../images/mainSprite.svg?v=20170628") no-repeat -288px -194px;
     border-radius: 2px;
     opacity: .7; }
   .related_image .image_link:hover:before, .related_image .image_link:active:before, .related_image .image_link:focus:before {
@@ -1534,7 +1534,7 @@ h1.article_header {
         width: 2rem;
         height: 32px;
         height: 2rem;
-        background: transparent url("../images/mainSprite.svg?v=20170307") no-repeat -256px -192px; }
+        background: transparent url("../images/mainSprite.svg?v=20170628") no-repeat -256px -192px; }
     .related_image_container.slideshow .imageset img {
       display: none; }
 
@@ -1582,7 +1582,7 @@ h1.article_header {
     width: 2rem;
     height: 32px;
     height: 2rem;
-    background: transparent url("../images/mainSprite.svg?v=20170307") no-repeat -256px -192px; }
+    background: transparent url("../images/mainSprite.svg?v=20170628") no-repeat -256px -192px; }
 
 .related_image_gallery_container .imageset img {
   display: none; }
@@ -2095,7 +2095,7 @@ h1.article_header {
     left: 0;
     top: -4px;
     top: -0.25rem;
-    background: url("../images/mainSprite.svg?v=20170307") no-repeat -256px -256px transparent;
+    background: url("../images/mainSprite.svg?v=20170628") no-repeat -256px -256px transparent;
     height: 32px;
     height: 2rem;
     width: 32px;
@@ -2299,6 +2299,21 @@ h1.article_header {
     text-decoration: none; }
   .listImagePages .current {
     color: #cb0000; }
+
+.frontpage_contact {
+  border-bottom: 1px solid #e7d5a6;
+  border-bottom: 0.0625rem solid #e7d5a6;
+  padding: 0 26px 6px;
+  padding: 0 1.625rem 0.375rem; }
+  .frontpage_contact dl {
+    margin-bottom: 0; }
+    .frontpage_contact dl dd {
+      margin-bottom: 16px;
+      margin-bottom: 1rem; }
+  @media only screen and (min-width: 700px) {
+    .frontpage_contact {
+      padding-bottom: 12px;
+      padding-bottom: 0.75rem; } }
 
 @media (min-width: 700px) {
   .frontpage_news {
@@ -3005,7 +3020,7 @@ h3.module_header {
 
 .icon {
   display: block;
-  background-image: url("../images/mainSprite.svg?v=20170307");
+  background-image: url("../images/mainSprite.svg?v=20170628");
   background-repeat: no-repeat;
   background-color: transparent;
   height: 32px;
@@ -3179,6 +3194,15 @@ h3.module_header {
   width: 4rem;
   height: 64px;
   height: 4rem; }
+
+.icon.employee_icon.medium_size {
+  background-position: 0 -320px; }
+
+.icon.department_icon.medium_size {
+  background-position: -32px -320px; }
+
+.icon.innbyggerservice_icon.medium_size {
+  background-position: -64px -320px; }
 
 .read_more_link_container {
   text-align: right; }
@@ -3555,7 +3579,7 @@ a.file {
     top: 0.875rem;
     left: 16px;
     left: 1rem;
-    background: url("../images/mainSprite.svg?v=20170307") no-repeat -160px -192px transparent;
+    background: url("../images/mainSprite.svg?v=20170628") no-repeat -160px -192px transparent;
     height: 32px;
     height: 2rem;
     width: 32px;
@@ -3704,7 +3728,7 @@ a.file {
     top: -1rem;
     left: 5px;
     left: 0.3125rem;
-    background: url("../images/mainSprite.svg?v=20170307") no-repeat -160px -192px transparent;
+    background: url("../images/mainSprite.svg?v=20170628") no-repeat -160px -192px transparent;
     height: 32px;
     height: 2rem;
     width: 32px;
@@ -3986,7 +4010,7 @@ a.file {
   box-sizing: border-box; }
   .logo span {
     display: inline-block;
-    background: url("../images/mainSprite.svg?v=20170307") no-repeat -14px 0 transparent;
+    background: url("../images/mainSprite.svg?v=20170628") no-repeat -14px 0 transparent;
     text-indent: -3000em;
     overflow: hidden;
     width: 164px;
@@ -4913,7 +4937,7 @@ footer {
     .file-link .file-icon.html {
       background-image: url(../images/html.svg); }
     .file-link .file-icon.skjema {
-      background-image: url("../images/mainSprite.svg?v=20170307");
+      background-image: url("../images/mainSprite.svg?v=20170628");
       background-position: -167px -99px; }
   .file-link .file-info {
     color: #535353;
@@ -5112,7 +5136,7 @@ footer {
       line-height: 1.2;
       font-size: 20px; }
       .flex-table__cell--document-icon:before {
-        background: url("../images/mainSprite.svg?v=20170307") no-repeat -160px -96px transparent;
+        background: url("../images/mainSprite.svg?v=20170628") no-repeat -160px -96px transparent;
         content: "";
         width: 32px;
         width: 2rem;
@@ -6286,7 +6310,7 @@ footer {
       width: 2rem;
       height: 32px;
       height: 2rem;
-      background: url("../images/mainSprite.svg?v=20170307") no-repeat -160px -96px transparent; }
+      background: url("../images/mainSprite.svg?v=20170628") no-repeat -160px -96px transparent; }
   .file_list li.important a {
     color: #fff;
     font-size: 28px;
@@ -6797,7 +6821,7 @@ footer {
       top: 0.25rem;
       left: 6px;
       left: 0.375rem;
-      background: url("../images/mainSprite.svg?v=20170307") no-repeat 32px 32px transparent;
+      background: url("../images/mainSprite.svg?v=20170628") no-repeat 32px 32px transparent;
       height: 32px;
       height: 2rem;
       width: 32px;
@@ -8374,7 +8398,7 @@ a.itslearning_link {
     width: 2rem;
     height: 32px;
     height: 2rem;
-    background: url("../images/mainSprite.svg?v=20170307") no-repeat -160px -160px transparent; }
+    background: url("../images/mainSprite.svg?v=20170628") no-repeat -160px -160px transparent; }
   .important_link:hover {
     color: #fff; }
 

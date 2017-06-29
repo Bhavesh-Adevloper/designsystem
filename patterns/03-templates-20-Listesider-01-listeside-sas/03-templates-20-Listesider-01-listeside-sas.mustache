@@ -1,0 +1,38 @@
+{{> organisms-header-4 }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+    {{> molecules-sideoverskrift-h1:mbl}}
+
+    <div class="row">
+
+        {{#notice}}
+            <div class="col_md_12 col_lg_8 clear_left mbxxl">
+                <div class="notice_container {{ styleModifier }}">
+                    <div class="notice_inner">
+                        <div>
+                            <p>Kort og presist tekst om at det eksisterer to løsninger for tiden. Aliquam sed iaculis nibh, laoreet laoreet lorem. Vestibulum massa dui, facilisis at tristique eu, convallis et nisi. In malesuada non ante id mattis.</p>
+                        </div>
+                    </div>
+                    <div class="notice_inner__actions">
+                        <p><a href="#"> Mer informasjon</a></p>
+                        <button class="button"> Til den eldre løsningen</button>
+                    </div>
+                </div>
+            </div>
+        {{/notice}}
+
+        {{#sok}}
+            <div class="col_md_12 col_lg_4 clear_left {{styleModifier }} mbm">
+                 {{> molecules-sokefilter}}
+            </div>
+        {{/sok}}
+
+        {{#table}}
+        <div class="{{tableModifier}}">
+            {{> molecules-flex-tabell }}
+        </div>
+        {{/table}}
+    </div>
+
+</main>
+{{> organisms-footer }}

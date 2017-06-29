@@ -1,78 +1,68 @@
-<div class="row">
+<div class="row mbj">
     <div class="col_md_10 col_lg_8 col_md_offset_1 col_lg_offset_2">
         
-        {{> molecules-moduloverskrift-h2-med-lenke:mbm(tittel: "Kontakt") }}
+        {{> molecules-moduloverskrift-h2-med-lenke:mbl(url: "https://www.bergen.kommune.no/omkommunen/kontakt-oss", tittel: "Kontakt") }}
                 
-        {{# kontaktkort }}
-                
-            <div class="row">
-                <div class="col_md_6 col_lg_6">                    
-                    <dl class="contact_content">
-                        
-                        <dt></dt>
-                        <dd class="with_icon">
-                            <a href="{{ url }}" title="Innbyggerservice">
-                                <span class="icon email_icon medium_size"></span>
-                                Innbyggerservice
-                            </a>
-                        </dd>                     
+        <div class="row frontpage_contact">
+            <div class="col_md_6 col_lg_6">                    
+                <dl class="contact_content">
 
-                        {{# chat }}
-                        <dt></dt>
-                        <dd class="with_icon">
-                            <a href="{{ chatlink }}" title="Chat med oss">
-                                <span class="icon chat_icon_blue medium_size"></span>
-                                Chat med oss
-                            </a>
-                        </dd>
-                        {{/ chat }}
+                    <dt></dt>
+                    <dd class="with_icon">
+                        <a href="https://www.bergen.kommune.no/omkommunen/avdelinger/seksjon-informasjon/9323/9324" title="Innbyggerservice">
+                            <span class="icon innbyggerservice_icon medium_size"></span>
+                            Innbyggerservice
+                        </a>
+                    </dd>                     
 
-                        {{# telefon }}
-                        <dt class="screen-reader-text">Telefon:</dt>
-                        <dd class="with_icon">
-                            <a href="tel:{{ telefonlink }}" title="Ring oss">
-                                <span class="icon phone_icon medium_size"></span>
-                                {{ telefon }}
-                            </a>
-                        </dd>
-                        {{/ telefon }}
-                        
-                    </dl>
-                </div>
-                <div class="col_md_6 col_lg_6">                    
-                    <dl class="contact_content">
-                        
-                        <dt></dt>
-                        <dd class="with_icon">
-                            <a href="{{ url }}" title="Ansatte">
-                                <span class="icon facebook_icon medium_size"></span>
-                                Ansatte
-                            </a>
-                        </dd>
+                    <dt></dt>
+                    <dd class="with_icon">
+                        <a href="http://login.edialog24.com/chattemplate/Bergen_Main/index.html" title="Chat med oss" target="_blank">
+                            <span class="icon chat_icon_blue medium_size"></span>
+                            Chat med oss
+                        </a>
+                    </dd>
 
-                        <dt></dt>
-                        <dd class="with_icon">
-                            <a href="{{ url }}" title="Avdelinger">
-                                <span class="icon facebook_icon medium_size"></span>
-                                Avdelinger
-                            </a>
-                        </dd>
+                    <dt class="screen-reader-text">Telefon:</dt>
+                    <dd class="with_icon">
+                        <a href="tel:55 56 55 56" title="Ring oss">
+                            <span class="icon phone_icon medium_size"></span>
+                            55 56 55 56
+                        </a>
+                    </dd>
 
-                        {{# facebook }}
-                        <dt></dt>
-                        <dd class="with_icon">
-                            <a href="{{ facebook }}" title="Følg oss på Facebook">
-                                <span class="icon facebook_icon medium_size"></span>
-                                Følg oss på Facebook
-                            </a>
-                        </dd>
-                        {{/ facebook }}
-                        
-                    </dl>                        
-                </div>                
+                </dl>
             </div>
-            
-        {{/ kontaktkort }}
+            <div class="col_md_6 col_lg_6">                    
+                <dl class="contact_content">
+
+                    <dt></dt>
+                    <dd class="with_icon">
+                        <a href="https://www.bergen.kommune.no/omkommunen/ansatte" title="Ansatte">
+                            <span class="icon employee_icon medium_size"></span>
+                            Ansatte
+                        </a>
+                    </dd>
+
+                    <dt></dt>
+                    <dd class="with_icon">
+                        <a href="https://www.bergen.kommune.no/omkommunen/avdelinger" title="Avdelinger">
+                            <span class="icon department_icon medium_size"></span>
+                            Avdelinger
+                        </a>
+                    </dd>
+
+                    <dt></dt>
+                    <dd class="with_icon">
+                        <a href="http://www.facebook.com/bergenkommune/" title="Følg oss på Facebook">
+                            <span class="icon facebook_icon medium_size"></span>
+                            Følg oss på Facebook
+                        </a>
+                    </dd>
+
+                </dl>                        
+            </div>                
+        </div>
         
     </div>
 </div>

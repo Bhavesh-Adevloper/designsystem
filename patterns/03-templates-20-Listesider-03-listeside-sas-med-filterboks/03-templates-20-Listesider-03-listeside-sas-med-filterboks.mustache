@@ -1,0 +1,24 @@
+{{> organisms-header-4 }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+    {{> molecules-sideoverskrift-h1:mbl}}
+
+    <div class="row">
+
+        {{#searchFilter}}
+            <div class="col_md_12 col_lg_4">
+                {{> atoms-tekstfelt:mbm}}
+                {{> molecules-sokefilter-avkrysningsbokser}}
+            </div>
+        {{/searchFilter}}
+
+        {{#table}}
+            <div class="col_md_12 col_lg_8 {{tableModifier}}">
+                {{> molecules-flex-tabell }}
+            </div>
+        {{/table}}
+    </div>
+
+</main>
+{{> organisms-footer }}
+

@@ -1,0 +1,19 @@
+{{> organisms-header-4 }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+    {{> molecules-sideoverskrift-h1:mbl}}
+
+    <div class="row">
+        <div class="col_md_8 col_lg_8 mbxl">
+            {{#kontaktinfo}}{{> organisms-kontaktinformasjon-person}}{{/kontaktinfo}}
+        </div>
+
+        {{#table}}
+            <div class="{{tableModifier}}">
+                {{> molecules-flex-tabell }}
+            </div>
+        {{/table}}
+    </div>
+
+</main>
+{{> organisms-footer }}
