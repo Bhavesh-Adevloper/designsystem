@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1498737378624,
+  "timestamp": 1498740368323,
   "graph": {
     "options": {
       "directed": true,
@@ -870,8 +870,8 @@
         "v": "02-organisms/40-annet/60-navigasjonssideliste.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-08-Navigasjon-10-navigasjon-1/03-templates-08-Navigasjon-10-navigasjon-1.rendered.html",
-          "lineagePattern": "templates-navigasjon-1"
+          "lineagePath": "../../patterns/03-templates-08-Navigasjon-10-navigasjonsside/03-templates-08-Navigasjon-10-navigasjonsside.rendered.html",
+          "lineagePattern": "templates-navigasjonsside"
         }
       },
       {
@@ -999,11 +999,11 @@
         }
       },
       {
-        "v": "03-templates/08-Navigasjon/10-navigasjon-1.mustache",
+        "v": "03-templates/08-Navigasjon/10-navigasjonsside.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-20-navigasjon-06-ledige-stillinger/04-pages-20-navigasjon-06-ledige-stillinger.rendered.html",
-          "lineagePattern": "pages-ledige-stillinger"
+          "lineagePath": "../../patterns/04-pages-20-navigasjon-11-bystyret/04-pages-20-navigasjon-11-bystyret.rendered.html",
+          "lineagePattern": "pages-bystyret"
         }
       },
       {
@@ -1357,13 +1357,25 @@
         }
       },
       {
-        "v": "04-pages/20-navigasjon/08-avdelinger.mustache",
+        "v": "04-pages/20-navigasjon/10-bydelene.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/20-navigasjon/09-ansatte.mustache",
+        "v": "04-pages/20-navigasjon/11-bystyret.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/20-navigasjon/30-ansatte.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/20-navigasjon/30-avdelinger.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -2246,22 +2258,27 @@
         "value": {}
       },
       {
-        "v": "03-templates/08-Navigasjon/10-navigasjon-1.mustache",
+        "v": "03-templates/08-Navigasjon/10-navigasjonsside.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/08-Navigasjon/10-navigasjon-1.mustache",
+        "v": "03-templates/08-Navigasjon/10-navigasjonsside.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/08-Navigasjon/10-navigasjonsside.mustache",
         "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/08-Navigasjon/10-navigasjon-1.mustache",
+        "v": "03-templates/08-Navigasjon/10-navigasjonsside.mustache",
         "w": "02-organisms/40-annet/60-navigasjonssideliste.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/08-Navigasjon/10-navigasjon-1.mustache",
+        "v": "03-templates/08-Navigasjon/10-navigasjonsside.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -3577,46 +3594,56 @@
       },
       {
         "v": "04-pages/20-navigasjon/00-om-kommunen.mustache",
-        "w": "03-templates/08-Navigasjon/10-navigasjon-1.mustache",
+        "w": "03-templates/08-Navigasjon/10-navigasjonsside.mustache",
         "value": {}
       },
       {
         "v": "04-pages/20-navigasjon/04-politikk.mustache",
-        "w": "03-templates/08-Navigasjon/10-navigasjon-1.mustache",
+        "w": "03-templates/08-Navigasjon/10-navigasjonsside.mustache",
         "value": {}
       },
       {
         "v": "04-pages/20-navigasjon/06-ledige-stillinger.mustache",
-        "w": "03-templates/08-Navigasjon/10-navigasjon-1.mustache",
+        "w": "03-templates/08-Navigasjon/10-navigasjonsside.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/20-navigasjon/08-avdelinger.mustache",
+        "v": "04-pages/20-navigasjon/10-bydelene.mustache",
+        "w": "03-templates/08-Navigasjon/10-navigasjonsside.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/20-navigasjon/11-bystyret.mustache",
+        "w": "03-templates/08-Navigasjon/10-navigasjonsside.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/20-navigasjon/30-ansatte.mustache",
         "w": "02-organisms/00-global/_02-header-2.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/20-navigasjon/08-avdelinger.mustache",
+        "v": "04-pages/20-navigasjon/30-ansatte.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/20-navigasjon/08-avdelinger.mustache",
+        "v": "04-pages/20-navigasjon/30-ansatte.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/20-navigasjon/09-ansatte.mustache",
+        "v": "04-pages/20-navigasjon/30-avdelinger.mustache",
         "w": "02-organisms/00-global/_02-header-2.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/20-navigasjon/09-ansatte.mustache",
+        "v": "04-pages/20-navigasjon/30-avdelinger.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/20-navigasjon/09-ansatte.mustache",
+        "v": "04-pages/20-navigasjon/30-avdelinger.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
