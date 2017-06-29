@@ -6,24 +6,36 @@
         <div class="smMa desktop_centered">
             
             <div class="page_header_container--hvaskjer">
-                {{> molecules-sideoverskrift-h1:mbl(sidetittel: "Hva skjer") }}
+                
+                {{# hvaSkjerHovedsideOverskrift }}
+                    {{> molecules-sideoverskrift-h1:mbl(sidetittel: "Hva skjer") }}
+                {{/ hvaSkjerHovedsideOverskrift }}
+                
+                {{# hvaSkjerUndersideOverskrift }}
+                    {{> molecules-sideoverskrift-h2-med-lenke:mbl(sidetittel: "Hva skjer", url: "{{ link.pages-hva-skjer }}") }}
+                {{/ hvaSkjerUndersideOverskrift }}
+                
             </div>
             
             {{# meny }}
-            {{> molecules-hva-skjer-meny }}
+                {{> molecules-hva-skjer-meny }}
             {{/ meny }}
-
+            
+            {{# hvaSkjerUndersideOverskrift }}
+                {{> molecules-sideoverskrift-h1:mbl(sidetittel: "{{ sidetittel }}") }}
+            {{/ hvaSkjerUndersideOverskrift }}
+            
         </div><!-- end .smMa desktop_centered -->
             
         
         <div class="smMa desktop_centered">
             
+            {{# toppsak }}
             <!-- Escenic: toppsak -->
-            <div class="toppsak">                
-                {{# toppsak }}
-                    {{> organisms-escenic-elementmal:normal_med_ingress_bilde_med_oppdatert_dato_sp_pf }}
-                {{/ toppsak }}                
+            <div class="toppsak">
+                {{> organisms-escenic-elementmal:normal_med_ingress_bilde_med_oppdatert_dato_sp_pf }}
             </div>
+            {{/ toppsak }}
             
             
             
@@ -90,7 +102,7 @@
             
             
             
-            
+        {{# temaboks }}
         <!-- Escenic: Temaboks -->
         <div class="teaser_topic_container mbj">
             <div class="smMa desktop_centered">            
@@ -117,14 +129,14 @@
             
             </div><!-- end .smMa desktop_centered -->
         </div>
+        {{/ temaboks }}
             
             
-            
-            
+        
+        {{# bunnsaker }}
         <!-- Escenic: Bunnsaker -->
         <div class="smMa desktop_centered">            
             
-                
             <div class="row teaser_small_container">
                 <div class="col_md_6 col_lg_6">
                     {{# bunnsakerSak1 }}
@@ -188,9 +200,16 @@
                     {{/ bunnsakerSak10 }}
                 </div>
             </div>
+
+        </div><!-- end .smMa desktop_centered -->  
+        {{/ bunnsaker }}
             
             
             
+            
+            
+            
+        <div class="smMa desktop_centered">
             
             <!-- TEMPLATE:   archiveLink_jsp -->
             <div class="toarchive read_more_link_container">
