@@ -5656,29 +5656,25 @@ footer {
 
 .service_shortcut_container {
   position: relative;
-  text-align: center;
-  border-top: 1px solid #eee1c0;
-  border-top: 0.0625rem solid #eee1c0;
-  padding-top: 24px;
-  padding-top: 1.5rem;
-  margin: 24px 0 84px;
-  margin: 1.5rem 0 5.25rem; }
+  text-align: center; }
   .service_shortcut_container .service_shortcut_title {
+    border-top: 1px solid #eee1c0;
+    border-top: 0.0625rem solid #eee1c0;
     font-weight: 300;
     font-style: normal;
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1;
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem; }
+    padding-top: 54px;
+    padding-top: 3.375rem;
+    margin: -33px 0 24px;
+    margin: -2.0625rem 0 1.5rem; }
     .service_shortcut_container .service_shortcut_title a {
       color: #333; }
   .service_shortcut_container .service_icon {
-    position: absolute;
-    top: -32px;
-    top: -2rem;
-    left: 0;
-    right: 0;
+    position: relative;
+    z-index: 2;
+    float: none;
     margin: 0 auto;
     border: 1px solid #eee1c0;
     border: 0.0625rem solid #eee1c0;
@@ -5690,19 +5686,11 @@ footer {
       margin-bottom: 0; }
 
 .tout_container.service_shortcut_container {
-  margin-top: 0;
-  padding-top: 50px;
-  padding-top: 3.125rem; }
+  padding: 24px 24px 32px;
+  padding: 1.5rem 1.5rem 2rem; }
   .tout_container.service_shortcut_container .service_shortcut_title {
-    margin-bottom: 8px;
-    margin-bottom: 0.5rem; }
-  .tout_container.service_shortcut_container .service_icon {
-    top: 12px;
-    top: 0.75rem;
-    border: 0 none; }
-  .tout_container.service_shortcut_container .service_shortcut_link_container {
-    margin-bottom: 32px;
-    margin-bottom: 2rem; }
+    margin-bottom: 18px;
+    margin-bottom: 1.125rem; }
 
 .external_url_header {
   margin-top: 0;
@@ -5804,12 +5792,9 @@ footer {
     .box_link_with_icon_container .box_link_with_icon.department_link_icon:before {
       background: url("../images/serviceSprite.svg?v=20170201") no-repeat #fff -256px -192px; }
 
-.service_link_container {
-  margin-bottom: 100px;
-  margin-bottom: 6.25rem; }
-  @media only screen and (max-width: 699px) {
-    .service_link_container .col_md_6 {
-      width: 100%; } }
+@media only screen and (max-width: 699px) {
+  .service_link_container .col_md_6 {
+    width: 100%; } }
 
 @media only screen and (min-width: 700px) {
   .equal_height_container {

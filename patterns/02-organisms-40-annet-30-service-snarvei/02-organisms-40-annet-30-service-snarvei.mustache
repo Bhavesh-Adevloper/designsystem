@@ -1,9 +1,9 @@
 <section class="service_shortcut_container {{ styleModifier }}">
-    <a href="{{ serviceSnarvei.url }}" title="{{ serviceSnarvei.tittel }}" class="service_icon {{ serviceSnarvei.storIkon }}"></a>
+    <a href="{{ serviceSnarvei.url }}" title="{{ serviceSnarvei.tittel }}" class="service_icon {{ serviceSnarvei.storIkon }}">
+        <span class="screen-reader-text">{{ serviceSnarvei.tittel }}</span>
+    </a>
     <h3 class="service_shortcut_title">
-        <a href="{{ serviceSnarvei.url }}" title="{{ serviceSnarvei.tittel }}">
-            {{ serviceSnarvei.tittel }}
-        </a>
+        {{ serviceSnarvei.tittel }}
     </h3>
     <p class="service_shortcut_text">{{ serviceSnarvei.tekst }}</p>
     <p class="service_shortcut_link_container">
