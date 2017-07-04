@@ -814,6 +814,8 @@ input[type="radio"] + label {
 input[type="search"],
 input[type="search"]:focus {
   color: #3b65a3;
+  text-indent: 4px;
+  text-indent: 0.25rem;
   -webkit-appearance: textfield;
   font-weight: 300;
   font-style: italic;
