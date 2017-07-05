@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1499200708083,
+  "timestamp": 1499239056140,
   "graph": {
     "options": {
       "directed": true,
@@ -470,8 +470,8 @@
         "v": "01-molecules/lister/02-link-liste-enkel.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-08-Navigasjon-20-tjenestetilbud/03-templates-08-Navigasjon-20-tjenestetilbud.rendered.html",
-          "lineagePattern": "templates-tjenestetilbud"
+          "lineagePath": "../../patterns/03-templates-08-Navigasjon-20-tjenester/03-templates-08-Navigasjon-20-tjenester.rendered.html",
+          "lineagePattern": "templates-tjenester"
         }
       },
       {
@@ -612,16 +612,16 @@
         "v": "01-molecules/navigasjon/navigasjonsboks-liten.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-08-Navigasjon-20-tjenestetilbud/03-templates-08-Navigasjon-20-tjenestetilbud.rendered.html",
-          "lineagePattern": "templates-tjenestetilbud"
+          "lineagePath": "../../patterns/03-templates-08-Navigasjon-20-tjenester/03-templates-08-Navigasjon-20-tjenester.rendered.html",
+          "lineagePattern": "templates-tjenester"
         }
       },
       {
         "v": "01-molecules/navigasjon/navigasjonsboks-stor.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-08-Navigasjon-20-tjenestetilbud/03-templates-08-Navigasjon-20-tjenestetilbud.rendered.html",
-          "lineagePattern": "templates-tjenestetilbud"
+          "lineagePath": "../../patterns/03-templates-08-Navigasjon-20-tjenester/03-templates-08-Navigasjon-20-tjenester.rendered.html",
+          "lineagePattern": "templates-tjenester"
         }
       },
       {
@@ -1007,11 +1007,11 @@
         }
       },
       {
-        "v": "03-templates/08-Navigasjon/20-tjenestetilbud.mustache",
+        "v": "03-templates/08-Navigasjon/20-tjenester.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-10-tjenester-00-tjenestetilbud/04-pages-10-tjenester-00-tjenestetilbud.rendered.html",
-          "lineagePattern": "pages-tjenestetilbud"
+          "lineagePath": "../../patterns/04-pages-10-tjenester-00-tjenester/04-pages-10-tjenester-00-tjenester.rendered.html",
+          "lineagePattern": "pages-tjenester"
         }
       },
       {
@@ -1195,7 +1195,7 @@
         }
       },
       {
-        "v": "04-pages/10-tjenester/00-tjenestetilbud.mustache",
+        "v": "04-pages/10-tjenester/00-tjenester.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -2283,42 +2283,42 @@
         "value": {}
       },
       {
-        "v": "03-templates/08-Navigasjon/20-tjenestetilbud.mustache",
+        "v": "03-templates/08-Navigasjon/20-tjenester.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/08-Navigasjon/20-tjenestetilbud.mustache",
+        "v": "03-templates/08-Navigasjon/20-tjenester.mustache",
         "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/08-Navigasjon/20-tjenestetilbud.mustache",
+        "v": "03-templates/08-Navigasjon/20-tjenester.mustache",
         "w": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/08-Navigasjon/20-tjenestetilbud.mustache",
+        "v": "03-templates/08-Navigasjon/20-tjenester.mustache",
         "w": "01-molecules/lister/02-link-liste-enkel.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/08-Navigasjon/20-tjenestetilbud.mustache",
+        "v": "03-templates/08-Navigasjon/20-tjenester.mustache",
         "w": "01-molecules/navigasjon/navigasjonsboks-stor.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/08-Navigasjon/20-tjenestetilbud.mustache",
+        "v": "03-templates/08-Navigasjon/20-tjenester.mustache",
         "w": "01-molecules/navigasjon/navigasjonsboks-liten.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/08-Navigasjon/20-tjenestetilbud.mustache",
+        "v": "03-templates/08-Navigasjon/20-tjenester.mustache",
         "w": "02-organisms/40-annet/30-service-snarvei.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/08-Navigasjon/20-tjenestetilbud.mustache",
+        "v": "03-templates/08-Navigasjon/20-tjenester.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -3038,8 +3038,8 @@
         "value": {}
       },
       {
-        "v": "04-pages/10-tjenester/00-tjenestetilbud.mustache",
-        "w": "03-templates/08-Navigasjon/20-tjenestetilbud.mustache",
+        "v": "04-pages/10-tjenester/00-tjenester.mustache",
+        "w": "03-templates/08-Navigasjon/20-tjenester.mustache",
         "value": {}
       },
       {
