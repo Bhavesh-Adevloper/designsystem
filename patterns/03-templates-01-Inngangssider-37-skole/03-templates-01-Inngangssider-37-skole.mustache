@@ -24,9 +24,15 @@
             
             <div class="clearfix"></div>
             <div class="row_no_clearfix equal_height_container">
-                {{> molecules-tout-arbeidsplaner }}
-
-                {{> molecules-tout-skoleruten }}
+                {{# arbeidsplaner }}
+                    <div class="col_md_6 col_lg_6 equal_height_item">
+                        {{> molecules-tout:schedules_tout|mbxxl|mbl--m }}
+                    </div>
+                {{/ arbeidsplaner }}
+                
+                <div class="col_md_6 col_lg_6 equal_height_item">
+                    {{> molecules-tout-skoleruten:mbxxl }}
+                </div>
             </div>
             
             {{# sisteNytt }}
@@ -47,29 +53,11 @@
                         
             <div class="row_no_clearfix equal_height_container mbxl">
                 
-                {{# viktigeskolelenker }}
-                    <div class="col_md_6 col_lg_6 equal_height_item">
-                        {{> molecules-viktige-skolelenker }}
-                    </div>
-                {{/ viktigeskolelenker }}
-                
-                {{# inneklima }}
-                    <div class="col_md_6 col_lg_6 equal_height_item">
-                        {{> molecules-inneklima }}
-                    </div>
-                {{/ inneklima }}
-                
-                {{# etjenester50 }}
+                {{# touts }}
                     <div class="col_md_6 col_lg_6 equal_height_item">
                         {{> molecules-tout }}
                     </div>
-                {{/ etjenester50 }}
-                
-                {{# aktuelletema }}
-                    <div class="col_md_6 col_lg_6 equal_height_item">
-                        {{> molecules-tout }}
-                    </div>
-                {{/ aktuelletema }}
+                {{/ touts }}
                 
             </div>
             

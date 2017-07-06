@@ -23,7 +23,7 @@
             {{/ notis }}
             
             {{# eksternURL }}
-            {{> molecules-ekstern-url(label: "Privat barnehage - se egen side:") }}
+            {{> molecules-ekstern-url }}
             {{/ eksternURL }}
             
             {{# kontaktLiten }}
@@ -39,12 +39,9 @@
             </section>
             {{/ profil }}
             
-            {{# tallogfakta }}
-            <section class="mbj">
-                {{> molecules-moduloverskrift-h2:mbm(tittel: "Tall og fakta") }}
-                {{> organisms-modul-tall-og-fakta }}
-            </section>
-            {{/ tallogfakta }}
+            {{# tallOgFakta }}
+            {{> organisms-modul-med-overskrift }}
+            {{/ tallOgFakta }}
             
             {{# sisteNytt }}
             {{> organisms-siste-nytt }}
@@ -60,29 +57,11 @@
                         
             <div class="row_no_clearfix equal_height_container mbxl">
                 
-                {{# visjon }}
-                    <div class="col_md_6 col_lg_6 equal_height_item">
-                        {{> molecules-tout-visjoner }}
-                    </div>
-                {{/ visjon }}
-                
-                {{# viktigebarnehagelenker }}
-                    <div class="col_md_6 col_lg_6 equal_height_item">
-                        {{> molecules-tout-viktige-barnehagelenker }}
-                    </div>
-                {{/ viktigebarnehagelenker }}
-                
-                {{# etjenester50 }}
+                {{# touts }}
                     <div class="col_md_6 col_lg_6 equal_height_item">
                         {{> molecules-tout }}
                     </div>
-                {{/ etjenester50 }}
-                
-                {{# aktuelletema }}
-                    <div class="col_md_6 col_lg_6 equal_height_item">
-                        {{> molecules-tout }}
-                    </div>
-                {{/ aktuelletema }}
+                {{/ touts }}
                 
             </div>
             

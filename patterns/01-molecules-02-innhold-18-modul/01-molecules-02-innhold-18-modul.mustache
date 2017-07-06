@@ -1,9 +1,13 @@
 <div class="module_container {{ styleModifier }}">
     {{# bilde }}
     <div class="module_image_container">
-        <a href="{{ url }}" title="Les mer om oss" class="module_image_link">
+        {{# url }}
+        <a href="{{ url }}" title="{{ modulTittel }}" class="module_image_link">
+        {{/ url }}
             <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="module_image" />
+        {{# url }}
         </a>
+        {{/ url }}
         {{# byrad }}
         <p class="councilor">
             Se egen side for:<br>
@@ -17,17 +21,19 @@
     <div class="module_content_container">
         {{# modulTittel }}
             <h2 class="module_content_title">
+                {{# url }}
                 <a href="{{ url }}" title="{{ modulTittel }}">
-                    <span class="read_more_link_large">
-                        {{ modulTittel }}
-                    </span>
+                <span class="read_more_link_large">
+                {{/ url }}
+                    {{ modulTittel }}
+                {{# url }}
+                </span>
                 </a>
+                {{/ url }}
             </h2>
         {{/ modulTittel }}
         <div class="module_content_excerpt">
-            <p>
-                {{ ingress }}
-            </p>
+            {{{ htmlIngress }}}
             {{# lesMerLink }}
             <p>
                 <a href="{{ url }}" title="Les mer om oss"><span class="read_more_link">Les mer om oss</span></a>

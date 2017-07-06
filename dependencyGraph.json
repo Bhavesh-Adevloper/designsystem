@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1499239056140,
+  "timestamp": 1499330205372,
   "graph": {
     "options": {
       "directed": true,
@@ -196,8 +196,8 @@
         "v": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-99-diverse-25-fakta/04-pages-99-diverse-25-fakta.rendered.html",
-          "lineagePattern": "pages-fakta"
+          "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
+          "lineagePattern": "pages-etjeneste-eksempler"
         }
       },
       {
@@ -296,8 +296,8 @@
         "v": "01-molecules/02-innhold/11-ekstern-url.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
-          "lineagePattern": "pages-etjeneste-eksempler"
+          "lineagePath": "../../patterns/03-templates-01-Inngangssider-40-barnehage/03-templates-01-Inngangssider-40-barnehage.rendered.html",
+          "lineagePattern": "templates-barnehage"
         }
       },
       {
@@ -312,8 +312,8 @@
         "v": "01-molecules/02-innhold/18-modul.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-01-Inngangssider-40-barnehage/03-templates-01-Inngangssider-40-barnehage.rendered.html",
-          "lineagePattern": "templates-barnehage"
+          "lineagePath": "../../patterns/04-pages-03-skole-og-barnehage-20-tall-og-fakta/04-pages-03-skole-og-barnehage-20-tall-og-fakta.rendered.html",
+          "lineagePattern": "pages-tall-og-fakta"
         }
       },
       {
@@ -328,24 +328,32 @@
         "v": "01-molecules/02-innhold/30-tout.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-99-diverse-25-fakta/04-pages-99-diverse-25-fakta.rendered.html",
-          "lineagePattern": "pages-fakta"
-        }
-      },
-      {
-        "v": "01-molecules/02-innhold/31-tout-arbeidsplaner.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-01-Inngangssider-37-skole/03-templates-01-Inngangssider-37-skole.rendered.html",
-          "lineagePattern": "templates-skole"
+          "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
+          "lineagePattern": "pages-etjeneste-eksempler"
         }
       },
       {
         "v": "01-molecules/02-innhold/32-tout-skoleruten.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-01-Inngangssider-37-skole/03-templates-01-Inngangssider-37-skole.rendered.html",
-          "lineagePattern": "templates-skole"
+          "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
+          "lineagePattern": "pages-etjeneste-eksempler"
+        }
+      },
+      {
+        "v": "01-molecules/02-innhold/33-tout-luftkvalitet-forside.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-01-Inngangssider-00-forside/03-templates-01-Inngangssider-00-forside.rendered.html",
+          "lineagePattern": "templates-forside"
+        }
+      },
+      {
+        "v": "01-molecules/02-innhold/33-tout-luftkvalitet.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
+          "lineagePattern": "pages-etjeneste-eksempler"
         }
       },
       {
@@ -362,70 +370,6 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-99-diverse-25-fakta/04-pages-99-diverse-25-fakta.rendered.html",
           "lineagePattern": "pages-fakta"
-        }
-      },
-      {
-        "v": "01-molecules/02-innhold/_30-tout-stoltzen.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
-          "lineagePattern": "pages-etjeneste-eksempler"
-        }
-      },
-      {
-        "v": "01-molecules/02-innhold/_31-tout-luftkvalitet-forside.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-01-Inngangssider-00-forside/03-templates-01-Inngangssider-00-forside.rendered.html",
-          "lineagePattern": "templates-forside"
-        }
-      },
-      {
-        "v": "01-molecules/02-innhold/_31-tout-luftkvalitet.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
-          "lineagePattern": "pages-etjeneste-eksempler"
-        }
-      },
-      {
-        "v": "01-molecules/02-innhold/_32-tout-viktige-skolelenker.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
-          "lineagePattern": "pages-etjeneste-eksempler"
-        }
-      },
-      {
-        "v": "01-molecules/02-innhold/_33-tout-inneklima.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
-          "lineagePattern": "pages-etjeneste-eksempler"
-        }
-      },
-      {
-        "v": "01-molecules/02-innhold/_34-tout-viktige-barnehagelenker.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
-          "lineagePattern": "pages-etjeneste-eksempler"
-        }
-      },
-      {
-        "v": "01-molecules/02-innhold/_35-tout-visjoner.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
-          "lineagePattern": "pages-etjeneste-eksempler"
-        }
-      },
-      {
-        "v": "01-molecules/02-innhold/_36-tout-sykkel-vm.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
-          "lineagePattern": "pages-etjeneste-eksempler"
         }
       },
       {
@@ -628,8 +572,8 @@
         "v": "01-molecules/navigasjon/org-meny.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-99-diverse-25-fakta/04-pages-99-diverse-25-fakta.rendered.html",
-          "lineagePattern": "pages-fakta"
+          "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
+          "lineagePattern": "pages-etjeneste-eksempler"
         }
       },
       {
@@ -682,16 +626,16 @@
         "v": "02-organisms/00-global/01-footer.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-99-diverse-25-fakta/04-pages-99-diverse-25-fakta.rendered.html",
-          "lineagePattern": "pages-fakta"
+          "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
+          "lineagePattern": "pages-etjeneste-eksempler"
         }
       },
       {
         "v": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-99-diverse-25-fakta/04-pages-99-diverse-25-fakta.rendered.html",
-          "lineagePattern": "pages-fakta"
+          "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
+          "lineagePattern": "pages-etjeneste-eksempler"
         }
       },
       {
@@ -714,8 +658,8 @@
         "v": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-99-diverse-20-Ansatt/04-pages-99-diverse-20-Ansatt.rendered.html",
-          "lineagePattern": "pages-Ansatt"
+          "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
+          "lineagePattern": "pages-etjeneste-eksempler"
         }
       },
       {
@@ -792,8 +736,8 @@
         "v": "02-organisms/20-kontakt/kontakt-liten.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-02-orgenhet-99-etjeneste-eksempler/04-pages-02-orgenhet-99-etjeneste-eksempler.rendered.html",
-          "lineagePattern": "pages-etjeneste-eksempler"
+          "lineagePath": "../../patterns/03-templates-01-Inngangssider-40-barnehage/03-templates-01-Inngangssider-40-barnehage.rendered.html",
+          "lineagePattern": "templates-barnehage"
         }
       },
       {
@@ -816,8 +760,8 @@
         "v": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-99-diverse-25-fakta/04-pages-99-diverse-25-fakta.rendered.html",
-          "lineagePattern": "pages-fakta"
+          "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
+          "lineagePattern": "pages-etjeneste-eksempler"
         }
       },
       {
@@ -862,8 +806,8 @@
         "v": "02-organisms/40-annet/30-service-snarvei.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-10-tjenester-01-tjenestekategori/04-pages-10-tjenester-01-tjenestekategori.rendered.html",
-          "lineagePattern": "pages-tjenestekategori"
+          "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
+          "lineagePattern": "pages-etjeneste-eksempler"
         }
       },
       {
@@ -899,14 +843,6 @@
         }
       },
       {
-        "v": "02-organisms/40-annet/_06-modul-tall-og-fakta.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-03-skole-og-barnehage-20-tall-og-fakta/04-pages-03-skole-og-barnehage-20-tall-og-fakta.rendered.html",
-          "lineagePattern": "pages-tall-og-fakta"
-        }
-      },
-      {
         "v": "02-organisms/40-annet/_97-escenic-fakta.mustache",
         "value": {
           "compileState": "clean",
@@ -918,8 +854,8 @@
         "v": "02-organisms/40-annet/_98-escenic-luftkvalitet.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-01-hva-skjer-15-luftkvalitet/04-pages-01-hva-skjer-15-luftkvalitet.rendered.html",
-          "lineagePattern": "pages-luftkvalitet"
+          "lineagePath": "../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html",
+          "lineagePattern": "templates-tema"
         }
       },
       {
@@ -949,7 +885,9 @@
       {
         "v": "03-templates/01-Inngangssider/05-tema.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-01-hva-skjer-15-luftkvalitet/04-pages-01-hva-skjer-15-luftkvalitet.rendered.html",
+          "lineagePattern": "pages-luftkvalitet"
         }
       },
       {
@@ -1148,12 +1086,6 @@
       },
       {
         "v": "04-pages/02-orgenhet/20-medlemmer.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -1459,6 +1391,12 @@
         }
       },
       {
+        "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "/bergenkommune/designsystem/source/_meta/_00-head.mustache",
         "value": {
           "compileState": null
@@ -1704,12 +1642,12 @@
       },
       {
         "v": "03-templates/01-Inngangssider/00-forside.mustache",
-        "w": "01-molecules/02-innhold/_31-tout-luftkvalitet-forside.mustache",
+        "w": "01-molecules/02-innhold/33-tout-luftkvalitet-forside.mustache",
         "value": {}
       },
       {
         "v": "03-templates/01-Inngangssider/00-forside.mustache",
-        "w": "01-molecules/02-innhold/_36-tout-sykkel-vm.mustache",
+        "w": "01-molecules/02-innhold/30-tout.mustache",
         "value": {}
       },
       {
@@ -1790,6 +1728,11 @@
       {
         "v": "03-templates/01-Inngangssider/05-tema.mustache",
         "w": "01-molecules/02-innhold/30-tout.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Inngangssider/05-tema.mustache",
+        "w": "01-molecules/02-innhold/33-tout-luftkvalitet.mustache",
         "value": {}
       },
       {
@@ -2049,7 +1992,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/37-skole.mustache",
-        "w": "01-molecules/02-innhold/31-tout-arbeidsplaner.mustache",
+        "w": "01-molecules/02-innhold/30-tout.mustache",
         "value": {}
       },
       {
@@ -2075,21 +2018,6 @@
       {
         "v": "03-templates/01-Inngangssider/37-skole.mustache",
         "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/37-skole.mustache",
-        "w": "01-molecules/02-innhold/_32-tout-viktige-skolelenker.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/37-skole.mustache",
-        "w": "01-molecules/02-innhold/_33-tout-inneklima.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/37-skole.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
         "value": {}
       },
       {
@@ -2145,11 +2073,6 @@
       {
         "v": "03-templates/01-Inngangssider/38-leirskole.mustache",
         "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/38-leirskole.mustache",
-        "w": "01-molecules/02-innhold/_33-tout-inneklima.mustache",
         "value": {}
       },
       {
@@ -2214,12 +2137,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/40-barnehage.mustache",
-        "w": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/40-barnehage.mustache",
-        "w": "02-organisms/40-annet/_06-modul-tall-og-fakta.mustache",
+        "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
         "value": {}
       },
       {
@@ -2230,21 +2148,6 @@
       {
         "v": "03-templates/01-Inngangssider/40-barnehage.mustache",
         "w": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/40-barnehage.mustache",
-        "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/40-barnehage.mustache",
-        "w": "01-molecules/02-innhold/_35-tout-visjoner.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/40-barnehage.mustache",
-        "w": "01-molecules/02-innhold/_34-tout-viktige-barnehagelenker.mustache",
         "value": {}
       },
       {
@@ -2489,62 +2392,7 @@
       },
       {
         "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
-        "w": "02-organisms/00-global/_01-header-1.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
-        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
-        "w": "01-molecules/navigasjon/org-meny.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
-        "w": "02-organisms/40-annet/_98-escenic-luftkvalitet.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
-        "w": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
-        "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
-        "w": "01-molecules/02-innhold/_31-tout-luftkvalitet.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
-        "w": "02-organisms/20-kontakt/kontakt-byline.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
-        "w": "01-molecules/02-innhold/50-tilbakemelding.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/15-luftkvalitet.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
+        "w": "03-templates/01-Inngangssider/05-tema.mustache",
         "value": {}
       },
       {
@@ -2804,116 +2652,11 @@
       },
       {
         "v": "04-pages/02-orgenhet/20-medlemmer.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "02-organisms/00-global/_00-header-varianter.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/navigasjon/org-meny.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/02-innhold/05-varsel.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/02-innhold/06-notis.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/02-innhold/11-ekstern-url.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "02-organisms/20-kontakt/kontakt-liten.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "02-organisms/40-annet/_06-modul-tall-og-fakta.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
         "w": "01-molecules/02-innhold/30-tout.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/02-innhold/_36-tout-sykkel-vm.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "02-organisms/40-annet/30-service-snarvei.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/02-innhold/_30-tout-stoltzen.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/02-innhold/_31-tout-luftkvalitet.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/02-innhold/_35-tout-visjoner.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/02-innhold/_34-tout-viktige-barnehagelenker.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/02-innhold/_32-tout-viktige-skolelenker.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/02-innhold/_33-tout-inneklima.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/99-etjeneste-eksempler.mustache",
+        "v": "04-pages/02-orgenhet/20-medlemmer.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -3029,7 +2772,7 @@
       },
       {
         "v": "04-pages/03-skole-og-barnehage/20-tall-og-fakta.mustache",
-        "w": "02-organisms/40-annet/_06-modul-tall-og-fakta.mustache",
+        "w": "01-molecules/02-innhold/18-modul.mustache",
         "value": {}
       },
       {
@@ -3944,6 +3687,56 @@
       },
       {
         "v": "04-pages/99-diverse/25-fakta.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
+        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
+        "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
+        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
+        "w": "01-molecules/02-innhold/32-tout-skoleruten.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
+        "w": "02-organisms/40-annet/30-service-snarvei.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
+        "w": "01-molecules/02-innhold/33-tout-luftkvalitet.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       }

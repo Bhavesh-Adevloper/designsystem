@@ -1,11 +1,27 @@
-<div class="tout_container">
-    <h2 class="tout_header">
-        <a href="{{ url }}" title="{{ tittel }}">{{ tittel }}</a>
-    </h2>
+<div class="tout_container {{ styleModifier }}">
+    {{# tittel }}
+        <h2 class="tout_header">
+            {{# url }}
+            <a href="{{ url }}" title="{{ tittel }}">
+            {{/ url }}
+                {{ tittel }}
+            {{# url }}
+            </a>
+            {{/ url }}
+        </h2>
+    {{/ tittel }}
     {{# imgLandscape }}
+        {{# url }}
         <a href="{{ url }}" title="{{ tittel }}" class="tout_img_link">
+        {{/ url }}
             <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="tout_img" />
+        {{# url }}
         </a>
+        {{/ url }}
     {{/ imgLandscape }}
-    <div class="tout_excerpt">{{ ingress }}</div>
+    {{# htmlIngress }}
+    <div class="tout_excerpt">
+        {{{ htmlIngress }}}
+    </div>
+    {{/ htmlIngress }}
 </div>
