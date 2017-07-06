@@ -1,0 +1,277 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ organisasjonsenhet.tittel }}", url: "{{ organisasjonsenhet.url }}") }}
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+
+            {{> molecules-org-meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+
+
+
+
+            <section class="mbj">
+                {{> molecules-moduloverskrift-h1:mbm(tittel: "Kontakt") }}
+        
+                <div class="contact_page_with_static_image">
+                    <!--
+                    Retina 2x
+                    Size: 640 x 250
+                    Map type: roadmap
+                    Image format: png
+                    Zoom: 18
+                    Marker: default, red, large
+                    http://staticmapmaker.com/google/
+                    -->                    
+
+                    <img class="contact_page_static_image mobile" src="http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyBmF-VNrEbdzVXStcHSeRQA4RQOdfKJI2s&center=Fjøsangerveien+68+Bergen+Norway&zoom=18&scale=2&size=640x350&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7CFjøsangerveien+68+Bergen+Norway" alt="Google Maps - Besøksadresse: Fjøsangerveien 68" />
+
+                    <img class="contact_page_static_image desktop" src="http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyBmF-VNrEbdzVXStcHSeRQA4RQOdfKJI2s&center=Fjøsangerveien+68+Bergen+Norway&zoom=17&scale=2&size=640x250&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7CFjøsangerveien+68+Bergen+Norway" alt="Google Maps - Besøksadresse: Fjøsangerveien 68" />
+
+                    <dl class="contact_static_image_address">
+                        <dt class="screen-reader-text">Besøksadresse:</dt>
+                        <dd>Fjøsangerveien 68</dd>
+                    </dl>
+
+                    <a href="{{ link.pages-kontakt }}" title="Fjøsangerveien 68" class="contact_static_image_link">
+                        <span class="contact_static_image_link_text">
+                            <span class="read_more_link">Vis større kart</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="row">
+                    <div class="col_md_6 col_lg_6">
+                        <dl class="contact_content">
+                            
+                            <dt>E-post:</dt>
+                            <dd><a href="mailto:va-kundeservice@bergen.kommune.no" title="va-kundeservice@bergen.kommune.no">va-kundeservice@bergen.kommune.no</a></dd>
+                            
+                            <dt>Telefon:</dt>
+                            <dd><a href="tel:55566000" title="Ring oss">55 56 60 00</a> - fra kl. 08:00 til 15:00 </dd>
+                            
+                            <dt>Mobil:</dt>
+                            <dd><a href="tel:55566000" title="Ring oss">55 56 60 00</a></dd>
+                            
+                            <dt>Faks:</dt>
+                            <dd><a href="tel:55566000" title="Telefaks">55 56 60 00</a></dd>
+                            
+                            <dt>Besøksadresse:</dt>
+                            <dd>Fjøsangerveien 68</dd>
+                            
+                            <dt>Åpningstid:</dt>
+                            <dd>08:00 - 15:00</dd>
+                            
+                            <dt><!-- Åpningstid beskrivelse --></dt>
+                            <dd>Hverdager kl. 08:00 - 02:00 Helg kl. 17:00 - 02:00 ev via politi 55556300</dd>
+                            
+                            <dt>Postadresse:</dt>
+                            <dd>Postboks 7700<br>5020 BERGEN</dd>
+                            
+                        </dl>
+                    </div>
+                    <div class="col_md_6 col_lg_6">
+                        <dl class="contact_content">
+                            
+                            <dt>Tilhører:</dt>
+                            <dd><a href="#" title="Byrådsavd. for byutvikling">Byrådsavd. for byutvikling</a></dd>
+                            
+                            <dt><!-- Chat --></dt>
+                            <dd class="with_icon">
+                                <a href="#" title="Chat med oss">
+                                    <span class="icon chat_icon_blue medium_size"></span>
+                                    Chat med oss
+                                </a>
+                            </dd>
+                            
+                            <dt><!-- Facebook --></dt>
+                            <dd class="with_icon">
+                                <a href="https://www.facebook.com/bergenvann/" title="Følg oss på Facebook">
+                                    <span class="icon facebook_icon medium_size"></span>
+                                    Følg oss på Facebook
+                                </a>
+                            </dd>
+                            
+                            <dt><!-- Twitter --></dt>
+                            <dd class="with_icon">
+                                <a href="https://www.twitter.com/bergenvann/" title="Følg oss på Twitter">
+                                    <span class="icon twitter_icon medium_size"></span>
+                                    Følg oss på Twitter
+                                </a>
+                            </dd>
+                            
+                            <dt><!-- Instagram --></dt>
+                            <dd class="with_icon">
+                                <a href="https://www.instagram.com/bergenvann/" title="Følg oss på Instagram">
+                                    <span class="icon instagram_icon medium_size"></span>
+                                    Følg oss på Instagram
+                                </a>
+                            </dd>
+                            
+                            <dt><!-- tilleggTilKontaktInfo --></dt>
+                            <dd>
+                                Vedr. driftshendelser/feil:
+                                <br>
+                                <b>Døgnåpen Vaktsentral</b>
+                                <br>
+                                55 56 78 15
+                                <br><br>
+                                For annen informasjon:
+                                <br>
+                                <b>Kundesenter</b>
+                                <br>
+                                Åpent 08:00-15:00
+                                <br>
+                                Tlf:  55 56 60 00
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section class="mbxxl">
+                {{> molecules-moduloverskrift-h3:mbm(tittel: "Fagdirektør") }}
+                <h4 class="employee_name">
+                    <a href="{{ link.pages-Ansatt }}" title="Sekse, Magnar">Magnar Sekse</a>
+                </h4>
+                <dl class="contact_content contact_content_employee_dl">
+                    <dt class="screen-reader-text">Telefon:</dt>
+                    <dd class="with_icon">
+                        <a href="tel:55566138" title="Ring">
+                            <span class="icon phone_icon"></span>
+                            55566138</a>
+                        /
+                        <a href="tel:91852506" title="Ring">
+                            91852506
+                        </a>
+                    </dd>
+                    <dt class="screen-reader-text">E-post:</dt>
+                    <dd class="with_icon">
+                        <a href="mailto:Magnar.Sekse@bergen.kommune.no" title="Magnar.Sekse@bergen.kommune.no">
+                            <span class="icon email_icon"></span>
+                            Magnar.Sekse@bergen.kommune.no
+                        </a>
+                    </dd>
+                </dl>
+            </section>
+
+
+
+
+            <section class="mbxxl">
+                {{> molecules-moduloverskrift-h3:mbm(tittel: "Ansatte") }}
+
+                
+                <h4 class="employee_name">
+                    <a href="{{ link.pages-Ansatt }}" title="Aase, Marit">Aase, Marit</a>
+                </h4>
+                <dl class="contact_content contact_content_employee_dl">
+                    <dt></dt>
+                    <dd>
+                        Senioringenør
+                        <br>
+                        Her står teksten arbeidsoppgave fra fellesweb. Den kan være lang men den ignorerer alle line-breaks. Uansett.
+                    </dd>
+                    <dt class="screen-reader-text">Telefon:</dt>
+                    <dd class="with_icon">
+                        <a href="tel:55566158" title="Ring">
+                            <span class="icon phone_icon"></span>
+                            55566148</a>
+                        /
+                        <a href="tel:90689862" title="Ring">
+                            90689862
+                        </a>
+                    </dd>
+                    <dt class="screen-reader-text">E-post:</dt>
+                    <dd class="with_icon">
+                        <a href="mailto:Marit.Aase@bergen.kommune.no" title="Marit.Aase@bergen.kommune.no">
+                            <span class="icon email_icon"></span>
+                            Marit.Aase@bergen.kommune.no
+                        </a>
+                    </dd>
+                </dl>
+                
+
+                
+                <h4 class="employee_name">
+                    <a href="{{ link.pages-Ansatt }}" title="Aase, Marit">Akervold, Oddbjørn L.</a>
+                </h4>
+                <dl class="contact_content contact_content_employee_dl">
+                    <dt></dt>
+                    <dd>Rådgiver</dd>
+                    <dt class="screen-reader-text">Telefon:</dt>
+                    <dd class="with_icon">
+                        <a href="tel:55566322" title="Ring">
+                            <span class="icon phone_icon"></span>
+                            55566322</a>
+                        /
+                        <a href="tel:91797781" title="Ring">
+                            91797781
+                        </a>
+                    </dd>
+                    <dt class="screen-reader-text">E-post:</dt>
+                    <dd class="with_icon">
+                        <a href="mailto:Oddbjorn.Andersen@bergen.kommune.no" title="Oddbjorn.Andersen@bergen.kommune.no">
+                            <span class="icon email_icon"></span>
+                            Oddbjorn.Andersen@bergen.kommune.no
+                        </a>
+                    </dd>
+                </dl>
+                
+
+                
+                <h4 class="employee_name">
+                    <a href="{{ link.pages-Ansatt }}" title="Aase, Marit">Akervold, Oddbjørn L.</a>
+                </h4>
+                <dl class="contact_content contact_content_employee_dl">
+                    <dt></dt>
+                    <dd>Rådgiver</dd>
+                    <dt class="screen-reader-text">Telefon:</dt>
+                    <dd class="with_icon">
+                        <a href="tel:55566322" title="Ring">
+                            <span class="icon phone_icon"></span>
+                            55566322</a>
+                        /
+                        <a href="tel:91797781" title="Ring">
+                            91797781
+                        </a>
+                    </dd>
+                    <dt class="screen-reader-text">E-post:</dt>
+                    <dd class="with_icon">
+                        <a href="mailto:Oddbjorn.Andersen@bergen.kommune.no" title="Oddbjorn.Andersen@bergen.kommune.no">
+                            <span class="icon email_icon"></span>
+                            Oddbjorn.Andersen@bergen.kommune.no
+                        </a>
+                    </dd>
+                </dl>                
+
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</main>
+
+{{> organisms-footer }}

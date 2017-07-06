@@ -1,0 +1,26 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ hovedsidetittel }}", url: "{{ hovedsideURL }}") }}
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+
+            {{> molecules-org-meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+            
+            {{# moduloverskrift }}
+            {{> molecules-moduloverskrift-h1:mbs }}
+            {{/ moduloverskrift }}
+            
+            {{# tallOgFakta }}
+            {{> molecules-modul }}
+            {{/ tallOgFakta }}
+
+        </div>
+    </div>
+</main>
+{{> organisms-footer }}
