@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1499417489984,
+  "timestamp": 1499425489044,
   "graph": {
     "options": {
       "directed": true,
@@ -1006,6 +1006,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-17-politiker-og-utvalg-04-en-politiker/04-pages-17-politiker-og-utvalg-04-en-politiker.rendered.html",
           "lineagePattern": "pages-en-politiker"
+        }
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-20-navigasjon-30-avdelinger/04-pages-20-navigasjon-30-avdelinger.rendered.html",
+          "lineagePattern": "pages-avdelinger"
         }
       },
       {
@@ -2517,6 +2525,31 @@
         "value": {}
       },
       {
+        "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
+        "w": "01-molecules/lister/06-link-liste-filter-soek.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
         "v": "03-templates/20-Listesider/medlemmer.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
@@ -3423,32 +3456,12 @@
       },
       {
         "v": "04-pages/20-navigasjon/30-ansatte.mustache",
-        "w": "02-organisms/00-global/_02-header-2.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/20-navigasjon/30-ansatte.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/20-navigasjon/30-ansatte.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
+        "w": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
         "value": {}
       },
       {
         "v": "04-pages/20-navigasjon/30-avdelinger.mustache",
-        "w": "02-organisms/00-global/_02-header-2.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/20-navigasjon/30-avdelinger.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/20-navigasjon/30-avdelinger.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
+        "w": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
         "value": {}
       },
       {

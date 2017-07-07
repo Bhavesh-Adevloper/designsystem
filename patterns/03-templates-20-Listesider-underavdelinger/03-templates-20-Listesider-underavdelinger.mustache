@@ -20,31 +20,32 @@
              {{/ vanligLinkListe }}
             
             {{# linkListeMedFilterSoek }}
-                <div class="mbj">
                     
-                    <!-- Hvis listen inneholder skoler og barnehager -->
-                    {{> molecules-moduloverskrift-h1:mbs }}
-                
-                    <div id="js_filter_search" class="filter_search_input_container">
-                        <label for="filter_search" class="filter_search_label">
-                            <span class="screen-reader-text">Søk på navn:</span>
-                        </label>
-                        <input type="search" id="filter_search" placeholder="Søk" class="js_filter_search_input filter_search_input" />
-                        <button class="clear_search_button js_clear_search" style="display: none;">
-                            <span class="screen-reader-text">Fjern søkeord</span>
-                        </button>
-                    </div>
-                    <p class="filter_shortcut_container">
-                        Eller vis alle: <a href="#" title="skoler">skoler</a>, <a href="#" title="barnehager">barnehager</a>
-                    </p>
+                <!-- Hvis listen inneholder skoler og barnehager -->
+                {{> molecules-moduloverskrift-h1:mbs }}
 
-                    <p class="js_empty_filter_search empty_filter_search" style="display: none;">
-                        <strong>Ingenting funnet</strong>
-                    </p>
-
-                    {{> molecules-link-liste-filter-soek:mbj }}
-                
+                <div id="js_filter_search" class="filter_search_input_container">
+                    <label for="filter_search" class="filter_search_label">
+                        <span class="screen-reader-text">Søk på navn:</span>
+                    </label>
+                    <input type="search" id="filter_search" placeholder="Søk" class="js_filter_search_input filter_search_input" />
+                    <button class="clear_search_button js_clear_search" style="display: none;">
+                        <span class="screen-reader-text">Fjern søkeord</span>
+                    </button>
                 </div>
+
+                {{# ellerVisAlle }}
+                <p class="filter_shortcut_container">
+                    Eller vis alle: <a href="#" title="skoler">skoler</a>, <a href="#" title="barnehager">barnehager</a>
+                </p>
+                {{/ ellerVisAlle }}
+
+                <p class="js_empty_filter_search empty_filter_search" style="display: none;">
+                    <strong>Ingenting funnet</strong>
+                </p>
+
+                {{> molecules-link-liste-filter-soek:mbj }}
+                
             {{/ linkListeMedFilterSoek }}
 
         </div>
