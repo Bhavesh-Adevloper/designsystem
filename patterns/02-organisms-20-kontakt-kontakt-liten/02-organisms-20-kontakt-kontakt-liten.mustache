@@ -1,4 +1,4 @@
-<section class="mbj">
+<section class="mbj {{ styleModifier }}">
     {{> molecules-moduloverskrift-h2-med-lenke:mbm(url: "{{ link.pages-kontakt }}", tittel: "Kontakt") }}
     
     {{# kontaktkort }}
@@ -29,7 +29,7 @@
 
                     <a href="https://maps.google.com/maps?z=16&t=m&mapclient=embed&q={{ kartbilde_adresse }}" title="{{ kartbilde_label }}" class="contact_static_image_link" target="_blank">
                         <span class="contact_static_image_link_text">
-                            <span class="read_more_link">Vis større kart</span>
+                            <span class="read_more_link read_more_link--16">Vis større kart</span>
                         </span>
                     </a>
                 </div>

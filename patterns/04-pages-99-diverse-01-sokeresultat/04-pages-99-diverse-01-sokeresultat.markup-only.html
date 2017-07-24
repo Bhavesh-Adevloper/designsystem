@@ -92,29 +92,29 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 </header>
 
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">    
-      
-  <div class="page_header">
-    <h1>Søkeresultat</h1>
-  </div>
+    
+    <div class="page_header mbl mbl--mob">
+    <h1>
+        Søkeresultat
+    </h1>
+</div>
 
 <div class="row">
   <div class="col_md_12 col_lg_8">
 
-    <article>
-
-      <div class="article_content">
-
-
+        <div class="hiddenxx">
           <div id="js_search" class="collapsed_on_mobile collapsed">
-              <h3 class="fasett_header_desktop">
+              <h3 class="module_header mbn fasett_header_desktop">
                   Avgrens søket:
               </h3>
               <h3 class="fasett_header_mobile">
                 <a href="#" onClick="document.getElementById('js_search').classList.toggle('collapsed')" title="Menu" class="fasett_name">
-                    Viser: Alle treff <span class="search_hits">(38498)</span>
+                    Viser: 
+                    <span class="fasett_name">Alle treff</span>
+                    <span class="search_hits">(38498)</span>
                 </a>
               </h3>
-              <ul class="fasett_link_list">
+              <ul class="link_list link_list--search-facetts">
                   <li>
                       <a href="#" title="Alle treff">
                           <span class="fasett_name">Alle treff</span>
@@ -139,7 +139,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                           <span class="search_hits">(182)</span>
                       </a>
                   </li>
-                  <li class="hidden">
+                  <li><!--  class="hidden" -->
                       <a href="#" title="Utbyggingsavtaler">
                           <span class="fasett_name">Den siste fasetten med veldig langt navn men bare et treff</span>
                           <span class="search_hits">(1)</span>
@@ -147,6 +147,34 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                   </li>
               </ul>
           </div>
+        </div>
+
+      
+        <div class="hidden">
+          <!-- Single - bare en fasett -->
+          <div id="js_search" class="collapsed_on_mobile collapsed">
+              <h3 class="module_header mbn fasett_header_desktop">
+                  Avgrens søket:
+              </h3>
+              <h3 class="fasett_header_mobile single">
+                Viser: 
+                <span class="fasett_name">Avdelinger</span>
+                <span class="search_hits">(2)</span>
+              </h3>
+              <ul class="link_list link_list--search-facetts">
+                  <li class="selected single">
+                      <span class="fasett_name">Avdelinger</span>
+                      <span class="search_hits">(2)</span>
+                  </li>
+              </ul>
+          </div>
+        </div>
+      
+      
+      
+      
+      
+      
 
           <ol id="js_search_results" class="search_results">
 
@@ -558,7 +586,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 
 
         <a href="javascript:lastFlere()" id="js_lastflere" class="load_more_link" style="display:none;">
-            Vis flere treff <!-- (<span id="js_antallflere"></span>)  -->
+            <span class="read_more_link read_more_link--20">
+                Vis flere treff <!-- (<span id="js_antallflere"></span>)  -->
+            </span>
         </a>
 
         <script>
@@ -596,8 +626,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
             });
         </script>
 -->			
-      </div><!-- end .article_content -->
-    </article>            
+                
 
   </div>
 </div>

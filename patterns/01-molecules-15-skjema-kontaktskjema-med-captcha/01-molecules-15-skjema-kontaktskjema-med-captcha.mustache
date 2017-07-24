@@ -1,14 +1,19 @@
-{{#tekstfelt}}{{> atoms-tekstfelt:mbl }}{{/tekstfelt}}
-{{#tekstfelt-hjelpetekst}} {{> atoms-hjelpetekst}} {{/tekstfelt-hjelpetekst}}
+<form>
+    <fieldset>
+        <legend class="screen-reader-text">{{legend}}</legend>
 
-{{atoms-etikett}}
-{{> atoms-tekstomrade:mbl }}
-{{#tekstomrade-hjelpetekst}} {{> atoms-hjelpetekst}} {{/tekstomrade-hjelpetekst}}
+        {{#tekstfelt}}{{> atoms-tekstfelt:mbl }}{{/tekstfelt}}
+        {{#tekstfelt-hjelpetekst}} {{> atoms-hjelpetekst}} {{/tekstfelt-hjelpetekst}}
 
+        {{atoms-etikett}}
+        {{> atoms-tekstomrade:mbl }}
+        {{#tekstomrade-hjelpetekst}} {{> atoms-hjelpetekst}} {{/tekstomrade-hjelpetekst}}
 
-<div class="mbl">
-    <script src="https://www.google.com/recaptcha/api.js?hl=no" async defer></script>
-    <div id="recaptcha" class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
-</div>
+        <div class="mbl">
+            <script src="https://www.google.com/recaptcha/api.js?hl=no" async defer></script>
+            <div id="recaptcha" class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+        </div>
 
-<button>Standard</button>
+        <button type="submit">Standard</button>
+    </fieldset>
+</form>

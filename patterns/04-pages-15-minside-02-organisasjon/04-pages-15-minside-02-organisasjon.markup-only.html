@@ -335,18 +335,44 @@
     <div class="feedback_header">Fornøyd med denne siden?</div>
 
     <form class="feedback_form">
-      <div class="feedback_yes_no clearfix">
-        <button type="button" class="feedback_btn yes">Ja</button>
-        <button type="button" class="feedback_btn no">Nei</button>
-      </div>
-      <div id="js_feedback_text" class="feedback_collapsed clearfix">
-        <textarea rows="4" cols="30" placeholder=""></textarea>
-        <div class="feedback_info"><strong>NB:</strong> Tilbakemeldingen din er  anonym og du vil ikke få svar.</div>
-        <button type="button" class="feedback_submit align_right">Send</button>
-          <!-- disabled="disabled" -->
-      </div>
+        <fieldset>
+            <legend class="screen-reader-text">Gi tilbakemelding på denne siden</legend>
+
+              <div class="feedback_yes_no clearfix" role="radiogroup">
+                <button type="button" class="feedback_btn yes">Ja</button>
+                <button type="button" class="feedback_btn no">Nei</button>
+              </div>
+
+              <div id="js_feedback_text" class="feedback_collapsed clearfix">
+                <textarea rows="4" cols="30" placeholder="" aria-labelledby="feedback"></textarea>
+                <div class="feedback_info" id="feedback"><strong>NB:</strong> Tilbakemeldingen din er  anonym og du vil ikke få svar.</div>
+                <button type="submit" class="feedback_submit align_right">Send</button>
+                  <!-- disabled="disabled" -->
+              </div>
+
+        </fieldset>
     </form>
 </div>
+
+<!--
+<div id="js_feedback" class="feedback minside_feedback">
+    <div class="feedback_header">Fornøyd med denne siden?</div>
+
+    <form class="feedback_form">
+        <div class="feedback_yes_no clearfix">
+            <button type="button" class="feedback_btn yes">Ja</button>
+            <button type="button" class="feedback_btn no">Nei</button>
+        </div>
+        <div id="js_feedback_text" class="feedback_collapsed clearfix">
+            <textarea rows="4" cols="30" placeholder=""></textarea>
+            <div class="feedback_info"><strong>NB:</strong> Tilbakemeldingen din er  anonym og du vil ikke få svar.</div>
+            <button type="button" class="feedback_submit align_right">Send</button>
+            &lt;!&ndash; disabled="disabled" &ndash;&gt;
+        </div>
+    </form>
+</div>
+-->
+
 
         </div>
     </div>

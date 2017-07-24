@@ -1,21 +1,26 @@
-<div class="form-element mbl">
+<form>
+    <fieldset>
+        <legend class="screen-reader-text"></legend>
+
+        <div class="form-element mbl">
     <label class="form-element__label"> Etikett </label> 
     <input class="form-element__textfield" type="text" placeholder="Tekstfelt">
 </div>
+        
 
-
-
-<div class="form-element mbl">
+        
+        <div class="form-element mbl">
     <label class="form-element__label"> Etikett </label> 
     <textarea class="form-element__textarea" name="comment" placeholder="Tekstområde..."> </textarea>
 </div>
 
+        
 
+        <div class="mbl">
+            <script src="https://www.google.com/recaptcha/api.js?hl=no" async defer></script>
+            <div id="recaptcha" class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+        </div>
 
-
-<div class="mbl">
-    <script src="https://www.google.com/recaptcha/api.js?hl=no" async defer></script>
-    <div id="recaptcha" class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
-</div>
-
-<button>Standard</button>
+        <button type="submit">Standard</button>
+    </fieldset>
+</form>

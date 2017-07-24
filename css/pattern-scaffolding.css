@@ -186,11 +186,102 @@
 }
 
 
+/* Text-size */
+.font-size-16 {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 21px;
+    line-height: 1.3125;
+}
+
+.font-size-17 {
+    font-size: 17px;
+    font-size: 1.0625rem;
+    line-height: 21px;
+    line-height: 1.23529;
+}
+
+.font-size-18 {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 28px;
+    line-height: 1.55556;
+}
+
+.font-size-19 {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 28px;
+    line-height: 1.47368;
+}
+
+.font-size-20 {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 28px;
+    line-height: 1.4;
+}
+
+.font-size-21 {
+    font-size: 21px;
+    font-size: 1.3125rem;
+    line-height: 28px;
+    line-height: 1.33333;
+}
+
+.font-size-22 {
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 28px;
+    line-height: 1.27273;
+}
+
+.font-size-24 {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 35px;
+    line-height: 1.45833;
+}
+
+.font-size-26 {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 35px;
+    line-height: 1.34615;
+}
+
+.font-size-28 {
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 42px;
+    line-height: 1.5;
+}
+
+.font-size-30 {
+    font-size: 30px;
+    font-size: 1.875rem;
+    line-height: 42px;
+    line-height: 1.4;
+}
+
+.font-size-32 {
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 42px;
+    line-height: 1.3125;
+}
 
 
 
 
 
+/* Gridwax help */
+#gw-overlay {
+    height: 50px !important;
+}
+#gw-console input {
+    width: 60px !important;
+}
 
 
 

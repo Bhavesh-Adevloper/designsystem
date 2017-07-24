@@ -8,11 +8,11 @@
             <div class="page_header_container--hvaskjer">
                 
                 {{# hvaSkjerHovedsideOverskrift }}
-                    {{> molecules-sideoverskrift-h1:mbl(sidetittel: "Hva skjer") }}
+                    {{> molecules-sideoverskrift-h1(sidetittel: "Hva skjer") }}
                 {{/ hvaSkjerHovedsideOverskrift }}
                 
                 {{# hvaSkjerUndersideOverskrift }}
-                    {{> molecules-sideoverskrift-h2-med-lenke:mbl(sidetittel: "Hva skjer", url: "{{ link.pages-hva-skjer }}") }}
+                    {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "Hva skjer", url: "{{ link.pages-hva-skjer }}") }}
                 {{/ hvaSkjerUndersideOverskrift }}
                 
             </div>
@@ -212,9 +212,7 @@
         <div class="smMa desktop_centered">
             
             <!-- TEMPLATE:   archiveLink_jsp -->
-            <div class="toarchive read_more_link_container">
-                <a href="#" class="readmore read_more_link" title="Arkiv">Arkiv</a>
-            </div>
+            {{> molecules-les-mer:toarchive|read_more_link_container--larger-font|read_more_link_container--top-border(lesMerTekst: "Arkiv", url: "{{ link.pages-arkivliste }}", antall: false) }}
         
         
         </div><!-- end .smMa desktop_centered -->

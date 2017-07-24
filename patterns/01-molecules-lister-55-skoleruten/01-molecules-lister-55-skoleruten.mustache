@@ -6,12 +6,11 @@
         {{# ferieListe }}
             <li class="holidays_list_item">
                 <div class="holiday_date">
-                    <span><strong>{{ dato }}</strong></span>
-                    <span {{#politikk}}class="holiday_date--sas"{{/politikk}}>{{# klslett }}<strong>{{ klslett }}</strong>{{/ klslett }} </span>
+                    <time>{{ dato }}</time>
                 </div>
                 <div class="holiday_title_container">
                     <div class="holiday_title">
-                        <strong>{{ ferietittel }}</strong>
+                        {{ ferietittel }}
                     </div>
                     {{# HarFerieExtraInfo }}
                         <ul class="holiday_additional_info_list">

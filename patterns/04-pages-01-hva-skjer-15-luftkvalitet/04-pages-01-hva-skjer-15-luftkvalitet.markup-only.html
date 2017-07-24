@@ -114,7 +114,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 </div>
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
 
-    <div class="page_header mbl">
+    <div class="page_header mbn--mobtab">
     <h1>
         Luftkvalitet
     </h1>
@@ -187,7 +187,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
             </a>
             <h5 class="teaser_kicker">Renere Bergen</h5>
             <h2 class="teaser_title">
-                <a href="#"><span class="read_more_link_24">Følg med på luftkvaliteten</span></a>
+                <a href="#"><span class="read_more_link read_more_link--24">Følg med på luftkvaliteten</span></a>
             </h2>    
             <p class="story_excerpt">		
                 Torsdag 30. mars ventes det lite forurenset luft, i sterkt trafikkerte strøk kan forurensningsnivået være høyere.
@@ -211,7 +211,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                     <div class="sakstittel_ruu">
                         <!-- <h5 class="teaser_kicker">Stikktittel</h5> -->
                         <h3 class="teaser_title">
-                            <a href="#"><span class="read_more_link_large">Slik fyrer du riktig</span></a>
+                            <a href="#"><span class="read_more_link read_more_link--22">Slik fyrer du riktig</span></a>
                         </h3>
                     </div>
                     <p class="story_excerpt">		
@@ -234,7 +234,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                     <div class="sakstittel_ruu">
                         <!-- <h5 class="teaser_kicker">Stikktittel</h5> -->
                         <h3 class="teaser_title">                
-                            <a href="#"><span class="read_more_link_large">Slik samkjører du</span></a>
+                            <a href="#"><span class="read_more_link read_more_link--22">Slik samkjører du</span></a>
                         </h3>
                     </div>
                     <p class="story_excerpt">		
@@ -257,7 +257,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                     <div class="sakstittel_ruu">
                         <!-- <h5 class="teaser_kicker">Stikktittel</h5> -->
                         <h3 class="teaser_title">                
-                            <a href="#"><span class="read_more_link_large">Hvor og hvordan måles luftkvaliteten i Bergen?</span></a>
+                            <a href="#"><span class="read_more_link read_more_link--22">Hvor og hvordan måles luftkvaliteten i Bergen?</span></a>
                         </h3>
                     </div>
                     <div class="clearboth"></div>        
@@ -276,7 +276,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                     <div class="sakstittel_ruu">
                         <!-- <h5 class="teaser_kicker">Stikktittel</h5> -->
                         <h3 class="teaser_title">    
-                            <a href="#"><span class="read_more_link_large">Sykle året rundt?</span></a>            
+                            <a href="#"><span class="read_more_link read_more_link--22">Sykle året rundt?</span></a>            
                         </h3>
                     </div>
                     <div class="clearboth"></div>            
@@ -301,7 +301,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                     <div class="sakstittel_ruu">
                         <!-- <h5 class="teaser_kicker">Stikktittel</h5> -->
                         <h3 class="teaser_title">
-                            <a href="#"><span class="read_more_link_large">Nye fargekoder for luftmåling</span></a>
+                            <a href="#"><span class="read_more_link read_more_link--22">Nye fargekoder for luftmåling</span></a>
                         </h3> 
                     </div>
                     <p class="story_excerpt">
@@ -317,9 +317,11 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         <div class="clearit"></div>
         
         <!-- TEMPLATE:   archiveLink_jsp -->
-        <div class="toarchive read_more_link_container">
-            <a href="#" class="readmore read_more_link" title="Arkiv">Arkiv</a>
-        </div>
+        <div class="read_more_link_container toarchive read_more_link_container--larger-font">
+    <a title="Arkiv" class="read_more_link read_more_link--17" href="&#x2F;patterns&#x2F;04-pages-50-escenic-52-arkivliste&#x2F;04-pages-50-escenic-52-arkivliste.rendered.html">
+        Arkiv
+    </a>
+</div>
         
         
     </div>
@@ -336,7 +338,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     </a>
 </h2>
     
-    <ul class="link_list mbms">
+    <ul class="link_list mbs">
     <li>
         <a href="&#x2F;patterns&#x2F;04-pages-10-tjenester-02-tjenestebeskrivelse&#x2F;04-pages-10-tjenester-02-tjenestebeskrivelse.rendered.html" title="Måling av luftkvalitet i Bergen">
             Måling av luftkvalitet i Bergen
@@ -416,18 +418,44 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     <div class="feedback_header">Fornøyd med denne siden?</div>
 
     <form class="feedback_form">
-      <div class="feedback_yes_no clearfix">
-        <button type="button" class="feedback_btn yes">Ja</button>
-        <button type="button" class="feedback_btn no">Nei</button>
-      </div>
-      <div id="js_feedback_text" class="feedback_collapsed clearfix">
-        <textarea rows="4" cols="30" placeholder=""></textarea>
-        <div class="feedback_info"><strong>NB:</strong> Tilbakemeldingen din er  anonym og du vil ikke få svar.</div>
-        <button type="button" class="feedback_submit align_right">Send</button>
-          <!-- disabled="disabled" -->
-      </div>
+        <fieldset>
+            <legend class="screen-reader-text">Gi tilbakemelding på denne siden</legend>
+
+              <div class="feedback_yes_no clearfix" role="radiogroup">
+                <button type="button" class="feedback_btn yes">Ja</button>
+                <button type="button" class="feedback_btn no">Nei</button>
+              </div>
+
+              <div id="js_feedback_text" class="feedback_collapsed clearfix">
+                <textarea rows="4" cols="30" placeholder="" aria-labelledby="feedback"></textarea>
+                <div class="feedback_info" id="feedback"><strong>NB:</strong> Tilbakemeldingen din er  anonym og du vil ikke få svar.</div>
+                <button type="submit" class="feedback_submit align_right">Send</button>
+                  <!-- disabled="disabled" -->
+              </div>
+
+        </fieldset>
     </form>
 </div>
+
+<!--
+<div id="js_feedback" class="feedback minside_feedback">
+    <div class="feedback_header">Fornøyd med denne siden?</div>
+
+    <form class="feedback_form">
+        <div class="feedback_yes_no clearfix">
+            <button type="button" class="feedback_btn yes">Ja</button>
+            <button type="button" class="feedback_btn no">Nei</button>
+        </div>
+        <div id="js_feedback_text" class="feedback_collapsed clearfix">
+            <textarea rows="4" cols="30" placeholder=""></textarea>
+            <div class="feedback_info"><strong>NB:</strong> Tilbakemeldingen din er  anonym og du vil ikke få svar.</div>
+            <button type="button" class="feedback_submit align_right">Send</button>
+            &lt;!&ndash; disabled="disabled" &ndash;&gt;
+        </div>
+    </form>
+</div>
+-->
+
             
         </div>
     </div>

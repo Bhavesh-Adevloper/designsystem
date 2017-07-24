@@ -2,7 +2,7 @@
 {{> organisms-brodsmuler }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
 
-    {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ organisasjonsenhet.tittel }}", url: "{{ organisasjonsenhet.url }}") }}
+    {{> molecules-sideoverskrift-h2-med-lenke:mbn--mobtab(sidetittel: "{{ organisasjonsenhet.tittel }}", url: "{{ organisasjonsenhet.url }}") }}
 
     <div class="row">
         <div class="col_md_12 col_lg_4">
@@ -79,7 +79,7 @@
                             <h4 class="teaser_kicker">Viktig melding</h4>
                             <h3 class="teaser_title">
                                 <a href="{{ link.pages-artikkel }}" title="Ibsen gate stengt 18. juni-18. august">
-                                    <span class="read_more_link_large">
+                                    <span class="read_more_link read_more_link--22">
                                         Ibsen gate stengt 18. juni-18. august
                                     </span>
                                 </a>
@@ -114,7 +114,7 @@
                             Torsdag 15. September, kl. 19.00
                             <h3 class="teaser_title">
                                 <a href="{{ link.pages-artikkel-2 }}" title="Nordic Tenors – Con Amore">
-                                    <span class="read_more_link_large">
+                                    <span class="read_more_link read_more_link--22">
                                         Nordic Tenors – Con Amore
                                     </span>
                                 </a>
@@ -144,7 +144,7 @@
                         <div class="excerpt_story_container_ruu">
                             <h3 class="teaser_title">
                                 <a href="{{ link.pages-artikkel }}" title="Garnes - fornying av kommunale vannledninger i Kjelåvegen, Vestlivegen og Kjelånæ.">
-                                    <span class="read_more_link_large">
+                                    <span class="read_more_link read_more_link--22">
                                         Garnes - fornying av kommunale vannledninger i Kjelåvegen, Vestlivegen og Kjelånæ.
                                     </span>
                                 </a>
@@ -199,7 +199,7 @@
                         <div class="excerpt_story_container_ruu">
                             <h3 class="teaser_title">
                                 <a href="{{ link.pages-artikkel }}" title="Fornyer infrastruktur i Bergen sentrum">
-                                    <span class="read_more_link_large">
+                                    <span class="read_more_link read_more_link--22">
                                         Fornyer infrastruktur i Bergen sentrum
                                     </span>
                                 </a>
@@ -239,7 +239,7 @@
                         <div class="excerpt_story_container_ruu">
                             <h3 class="teaser_title">
                                 <a href="{{ link.pages-artikkel }}" title="Fornyer infrastruktur i Bergen sentrum">
-                                    <span class="read_more_link_large">
+                                    <span class="read_more_link read_more_link--22">
                                         Fornyer infrastruktur i Bergen sentrum
                                     </span>
                                 </a>
@@ -273,9 +273,7 @@
 
 
                 <!-- TEMPLATE:   archiveLink_jsp -->                
-                <div class="toarchive read_more_link_container">
-                    <a href="#" class="readmore read_more_link" title="Arkiv">Arkiv</a>
-                </div>
+                {{> molecules-les-mer:toarchive|read_more_link_container--larger-font(lesMerTekst: "Arkiv", url: "{{ link.pages-arkivliste }}", antall: false) }}
 
             </div><!-- end newsFP -->
 

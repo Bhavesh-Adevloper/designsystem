@@ -2,7 +2,7 @@
 {{> organisms-brodsmuler }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
 
-    {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ organisasjonsenhet.tittel }}", url: "{{ organisasjonsenhet.url }}") }}
+    {{> molecules-sideoverskrift-h2-med-lenke:mbn--mobtab(sidetittel: "{{ organisasjonsenhet.tittel }}", url: "{{ organisasjonsenhet.url }}") }}
 
     <div class="row">
         <div class="col_md_12 col_lg_4">
@@ -44,7 +44,7 @@
             <h4 class="teaser_kicker">Stikktittel</h4>
             <h3 class="teaser_title">
                 <a href="#">
-                    <span class="read_more_link_large">
+                    <span class="read_more_link read_more_link--22">
                         Kloakk blir drivstoff
                     </span>
                 </a>
@@ -98,7 +98,7 @@
         
           
             <a href="#">
-                <span class="read_more_link_large">
+                <span class="read_more_link read_more_link--22">
                     Bedre rensing enn noensinne på Flesland renseanlegg
                 </span>
             </a>    
@@ -156,7 +156,7 @@
         
           
             <a href="#">
-                <span class="read_more_link_large">
+                <span class="read_more_link read_more_link--22">
                     Investerer stort i vannmiljø
                 </span>
             </a>    
@@ -212,7 +212,7 @@
         
           
             <a href="#">
-                <span class="read_more_link_large">
+                <span class="read_more_link read_more_link--22">
                     Nye Kvernevik renseanlegg er tatt i bruk!
                 </span>
             </a>    
@@ -264,7 +264,7 @@
         
           
             <a href="#">
-                <span class="read_more_link_large">
+                <span class="read_more_link read_more_link--22">
                     Oppgradering av Holen renseanlegg
                 </span>
           </a>    
@@ -319,7 +319,7 @@
         
           
             <a href="#">
-                <span class="read_more_link_large">
+                <span class="read_more_link read_more_link--22">
                     Ytre Sandviken renseanlegg er tatt i bruk
                 </span>
             </a>    
@@ -375,7 +375,7 @@
         
           
             <a href="#">
-                <span class="read_more_link_large">
+                <span class="read_more_link read_more_link--22">
                     Storstilt miljøløft for avløpsrenseanleggene i Bergen
                 </span>
             </a>    
@@ -430,7 +430,7 @@
         
           
             <a href="#">
-                <span class="read_more_link_large">
+                <span class="read_more_link read_more_link--22">
                     Stort beboerengasjement om nytt biogassanlegg
                 </span>
             </a>    
@@ -457,9 +457,7 @@
 
 
 <!-- TEMPLATE:   archiveLink_jsp -->
-<div class="toarchive read_more_link_container">
-    <a href="#" class="readmore read_more_link" title="Arkiv">Arkiv</a>
-</div>
+{{> molecules-les-mer:toarchive|read_more_link_container--larger-font(lesMerTekst: "Arkiv", url: "{{ link.pages-arkivliste }}", antall: false) }}
 
 
 	
