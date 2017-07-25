@@ -2,7 +2,9 @@
 {{> organisms-brodsmuler }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
 
-    {{> molecules-sideoverskrift-h1:mbn--mobtab(sidetittel: "{{ sidetittel }}") }}
+    <div class="page_header_container_with_org_menu">
+        {{> molecules-sideoverskrift-h1(sidetittel: "{{ sidetittel }}") }}
+    </div>
 
     <div class="row">
         <div class="col_md_12 col_lg_4">
