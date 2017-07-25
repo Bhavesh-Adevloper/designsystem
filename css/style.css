@@ -1765,8 +1765,6 @@ h1.article_header {
     line-height: 0; }
   .frontpage:after {
     clear: both; }
-  .frontpage .teaser_title_hidden_ruu {
-    display: none; }
   .frontpage .teaser_title {
     font-weight: 400;
     font-style: normal;
@@ -1795,8 +1793,6 @@ h1.article_header {
       display: inline-block;
       margin-bottom: 12px;
       margin-bottom: 0.75rem; }
-  .frontpage .readmore_hidden_ruu {
-    display: none; }
   .frontpage .henvisningsliste {
     margin: 10px 0 0;
     float: left;
@@ -1887,8 +1883,6 @@ h1.article_header {
     margin-bottom: 0; }
   .hvaskjer_grid .excerpt_image_container_ruu img {
     margin-bottom: 0; }
-  .hvaskjer_grid .teaser_title_hidden_ruu {
-    display: none; }
   .hvaskjer_grid .teaser_title {
     font-weight: 400;
     font-style: normal;
@@ -1909,8 +1903,6 @@ h1.article_header {
       display: inline-block;
       margin-bottom: 14px;
       margin-bottom: 0.875rem; }
-  .hvaskjer_grid .readmore_hidden_ruu {
-    display: none; }
   .hvaskjer_grid .henvisningsliste {
     margin: 10px 0 0;
     float: left;
@@ -2126,8 +2118,6 @@ h1.article_header {
           display: inline-block;
           margin-bottom: 14px;
           margin-bottom: 0.875rem; }
-      #newsFP .module .moduleStory .readmore_hidden_ruu {
-        display: none; }
       #newsFP .module .moduleStory .section_link_seperator {
         display: none; }
       #newsFP .module .moduleStory .read_more_link + .section_link_seperator {
