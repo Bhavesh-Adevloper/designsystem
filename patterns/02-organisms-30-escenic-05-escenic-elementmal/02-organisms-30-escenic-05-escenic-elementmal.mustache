@@ -1,28 +1,67 @@
-<div class="module {{ styleModifier }}">
-    <div class="moduleStory">
-        {{# imgLandscape }}
-            <div class="excerpt_image_container_ruu">
-                <a href="{{ url }}" title="{{ tittel }}" class="image_link">
-                    <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}">
-                </a>
-            </div>
-        {{/ imgLandscape }}
-        <div class="excerpt_story_container_ruu">            
-            {{# stikktittel }}
-                <h3 class="teaser_kicker">{{ stikktittel }}</h3>
-            {{/ stikktittel }}
-            <h2 class="teaser_title">
-                <a href="{{ url }}" title="{{ tittel }}">
-                    <span class="read_more_link read_more_link--22">
-                        {{ tittel }}
-                    </span>
-                </a>
-            </h2>
-            {{# ingress }}
-            <p class="story_excerpt">		
+<div class="ece_module_container ece_module_equal_heights {{ styleModifier }}">
+    {{# imgLandscape }}
+        <div class="ece_module_image_container">
+            <a href="{{ url }}" title="{{ tittel }}" class="ece_module_image_link">
+                <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="ece_module_image">
+            </a>
+        </div>
+    {{/ imgLandscape }}
+    <div class="ece_module_content_container">
+        <div class="ece_module_kicker_date">31.10.2016</div>
+        {{# stikktittel }}
+            <h3 class="ece_module_kicker">{{ stikktittel }}</h3>
+        {{/ stikktittel }}
+        <h2 class="ece_module_title">
+            <a href="{{ url }}" title="{{ tittel }}">
+                <span class="read_more_link read_more_link--24">
+                    {{ tittel }}
+                </span>
+            </a>
+        </h2>
+        {{# ingress }}
+        <div class="ece_module_excerpt">
+            <p>		
                 {{ ingress }}
             </p>
-            {{/ ingress }}
+        </div>
+        {{/ ingress }}
+        <div class="ece_module_meta">
+            <p>
+                <a href="#" class="read_more_link">Les meir om dette</a>
+                <a href="#" class="section_link read_more_link">Siste nytt</a>
+                <span class="date">(13.05.2016)</span>
+            </p>
+        </div>
+        <div class="ece_module_references">
+            <ul class="multimedia_references">
+                <li>
+                    <a href="#" title="" class="multimedia_link">
+                        <span class="icon icon_pdf">icon_pdf</span>
+                        <span class="file_title">Ikke slå ribbefettet i vasken</span>
+                        <span class="file_size">[6.4 Mb]</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="" class="multimedia_link">
+                        <span class="icon icon_word">icon_word</span>
+                        <span class="file_title">Slik får du en branntrygg jul også til neste år når det er  en ny sesong med sterinlys</span>
+                        <span class="file_size">[6.4 Mb]</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="link_references">
+                <li>
+                    <a href="">Slik får du en branntrygg jul</a>
+                </li>
+            </ul>
+            <ul class="article_references">
+                 <li>
+                     <a href="">Ikke slå ribbefettet i vasken</a>
+                </li>
+                <li>
+                    <a href="">Slik får du en branntrygg jul</a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
