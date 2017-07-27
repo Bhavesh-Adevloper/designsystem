@@ -1,0 +1,64 @@
+<div class="rssicon_floatRight">
+    <a href="#" type="application/rss+xml" rel="alternate" title="Abonner med RSS">RSS - abonner</a>
+</div>
+
+
+<div class="ece_tema_grid mbj inngangsside_pf">
+            
+    {{# toppsak }}
+    <!-- Escenic: toppsak -->
+    <div class="toppsak">
+        {{> organisms-escenic-elementmal }}
+    </div>
+    {{/ toppsak }}
+    
+    <!-- Escenic: Saker -->
+    <div class="saker_container">
+        {{# sakerSak1 }}
+            {{> organisms-escenic-elementmal }}
+        {{/ sakerSak1 }}
+
+        {{# sakerSak2 }}
+            {{> organisms-escenic-elementmal }}
+        {{/ sakerSak2 }}
+    </div>
+    
+    <!-- Escenic: Bunnsaker -->
+    <div class="bunnsaker">
+        <div class="venstrebunn">
+
+            {{# bunnsakerSak1 }}
+                {{> organisms-escenic-elementmal }}
+            {{/ bunnsakerSak1 }}
+        
+        </div>
+        <div class="hoyrebunn">
+
+            {{# bunnsakerSak2 }}
+                {{> organisms-escenic-elementmal }}
+            {{/ bunnsakerSak2 }}
+            
+        </div>
+    </div>
+    
+    <!-- Escenic: Saker -->
+    <div class="saker_container">
+        
+        {{# sakerSak3 }}
+            {{> organisms-escenic-elementmal }}
+        {{/ sakerSak3 }}
+        
+        {{# sakerSak4 }}
+            {{> organisms-escenic-elementmal }}
+        {{/ sakerSak4 }}
+        
+    </div>
+    
+    <!-- TEMPLATE:   archiveLink_jsp -->
+    {{> molecules-les-mer:toarchive|read_more_link_container--larger-font(lesMerTekst: "Arkiv", url: "{{ link.pages-arkivliste }}", antall: false) }}
+    
+</div>
+
+
+
+

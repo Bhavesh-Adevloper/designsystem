@@ -74,20 +74,25 @@
             
             {{# lenker }}
             <ul class="link_references">
-                <li>
-                    <a href="">Slik får du en branntrygg jul</a>
-                </li>
+                {{# linkliste }}
+                    <li>
+                        <a href="{{ url }}" title="{{ tittel }}">
+                            {{ tittel }}
+                        </a>
+                    </li>
+                {{/ linkliste }}
             </ul>
             {{/ lenker }}
             
             {{# artikler }}
             <ul class="article_references">
-                 <li>
-                     <a href="">Ikke slå ribbefettet i vasken</a>
-                </li>
-                <li>
-                    <a href="">Slik får du en branntrygg jul</a>
-                </li>
+                {{# linkliste }}
+                    <li>
+                        <a href="{{ url }}" title="{{ tittel }}">
+                            {{ tittel }}
+                        </a>
+                    </li>
+                {{/ linkliste }}
             </ul>
             {{/ artikler }}
             

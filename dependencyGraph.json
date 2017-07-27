@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1501142462634,
+  "timestamp": 1501154014076,
   "graph": {
     "options": {
       "directed": true,
@@ -380,8 +380,8 @@
         "v": "01-molecules/02-innhold/50-tilbakemelding.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-99-diverse-25-fakta/04-pages-99-diverse-25-fakta.rendered.html",
-          "lineagePattern": "pages-fakta"
+          "lineagePath": "../../patterns/04-pages-15-minside-20-eiendommer/04-pages-15-minside-20-eiendommer.rendered.html",
+          "lineagePattern": "pages-eiendommer"
         }
       },
       {
@@ -734,8 +734,8 @@
         "v": "02-organisms/20-kontakt/kontakt-byline.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-99-diverse-25-fakta/04-pages-99-diverse-25-fakta.rendered.html",
-          "lineagePattern": "pages-fakta"
+          "lineagePath": "../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html",
+          "lineagePattern": "templates-tema"
         }
       },
       {
@@ -769,6 +769,22 @@
         }
       },
       {
+        "v": "02-organisms/30-escenic/10-escenic-inngangsside.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html",
+          "lineagePattern": "templates-tema"
+        }
+      },
+      {
+        "v": "02-organisms/30-escenic/15-escenic-artikkelliste.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html",
+          "lineagePattern": "templates-tema"
+        }
+      },
+      {
         "v": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
         "value": {
           "compileState": "clean",
@@ -780,8 +796,8 @@
         "v": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-99-diverse-25-fakta/04-pages-99-diverse-25-fakta.rendered.html",
-          "lineagePattern": "pages-fakta"
+          "lineagePath": "../../patterns/03-templates-01-Inngangssider-40-barnehage/03-templates-01-Inngangssider-40-barnehage.rendered.html",
+          "lineagePattern": "templates-barnehage"
         }
       },
       {
@@ -855,30 +871,6 @@
         }
       },
       {
-        "v": "02-organisms/40-annet/_97-escenic-fakta.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-99-diverse-25-fakta/04-pages-99-diverse-25-fakta.rendered.html",
-          "lineagePattern": "pages-fakta"
-        }
-      },
-      {
-        "v": "02-organisms/40-annet/_98-escenic-luftkvalitet.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html",
-          "lineagePattern": "templates-tema"
-        }
-      },
-      {
-        "v": "02-organisms/40-annet/_99-escenic-personalrommet.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-01-hva-skjer-17-personalrommet/04-pages-01-hva-skjer-17-personalrommet.rendered.html",
-          "lineagePattern": "pages-personalrommet"
-        }
-      },
-      {
         "v": "03-templates/01-Inngangssider/00-forside.mustache",
         "value": {
           "compileState": "clean",
@@ -898,8 +890,8 @@
         "v": "03-templates/01-Inngangssider/05-tema.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-01-hva-skjer-15-luftkvalitet/04-pages-01-hva-skjer-15-luftkvalitet.rendered.html",
-          "lineagePattern": "pages-luftkvalitet"
+          "lineagePath": "../../patterns/04-pages-99-diverse-25-fakta/04-pages-99-diverse-25-fakta.rendered.html",
+          "lineagePattern": "pages-fakta"
         }
       },
       {
@@ -1639,6 +1631,26 @@
         "value": {}
       },
       {
+        "v": "02-organisms/30-escenic/10-escenic-inngangsside.mustache",
+        "w": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/30-escenic/10-escenic-inngangsside.mustache",
+        "w": "01-molecules/les-mer/30-les-mer.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/30-escenic/15-escenic-artikkelliste.mustache",
+        "w": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/30-escenic/15-escenic-artikkelliste.mustache",
+        "w": "01-molecules/les-mer/30-les-mer.mustache",
+        "value": {}
+      },
+      {
         "v": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
         "w": "01-molecules/00-overskrifter/31-moduloverskrift-h2-med-lenke.mustache",
         "value": {}
@@ -1730,26 +1742,6 @@
       },
       {
         "v": "02-organisms/40-annet/71-forsidetjenester.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-organisms/40-annet/_97-escenic-fakta.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-organisms/40-annet/_98-escenic-luftkvalitet.mustache",
-        "w": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-organisms/40-annet/_98-escenic-luftkvalitet.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-organisms/40-annet/_99-escenic-personalrommet.mustache",
         "w": "01-molecules/les-mer/30-les-mer.mustache",
         "value": {}
       },
@@ -1850,7 +1842,12 @@
       },
       {
         "v": "03-templates/01-Inngangssider/05-tema.mustache",
-        "w": "02-organisms/40-annet/_98-escenic-luftkvalitet.mustache",
+        "w": "02-organisms/30-escenic/10-escenic-inngangsside.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Inngangssider/05-tema.mustache",
+        "w": "02-organisms/30-escenic/15-escenic-artikkelliste.mustache",
         "value": {}
       },
       {
@@ -2820,57 +2817,7 @@
       },
       {
         "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
-        "w": "02-organisms/00-global/_01-header-1.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
-        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
-        "w": "01-molecules/navigasjon/org-meny.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
-        "w": "02-organisms/40-annet/_99-escenic-personalrommet.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
-        "w": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
-        "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
-        "w": "02-organisms/20-kontakt/kontakt-byline.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
-        "w": "01-molecules/02-innhold/50-tilbakemelding.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
+        "w": "03-templates/01-Inngangssider/05-tema.mustache",
         "value": {}
       },
       {
@@ -3860,57 +3807,7 @@
       },
       {
         "v": "04-pages/99-diverse/25-fakta.mustache",
-        "w": "02-organisms/00-global/_02-header-2.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/99-diverse/25-fakta.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/99-diverse/25-fakta.mustache",
-        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/99-diverse/25-fakta.mustache",
-        "w": "01-molecules/navigasjon/org-meny.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/99-diverse/25-fakta.mustache",
-        "w": "02-organisms/40-annet/_97-escenic-fakta.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/99-diverse/25-fakta.mustache",
-        "w": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/99-diverse/25-fakta.mustache",
-        "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/99-diverse/25-fakta.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/99-diverse/25-fakta.mustache",
-        "w": "02-organisms/20-kontakt/kontakt-byline.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/99-diverse/25-fakta.mustache",
-        "w": "01-molecules/02-innhold/50-tilbakemelding.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/99-diverse/25-fakta.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
+        "w": "03-templates/01-Inngangssider/05-tema.mustache",
         "value": {}
       },
       {
