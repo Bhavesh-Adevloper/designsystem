@@ -1935,6 +1935,15 @@ h1.article_header {
   margin-bottom: 1.75rem; }
 
 @media (min-width: 700px) {
+  .ece_tema_grid .toppsak .ece_module_container .ece_module_title {
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 1.5; }
+    .ece_tema_grid .toppsak .ece_module_container .ece_module_title .read_more_link {
+      padding-right: 13px;
+      padding-right: 0.8125rem;
+      background-image: url("../images/blue_list_style_image_large.svg");
+      background-position: right 15px; }
   .ece_tema_grid .bunnsaker {
     *zoom: 1;
     border-bottom: 1px solid #e7d5a6;
