@@ -3,10 +3,20 @@
 </div>
 
 
+<div class="">
+
+    <div class="toppsak">                  
+        {{# sakerSak1 }}
+            {{> organisms-escenic-elementmal }}
+        {{/ sakerSak1 }}
+    </div>
+    
+</div>
+
 
 
 <div class="frontpage inngangsside_pf">
-    <div class="column-5">
+    
         
         <!-- TEMPLATE:   fp_005finngangsside_005ftoppsak_jsp -->
         <div class="toppsak">
@@ -103,7 +113,6 @@
             </div>
         </div>
         
-        <div class="clearit"></div>
         
         <div class="saker_container">
             <!-- TEMPLATE:   fp_005finngangsside_005fsak_005fpf_jsp -->
@@ -127,13 +136,10 @@
             </div>
         </div>
         
-        <div class="clearit"></div>
         
         <!-- TEMPLATE:   archiveLink_jsp -->
         {{> molecules-les-mer:toarchive|read_more_link_container--larger-font(lesMerTekst: "Arkiv", url: "{{ link.pages-arkivliste }}", antall: false) }}
         
-        
-    </div>
 </div>
 
 

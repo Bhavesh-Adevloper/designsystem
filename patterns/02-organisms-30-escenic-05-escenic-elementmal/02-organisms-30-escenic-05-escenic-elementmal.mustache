@@ -1,4 +1,4 @@
-<div class="ece_module_container ece_module_equal_heights {{ styleModifier }}">
+<div class="ece_module_container {{ styleModifier }}">
     {{# imgLandscape }}
         <div class="ece_module_image_container">
             <a href="{{ url }}" title="{{ tittel }}" class="ece_module_image_link">
@@ -7,10 +7,15 @@
         </div>
     {{/ imgLandscape }}
     <div class="ece_module_content_container">
-        <div class="ece_module_kicker_date">31.10.2016</div>
+        
+        {{# toppdato }}
+            <div class="ece_module_kicker_date">{{ toppdato }}</div>
+        {{/ toppdato }}
+        
         {{# stikktittel }}
             <h3 class="ece_module_kicker">{{ stikktittel }}</h3>
         {{/ stikktittel }}
+        
         <h2 class="ece_module_title">
             <a href="{{ url }}" title="{{ tittel }}">
                 <span class="read_more_link read_more_link--24">
@@ -18,6 +23,7 @@
                 </span>
             </a>
         </h2>
+        
         {{# ingress }}
         <div class="ece_module_excerpt">
             <p>		
@@ -25,35 +31,56 @@
             </p>
         </div>
         {{/ ingress }}
+        
+        {{# meta }}
         <div class="ece_module_meta">
             <p>
-                <a href="#" class="read_more_link">Les meir om dette</a>
-                <a href="#" class="section_link read_more_link">Siste nytt</a>
-                <span class="date">(13.05.2016)</span>
+                {{# lesmertekst }}
+                    <a href="#" class="read_more_link">{{ lesmertekst }}</a>
+                {{/ lesmertekst }}
+                
+                {{# seksjonslenke }}
+                    <a href="#" class="section_link read_more_link">{{ seksjonslenke }}</a>
+                {{/ seksjonslenke }}
+                
+                {{# dato }}
+                    <span class="date">({{ dato }})</span>
+                {{/ dato }}
             </p>
         </div>
+        {{/ meta }}
+        
+        {{# henvinsinger }}
         <div class="ece_module_references">
-            <ul class="multimedia_references">
-                <li>
-                    <a href="#" title="" class="multimedia_link">
-                        <span class="icon icon_pdf">icon_pdf</span>
-                        <span class="file_title">Ikke slå ribbefettet i vasken</span>
-                        <span class="file_size">[6.4 Mb]</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" title="" class="multimedia_link">
-                        <span class="icon icon_word">icon_word</span>
-                        <span class="file_title">Slik får du en branntrygg jul også til neste år når det er  en ny sesong med sterinlys</span>
-                        <span class="file_size">[6.4 Mb]</span>
-                    </a>
-                </li>
-            </ul>
+            
+            {{# multimedia }}
+                <ul class="multimedia_references">
+                    <li>
+                        <a href="#" title="" class="multimedia_link">
+                            <span class="icon icon_pdf">icon_pdf</span>
+                            <span class="file_title">Ikke slå ribbefettet i vasken</span>
+                            <span class="file_size">[6.4 Mb]</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="multimedia_link">
+                            <span class="icon icon_word">icon_word</span>
+                            <span class="file_title">Slik får du en branntrygg jul også til neste år når det er  en ny sesong med sterinlys</span>
+                            <span class="file_size">[6.4 Mb]</span>
+                        </a>
+                    </li>
+                </ul>
+            {{/ multimedia }}
+            
+            {{# lenker }}
             <ul class="link_references">
                 <li>
                     <a href="">Slik får du en branntrygg jul</a>
                 </li>
             </ul>
+            {{/ lenker }}
+            
+            {{# artikler }}
             <ul class="article_references">
                  <li>
                      <a href="">Ikke slå ribbefettet i vasken</a>
@@ -62,6 +89,10 @@
                     <a href="">Slik får du en branntrygg jul</a>
                 </li>
             </ul>
+            {{/ artikler }}
+            
         </div>
+        {{/ henvinsinger }}
+        
     </div>
 </div>
