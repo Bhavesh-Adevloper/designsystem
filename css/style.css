@@ -2037,7 +2037,13 @@ h1.article_header {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
-    background: transparent url("../images/default_list_style_image.svg") no-repeat 1px 9px; }
+    background: transparent url("../images/default_list_style_image.svg") no-repeat 1px 9px;
+    word-wrap: break-word;
+    -webkit-hyphens: manual;
+    -moz-hyphens: manual;
+    -ms-hyphens: manual;
+    -o-hyphens: manual;
+    hyphens: manual; }
     @media (min-width: 700px) {
       .frontpage_news .frontpage_news_promo .promo_title {
         font-size: 22px;
