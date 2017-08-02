@@ -33,20 +33,6 @@ URI: https://www.bergen.kommune.no/
 
 @font-face {
   font-family: "Source Sans Pro";
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  src: local("SourceSansPro-Light"), local("Source Sans Pro"), url("../font/sourcesanspro/EOT/SourceSansPro-Light.eot") format("embedded-opentype"), url("../font/sourcesanspro/WOFF/OTF/SourceSansPro-Light.otf.woff") format("woff"), url("../font/sourcesanspro/OTF/SourceSansPro-Light.otf") format("opentype"), url("../font/sourcesanspro/TTF/SourceSansPro-Light.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Source Sans Pro";
-  font-weight: 300;
-  font-style: italic;
-  font-stretch: normal;
-  src: local("SourceSansPro-LightIt"), local("Source Sans Pro"), url("../font/sourcesanspro/EOT/SourceSansPro-LightIt.eot") format("embedded-opentype"), url("../font/sourcesanspro/WOFF/OTF/SourceSansPro-LightIt.otf.woff") format("woff"), url("../font/sourcesanspro/OTF/SourceSansPro-LightIt.otf") format("opentype"), url("../font/sourcesanspro/TTF/SourceSansPro-LightIt.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Source Sans Pro";
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
@@ -65,6 +51,13 @@ URI: https://www.bergen.kommune.no/
   font-style: normal;
   font-stretch: normal;
   src: local("SourceSansPro-Semibold"), local("Source Sans Pro Semibold"), url("../font/sourcesanspro/EOT/SourceSansPro-Semibold.eot") format("embedded-opentype"), url("../font/sourcesanspro/WOFF/OTF/SourceSansPro-Semibold.otf.woff") format("woff"), url("../font/sourcesanspro/OTF/SourceSansPro-Semibold.otf") format("opentype"), url("../font/sourcesanspro/TTF/SourceSansPro-Semibold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  src: local("SourceSansPro-Bold"), local("Source Sans Pro Bold"), url("../font/sourcesanspro/EOT/SourceSansPro-Bold.eot") format("embedded-opentype"), url("../font/sourcesanspro/WOFF/OTF/SourceSansPro-Bold.otf.woff") format("woff"), url("../font/sourcesanspro/OTF/SourceSansPro-Bold.otf") format("opentype"), url("../font/sourcesanspro/TTF/SourceSansPro-Bold.ttf") format("truetype"); }
 
 article,
 aside,
@@ -209,16 +202,16 @@ h6 {
 h1 {
   font-size: 30px;
   font-size: 1.875rem;
-  line-height: 1.4;
-  margin: 31px 0 11px;
-  margin: 1.9375rem 0 0.6875rem; }
+  line-height: 1.16667;
+  margin: 28px 0 7px;
+  margin: 1.75rem 0 0.4375rem; }
 
 h2 {
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.45833;
-  margin: 37px 0 5px;
-  margin: 2.3125rem 0 0.3125rem; }
+  line-height: 1.16667;
+  margin: 34px 0 8px;
+  margin: 2.125rem 0 0.5rem; }
 
 h3 {
   font-size: 22px;
@@ -279,7 +272,7 @@ blockquote {
   blockquote p {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.45833;
+    line-height: 1.16667;
     font-weight: 400;
     font-style: italic; }
 
@@ -805,7 +798,7 @@ input[type="search"]:focus {
   text-indent: 4px;
   text-indent: 0.25rem;
   -webkit-appearance: textfield;
-  font-weight: 300;
+  font-weight: 400;
   font-style: italic;
   border-radius: 0.1875rem; }
 
@@ -873,7 +866,7 @@ input[type="submit"] {
   input[type="submit"].large {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.45833; }
+    line-height: 1.16667; }
   button:focus,
   .button:focus,
   input[type="button"]:focus,
@@ -907,9 +900,8 @@ button.active,
   color: #fff;
   border-color: #3b65a3;
   background-color: #3b65a3; }
-  button.active:hover, button.active:focus, button.active:active,
+  button.active:hover, button.active:active,
   .button.active:hover,
-  .button.active:focus,
   .button.active:active {
     background-color: #345990; }
 
@@ -918,10 +910,10 @@ button.important,
   color: #fff;
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.45833;
+  line-height: 1.16667;
   padding-left: 32px;
   padding-left: 2rem;
-  background: url(../images/list_arrows_white.svg) no-repeat 12px 2px #3b65a3;
+  background: url(../images/list_arrows_white.svg) no-repeat 12px 0 #3b65a3;
   border-color: #3b65a3; }
   button.important:hover, button.important:active,
   .button.important:hover,
@@ -1184,7 +1176,7 @@ h1.article_header {
   color: #000;
   font-size: 26px;
   font-size: 1.625rem;
-  line-height: 1.34615;
+  line-height: 1.07692;
   min-height: 28px;
   min-height: 1.75rem;
   word-wrap: break-word;
@@ -1197,15 +1189,13 @@ h1.article_header {
   border-bottom: 0.125rem solid #e7d5a6;
   padding-bottom: 2px;
   padding-bottom: 0.125rem;
-  margin: 0 0 23px;
-  margin: 0 0 1.4375rem; }
+  margin: 0 0 19px;
+  margin: 0 0 1.1875rem; }
   @media only screen and (min-width: 700px) {
     h1.article_header {
       font-size: 30px;
       font-size: 1.875rem;
-      line-height: 1.4;
-      margin-bottom: 24px;
-      margin-bottom: 1.5rem; } }
+      line-height: 1.16667; } }
 
 #newsDetail .ingress {
   font-weight: 600;
@@ -1764,15 +1754,11 @@ h1.article_header {
     .ece_module_container .ece_module_content_container h1, .ece_module_container .ece_module_content_container h2, .ece_module_container .ece_module_content_container h3, .ece_module_container .ece_module_content_container h4, .ece_module_container .ece_module_content_container h5, .ece_module_container .ece_module_content_container h6 {
       margin-top: 0; }
     .ece_module_container .ece_module_content_container .ece_module_kicker_date {
-      margin: 4px 0 3px;
-      margin: 0.25rem 0 0.1875rem;
       font-size: 17px;
       font-size: 1.0625rem;
       line-height: 1.23529;
       text-transform: uppercase; }
     .ece_module_container .ece_module_content_container .ece_module_kicker {
-      margin: 4px 0 3px;
-      margin: 0.25rem 0 0.1875rem;
       font-size: 17px;
       font-size: 1.0625rem;
       line-height: 1.23529;
@@ -1782,9 +1768,7 @@ h1.article_header {
       font-style: normal;
       font-size: 24px;
       font-size: 1.5rem;
-      line-height: 1.45833;
-      margin: 2px 0 5px;
-      margin: 0.125rem 0 0.3125rem; }
+      line-height: 1.16667; }
     .ece_module_container .ece_module_content_container .ece_module_excerpt p {
       margin-bottom: 14px;
       margin-bottom: 0.875rem; }
@@ -1830,16 +1814,6 @@ h1.article_header {
         .ece_module_container .ece_module_content_container .ece_module_references ul.link_references a,
         .ece_module_container .ece_module_content_container .ece_module_references ul.article_references a {
           text-decoration: underline; }
-  @media (min-width: 700px) {
-    .ece_module_container .ece_module_content_container .ece_module_kicker_date {
-      margin: -3px 0 10px;
-      margin: -0.1875rem 0 0.625rem; }
-    .ece_module_container .ece_module_content_container .ece_module_kicker {
-      margin: -3px 0 10px;
-      margin: -0.1875rem 0 0.625rem; }
-    .ece_module_container .ece_module_content_container .ece_module_title {
-      margin: -5px 0 5px;
-      margin: -0.3125rem 0 0.3125rem; } }
 
 .ece_module_list {
   *zoom: 1; }
@@ -1914,9 +1888,7 @@ h1.article_header {
   .ece_hvaskjer_grid .ece_module_content_container .ece_module_title {
     font-size: 30px;
     font-size: 1.875rem;
-    line-height: 1.4;
-    margin: 6px 0 8px;
-    margin: 0.375rem 0 0.5rem; }
+    line-height: 1.16667; }
     .ece_hvaskjer_grid .ece_module_content_container .ece_module_title .read_more_link {
       padding-right: 14px;
       padding-right: 0.875rem;
@@ -1938,7 +1910,7 @@ h1.article_header {
   .ece_tema_grid .toppsak .ece_module_container .ece_module_title {
     font-size: 28px;
     font-size: 1.75rem;
-    line-height: 1.5; }
+    line-height: 1.25; }
     .ece_tema_grid .toppsak .ece_module_container .ece_module_title .read_more_link {
       padding-right: 13px;
       padding-right: 0.8125rem;
@@ -2064,8 +2036,8 @@ h1.article_header {
         .frontpage_news .frontpage_news_promo.no_image .promo_title {
           font-size: 32px;
           font-size: 2rem;
-          line-height: 1.3125;
-          background-position: 1px 17px;
+          line-height: 1.09375;
+          background-position: 1px 13px;
           margin: 3px 0 5px;
           margin: 0.1875rem 0 0.3125rem; } }
     .frontpage_news .frontpage_news_promo.no_image .promo_excerpt {
@@ -2452,7 +2424,7 @@ h1.article_header {
     color: #000;
     font-size: 26px;
     font-size: 1.625rem;
-    line-height: 1.34615;
+    line-height: 1.07692;
     min-height: 35px;
     min-height: 2.1875rem;
     margin: 0;
@@ -2464,8 +2436,8 @@ h1.article_header {
     hyphens: auto; }
     .page_header h1 .page_header_logo {
       float: left;
-      margin: 7px 8px 0 0;
-      margin: 0.4375rem 0.5rem 0 0;
+      margin: -2px 8px 0 0;
+      margin: -0.125rem 0.5rem 0 0;
       max-height: 30px;
       max-height: 1.875rem;
       font-size: 8px;
@@ -2474,7 +2446,10 @@ h1.article_header {
       .page_header h1 {
         font-size: 32px;
         font-size: 2rem;
-        line-height: 1.3125; } }
+        line-height: 1.09375; }
+        .page_header h1 .page_header_logo {
+          margin-top: 3px;
+          margin-top: 0.1875rem; } }
   .page_header .page_header_parent {
     margin: 0;
     min-height: inherit;
@@ -2546,9 +2521,9 @@ h1.article_header {
     color: #000;
     font-size: 26px;
     font-size: 1.625rem;
-    line-height: 1.34615;
-    min-height: 35px;
-    min-height: 2.1875rem;
+    line-height: 1.07692;
+    min-height: 28px;
+    min-height: 1.75rem;
     margin: 0;
     word-wrap: break-word;
     -webkit-hyphens: auto;
@@ -2567,8 +2542,8 @@ h1.article_header {
       .h2_page_header_with_link h2 .page_header_link:before {
         content: "";
         position: absolute;
-        top: 13px;
-        top: 0.8125rem;
+        top: 10px;
+        top: 0.625rem;
         left: 2px;
         left: 0.125rem;
         background: url(../images/blue_h1_back_arrow.svg) no-repeat 0 0 transparent;
@@ -2579,8 +2554,8 @@ h1.article_header {
         width: 0.375rem; }
     .h2_page_header_with_link h2 .page_header_logo {
       float: left;
-      margin: 3px 8px 0 0;
-      margin: 0.1875rem 0.5rem 0 0;
+      margin: -1px 8px 0 0;
+      margin: -0.0625rem 0.5rem 0 0;
       max-height: 30px;
       max-height: 1.875rem;
       font-size: 8px;
@@ -2589,20 +2564,25 @@ h1.article_header {
       .h2_page_header_with_link h2 {
         font-size: 32px;
         font-size: 2rem;
-        line-height: 1.3125; }
+        line-height: 1.09375; }
+        .h2_page_header_with_link h2 .page_header_logo {
+          margin-top: 3px;
+          margin-top: 0.1875rem; }
         .h2_page_header_with_link h2 .page_header_link:before {
-          top: 17px;
-          top: 1.0625rem; } }
+          top: 14px;
+          top: 0.875rem; } }
 
 .module_header {
   color: #000;
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.45833;
+  line-height: 1.16667;
   font-weight: 400;
   font-style: normal;
   border-bottom: 2px solid #e7d5a6;
   border-bottom: 0.125rem solid #e7d5a6;
+  padding-bottom: 2px;
+  padding-bottom: 0.125rem;
   margin: 2px 0 24px;
   margin: 0.125rem 0 1.5rem; }
   .module_header a {
@@ -2610,13 +2590,17 @@ h1.article_header {
 
 @media only screen and (min-width: 700px) {
   h1.module_header {
+    margin-top: -5px;
+    margin-top: -0.3125rem;
     font-size: 30px;
     font-size: 1.875rem;
-    line-height: 1.4; } }
+    line-height: 1.16667; } }
 
 .module_header_with_print {
   border-bottom: 2px solid #e7d5a6;
   border-bottom: 0.125rem solid #e7d5a6;
+  padding-bottom: 2px;
+  padding-bottom: 0.125rem;
   margin: 2px 0 22px;
   margin: 0.125rem 0 1.375rem; }
   .module_header_with_print .print_link_container {
@@ -2626,7 +2610,7 @@ h1.article_header {
     color: #000;
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.45833; }
+    line-height: 1.16667; }
   @media (min-width: 700px) {
     .module_header_with_print {
       display: -webkit-flex;
@@ -2648,7 +2632,7 @@ h1.article_header {
         flex: 1 1 auto;
         font-size: 30px;
         font-size: 1.875rem;
-        line-height: 1.4; }
+        line-height: 1.16667; }
       .module_header_with_print .print_link_container {
         display: inherit;
         float: right;
@@ -2969,7 +2953,7 @@ h1.article_header {
     padding-right: 14px;
     padding-right: 0.875rem;
     background-image: url("../images/blue_list_style_image_large.svg");
-    background-position: right 16px; }
+    background-position: right 17px; }
   .read_more_link--32 {
     padding-right: 15px;
     padding-right: 0.9375rem;
@@ -3014,7 +2998,7 @@ a.file {
   display: block;
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.45833;
+  line-height: 1.16667;
   text-decoration: none;
   line-height: 1;
   background: url(../images/file.svg) no-repeat 0 4px transparent;
@@ -3572,11 +3556,9 @@ a.file {
       margin-top: 0; } }
 
 .feedback_header {
-  font-weight: 300;
-  font-style: normal;
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1.45833;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.4;
   margin-bottom: 14px;
   margin-bottom: 0.875rem; }
 
@@ -3647,7 +3629,7 @@ a.file {
       font-style: italic; }
     .feedback_form textarea:-ms-input-placeholder {
       color: #535353;
-      font-weight: 300;
+      font-weight: 400;
       font-style: italic; }
   .feedback_form .feedback_collapsed {
     display: none; }
@@ -3816,11 +3798,11 @@ a.file {
   position: relative;
   margin: 0 40px 30px 0;
   margin: 0 2.5rem 1.875rem 0;
-  padding: 7px 0 8px 45px;
-  padding: 0.4375rem 0 0.5rem 2.8125rem;
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1.45833;
+  padding: 10px 0 10px 45px;
+  padding: 0.625rem 0 0.625rem 2.8125rem;
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 1.33333;
   border-top: 1px solid #c01d1e;
   border-top: 0.0625rem solid #c01d1e;
   border-bottom: 1px solid #c01d1e;
@@ -3923,11 +3905,11 @@ a.file {
     border: 1px solid #3b65a3;
     border: 0.0625rem solid #3b65a3;
     margin: 0;
-    font-size: 24px;
-    font-size: 1.5rem;
-    line-height: 1.45833;
-    padding: 4px 58px 4px 10px;
-    padding: 0.25rem 3.625rem 0.25rem 0.625rem; }
+    font-size: 21px;
+    font-size: 1.3125rem;
+    line-height: 1.33333;
+    padding: 6px 58px 6px 10px;
+    padding: 0.375rem 3.625rem 0.375rem 0.625rem; }
   .main_search_container button {
     position: absolute;
     top: 1px;
@@ -4040,13 +4022,11 @@ a.file {
       border-bottom: 0.0625rem solid #c01d1e; }
     .main_nav_list a {
       display: block;
-      padding: 6px 0 7px 20px;
-      padding: 0.375rem 0 0.4375rem 1.25rem;
-      font-size: 24px;
-      font-size: 1.5rem;
-      line-height: 1.45833;
-      font-weight: 300;
-      font-style: normal; }
+      padding: 10px 0 10px 20px;
+      padding: 0.625rem 0 0.625rem 1.25rem;
+      font-size: 21px;
+      font-size: 1.3125rem;
+      line-height: 1.33333; }
     .main_nav_list li.active a {
       padding-left: 36px;
       padding-left: 2.25rem;
@@ -4058,19 +4038,14 @@ a.file {
     .secondary_nav a {
       position: relative;
       display: inline-block;
-      font-size: 20px;
-      font-size: 1.25rem;
-      line-height: 1.4;
-      font-weight: 300;
-      font-style: normal;
       padding: 7px 25px;
       padding: 0.4375rem 1.5625rem;
       margin-left: 20px;
       margin-left: 1.25rem; }
       .secondary_nav a .icon {
         position: absolute;
-        top: 5px;
-        top: 0.3125rem;
+        top: 6px;
+        top: 0.375rem;
         left: -8px;
         left: -0.5rem; } }
 
@@ -4115,8 +4090,6 @@ a.file {
       font-size: 20px;
       font-size: 1.25rem;
       line-height: 1.4;
-      font-weight: 300;
-      font-style: normal;
       padding: 6px 14px 4px;
       padding: 0.375rem 0.875rem 0.25rem; }
     .main_nav .main_nav_list li.active {
@@ -4136,7 +4109,7 @@ a.file {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   nav .main_nav_list li.active a {
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal; } }
 
 @media (min-width: 1020px) {
@@ -4163,9 +4136,9 @@ a.file {
       .main_nav .main_nav_list li:last-child {
         margin-right: 0; }
     .main_nav .main_nav_list a {
-      font-size: 22px;
-      font-size: 1.375rem;
-      line-height: 1.27273;
+      font-size: 21px;
+      font-size: 1.3125rem;
+      line-height: 1.33333;
       padding-bottom: 6px;
       padding-bottom: 0.375rem; }
     .main_nav .main_nav_list li.active {
@@ -5000,7 +4973,7 @@ footer {
     width: 100%;
     border: 1px solid #3b65a3;
     border: 0.0625rem solid #3b65a3;
-    font-weight: 300;
+    font-weight: 400;
     font-style: italic;
     border-radius: 0.1875rem;
     margin: 0;
@@ -5010,7 +4983,7 @@ footer {
     width: 100%;
     border: 1px solid #3b65a3;
     border: 0.0625rem solid #3b65a3;
-    font-weight: 300;
+    font-weight: 400;
     font-style: italic;
     border-radius: 0.1875rem;
     margin: 0;
@@ -5020,7 +4993,7 @@ footer {
     width: 100%;
     border: 1px solid #3b65a3;
     border: 0.0625rem solid #3b65a3;
-    font-weight: 300;
+    font-weight: 400;
     font-style: italic;
     border-radius: 0.1875rem;
     margin: 0;
@@ -5108,11 +5081,11 @@ footer {
     margin: 0;
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.45833;
+    line-height: 1.16667;
     font-weight: 400;
     font-style: normal; }
   .linkbox__header-link {
-    background: url(../images/list_arrows_dobbel.svg) no-repeat 7px 3px #fbf7ed;
+    background: url(../images/list_arrows_dobbel.svg) no-repeat 7px 0 #fbf7ed;
     display: block;
     border: 1px solid #eee1c0;
     border: 0.0625rem solid #eee1c0;
@@ -5324,7 +5297,7 @@ footer {
     font-style: normal;
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.45833;
+    line-height: 1.16667;
     margin-top: 0;
     margin-bottom: 7px;
     margin-bottom: 0.4375rem; }
@@ -5405,7 +5378,7 @@ footer {
     font-style: normal;
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.45833;
+    line-height: 1.16667;
     padding-top: 55px;
     padding-top: 3.4375rem;
     margin: -35px 0 21px;
@@ -5420,10 +5393,6 @@ footer {
     border: 1px solid #eee1c0;
     border: 0.0625rem solid #eee1c0;
     border-radius: 0.5rem; }
-  .service_shortcut_container .service_shortcut_text {
-    font-size: 21px;
-    font-size: 1.3125rem;
-    line-height: 1.33333; }
   .service_shortcut_container .service_shortcut_link_container {
     margin-bottom: 0; }
     .service_shortcut_container .service_shortcut_link_container .button,
@@ -5594,7 +5563,7 @@ footer {
 .cat_1_header {
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.45833;
+  line-height: 1.16667;
   margin: 0 0 14px;
   margin: 0 0 0.875rem; }
 
@@ -5607,7 +5576,7 @@ footer {
   padding: 6px 12px 6px 26px;
   padding: 0.375rem 0.75rem 0.375rem 1.625rem;
   box-sizing: border-box;
-  background: url(../images/list_arrows_dobbel.svg) no-repeat 7px 3px #fbf7ed; }
+  background: url(../images/list_arrows_dobbel.svg) no-repeat 7px 0 #fbf7ed; }
 
 .cat_1_big_link_container {
   display: block;
@@ -5753,13 +5722,11 @@ footer {
     display: block;
     color: #000;
     position: relative;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 24px;
-    font-size: 1.5rem;
-    line-height: 1.45833;
-    padding: 7px 44px 7px 14px;
-    padding: 0.4375rem 2.75rem 0.4375rem 0.875rem;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    padding: 10px 44px 11px 14px;
+    padding: 0.625rem 2.75rem 0.6875rem 0.875rem;
     border-left: 4px solid #d7272d;
     border-left: 0.25rem solid #d7272d;
     background-color: #f5edd8;
@@ -5771,8 +5738,8 @@ footer {
     hyphens: auto; }
     .category_navigation_1 li a:after {
       position: absolute;
-      top: 4px;
-      top: 0.25rem;
+      top: 3px;
+      top: 0.1875rem;
       right: 15px;
       right: 0.9375rem;
       content: "";
@@ -6052,9 +6019,9 @@ footer {
     position: relative;
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.45833;
-    padding: 5px 40px 7px 40px;
-    padding: 0.3125rem 2.5rem 0.4375rem 2.5rem;
+    line-height: 1.16667;
+    padding: 10px 40px 11px;
+    padding: 0.625rem 2.5rem 0.6875rem;
     text-decoration: underline; }
     .file_list li a:before {
       position: absolute;
@@ -6072,12 +6039,12 @@ footer {
     color: #fff;
     font-size: 26px;
     font-size: 1.625rem;
-    line-height: 1.34615;
+    line-height: 1.07692;
     text-shadow: 0 1px 2px #3b65a3;
     background: url(../images/blue_arrow_bg.svg) no-repeat center right #6f94c3;
     background-size: cover; }
     .file_list li.important a:before {
-      background-position: -160px -128px; }
+      background-position: -160px -127px; }
 
 .accordion_item.important .accordion_content {
   padding: 14px 12px;
@@ -6091,8 +6058,8 @@ footer {
       .accordion_item.important .accordion_content .file_list li:last-child {
         border-bottom: 0 none; }
       .accordion_item.important .accordion_content .file_list li a {
-        padding: 10px 10px 10px 28px;
-        padding: 0.625rem 0.625rem 0.625rem 1.75rem; }
+        padding: 13px 10px 14px 28px;
+        padding: 0.8125rem 0.625rem 0.875rem 1.75rem; }
         .accordion_item.important .accordion_content .file_list li a:before {
           top: 12px;
           top: 0.75rem;
@@ -6434,9 +6401,9 @@ footer {
     margin: 0;
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.45833;
-    padding: 4px 58px 4px 10px;
-    padding: 0.25rem 3.625rem 0.25rem 0.625rem; }
+    line-height: 1.16667;
+    padding: 6px 58px 6px 10px;
+    padding: 0.375rem 3.625rem 0.375rem 0.625rem; }
   .case_search_container button {
     position: absolute;
     top: 1px;
@@ -7471,7 +7438,7 @@ ol.search_results {
     margin: 0;
     font-size: 26px;
     font-size: 1.625rem;
-    line-height: 1.34615; }
+    line-height: 1.07692; }
   ol.search_results .search_result_breadcrumbs {
     display: block;
     color: #535353;
@@ -7570,7 +7537,7 @@ ol.search_results {
         position: relative;
         z-index: 100; }
     .org_menu li.active > a {
-      font-weight: 600;
+      font-weight: 700;
       font-style: normal; }
 
 .org_menu_collapsed .org_menu {
@@ -7663,10 +7630,8 @@ li.with_org_sub_menu {
     opacity: 1; } }
 
 .org_main_col {
-  margin-top: 3px;
-  margin-top: 0.1875rem;
-  margin-top: 10px;
-  margin-top: 0.625rem; }
+  margin-top: 15px;
+  margin-top: 0.9375rem; }
 
 .contact_content {
   word-wrap: break-word;
@@ -8093,13 +8058,13 @@ a.itslearning_link {
 .important_link {
   display: block;
   position: relative;
-  padding: 7px 24px 7px 44px;
-  padding: 0.4375rem 1.5rem 0.4375rem 2.75rem;
+  padding: 10px 24px 11px 44px;
+  padding: 0.625rem 1.5rem 0.6875rem 2.75rem;
   text-decoration: underline;
   color: #fff;
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.45833;
+  line-height: 1.16667;
   text-shadow: 0 1px 2px #3b65a3;
   background: url(../images/blue_arrow_bg.svg) no-repeat center right #6f94c3;
   background-size: cover; }
@@ -8114,7 +8079,7 @@ a.itslearning_link {
     width: 2rem;
     height: 32px;
     height: 2rem;
-    background: url("../images/mainSprite.svg?v=20170628") no-repeat -160px -160px transparent; }
+    background: url("../images/mainSprite.svg?v=20170628") no-repeat -160px -161px transparent; }
   .important_link:hover {
     color: #fff; }
 
@@ -8192,9 +8157,12 @@ a.itslearning_link {
     .holidays_container .holidays_list .meeting_title_link {
       text-decoration: underline; }
     .holidays_container .holidays_list .holiday_additional_info_list {
-      font-weight: 300;
-      font-style: normal;
+      font-size: 17px;
+      font-size: 1.0625rem;
+      line-height: 1.23529;
       margin-bottom: 0;
+      margin-top: 7px;
+      margin-top: 0.4375rem;
       padding-left: 16px;
       padding-left: 1rem; }
   @media (min-width: 36em) {
@@ -8260,7 +8228,7 @@ a.itslearning_link {
   margin: 0;
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.45833; }
+  line-height: 1.16667; }
 
 .event_story_container .event_story_date {
   margin-bottom: 0; }
@@ -8439,7 +8407,7 @@ a.itslearning_link {
 .bk360_result_list_header {
   font-size: 32px;
   font-size: 2rem;
-  line-height: 1.3125;
+  line-height: 1.09375;
   margin: 0 0 24px;
   margin: 0 0 1.5rem; }
 
@@ -8761,7 +8729,7 @@ a.itslearning_link {
       font-size: 14px;
       font-size: 0.875rem;
       line-height: 1.5;
-      font-weight: 300;
+      font-weight: 400;
       font-style: normal; }
       .h2_page_header_with_link h2 .page_header_link {
         color: #000;
