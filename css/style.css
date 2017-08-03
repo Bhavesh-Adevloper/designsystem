@@ -1646,8 +1646,10 @@ h1.article_header {
   *zoom: 1;
   border-bottom: 1px solid #e7d5a6;
   border-bottom: 0.0625rem solid #e7d5a6;
-  margin: 28px 0 6px;
-  margin: 1.75rem 0 0.375rem; }
+  padding-bottom: 7px;
+  padding-bottom: 0.4375rem;
+  margin: 0 0 6px;
+  margin: 0 0 0.375rem; }
   .article_footer_print_link_container:before, .article_footer_print_link_container:after {
     content: "";
     display: table;
@@ -1657,12 +1659,12 @@ h1.article_header {
   .article_footer_print_link_container a {
     position: relative;
     display: inline-block;
-    padding: 7px 7px 7px 27px;
-    padding: 0.4375rem 0.4375rem 0.4375rem 1.6875rem; }
+    padding: 0 7px 0 27px;
+    padding: 0 0.4375rem 0 1.6875rem; }
   .article_footer_print_link_container .print_icon {
     position: absolute;
-    top: 6px;
-    top: 0.375rem;
+    top: -1px;
+    top: -0.0625rem;
     left: -8px;
     left: -0.5rem; }
   .article_footer_print_link_container .print_link_txt {
@@ -1761,13 +1763,25 @@ h1.article_header {
       font-size: 17px;
       font-size: 1.0625rem;
       line-height: 1.23529;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      word-wrap: break-word;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      -o-hyphens: auto;
+      hyphens: auto; }
     .ece_module_container .ece_module_content_container .ece_module_title {
       font-weight: 400;
       font-style: normal;
       font-size: 24px;
       font-size: 1.5rem;
-      line-height: 1.16667; }
+      line-height: 1.16667;
+      word-wrap: break-word;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      -o-hyphens: auto;
+      hyphens: auto; }
     .ece_module_container .ece_module_content_container .ece_module_excerpt p {
       margin-bottom: 14px;
       margin-bottom: 0.875rem; }
@@ -1845,8 +1859,8 @@ h1.article_header {
     .saker_container .ece_module_container .ece_module_image_container {
       float: left;
       width: 48%;
-      margin: 0 30px 21px 0;
-      margin: 0 1.875rem 1.3125rem 0; }
+      margin: 0 21px 21px 0;
+      margin: 0 1.3125rem 1.3125rem 0; }
     .ece_module_list .ece_module_container .ece_module_image_container,
     .ece_module_list .ece_module_container .ece_module_content_container,
     .ece_hvaskjer_grid .toppsak .ece_module_container .ece_module_image_container,
@@ -8333,12 +8347,6 @@ a.itslearning_link {
         background-position: -256px 0; }
   .hvaskjer_additional_menu_container {
     position: relative; }
-    .hvaskjer_additional_menu_container.expanded {
-      box-shadow: 0 2px 4px #a3a3a3;
-      box-shadow: 0 0.125rem 0.25rem #a3a3a3; }
-      .hvaskjer_additional_menu_container.expanded .hvaskjer_additional_menu {
-        box-shadow: 0 4px 4px #a3a3a3;
-        box-shadow: 0 0.25rem 0.25rem #a3a3a3; }
   .hvaskjer_additional_menu {
     position: absolute;
     z-index: 20;
