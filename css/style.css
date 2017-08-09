@@ -506,8 +506,13 @@ ol {
 
 ul {
   list-style: none;
-  padding-left: 28px;
-  padding-left: 1.75rem; }
+  padding-left: 25px;
+  padding-left: 1.5625rem; }
+
+@-moz-document url-prefix() {
+  ul {
+    padding-left: 28px;
+    padding-left: 1.75rem; } }
   ul li {
     list-style-image: url(../images/default_list_style_image.svg); }
 
@@ -5132,8 +5137,13 @@ footer {
     margin-bottom: 7px;
     margin-bottom: 0.4375rem; }
     .linkbox__content ul {
-      padding-left: 18px;
-      padding-left: 1.125rem; }
+      padding-left: 15px;
+      padding-left: 0.9375rem; }
+
+@-moz-document url-prefix() {
+  .linkbox__content ul {
+    padding-left: 18px;
+    padding-left: 1.125rem; } }
     .linkbox__content > * {
       margin-bottom: 14px;
       margin-bottom: 0.875rem; }
