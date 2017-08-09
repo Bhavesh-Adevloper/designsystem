@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1502269354414,
+  "timestamp": 1502306586755,
   "graph": {
     "options": {
       "directed": true,
@@ -338,6 +338,14 @@
       },
       {
         "v": "01-molecules/02-innhold/30-tout.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
+          "lineagePattern": "pages-etjeneste-eksempler"
+        }
+      },
+      {
+        "v": "01-molecules/02-innhold/31-tout-arbeidsplaner.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
@@ -2127,7 +2135,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/37-skole.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-innhold/31-tout-arbeidsplaner.mustache",
         "value": {}
       },
       {
@@ -2153,6 +2161,11 @@
       {
         "v": "03-templates/01-Inngangssider/37-skole.mustache",
         "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Inngangssider/37-skole.mustache",
+        "w": "01-molecules/02-innhold/30-tout.mustache",
         "value": {}
       },
       {
@@ -3838,6 +3851,11 @@
       {
         "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
         "w": "01-molecules/02-innhold/30-tout.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
+        "w": "01-molecules/02-innhold/31-tout-arbeidsplaner.mustache",
         "value": {}
       },
       {
