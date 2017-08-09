@@ -452,6 +452,9 @@ hr {
   margin-bottom: 1.4375rem;
   box-sizing: content-box; }
 
+.lowercase {
+  text-transform: lowercase; }
+
 embed,
 iframe,
 object,
@@ -1998,8 +2001,6 @@ h1.article_header {
       margin-bottom: 0; } }
 
 .frontpage_contact {
-  border-bottom: 1px solid #e7d5a6;
-  border-bottom: 0.0625rem solid #e7d5a6;
   padding: 0 21px 7px;
   padding: 0 1.3125rem 0.4375rem; }
   .frontpage_contact .contact_content {
