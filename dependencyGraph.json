@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1502367860743,
+  "timestamp": 1502371207239,
   "graph": {
     "options": {
       "directed": true,
@@ -442,8 +442,8 @@
         "v": "01-molecules/lister/03-skjema-liste.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-navigasjon-trekkspill/01-molecules-navigasjon-trekkspill.rendered.html",
-          "lineagePattern": "molecules-trekkspill"
+          "lineagePath": "../../patterns/04-pages-10-tjenester-02-tjenestebeskrivelse/04-pages-10-tjenester-02-tjenestebeskrivelse.rendered.html",
+          "lineagePattern": "pages-tjenestebeskrivelse"
         }
       },
       {
@@ -702,8 +702,8 @@
         "v": "02-organisms/00-global/_03-header-3.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-10-tjenester-02-tjenestebeskrivelse/04-pages-10-tjenester-02-tjenestebeskrivelse.rendered.html",
-          "lineagePattern": "pages-tjenestebeskrivelse"
+          "lineagePath": "../../patterns/04-pages-10-tjenester-01-tjenestekategori/04-pages-10-tjenester-01-tjenestekategori.rendered.html",
+          "lineagePattern": "pages-tjenestekategori"
         }
       },
       {
@@ -844,6 +844,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
           "lineagePattern": "pages-etjeneste-eksempler"
+        }
+      },
+      {
+        "v": "02-organisms/40-annet/40-tjeneste-footer.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-10-tjenester-02-tjenestebeskrivelse/04-pages-10-tjenester-02-tjenestebeskrivelse.rendered.html",
+          "lineagePattern": "pages-tjenestebeskrivelse"
         }
       },
       {
@@ -3008,7 +3016,7 @@
       },
       {
         "v": "04-pages/10-tjenester/02-tjenestebeskrivelse.mustache",
-        "w": "02-organisms/00-global/_03-header-3.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
       },
       {
@@ -3038,7 +3046,22 @@
       },
       {
         "v": "04-pages/10-tjenester/02-tjenestebeskrivelse.mustache",
+        "w": "01-molecules/lister/03-skjema-liste.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/10-tjenester/02-tjenestebeskrivelse.mustache",
         "w": "01-molecules/navigasjon/trekkspill.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/10-tjenester/02-tjenestebeskrivelse.mustache",
+        "w": "01-molecules/02-innhold/50-tilbakemelding.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/10-tjenester/02-tjenestebeskrivelse.mustache",
+        "w": "02-organisms/40-annet/40-tjeneste-footer.mustache",
         "value": {}
       },
       {

@@ -1,4 +1,4 @@
-{{> organisms-header-3 }}
+{{> organisms-header-varianter }}
 {{> organisms-brodsmuler }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">    
     <article>
@@ -6,107 +6,74 @@
         {{> molecules-sideoverskrift-h1-med-print(sidetittel: "Navn på tjenesten") }}
         {{> molecules-alternativ-tittel-h2(sidetittel: "Alternativt navn") }}
         
-
-  <div class="row">
-    <div class="col_md_12 col_lg_8">
-      <div class="article_content">
-        
-        {{> molecules-varsel:mbxl }}
-        
-        {{> molecules-notis:mbxl }}
-
-<!--            <div class="hidden">-->
-        <figure class="service_image_mobile">
-          <a href="../../../images/image_sizes_tjenestebeskrivelse_5x3.jpg">
-              <img src="../../../images/image_sizes_tjenestebeskrivelse_5x3.jpg" alt="placeholder">
-          </a>
-        </figure>
-<!--            </div>-->
-
-        <div class="service_description">
-          <p>Beskrivelse</p>
-        </div>
-
-        <ul class="file_list action">
-          <li class="important"><a href="" title="Skjema">Søknadsskjema 1</a></li>
-          <li><a href="" title="Skjema">Søknadsskjema 2</a></li>
-        </ul>
-
-      </div><!-- end .article_content -->
-
-
-      {{> molecules-trekkspill }}
-        
-        
-
-    </div>
-    <div class="col_md_12 col_lg_4">
-
-<!--          <div class="hidden">-->
-      <figure class="service_image_desktop">
-        <a href="images/image_sizes_tjenestebeskrivelse_5x3.jpg">
-            <img src="images/image_sizes_tjenestebeskrivelse_5x3.jpg" alt="placeholder">
-          </a>
-      </figure>
-        <div style="margin-bottom: 30px;">
-            <p><a href="https://developers.facebook.com/docs/sharing/best-practices#images" title="Facebook" target="_blank">&raquo; Anbefalt bildestørrelse for deling på Facebook</a></p>
-        </div>
-<!--          </div>-->
-
-      <div id="js_feedback" class="feedback">
-        <div class="feedback_header">Fornøyd med denne siden?</div>
-
-        <form class="feedback_form">
-          <div class="feedback_yes_no clearfix">
-            <button type="button" class="feedback_btn yes">Ja</button>
-            <button type="button" class="feedback_btn no">Nei</button>
-          </div>
-          <div id="js_feedback_text" class="feedback_collapsed clearfix">
-            <textarea rows="4" cols="30" placeholder=""></textarea>
-            <button type="button" class="feedback_submit align_right">Send</button>
-          </div>
-        </form>
-      </div>
-
-    </div>
-  </div>
-
-
-
-
-      <div class="page_footer">
         <div class="row">
-          <div class="col_md_6 col_lg_6">
-            <p>Publisert: 20.02.2014&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Oppdatert: 03.07.2015</p>
-          </div>
-          <div class="col_md_6 col_lg_6 meta_info">
-            <p>Ansvarlig avdeling: <a href="#!" title="Ansvarlig avdeling">Ansvarlig avdeling</a></p>
-          </div>
+            <div class="col_md_12 col_lg_8">
+                <div class="article_content">
+        
+                    {{> molecules-varsel:mbxl }}
+
+                    {{> molecules-notis:mbxl }}
+
+                    {{# imgLandscape }}
+                        <figure class="service_image_mobile">
+                            <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}">
+                        </figure>
+                    {{/ imgLandscape }}
+
+                    {{# beskrivelse }}
+                        <div class="service_description">
+                            <p>{{ beskrivelse }}</p>
+                        </div>
+                    {{/ beskrivelse }}
+                    
+                    {{# uthevedSkjemaListe }}
+                        {{> molecules-skjema-liste:action }}
+                    {{/ uthevedSkjemaListe }}
+
+                </div><!-- end .article_content -->
+                
+                {{> molecules-trekkspill }}
+            
+            </div>
+            <div class="col_md_12 col_lg_4">
+        
+                {{# imgLandscape }}
+                    <figure class="service_image_desktop">
+                        <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}">
+                    </figure>
+                    <div style="margin-bottom: 30px;">
+                        <p><a href="https://developers.facebook.com/docs/sharing/best-practices#images" title="Facebook" target="_blank">&raquo; Anbefalt bildestørrelse for deling på Facebook</a></p>
+                    </div>
+                {{/ imgLandscape }}
+
+                {{> molecules-tilbakemelding }}
+
+            </div>
         </div>
-      </div>
-
-  <div class="row">
-    <div class="col_md_6 col_lg_6">
         
-        {{> molecules-moduloverskrift-h2:mbn(tittel: "Relatert informasjon") }}
-        {{# relatertInfo }}
-        {{> molecules-link-liste:mbxxl }}
-        {{/ relatertInfo }}
+        {{# footer }}
+            {{> organisms-tjeneste-footer }}
+        {{/ footer }}
+
+        <div class="row">
+            <div class="col_md_6 col_lg_6">
+
+                {{> molecules-moduloverskrift-h2:mbn(tittel: "Relatert informasjon") }}
+                {{# relatertInfo }}
+                    {{> molecules-link-liste:mbxxl }}
+                {{/ relatertInfo }}
+
+            </div>
+            <div class="col_md_6 col_lg_6">
+
+                {{> molecules-moduloverskrift-h2:mbn(tittel: "Beslektede tjenester") }}
+                {{# beslektedeTjenester }}
+                    {{> molecules-link-liste:mbxxl }}
+                {{/ beslektedeTjenester }}
+
+            </div>
+        </div>
         
-    </div>
-    <div class="col_md_6 col_lg_6">
-        
-        {{> molecules-moduloverskrift-h2:mbn(tittel: "Beslektede tjenester") }}
-        {{# beslektedeTjenester }}
-        {{> molecules-link-liste:mbxxl }}
-        {{/ beslektedeTjenester }}
-        
-    </div>
-  </div>
-
-
-
-
-</article>    
+    </article>    
 </main>
 {{> organisms-footer }}

@@ -1,4 +1,11 @@
-<ul class="file_list">
+<ul class="file_list {{ styleModifier }}">
+    {{# importantlinkliste }}
+    <li class="important">
+        <a href="{{ url }}" title="{{ tittel }}">
+            {{ tittel }}
+        </a>
+    </li>
+    {{/ importantlinkliste }}
     {{# linkliste }}
     <li>
         <a href="{{ url }}" title="{{ tittel }}">
