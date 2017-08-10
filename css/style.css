@@ -1947,7 +1947,10 @@ h1.article_header {
       background-position: right 16px; }
   .ece_hvaskjer_grid .toppsak .ece_module_container .ece_module_title,
   .ece_hvaskjer_grid .teaser_small_container .ece_module_container .ece_module_title {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .ece_hvaskjer_grid .ece_module_list .ece_module_container {
+    margin-bottom: 28px;
+    margin-bottom: 1.75rem; } }
 
 .ece_tema_grid .ece_module_container {
   padding-bottom: 6px;
@@ -1999,20 +2002,6 @@ h1.article_header {
       padding-bottom: 0;
       border-bottom: 0 none;
       margin-bottom: 0; } }
-
-.frontpage_contact {
-  padding: 0 21px 7px;
-  padding: 0 1.3125rem 0.4375rem; }
-  .frontpage_contact .contact_content {
-    font-size: 18px;
-    font-size: 1.125rem;
-    line-height: 1.16667; }
-    .frontpage_contact .contact_content dd {
-      margin-bottom: 14px;
-      margin-bottom: 0.875rem; }
-    .frontpage_contact .contact_content .with_icon .icon {
-      top: -5px;
-      top: -0.3125rem; }
 
 @media (min-width: 700px) {
   .frontpage_news {
@@ -3136,6 +3125,13 @@ a.file {
   .contact_button .contact_button_info {
     float: right;
     display: inline-block; }
+
+.frontpage_contact {
+  padding: 0 21px 7px;
+  padding: 0 1.3125rem 0.4375rem; }
+  .frontpage_contact .contact_content dd {
+    margin-bottom: 14px;
+    margin-bottom: 0.875rem; }
 
 .contact_content_employee_page_dl {
   margin-left: 2px;
