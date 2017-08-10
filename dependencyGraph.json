@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1502354562877,
+  "timestamp": 1502367860743,
   "graph": {
     "options": {
       "directed": true,
@@ -148,8 +148,8 @@
         "v": "00-atoms/15-knapper/21-kjop-billett.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-50-escenic-88-artikkelliste-sp/04-pages-50-escenic-88-artikkelliste-sp.rendered.html",
-          "lineagePattern": "pages-artikkelliste-sp"
+          "lineagePath": "../../patterns/04-pages-50-escenic-02-artikkel-2/04-pages-50-escenic-02-artikkel-2.rendered.html",
+          "lineagePattern": "pages-artikkel-2"
         }
       },
       {
@@ -418,8 +418,8 @@
         "v": "01-molecules/les-mer/30-les-mer.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-50-escenic-88-artikkelliste-sp/04-pages-50-escenic-88-artikkelliste-sp.rendered.html",
-          "lineagePattern": "pages-artikkelliste-sp"
+          "lineagePath": "../../patterns/03-templates-20-Listesider-artikkelliste/03-templates-20-Listesider-artikkelliste.rendered.html",
+          "lineagePattern": "templates-artikkelliste"
         }
       },
       {
@@ -772,8 +772,8 @@
         "v": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-01-Inngangssider-03-hva-skjer/03-templates-01-Inngangssider-03-hva-skjer.rendered.html",
-          "lineagePattern": "templates-hva-skjer"
+          "lineagePath": "../../patterns/03-templates-20-Listesider-artikkelliste/03-templates-20-Listesider-artikkelliste.rendered.html",
+          "lineagePattern": "templates-artikkelliste"
         }
       },
       {
@@ -1018,6 +1018,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-17-politiker-og-utvalg-04-en-politiker/04-pages-17-politiker-og-utvalg-04-en-politiker.rendered.html",
           "lineagePattern": "pages-en-politiker"
+        }
+      },
+      {
+        "v": "03-templates/20-Listesider/artikkelliste.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-50-escenic-88-artikkelliste-sp/04-pages-50-escenic-88-artikkelliste-sp.rendered.html",
+          "lineagePattern": "pages-artikkelliste-sp"
         }
       },
       {
@@ -1641,6 +1649,11 @@
       {
         "v": "02-organisms/20-kontakt/kontakt-liten.mustache",
         "w": "01-molecules/00-overskrifter/31-moduloverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
+        "w": "00-atoms/15-knapper/21-kjop-billett.mustache",
         "value": {}
       },
       {
@@ -2610,6 +2623,46 @@
       },
       {
         "v": "03-templates/20-Listesider/05-listeside-sas-med-kontaktinformasjon.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/artikkelliste.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/artikkelliste.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/artikkelliste.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/artikkelliste.mustache",
+        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/artikkelliste.mustache",
+        "w": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/artikkelliste.mustache",
+        "w": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/artikkelliste.mustache",
+        "w": "01-molecules/les-mer/30-les-mer.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/artikkelliste.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -3615,67 +3668,12 @@
       },
       {
         "v": "04-pages/50-escenic/50-artikkelliste.mustache",
-        "w": "02-organisms/00-global/_02-header-2.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/50-escenic/50-artikkelliste.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/50-escenic/50-artikkelliste.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/50-escenic/50-artikkelliste.mustache",
-        "w": "01-molecules/navigasjon/org-meny.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/50-escenic/50-artikkelliste.mustache",
-        "w": "00-atoms/15-knapper/21-kjop-billett.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/50-escenic/50-artikkelliste.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/50-escenic/50-artikkelliste.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
+        "w": "03-templates/20-Listesider/artikkelliste.mustache",
         "value": {}
       },
       {
         "v": "04-pages/50-escenic/51-artikkelliste-2.mustache",
-        "w": "02-organisms/00-global/_02-header-2.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/50-escenic/51-artikkelliste-2.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/50-escenic/51-artikkelliste-2.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/50-escenic/51-artikkelliste-2.mustache",
-        "w": "01-molecules/navigasjon/org-meny.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/50-escenic/51-artikkelliste-2.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/50-escenic/51-artikkelliste-2.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
+        "w": "03-templates/20-Listesider/artikkelliste.mustache",
         "value": {}
       },
       {
@@ -3705,37 +3703,7 @@
       },
       {
         "v": "04-pages/50-escenic/88-artikkelliste-sp.mustache",
-        "w": "02-organisms/00-global/_02-header-2.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/50-escenic/88-artikkelliste-sp.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/50-escenic/88-artikkelliste-sp.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/50-escenic/88-artikkelliste-sp.mustache",
-        "w": "01-molecules/navigasjon/org-meny.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/50-escenic/88-artikkelliste-sp.mustache",
-        "w": "00-atoms/15-knapper/21-kjop-billett.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/50-escenic/88-artikkelliste-sp.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/50-escenic/88-artikkelliste-sp.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
+        "w": "03-templates/20-Listesider/artikkelliste.mustache",
         "value": {}
       },
       {

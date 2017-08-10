@@ -1,0 +1,51 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    <div class="page_header_container_with_org_menu">
+        {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ organisasjonsenhet.tittel }}", url: "{{ organisasjonsenhet.url }}") }}
+    </div>
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+
+            {{> molecules-org-meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+
+            <div class="rssicon_floatRight">
+                <a href="#" type="application/rss+xml" rel="alternate" title="Abonner med RSS">
+                    RSS - abonner
+                </a>
+            </div>
+
+            <div class="ece_module_list mbj">
+                
+                {{> molecules-moduloverskrift-h1(tittel: "{{ sidetittel }}") }}
+                
+                {{# artikkelListeRedigering }}
+                    <div class="sp_article_list_edit">
+                        <p>
+                        <a href="#" target="_blank" title="Ny artikkel - Åpnes i nytt vindu" class="sp_edit_icon_link"><img src="https://www.bergen.kommune.no/internet/htdocs/images/redigerblyant_ny.gif" alt="Ny artikkel"></a>
+                        <a href="#" target="_blank" title="Kladdeliste - Åpnes i nytt vindu" class="sp_edit_icon_link"><img src="https://www.bergen.kommune.no/internet/htdocs/images/kladdliste_liten.gif" alt="Kladdeliste"></a>
+                        <a href="#" target="_blank" title="Sletteliste - Åpnes i nytt vindu" class="sp_edit_icon_link"><img src="https://www.bergen.kommune.no/internet/htdocs/images/bossbotte_liten.gif" alt="Sletteliste"></a>
+                        <a href="#" target="_blank" title="Artikler utgått på dato - Åpnes i nytt vindu" class="sp_edit_icon_link"><img src="https://www.bergen.kommune.no/internet/htdocs/images/expired.jpg" alt="Artikler utgått på dato"></a>
+                        <a href="#" target="_blank" title="Endre rekkefølge - Åpnes i nytt vindu" class="sp_edit_icon_link"><img src="https://www.bergen.kommune.no/internet/htdocs/images/rekkefolge_liten.gif" alt="Endre rekkefølge"></a>
+                        </p>
+                    </div>
+                {{/ artikkelListeRedigering }}
+
+                {{# listesak }}
+                    {{> organisms-escenic-elementmal }}
+                {{/ listesak }}
+
+                <!-- TEMPLATE:   archiveLink_jsp -->
+                {{> molecules-les-mer:toarchive|read_more_link_container--larger-font(lesMerTekst: "Arkiv", url: "{{ link.pages-arkivliste }}", antall: false) }}
+
+            </div>
+            
+        </div>
+    </div>
+</main>
+{{> organisms-footer }}
