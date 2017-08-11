@@ -1836,6 +1836,24 @@ h1.article_header {
         .ece_module_container .ece_module_content_container .ece_module_references ul.article_references a {
           text-decoration: underline; }
 
+.toppsak .ece_module_container.no_image {
+  text-align: center;
+  max-width: 900px;
+  max-width: 56.25rem;
+  padding: 21px 21px 7px;
+  padding: 1.3125rem 1.3125rem 0.4375rem;
+  border: 1px solid #e7d5a6;
+  border: 0.0625rem solid #e7d5a6;
+  box-sizing: border-box;
+  border-radius: 0.1875rem;
+  margin-left: auto;
+  margin-right: auto; }
+  .toppsak .ece_module_container.no_image .ece_module_content_container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    max-width: 43.75rem; }
+
 .ece_module_list {
   *zoom: 1; }
   .ece_module_list:before, .ece_module_list:after {
@@ -1869,11 +1887,6 @@ h1.article_header {
       width: 48%;
       margin: 0 21px 21px 0;
       margin: 0 1.3125rem 1.3125rem 0; }
-    .ece_module_list .ece_module_container .ece_module_content_container,
-    .ece_hvaskjer_grid .toppsak .ece_module_container .ece_module_content_container,
-    .teaser_small_container .ece_module_container .ece_module_content_container,
-    .saker_container .ece_module_container .ece_module_content_container {
-      width: 48%; }
     .ece_module_list .ece_module_container .ece_module_image_container,
     .ece_module_list .ece_module_container .ece_module_content_container,
     .ece_hvaskjer_grid .toppsak .ece_module_container .ece_module_image_container,
