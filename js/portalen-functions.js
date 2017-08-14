@@ -307,7 +307,7 @@ function filterSearch() {
             else {
                 $(".js_clear_search").hide();
                 $(".js_filter_search_result_list li").removeClass("hidden match");
-            }            
+            }
             // No more matches
             if($(".js_filter_search_result_list li").not(".hidden").length > 0 ) {
                 $(".js_empty_filter_search").hide();
@@ -322,6 +322,7 @@ function filterSearch() {
 var highlightResults = function (selector, inputValue) {
     $(selector).each(function () {
         var matchStart = $(this).text().toLowerCase().indexOf("" + inputValue.toLowerCase() + "");
+        if (matchStart == -1) return;
         var matchEnd = matchStart + inputValue.length - 1;
         var beforeMatch = $(this).text().slice(0, matchStart);
         var matchText = $(this).text().slice(matchStart, matchEnd + 1);
