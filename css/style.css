@@ -5275,16 +5275,18 @@ footer {
       margin: 4px 0 0 4px; }
   .filter_search_input_container .filter_search_input {
     width: 100%;
-    margin: 16px 0;
-    margin: 1rem 0;
-    padding-left: 44px;
-    padding-left: 2.75rem; }
+    margin: 14px 0;
+    margin: 0.875rem 0;
+    padding-left: 42px;
+    padding-left: 2.625rem;
+    padding-right: 42px;
+    padding-right: 2.625rem; }
   .filter_search_input_container .clear_search_button {
     position: absolute;
-    top: 17px;
-    top: 1.0625rem;
-    right: 1px;
-    right: 0.0625rem;
+    top: 20px;
+    top: 1.25rem;
+    right: 4px;
+    right: 0.25rem;
     padding: 0;
     margin: 0;
     border: 0 none;
