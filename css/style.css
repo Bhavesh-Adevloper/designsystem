@@ -1758,6 +1758,8 @@ h1.article_header {
       display: block;
       width: 100%; }
   .ece_module_container .ece_module_content_container {
+    max-width: 600px;
+    max-width: 37.5rem;
     margin-bottom: 7px;
     margin-bottom: 0.4375rem; }
     .ece_module_container .ece_module_content_container h1, .ece_module_container .ece_module_content_container h2, .ece_module_container .ece_module_content_container h3, .ece_module_container .ece_module_content_container h4, .ece_module_container .ece_module_content_container h5, .ece_module_container .ece_module_content_container h6 {
@@ -1836,24 +1838,6 @@ h1.article_header {
         .ece_module_container .ece_module_content_container .ece_module_references ul.article_references a {
           text-decoration: underline; }
 
-.toppsak .ece_module_container.no_image {
-  text-align: center;
-  max-width: 900px;
-  max-width: 56.25rem;
-  padding: 21px 21px 7px;
-  padding: 1.3125rem 1.3125rem 0.4375rem;
-  border: 1px solid #e7d5a6;
-  border: 0.0625rem solid #e7d5a6;
-  box-sizing: border-box;
-  border-radius: 0.1875rem;
-  margin-left: auto;
-  margin-right: auto; }
-  .toppsak .ece_module_container.no_image .ece_module_content_container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 700px;
-    max-width: 43.75rem; }
-
 .ece_module_list {
   *zoom: 1; }
   .ece_module_list:before, .ece_module_list:after {
@@ -1887,11 +1871,6 @@ h1.article_header {
       width: 48%;
       margin: 0 21px 21px 0;
       margin: 0 1.3125rem 1.3125rem 0; }
-    .ece_module_list .ece_module_container .ece_module_content_container,
-    .ece_hvaskjer_grid .toppsak .ece_module_container .ece_module_content_container,
-    .teaser_small_container .ece_module_container .ece_module_content_container,
-    .saker_container .ece_module_container .ece_module_content_container {
-      background-color: #F2E5F4; }
     .ece_module_list .ece_module_container .ece_module_image_container,
     .ece_module_list .ece_module_container .ece_module_content_container,
     .ece_hvaskjer_grid .toppsak .ece_module_container .ece_module_image_container,
@@ -1931,16 +1910,24 @@ h1.article_header {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex; }
-    .ece_hvaskjer_grid .row .col_md_6,
     .ece_hvaskjer_grid .row .col_md_4 {
       -ms-flex-align: stretch;
       -webkit-align-items: stretch;
       -moz-align-items: stretch;
       align-items: stretch;
-      -webkit-flex: 1 1 0;
-      -moz-flex: 1 1 0;
-      -ms-flex: 1 1 0;
-      flex: 1 1 0; }
+      -webkit-flex: 1 1 33.33333%;
+      -moz-flex: 1 1 33.33333%;
+      -ms-flex: 1 1 33.33333%;
+      flex: 1 1 33.33333%; }
+    .ece_hvaskjer_grid .row .col_md_6 {
+      -ms-flex-align: stretch;
+      -webkit-align-items: stretch;
+      -moz-align-items: stretch;
+      align-items: stretch;
+      -webkit-flex: 1 1 50%;
+      -moz-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+      flex: 1 1 50%; }
   .ece_hvaskjer_grid .row .col_md_6:first-child,
   .ece_hvaskjer_grid .row .col_md_4:first-child,
   .ece_hvaskjer_grid .row .col_md_4:nth-child(2) {
@@ -1974,6 +1961,29 @@ h1.article_header {
   .ece_hvaskjer_grid .ece_module_list .ece_module_container {
     margin-bottom: 28px;
     margin-bottom: 1.75rem; } }
+
+.toppsak .ece_module_container.no_image {
+  text-align: center;
+  max-width: 900px;
+  max-width: 56.25rem;
+  padding: 21px 21px 7px;
+  padding: 1.3125rem 1.3125rem 0.4375rem;
+  border: 1px solid #e7d5a6;
+  border: 0.0625rem solid #e7d5a6;
+  box-sizing: border-box;
+  border-radius: 0.1875rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+  .toppsak .ece_module_container.no_image .ece_module_content_container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    max-width: 43.75rem;
+    -webkit-flex: 1 1 100%;
+    -moz-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%; }
 
 .ece_tema_grid .ece_module_container {
   padding-bottom: 6px;
