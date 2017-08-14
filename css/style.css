@@ -1891,7 +1891,7 @@ h1.article_header {
     .ece_hvaskjer_grid .toppsak .ece_module_container .ece_module_content_container,
     .teaser_small_container .ece_module_container .ece_module_content_container,
     .saker_container .ece_module_container .ece_module_content_container {
-      width: 48%; }
+      background-color: #F2E5F4; }
     .ece_module_list .ece_module_container .ece_module_image_container,
     .ece_module_list .ece_module_container .ece_module_content_container,
     .ece_hvaskjer_grid .toppsak .ece_module_container .ece_module_image_container,
