@@ -4722,6 +4722,8 @@ footer {
     border-bottom: 0.125rem solid #e7d5a6;
     padding-bottom: 2px;
     padding-bottom: 0.125rem; }
+    .flex-table__title a {
+      color: #000; }
     .flex-table__title--results {
       border: none;
       color: #000;
@@ -4779,7 +4781,10 @@ footer {
       text-decoration: underline;
       font-size: 16px; }
   .flex-table__desktop-header {
-    color: #727272;
+    color: #535353;
+    font-size: 17px;
+    font-size: 1.0625rem;
+    line-height: 1.23529;
     padding-right: 10px;
     padding-right: 0.625rem;
     box-sizing: border-box; }
@@ -5007,14 +5012,8 @@ footer {
   width: 100%; }
   .form-element__label {
     color: #000;
-    font-weight: 400;
-    line-height: 1.2;
-    margin-bottom: 8px;
     width: 100%;
-    font-size: 20px;
-    font-size: 1.25rem; }
-    .form-element__label--checkbox {
-      font-weight: 300; }
+    margin-bottom: 0; }
   .form-element__helptext {
     margin: 0; }
     .form-element__helptext--error {
@@ -5201,58 +5200,53 @@ footer {
           margin-top: auto; } }
 
 .search-checkbox-filter {
-  border: none;
   display: block;
   margin: 0;
   padding: 0; }
   .search-checkbox-filter__title {
+    color: #000;
     display: none;
     margin: 0;
     padding: 0;
     width: 100%;
-    padding-bottom: 4px;
-    padding-bottom: 0.25rem;
-    border-bottom: 2px solid #eee1c0;
-    border-bottom: 0.125rem solid #eee1c0;
-    font-size: 20px;
-    font-size: 1.25rem; }
+    padding-bottom: 2px;
+    padding-bottom: 0.125rem;
+    border-bottom: 2px solid #e7d5a6;
+    border-bottom: 0.125rem solid #e7d5a6;
+    margin: 2px 0 14px;
+    margin: 0.125rem 0 0.875rem; }
   .search-checkbox-filter__button {
     color: #000;
     margin: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
     border-radius: 5px;
-    border: 1px solid #eee1c0;
-    border: 0.0625rem solid #eee1c0; }
+    border: 1px solid #e7d5a6;
+    border: 0.0625rem solid #e7d5a6; }
     .search-checkbox-filter__button::before {
       content: '';
       display: inline-block;
       margin: 0 10px 0 0; }
-    .search-checkbox-filter__button:hover {
+    .search-checkbox-filter__button:hover, .search-checkbox-filter__button:active {
       background-color: #fff;
       color: #000;
-      border: 1px solid #eee1c0;
-      border: 0.0625rem solid #eee1c0; }
+      border: 1px solid #e7d5a6;
+      border: 0.0625rem solid #e7d5a6; }
   .search-checkbox-filter__content {
     left: -999em;
     position: absolute;
-    border-bottom: 1px solid #eee1c0;
-    border-bottom: 0.0625rem solid #eee1c0; }
-  .search-checkbox-filter--open .search-checkbox-filter__button {
-    background-color: #fbf7ed;
-    border: 0;
-    border-radius: 0;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    text-align: left;
-    width: 100%;
-    border-bottom: 2px solid #eee1c0;
-    border-bottom: 0.125rem solid #eee1c0; }
-    .search-checkbox-filter--open .search-checkbox-filter__button::before {
-      -webkit-transform: rotate(180deg);
-          -ms-transform: rotate(180deg);
-              transform: rotate(180deg); }
+    border-bottom: 1px solid #e7d5a6;
+    border-bottom: 0.0625rem solid #e7d5a6; }
+  .search-checkbox-filter--open .search-checkbox-filter__button::before {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
   .search-checkbox-filter--open .search-checkbox-filter__content {
-    left: 0;
-    position: relative; }
+    position: relative;
+    left: 0; }
   @media only screen and (min-width: 700px) {
     .search-checkbox-filter__button {
       display: none; }
