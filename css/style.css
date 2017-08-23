@@ -3216,24 +3216,22 @@ a.file {
     background: url(../images/default_list_style_image.svg) no-repeat transparent;
     background-position: 2px 20px;
     background-position: 0.125rem 1.25rem; }
+  .link_list--with_meta a:hover, .link_list--with_meta a:active {
+    text-decoration: none; }
+    .link_list--with_meta a:hover .title, .link_list--with_meta a:active .title {
+      text-decoration: underline; }
+  .link_list--with_meta .meta {
+    color: #535353;
+    font-size: 17px;
+    font-size: 1.0625rem;
+    line-height: 1.23529; }
+    .link_list--with_meta .meta:before {
+      content: " - "; }
 
-.link_list.with_date li.important_news_item {
+.link_list li.important_news_item {
   border-bottom: 0 none; }
-  .link_list.with_date li.important_news_item a {
+  .link_list li.important_news_item a {
     background-image: none; }
-
-.link_list.with_date a:hover, .link_list.with_date a:active {
-  text-decoration: none; }
-  .link_list.with_date a:hover .title, .link_list.with_date a:active .title {
-    text-decoration: underline; }
-
-.link_list.with_date .date {
-  color: #535353;
-  font-size: 17px;
-  font-size: 1.0625rem;
-  line-height: 1.23529; }
-  .link_list.with_date .date:before {
-    content: " - "; }
 
 .module_container {
   width: 100%;

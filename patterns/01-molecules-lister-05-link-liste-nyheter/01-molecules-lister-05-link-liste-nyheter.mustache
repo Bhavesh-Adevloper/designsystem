@@ -1,4 +1,4 @@
-<ul class="link_list with_date {{ styleModifier }}">
+<ul class="link_list link_list--with_meta {{ styleModifier }}">
     {{# viktigNyhet }}
         <li class="important_news_item">
             {{> molecules-modul-viktig-nyhet }}
@@ -9,7 +9,7 @@
             <a href="{{ url }}" title="{{ tittel }}">
                 <span class="title">{{ tittel }}</span>
                 {{# dato }}
-                    <span class="date">{{ dato }}</span>
+                    <span class="meta">{{ dato }}</span>
                 {{/ dato }}
             </a>
         </li>
