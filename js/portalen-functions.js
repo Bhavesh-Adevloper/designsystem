@@ -82,6 +82,16 @@ function feedbackToggle() {
     });
 }
 
+// Accordion toggle
+function toggleAccordion() {
+    if ( document.getElementById( "js_accordion_container" ) != null ) {
+        $(".js_toggle_accordion_link").click( function() {
+            $(this).closest(".js_accordion_item").toggleClass("active");
+            return false;
+        });
+    }
+}
+
 
 // Orgenhet menu toggles
 function orgMenuToggle() {
@@ -357,6 +367,7 @@ $(document).ready(function () {
     selectYear();
     horisontalScroll();
     filterSearch();
+    toggleAccordion();
 });
 
 $(window).bind("load", function() {

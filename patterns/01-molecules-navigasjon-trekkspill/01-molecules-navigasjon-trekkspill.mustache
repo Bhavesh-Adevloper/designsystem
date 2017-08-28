@@ -1,186 +1,105 @@
-<div class="accordion_container">
+<div id="js_accordion_container" class="accordion_container">
+    
+    {{# accordionItem }}
+        <div class="accordion_item js_accordion_item {{ accordionItemStyleModifier }}">
+            <h3 class="accordion_header">
+                <a class="js_toggle_accordion_link" title="{{ accordionTittel }}" href="#">
+                    <span class="icon accordion_icon"></span>
+                    {{ accordionTittel }}
+                </a>
+            </h3>
+            <div class="accordion_content">
+                    
+                {{# accordionSkjemaListe }}
+                    {{> molecules-skjema-liste }}
+                {{/ accordionSkjemaListe }}
+                
+                <div class="service_content_max_width">
+                    
+                    {{{ accordionIntro }}}
+                    
+                    {{# accordionlinkliste }}
+                        <ul>
+                            {{# linkliste }}
+                                <li>
+                                    <a href="{{ url }}" title="{{ tittel }}">
+                                        {{ tittel }}
+                                    </a>
+                                </li>
+                            {{/ linkliste }}
+                        </ul>
+                    {{/ accordionlinkliste }}
 
-    <div class="accordion_item important" id="js_accordion_0">
-       <h3 class="accordion_header">
-           <a onclick="document.getElementById('js_accordion_0').classList.toggle('active')" title="Skjema" href="#!">
-             <span class="icon accordion_icon"></span>
-             Skjema
-           </a>
-        </h3>
-       <div class="accordion_content">
+                </div>
 
-<!--
-         <ul class="file_list">
-           <li><a href="" title="Søknadsskjema">Søknadsskjema 1</a></li>
-           <li><a href="" title="Søknadsskjema">Søknadsskjema 2</a></li>
-           <li><a href="" title="Søknadsskjema">Søknadsskjema 3</a></li>
-         </ul>
-           
-           {{# soknadsskjemaListe }}
-           {{/ soknadsskjemaListe }}
--->
-           {{> molecules-skjema-liste }}
-           
+                {{# accordionAvsnitt }}
+                
+                    <h4 class="accordion_inner_content_header">{{ accordionAvsnittTittel }}</h4>
+                
+                    {{# accordionAvsnittTekst }}
+                        <div class="service_content_max_width">{{{ accordionAvsnittTekst }}}</div>
+                    {{/ accordionAvsnittTekst }}
 
-       </div><!-- /.accordion_content -->
-     </div><!-- /.accordion_item -->  
+                    {{# accordionAvsnittlinkliste }}
+                        <ul class="service_content_max_width">
+                            {{# linkliste }}
+                                <li>
+                                    <a href="{{ url }}" title="{{ tittel }}">
+                                        {{ tittel }}
+                                    </a>
+                                </li>
+                            {{/ linkliste }}
+                        </ul>
+                    {{/ accordionAvsnittlinkliste }}
+                
+                {{/ accordionAvsnitt }}
 
-    <div class="accordion_item" id="js_accordion_1">
-       <h3 class="accordion_header">
-           <a onclick="document.getElementById('js_accordion_1').classList.toggle('active')" title="Pris" href="#!">
-             <span class="icon accordion_icon"></span>
-             Pris
-           </a>
-        </h3>
-       <div class="accordion_content">
-           <div class="service_content_max_width">
-             <p>Pris for tjenesten</p>
-
-             <ul>
-               <li><a href="" title="Prisdokument">Prisdokument 1</a></li>
-               <li><a href="" title="Prisdokument">Prisdokument 2</a></li>
-               <li><a href="" title="Prisdokument">Prisdokument 3</a></li>
-             </ul>
-           </div>
-       </div><!-- /.accordion_content -->
-     </div><!-- /.accordion_item -->    
-
-    <div class="accordion_item" id="js_accordion_2">
-       <h3 class="accordion_header">
-           <a onclick="document.getElementById('js_accordion_2').classList.toggle('active')" title="Kriterier og vilkår" href="#!">
-             <span class="icon accordion_icon"></span>
-             Kriterier og vilkår
-           </a>
-        </h3>
-       <div class="accordion_content">
-
-           <div class="service_content_max_width">
-            <p>Kriterier/vilkår</p>
-           </div>
-       </div><!-- /.accordion_content -->
-     </div><!-- /.accordion_item -->           
-
-     <div class="accordion_item" id="js_accordion_3">
-       <h3 class="accordion_header">
-           <a onclick="document.getElementById('js_accordion_3').classList.toggle('active')" title="Om søknadsprosessen" href="#!">
-             <span class="icon accordion_icon"></span>
-             Om søknadsprosessen
-           </a>
-         </h3>
-       <div class="accordion_content">
-
-           <div class="service_content_max_width">
-            <p>Veiledning - hvordan få utført eller motta tjenesten</p>
-           </div>
-           
-         <h4 class="accordion_inner_content_header">Søknadsfrist</h4>      
-           <div class="service_content_max_width">
-               <p>Søknadsfrist</p>
-           </div>
-
-         <h4 class="accordion_inner_content_header">Vedlegg</h4>     
-           <div class="service_content_max_width">          
-               <p>Vedlegg</p>
-           </div>
-
-         <h4 class="accordion_inner_content_header">Søknad sendes til</h4>    
-           <div class="service_content_max_width">          
-               <p>Søknad sendes til</p>
-           </div>
-
-
-         <h4 class="accordion_inner_content_header">Saksbehandling</h4>   
-           <div class="service_content_max_width">         
-               <p>Saksbehandling</p>
-           </div>
-
-         <h4 class="accordion_inner_content_header">Saksbehandlingstid</h4> 
-           <div class="service_content_max_width">
-               <p>Saksbehandlingstid</p>
-           </div>
-
-         <h4 class="accordion_inner_content_header">Klagemulighet</h4> 
-           <div class="service_content_max_width">
-               <p>Klagemulighet</p>
-           </div>
-
-       </div><!-- /.accordion_content -->
-     </div><!-- /.accordion_item -->
-
-     <div class="accordion_item" id="js_accordion_4">
-       <h3 class="accordion_header">
-           <a onclick="document.getElementById('js_accordion_4').classList.toggle('active')" title="Lover og retningslinjer" href="#!">
-             <span class="icon accordion_icon"></span>
-             Lover og retningslinjer
-           </a>
-         </h3>
-       <div class="accordion_content">
-
-         <p>Regelverk</p>
-
-         <h4 class="accordion_inner_content_header">Lover</h4>
-         <ul>
-           <li><a href="" title="Lenke">Lenke til fil 1</a></li>
-           <li><a href="" title="Lenke">Lenke til fil 2</a></li>
-         </ul>
-
-         <h4 class="accordion_inner_content_header">Retningslinjer</h4>
-         <ul>
-           <li><a href="" title="Lenke">Lenke til fil 1</a></li>
-           <li><a href="" title="Lenke">Lenke til fil 2</a></li>
-         </ul>
-
-
-         <h4 class="accordion_inner_content_header">Vedtekter</h4>
-         <ul>
-           <li><a href="" title="Lenke">Lenke til fil 1</a></li>
-           <li><a href="" title="Lenke">Lenke til fil 2</a></li>
-         </ul>
-
-         <h4 class="accordion_inner_content_header">Forskrifter</h4>
-         <ul>
-           <li><a href="" title="Lenke">Lenke til fil 1</a></li>
-           <li><a href="" title="Lenke">Lenke til fil 2</a></li>
-         </ul>
-       </div><!-- /.accordion_content -->
-     </div><!-- /.accordion_item -->
-
-
-     <div class="accordion_item" id="js_accordion_5">
-       <h3 class="accordion_header">
-           <a onclick="document.getElementById('js_accordion_5').classList.toggle('active')" title="Har du spørsmål?" href="#!">
-             <span class="icon accordion_icon"></span>
-             Har du spørsmål?
-           </a>
-         </h3>
-       <div class="accordion_content">
-         <p>Kontakt <a href="#!" title="Ansvarlig avdeling">Ansvarlig avdeling</a></p>
-         <a href="#!" title="Vis i kart" class="map_link" target="_blank">
-           <span class="icon map_icon"></span>
-            Vis i kart
-         </a>
-         <p><strong>Besøksadresse:</strong>
-           <br>
-             Nøstegaten 58A - Vi holder åpent fra 08:00 til 15:00.
-           
-           </p>
-         <div class="row contact_button_container">
-          <div class="col_md_6 col_lg_6">
-            
-              {{> atoms-kontakt-knapp }}
-              
-          </div>
-          <div class="col_md_6 col_lg_6">
-            <a class="contact_button" title="fagavdelingen@bergen.kommune.no" href="mailto:fagavdelingen@bergen.kommune.no">
-              <span class="icon email_icon"></span>
-              Send oss en e-post
-              <span class="contact_button_info icon send_email_icon"></span>
+            </div><!-- /.accordion_content -->
+        </div><!-- /.accordion_item -->
+    {{/ accordionItem }}    
+    
+    <div class="accordion_item js_accordion_item">
+        <h3 class="accordion_header">
+            <a class="js_toggle_accordion_link" title="Har du spørsmål?" href="#">
+                <span class="icon accordion_icon"></span>
+                Har du spørsmål?
             </a>
-          </div>
-         </div>
-       </div><!-- /.accordion_content -->
-     </div><!-- /.accordion_item -->
-
-
-
+        </h3>
+        <div class="accordion_content">
+            <p>
+                Kontakt                 
+                {{# organisasjonsenhet }}
+                    <a href="{{ organisasjonsenhet.url }}" title="{{ organisasjonsenhet.tittel }}">
+                        {{ organisasjonsenhet.tittel }}
+                    </a>
+                {{/ organisasjonsenhet }}
+            </p>
+            {{# kontaktkort }}
+                <a href="{{ bergenskartURL }}" title="Vis i kart" class="map_link" target="_blank">
+                    <span class="icon map_icon"></span>
+                    Vis i kart
+                </a>
+                <p class="service_content_max_width"><strong>Besøksadresse:</strong>
+                    <br>
+                    {{ besoeksadresse }}
+                    {{# apningstidFra }}
+                        - Vi holder åpent fra {{ apningstidFra }} til {{ apningstidTil }}.
+                    {{/ apningstidFra }}
+                </p>
+                <div class="row">
+                    <div class="col_md_6 col_lg_6">
+                        {{> atoms-kontakt-knapp }}
+                    </div>
+                    <div class="col_md_6 col_lg_6">
+                        <a class="contact_button" title="{{ epost }}" href="mailto:{{ epost }}">
+                            <span class="icon email_icon"></span>
+                            Send oss en e-post
+                            <span class="contact_button_info icon send_email_icon"></span>
+                        </a>
+                    </div>
+                </div>
+            {{/ kontaktkort }}
+        </div><!-- /.accordion_content -->
+    </div><!-- /.accordion_item -->
+    
 </div><!-- /.accordion_container --> 

@@ -1,0 +1,82 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">    
+    <article>
+        
+        {{> molecules-sideoverskrift-h1-med-print(sidetittel: "{{ sidetittel }}") }}
+        
+        {{# alternativtNavn }}
+        {{> molecules-alternativ-tittel-h2(sidetittel: "{{alternativtNavn}}") }}
+        {{/ alternativtNavn }}
+        
+        <div class="row">
+            <div class="col_md_12 col_lg_8">
+                <div class="article_content">
+        
+                    {{# varsel }}
+                    {{> molecules-varsel:mbxl }}
+                    {{/ varsel }}
+        
+                    {{# notis }}
+                    {{> molecules-notis:mbxl }}
+                    {{/ notis }}
+
+                    {{# imgLandscape }}
+                        <figure class="service_image_mobile">
+                            <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}">
+                        </figure>
+                    {{/ imgLandscape }}
+
+                    {{# beskrivelse }}
+                        <div class="service_description service_content_max_width">
+                            {{{ beskrivelse }}}
+                        </div>
+                    {{/ beskrivelse }}
+                    
+                    {{# uthevedSkjemaListe }}
+                        {{> molecules-skjema-liste:action }}
+                    {{/ uthevedSkjemaListe }}
+
+                </div><!-- end .article_content -->
+                
+                {{> molecules-trekkspill }}
+            
+            </div>
+            <div class="col_md_12 col_lg_4">
+        
+                {{# imgLandscape }}
+                    <figure class="service_image_desktop">
+                        <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}">
+                    </figure>
+                    <div style="margin-bottom: 30px;">
+                        <p><a href="https://developers.facebook.com/docs/sharing/best-practices#images" title="Facebook" target="_blank">&raquo; Anbefalt bildestørrelse for deling på Facebook</a></p>
+                    </div>
+                {{/ imgLandscape }}
+
+                {{> molecules-tilbakemelding }}
+
+            </div>
+        </div>
+        
+        {{# footer }}
+            {{> organisms-tjeneste-footer }}
+        {{/ footer }}
+
+        <div class="row">
+            {{# relatertInfo }}
+                <div class="col_md_12 col_lg_6">                
+                    {{> molecules-moduloverskrift-h2:mbs(tittel: "Relatert informasjon") }}
+                    {{> molecules-link-liste:mbxxl }}
+                </div>
+            {{/ relatertInfo }}
+            {{# beslektedeTjenester }}
+                <div class="col_md_12 col_lg_6">
+                    {{> molecules-moduloverskrift-h2:mbs(tittel: "Beslektede tjenester") }}
+                    {{> molecules-link-liste:mbxxl }}
+                </div>
+            {{/ beslektedeTjenester }}
+        </div>
+        
+    </article>    
+</main>
+{{> organisms-footer }}

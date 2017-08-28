@@ -118,11 +118,15 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     <div class="row">
 
             <div class="col_md_12 col_lg_4">
-                <div class="form-element mbm">
-    
-    <input class="form-element__textfield" type="text" placeholder="Søk">
+                <div id="js_filter_search" name="sok" class="filter_search_input_container filter_aktuelle_tema">
+    <label for="filter_search" class="filter_search_label">
+        <span class="screen-reader-text">Lorem ipsum (27 characters)</span>
+    </label>
+    <input type="search" id="filter_search" placeholder="" class="js_filter_search_input filter_search_input" />
+    <button class="clear_search_button js_clear_search" style="display: none;">
+        <span class="screen-reader-text">Fjern søkeord</span>
+    </button>
 </div>
-
                 <div class="search-checkbox-filter mbl">
     <span class="search-checkbox-filter__title mbm">Avgrens søket:</span>
     <button class="search-checkbox-filter__button mbm">Avgrens søket</button>
