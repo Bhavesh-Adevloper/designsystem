@@ -1784,7 +1784,9 @@ h1.article_header {
       font-style: normal;
       font-size: 24px;
       font-size: 1.5rem;
-      line-height: 1.16667; }
+      line-height: 1.16667;
+      margin-bottom: 1px;
+      margin-bottom: 0.0625rem; }
     .ece_module_container .ece_module_content_container .ece_module_excerpt p {
       margin-bottom: 14px;
       margin-bottom: 0.875rem; }
@@ -1988,7 +1990,9 @@ h1.article_header {
   .ece_tema_grid .toppsak .ece_module_container .ece_module_title {
     font-size: 28px;
     font-size: 1.75rem;
-    line-height: 1.25; }
+    line-height: 1.25;
+    margin-bottom: 8px;
+    margin-bottom: 0.5rem; }
     .ece_tema_grid .toppsak .ece_module_container .ece_module_title .read_more_link {
       padding-right: 13px;
       padding-right: 0.8125rem;

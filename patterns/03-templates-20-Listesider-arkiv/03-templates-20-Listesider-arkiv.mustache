@@ -1,0 +1,105 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    <div class="page_header_container_with_org_menu">
+        {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ organisasjonsenhet.tittel }}", url: "{{ organisasjonsenhet.url }}") }}
+    </div>
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+
+            {{> molecules-org-meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+            
+            <div class="rssicon_floatRight">
+                <a href="" type="application/rss+xml" rel="alternate" title="Abonner med RSS">RSS - abonner</a>
+            </div>
+            
+            <div class="ece_module_list mbj">
+                <h1 class="module_header">{{ modulTittel }}</h1>
+                
+                <h3 class="mbm">Arkiv</h3>
+                <ul class="mbxxl">                    
+                    {{# linkliste }}
+                        <li>
+                            {{# stikktittel }}
+                                {{ stikktittel }}
+                            {{/ stikktittel }}
+                            <a href="{{ url }}" title="{{ tittel }}">{{ tittel }}</a>                
+                            {{# dato }}
+                                <small>({{ dato }})</small>
+                            {{/ dato }}
+                        </li>
+                    {{/ linkliste }}
+                </ul>
+                
+                <!-- Bla frem og tilbake (start) -->
+                <ul id="paginering">
+                    <li class="more previous"><a href="#"> Forrige </a></li>
+
+                    <li><a href="#">1</a></li>
+
+                    <li><a href="#">2</a></li>
+
+                    <li><a href="#">3</a></li>
+
+                    <li><a href="#">4</a></li>
+
+                    <li><a href="#">5</a></li>
+
+                    <li><a href="#">6</a></li>
+
+                    <li><a href="#">7</a></li>
+
+                    <li><a href="#">8</a></li>
+
+                    <li><a href="#">9</a></li>
+
+                    <li><a href="#">10</a></li>
+
+                    <li class="current">11</li>
+
+                    <li><a href="#">12</a></li>
+
+                    <li><a href="#">13</a></li>
+
+                    <li><a href="#">14</a></li>
+
+                    <li><a href="#">15</a></li>
+
+                    <li><a href="#">16</a></li>
+
+                    <li><a href="#">17</a></li>
+
+                    <li><a href="#">18</a></li>
+
+                    <li><a href="#">19</a></li>
+
+                    <li><a href="#">20</a></li>
+
+                    <li><a href="#">21</a></li>
+
+                    <li><a href="#">22</a></li>
+
+                    <li><a href="#">23</a></li>
+
+                    <li><a href="#">24</a></li>
+
+                    <li><a href="#">25</a></li>
+
+                    <li><a href="#">26</a></li>
+
+                    <li class="more next"><a href="#">Neste</a></li>
+
+                </ul>
+                <!-- Bla frem og tilbake (slutt) -->
+            </div>
+
+
+        </div>
+    </div>
+</main>
+{{> organisms-footer }}

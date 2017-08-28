@@ -1,0 +1,36 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    <div class="page_header_container_with_org_menu">
+        {{> molecules-sideoverskrift-h1(sidetittel: "{{ sidetittel }}") }}
+    </div>
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+            
+            {{# meny }}
+            {{> molecules-org-meny }}
+            {{/ meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+
+            {{# escenic-inngangsside }}
+            {{> organisms-escenic-inngangsside }}
+            {{/ escenic-inngangsside }}
+                        
+            <div class="row_no_clearfix equal_height_container mbxl">
+                
+                {{# touts }}
+                    <div class="col_md_6 col_lg_6 equal_height_item">
+                        {{> molecules-tout }}
+                    </div>
+                {{/ touts }}
+                
+            </div>
+            
+        </div>
+    </div>
+</main>
+{{> organisms-footer }}

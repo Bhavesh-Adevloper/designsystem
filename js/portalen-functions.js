@@ -92,7 +92,6 @@ function toggleAccordion() {
     }
 }
 
-
 // Orgenhet menu toggles
 function orgMenuToggle() {
     
