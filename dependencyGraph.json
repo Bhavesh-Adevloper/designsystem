@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1503910756316,
+  "timestamp": 1503922185367,
   "graph": {
     "options": {
       "directed": true,
@@ -811,14 +811,6 @@
         }
       },
       {
-        "v": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-01-Inngangssider-40-barnehage/03-templates-01-Inngangssider-40-barnehage.rendered.html",
-          "lineagePattern": "templates-barnehage"
-        }
-      },
-      {
         "v": "02-organisms/40-annet/10-siste-nytt.mustache",
         "value": {
           "compileState": "clean",
@@ -878,6 +870,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-20-Listesider-medlemmer/03-templates-20-Listesider-medlemmer.rendered.html",
           "lineagePattern": "templates-medlemmer"
+        }
+      },
+      {
+        "v": "02-organisms/40-annet/64-modul-link-liste.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-01-Inngangssider-44-bydel/03-templates-01-Inngangssider-44-bydel.rendered.html",
+          "lineagePattern": "templates-bydel"
         }
       },
       {
@@ -972,6 +972,12 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-02-orgenhet-10-byradet/04-pages-02-orgenhet-10-byradet.rendered.html",
           "lineagePattern": "pages-byradet"
+        }
+      },
+      {
+        "v": "03-templates/01-Inngangssider/44-bydel.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -1769,21 +1775,6 @@
         "value": {}
       },
       {
-        "v": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
-        "w": "01-molecules/00-overskrifter/31-moduloverskrift-h2-med-lenke.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
-        "w": "01-molecules/lister/04-link-liste.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
-        "value": {}
-      },
-      {
         "v": "02-organisms/40-annet/10-siste-nytt.mustache",
         "w": "01-molecules/00-overskrifter/31-moduloverskrift-h2-med-lenke.mustache",
         "value": {}
@@ -1821,6 +1812,21 @@
       {
         "v": "02-organisms/40-annet/60-navigasjonssideliste.mustache",
         "w": "01-molecules/navigasjon/lenkeboks.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/40-annet/64-modul-link-liste.mustache",
+        "w": "01-molecules/00-overskrifter/31-moduloverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/40-annet/64-modul-link-liste.mustache",
+        "w": "01-molecules/lister/04-link-liste.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/40-annet/64-modul-link-liste.mustache",
+        "w": "01-molecules/les-mer/30-les-mer.mustache",
         "value": {}
       },
       {
@@ -1955,7 +1961,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/05-tema.mustache",
-        "w": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
+        "w": "02-organisms/40-annet/64-modul-link-liste.mustache",
         "value": {}
       },
       {
@@ -2035,7 +2041,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/30-orgenhet.mustache",
-        "w": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
+        "w": "02-organisms/40-annet/64-modul-link-liste.mustache",
         "value": {}
       },
       {
@@ -2095,7 +2101,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/31-orgenhet-med-arrangement.mustache",
-        "w": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
+        "w": "02-organisms/40-annet/64-modul-link-liste.mustache",
         "value": {}
       },
       {
@@ -2245,7 +2251,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/37-skole.mustache",
-        "w": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
+        "w": "02-organisms/40-annet/64-modul-link-liste.mustache",
         "value": {}
       },
       {
@@ -2305,7 +2311,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/38-leirskole.mustache",
-        "w": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
+        "w": "02-organisms/40-annet/64-modul-link-liste.mustache",
         "value": {}
       },
       {
@@ -2390,7 +2396,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/40-barnehage.mustache",
-        "w": "02-organisms/40-annet/08-tjenester-og-skjema-liten.mustache",
+        "w": "02-organisms/40-annet/64-modul-link-liste.mustache",
         "value": {}
       },
       {
@@ -2435,6 +2441,36 @@
       },
       {
         "v": "03-templates/01-Inngangssider/42-politisk-enhet.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Inngangssider/44-bydel.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Inngangssider/44-bydel.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Inngangssider/44-bydel.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Inngangssider/44-bydel.mustache",
+        "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Inngangssider/44-bydel.mustache",
+        "w": "02-organisms/40-annet/64-modul-link-liste.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Inngangssider/44-bydel.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },

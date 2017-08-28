@@ -1,0 +1,21 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    {{> molecules-sideoverskrift-h1(sidetittel: "{{ sidetittel }}") }}
+
+    <div class="row">
+        <div class="col_md_12 col_lg_8">
+                        
+            {{# etjenester100 }}
+            {{> organisms-modul-med-overskrift }}
+            {{/ etjenester100 }}
+                        
+            {{# kunngjoringer }}
+            {{> organisms-modul-link-liste:mbj }}
+            {{/ kunngjoringer }}
+            
+        </div>
+    </div>
+</main>
+{{> organisms-footer }}
