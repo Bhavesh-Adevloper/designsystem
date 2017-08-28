@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1503922185367,
+  "timestamp": 1503926172245,
   "graph": {
     "options": {
       "directed": true,
@@ -342,8 +342,8 @@
         "v": "01-molecules/02-innhold/19-modul-viktig-nyhet.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-lister-05-link-liste-nyheter/01-molecules-lister-05-link-liste-nyheter.rendered.html",
-          "lineagePattern": "molecules-link-liste-nyheter"
+          "lineagePath": "../../patterns/01-molecules-lister-05-link-liste-with-meta/01-molecules-lister-05-link-liste-with-meta.rendered.html",
+          "lineagePattern": "molecules-link-liste-with-meta"
         }
       },
       {
@@ -465,11 +465,11 @@
         }
       },
       {
-        "v": "01-molecules/lister/05-link-liste-nyheter.mustache",
+        "v": "01-molecules/lister/05-link-liste-with-meta.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/02-organisms-40-annet-10-siste-nytt/02-organisms-40-annet-10-siste-nytt.rendered.html",
-          "lineagePattern": "organisms-siste-nytt"
+          "lineagePath": "../../patterns/03-templates-01-Inngangssider-44-bydel/03-templates-01-Inngangssider-44-bydel.rendered.html",
+          "lineagePattern": "templates-bydel"
         }
       },
       {
@@ -977,7 +977,9 @@
       {
         "v": "03-templates/01-Inngangssider/44-bydel.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-99-diverse-30-bydel/04-pages-99-diverse-30-bydel.rendered.html",
+          "lineagePattern": "pages-bydel"
         }
       },
       {
@@ -1559,6 +1561,12 @@
         }
       },
       {
+        "v": "04-pages/99-diverse/30-bydel.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
         "value": {
           "compileState": "clean"
@@ -1630,7 +1638,7 @@
         "value": {}
       },
       {
-        "v": "01-molecules/lister/05-link-liste-nyheter.mustache",
+        "v": "01-molecules/lister/05-link-liste-with-meta.mustache",
         "w": "01-molecules/02-innhold/19-modul-viktig-nyhet.mustache",
         "value": {}
       },
@@ -1781,7 +1789,7 @@
       },
       {
         "v": "02-organisms/40-annet/10-siste-nytt.mustache",
-        "w": "01-molecules/lister/05-link-liste-nyheter.mustache",
+        "w": "01-molecules/lister/05-link-liste-with-meta.mustache",
         "value": {}
       },
       {
@@ -2467,6 +2475,16 @@
       {
         "v": "03-templates/01-Inngangssider/44-bydel.mustache",
         "w": "02-organisms/40-annet/64-modul-link-liste.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Inngangssider/44-bydel.mustache",
+        "w": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Inngangssider/44-bydel.mustache",
+        "w": "01-molecules/lister/05-link-liste-with-meta.mustache",
         "value": {}
       },
       {
@@ -3992,6 +4010,11 @@
       {
         "v": "04-pages/99-diverse/25-fakta.mustache",
         "w": "03-templates/01-Inngangssider/05-tema.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/30-bydel.mustache",
+        "w": "03-templates/01-Inngangssider/44-bydel.mustache",
         "value": {}
       },
       {

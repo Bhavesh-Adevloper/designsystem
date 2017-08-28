@@ -14,6 +14,27 @@
             {{# kunngjoringer }}
             {{> organisms-modul-link-liste:mbj }}
             {{/ kunngjoringer }}
+                        
+            {{# avdelinger }}
+            <section class="mbxxl">
+                {{> molecules-moduloverskrift-h2:mbm(tittel: "{{ modulTittel }}") }}
+                
+                <div id="organisasjonstype_wrapper">
+                    <p>
+                        Eller vis alle:
+                        <a href="">skoler</a>,
+                        <a href="">barnehager</a>,
+                        <a href="">sykehjem</a>
+                    </p>
+                </div>
+                
+                <div id="js_search_result">                    
+                    {{> molecules-link-liste-with-meta:mbm }}                    
+                </div>
+                
+                LAST INN FLERE
+            </section>
+            {{/ avdelinger }}
             
         </div>
     </div>
