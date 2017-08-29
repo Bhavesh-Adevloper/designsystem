@@ -8470,19 +8470,6 @@ a.itslearning_link {
   margin: 0 0 24px;
   margin: 0 0 1.5rem; }
 
-.bk360_meeting_calendar {
-  padding: 0; }
-  .bk360_meeting_calendar li {
-    list-style-image: none;
-    padding: 0 0 6px;
-    padding: 0 0 0.375rem;
-    margin: 0 0 6px;
-    margin: 0 0 0.375rem;
-    border-bottom: 1px solid #e7d5a6;
-    border-bottom: 0.0625rem solid #e7d5a6; }
-    .bk360_meeting_calendar li .meeting_title_link {
-      text-decoration: underline; }
-
 .bk360_members_table .bk360_members_table_caption {
   height: 0;
   opacity: 0; }
