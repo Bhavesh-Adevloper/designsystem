@@ -5367,8 +5367,8 @@ footer {
   max-width: 30rem; }
   .filter_search_input_container .filter_search_label {
     position: absolute;
-    top: 17px;
-    top: 1.0625rem;
+    top: 3px;
+    top: 0.1875rem;
     left: 1px;
     left: 0.0625rem;
     margin: 0; }
@@ -5388,8 +5388,8 @@ footer {
     border: 0.0625rem solid #3b65a3; }
   .filter_search_input_container .clear_search_button {
     position: absolute;
-    top: 20px;
-    top: 1.25rem;
+    top: 4px;
+    top: 0.25rem;
     right: 4px;
     right: 0.25rem;
     padding: 0;
