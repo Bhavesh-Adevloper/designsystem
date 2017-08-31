@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1503991651311,
+  "timestamp": 1504179865555,
   "graph": {
     "options": {
       "directed": true,
@@ -550,12 +550,6 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/02-organisms-40-annet-20-skoleruten/02-organisms-40-annet-20-skoleruten.rendered.html",
           "lineagePattern": "organisms-skoleruten"
-        }
-      },
-      {
-        "v": "01-molecules/lister/70-møtekalender.mustache",
-        "value": {
-          "compileState": "clean"
         }
       },
       {
