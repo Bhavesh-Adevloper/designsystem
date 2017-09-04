@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1504264437139,
+  "timestamp": 1504523211350,
   "graph": {
     "options": {
       "directed": true,
@@ -178,8 +178,8 @@
         "v": "00-atoms/20-skjema-element/05-filterboks.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-20-Listesider-03-listeside-sas-med-filterboks/03-templates-20-Listesider-03-listeside-sas-med-filterboks.rendered.html",
-          "lineagePattern": "templates-listeside-sas-med-filterboks"
+          "lineagePath": "../../patterns/03-templates-20-Listesider-underavdelinger/03-templates-20-Listesider-underavdelinger.rendered.html",
+          "lineagePattern": "templates-underavdelinger"
         }
       },
       {
@@ -2902,6 +2902,11 @@
       },
       {
         "v": "03-templates/20-Listesider/aktuelle-tema.mustache",
+        "w": "00-atoms/20-skjema-element/05-filterboks.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/aktuelle-tema.mustache",
         "w": "02-organisms/40-annet/62-modul-liste.mustache",
         "value": {}
       },
@@ -2988,6 +2993,11 @@
       {
         "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
         "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
+        "w": "00-atoms/20-skjema-element/05-filterboks.mustache",
         "value": {}
       },
       {
@@ -3133,6 +3143,11 @@
       {
         "v": "03-templates/20-Listesider/underavdelinger.mustache",
         "w": "01-molecules/lister/04-link-liste.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/underavdelinger.mustache",
+        "w": "00-atoms/20-skjema-element/05-filterboks.mustache",
         "value": {}
       },
       {

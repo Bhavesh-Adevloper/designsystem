@@ -6,18 +6,18 @@
 
     <div class="row">
 
-        {{#searchFilter}}
+        {{# searchFilter }}
             <div class="col_md_12 col_lg_4">
-                {{> atoms-filterboks}}
-                {{> molecules-sokefilter-avkrysningsbokser}}
+                {{> atoms-filterboks:mbl }}
+                {{> molecules-sokefilter-avkrysningsbokser }}
             </div>
-        {{/searchFilter}}
+        {{/ searchFilter }}
 
-        {{#table}}
+        {{# table }}
             <div class="col_md_12 col_lg_8 {{tableModifier}}">
                 {{> molecules-flex-tabell }}
             </div>
-        {{/table}}
+        {{/ table }}
     </div>
 
 </main>

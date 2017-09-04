@@ -5434,9 +5434,7 @@ footer {
 .filter_search_input_container + .filter_shortcut_container {
   margin-top: 0; }
 
-.filter_search_input_container.filter_aktuelle_tema {
-  margin: 0 0 28px;
-  margin: 0 0 1.75rem;
+.filter_search_input_container.no_max_width {
   max-width: inherit; }
 
 .js_filter_search_result_list .match .list_highlight {
