@@ -1,0 +1,40 @@
+<div class="tout_container tout_container--special {{ styleModifier }}">
+    
+    <h2 class="tout_header">
+        {{# url }}
+        <a href="{{ url }}" title="{{ tittel }}">
+            {{/ url }}
+                {{ tittel }}
+            {{# url }}
+        </a>
+        {{/ url }}
+    </h2>
+    
+    <div class="tout_excerpt">  
+        
+        {{# toutliste }}
+            <ul class="tout_list">
+                {{# linkliste }}
+                <li>
+                    {{# url }}
+                    <a href="{{ url }}" title="{{ tittel }}">
+                        {{/ url }}
+                            {{ tittel }}
+                        {{# url }}
+                    </a>
+                    {{/ url }}
+                </li>
+                {{/ linkliste }}
+            </ul>
+        {{/ toutliste }}
+        
+        {{# lesMerLink }}
+            <div class="tout_read_more_link_container{{# borderTop }} tout_read_more_link_container--border-top{{/ borderTop }}">
+                <a href="{{ url }}" title="{{ tittel }}" class="read_more_link">
+                    {{ tittel }}
+                </a>
+            </div>
+        {{/ lesMerLink }}
+        
+    </div>
+</div>

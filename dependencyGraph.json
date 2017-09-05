@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1504608871840,
+  "timestamp": 1504625095457,
   "graph": {
     "options": {
       "directed": true,
@@ -207,6 +207,12 @@
         }
       },
       {
+        "v": "00-atoms/20-skjema-element/13-radioknapp.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "00-atoms/20-skjema-element/15-nedtrekksliste.mustache",
         "value": {
           "compileState": "clean",
@@ -363,6 +369,14 @@
         }
       },
       {
+        "v": "01-molecules/02-innhold/31-tout-spesial.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
+          "lineagePattern": "pages-etjeneste-eksempler"
+        }
+      },
+      {
         "v": "01-molecules/02-innhold/32-tout-skoleruten.mustache",
         "value": {
           "compileState": "clean",
@@ -468,8 +482,8 @@
         "v": "01-molecules/lister/05-link-liste-with-meta.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/02-organisms-40-annet-10-siste-nytt/02-organisms-40-annet-10-siste-nytt.rendered.html",
-          "lineagePattern": "organisms-siste-nytt"
+          "lineagePath": "../../patterns/02-organisms-40-annet-66-modul-link-liste-with-meta/02-organisms-40-annet-66-modul-link-liste-with-meta.rendered.html",
+          "lineagePattern": "organisms-modul-link-liste-with-meta"
         }
       },
       {
@@ -868,6 +882,14 @@
       },
       {
         "v": "02-organisms/40-annet/64-modul-link-liste.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-01-Inngangssider-40-barnehage/03-templates-01-Inngangssider-40-barnehage.rendered.html",
+          "lineagePattern": "templates-barnehage"
+        }
+      },
+      {
+        "v": "02-organisms/40-annet/66-modul-link-liste-with-meta.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-01-Inngangssider-44-bydel/03-templates-01-Inngangssider-44-bydel.rendered.html",
@@ -1846,6 +1868,21 @@
         "value": {}
       },
       {
+        "v": "02-organisms/40-annet/66-modul-link-liste-with-meta.mustache",
+        "w": "01-molecules/00-overskrifter/31-moduloverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/40-annet/66-modul-link-liste-with-meta.mustache",
+        "w": "01-molecules/lister/05-link-liste-with-meta.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/40-annet/66-modul-link-liste-with-meta.mustache",
+        "w": "01-molecules/les-mer/30-les-mer.mustache",
+        "value": {}
+      },
+      {
         "v": "02-organisms/40-annet/70-forsidenyheter.mustache",
         "w": "01-molecules/00-overskrifter/31-moduloverskrift-h2-med-lenke.mustache",
         "value": {}
@@ -2482,12 +2519,12 @@
       },
       {
         "v": "03-templates/01-Inngangssider/44-bydel.mustache",
-        "w": "02-organisms/40-annet/64-modul-link-liste.mustache",
+        "w": "02-organisms/40-annet/66-modul-link-liste-with-meta.mustache",
         "value": {}
       },
       {
         "v": "03-templates/01-Inngangssider/44-bydel.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-innhold/31-tout-spesial.mustache",
         "value": {}
       },
       {
@@ -4083,6 +4120,11 @@
       {
         "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
         "w": "01-molecules/02-innhold/30-tout.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
+        "w": "01-molecules/02-innhold/31-tout-spesial.mustache",
         "value": {}
       },
       {

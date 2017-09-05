@@ -1,0 +1,9 @@
+<fieldset>
+    <legend class="screen-reader-text">{{legend}}</legend>
+    {{#radio}}
+    <div class="form-element {{styleModifier}}">
+        <input class="form-element__radio" type="radio" name="{{legend}}" id="{{name}}" {{#checked}}checked{{/checked}} >
+        <label class="form-element__label" for="{{name}}">{{label}}</label>
+    </div>
+    {{/radio}}
+</fieldset>
