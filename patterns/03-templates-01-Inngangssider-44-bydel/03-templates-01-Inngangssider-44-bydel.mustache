@@ -7,6 +7,12 @@
     <div class="row">
         <div class="col_md_12 col_lg_8">
                         
+            {{# beskrivelse }}
+                <div class="content_max_width mbj">
+                    {{{ beskrivelse }}}
+                </div>
+            {{/ beskrivelse }}
+                        
             {{# etjenester100 }}
             {{> organisms-modul-med-overskrift }}
             {{/ etjenester100 }}
@@ -14,27 +20,14 @@
             {{# kunngjoringer }}
             {{> organisms-modul-link-liste:mbj }}
             {{/ kunngjoringer }}
-                        
-            {{# avdelinger }}
-            <section class="mbxxl">
-                {{> molecules-moduloverskrift-h2:mbm(tittel: "{{ modulTittel }}") }}
-                
-                <div id="organisasjonstype_wrapper">
-                    <p>
-                        Eller vis alle:
-                        <a href="">skoler</a>,
-                        <a href="">barnehager</a>,
-                        <a href="">sykehjem</a>
-                    </p>
-                </div>
-                
-                <div id="js_search_result">                    
-                    {{> molecules-link-liste-with-meta:mbm }}                    
-                </div>
-                
-                LAST INN FLERE
-            </section>
-            {{/ avdelinger }}
+            
+            <div class="row_no_clearfix equal_height_container mbxl">
+                {{# touts }}
+                    <div class="col_md_6 col_lg_6 equal_height_item">
+                        {{> molecules-tout }}
+                    </div>
+                {{/ touts }}
+            </div>
             
         </div>
     </div>

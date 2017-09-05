@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1504523211350,
+  "timestamp": 1504608871840,
   "graph": {
     "options": {
       "directed": true,
@@ -468,8 +468,8 @@
         "v": "01-molecules/lister/05-link-liste-with-meta.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-01-Inngangssider-44-bydel/03-templates-01-Inngangssider-44-bydel.rendered.html",
-          "lineagePattern": "templates-bydel"
+          "lineagePath": "../../patterns/02-organisms-40-annet-10-siste-nytt/02-organisms-40-annet-10-siste-nytt.rendered.html",
+          "lineagePattern": "organisms-siste-nytt"
         }
       },
       {
@@ -972,8 +972,8 @@
         "v": "03-templates/01-Inngangssider/44-bydel.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-99-diverse-30-bydel/04-pages-99-diverse-30-bydel.rendered.html",
-          "lineagePattern": "pages-bydel"
+          "lineagePath": "../../patterns/04-pages-99-diverse-30-bydel-arstad/04-pages-99-diverse-30-bydel-arstad.rendered.html",
+          "lineagePattern": "pages-bydel-arstad"
         }
       },
       {
@@ -1563,7 +1563,7 @@
         }
       },
       {
-        "v": "04-pages/99-diverse/30-bydel.mustache",
+        "v": "04-pages/99-diverse/30-bydel-arstad.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -2487,12 +2487,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/44-bydel.mustache",
-        "w": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/44-bydel.mustache",
-        "w": "01-molecules/lister/05-link-liste-with-meta.mustache",
+        "w": "01-molecules/02-innhold/30-tout.mustache",
         "value": {}
       },
       {
@@ -4051,7 +4046,7 @@
         "value": {}
       },
       {
-        "v": "04-pages/99-diverse/30-bydel.mustache",
+        "v": "04-pages/99-diverse/30-bydel-arstad.mustache",
         "w": "03-templates/01-Inngangssider/44-bydel.mustache",
         "value": {}
       },
