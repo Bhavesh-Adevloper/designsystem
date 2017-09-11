@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1505134107453" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1505134107453" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1505135429690" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1505135429690" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <!-- never cache patterns -->
@@ -16,8 +16,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1505134107453" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1505134107453" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1505135429690" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1505135429690" media="all" />
 
     <!-- End Pattern Lab -->
     
@@ -16173,6 +16173,797 @@ https://github.com/pattern-lab/patternlab-php/issues/304
   </div>
   <script type="text/json" id="sg-pattern-data-pages-tjenestebeskrivelse" class="sg-pattern-data">
     {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"templates-tjenestebeskrivelse","lineagePath":"../../patterns/03-templates-10-Innholdssider-tjenestebeskrivelse/03-templates-10-Innholdssider-tjenestebeskrivelse.rendered.html"}],"lineage":[{"lineagePattern":"templates-tjenestebeskrivelse","lineagePath":"../../patterns/03-templates-10-Innholdssider-tjenestebeskrivelse/03-templates-10-Innholdssider-tjenestebeskrivelse.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"tjenester"},"patternExtension":"mustache","patternName":"Tjenestebeskrivelse","patternPartial":"pages-tjenestebeskrivelse","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="pages-fysioterapi-liste" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-pages-10-tjenester-10-fysioterapi-liste&#x2F;04-pages-10-tjenester-10-fysioterapi-liste.rendered.html" class="patternLink" data-patternpartial="pages-fysioterapi-liste" title="Link to Pattern">
+          Fysioterapi Liste
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="pages-fysioterapi-liste" title="View Pattern Info" id="sg-pattern-extra-toggle-pages-fysioterapi-liste" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-pages-fysioterapi-liste">
+    
+  </div>
+  <div class="sg-pattern-example">
+    
+
+
+<div id="skiplink_container">
+    <div class="desktop_centered">
+        <a href="#innhold" class="skiplink">Hopp til innhold</a>
+    </div>
+</div>
+
+<!--
+Logget inn eller ikke:
+https://github.com/pattern-lab/patternlab-php/issues/304
+-->
+<header id="global_header">
+    <div class="desktop_centered">
+        
+        <div class="header_container">
+            
+            <a href="&#x2F;patterns&#x2F;04-pages-00-forside-00-forside&#x2F;04-pages-00-forside-00-forside.rendered.html" title="Gå til forsiden" class="logo" rel="home" accesskey="1">
+    <span>Bergen kommune</span>
+</a>
+<img class="share_and_print_logo" src="../../images/logo_320x320.png" alt="Logo Bergen kommune">
+
+            <a class="js_open_mobile_main_nav nav_toggle_btn" href="#">Meny<span class="icon nav_toggle_icon"></span></a>
+            
+<!--		
+            <div class="login_container">
+                <a href="&#x2F;patterns&#x2F;04-pages-15-minside-00-minside-velger&#x2F;04-pages-15-minside-00-minside-velger.rendered.html" title="Min side" class="login_link">
+                  <span class="icon login_icon"></span>
+                  <span class="text">Min side</span>
+                </a>
+            </div>
+-->
+
+            <div class="login_container">
+                <a href="&#x2F;patterns&#x2F;04-pages-15-minside-00-minside-velger&#x2F;04-pages-15-minside-00-minside-velger.rendered.html" title="Min side - Hvem representerer du?" class="login_link">
+                    <span class="icon login_icon"></span>
+                    <span class="text">Min side</span>
+                </a>
+                <span class="seperator"></span>
+                <a href="&#x2F;patterns&#x2F;04-pages-00-forside-00-forside&#x2F;04-pages-00-forside-00-forside.rendered.html" title="Logg ut" class="logout_link">
+                    <span class="icon logout_icon"></span>
+                    <span class="text">Logg ut</span>
+                </a>
+            </div>
+
+            <div class="main_search_container">
+                <form action="#">
+                    <label for="search" class="screen-reader-text">Søk:</label>
+                    <input placeholder="Hva leter du etter?" id="search" accesskey="4" class="search_input" type="search">
+                    <button><span class="icon searchglass_icon"><span class="screen-reader-text">Søk</span></span></button>
+                </form>
+            </div>
+        </div>
+        
+        <nav class="js_main_nav main_nav main_nav_collapsed">
+            <a class="js_close_mobile_main_nav hide_nav_toggle_area" href="#" title="Lukk menyen"></a>
+            <div class="nav_container">
+                <a class="js_close_mobile_main_nav close_nav_btn icon close_icon" href="#" title="Lukk menyen">Lukk menyen</a>
+                <ul class="main_nav_list">
+                    <li><a href="&#x2F;patterns&#x2F;04-pages-01-hva-skjer-00-hva-skjer&#x2F;04-pages-01-hva-skjer-00-hva-skjer.rendered.html" title="Hva skjer"><span>Hva skjer</span></a></li>
+                    <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-00-om-kommunen&#x2F;04-pages-20-navigasjon-00-om-kommunen.rendered.html" title="Om kommunen"><span>Om kommunen</span></a></li>
+                    <li class="active"><a href="&#x2F;patterns&#x2F;04-pages-10-tjenester-00-tjenester&#x2F;04-pages-10-tjenester-00-tjenester.rendered.html" title="Tjenester"><span>Tjenester</span></a></li>
+                    <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-04-politikk&#x2F;04-pages-20-navigasjon-04-politikk.rendered.html" title="Politikk"><span>Politikk</span></a></li>
+                    <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-06-ledige-stillinger&#x2F;04-pages-20-navigasjon-06-ledige-stillinger.rendered.html" title="Ledige stillinger"><span>Ledige stillinger</span></a></li>
+                </ul>
+                <ul class="secondary_nav">
+                    <li>
+                        <a href="#" title="English">
+                            <span class="icon inline_icon english_icon white"></span>
+                            English
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Presse">
+                            <span class="icon inline_icon press_icon white"></span>
+                            Presse
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Kontaktinformasjon">
+                            <span class="icon inline_icon info_icon white"></span>
+                            Kontaktinformasjon
+                        </a>
+                    </li>
+                </ul>
+                <a href="&#x2F;patterns&#x2F;04-pages-00-forside-00-forside&#x2F;04-pages-00-forside-00-forside.rendered.html" title="Logg ut" class="mobile_logout_link">
+                    <span class="icon logout_icon white"></span>
+                    <span class="text">Logg ut</span>
+                </a>
+            </div>
+        </nav>
+    
+    </div>
+</header>
+
+
+
+
+<div class="smMa desktop_centered bc_container js_breadcrumbs clearfix">
+    <div class="bc_label mobile">Gå tilbake til:</div>
+    <div class="bc_label desktop">Du er her:</div>
+    <div class="bc_list_container">
+        <ul class="bc_list">
+            
+                <li><a href="&#x2F;patterns&#x2F;04-pages-00-forside-00-forside&#x2F;04-pages-00-forside-00-forside.rendered.html" title="Forside">Forside</a></li>
+            
+                <li class="bc_last_link"><a href="&#x2F;patterns&#x2F;04-pages-10-tjenester-00-tjenester&#x2F;04-pages-10-tjenester-00-tjenester.rendered.html" title="Tjenester">Tjenester</a></li>
+            
+                <li class="bc_current">Fysioterapeuter i Bergen</li>
+            
+        </ul>
+    </div>
+</div>
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    <div class="mbm">
+        <div class="page_header ">
+    <h1>
+        Fysioterapeuter i Bergen
+    </h1>
+</div>
+    </div>
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+
+                <div id="js_filter_search" name="sok" class="filter_search_input_container ">
+    <label for="filter_search" class="filter_search_label">
+        <span class="screen-reader-text">Lorem ipsum (27 characters)</span>
+    </label>
+    <input type="search" id="filter_search" placeholder="" class="js_filter_search_input filter_search_input" />
+    <button class="clear_search_button js_clear_search" style="display: none;">
+        <span class="screen-reader-text">Fjern søkeord</span>
+    </button>
+</div>
+
+            <div class="search-checkbox-filter mbl">
+    <button id="js_search-checkbox-filter__button" class="search-checkbox-filter__button mbm">Avgrens søket</button>
+    <div class="search-checkbox-filter__content">
+            <fieldset>
+                 <legend class="search-checkbox-filter__title mbm search-checkbox-filter__title--advanced">Bydel </legend>
+<div class="form-element mbm">
+    <input type="checkbox" id="Arna" class="form-element__checkbox" >
+    <label for="Arna" class="form-element__label form-element__label--checkbox"><span></span> Arna </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Bergenhus" class="form-element__checkbox" >
+    <label for="Bergenhus" class="form-element__label form-element__label--checkbox"><span></span> Bergenhus </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Fana" class="form-element__checkbox" >
+    <label for="Fana" class="form-element__label form-element__label--checkbox"><span></span> Fana </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Fyllingsdalen" class="form-element__checkbox" >
+    <label for="Fyllingsdalen" class="form-element__label form-element__label--checkbox"><span></span> Fyllingsdalen </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Laksevåg" class="form-element__checkbox" >
+    <label for="Laksevåg" class="form-element__label form-element__label--checkbox"><span></span> Laksevåg </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Ytrebygda" class="form-element__checkbox" >
+    <label for="Ytrebygda" class="form-element__label form-element__label--checkbox"><span></span> Ytrebygda </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Årstad" class="form-element__checkbox" >
+    <label for="Årstad" class="form-element__label form-element__label--checkbox"><span></span> Årstad </label>
+</div>
+<div class="form-element mbml">
+    <input type="checkbox" id="Åsane" class="form-element__checkbox" >
+    <label for="Åsane" class="form-element__label form-element__label--checkbox"><span></span> Åsane </label>
+</div>
+            </fieldset>
+            <fieldset>
+                 <legend class="search-checkbox-filter__title mbm search-checkbox-filter__title--advanced">Spesialitet </legend>
+<div class="form-element mbm">
+    <input type="checkbox" id="Fuscke in enim ullamcorper" class="form-element__checkbox" >
+    <label for="Fuscke in enim ullamcorper" class="form-element__label form-element__label--checkbox"><span></span> Fuscke in enim ullamcorper </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Nulla varius ipsum en nibh" class="form-element__checkbox" >
+    <label for="Nulla varius ipsum en nibh" class="form-element__label form-element__label--checkbox"><span></span> Nulla varius ipsum en nibh </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Fuscke in enim ullamcorper" class="form-element__checkbox" >
+    <label for="Fuscke in enim ullamcorper" class="form-element__label form-element__label--checkbox"><span></span> Fuscke in enim ullamcorper </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Nulla varius ipsum en nibh" class="form-element__checkbox" >
+    <label for="Nulla varius ipsum en nibh" class="form-element__label form-element__label--checkbox"><span></span> Nulla varius ipsum en nibh </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Fuscke in enim ullamcorper" class="form-element__checkbox" >
+    <label for="Fuscke in enim ullamcorper" class="form-element__label form-element__label--checkbox"><span></span> Fuscke in enim ullamcorper </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Nulla varius ipsum en nibh" class="form-element__checkbox" >
+    <label for="Nulla varius ipsum en nibh" class="form-element__label form-element__label--checkbox"><span></span> Nulla varius ipsum en nibh </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Fuscke in enim ullamcorper" class="form-element__checkbox" >
+    <label for="Fuscke in enim ullamcorper" class="form-element__label form-element__label--checkbox"><span></span> Fuscke in enim ullamcorper </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Nulla varius ipsum en nibh" class="form-element__checkbox" >
+    <label for="Nulla varius ipsum en nibh" class="form-element__label form-element__label--checkbox"><span></span> Nulla varius ipsum en nibh </label>
+</div>
+            </fieldset>
+            <fieldset>
+                 <legend class="search-checkbox-filter__title mbm search-checkbox-filter__title--advanced">Treningstilbud </legend>
+<div class="form-element mbm">
+    <input type="checkbox" id="Fuscke in enim ullamcorper" class="form-element__checkbox" >
+    <label for="Fuscke in enim ullamcorper" class="form-element__label form-element__label--checkbox"><span></span> Fuscke in enim ullamcorper </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Nulla varius ipsum en nibh" class="form-element__checkbox" >
+    <label for="Nulla varius ipsum en nibh" class="form-element__label form-element__label--checkbox"><span></span> Nulla varius ipsum en nibh </label>
+</div>
+            </fieldset>
+        
+    </div>
+</div>
+
+        </div>
+
+        <div class="col_md_12 col_lg_8">
+                <ul class="tabs mbml">
+        <li class="tabs__tab tabs__tab--active">
+            <a href="&#x2F;patterns&#x2F;04-pages-10-tjenester-10-fysioterapi-liste&#x2F;04-pages-10-tjenester-10-fysioterapi-liste.rendered.html" title="Alfabetisk liste">Alfabetisk liste</a>
+        </li>
+        <li class="tabs__tab ">
+            <a href="&#x2F;patterns&#x2F;04-pages-10-tjenester-11-fysioterapi-kart&#x2F;04-pages-10-tjenester-11-fysioterapi-kart.rendered.html" title="Kartvisning">Kartvisning</a>
+        </li>
+</ul>
+
+                <h2 class="module_header ">
+    000 totalt
+</h2>
+
+                <div class="linkbox linkbox__small mbml">
+    <h3 class="linkbox__header">
+        <a href="#" title="Aud Hellenes Psykomotoriske fysoiterapi" class="linkbox__header-link">
+            <span class="read_more_link read_more_link--20">Aud Hellenes Psykomotoriske fysoiterapi</span>
+        </a>
+    </h3>
+    <div class="linkbox__content">
+        Starvhusgaten 2A, 5014 Bergen <br> Tlf: 951 80 625
+    </div>
+</div>
+                <div class="linkbox linkbox__small mbml">
+    <h3 class="linkbox__header">
+        <a href="#" title="Fysisk motor" class="linkbox__header-link">
+            <span class="read_more_link read_more_link--20">Fysisk motor</span>
+        </a>
+    </h3>
+    <div class="linkbox__content">
+        Starvhusgaten 2A, 5014 Bergen <br> Tlf: 951 80 625
+    </div>
+</div>
+                <div class="linkbox linkbox__small mbml">
+    <h3 class="linkbox__header">
+        <a href="#" title="Aud Hellenes Psykomotoriske fysoiterapi" class="linkbox__header-link">
+            <span class="read_more_link read_more_link--20">Aud Hellenes Psykomotoriske fysoiterapi</span>
+        </a>
+    </h3>
+    <div class="linkbox__content">
+        Starvhusgaten 2A, 5014 Bergen <br> Tlf: 951 80 625
+    </div>
+</div>
+                <div class="linkbox linkbox__small mbml">
+    <h3 class="linkbox__header">
+        <a href="#" title="Fysisk motor" class="linkbox__header-link">
+            <span class="read_more_link read_more_link--20">Fysisk motor</span>
+        </a>
+    </h3>
+    <div class="linkbox__content">
+        Starvhusgaten 2A, 5014 Bergen <br> Tlf: 951 80 625
+    </div>
+</div>
+
+        </div>
+    </div>
+</main>
+
+  <footer>
+    <div class="footer_mountain_container"><div class="mountains"></div></div>
+
+
+    <div class="chat_link_area">
+        
+        <script language="javascript" type="text/javascript">
+            ed24ChatObj = {
+                'entrypoint':'Bergen_Main'
+                ,'mainid':'A303'
+                ,'Online':'<span class="icon chat_icon"></span>Spør kommunen<span class="icon online_icon"></span>'
+                ,'Offline':'<span class="icon chat_icon"></span>Spør kommunen<span class="icon offline_icon"></span>'
+                ,'Busy':'<span class="icon chat_icon"></span>Spør kommunen<span class="icon online_icon"></span>'
+                ,'webserverAddress':'http://login.edialog24.com'
+                ,'urlToOpen':'http://login.edialog24.com/chattemplate/Bergen_Main/index.html'
+                ,'windowSettings':'width=600,height=800,status=0,scrollbars=0,titlebar=0'
+            };
+        </script>
+        <script type="text/javascript" src="https://www.bergen.kommune.no/internet/htdocs/js/eDialog24EntrypointScript3.js"></script>
+            
+        <a href="#" id="ed24DivOnline" class="chat_link js_chat_link" title="Spør kommunen"></a>
+        <a href="#" id="ed24DivOffline" class="chat_link js_chat_link" title="Spør kommunen"></a>
+        <a href="#" id="ed24DivBusy" class="chat_link js_chat_link" title="Spør kommunen"></a>
+        
+    </div>
+
+      
+    <div class="footer_link_container">
+      <div class="footer_links">
+    
+          <a href="#" title="Kontaktinformasjon" class="contact_link">
+            <span class="link_outer">
+              <span class="link_inner">
+                <span class="icon inline_icon info_icon"></span>
+                Kontaktinformasjon
+              </span>
+            </span>
+          </a>
+
+          <a href="#" title="Nettstedskart" class="sitemap_link">
+            <span class="link_outer">
+              <span class="link_inner">
+                <span class="icon inline_icon world_icon"></span>
+                Nettstedskart
+              </span>
+            </span>
+          </a>
+
+          <a href="#" title="English" class="english_link">
+            <span class="link_outer">
+              <span class="link_inner">
+                <span class="icon inline_icon english_icon"></span>
+                English
+              </span>
+            </span>
+          </a>
+
+          <a href="#" title="Presse" class="press_link">
+            <span class="link_outer">
+              <span class="link_inner">
+                <span class="icon inline_icon press_icon"></span>
+                Presse
+              </span>
+            </span>
+          </a>
+
+          <a href="#" title="For ansatte" class="intern_link">
+            <span class="link_outer">
+              <span class="link_inner">
+                <span class="icon inline_icon profile_icon"></span>
+                For ansatte
+              </span>
+            </span>
+          </a>
+
+          <a href="http://www.facebook.com/bergenkommune/" title="Facebook" class="facebook_link some_footer_link">
+          <span class="link_outer">
+            <span class="link_inner">
+              <span class="icon facebook_icon"></span>
+              <span class="some_footer_link_text">Facebook</span>              
+            </span>
+          </span>
+          </a>
+
+          <a href="http://www.twitter.com/bergenkommune/" title="Twitter" class="twitter_link some_footer_link">
+          <span class="link_outer">
+            <span class="link_inner">
+              <span class="icon twitter_icon"></span>
+              <span class="some_footer_link_text">Twitter</span>              
+            </span>
+          </span>
+          </a>
+
+          <a href="http://www.instagram.com/bergenkommune_ung/" title="Instagram" class="instagram_link some_footer_link">
+          <span class="link_outer">
+            <span class="link_inner">
+              <span class="icon instagram_icon"></span>
+              <span class="some_footer_link_text">Instagram</span>              
+            </span>
+          </span>
+          </a>
+          
+      </div>
+    </div>
+    
+    <p class="cookie_info">
+        <!-- URL: /omkommunen/kontakt-oss/article-103324 -->
+        <a href="#" title="Personvern og informasjonskapsler">Personvern og informasjonskapsler</a>
+    </p>
+      
+      
+  </footer>
+  </div>
+  <script type="text/json" id="sg-pattern-data-pages-fysioterapi-liste" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"templates-listeside-med-lenkebokser","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-lenkebokser/03-templates-20-Listesider-listeside-med-lenkebokser.rendered.html"}],"lineage":[{"lineagePattern":"templates-listeside-med-lenkebokser","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-lenkebokser/03-templates-20-Listesider-listeside-med-lenkebokser.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"tjenester"},"patternExtension":"mustache","patternName":"Fysioterapi Liste","patternPartial":"pages-fysioterapi-liste","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="pages-fysioterapi-kart" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/04-pages-10-tjenester-11-fysioterapi-kart&#x2F;04-pages-10-tjenester-11-fysioterapi-kart.rendered.html" class="patternLink" data-patternpartial="pages-fysioterapi-kart" title="Link to Pattern">
+          Fysioterapi Kart
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="pages-fysioterapi-kart" title="View Pattern Info" id="sg-pattern-extra-toggle-pages-fysioterapi-kart" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-pages-fysioterapi-kart">
+    
+  </div>
+  <div class="sg-pattern-example">
+    
+
+
+<div id="skiplink_container">
+    <div class="desktop_centered">
+        <a href="#innhold" class="skiplink">Hopp til innhold</a>
+    </div>
+</div>
+
+<!--
+Logget inn eller ikke:
+https://github.com/pattern-lab/patternlab-php/issues/304
+-->
+<header id="global_header">
+    <div class="desktop_centered">
+        
+        <div class="header_container">
+            
+            <a href="&#x2F;patterns&#x2F;04-pages-00-forside-00-forside&#x2F;04-pages-00-forside-00-forside.rendered.html" title="Gå til forsiden" class="logo" rel="home" accesskey="1">
+    <span>Bergen kommune</span>
+</a>
+<img class="share_and_print_logo" src="../../images/logo_320x320.png" alt="Logo Bergen kommune">
+
+            <a class="js_open_mobile_main_nav nav_toggle_btn" href="#">Meny<span class="icon nav_toggle_icon"></span></a>
+            
+<!--		
+            <div class="login_container">
+                <a href="&#x2F;patterns&#x2F;04-pages-15-minside-00-minside-velger&#x2F;04-pages-15-minside-00-minside-velger.rendered.html" title="Min side" class="login_link">
+                  <span class="icon login_icon"></span>
+                  <span class="text">Min side</span>
+                </a>
+            </div>
+-->
+
+            <div class="login_container">
+                <a href="&#x2F;patterns&#x2F;04-pages-15-minside-00-minside-velger&#x2F;04-pages-15-minside-00-minside-velger.rendered.html" title="Min side - Hvem representerer du?" class="login_link">
+                    <span class="icon login_icon"></span>
+                    <span class="text">Min side</span>
+                </a>
+                <span class="seperator"></span>
+                <a href="&#x2F;patterns&#x2F;04-pages-00-forside-00-forside&#x2F;04-pages-00-forside-00-forside.rendered.html" title="Logg ut" class="logout_link">
+                    <span class="icon logout_icon"></span>
+                    <span class="text">Logg ut</span>
+                </a>
+            </div>
+
+            <div class="main_search_container">
+                <form action="#">
+                    <label for="search" class="screen-reader-text">Søk:</label>
+                    <input placeholder="Hva leter du etter?" id="search" accesskey="4" class="search_input" type="search">
+                    <button><span class="icon searchglass_icon"><span class="screen-reader-text">Søk</span></span></button>
+                </form>
+            </div>
+        </div>
+        
+        <nav class="js_main_nav main_nav main_nav_collapsed">
+            <a class="js_close_mobile_main_nav hide_nav_toggle_area" href="#" title="Lukk menyen"></a>
+            <div class="nav_container">
+                <a class="js_close_mobile_main_nav close_nav_btn icon close_icon" href="#" title="Lukk menyen">Lukk menyen</a>
+                <ul class="main_nav_list">
+                    <li><a href="&#x2F;patterns&#x2F;04-pages-01-hva-skjer-00-hva-skjer&#x2F;04-pages-01-hva-skjer-00-hva-skjer.rendered.html" title="Hva skjer"><span>Hva skjer</span></a></li>
+                    <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-00-om-kommunen&#x2F;04-pages-20-navigasjon-00-om-kommunen.rendered.html" title="Om kommunen"><span>Om kommunen</span></a></li>
+                    <li class="active"><a href="&#x2F;patterns&#x2F;04-pages-10-tjenester-00-tjenester&#x2F;04-pages-10-tjenester-00-tjenester.rendered.html" title="Tjenester"><span>Tjenester</span></a></li>
+                    <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-04-politikk&#x2F;04-pages-20-navigasjon-04-politikk.rendered.html" title="Politikk"><span>Politikk</span></a></li>
+                    <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-06-ledige-stillinger&#x2F;04-pages-20-navigasjon-06-ledige-stillinger.rendered.html" title="Ledige stillinger"><span>Ledige stillinger</span></a></li>
+                </ul>
+                <ul class="secondary_nav">
+                    <li>
+                        <a href="#" title="English">
+                            <span class="icon inline_icon english_icon white"></span>
+                            English
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Presse">
+                            <span class="icon inline_icon press_icon white"></span>
+                            Presse
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Kontaktinformasjon">
+                            <span class="icon inline_icon info_icon white"></span>
+                            Kontaktinformasjon
+                        </a>
+                    </li>
+                </ul>
+                <a href="&#x2F;patterns&#x2F;04-pages-00-forside-00-forside&#x2F;04-pages-00-forside-00-forside.rendered.html" title="Logg ut" class="mobile_logout_link">
+                    <span class="icon logout_icon white"></span>
+                    <span class="text">Logg ut</span>
+                </a>
+            </div>
+        </nav>
+    
+    </div>
+</header>
+
+
+
+
+<div class="smMa desktop_centered bc_container js_breadcrumbs clearfix">
+    <div class="bc_label mobile">Gå tilbake til:</div>
+    <div class="bc_label desktop">Du er her:</div>
+    <div class="bc_list_container">
+        <ul class="bc_list">
+            
+                <li><a href="&#x2F;patterns&#x2F;04-pages-00-forside-00-forside&#x2F;04-pages-00-forside-00-forside.rendered.html" title="Forside">Forside</a></li>
+            
+                <li class="bc_last_link"><a href="&#x2F;patterns&#x2F;04-pages-10-tjenester-00-tjenester&#x2F;04-pages-10-tjenester-00-tjenester.rendered.html" title="Tjenester">Tjenester</a></li>
+            
+                <li class="bc_current">Fysioterapeuter i Bergen</li>
+            
+        </ul>
+    </div>
+</div>
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    <div class="mbm">
+        <div class="page_header ">
+    <h1>
+        Fysioterapeuter i Bergen
+    </h1>
+</div>
+    </div>
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+
+                <div id="js_filter_search" name="sok" class="filter_search_input_container ">
+    <label for="filter_search" class="filter_search_label">
+        <span class="screen-reader-text">Lorem ipsum (27 characters)</span>
+    </label>
+    <input type="search" id="filter_search" placeholder="" class="js_filter_search_input filter_search_input" />
+    <button class="clear_search_button js_clear_search" style="display: none;">
+        <span class="screen-reader-text">Fjern søkeord</span>
+    </button>
+</div>
+
+            <div class="search-checkbox-filter mbl">
+    <button id="js_search-checkbox-filter__button" class="search-checkbox-filter__button mbm">Avgrens søket</button>
+    <div class="search-checkbox-filter__content">
+            <fieldset>
+                 <legend class="search-checkbox-filter__title mbm search-checkbox-filter__title--advanced">Bydel </legend>
+<div class="form-element mbm">
+    <input type="checkbox" id="Arna" class="form-element__checkbox" >
+    <label for="Arna" class="form-element__label form-element__label--checkbox"><span></span> Arna </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Bergenhus" class="form-element__checkbox" >
+    <label for="Bergenhus" class="form-element__label form-element__label--checkbox"><span></span> Bergenhus </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Fana" class="form-element__checkbox" >
+    <label for="Fana" class="form-element__label form-element__label--checkbox"><span></span> Fana </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Fyllingsdalen" class="form-element__checkbox" >
+    <label for="Fyllingsdalen" class="form-element__label form-element__label--checkbox"><span></span> Fyllingsdalen </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Laksevåg" class="form-element__checkbox" >
+    <label for="Laksevåg" class="form-element__label form-element__label--checkbox"><span></span> Laksevåg </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Ytrebygda" class="form-element__checkbox" >
+    <label for="Ytrebygda" class="form-element__label form-element__label--checkbox"><span></span> Ytrebygda </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Årstad" class="form-element__checkbox" >
+    <label for="Årstad" class="form-element__label form-element__label--checkbox"><span></span> Årstad </label>
+</div>
+<div class="form-element mbml">
+    <input type="checkbox" id="Åsane" class="form-element__checkbox" >
+    <label for="Åsane" class="form-element__label form-element__label--checkbox"><span></span> Åsane </label>
+</div>
+            </fieldset>
+            <fieldset>
+                 <legend class="search-checkbox-filter__title mbm search-checkbox-filter__title--advanced">Spesialitet </legend>
+<div class="form-element mbm">
+    <input type="checkbox" id="Fuscke in enim ullamcorper" class="form-element__checkbox" >
+    <label for="Fuscke in enim ullamcorper" class="form-element__label form-element__label--checkbox"><span></span> Fuscke in enim ullamcorper </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Nulla varius ipsum en nibh" class="form-element__checkbox" >
+    <label for="Nulla varius ipsum en nibh" class="form-element__label form-element__label--checkbox"><span></span> Nulla varius ipsum en nibh </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Fuscke in enim ullamcorper" class="form-element__checkbox" >
+    <label for="Fuscke in enim ullamcorper" class="form-element__label form-element__label--checkbox"><span></span> Fuscke in enim ullamcorper </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Nulla varius ipsum en nibh" class="form-element__checkbox" >
+    <label for="Nulla varius ipsum en nibh" class="form-element__label form-element__label--checkbox"><span></span> Nulla varius ipsum en nibh </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Fuscke in enim ullamcorper" class="form-element__checkbox" >
+    <label for="Fuscke in enim ullamcorper" class="form-element__label form-element__label--checkbox"><span></span> Fuscke in enim ullamcorper </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Nulla varius ipsum en nibh" class="form-element__checkbox" >
+    <label for="Nulla varius ipsum en nibh" class="form-element__label form-element__label--checkbox"><span></span> Nulla varius ipsum en nibh </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Fuscke in enim ullamcorper" class="form-element__checkbox" >
+    <label for="Fuscke in enim ullamcorper" class="form-element__label form-element__label--checkbox"><span></span> Fuscke in enim ullamcorper </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Nulla varius ipsum en nibh" class="form-element__checkbox" >
+    <label for="Nulla varius ipsum en nibh" class="form-element__label form-element__label--checkbox"><span></span> Nulla varius ipsum en nibh </label>
+</div>
+            </fieldset>
+            <fieldset>
+                 <legend class="search-checkbox-filter__title mbm search-checkbox-filter__title--advanced">Treningstilbud </legend>
+<div class="form-element mbm">
+    <input type="checkbox" id="Fuscke in enim ullamcorper" class="form-element__checkbox" >
+    <label for="Fuscke in enim ullamcorper" class="form-element__label form-element__label--checkbox"><span></span> Fuscke in enim ullamcorper </label>
+</div>
+<div class="form-element mbm">
+    <input type="checkbox" id="Nulla varius ipsum en nibh" class="form-element__checkbox" >
+    <label for="Nulla varius ipsum en nibh" class="form-element__label form-element__label--checkbox"><span></span> Nulla varius ipsum en nibh </label>
+</div>
+            </fieldset>
+        
+    </div>
+</div>
+
+        </div>
+
+        <div class="col_md_12 col_lg_8">
+                <ul class="tabs mbml">
+        <li class="tabs__tab ">
+            <a href="&#x2F;patterns&#x2F;04-pages-10-tjenester-10-fysioterapi-liste&#x2F;04-pages-10-tjenester-10-fysioterapi-liste.rendered.html" title="Alfabetisk liste">Alfabetisk liste</a>
+        </li>
+        <li class="tabs__tab tabs__tab--active">
+            <a href="&#x2F;patterns&#x2F;04-pages-10-tjenester-11-fysioterapi-kart&#x2F;04-pages-10-tjenester-11-fysioterapi-kart.rendered.html" title="Kartvisning">Kartvisning</a>
+        </li>
+</ul>
+
+
+
+        </div>
+    </div>
+</main>
+
+  <footer>
+    <div class="footer_mountain_container"><div class="mountains"></div></div>
+
+
+    <div class="chat_link_area">
+        
+        <script language="javascript" type="text/javascript">
+            ed24ChatObj = {
+                'entrypoint':'Bergen_Main'
+                ,'mainid':'A303'
+                ,'Online':'<span class="icon chat_icon"></span>Spør kommunen<span class="icon online_icon"></span>'
+                ,'Offline':'<span class="icon chat_icon"></span>Spør kommunen<span class="icon offline_icon"></span>'
+                ,'Busy':'<span class="icon chat_icon"></span>Spør kommunen<span class="icon online_icon"></span>'
+                ,'webserverAddress':'http://login.edialog24.com'
+                ,'urlToOpen':'http://login.edialog24.com/chattemplate/Bergen_Main/index.html'
+                ,'windowSettings':'width=600,height=800,status=0,scrollbars=0,titlebar=0'
+            };
+        </script>
+        <script type="text/javascript" src="https://www.bergen.kommune.no/internet/htdocs/js/eDialog24EntrypointScript3.js"></script>
+            
+        <a href="#" id="ed24DivOnline" class="chat_link js_chat_link" title="Spør kommunen"></a>
+        <a href="#" id="ed24DivOffline" class="chat_link js_chat_link" title="Spør kommunen"></a>
+        <a href="#" id="ed24DivBusy" class="chat_link js_chat_link" title="Spør kommunen"></a>
+        
+    </div>
+
+      
+    <div class="footer_link_container">
+      <div class="footer_links">
+    
+          <a href="#" title="Kontaktinformasjon" class="contact_link">
+            <span class="link_outer">
+              <span class="link_inner">
+                <span class="icon inline_icon info_icon"></span>
+                Kontaktinformasjon
+              </span>
+            </span>
+          </a>
+
+          <a href="#" title="Nettstedskart" class="sitemap_link">
+            <span class="link_outer">
+              <span class="link_inner">
+                <span class="icon inline_icon world_icon"></span>
+                Nettstedskart
+              </span>
+            </span>
+          </a>
+
+          <a href="#" title="English" class="english_link">
+            <span class="link_outer">
+              <span class="link_inner">
+                <span class="icon inline_icon english_icon"></span>
+                English
+              </span>
+            </span>
+          </a>
+
+          <a href="#" title="Presse" class="press_link">
+            <span class="link_outer">
+              <span class="link_inner">
+                <span class="icon inline_icon press_icon"></span>
+                Presse
+              </span>
+            </span>
+          </a>
+
+          <a href="#" title="For ansatte" class="intern_link">
+            <span class="link_outer">
+              <span class="link_inner">
+                <span class="icon inline_icon profile_icon"></span>
+                For ansatte
+              </span>
+            </span>
+          </a>
+
+          <a href="http://www.facebook.com/bergenkommune/" title="Facebook" class="facebook_link some_footer_link">
+          <span class="link_outer">
+            <span class="link_inner">
+              <span class="icon facebook_icon"></span>
+              <span class="some_footer_link_text">Facebook</span>              
+            </span>
+          </span>
+          </a>
+
+          <a href="http://www.twitter.com/bergenkommune/" title="Twitter" class="twitter_link some_footer_link">
+          <span class="link_outer">
+            <span class="link_inner">
+              <span class="icon twitter_icon"></span>
+              <span class="some_footer_link_text">Twitter</span>              
+            </span>
+          </span>
+          </a>
+
+          <a href="http://www.instagram.com/bergenkommune_ung/" title="Instagram" class="instagram_link some_footer_link">
+          <span class="link_outer">
+            <span class="link_inner">
+              <span class="icon instagram_icon"></span>
+              <span class="some_footer_link_text">Instagram</span>              
+            </span>
+          </span>
+          </a>
+          
+      </div>
+    </div>
+    
+    <p class="cookie_info">
+        <!-- URL: /omkommunen/kontakt-oss/article-103324 -->
+        <a href="#" title="Personvern og informasjonskapsler">Personvern og informasjonskapsler</a>
+    </p>
+      
+      
+  </footer>
+  </div>
+  <script type="text/json" id="sg-pattern-data-pages-fysioterapi-kart" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"templates-listeside-med-lenkebokser","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-lenkebokser/03-templates-20-Listesider-listeside-med-lenkebokser.rendered.html"}],"lineage":[{"lineagePattern":"templates-listeside-med-lenkebokser","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-lenkebokser/03-templates-20-Listesider-listeside-med-lenkebokser.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"tjenester"},"patternExtension":"mustache","patternName":"Fysioterapi Kart","patternPartial":"pages-fysioterapi-kart","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="viewall-pages-minside" class="sg-pattern-category">
@@ -36278,423 +37069,6 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-header-varianter","lineagePath":"../../patterns/02-organisms-00-global-_00-header-varianter/02-organisms-00-global-_00-header-varianter.rendered.html"},{"lineagePattern":"organisms-brodsmuler","lineagePath":"../../patterns/02-organisms-00-global-02-brodsmuler/02-organisms-00-global-02-brodsmuler.rendered.html"},{"lineagePattern":"molecules-sideoverskrift-h1","lineagePath":"../../patterns/01-molecules-00-overskrifter-00-sideoverskrift-h1/01-molecules-00-overskrifter-00-sideoverskrift-h1.rendered.html"},{"lineagePattern":"molecules-org-meny","lineagePath":"../../patterns/01-molecules-navigasjon-org-meny/01-molecules-navigasjon-org-meny.rendered.html"},{"lineagePattern":"organisms-modul-med-overskrift","lineagePath":"../../patterns/02-organisms-40-annet-06-modul-med-overskrift/02-organisms-40-annet-06-modul-med-overskrift.rendered.html"},{"lineagePattern":"molecules-tout","lineagePath":"../../patterns/01-molecules-02-innhold-30-tout/01-molecules-02-innhold-30-tout.rendered.html"},{"lineagePattern":"molecules-tout-spesial","lineagePath":"../../patterns/01-molecules-02-innhold-31-tout-spesial/01-molecules-02-innhold-31-tout-spesial.rendered.html"},{"lineagePattern":"molecules-tout-arbeidsplaner","lineagePath":"../../patterns/01-molecules-02-innhold-31-tout-arbeidsplaner/01-molecules-02-innhold-31-tout-arbeidsplaner.rendered.html"},{"lineagePattern":"molecules-tout-skoleruten","lineagePath":"../../patterns/01-molecules-02-innhold-32-tout-skoleruten/01-molecules-02-innhold-32-tout-skoleruten.rendered.html"},{"lineagePattern":"organisms-service-snarvei","lineagePath":"../../patterns/02-organisms-40-annet-30-service-snarvei/02-organisms-40-annet-30-service-snarvei.rendered.html"},{"lineagePattern":"molecules-tout-luftkvalitet","lineagePath":"../../patterns/01-molecules-02-innhold-33-tout-luftkvalitet/01-molecules-02-innhold-33-tout-luftkvalitet.rendered.html"},{"lineagePattern":"organisms-footer","lineagePath":"../../patterns/02-organisms-00-global-01-footer/02-organisms-00-global-01-footer.rendered.html"}],"lineage":[{"lineagePattern":"organisms-header-varianter","lineagePath":"../../patterns/02-organisms-00-global-_00-header-varianter/02-organisms-00-global-_00-header-varianter.rendered.html"},{"lineagePattern":"organisms-brodsmuler","lineagePath":"../../patterns/02-organisms-00-global-02-brodsmuler/02-organisms-00-global-02-brodsmuler.rendered.html"},{"lineagePattern":"molecules-sideoverskrift-h1","lineagePath":"../../patterns/01-molecules-00-overskrifter-00-sideoverskrift-h1/01-molecules-00-overskrifter-00-sideoverskrift-h1.rendered.html"},{"lineagePattern":"molecules-org-meny","lineagePath":"../../patterns/01-molecules-navigasjon-org-meny/01-molecules-navigasjon-org-meny.rendered.html"},{"lineagePattern":"organisms-modul-med-overskrift","lineagePath":"../../patterns/02-organisms-40-annet-06-modul-med-overskrift/02-organisms-40-annet-06-modul-med-overskrift.rendered.html"},{"lineagePattern":"molecules-tout","lineagePath":"../../patterns/01-molecules-02-innhold-30-tout/01-molecules-02-innhold-30-tout.rendered.html"},{"lineagePattern":"molecules-tout-spesial","lineagePath":"../../patterns/01-molecules-02-innhold-31-tout-spesial/01-molecules-02-innhold-31-tout-spesial.rendered.html"},{"lineagePattern":"molecules-tout-arbeidsplaner","lineagePath":"../../patterns/01-molecules-02-innhold-31-tout-arbeidsplaner/01-molecules-02-innhold-31-tout-arbeidsplaner.rendered.html"},{"lineagePattern":"molecules-tout-skoleruten","lineagePath":"../../patterns/01-molecules-02-innhold-32-tout-skoleruten/01-molecules-02-innhold-32-tout-skoleruten.rendered.html"},{"lineagePattern":"organisms-service-snarvei","lineagePath":"../../patterns/02-organisms-40-annet-30-service-snarvei/02-organisms-40-annet-30-service-snarvei.rendered.html"},{"lineagePattern":"molecules-tout-luftkvalitet","lineagePath":"../../patterns/01-molecules-02-innhold-33-tout-luftkvalitet/01-molecules-02-innhold-33-tout-luftkvalitet.rendered.html"},{"lineagePattern":"organisms-footer","lineagePath":"../../patterns/02-organisms-00-global-01-footer/02-organisms-00-global-01-footer.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"diverse"},"patternExtension":"mustache","patternName":"Etjeneste Eksempler","patternPartial":"pages-etjeneste-eksempler","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
-<div id="pages-fysioterapi" class="sg-pattern">
-  <div class="sg-pattern-head">
-    <h3 class="sg-pattern-title">
-      <a href="../../patterns/04-pages-99-diverse-fysioterapi&#x2F;04-pages-99-diverse-fysioterapi.rendered.html" class="patternLink" data-patternpartial="pages-fysioterapi" title="Link to Pattern">
-          Fysioterapi
-      </a>
-    </h3>
-    <div class="sg-pattern-breadcrumb"></div>
-    <a href="#" data-patternpartial="pages-fysioterapi" title="View Pattern Info" id="sg-pattern-extra-toggle-pages-fysioterapi" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-  </div>
-  <div class="sg-pattern-extra" id="sg-pattern-extra-pages-fysioterapi">
-    
-  </div>
-  <div class="sg-pattern-example">
-    
-
-
-<div id="skiplink_container">
-    <div class="desktop_centered">
-        <a href="#innhold" class="skiplink">Hopp til innhold</a>
-    </div>
-</div>
-
-<!--
-Logget inn eller ikke:
-https://github.com/pattern-lab/patternlab-php/issues/304
--->
-<header id="global_header">
-    <div class="desktop_centered">
-        
-        <div class="header_container">
-            
-            <a href="&#x2F;patterns&#x2F;04-pages-00-forside-00-forside&#x2F;04-pages-00-forside-00-forside.rendered.html" title="Gå til forsiden" class="logo" rel="home" accesskey="1">
-    <span>Bergen kommune</span>
-</a>
-<img class="share_and_print_logo" src="../../images/logo_320x320.png" alt="Logo Bergen kommune">
-
-            <a class="js_open_mobile_main_nav nav_toggle_btn" href="#">Meny<span class="icon nav_toggle_icon"></span></a>
-            
-<!--		
-            <div class="login_container">
-                <a href="&#x2F;patterns&#x2F;04-pages-15-minside-00-minside-velger&#x2F;04-pages-15-minside-00-minside-velger.rendered.html" title="Min side" class="login_link">
-                  <span class="icon login_icon"></span>
-                  <span class="text">Min side</span>
-                </a>
-            </div>
--->
-
-            <div class="login_container">
-                <a href="&#x2F;patterns&#x2F;04-pages-15-minside-00-minside-velger&#x2F;04-pages-15-minside-00-minside-velger.rendered.html" title="Min side - Hvem representerer du?" class="login_link">
-                    <span class="icon login_icon"></span>
-                    <span class="text">Min side</span>
-                </a>
-                <span class="seperator"></span>
-                <a href="&#x2F;patterns&#x2F;04-pages-00-forside-00-forside&#x2F;04-pages-00-forside-00-forside.rendered.html" title="Logg ut" class="logout_link">
-                    <span class="icon logout_icon"></span>
-                    <span class="text">Logg ut</span>
-                </a>
-            </div>
-
-            <div class="main_search_container">
-                <form action="#">
-                    <label for="search" class="screen-reader-text">Søk:</label>
-                    <input placeholder="Hva leter du etter?" id="search" accesskey="4" class="search_input" type="search">
-                    <button><span class="icon searchglass_icon"><span class="screen-reader-text">Søk</span></span></button>
-                </form>
-            </div>
-        </div>
-        
-        <nav class="js_main_nav main_nav main_nav_collapsed">
-            <a class="js_close_mobile_main_nav hide_nav_toggle_area" href="#" title="Lukk menyen"></a>
-            <div class="nav_container">
-                <a class="js_close_mobile_main_nav close_nav_btn icon close_icon" href="#" title="Lukk menyen">Lukk menyen</a>
-                <ul class="main_nav_list">
-                    <li><a href="&#x2F;patterns&#x2F;04-pages-01-hva-skjer-00-hva-skjer&#x2F;04-pages-01-hva-skjer-00-hva-skjer.rendered.html" title="Hva skjer"><span>Hva skjer</span></a></li>
-                    <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-00-om-kommunen&#x2F;04-pages-20-navigasjon-00-om-kommunen.rendered.html" title="Om kommunen"><span>Om kommunen</span></a></li>
-                    <li class="active"><a href="&#x2F;patterns&#x2F;04-pages-10-tjenester-00-tjenester&#x2F;04-pages-10-tjenester-00-tjenester.rendered.html" title="Tjenester"><span>Tjenester</span></a></li>
-                    <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-04-politikk&#x2F;04-pages-20-navigasjon-04-politikk.rendered.html" title="Politikk"><span>Politikk</span></a></li>
-                    <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-06-ledige-stillinger&#x2F;04-pages-20-navigasjon-06-ledige-stillinger.rendered.html" title="Ledige stillinger"><span>Ledige stillinger</span></a></li>
-                </ul>
-                <ul class="secondary_nav">
-                    <li>
-                        <a href="#" title="English">
-                            <span class="icon inline_icon english_icon white"></span>
-                            English
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Presse">
-                            <span class="icon inline_icon press_icon white"></span>
-                            Presse
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Kontaktinformasjon">
-                            <span class="icon inline_icon info_icon white"></span>
-                            Kontaktinformasjon
-                        </a>
-                    </li>
-                </ul>
-                <a href="&#x2F;patterns&#x2F;04-pages-00-forside-00-forside&#x2F;04-pages-00-forside-00-forside.rendered.html" title="Logg ut" class="mobile_logout_link">
-                    <span class="icon logout_icon white"></span>
-                    <span class="text">Logg ut</span>
-                </a>
-            </div>
-        </nav>
-    
-    </div>
-</header>
-
-
-
-
-<div class="smMa desktop_centered bc_container js_breadcrumbs clearfix">
-    <div class="bc_label mobile">Gå tilbake til:</div>
-    <div class="bc_label desktop">Du er her:</div>
-    <div class="bc_list_container">
-        <ul class="bc_list">
-            
-                <li><a href="&#x2F;patterns&#x2F;04-pages-00-forside-00-forside&#x2F;04-pages-00-forside-00-forside.rendered.html" title="Forside">Forside</a></li>
-            
-                <li class="bc_last_link"><a href="&#x2F;patterns&#x2F;04-pages-10-tjenester-00-tjenester&#x2F;04-pages-10-tjenester-00-tjenester.rendered.html" title="Tjenester">Tjenester</a></li>
-            
-                <li class="bc_current">Fysioterapeuter i Bergen</li>
-            
-        </ul>
-    </div>
-</div>
-<main id="innhold" tabindex="-1" class="smMa desktop_centered">
-
-    <div class="mbm">
-        <div class="page_header ">
-    <h1>
-        Fysioterapeuter i Bergen
-    </h1>
-</div>
-    </div>
-
-    <div class="row">
-        <div class="col_md_12 col_lg_4">
-
-                <div id="js_filter_search" name="sok" class="filter_search_input_container ">
-    <label for="filter_search" class="filter_search_label">
-        <span class="screen-reader-text">Lorem ipsum (27 characters)</span>
-    </label>
-    <input type="search" id="filter_search" placeholder="" class="js_filter_search_input filter_search_input" />
-    <button class="clear_search_button js_clear_search" style="display: none;">
-        <span class="screen-reader-text">Fjern søkeord</span>
-    </button>
-</div>
-
-            <div class="search-checkbox-filter mbl">
-    <button id="js_search-checkbox-filter__button" class="search-checkbox-filter__button mbm">Avgrens søket</button>
-    <div class="search-checkbox-filter__content">
-            <fieldset>
-                 <legend class="search-checkbox-filter__title mbm search-checkbox-filter__title--advanced">Bydel </legend>
-<div class="form-element mbm">
-    <input type="checkbox" id="Arna" class="form-element__checkbox" >
-    <label for="Arna" class="form-element__label form-element__label--checkbox"><span></span> Arna </label>
-</div>
-<div class="form-element mbm">
-    <input type="checkbox" id="Bergenhus" class="form-element__checkbox" >
-    <label for="Bergenhus" class="form-element__label form-element__label--checkbox"><span></span> Bergenhus </label>
-</div>
-<div class="form-element mbm">
-    <input type="checkbox" id="Fana" class="form-element__checkbox" >
-    <label for="Fana" class="form-element__label form-element__label--checkbox"><span></span> Fana </label>
-</div>
-<div class="form-element mbm">
-    <input type="checkbox" id="Fyllingsdalen" class="form-element__checkbox" >
-    <label for="Fyllingsdalen" class="form-element__label form-element__label--checkbox"><span></span> Fyllingsdalen </label>
-</div>
-<div class="form-element mbm">
-    <input type="checkbox" id="Laksevåg" class="form-element__checkbox" >
-    <label for="Laksevåg" class="form-element__label form-element__label--checkbox"><span></span> Laksevåg </label>
-</div>
-<div class="form-element mbm">
-    <input type="checkbox" id="Ytrebygda" class="form-element__checkbox" >
-    <label for="Ytrebygda" class="form-element__label form-element__label--checkbox"><span></span> Ytrebygda </label>
-</div>
-<div class="form-element mbm">
-    <input type="checkbox" id="Årstad" class="form-element__checkbox" >
-    <label for="Årstad" class="form-element__label form-element__label--checkbox"><span></span> Årstad </label>
-</div>
-<div class="form-element mbml">
-    <input type="checkbox" id="Åsane" class="form-element__checkbox" >
-    <label for="Åsane" class="form-element__label form-element__label--checkbox"><span></span> Åsane </label>
-</div>
-            </fieldset>
-            <fieldset>
-                 <legend class="search-checkbox-filter__title mbm search-checkbox-filter__title--advanced">Spesialitet </legend>
-<div class="form-element mbm">
-    <input type="checkbox" id="Fuscke in enim ullamcorper" class="form-element__checkbox" >
-    <label for="Fuscke in enim ullamcorper" class="form-element__label form-element__label--checkbox"><span></span> Fuscke in enim ullamcorper </label>
-</div>
-<div class="form-element mbm">
-    <input type="checkbox" id="Nulla varius ipsum en nibh" class="form-element__checkbox" >
-    <label for="Nulla varius ipsum en nibh" class="form-element__label form-element__label--checkbox"><span></span> Nulla varius ipsum en nibh </label>
-</div>
-<div class="form-element mbm">
-    <input type="checkbox" id="Fuscke in enim ullamcorper" class="form-element__checkbox" >
-    <label for="Fuscke in enim ullamcorper" class="form-element__label form-element__label--checkbox"><span></span> Fuscke in enim ullamcorper </label>
-</div>
-<div class="form-element mbm">
-    <input type="checkbox" id="Nulla varius ipsum en nibh" class="form-element__checkbox" >
-    <label for="Nulla varius ipsum en nibh" class="form-element__label form-element__label--checkbox"><span></span> Nulla varius ipsum en nibh </label>
-</div>
-<div class="form-element mbm">
-    <input type="checkbox" id="Fuscke in enim ullamcorper" class="form-element__checkbox" >
-    <label for="Fuscke in enim ullamcorper" class="form-element__label form-element__label--checkbox"><span></span> Fuscke in enim ullamcorper </label>
-</div>
-<div class="form-element mbm">
-    <input type="checkbox" id="Nulla varius ipsum en nibh" class="form-element__checkbox" >
-    <label for="Nulla varius ipsum en nibh" class="form-element__label form-element__label--checkbox"><span></span> Nulla varius ipsum en nibh </label>
-</div>
-<div class="form-element mbm">
-    <input type="checkbox" id="Fuscke in enim ullamcorper" class="form-element__checkbox" >
-    <label for="Fuscke in enim ullamcorper" class="form-element__label form-element__label--checkbox"><span></span> Fuscke in enim ullamcorper </label>
-</div>
-<div class="form-element mbm">
-    <input type="checkbox" id="Nulla varius ipsum en nibh" class="form-element__checkbox" >
-    <label for="Nulla varius ipsum en nibh" class="form-element__label form-element__label--checkbox"><span></span> Nulla varius ipsum en nibh </label>
-</div>
-            </fieldset>
-            <fieldset>
-                 <legend class="search-checkbox-filter__title mbm search-checkbox-filter__title--advanced">Treningstilbud </legend>
-<div class="form-element mbm">
-    <input type="checkbox" id="Fuscke in enim ullamcorper" class="form-element__checkbox" >
-    <label for="Fuscke in enim ullamcorper" class="form-element__label form-element__label--checkbox"><span></span> Fuscke in enim ullamcorper </label>
-</div>
-<div class="form-element mbm">
-    <input type="checkbox" id="Nulla varius ipsum en nibh" class="form-element__checkbox" >
-    <label for="Nulla varius ipsum en nibh" class="form-element__label form-element__label--checkbox"><span></span> Nulla varius ipsum en nibh </label>
-</div>
-            </fieldset>
-        
-    </div>
-</div>
-
-        </div>
-
-        <div class="col_md_12 col_lg_8">
-                <ul class="tabs mbml">
-        <li class="tabs__tab tabs__tab--active">
-            <a href=""> Alfabetisk liste </a>
-        </li>
-        <li class="tabs__tab ">
-            <a href=""> Kartvisning </a>
-        </li>
-</ul>
-
-            <h2 class="module_header ">
-    Lorem ipsum dolor sit (37 characters)
-</h2>
-
-                <div class="linkbox linkbox__small mbml">
-    <h3 class="linkbox__header">
-        <a href="#" title="Aud Hellenes Psykomotoriske fysoiterapi" class="linkbox__header-link">
-            <span class="read_more_link read_more_link--20">Aud Hellenes Psykomotoriske fysoiterapi</span>
-        </a>
-    </h3>
-    <div class="linkbox__content">
-        Starvhusgaten 2A, 5014 Bergen <br> Tlf: 951 80 625
-    </div>
-</div>
-                <div class="linkbox linkbox__small mbml">
-    <h3 class="linkbox__header">
-        <a href="#" title="Fysisk motor" class="linkbox__header-link">
-            <span class="read_more_link read_more_link--20">Fysisk motor</span>
-        </a>
-    </h3>
-    <div class="linkbox__content">
-        Starvhusgaten 2A, 5014 Bergen <br> Tlf: 951 80 625
-    </div>
-</div>
-                <div class="linkbox linkbox__small mbml">
-    <h3 class="linkbox__header">
-        <a href="#" title="Aud Hellenes Psykomotoriske fysoiterapi" class="linkbox__header-link">
-            <span class="read_more_link read_more_link--20">Aud Hellenes Psykomotoriske fysoiterapi</span>
-        </a>
-    </h3>
-    <div class="linkbox__content">
-        Starvhusgaten 2A, 5014 Bergen <br> Tlf: 951 80 625
-    </div>
-</div>
-                <div class="linkbox linkbox__small mbml">
-    <h3 class="linkbox__header">
-        <a href="#" title="Fysisk motor" class="linkbox__header-link">
-            <span class="read_more_link read_more_link--20">Fysisk motor</span>
-        </a>
-    </h3>
-    <div class="linkbox__content">
-        Starvhusgaten 2A, 5014 Bergen <br> Tlf: 951 80 625
-    </div>
-</div>
-
-        </div>
-    </div>
-</main>
-
-  <footer>
-    <div class="footer_mountain_container"><div class="mountains"></div></div>
-
-
-    <div class="chat_link_area">
-        
-        <script language="javascript" type="text/javascript">
-            ed24ChatObj = {
-                'entrypoint':'Bergen_Main'
-                ,'mainid':'A303'
-                ,'Online':'<span class="icon chat_icon"></span>Spør kommunen<span class="icon online_icon"></span>'
-                ,'Offline':'<span class="icon chat_icon"></span>Spør kommunen<span class="icon offline_icon"></span>'
-                ,'Busy':'<span class="icon chat_icon"></span>Spør kommunen<span class="icon online_icon"></span>'
-                ,'webserverAddress':'http://login.edialog24.com'
-                ,'urlToOpen':'http://login.edialog24.com/chattemplate/Bergen_Main/index.html'
-                ,'windowSettings':'width=600,height=800,status=0,scrollbars=0,titlebar=0'
-            };
-        </script>
-        <script type="text/javascript" src="https://www.bergen.kommune.no/internet/htdocs/js/eDialog24EntrypointScript3.js"></script>
-            
-        <a href="#" id="ed24DivOnline" class="chat_link js_chat_link" title="Spør kommunen"></a>
-        <a href="#" id="ed24DivOffline" class="chat_link js_chat_link" title="Spør kommunen"></a>
-        <a href="#" id="ed24DivBusy" class="chat_link js_chat_link" title="Spør kommunen"></a>
-        
-    </div>
-
-      
-    <div class="footer_link_container">
-      <div class="footer_links">
-    
-          <a href="#" title="Kontaktinformasjon" class="contact_link">
-            <span class="link_outer">
-              <span class="link_inner">
-                <span class="icon inline_icon info_icon"></span>
-                Kontaktinformasjon
-              </span>
-            </span>
-          </a>
-
-          <a href="#" title="Nettstedskart" class="sitemap_link">
-            <span class="link_outer">
-              <span class="link_inner">
-                <span class="icon inline_icon world_icon"></span>
-                Nettstedskart
-              </span>
-            </span>
-          </a>
-
-          <a href="#" title="English" class="english_link">
-            <span class="link_outer">
-              <span class="link_inner">
-                <span class="icon inline_icon english_icon"></span>
-                English
-              </span>
-            </span>
-          </a>
-
-          <a href="#" title="Presse" class="press_link">
-            <span class="link_outer">
-              <span class="link_inner">
-                <span class="icon inline_icon press_icon"></span>
-                Presse
-              </span>
-            </span>
-          </a>
-
-          <a href="#" title="For ansatte" class="intern_link">
-            <span class="link_outer">
-              <span class="link_inner">
-                <span class="icon inline_icon profile_icon"></span>
-                For ansatte
-              </span>
-            </span>
-          </a>
-
-          <a href="http://www.facebook.com/bergenkommune/" title="Facebook" class="facebook_link some_footer_link">
-          <span class="link_outer">
-            <span class="link_inner">
-              <span class="icon facebook_icon"></span>
-              <span class="some_footer_link_text">Facebook</span>              
-            </span>
-          </span>
-          </a>
-
-          <a href="http://www.twitter.com/bergenkommune/" title="Twitter" class="twitter_link some_footer_link">
-          <span class="link_outer">
-            <span class="link_inner">
-              <span class="icon twitter_icon"></span>
-              <span class="some_footer_link_text">Twitter</span>              
-            </span>
-          </span>
-          </a>
-
-          <a href="http://www.instagram.com/bergenkommune_ung/" title="Instagram" class="instagram_link some_footer_link">
-          <span class="link_outer">
-            <span class="link_inner">
-              <span class="icon instagram_icon"></span>
-              <span class="some_footer_link_text">Instagram</span>              
-            </span>
-          </span>
-          </a>
-          
-      </div>
-    </div>
-    
-    <p class="cookie_info">
-        <!-- URL: /omkommunen/kontakt-oss/article-103324 -->
-        <a href="#" title="Personvern og informasjonskapsler">Personvern og informasjonskapsler</a>
-    </p>
-      
-      
-  </footer>
-  </div>
-  <script type="text/json" id="sg-pattern-data-pages-fysioterapi" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"templates-listeside-med-lenkebokser","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-lenkebokser/03-templates-20-Listesider-listeside-med-lenkebokser.rendered.html"}],"lineage":[{"lineagePattern":"templates-listeside-med-lenkebokser","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-lenkebokser/03-templates-20-Listesider-listeside-med-lenkebokser.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"diverse"},"patternExtension":"mustache","patternName":"Fysioterapi","patternPartial":"pages-fysioterapi","patternState":"","patternEngineName":"mustache","extraOutput":{}}
-  </script>
-</div><!--end .sg-pattern-->
   </div> <!--end #sg-patterns-->
 
 </div><!--end .sg-main-->
@@ -36737,10 +37111,10 @@ https://github.com/pattern-lab/patternlab-php/issues/304
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1505134107453">
+<script id="pl-js-polyfill-insert-1505135429690">
   (function() {
     if (self != top) {
-      var cb = '1505134107453';
+      var cb = '1505135429690';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -36750,10 +37124,10 @@ https://github.com/pattern-lab/patternlab-php/issues/304
   })();
 </script>
 
-<script id="pl-js-insert-1505134107453">
+<script id="pl-js-insert-1505135429690">
   (function() {
     if (self != top) {
-      var cb = '1505134107453';
+      var cb = '1505135429690';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

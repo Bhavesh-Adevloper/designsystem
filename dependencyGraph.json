@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1505134110181,
+  "timestamp": 1505135432267,
   "graph": {
     "options": {
       "directed": true,
@@ -1140,8 +1140,8 @@
         "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-99-diverse-fysioterapi/04-pages-99-diverse-fysioterapi.rendered.html",
-          "lineagePattern": "pages-fysioterapi"
+          "lineagePath": "../../patterns/04-pages-10-tjenester-11-fysioterapi-kart/04-pages-10-tjenester-11-fysioterapi-kart.rendered.html",
+          "lineagePattern": "pages-fysioterapi-kart"
         }
       },
       {
@@ -1354,6 +1354,18 @@
       },
       {
         "v": "04-pages/10-tjenester/02-tjenestebeskrivelse.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/10-tjenester/10-fysioterapi-liste.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/10-tjenester/11-fysioterapi-kart.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -1624,12 +1636,6 @@
       },
       {
         "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/99-diverse/fysioterapi.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -3465,6 +3471,16 @@
         "value": {}
       },
       {
+        "v": "04-pages/10-tjenester/10-fysioterapi-liste.mustache",
+        "w": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/10-tjenester/11-fysioterapi-kart.mustache",
+        "w": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "value": {}
+      },
+      {
         "v": "04-pages/15-minside/00-minside-velger.mustache",
         "w": "02-organisms/00-global/_06-header-6.mustache",
         "value": {}
@@ -4232,11 +4248,6 @@
       {
         "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/99-diverse/fysioterapi.mustache",
-        "w": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
         "value": {}
       },
       {
