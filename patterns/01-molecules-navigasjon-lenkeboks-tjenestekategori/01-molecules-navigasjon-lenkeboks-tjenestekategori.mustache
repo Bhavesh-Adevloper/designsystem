@@ -1,0 +1,15 @@
+<div class="linkbox linkbox__servicecat {{ styleModifier }}">
+    <h2 class="linkbox__header">
+        <a href="{{ url }}" title="{{ tittel }}" class="linkbox__header-link">
+            {{ tittel }}
+        </a>
+    </h2>
+    <div class="linkbox__content">
+        <a href="{{ url }}" title="{{ tittel }}" id="{{ tjenesteIkon }}" class="linkbox__icon service_icon"></a>
+        <ul class="linkbox__cat_list">
+            {{# linkliste }}<li>
+                <a href="{{ url }}" title="{{ tittel }}">
+                    {{ tittel }}</a></li>{{/ linkliste }}
+        </ul>
+    </div>
+</div>

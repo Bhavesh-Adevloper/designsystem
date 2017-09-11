@@ -20,20 +20,24 @@
         <div class="col_md_12 col_lg_8">
 
             <div class="row_no_clearfix service_link_container equal_height_container mbj">
-                {{# navigasjonStor }}
-                {{> molecules-navigasjonsboks-stor:col_md_6|col_lg_6|clear_col_md_6|clear_col_lg_6 }}
-                {{/ navigasjonStor }}
+                {{# storeTjenestekategorier }}
+                    <div class="col_md_6 col_lg_6 clear_col_md_6 clear_col_lg_6 equal_height_item">
+                        {{> molecules-lenkeboks-tjenestekategori:mbm--mob|mbl }}
+                    </div>
+                {{/ storeTjenestekategorier }}
 
-                {{# navigasjonLiten }}
-                {{> molecules-navigasjonsboks-liten }}
-                {{/ navigasjonLiten }}
+                {{# smaTjenestekategorier }}
+                    <div class="col_md_6 col_lg_6 clear_col_md_6 clear_col_lg_6">
+                        {{> atoms-tjenestekategori-knapp:mbm--mob|mbm }}
+                    </div>
+                {{/ smaTjenestekategorier }}
             </div>
-
+            
         </div>
     </div>
 
     {{# feilmelding }}
-    {{> organisms-service-snarvei }}
+    {{> organisms-service-snarvei:mbj }}
     {{/ feilmelding }}
         
 </main>

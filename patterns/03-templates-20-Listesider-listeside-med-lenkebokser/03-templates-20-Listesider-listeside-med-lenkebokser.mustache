@@ -1,0 +1,34 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    <div class="mbm">
+        {{> molecules-sideoverskrift-h1(sidetittel: "{{ sidetittel }}") }}
+    </div>
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+
+            {{# searchFilter }}
+                {{> atoms-filterboks }}
+            {{/ searchFilter }}
+
+            {{> molecules-sokefilter-avkrysningsbokser }}
+
+        </div>
+
+        <div class="col_md_12 col_lg_8">
+            {{# tabs }}
+                {{> molecules-tabs:mbml }}
+            {{/ tabs }}
+
+            {{> molecules-moduloverskrift-h2 }}
+
+            {{# lenkeboksListe }}
+                {{> molecules-lenkeboks-liten:mbml }}
+            {{/ lenkeboksListe }}
+
+        </div>
+    </div>
+</main>
+{{> organisms-footer }}

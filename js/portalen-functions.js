@@ -300,7 +300,8 @@ function selectYear() {
 function filterSearch() {
     if ( document.getElementById( "js_filter_search" ) != null ) {
         // Focus
-        $(".js_filter_search_input").focus();
+        // Kommenterer dette ut i patternlab:
+        // $(".js_filter_search_input").focus();
         // Do filter
         $(".js_filter_search_input").on("keyup click input", function () {
             if (this.value.length > 0) {
@@ -348,10 +349,18 @@ function clearFilter() {
     });
 }
 
-
-
-
-
+//Kun funksjonalitet i PL, Angular ellers
+function openSearchFilter(){
+    $("#js_search-checkbox-filter__button").click( function() {
+        if ( $(this).parent().hasClass("search-checkbox-filter--open")) {
+            $(this).parent().removeClass("search-checkbox-filter--open");
+            return false;
+        } else {
+            $(this).parent().addClass("search-checkbox-filter--open")
+            return false;
+        }
+    });
+}
 
 
 $(document).ready(function () {
@@ -367,6 +376,7 @@ $(document).ready(function () {
     horisontalScroll();
     filterSearch();
     toggleAccordion();
+    openSearchFilter();
 });
 
 $(window).bind("load", function() {

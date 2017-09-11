@@ -131,9 +131,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                 </div>
             </div>
 
-            <div class="col_md_12 col_lg_6 clear_left  mbm">
+            <div class="col_md_12 col_lg_6 clear_left mbm mbm">
 
-<div id="js_filter_search" name="sok" class="filter_search_input_container ">
+<div id="js_filter_search" name="sok" class="filter_search_input_container mbm">
     <label for="filter_search" class="filter_search_label">
         <span class="screen-reader-text">Søk</span>
     </label>
@@ -145,18 +145,20 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 
 
     <div class="form-element mbl">
-    <label class="form-element__label form-element__label--dropdown-icon"> <div class="form-element__label form-element__label--dropdown">Utvalg</div>
-        <select class="form-element__dropdown">
-            <option class="form-element__dropdown-item"></option>
-            <option class="form-element__dropdown-item" value="Utvalg 1">Utvalg 1</option><option class="form-element__dropdown-item" value="Utvalg 1">Utvalg 1</option><option class="form-element__dropdown-item" value="Kjempelangt utvalg">Kjempelangt utvalg</option><option class="form-element__dropdown-item" value="Et enda lengre kjempelangt utvalg">Et enda lengre kjempelangt utvalg</option>
+    <label for="Utvalg" class="form-element__label form-element__label--dropdown-icon form-element__label--dropdown-icon--without-label ">
+            <div class="screen-reader-text ">Utvalg</div>
+        <select id="Utvalg" name="Utvalg" class="form-element__dropdown">
+            
+            <option value="Alle utvalg">Alle utvalg</option><option value="Utvalg 1">Utvalg 1</option><option value="Utvalg 1">Utvalg 1</option><option value="Kjempelangt utvalg">Kjempelangt utvalg</option><option value="Et enda lengre kjempelangt utvalg">Et enda lengre kjempelangt utvalg</option>
         </select>
     </label>
 </div>
     <div class="form-element mbl">
-    <label class="form-element__label form-element__label--dropdown-icon"> <div class="form-element__label form-element__label--dropdown">År</div>
-        <select class="form-element__dropdown">
-            <option class="form-element__dropdown-item"></option>
-            <option class="form-element__dropdown-item" value="2017">2017</option><option class="form-element__dropdown-item" value="2016">2016</option><option class="form-element__dropdown-item" value="2015">2015</option><option class="form-element__dropdown-item" value="2014">2014</option><option class="form-element__dropdown-item" value="2013">2013</option><option class="form-element__dropdown-item" value="2012">2012</option><option class="form-element__dropdown-item" value="2011">2011</option><option class="form-element__dropdown-item" value="2010">2010</option>
+    <label for="År" class="form-element__label form-element__label--dropdown-icon form-element__label--dropdown-icon--without-label ">
+            <div class="screen-reader-text ">År</div>
+        <select id="År" name="År" class="form-element__dropdown">
+            
+            <option value="Alle år">Alle år</option><option value="2017">2017</option>
         </select>
     </label>
 </div>

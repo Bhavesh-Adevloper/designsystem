@@ -129,9 +129,10 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     </button>
 </div>
                 <div class="search-checkbox-filter mbl">
-    <span class="search-checkbox-filter__title mbm">Avgrens søket:</span>
-    <button class="search-checkbox-filter__button mbm">Avgrens søket</button>
+    <button id="js_search-checkbox-filter__button" class="search-checkbox-filter__button mbm">Avgrens søket</button>
     <div class="search-checkbox-filter__content">
+            <fieldset>
+                 <legend class="search-checkbox-filter__title mbm ">legend tittel </legend>
 <div class="form-element mbm">
     <input type="checkbox" id="not-checked" class="form-element__checkbox" >
     <label for="not-checked" class="form-element__label form-element__label--checkbox"><span></span> Ikke krysset av </label>
@@ -140,6 +141,18 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     <input type="checkbox" id="checked" class="form-element__checkbox" checked>
     <label for="checked" class="form-element__label form-element__label--checkbox"><span></span> Krysset av </label>
 </div>
+            </fieldset>
+         <fieldset>
+    <legend class=" ">legend tittel</legend>
+    <div class="form-element mbm">
+        <input class="form-element__radio" type="radio" name="legend tittel" id="radio-checked" checked >
+        <label class="form-element__label" for="radio-checked">Krysset av</label>
+    </div>
+    <div class="form-element mbm">
+        <input class="form-element__radio" type="radio" name="legend tittel" id="radio-not-checked"  >
+        <label class="form-element__label" for="radio-not-checked">Ikke krysset av</label>
+    </div>
+</fieldset> 
     </div>
 </div>
             </div>

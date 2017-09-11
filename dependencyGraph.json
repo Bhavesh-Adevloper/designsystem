@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1504625095457,
+  "timestamp": 1505134110181,
   "graph": {
     "options": {
       "directed": true,
@@ -77,7 +77,7 @@
         }
       },
       {
-        "v": "00-atoms/07-tekst/04-les-mer-lenker.mustache",
+        "v": "00-atoms/07-tekst/04-lenker-med-piler.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -134,6 +134,14 @@
         "v": "00-atoms/15-knapper/10-knapper.mustache",
         "value": {
           "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/15-knapper/12-tjenestekategori-knapp.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-08-Navigasjon-20-tjenester/03-templates-08-Navigasjon-20-tjenester.rendered.html",
+          "lineagePattern": "templates-tjenester"
         }
       },
       {
@@ -209,7 +217,9 @@
       {
         "v": "00-atoms/20-skjema-element/13-radioknapp.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-15-skjema-sokefilter-avkrysningsbokser/01-molecules-15-skjema-sokefilter-avkrysningsbokser.rendered.html",
+          "lineagePattern": "molecules-sokefilter-avkrysningsbokser"
         }
       },
       {
@@ -426,8 +436,8 @@
         "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-20-Listesider-03-listeside-sas-med-filterboks/03-templates-20-Listesider-03-listeside-sas-med-filterboks.rendered.html",
-          "lineagePattern": "templates-listeside-sas-med-filterboks"
+          "lineagePath": "../../patterns/03-templates-20-Listesider-listeside-med-lenkebokser/03-templates-20-Listesider-listeside-med-lenkebokser.rendered.html",
+          "lineagePattern": "templates-listeside-med-lenkebokser"
         }
       },
       {
@@ -575,11 +585,27 @@
         }
       },
       {
+        "v": "01-molecules/navigasjon/lenkeboks-liten.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-20-Listesider-listeside-med-lenkebokser/03-templates-20-Listesider-listeside-med-lenkebokser.rendered.html",
+          "lineagePattern": "templates-listeside-med-lenkebokser"
+        }
+      },
+      {
         "v": "01-molecules/navigasjon/lenkeboks-med-lenker.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/02-organisms-40-annet-71-forsidetjenester/02-organisms-40-annet-71-forsidetjenester.rendered.html",
           "lineagePattern": "organisms-forsidetjenester"
+        }
+      },
+      {
+        "v": "01-molecules/navigasjon/lenkeboks-tjenestekategori.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-08-Navigasjon-20-tjenester/03-templates-08-Navigasjon-20-tjenester.rendered.html",
+          "lineagePattern": "templates-tjenester"
         }
       },
       {
@@ -591,27 +617,19 @@
         }
       },
       {
-        "v": "01-molecules/navigasjon/navigasjonsboks-liten.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-08-Navigasjon-20-tjenester/03-templates-08-Navigasjon-20-tjenester.rendered.html",
-          "lineagePattern": "templates-tjenester"
-        }
-      },
-      {
-        "v": "01-molecules/navigasjon/navigasjonsboks-stor.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-08-Navigasjon-20-tjenester/03-templates-08-Navigasjon-20-tjenester.rendered.html",
-          "lineagePattern": "templates-tjenester"
-        }
-      },
-      {
         "v": "01-molecules/navigasjon/org-meny.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
           "lineagePattern": "pages-etjeneste-eksempler"
+        }
+      },
+      {
+        "v": "01-molecules/navigasjon/tabs.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-20-Listesider-listeside-med-lenkebokser/03-templates-20-Listesider-listeside-med-lenkebokser.rendered.html",
+          "lineagePattern": "templates-listeside-med-lenkebokser"
         }
       },
       {
@@ -1119,6 +1137,14 @@
         }
       },
       {
+        "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-99-diverse-fysioterapi/04-pages-99-diverse-fysioterapi.rendered.html",
+          "lineagePattern": "pages-fysioterapi"
+        }
+      },
+      {
         "v": "03-templates/20-Listesider/medlemmer.mustache",
         "value": {
           "compileState": "clean",
@@ -1603,6 +1629,12 @@
         }
       },
       {
+        "v": "04-pages/99-diverse/fysioterapi.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "04-pages/vr.mustache",
         "value": {
           "compileState": "clean"
@@ -1623,7 +1655,7 @@
     ],
     "edges": [
       {
-        "v": "00-atoms/07-tekst/04-les-mer-lenker.mustache",
+        "v": "00-atoms/07-tekst/04-lenker-med-piler.mustache",
         "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {}
       },
@@ -1645,6 +1677,11 @@
       {
         "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser.mustache",
         "w": "00-atoms/20-skjema-element/12-avkryssingsboks.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser.mustache",
+        "w": "00-atoms/20-skjema-element/13-radioknapp.mustache",
         "value": {}
       },
       {
@@ -2579,12 +2616,12 @@
       },
       {
         "v": "03-templates/08-Navigasjon/20-tjenester.mustache",
-        "w": "01-molecules/navigasjon/navigasjonsboks-stor.mustache",
+        "w": "01-molecules/navigasjon/lenkeboks-tjenestekategori.mustache",
         "value": {}
       },
       {
         "v": "03-templates/08-Navigasjon/20-tjenester.mustache",
-        "w": "01-molecules/navigasjon/navigasjonsboks-liten.mustache",
+        "w": "00-atoms/15-knapper/12-tjenestekategori-knapp.mustache",
         "value": {}
       },
       {
@@ -3039,6 +3076,51 @@
       },
       {
         "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "w": "00-atoms/20-skjema-element/05-filterboks.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "w": "01-molecules/15-skjema/sokefilter-avkrysningsbokser.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "w": "01-molecules/navigasjon/tabs.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "w": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "w": "01-molecules/navigasjon/lenkeboks-liten.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -4150,6 +4232,11 @@
       {
         "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/fysioterapi.mustache",
+        "w": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
         "value": {}
       },
       {
