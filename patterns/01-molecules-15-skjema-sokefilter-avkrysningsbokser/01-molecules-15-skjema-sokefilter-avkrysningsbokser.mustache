@@ -1,12 +1,25 @@
-<div class="search-checkbox-filter mbl">
+{{#avkryssingsbokser}}
+<div class="search-checkbox-filter {{styleModifier}}">
     <button id="js_search-checkbox-filter__button" class="search-checkbox-filter__button mbm">Avgrens søket</button>
     <div class="search-checkbox-filter__content">
-        {{#avkryssingsbokser}}
-            <fieldset>
-                 <legend class="search-checkbox-filter__title mbm {{styleModifier}}">{{legend}} </legend>
-                 {{> atoms-avkryssingsboks}}
-            </fieldset>
-        {{/avkryssingsbokser}}
-        {{#radioknapper}} {{> atoms-radioknapp}} {{/radioknapper}}
+        <fieldset>
+             <legend class="search-checkbox-filter__title mbm ">{{legend}} </legend>
+             {{> atoms-avkryssingsboks}}
+        </fieldset>
     </div>
 </div>
+{{/avkryssingsbokser}}
+
+{{#radioknapper}}
+<div class="search-checkbox-filter {{styleModifier}}">
+    <button id="js_search-checkbox-filter__button" class="search-checkbox-filter__button mbm">Avgrens søket</button>
+    <div class="search-checkbox-filter__content">
+        <div class="search-checkbox-filter__content">
+            <fieldset>
+                <legend class="search-checkbox-filter__title mbm ">{{legend}} </legend>
+                 {{> atoms-radioknapp}}
+            </fieldset>
+        </div>
+    </div>
+</div>
+{{/radioknapper}}

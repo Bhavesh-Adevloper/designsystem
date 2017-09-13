@@ -8,22 +8,33 @@
         
     <div class="row">
         <div class="col_md_12 col_lg_8">
+            
+            {{# tabs }}
+                {{> molecules-tabs:mbl }}
+            {{/ tabs }}
 
             {{# searchFilter }}
                 {{> atoms-filterboks }}
             {{/ searchFilter }}
-            
-            {{# ellerVisAlle }}
-            <p class="filter_shortcut_container">
-                Eller vis alle: <a href="#" title="skoler">skoler</a>, <a href="#" title="barnehager">barnehager</a>, <a href="#" title="sykehjem">sykehjem</a>
-            </p>
-            {{/ ellerVisAlle }}
 
             <p class="js_empty_filter_search empty_filter_search" style="display: none;">
                 <strong>Ingenting funnet</strong>
             </p>
 
+            {{# antallOverskrift }}
+                {{> molecules-moduloverskrift-h2:mbs }}
+            {{/ antallOverskrift }}
+
             {{> molecules-link-liste-filter-soek:mbj }}
+            
+            <p>Last inn flere</p>
+            
+        </div>
+        <div class="col_md_12 col_lg_4">
+        
+            {{# touts }}
+                {{> molecules-tout }}
+            {{/ touts }}
             
         </div>
     </div>

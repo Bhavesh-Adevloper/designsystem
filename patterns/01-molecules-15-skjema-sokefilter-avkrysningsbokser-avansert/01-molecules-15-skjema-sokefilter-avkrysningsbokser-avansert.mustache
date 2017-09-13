@@ -1,0 +1,17 @@
+<div class="search-checkbox-filter {{styleModifier}}">
+    <button id="js_search-checkbox-filter__button" class="search-checkbox-filter__button mbm">Avgrens søket</button>
+    <div class="search-checkbox-filter__content ">
+        {{#avkryssingsbokser}}
+            <fieldset>
+                <legend class="search-checkbox-filter__title search-checkbox-filter__title--advanced">{{legend}} </legend>
+                {{> atoms-avkryssingsboks}}
+            </fieldset>
+        {{/avkryssingsbokser}}
+        {{#radioknapper}}
+            <fieldset>
+                <legend class="search-checkbox-filter__title search-checkbox-filter__title--advanced">{{legend}} </legend>
+                {{> atoms-radioknapp}}
+            </fieldset>
+        {{/radioknapper}}
+    </div>
+</div>

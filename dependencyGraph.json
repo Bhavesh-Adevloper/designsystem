@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1505217310959,
+  "timestamp": 1505303445351,
   "graph": {
     "options": {
       "directed": true,
@@ -427,17 +427,31 @@
         }
       },
       {
+        "v": "01-molecules/15-skjema/30-betalingsinformasjon-kemneren.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "01-molecules/15-skjema/kontaktskjema-med-captcha.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser.mustache",
+        "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser-avansert.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-20-Listesider-listeside-med-lenkebokser/03-templates-20-Listesider-listeside-med-lenkebokser.rendered.html",
           "lineagePattern": "templates-listeside-med-lenkebokser"
+        }
+      },
+      {
+        "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-20-Listesider-03-listeside-sas-med-filterboks/03-templates-20-Listesider-03-listeside-sas-med-filterboks.rendered.html",
+          "lineagePattern": "templates-listeside-sas-med-filterboks"
         }
       },
       {
@@ -1129,10 +1143,18 @@
         }
       },
       {
+        "v": "03-templates/20-Listesider/avdelinger-organisatorisk.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-20-navigasjon-32-avdelinger-organisatorisk/04-pages-20-navigasjon-32-avdelinger-organisatorisk.rendered.html",
+          "lineagePattern": "pages-avdelinger-organisatorisk"
+        }
+      },
+      {
         "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-20-navigasjon-30-avdelinger/04-pages-20-navigasjon-30-avdelinger.rendered.html",
+          "lineagePath": "../../patterns/04-pages-20-navigasjon-31-avdelinger/04-pages-20-navigasjon-31-avdelinger.rendered.html",
           "lineagePattern": "pages-avdelinger"
         }
       },
@@ -1533,7 +1555,13 @@
         }
       },
       {
-        "v": "04-pages/20-navigasjon/30-avdelinger.mustache",
+        "v": "04-pages/20-navigasjon/31-avdelinger.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/20-navigasjon/32-avdelinger-organisatorisk.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -1678,6 +1706,16 @@
       {
         "v": "01-molecules/15-skjema/kontaktskjema-med-captcha.mustache",
         "w": "00-atoms/20-skjema-element/12-tekstomrade.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser-avansert.mustache",
+        "w": "00-atoms/20-skjema-element/12-avkryssingsboks.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser-avansert.mustache",
+        "w": "00-atoms/20-skjema-element/13-radioknapp.mustache",
         "value": {}
       },
       {
@@ -3056,6 +3094,36 @@
         "value": {}
       },
       {
+        "v": "03-templates/20-Listesider/avdelinger-organisatorisk.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/avdelinger-organisatorisk.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/avdelinger-organisatorisk.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/avdelinger-organisatorisk.mustache",
+        "w": "01-molecules/navigasjon/tabs.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/avdelinger-organisatorisk.mustache",
+        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/avdelinger-organisatorisk.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
         "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
@@ -3072,12 +3140,27 @@
       },
       {
         "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
+        "w": "01-molecules/navigasjon/tabs.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
         "w": "00-atoms/20-skjema-element/05-filterboks.mustache",
         "value": {}
       },
       {
         "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
+        "w": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
         "w": "01-molecules/lister/06-link-liste-filter-soek.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
+        "w": "01-molecules/02-innhold/30-tout.mustache",
         "value": {}
       },
       {
@@ -3107,7 +3190,7 @@
       },
       {
         "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
-        "w": "01-molecules/15-skjema/sokefilter-avkrysningsbokser.mustache",
+        "w": "01-molecules/15-skjema/sokefilter-avkrysningsbokser-avansert.mustache",
         "value": {}
       },
       {
@@ -3981,8 +4064,13 @@
         "value": {}
       },
       {
-        "v": "04-pages/20-navigasjon/30-avdelinger.mustache",
+        "v": "04-pages/20-navigasjon/31-avdelinger.mustache",
         "w": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/20-navigasjon/32-avdelinger-organisatorisk.mustache",
+        "w": "03-templates/20-Listesider/avdelinger-organisatorisk.mustache",
         "value": {}
       },
       {
