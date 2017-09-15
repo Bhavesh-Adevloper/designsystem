@@ -7,6 +7,11 @@
     </div>
 
     <div class="row">
+        <div class="col_md_12 col_lg_8 float_change">
+            {{# tabs }}
+                {{> molecules-tabs:mbml }}
+            {{/ tabs }}
+        </div>
         <div class="col_md_12 col_lg_4">
 
             {{# searchFilter }}
@@ -16,11 +21,7 @@
             {{> molecules-sokefilter-avkrysningsbokser-avansert }}
 
         </div>
-
         <div class="col_md_12 col_lg_8">
-            {{# tabs }}
-                {{> molecules-tabs:mbml }}
-            {{/ tabs }}
 
             {{# antallOverskrift }}
                 {{> molecules-moduloverskrift-h2 }}
