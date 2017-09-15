@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1505472889511,
+  "timestamp": 1505482907603,
   "graph": {
     "options": {
       "directed": true,
@@ -191,7 +191,7 @@
         }
       },
       {
-        "v": "00-atoms/20-skjema-element/11-tekstfelt.mustache",
+        "v": "00-atoms/20-skjema-element/08-tekstfelt.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/01-molecules-15-skjema-kontaktskjema-med-captcha/01-molecules-15-skjema-kontaktskjema-med-captcha.rendered.html",
@@ -199,7 +199,21 @@
         }
       },
       {
-        "v": "00-atoms/20-skjema-element/12-avkryssingsboks.mustache",
+        "v": "00-atoms/20-skjema-element/09-tekstomrade.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-15-skjema-kontaktskjema-med-captcha/01-molecules-15-skjema-kontaktskjema-med-captcha.rendered.html",
+          "lineagePattern": "molecules-kontaktskjema-med-captcha"
+        }
+      },
+      {
+        "v": "00-atoms/20-skjema-element/10-nummerfelt.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/01-molecules-15-skjema-sokefilter-avkrysningsbokser/01-molecules-15-skjema-sokefilter-avkrysningsbokser.rendered.html",
@@ -207,15 +221,7 @@
         }
       },
       {
-        "v": "00-atoms/20-skjema-element/12-tekstomrade.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-15-skjema-kontaktskjema-med-captcha/01-molecules-15-skjema-kontaktskjema-med-captcha.rendered.html",
-          "lineagePattern": "molecules-kontaktskjema-med-captcha"
-        }
-      },
-      {
-        "v": "00-atoms/20-skjema-element/13-radioknapp.mustache",
+        "v": "00-atoms/20-skjema-element/14-radioknapp.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/01-molecules-15-skjema-sokefilter-avkrysningsbokser/01-molecules-15-skjema-sokefilter-avkrysningsbokser.rendered.html",
@@ -300,6 +306,20 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-10-Innholdssider-tjenestebeskrivelse/03-templates-10-Innholdssider-tjenestebeskrivelse.rendered.html",
           "lineagePattern": "templates-tjenestebeskrivelse"
+        }
+      },
+      {
+        "v": "01-molecules/02-innhold/03-godkjent.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse.rendered.html",
+          "lineagePattern": "pages-kemneren-betalingsbekreftelse"
+        }
+      },
+      {
+        "v": "01-molecules/02-innhold/04-feil.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -427,9 +447,11 @@
         }
       },
       {
-        "v": "01-molecules/15-skjema/30-betalingsinformasjon-kemneren.mustache",
+        "v": "01-molecules/15-skjema/30-kemner-betalingsinformasjon.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-10-tjenester-21-kemneren-betalingsinformasjon/04-pages-10-tjenester-21-kemneren-betalingsinformasjon.rendered.html",
+          "lineagePattern": "pages-kemneren-betalingsinformasjon"
         }
       },
       {
@@ -685,6 +707,14 @@
         }
       },
       {
+        "v": "01-molecules/tabeller/kemner-faktura.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse.rendered.html",
+          "lineagePattern": "pages-kemneren-betalingsbekreftelse"
+        }
+      },
+      {
         "v": "02-organisms/00-global/00-header.mustache",
         "value": {
           "compileState": "clean",
@@ -752,8 +782,8 @@
         "v": "02-organisms/00-global/_03-header-3.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-10-tjenester-01-tjenestekategori/04-pages-10-tjenester-01-tjenestekategori.rendered.html",
-          "lineagePattern": "pages-tjenestekategori"
+          "lineagePath": "../../patterns/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse.rendered.html",
+          "lineagePattern": "pages-kemneren-betalingsbekreftelse"
         }
       },
       {
@@ -1393,6 +1423,18 @@
         }
       },
       {
+        "v": "04-pages/10-tjenester/21-kemneren-betalingsinformasjon.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/10-tjenester/22-kemneren-betalingsbekreftelse.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "04-pages/15-minside/00-minside-velger.mustache",
         "value": {
           "compileState": "clean"
@@ -1695,7 +1737,7 @@
       },
       {
         "v": "01-molecules/15-skjema/kontaktskjema-med-captcha.mustache",
-        "w": "00-atoms/20-skjema-element/11-tekstfelt.mustache",
+        "w": "00-atoms/20-skjema-element/08-tekstfelt.mustache",
         "value": {}
       },
       {
@@ -1705,27 +1747,27 @@
       },
       {
         "v": "01-molecules/15-skjema/kontaktskjema-med-captcha.mustache",
-        "w": "00-atoms/20-skjema-element/12-tekstomrade.mustache",
+        "w": "00-atoms/20-skjema-element/09-tekstomrade.mustache",
         "value": {}
       },
       {
         "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser-avansert.mustache",
-        "w": "00-atoms/20-skjema-element/12-avkryssingsboks.mustache",
+        "w": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
         "value": {}
       },
       {
         "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser-avansert.mustache",
-        "w": "00-atoms/20-skjema-element/13-radioknapp.mustache",
+        "w": "00-atoms/20-skjema-element/14-radioknapp.mustache",
         "value": {}
       },
       {
         "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser.mustache",
-        "w": "00-atoms/20-skjema-element/12-avkryssingsboks.mustache",
+        "w": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
         "value": {}
       },
       {
         "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser.mustache",
-        "w": "00-atoms/20-skjema-element/13-radioknapp.mustache",
+        "w": "00-atoms/20-skjema-element/14-radioknapp.mustache",
         "value": {}
       },
       {
@@ -3561,6 +3603,51 @@
       {
         "v": "04-pages/10-tjenester/11-fysioterapi-kart.mustache",
         "w": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/10-tjenester/21-kemneren-betalingsinformasjon.mustache",
+        "w": "02-organisms/00-global/_03-header-3.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/10-tjenester/21-kemneren-betalingsinformasjon.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/10-tjenester/21-kemneren-betalingsinformasjon.mustache",
+        "w": "01-molecules/15-skjema/30-kemner-betalingsinformasjon.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/10-tjenester/21-kemneren-betalingsinformasjon.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/10-tjenester/22-kemneren-betalingsbekreftelse.mustache",
+        "w": "02-organisms/00-global/_03-header-3.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/10-tjenester/22-kemneren-betalingsbekreftelse.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/10-tjenester/22-kemneren-betalingsbekreftelse.mustache",
+        "w": "01-molecules/02-innhold/03-godkjent.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/10-tjenester/22-kemneren-betalingsbekreftelse.mustache",
+        "w": "01-molecules/tabeller/kemner-faktura.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/10-tjenester/22-kemneren-betalingsbekreftelse.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {

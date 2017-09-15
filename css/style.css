@@ -3,8 +3,8 @@
 Name: Portalen style
 URI: https://www.bergen.kommune.no/
 */
-.svg-icon-arrow-down, .form-element__label--dropdown-icon::after, .svg-icon-bluearrow-down, .search-checkbox-filter__button::before, .svg-icon-checkmark, .form-element__checkbox:checked + label span::before, .svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after, .svg-icon-small-grey-searchglass, .filter_search_input_container .filter_search_label::after {
-  background: url("../images/gulp-sprite.svg") no-repeat; }
+.svg-icon-arrow-down, .form-element__label--dropdown-icon::after, .svg-icon-bluearrow-down, .search-checkbox-filter__button::before, .svg-icon-checkmark, .form-element__checkbox:checked + label span::before, .svg-icon-green-check, .notice--approved::before, .svg-icon-red-x-mark, .notice--error::before, .svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after, .svg-icon-small-grey-searchglass, .filter_search_input_container .filter_search_label::after {
+  background: url("../../images/gulp-sprite.svg") no-repeat; }
 
 .svg-icon-arrow-down, .form-element__label--dropdown-icon::after {
   background-position: 0 0;
@@ -12,17 +12,27 @@ URI: https://www.bergen.kommune.no/
   height: 12px; }
 
 .svg-icon-bluearrow-down, .search-checkbox-filter__button::before {
-  background-position: 21.568627450980394% 13.186813186813186%;
+  background-position: 9.90990990990991% 5.687203791469194%;
   width: 22px;
   height: 12px; }
 
 .svg-icon-checkmark, .form-element__checkbox:checked + label span::before {
-  background-position: 40.74074074074074% 27.272727272727273%;
+  background-position: 19.29824561403509% 11.538461538461538%;
   width: 16px;
   height: 15px; }
 
+.svg-icon-green-check, .notice--approved::before {
+  background-position: 32.608695652173914% 23.926380368098158%;
+  width: 60px;
+  height: 60px; }
+
+.svg-icon-red-x-mark, .notice--error::before {
+  background-position: 65.21739130434783% 60.736196319018404%;
+  width: 60px;
+  height: 60px; }
+
 .svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after {
-  background-position: 65.21739130434783% 54.929577464788736%;
+  background-position: 84.90566037735849% 83.24607329842932%;
   width: 32px;
   height: 32px; }
 
@@ -4723,6 +4733,74 @@ footer {
     background-image: url("../images/blue_list_style_image_large.svg");
     background-position: right 18px; }
 
+.notice {
+  position: relative;
+  padding: 63px 21px 7px;
+  padding: 3.9375rem 1.3125rem 0.4375rem;
+  border-radius: 0.1875rem;
+  box-sizing: content-box; }
+  .notice:before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    top: 0.6875rem;
+    left: 0px;
+    left: 0rem;
+    -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+            transform: scale(0.5); }
+  .notice--error {
+    border: 2px solid #cc0000;
+    border: 0.125rem solid #cc0000; }
+    .notice--error::before {
+      content: '';
+      display: inline-block;
+      margin: 0 0 3px 1px; }
+  .notice--approved {
+    border: 2px solid #15ab29;
+    border: 0.125rem solid #15ab29;
+    background-color: rgba(21, 171, 41, 0.03); }
+    .notice--approved::before {
+      content: '';
+      display: inline-block;
+      margin: 0 0 3px 1px; }
+  .notice__content {
+    *zoom: 1;
+    max-width: 600px;
+    max-width: 37.5rem;
+    margin-bottom: 7px;
+    margin-bottom: 0.4375rem; }
+    .notice__content:before, .notice__content:after {
+      content: "";
+      display: table;
+      line-height: 0; }
+    .notice__content:after {
+      clear: both; }
+    .notice__content h1, .notice__content h2, .notice__content h3, .notice__content h4, .notice__content h5, .notice__content h6 {
+      margin-top: 0; }
+    .notice__content a {
+      text-decoration: underline; }
+  @media (min-width: 700px) {
+    .notice {
+      padding-top: 21px;
+      padding-top: 1.3125rem;
+      padding-left: 116px;
+      padding-left: 7.25rem;
+      min-height: 88px;
+      min-height: 5.5rem;
+      margin-top: 0; }
+      .notice:before {
+        top: 25px;
+        top: 1.5625rem;
+        left: 26px;
+        left: 1.625rem;
+        -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+                transform: scale(1); }
+      .notice .notice__content p, .notice .notice__content ul {
+        margin-bottom: 14px;
+        margin-bottom: 0.875rem; } }
+
 .servicecat_button {
   margin-top: 0;
   font-size: 24px;
@@ -4870,6 +4948,14 @@ footer {
     margin-bottom: 0.625rem;
     padding: 0 0 5px 0;
     padding: 0 0 0.3125rem 0; }
+  .flex-table--nowrap .flex-table__desktop-headerarea {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 0; }
   .flex-table--column-border {
     font-size: 16px; }
     .flex-table--column-border .flex-table__desktop-header {
@@ -5074,6 +5160,11 @@ footer {
         padding: 0;
         border-bottom: 1px solid #eee1c0;
         border-bottom: 0.0625rem solid #eee1c0; }
+      .flex-table__row--no-border {
+        border: none; }
+      .flex-table__row--double-border {
+        border-bottom: 2px solid #eee1c0;
+        border-bottom: 0.125rem solid #eee1c0; }
     .flex-table__cell {
       padding: 13px 10px 12px 0;
       padding: 0.8125rem 0.625rem 0.75rem 0;
@@ -5143,7 +5234,8 @@ footer {
     .form-element__helptext--error {
       color: #cc0000;
       font-size: 17px;
-      font-size: 1.0625rem; }
+      font-size: 1.0625rem;
+      margin-top: 6px; }
   .form-element__textfield {
     color: #3b65a3;
     width: 100%;
@@ -5180,14 +5272,23 @@ footer {
     text-indent: 4px;
     box-shadow: 0 1px 2px #e0e0e0 inset;
     box-shadow: 0 0.0625rem 0.125rem #e0e0e0 inset; }
+    .form-element__number--without-spinner {
+      -moz-appearance: textfield !important; }
+      .form-element__number--without-spinner::-webkit-inner-spin-button, .form-element__number--without-spinner::-webkit-outer-spin-button {
+        -webkit-appearance: none !important;
+        margin: 0 !important;
+        -moz-appearance: textfield !important; }
+      .form-element__number--without-spinner::-ms-clear {
+        display: none; }
   .form-element__checkbox {
     box-shadow: 0 1px 2px #e0e0e0 inset;
     box-shadow: 0 0.0625rem 0.125rem #e0e0e0 inset; }
     .form-element__checkbox:focus + label {
       outline: 3px solid #f0c646; }
   .form-element__checkbox,
-  .form-element__checkbox input:not(checked) {
-    opacity: 0;
+  .form-element__checkbox input:not(checked),
+  .form-element__checkbox input[disabled] {
+    opacity: 0 !important;
     position: absolute; }
   .form-element__checkbox + label span,
   .form-element__checkbox input:not(checked) + label {
@@ -5211,6 +5312,14 @@ footer {
       content: '';
       display: inline-block;
       margin: 0 0 3px 1px; }
+  .form-element__checkbox:disabled {
+    cursor: not-allowed; }
+    .form-element__checkbox:disabled + label span {
+      border: 1px solid #777777;
+      cursor: not-allowed; }
+    .form-element__checkbox:disabled + .form-element__label {
+      color: #777777;
+      cursor: not-allowed; }
   .form-element__dropdown {
     background-color: #fff;
     background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
@@ -5538,23 +5647,26 @@ footer {
       padding: 0.1875rem 0.4375rem 0.6875rem 4.625rem; } }
 
 .payment__kid .form-element__number {
-  max-width: 247px;
+  max-width: 350px;
   display: block; }
 
-.payment__kid span {
+.payment__kid .payment__kid-text {
   color: #777777;
   font-style: italic;
   font-size: 17px;
-  font-size: 1.0625rem; }
+  font-size: 1.0625rem;
+  margin-bottom: 6px; }
 
 .payment__amount .form-element__number {
-  max-width: 88px;
-  margin-right: 4px; }
+  max-width: 92px;
+  margin-right: 4px;
+  text-align: right; }
   .payment__amount .form-element__number:last-child {
-    max-width: 44px; }
+    max-width: 52px;
+    text-align: left; }
 
 .payment__email .form-element__textfield {
-  max-width: 300px; }
+  max-width: 530px; }
 
 .search-checkbox-filter {
   display: block;
@@ -8973,8 +9085,8 @@ a.itslearning_link {
       padding-top: 9px;
       padding-top: 0.5625rem; } }
 
-.svg-icon-arrow-down, .form-element__label--dropdown-icon::after, .svg-icon-bluearrow-down, .search-checkbox-filter__button::before, .svg-icon-checkmark, .form-element__checkbox:checked + label span::before, .svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after, .svg-icon-small-grey-searchglass, .filter_search_input_container .filter_search_label::after {
-  background: url("../images/gulp-sprite.svg") no-repeat; }
+.svg-icon-arrow-down, .form-element__label--dropdown-icon::after, .svg-icon-bluearrow-down, .search-checkbox-filter__button::before, .svg-icon-checkmark, .form-element__checkbox:checked + label span::before, .svg-icon-green-check, .notice--approved::before, .svg-icon-red-x-mark, .notice--error::before, .svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after, .svg-icon-small-grey-searchglass, .filter_search_input_container .filter_search_label::after {
+  background: url("../../images/gulp-sprite.svg") no-repeat; }
 
 .svg-icon-arrow-down, .form-element__label--dropdown-icon::after {
   background-position: 0 0;
@@ -8982,17 +9094,27 @@ a.itslearning_link {
   height: 12px; }
 
 .svg-icon-bluearrow-down, .search-checkbox-filter__button::before {
-  background-position: 21.568627450980394% 13.186813186813186%;
+  background-position: 9.90990990990991% 5.687203791469194%;
   width: 22px;
   height: 12px; }
 
 .svg-icon-checkmark, .form-element__checkbox:checked + label span::before {
-  background-position: 40.74074074074074% 27.272727272727273%;
+  background-position: 19.29824561403509% 11.538461538461538%;
   width: 16px;
   height: 15px; }
 
+.svg-icon-green-check, .notice--approved::before {
+  background-position: 32.608695652173914% 23.926380368098158%;
+  width: 60px;
+  height: 60px; }
+
+.svg-icon-red-x-mark, .notice--error::before {
+  background-position: 65.21739130434783% 60.736196319018404%;
+  width: 60px;
+  height: 60px; }
+
 .svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after {
-  background-position: 65.21739130434783% 54.929577464788736%;
+  background-position: 84.90566037735849% 83.24607329842932%;
   width: 32px;
   height: 32px; }
 
