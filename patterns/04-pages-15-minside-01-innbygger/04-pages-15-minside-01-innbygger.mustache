@@ -50,7 +50,9 @@
 
 
                 {{> molecules-moduloverskrift-h2-med-lenke:mbs(url: "{{ link.pages-lonnsslipper }}", tittel: "Lønnsslipper") }}
-                {{> molecules-vedlegg-liste }}
+                {{# lonnsslipper }}
+                {{> molecules-fil-liste:mbj }}
+                {{/ lonnsslipper }}
                 {{# visFlereLonnsslipper }}
                 {{> molecules-minside-les-mer }}
                 {{/ visFlereLonnsslipper }}

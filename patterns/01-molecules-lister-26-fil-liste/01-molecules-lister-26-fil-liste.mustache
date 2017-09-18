@@ -1,0 +1,14 @@
+<ul class="file-link-list{{# dato }} file-link-list--with-date{{/ dato }} {{ styleModifier }}">
+    {{# filListe }}
+        <li>
+            <a href="{{ url }}" title="{{ tittel }}" class="file-link" target="_blank">
+                <span class="file-icon {{ fileType }}"></span>
+                <span class="file-title">{{ tittel }}</span>
+                {{# fileInfo }}
+                    <span class="file-info">{{ fileInfo }}</span>
+                {{/ fileInfo }}
+            </a>
+            {{# dato }}<span class="date">{{ dato }}</span>{{/ dato }}
+        </li>
+    {{/ filListe }}
+</ul>

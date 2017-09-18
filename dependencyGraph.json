@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1505482907603,
+  "timestamp": 1505736840672,
   "graph": {
     "options": {
       "directed": true,
@@ -557,11 +557,11 @@
         }
       },
       {
-        "v": "01-molecules/lister/26-vedlegg-liste.mustache",
+        "v": "01-molecules/lister/26-fil-liste.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-15-minside-01-innbygger/04-pages-15-minside-01-innbygger.rendered.html",
-          "lineagePattern": "pages-innbygger"
+          "lineagePath": "../../patterns/04-pages-15-minside-30-lonnsslipper/04-pages-15-minside-30-lonnsslipper.rendered.html",
+          "lineagePattern": "pages-lonnsslipper"
         }
       },
       {
@@ -3737,7 +3737,7 @@
       },
       {
         "v": "04-pages/15-minside/01-innbygger.mustache",
-        "w": "01-molecules/lister/26-vedlegg-liste.mustache",
+        "w": "01-molecules/lister/26-fil-liste.mustache",
         "value": {}
       },
       {
@@ -4018,6 +4018,11 @@
       {
         "v": "04-pages/15-minside/30-lonnsslipper.mustache",
         "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/30-lonnsslipper.mustache",
+        "w": "01-molecules/lister/26-fil-liste.mustache",
         "value": {}
       },
       {
