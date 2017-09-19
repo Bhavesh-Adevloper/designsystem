@@ -3,7 +3,13 @@
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
 
     <div class="mbxl">
-        {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ sidetittel }}") }}
+        {{# sideoverskriftH1 }}
+            {{> molecules-sideoverskrift-h1(sidetittel: "{{ sidetittel }}") }}
+        {{/ sideoverskriftH1 }}
+
+        {{# sideoverskriftH2 }}
+            {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ sidetittel }}") }}
+        {{/ sideoverskriftH2 }}
     </div>
         
     <div class="row">
@@ -26,9 +32,13 @@
                 <strong>Ingenting funnet</strong>
             </p>
 
-            {{# resultatListen }}
+            {{# resultatLenkeListen }}
+                {{> molecules-link-liste-with-meta:mbj }}
+            {{/ resultatLenkeListen }}
+
+            {{# resultatFilListen }}
                 {{> molecules-fil-liste:mbj }}
-            {{/ resultatListen }}
+            {{/ resultatFilListen }}
             
             <p>Last inn flere</p>
             

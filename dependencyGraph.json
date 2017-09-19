@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1505814157134,
+  "timestamp": 1505820013859,
   "graph": {
     "options": {
       "directed": true,
@@ -240,7 +240,7 @@
         "v": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-vr/04-pages-vr.rendered.html",
+          "lineagePath": "../../patterns/04-pages-_vr/04-pages-_vr.rendered.html",
           "lineagePattern": "pages-vr"
         }
       },
@@ -256,7 +256,7 @@
         "v": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-vr/04-pages-vr.rendered.html",
+          "lineagePath": "../../patterns/04-pages-_vr/04-pages-_vr.rendered.html",
           "lineagePattern": "pages-vr"
         }
       },
@@ -288,7 +288,7 @@
         "v": "01-molecules/00-overskrifter/31-moduloverskrift-h2-med-lenke.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-vr/04-pages-vr.rendered.html",
+          "lineagePath": "../../patterns/04-pages-_vr/04-pages-_vr.rendered.html",
           "lineagePattern": "pages-vr"
         }
       },
@@ -528,8 +528,8 @@
         "v": "01-molecules/lister/05-link-liste-with-meta.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/02-organisms-40-annet-66-modul-link-liste-with-meta/02-organisms-40-annet-66-modul-link-liste-with-meta.rendered.html",
-          "lineagePattern": "organisms-modul-link-liste-with-meta"
+          "lineagePath": "../../patterns/03-templates-20-Listesider-listeside-med-avansert-filtrering/03-templates-20-Listesider-listeside-med-avansert-filtrering.rendered.html",
+          "lineagePattern": "templates-listeside-med-avansert-filtrering"
         }
       },
       {
@@ -726,7 +726,7 @@
         "v": "02-organisms/00-global/01-footer.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-vr/04-pages-vr.rendered.html",
+          "lineagePath": "../../patterns/04-pages-_vr/04-pages-_vr.rendered.html",
           "lineagePattern": "pages-vr"
         }
       },
@@ -734,7 +734,7 @@
         "v": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-vr/04-pages-vr.rendered.html",
+          "lineagePath": "../../patterns/04-pages-_vr/04-pages-_vr.rendered.html",
           "lineagePattern": "pages-vr"
         }
       },
@@ -774,7 +774,7 @@
         "v": "02-organisms/00-global/_02-header-2.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-vr/04-pages-vr.rendered.html",
+          "lineagePath": "../../patterns/04-pages-_vr/04-pages-_vr.rendered.html",
           "lineagePattern": "pages-vr"
         }
       },
@@ -1184,8 +1184,8 @@
         "v": "03-templates/20-Listesider/listeside-med-avansert-filtrering.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-01-hva-skjer-30-kvalitetsportalen-resultater/04-pages-01-hva-skjer-30-kvalitetsportalen-resultater.rendered.html",
-          "lineagePattern": "pages-kvalitetsportalen-resultater"
+          "lineagePath": "../../patterns/04-pages-20-navigasjon-33-alle-barnehager/04-pages-20-navigasjon-33-alle-barnehager.rendered.html",
+          "lineagePattern": "pages-alle-barnehager"
         }
       },
       {
@@ -1623,6 +1623,12 @@
         }
       },
       {
+        "v": "04-pages/20-navigasjon/33-alle-barnehager.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "04-pages/50-escenic/00-artikkel.mustache",
         "value": {
           "compileState": "clean"
@@ -1725,7 +1731,7 @@
         }
       },
       {
-        "v": "04-pages/vr.mustache",
+        "v": "04-pages/_vr.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -3191,6 +3197,11 @@
       },
       {
         "v": "03-templates/20-Listesider/listeside-med-avansert-filtrering.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-avansert-filtrering.mustache",
         "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {}
       },
@@ -3207,6 +3218,11 @@
       {
         "v": "03-templates/20-Listesider/listeside-med-avansert-filtrering.mustache",
         "w": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-avansert-filtrering.mustache",
+        "w": "01-molecules/lister/05-link-liste-with-meta.mustache",
         "value": {}
       },
       {
@@ -3687,11 +3703,6 @@
       {
         "v": "04-pages/10-tjenester/22-kemneren-betalingsbekreftelse.mustache",
         "w": "02-organisms/00-global/_03-header-3.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/22-kemneren-betalingsbekreftelse.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
@@ -4225,6 +4236,11 @@
         "value": {}
       },
       {
+        "v": "04-pages/20-navigasjon/33-alle-barnehager.mustache",
+        "w": "03-templates/20-Listesider/listeside-med-avansert-filtrering.mustache",
+        "value": {}
+      },
+      {
         "v": "04-pages/50-escenic/00-artikkel.mustache",
         "w": "02-organisms/00-global/_02-header-2.mustache",
         "value": {}
@@ -4490,32 +4506,32 @@
         "value": {}
       },
       {
-        "v": "04-pages/vr.mustache",
+        "v": "04-pages/_vr.mustache",
         "w": "02-organisms/00-global/_02-header-2.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/vr.mustache",
+        "v": "04-pages/_vr.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/vr.mustache",
+        "v": "04-pages/_vr.mustache",
         "w": "01-molecules/00-overskrifter/31-moduloverskrift-h2-med-lenke.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/vr.mustache",
+        "v": "04-pages/_vr.mustache",
         "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/vr.mustache",
+        "v": "04-pages/_vr.mustache",
         "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/vr.mustache",
+        "v": "04-pages/_vr.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       }

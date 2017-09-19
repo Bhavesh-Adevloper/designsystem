@@ -4647,6 +4647,23 @@ footer {
   padding-left: 1.625rem;
   background: url(../images/list_arrows_dobbel.svg) no-repeat 7px -6px; }
 
+.link--external {
+  text-decoration: underline; }
+  .link--external:after {
+    content: '';
+    width: 28px;
+    height: 11px;
+    background: url("../images/mainSprite.svg?v=20170823") no-repeat -256px -234px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: pre-wrap; }
+  .link--external:before {
+    white-space: pre-wrap;
+    display: inline-block; }
+
 .read_more_link_container {
   text-align: right;
   font-size: 17px;
@@ -5037,7 +5054,7 @@ footer {
       text-decoration: underline;
       font-size: 16px; }
   .flex-table__desktop-header {
-    color: #535353;
+    color: #727272;
     font-size: 17px;
     font-size: 1.0625rem;
     line-height: 1.23529;
@@ -5263,12 +5280,17 @@ footer {
 
 .form-element {
   width: 100%; }
+  .form-element--error {
+    border: 1px solid #cc0000;
+    border: 0.0625rem solid #cc0000;
+    background-color: rgba(204, 0, 0, 0.06); }
   .form-element__label {
     width: 100%;
     margin-bottom: 0; }
   .form-element__helptext {
     margin: 0; }
     .form-element__helptext--error {
+      display: none;
       color: #cc0000;
       font-size: 17px;
       font-size: 1.0625rem;
@@ -5440,10 +5462,6 @@ footer {
     height: 10px;
     background: #3b65a3;
     border-radius: 50%; }
-  .form-element--error {
-    border: 1px solid #cc0000;
-    border: 0.0625rem solid #cc0000;
-    background-color: rgba(204, 0, 0, 0.06); }
 
 .linkbox {
   width: 100%; }
@@ -5693,6 +5711,10 @@ footer {
   font-size: 17px;
   font-size: 1.0625rem;
   margin-bottom: 6px; }
+
+.payment__kid .form-element__helptext--error {
+  margin-bottom: 21px;
+  margin-bottom: 1.3125rem; }
 
 .payment__amount .form-element__number {
   max-width: 92px;
