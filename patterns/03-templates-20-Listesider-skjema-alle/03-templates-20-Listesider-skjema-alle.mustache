@@ -1,0 +1,36 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    <div class="mbxl">
+        {{> molecules-sideoverskrift-h1(sidetittel: "{{ sidetittel }}") }}
+    </div>
+    
+    <div class="row">
+        <div class="col_md_12 col_lg_8">
+
+            {{# searchFilter }}
+                {{> atoms-filterboks:no_max_width|mbml }}
+            {{/ searchFilter }}
+
+            {{# antallOverskrift }}
+                {{> molecules-moduloverskrift-h2:mbm }}
+            {{/ antallOverskrift }}
+            
+            <p class="js_empty_filter_search empty_filter_search" style="display: none;">
+                <strong>Ingenting funnet</strong>
+            </p>
+            
+            {{> molecules-skjema-med-tjenester-liste }}
+
+        </div>
+        <div class="col_md_12 col_lg_4">
+            
+            {{# touts }}
+                {{> molecules-tout }}
+            {{/ touts }}
+            
+        </div>
+    </div>
+</main>
+{{> organisms-footer }}
