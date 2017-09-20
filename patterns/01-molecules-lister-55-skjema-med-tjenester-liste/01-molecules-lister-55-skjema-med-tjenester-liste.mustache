@@ -1,0 +1,21 @@
+<ul class="service-application-list {{ styleModifier }}">
+    {{# skjemaListe }}
+        <li class="{{# harTjenesteSubListe }} has-children{{/ harTjenesteSubListe }}">
+            <a href="{{ url }}" title="{{ tittel }}" class="application-link header-link">
+                {{ tittel }}
+            </a>
+            {{# harTjenesteSubListe }}        
+                <div class="screen-reader-text">Tjenester:</div>
+                <ul class="link_list">
+                    {{# tjenesteSubListe }}
+                        <li>
+                            <a href="{{ url }}" title="{{ tittel }}">
+                                {{ tittel }}
+                            </a>
+                        </li>
+                    {{/ tjenesteSubListe }}
+                </ul>
+            {{/ harTjenesteSubListe }}
+        </li>
+    {{/ skjemaListe }}
+</ul>

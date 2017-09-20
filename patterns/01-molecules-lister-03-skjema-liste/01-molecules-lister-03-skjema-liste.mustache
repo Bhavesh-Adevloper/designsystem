@@ -1,16 +1,16 @@
-<ul class="file_list {{ styleModifier }}">
+<ul class="application-link-list {{ styleModifier }}">
     {{# importantlinkliste }}
-    <li class="important">
-        <a href="{{ url }}" title="{{ tittel }}">
-            {{ tittel }}
-        </a>
-    </li>
+        <li>
+            <a href="{{ url }}" title="{{ tittel }}" class="application-link application-link--important">
+                {{ tittel }}
+            </a>
+        </li>
     {{/ importantlinkliste }}
     {{# linkliste }}
-    <li>
-        <a href="{{ url }}" title="{{ tittel }}">
-            {{ tittel }}
-        </a>
-    </li>
+        <li>
+            <a href="{{ url }}" title="{{ tittel }}" class="application-link application-link--large">
+                {{ tittel }}
+            </a>
+        </li>
     {{/ linkliste }}
 </ul>
