@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1505906028425" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1505906028425" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1505993943627" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1505993943627" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <!-- never cache patterns -->
@@ -16,8 +16,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1505906028425" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1505906028425" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1505993943627" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1505993943627" media="all" />
 
     <!-- End Pattern Lab -->
     
@@ -1340,7 +1340,7 @@
 
   </div>
   <script type="text/json" id="sg-pattern-data-atoms-radioknapp" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"molecules-sokefilter-avkrysningsbokser-avansert","lineagePath":"../../patterns/01-molecules-15-skjema-sokefilter-avkrysningsbokser-avansert/01-molecules-15-skjema-sokefilter-avkrysningsbokser-avansert.rendered.html"},{"lineagePattern":"molecules-sokefilter-avkrysningsbokser","lineagePath":"../../patterns/01-molecules-15-skjema-sokefilter-avkrysningsbokser/01-molecules-15-skjema-sokefilter-avkrysningsbokser.rendered.html"}],"lineageR":[{"lineagePattern":"molecules-sokefilter-avkrysningsbokser-avansert","lineagePath":"../../patterns/01-molecules-15-skjema-sokefilter-avkrysningsbokser-avansert/01-molecules-15-skjema-sokefilter-avkrysningsbokser-avansert.rendered.html"},{"lineagePattern":"molecules-sokefilter-avkrysningsbokser","lineagePath":"../../patterns/01-molecules-15-skjema-sokefilter-avkrysningsbokser/01-molecules-15-skjema-sokefilter-avkrysningsbokser.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"atoms","patternSubtype":"skjema-element"},"patternExtension":"mustache","patternName":"Radioknapp","patternPartial":"atoms-radioknapp","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"molecules-sokefilter-avkrysningsbokser-avansert","lineagePath":"../../patterns/01-molecules-15-skjema-sokefilter-avkrysningsbokser-avansert/01-molecules-15-skjema-sokefilter-avkrysningsbokser-avansert.rendered.html"}],"lineageR":[{"lineagePattern":"molecules-sokefilter-avkrysningsbokser-avansert","lineagePath":"../../patterns/01-molecules-15-skjema-sokefilter-avkrysningsbokser-avansert/01-molecules-15-skjema-sokefilter-avkrysningsbokser-avansert.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"atoms","patternSubtype":"skjema-element"},"patternExtension":"mustache","patternName":"Radioknapp","patternPartial":"atoms-radioknapp","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="atoms-nedtrekksliste" class="sg-pattern">
@@ -2286,33 +2286,34 @@
     <fieldset class="payment">
         <legend class="screen-reader-text"></legend>
 
-        <div class="mbml payment__kid">
+        <div class="payment__kid mbml">
             <label for="kid" class="form-element__label"> KID-nummer </label>
             <p class="payment__kid-text">Mangler du KID - <a href="#" class="link link--external link--underline">her
                 kan du få tak i det</a></p>
             <input id="kid" type="number" required min="2" max="25"
-                   class="form-element__number form-element__number--without-spinner" onblur="checkValidity()">
+                   class="form-element__number form-element__number--without-spinner">
             <p class="form-element__helptext--error">KID-nummeret må bestå av minst 2, og opptil 25 siffer</p>
         </div>
 
-        <div class="mbml payment__amount">
+        <div class="payment__amount mbml">
             <label for="kr" class="form-element__label"> Beløp </label>
             <input id="kr" type="number" placeholder="0" required min="10" max="99"
-                   class="form-element__number form-element__number--without-spinner" onblur="checkValidity()">,
+                   class="form-element__number form-element__number--without-spinner">,
+            <label for="ore" class="form-element__label screen-reader-text"> Øre </label>
             <input id="ore" type="number" placeholder="00" required min="10" max="99"
-                   class="form-element__number form-element__number--without-spinner" onblur="checkValidity()">
+                   class="form-element__number form-element__number--without-spinner">
         </div>
 
         <div class="payment__email">
             <div class="mbml">
                 <label class="form-element__label"> E-post </label>
-                <input id="email" type="email" required class="form-element__textfield" onblur="checkValidity()">
+                <input id="email" type="email" required class="form-element__textfield">
                 <span class="form-element__helptext--error">Hjelp</span>
             </div>
 
             <div class="mbxl">
                 <label for="repeat-email" class="form-element__label"> Gjenta e-post </label>
-                <input id="repeat-email" type="email" required class="form-element__textfield" onblur="checkValidity()">
+                <input id="repeat-email" type="email" required class="form-element__textfield" >
                 <span class="form-element__helptext--error">Hjelp</span>
             </div>
         </div>
@@ -2454,31 +2455,9 @@
     </div>
 </div>
 
-<!--
-<div class="search-checkbox-filter ">
-    <button id="js_search-checkbox-filter__button" class="search-checkbox-filter__button">Avgrens søket</button>
-    <div class="search-checkbox-filter__content">
-        <div class="search-checkbox-filter__content">
-            <fieldset>
-                <legend class="search-checkbox-filter__title mbm ">Per radioknapp </legend>
-<div class="form-element mbm">
-    <input class="form-element__radio" type="radio" name="Per radioknapp" id="not-checked"  >
-    <label class="form-element__label" for="not-checked">eller</label>
-</div>
-<div class="form-element mbml">
-    <input class="form-element__radio" type="radio" name="Per radioknapp" id="checked" checked >
-    <label class="form-element__label" for="checked">radioknapper</label>
-</div>
-
-            </fieldset>
-        </div>
-    </div>
-</div>
--->
-
   </div>
   <script type="text/json" id="sg-pattern-data-molecules-sokefilter-avkrysningsbokser" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-avkryssingsboks","lineagePath":"../../patterns/00-atoms-20-skjema-element-13-avkryssingsboks/00-atoms-20-skjema-element-13-avkryssingsboks.rendered.html"},{"lineagePattern":"atoms-radioknapp","lineagePath":"../../patterns/00-atoms-20-skjema-element-14-radioknapp/00-atoms-20-skjema-element-14-radioknapp.rendered.html"}],"lineage":[{"lineagePattern":"atoms-avkryssingsboks","lineagePath":"../../patterns/00-atoms-20-skjema-element-13-avkryssingsboks/00-atoms-20-skjema-element-13-avkryssingsboks.rendered.html"},{"lineagePattern":"atoms-radioknapp","lineagePath":"../../patterns/00-atoms-20-skjema-element-14-radioknapp/00-atoms-20-skjema-element-14-radioknapp.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-listeside-sas-med-filterboks","lineagePath":"../../patterns/03-templates-20-Listesider-03-listeside-sas-med-filterboks/03-templates-20-Listesider-03-listeside-sas-med-filterboks.rendered.html"}],"lineageR":[{"lineagePattern":"templates-listeside-sas-med-filterboks","lineagePath":"../../patterns/03-templates-20-Listesider-03-listeside-sas-med-filterboks/03-templates-20-Listesider-03-listeside-sas-med-filterboks.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"skjema"},"patternExtension":"mustache","patternName":"Sokefilter Avkrysningsbokser","patternPartial":"molecules-sokefilter-avkrysningsbokser","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-avkryssingsboks","lineagePath":"../../patterns/00-atoms-20-skjema-element-13-avkryssingsboks/00-atoms-20-skjema-element-13-avkryssingsboks.rendered.html"}],"lineage":[{"lineagePattern":"atoms-avkryssingsboks","lineagePath":"../../patterns/00-atoms-20-skjema-element-13-avkryssingsboks/00-atoms-20-skjema-element-13-avkryssingsboks.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-listeside-sas-med-filterboks","lineagePath":"../../patterns/03-templates-20-Listesider-03-listeside-sas-med-filterboks/03-templates-20-Listesider-03-listeside-sas-med-filterboks.rendered.html"}],"lineageR":[{"lineagePattern":"templates-listeside-sas-med-filterboks","lineagePath":"../../patterns/03-templates-20-Listesider-03-listeside-sas-med-filterboks/03-templates-20-Listesider-03-listeside-sas-med-filterboks.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"skjema"},"patternExtension":"mustache","patternName":"Sokefilter Avkrysningsbokser","patternPartial":"molecules-sokefilter-avkrysningsbokser","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="molecules-sokefilter-avkrysningsbokser-avansert" class="sg-pattern">
@@ -2497,9 +2476,10 @@
   <div class="sg-pattern-example">
     <div class="search-checkbox-filter ">
     <button id="js_search-checkbox-filter__button" class="search-checkbox-filter__button">Avgrens søket</button>
-    <div class="search-checkbox-filter__content ">
-            <fieldset>
-                <legend class="search-checkbox-filter__title search-checkbox-filter__title--advanced">Per checkbox </legend>
+    <div class="search-checkbox-filter__content search-checkbox-filter__content--open">
+            <fieldset class="search-checkbox-filter__fieldset search-checkbox-filter__fieldset--open mbml">
+                <legend id="js_search-checkbox-filter__title--advanced"><a href="#" class="search-checkbox-filter__title search-checkbox-filter__title--advanced" title="Åpne Per checkbox filter">Per checkbox </a></legend>
+                <div class="search-checkbox-filter__group">
 <div class="form-element mbm">
     <input type="checkbox" id="not-checked" class="form-element__checkbox" >
     <label for="not-checked" class="form-element__label form-element__label--checkbox"><span></span> Enten </label>
@@ -2508,9 +2488,12 @@
     <input type="checkbox" id="checked" class="form-element__checkbox" checked>
     <label for="checked" class="form-element__label form-element__label--checkbox"><span></span> avkrysningsbokser </label>
 </div>
+                </div>
             </fieldset>
-            <fieldset>
-                <legend class="search-checkbox-filter__title search-checkbox-filter__title--advanced">Per radioknapp </legend>
+
+            <fieldset class="search-checkbox-filter__fieldset mbml">
+                <legend id="js_search-checkbox-filter__title--advanced"><a href="#" class="search-checkbox-filter__title search-checkbox-filter__title--advanced" title="Åpne Per radioknapp filter">Per radioknapp </a></legend>
+                <div class="search-checkbox-filter__group">
 <div class="form-element mbm">
     <input class="form-element__radio" type="radio" name="Per radioknapp" id="not-checked"  >
     <label class="form-element__label" for="not-checked">eller</label>
@@ -2520,70 +2503,18 @@
     <label class="form-element__label" for="checked">radioknapper</label>
 </div>
 
+                </div>
             </fieldset>
+        <div class="mbml">
+            <a class="search-checkbox-filter__reset-link" href="#">Nullstill filtre</a>
+        </div>
     </div>
+    <a href="#" class="search-checkbox-filter__close">Lukk</a>
 </div>
+
   </div>
   <script type="text/json" id="sg-pattern-data-molecules-sokefilter-avkrysningsbokser-avansert" class="sg-pattern-data">
     {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-avkryssingsboks","lineagePath":"../../patterns/00-atoms-20-skjema-element-13-avkryssingsboks/00-atoms-20-skjema-element-13-avkryssingsboks.rendered.html"},{"lineagePattern":"atoms-radioknapp","lineagePath":"../../patterns/00-atoms-20-skjema-element-14-radioknapp/00-atoms-20-skjema-element-14-radioknapp.rendered.html"}],"lineage":[{"lineagePattern":"atoms-avkryssingsboks","lineagePath":"../../patterns/00-atoms-20-skjema-element-13-avkryssingsboks/00-atoms-20-skjema-element-13-avkryssingsboks.rendered.html"},{"lineagePattern":"atoms-radioknapp","lineagePath":"../../patterns/00-atoms-20-skjema-element-14-radioknapp/00-atoms-20-skjema-element-14-radioknapp.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-listeside-med-avansert-filtrering","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-avansert-filtrering/03-templates-20-Listesider-listeside-med-avansert-filtrering.rendered.html"},{"lineagePattern":"templates-listeside-med-lenkebokser","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-lenkebokser/03-templates-20-Listesider-listeside-med-lenkebokser.rendered.html"}],"lineageR":[{"lineagePattern":"templates-listeside-med-avansert-filtrering","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-avansert-filtrering/03-templates-20-Listesider-listeside-med-avansert-filtrering.rendered.html"},{"lineagePattern":"templates-listeside-med-lenkebokser","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-lenkebokser/03-templates-20-Listesider-listeside-med-lenkebokser.rendered.html"}],"patternLineageEExists":true,"patternDesc":"<p>Søkefilter avkrykrysningsbokser: Enten radiobuttons eller checboxer.</p>\n<p>Søkefilter avkrysningsbokser avansert: Flere valg med både radiobuttons og checkboxer.\nForskjellen er llassen &quot;search-checkbox-filter__title--advanced&quot; på &quot;search-checkbox-filter__title&quot;\nfor at hvert område med enten checkboxer eller radiobuttons skal ha hver sin tittel, også på mobil.\nAlle filtrene blir gjemt under samme knapp på mobil.</p>\n","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"skjema"},"patternExtension":"mustache","patternName":"Sokefilter Avkrysningsbokser Avansert","patternPartial":"molecules-sokefilter-avkrysningsbokser-avansert","patternState":"","patternEngineName":"mustache","extraOutput":{}}
-  </script>
-</div><!--end .sg-pattern-->
-<div id="viewall-molecules-les-mer" class="sg-pattern-category">
-  <h2 class="sg-pattern-category-title"><a href="../../patterns/01-molecules-les-mer&#x2F;index.html" class="patternLink" data-patternpartial="viewall-molecules-les-mer">les-mer</a></h2>
-
-  <div class="sg-pattern-category-body">
-    
-  </div><!--end sg-pattern-category-body-->
-  
-</div><!--end sg-pattern-category-->
-<div id="molecules-les-mer" class="sg-pattern">
-  <div class="sg-pattern-head">
-    <h3 class="sg-pattern-title">
-      <a href="../../patterns/01-molecules-les-mer-30-les-mer&#x2F;01-molecules-les-mer-30-les-mer.rendered.html" class="patternLink" data-patternpartial="molecules-les-mer" title="Link to Pattern">
-          Les Mer
-      </a>
-    </h3>
-    <div class="sg-pattern-breadcrumb"></div>
-    <a href="#" data-patternpartial="molecules-les-mer" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-les-mer" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-  </div>
-  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-les-mer">
-    
-  </div>
-  <div class="sg-pattern-example">
-    <div class="read_more_link_container ">
-    <a title="Vis alle" class="read_more_link read_more_link--17" href="#">
-        Vis alle
-        (15)
-    </a>
-</div>
-  </div>
-  <script type="text/json" id="sg-pattern-data-molecules-les-mer" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"organisms-forsidekontakt","lineagePath":"../../patterns/02-organisms-20-kontakt-forsidekontakt/02-organisms-20-kontakt-forsidekontakt.rendered.html"},{"lineagePattern":"organisms-escenic-inngangsside","lineagePath":"../../patterns/02-organisms-30-escenic-10-escenic-inngangsside/02-organisms-30-escenic-10-escenic-inngangsside.rendered.html"},{"lineagePattern":"organisms-escenic-artikkelliste","lineagePath":"../../patterns/02-organisms-30-escenic-15-escenic-artikkelliste/02-organisms-30-escenic-15-escenic-artikkelliste.rendered.html"},{"lineagePattern":"organisms-siste-nytt","lineagePath":"../../patterns/02-organisms-40-annet-10-siste-nytt/02-organisms-40-annet-10-siste-nytt.rendered.html"},{"lineagePattern":"organisms-arrangement","lineagePath":"../../patterns/02-organisms-40-annet-12-arrangement/02-organisms-40-annet-12-arrangement.rendered.html"},{"lineagePattern":"organisms-modul-link-liste","lineagePath":"../../patterns/02-organisms-40-annet-64-modul-link-liste/02-organisms-40-annet-64-modul-link-liste.rendered.html"},{"lineagePattern":"organisms-modul-link-liste-with-meta","lineagePath":"../../patterns/02-organisms-40-annet-66-modul-link-liste-with-meta/02-organisms-40-annet-66-modul-link-liste-with-meta.rendered.html"},{"lineagePattern":"organisms-forsidenyheter","lineagePath":"../../patterns/02-organisms-40-annet-70-forsidenyheter/02-organisms-40-annet-70-forsidenyheter.rendered.html"},{"lineagePattern":"organisms-forsidetjenester","lineagePath":"../../patterns/02-organisms-40-annet-71-forsidetjenester/02-organisms-40-annet-71-forsidetjenester.rendered.html"},{"lineagePattern":"templates-hva-skjer","lineagePath":"../../patterns/03-templates-01-Inngangssider-03-hva-skjer/03-templates-01-Inngangssider-03-hva-skjer.rendered.html"},{"lineagePattern":"templates-artikkelliste","lineagePath":"../../patterns/03-templates-20-Listesider-artikkelliste/03-templates-20-Listesider-artikkelliste.rendered.html"}],"lineageR":[{"lineagePattern":"organisms-forsidekontakt","lineagePath":"../../patterns/02-organisms-20-kontakt-forsidekontakt/02-organisms-20-kontakt-forsidekontakt.rendered.html"},{"lineagePattern":"organisms-escenic-inngangsside","lineagePath":"../../patterns/02-organisms-30-escenic-10-escenic-inngangsside/02-organisms-30-escenic-10-escenic-inngangsside.rendered.html"},{"lineagePattern":"organisms-escenic-artikkelliste","lineagePath":"../../patterns/02-organisms-30-escenic-15-escenic-artikkelliste/02-organisms-30-escenic-15-escenic-artikkelliste.rendered.html"},{"lineagePattern":"organisms-siste-nytt","lineagePath":"../../patterns/02-organisms-40-annet-10-siste-nytt/02-organisms-40-annet-10-siste-nytt.rendered.html"},{"lineagePattern":"organisms-arrangement","lineagePath":"../../patterns/02-organisms-40-annet-12-arrangement/02-organisms-40-annet-12-arrangement.rendered.html"},{"lineagePattern":"organisms-modul-link-liste","lineagePath":"../../patterns/02-organisms-40-annet-64-modul-link-liste/02-organisms-40-annet-64-modul-link-liste.rendered.html"},{"lineagePattern":"organisms-modul-link-liste-with-meta","lineagePath":"../../patterns/02-organisms-40-annet-66-modul-link-liste-with-meta/02-organisms-40-annet-66-modul-link-liste-with-meta.rendered.html"},{"lineagePattern":"organisms-forsidenyheter","lineagePath":"../../patterns/02-organisms-40-annet-70-forsidenyheter/02-organisms-40-annet-70-forsidenyheter.rendered.html"},{"lineagePattern":"organisms-forsidetjenester","lineagePath":"../../patterns/02-organisms-40-annet-71-forsidetjenester/02-organisms-40-annet-71-forsidetjenester.rendered.html"},{"lineagePattern":"templates-hva-skjer","lineagePath":"../../patterns/03-templates-01-Inngangssider-03-hva-skjer/03-templates-01-Inngangssider-03-hva-skjer.rendered.html"},{"lineagePattern":"templates-artikkelliste","lineagePath":"../../patterns/03-templates-20-Listesider-artikkelliste/03-templates-20-Listesider-artikkelliste.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"les-mer"},"patternExtension":"mustache","patternName":"Les Mer","patternPartial":"molecules-les-mer","patternState":"","patternEngineName":"mustache","extraOutput":{}}
-  </script>
-</div><!--end .sg-pattern-->
-<div id="molecules-minside-les-mer" class="sg-pattern">
-  <div class="sg-pattern-head">
-    <h3 class="sg-pattern-title">
-      <a href="../../patterns/01-molecules-les-mer-40-minside-les-mer&#x2F;01-molecules-les-mer-40-minside-les-mer.rendered.html" class="patternLink" data-patternpartial="molecules-minside-les-mer" title="Link to Pattern">
-          Minside Les Mer
-      </a>
-    </h3>
-    <div class="sg-pattern-breadcrumb"></div>
-    <a href="#" data-patternpartial="molecules-minside-les-mer" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-minside-les-mer" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-  </div>
-  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-minside-les-mer">
-    
-  </div>
-  <div class="sg-pattern-example">
-    <div class="min_side_read_more_container">
-    Viser 5 av 20
-    <span class="last_cell">
-        <a href="#" title="Vis alle" class="read_more_link">Vis alle</a>
-    </span>
-</div>
-  </div>
-  <script type="text/json" id="sg-pattern-data-molecules-minside-les-mer" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-minside-velger","lineagePath":"../../patterns/04-pages-15-minside-00-minside-velger/04-pages-15-minside-00-minside-velger.rendered.html"},{"lineagePattern":"pages-innbygger","lineagePath":"../../patterns/04-pages-15-minside-01-innbygger/04-pages-15-minside-01-innbygger.rendered.html"},{"lineagePattern":"pages-organisasjon","lineagePath":"../../patterns/04-pages-15-minside-02-organisasjon/04-pages-15-minside-02-organisasjon.rendered.html"}],"lineageR":[{"lineagePattern":"pages-minside-velger","lineagePath":"../../patterns/04-pages-15-minside-00-minside-velger/04-pages-15-minside-00-minside-velger.rendered.html"},{"lineagePattern":"pages-innbygger","lineagePath":"../../patterns/04-pages-15-minside-01-innbygger/04-pages-15-minside-01-innbygger.rendered.html"},{"lineagePattern":"pages-organisasjon","lineagePath":"../../patterns/04-pages-15-minside-02-organisasjon/04-pages-15-minside-02-organisasjon.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"les-mer"},"patternExtension":"mustache","patternName":"Minside Les Mer","patternPartial":"molecules-minside-les-mer","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="viewall-molecules-lister" class="sg-pattern-category">
@@ -2799,7 +2730,7 @@
     
   </div>
   <div class="sg-pattern-example">
-    <ul class="element_list">
+    <ul class="element_list ">
     <li>
         <a href="#" title="Påbegynt utfylling av skjema 1" class="title_cell">
             Påbegynt utfylling av skjema 1
@@ -2861,7 +2792,7 @@
     
   </div>
   <div class="sg-pattern-example">
-    <ul class="element_list">     
+    <ul class="element_list ">     
     <li>
         <a href="#" title="Class Aptent Taciti" class="title_cell">
             Class Aptent Taciti
@@ -2962,7 +2893,7 @@
     
   </div>
   <div class="sg-pattern-example">
-    <ul class="representation_list">
+    <ul class="representation_list ">
     <li class="person">
         <a href="&#x2F;patterns&#x2F;04-pages-15-minside-01-innbygger&#x2F;04-pages-15-minside-01-innbygger.rendered.html" title="CLAUDELLE GIRARD">
             <span class="icon profile_icon"></span>
@@ -3001,7 +2932,7 @@
     
   </div>
   <div class="sg-pattern-example">
-    <ul class="no_access_representation_list">
+    <ul class="no_access_representation_list ">
     <li>
         MONSEN &amp; NES HOLDING AS
     </li>
@@ -3031,8 +2962,7 @@
     
   </div>
   <div class="sg-pattern-example">
-    <div class="case_list_container">
-     <ul class="case_list">
+    <ul class="case_list ">
         <li>
             <h3 class="case_title">
                 <a href="&#x2F;patterns&#x2F;04-pages-15-minside-05-braarkiv-sak&#x2F;04-pages-15-minside-05-braarkiv-sak.rendered.html" title="BOL1 23 (GNR 100 BNR 622 SNR 2 Saksdato 26.09.2005)">
@@ -3078,15 +3008,14 @@
                 <span class="case_last_updated">01.01.13</span>
             </span>
         </li>
-            <li class="braarkiv_link">
-                <h3 class="case_title">
-                    <a href="#" title="Byggesaker fra før 2006">
-                        Vis byggesaker fra før 2006
-                    </a>
-                </h3>
-            </li>
-    </ul>
-</div>
+        <li class="braarkiv_link">
+            <h3 class="case_title">
+                <a href="#" title="Byggesaker fra før 2006">
+                    Vis byggesaker fra før 2006
+                </a>
+            </h3>
+        </li>
+</ul>
   </div>
   <script type="text/json" id="sg-pattern-data-molecules-saker-liste" class="sg-pattern-data">
     {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-innbygger","lineagePath":"../../patterns/04-pages-15-minside-01-innbygger/04-pages-15-minside-01-innbygger.rendered.html"},{"lineagePattern":"pages-organisasjon","lineagePath":"../../patterns/04-pages-15-minside-02-organisasjon/04-pages-15-minside-02-organisasjon.rendered.html"},{"lineagePattern":"pages-saker","lineagePath":"../../patterns/04-pages-15-minside-06-saker/04-pages-15-minside-06-saker.rendered.html"},{"lineagePattern":"pages-eiendom","lineagePath":"../../patterns/04-pages-15-minside-08-eiendom/04-pages-15-minside-08-eiendom.rendered.html"}],"lineageR":[{"lineagePattern":"pages-innbygger","lineagePath":"../../patterns/04-pages-15-minside-01-innbygger/04-pages-15-minside-01-innbygger.rendered.html"},{"lineagePattern":"pages-organisasjon","lineagePath":"../../patterns/04-pages-15-minside-02-organisasjon/04-pages-15-minside-02-organisasjon.rendered.html"},{"lineagePattern":"pages-saker","lineagePath":"../../patterns/04-pages-15-minside-06-saker/04-pages-15-minside-06-saker.rendered.html"},{"lineagePattern":"pages-eiendom","lineagePath":"../../patterns/04-pages-15-minside-08-eiendom/04-pages-15-minside-08-eiendom.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"lister"},"patternExtension":"mustache","patternName":"Saker Liste","patternPartial":"molecules-saker-liste","patternState":"","patternEngineName":"mustache","extraOutput":{}}
@@ -3114,7 +3043,7 @@
                 </span>
             </a>
         </li>
-        <li class=" has-children">
+        <li class="has-children">
             <a href="&#x2F;patterns&#x2F;04-pages-10-tjenester-02-tjenestebeskrivelse&#x2F;04-pages-10-tjenester-02-tjenestebeskrivelse.rendered.html" title="Praesent Id Metus Massa, Ut Blandit" class="header-link">
                 <span class="read_more_link read_more_link--20">
                     Praesent Id Metus Massa, Ut Blandit
@@ -3184,7 +3113,7 @@
                 Class Aptent Taciti
             </a>
         </li>
-        <li class=" has-children">
+        <li class="has-children">
             <a href="#" title="Praesent Id Metus Massa, Ut Blandit" class="application-link header-link">
                 Praesent Id Metus Massa, Ut Blandit
             </a>
@@ -4026,7 +3955,7 @@
     
   </div>
   <div class="sg-pattern-example">
-    <div class="invoice_table">
+    <div class="invoice_table ">
     <div class="invoice_table_caption">
         Faktura for 2016
     </div>
@@ -4348,9 +4277,9 @@
 </div>
 
 <p>
-    Kid: 123456789 <br/>
-    Transaksjons-ID: c2665654646984654as6dasdfkoshldgfkjasdflbsødf <br/>
-    Fullføringstidspunkt: 11.09.2017 15:30 <br/>
+    Kid: <span>123456789</span> <br/>
+    Transaksjons-ID: <span>c2665654646984654as6dasdfkoshldgfkjasdflbsødf</span> <br/>
+    Fullføringstidspunkt: <span>11.09.2017 15:30 </span> <br/>
 </p>
 
 <div class="flex-table flex-table--nowrap mbl" role="grid" aria-labelledby="betalingsmetode">
@@ -4409,6 +4338,113 @@
   </div>
   <script type="text/json" id="sg-pattern-data-molecules-kemner-faktura" class="sg-pattern-data">
     {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-kemneren-betalingsbekreftelse","lineagePath":"../../patterns/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse.rendered.html"}],"lineageR":[{"lineagePattern":"pages-kemneren-betalingsbekreftelse","lineagePath":"../../patterns/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"tabeller"},"patternExtension":"mustache","patternName":"Kemner Faktura","patternPartial":"molecules-kemner-faktura","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="viewall-molecules-vis-flere" class="sg-pattern-category">
+  <h2 class="sg-pattern-category-title"><a href="../../patterns/01-molecules-vis-flere&#x2F;index.html" class="patternLink" data-patternpartial="viewall-molecules-vis-flere">vis-flere</a></h2>
+
+  <div class="sg-pattern-category-body">
+    
+  </div><!--end sg-pattern-category-body-->
+  
+</div><!--end sg-pattern-category-->
+<div id="molecules-les-mer-modul" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/01-molecules-vis-flere-10-les-mer-modul&#x2F;01-molecules-vis-flere-10-les-mer-modul.rendered.html" class="patternLink" data-patternpartial="molecules-les-mer-modul" title="Link to Pattern">
+          Les Mer Modul
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-les-mer-modul" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-les-mer-modul" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-les-mer-modul">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="read_more_link_container ">
+    <a title="Vis flere" class="read_more_link read_more_link--17" href="#">
+        Vis flere
+        (15)
+    </a>
+</div>
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-les-mer-modul" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"organisms-forsidekontakt","lineagePath":"../../patterns/02-organisms-20-kontakt-forsidekontakt/02-organisms-20-kontakt-forsidekontakt.rendered.html"},{"lineagePattern":"organisms-escenic-inngangsside","lineagePath":"../../patterns/02-organisms-30-escenic-10-escenic-inngangsside/02-organisms-30-escenic-10-escenic-inngangsside.rendered.html"},{"lineagePattern":"organisms-escenic-artikkelliste","lineagePath":"../../patterns/02-organisms-30-escenic-15-escenic-artikkelliste/02-organisms-30-escenic-15-escenic-artikkelliste.rendered.html"},{"lineagePattern":"organisms-siste-nytt","lineagePath":"../../patterns/02-organisms-40-annet-10-siste-nytt/02-organisms-40-annet-10-siste-nytt.rendered.html"},{"lineagePattern":"organisms-arrangement","lineagePath":"../../patterns/02-organisms-40-annet-12-arrangement/02-organisms-40-annet-12-arrangement.rendered.html"},{"lineagePattern":"organisms-modul-link-liste","lineagePath":"../../patterns/02-organisms-40-annet-64-modul-link-liste/02-organisms-40-annet-64-modul-link-liste.rendered.html"},{"lineagePattern":"organisms-modul-link-liste-with-meta","lineagePath":"../../patterns/02-organisms-40-annet-66-modul-link-liste-with-meta/02-organisms-40-annet-66-modul-link-liste-with-meta.rendered.html"},{"lineagePattern":"organisms-forsidenyheter","lineagePath":"../../patterns/02-organisms-40-annet-70-forsidenyheter/02-organisms-40-annet-70-forsidenyheter.rendered.html"},{"lineagePattern":"organisms-forsidetjenester","lineagePath":"../../patterns/02-organisms-40-annet-71-forsidetjenester/02-organisms-40-annet-71-forsidetjenester.rendered.html"},{"lineagePattern":"templates-hva-skjer","lineagePath":"../../patterns/03-templates-01-Inngangssider-03-hva-skjer/03-templates-01-Inngangssider-03-hva-skjer.rendered.html"},{"lineagePattern":"templates-artikkelliste","lineagePath":"../../patterns/03-templates-20-Listesider-artikkelliste/03-templates-20-Listesider-artikkelliste.rendered.html"}],"lineageR":[{"lineagePattern":"organisms-forsidekontakt","lineagePath":"../../patterns/02-organisms-20-kontakt-forsidekontakt/02-organisms-20-kontakt-forsidekontakt.rendered.html"},{"lineagePattern":"organisms-escenic-inngangsside","lineagePath":"../../patterns/02-organisms-30-escenic-10-escenic-inngangsside/02-organisms-30-escenic-10-escenic-inngangsside.rendered.html"},{"lineagePattern":"organisms-escenic-artikkelliste","lineagePath":"../../patterns/02-organisms-30-escenic-15-escenic-artikkelliste/02-organisms-30-escenic-15-escenic-artikkelliste.rendered.html"},{"lineagePattern":"organisms-siste-nytt","lineagePath":"../../patterns/02-organisms-40-annet-10-siste-nytt/02-organisms-40-annet-10-siste-nytt.rendered.html"},{"lineagePattern":"organisms-arrangement","lineagePath":"../../patterns/02-organisms-40-annet-12-arrangement/02-organisms-40-annet-12-arrangement.rendered.html"},{"lineagePattern":"organisms-modul-link-liste","lineagePath":"../../patterns/02-organisms-40-annet-64-modul-link-liste/02-organisms-40-annet-64-modul-link-liste.rendered.html"},{"lineagePattern":"organisms-modul-link-liste-with-meta","lineagePath":"../../patterns/02-organisms-40-annet-66-modul-link-liste-with-meta/02-organisms-40-annet-66-modul-link-liste-with-meta.rendered.html"},{"lineagePattern":"organisms-forsidenyheter","lineagePath":"../../patterns/02-organisms-40-annet-70-forsidenyheter/02-organisms-40-annet-70-forsidenyheter.rendered.html"},{"lineagePattern":"organisms-forsidetjenester","lineagePath":"../../patterns/02-organisms-40-annet-71-forsidetjenester/02-organisms-40-annet-71-forsidetjenester.rendered.html"},{"lineagePattern":"templates-hva-skjer","lineagePath":"../../patterns/03-templates-01-Inngangssider-03-hva-skjer/03-templates-01-Inngangssider-03-hva-skjer.rendered.html"},{"lineagePattern":"templates-artikkelliste","lineagePath":"../../patterns/03-templates-20-Listesider-artikkelliste/03-templates-20-Listesider-artikkelliste.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"vis-flere"},"patternExtension":"mustache","patternName":"Les Mer Modul","patternPartial":"molecules-les-mer-modul","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-last-inn-flere" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/01-molecules-vis-flere-20-last-inn-flere&#x2F;01-molecules-vis-flere-20-last-inn-flere.rendered.html" class="patternLink" data-patternpartial="molecules-last-inn-flere" title="Link to Pattern">
+          Last Inn Flere
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-last-inn-flere" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-last-inn-flere" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-last-inn-flere">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="load-more-container load-more-container--20 ">
+    <a href="javascript:lastFlere()" id="js_lastflere" class="read_more_link read_more_link--20" title="Vis flere">
+        Vis flere
+    </a>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-last-inn-flere" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-listeside-med-avansert-filtrering","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-avansert-filtrering/03-templates-20-Listesider-listeside-med-avansert-filtrering.rendered.html"},{"lineagePattern":"templates-listeside-med-filtrering","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-filtrering/03-templates-20-Listesider-listeside-med-filtrering.rendered.html"},{"lineagePattern":"templates-sokeresultat","lineagePath":"../../patterns/03-templates-20-Listesider-sokeresultat/03-templates-20-Listesider-sokeresultat.rendered.html"}],"lineageR":[{"lineagePattern":"templates-listeside-med-avansert-filtrering","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-avansert-filtrering/03-templates-20-Listesider-listeside-med-avansert-filtrering.rendered.html"},{"lineagePattern":"templates-listeside-med-filtrering","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-filtrering/03-templates-20-Listesider-listeside-med-filtrering.rendered.html"},{"lineagePattern":"templates-sokeresultat","lineagePath":"../../patterns/03-templates-20-Listesider-sokeresultat/03-templates-20-Listesider-sokeresultat.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"vis-flere"},"patternExtension":"mustache","patternName":"Last Inn Flere","patternPartial":"molecules-last-inn-flere","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-last-inn-flere-sentrert" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/01-molecules-vis-flere-30-last-inn-flere-sentrert&#x2F;01-molecules-vis-flere-30-last-inn-flere-sentrert.rendered.html" class="patternLink" data-patternpartial="molecules-last-inn-flere-sentrert" title="Link to Pattern">
+          Last Inn Flere Sentrert
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-last-inn-flere-sentrert" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-last-inn-flere-sentrert" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-last-inn-flere-sentrert">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="load-more-container load-more-container--centered ">
+    <a title="Vis flere" href="#">
+        Vis flere
+    </a>
+</div>
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-last-inn-flere-sentrert" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-innbygger","lineagePath":"../../patterns/04-pages-15-minside-01-innbygger/04-pages-15-minside-01-innbygger.rendered.html"},{"lineagePattern":"pages-saker","lineagePath":"../../patterns/04-pages-15-minside-06-saker/04-pages-15-minside-06-saker.rendered.html"}],"lineageR":[{"lineagePattern":"pages-innbygger","lineagePath":"../../patterns/04-pages-15-minside-01-innbygger/04-pages-15-minside-01-innbygger.rendered.html"},{"lineagePattern":"pages-saker","lineagePath":"../../patterns/04-pages-15-minside-06-saker/04-pages-15-minside-06-saker.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"vis-flere"},"patternExtension":"mustache","patternName":"Last Inn Flere Sentrert","patternPartial":"molecules-last-inn-flere-sentrert","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="molecules-last-inn-flere-minside" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/01-molecules-vis-flere-40-last-inn-flere-minside&#x2F;01-molecules-vis-flere-40-last-inn-flere-minside.rendered.html" class="patternLink" data-patternpartial="molecules-last-inn-flere-minside" title="Link to Pattern">
+          Last Inn Flere Minside
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="molecules-last-inn-flere-minside" title="View Pattern Info" id="sg-pattern-extra-toggle-molecules-last-inn-flere-minside" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-molecules-last-inn-flere-minside">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="load-more-container load-more-container--border-bottom ">
+    Viser 5 av 20
+    <span class="align_right">
+        <a href="#" title="Vis flere" class="read_more_link">Vis flere</a>
+    </span>
+</div>
+  </div>
+  <script type="text/json" id="sg-pattern-data-molecules-last-inn-flere-minside" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-minside-velger","lineagePath":"../../patterns/04-pages-15-minside-00-minside-velger/04-pages-15-minside-00-minside-velger.rendered.html"},{"lineagePattern":"pages-innbygger","lineagePath":"../../patterns/04-pages-15-minside-01-innbygger/04-pages-15-minside-01-innbygger.rendered.html"},{"lineagePattern":"pages-organisasjon","lineagePath":"../../patterns/04-pages-15-minside-02-organisasjon/04-pages-15-minside-02-organisasjon.rendered.html"}],"lineageR":[{"lineagePattern":"pages-minside-velger","lineagePath":"../../patterns/04-pages-15-minside-00-minside-velger/04-pages-15-minside-00-minside-velger.rendered.html"},{"lineagePattern":"pages-innbygger","lineagePath":"../../patterns/04-pages-15-minside-01-innbygger/04-pages-15-minside-01-innbygger.rendered.html"},{"lineagePattern":"pages-organisasjon","lineagePath":"../../patterns/04-pages-15-minside-02-organisasjon/04-pages-15-minside-02-organisasjon.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"vis-flere"},"patternExtension":"mustache","patternName":"Last Inn Flere Minside","patternPartial":"molecules-last-inn-flere-minside","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="viewall-organisms-global" class="sg-pattern-category">
@@ -4882,7 +4918,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 </section>
   </div>
   <script type="text/json" id="sg-pattern-data-organisms-forsidekontakt" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"lineage":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-forside","lineagePath":"../../patterns/03-templates-01-Inngangssider-00-forside/03-templates-01-Inngangssider-00-forside.rendered.html"}],"lineageR":[{"lineagePattern":"templates-forside","lineagePath":"../../patterns/03-templates-01-Inngangssider-00-forside/03-templates-01-Inngangssider-00-forside.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"kontakt"},"patternExtension":"mustache","patternName":"Forsidekontakt","patternPartial":"organisms-forsidekontakt","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"lineage":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-forside","lineagePath":"../../patterns/03-templates-01-Inngangssider-00-forside/03-templates-01-Inngangssider-00-forside.rendered.html"}],"lineageR":[{"lineagePattern":"templates-forside","lineagePath":"../../patterns/03-templates-01-Inngangssider-00-forside/03-templates-01-Inngangssider-00-forside.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"kontakt"},"patternExtension":"mustache","patternName":"Forsidekontakt","patternPartial":"organisms-forsidekontakt","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="organisms-kontakt-byline" class="sg-pattern">
@@ -5528,7 +5564,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 
   </div>
   <script type="text/json" id="sg-pattern-data-organisms-escenic-inngangsside" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-escenic-elementmal","lineagePath":"../../patterns/02-organisms-30-escenic-05-escenic-elementmal/02-organisms-30-escenic-05-escenic-elementmal.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"lineage":[{"lineagePattern":"organisms-escenic-elementmal","lineagePath":"../../patterns/02-organisms-30-escenic-05-escenic-elementmal/02-organisms-30-escenic-05-escenic-elementmal.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-tema","lineagePath":"../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html"},{"lineagePattern":"templates-politisk-enhet","lineagePath":"../../patterns/03-templates-01-Inngangssider-42-politisk-enhet/03-templates-01-Inngangssider-42-politisk-enhet.rendered.html"}],"lineageR":[{"lineagePattern":"templates-tema","lineagePath":"../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html"},{"lineagePattern":"templates-politisk-enhet","lineagePath":"../../patterns/03-templates-01-Inngangssider-42-politisk-enhet/03-templates-01-Inngangssider-42-politisk-enhet.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"escenic"},"patternExtension":"mustache","patternName":"Escenic Inngangsside","patternPartial":"organisms-escenic-inngangsside","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-escenic-elementmal","lineagePath":"../../patterns/02-organisms-30-escenic-05-escenic-elementmal/02-organisms-30-escenic-05-escenic-elementmal.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"lineage":[{"lineagePattern":"organisms-escenic-elementmal","lineagePath":"../../patterns/02-organisms-30-escenic-05-escenic-elementmal/02-organisms-30-escenic-05-escenic-elementmal.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-tema","lineagePath":"../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html"},{"lineagePattern":"templates-politisk-enhet","lineagePath":"../../patterns/03-templates-01-Inngangssider-42-politisk-enhet/03-templates-01-Inngangssider-42-politisk-enhet.rendered.html"}],"lineageR":[{"lineagePattern":"templates-tema","lineagePath":"../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html"},{"lineagePattern":"templates-politisk-enhet","lineagePath":"../../patterns/03-templates-01-Inngangssider-42-politisk-enhet/03-templates-01-Inngangssider-42-politisk-enhet.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"escenic"},"patternExtension":"mustache","patternName":"Escenic Inngangsside","patternPartial":"organisms-escenic-inngangsside","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="organisms-escenic-artikkelliste" class="sg-pattern">
@@ -5838,7 +5874,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 
   </div>
   <script type="text/json" id="sg-pattern-data-organisms-escenic-artikkelliste" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-escenic-elementmal","lineagePath":"../../patterns/02-organisms-30-escenic-05-escenic-elementmal/02-organisms-30-escenic-05-escenic-elementmal.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"lineage":[{"lineagePattern":"organisms-escenic-elementmal","lineagePath":"../../patterns/02-organisms-30-escenic-05-escenic-elementmal/02-organisms-30-escenic-05-escenic-elementmal.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-tema","lineagePath":"../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html"}],"lineageR":[{"lineagePattern":"templates-tema","lineagePath":"../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"escenic"},"patternExtension":"mustache","patternName":"Escenic Artikkelliste","patternPartial":"organisms-escenic-artikkelliste","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-escenic-elementmal","lineagePath":"../../patterns/02-organisms-30-escenic-05-escenic-elementmal/02-organisms-30-escenic-05-escenic-elementmal.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"lineage":[{"lineagePattern":"organisms-escenic-elementmal","lineagePath":"../../patterns/02-organisms-30-escenic-05-escenic-elementmal/02-organisms-30-escenic-05-escenic-elementmal.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-tema","lineagePath":"../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html"}],"lineageR":[{"lineagePattern":"templates-tema","lineagePath":"../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"escenic"},"patternExtension":"mustache","patternName":"Escenic Artikkelliste","patternPartial":"organisms-escenic-artikkelliste","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="viewall-organisms-annet" class="sg-pattern-category">
@@ -5943,7 +5979,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 </section>
   </div>
   <script type="text/json" id="sg-pattern-data-organisms-siste-nytt" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-link-liste-with-meta","lineagePath":"../../patterns/01-molecules-lister-05-link-liste-with-meta/01-molecules-lister-05-link-liste-with-meta.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"lineage":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-link-liste-with-meta","lineagePath":"../../patterns/01-molecules-lister-05-link-liste-with-meta/01-molecules-lister-05-link-liste-with-meta.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-orgenhet","lineagePath":"../../patterns/03-templates-01-Inngangssider-30-orgenhet/03-templates-01-Inngangssider-30-orgenhet.rendered.html"},{"lineagePattern":"templates-orgenhet-med-arrangement","lineagePath":"../../patterns/03-templates-01-Inngangssider-31-orgenhet-med-arrangement/03-templates-01-Inngangssider-31-orgenhet-med-arrangement.rendered.html"},{"lineagePattern":"templates-byradsavdeling","lineagePath":"../../patterns/03-templates-01-Inngangssider-35-byradsavdeling/03-templates-01-Inngangssider-35-byradsavdeling.rendered.html"},{"lineagePattern":"templates-skole","lineagePath":"../../patterns/03-templates-01-Inngangssider-37-skole/03-templates-01-Inngangssider-37-skole.rendered.html"},{"lineagePattern":"templates-leirskole","lineagePath":"../../patterns/03-templates-01-Inngangssider-38-leirskole/03-templates-01-Inngangssider-38-leirskole.rendered.html"},{"lineagePattern":"templates-barnehage","lineagePath":"../../patterns/03-templates-01-Inngangssider-40-barnehage/03-templates-01-Inngangssider-40-barnehage.rendered.html"}],"lineageR":[{"lineagePattern":"templates-orgenhet","lineagePath":"../../patterns/03-templates-01-Inngangssider-30-orgenhet/03-templates-01-Inngangssider-30-orgenhet.rendered.html"},{"lineagePattern":"templates-orgenhet-med-arrangement","lineagePath":"../../patterns/03-templates-01-Inngangssider-31-orgenhet-med-arrangement/03-templates-01-Inngangssider-31-orgenhet-med-arrangement.rendered.html"},{"lineagePattern":"templates-byradsavdeling","lineagePath":"../../patterns/03-templates-01-Inngangssider-35-byradsavdeling/03-templates-01-Inngangssider-35-byradsavdeling.rendered.html"},{"lineagePattern":"templates-skole","lineagePath":"../../patterns/03-templates-01-Inngangssider-37-skole/03-templates-01-Inngangssider-37-skole.rendered.html"},{"lineagePattern":"templates-leirskole","lineagePath":"../../patterns/03-templates-01-Inngangssider-38-leirskole/03-templates-01-Inngangssider-38-leirskole.rendered.html"},{"lineagePattern":"templates-barnehage","lineagePath":"../../patterns/03-templates-01-Inngangssider-40-barnehage/03-templates-01-Inngangssider-40-barnehage.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"annet"},"patternExtension":"mustache","patternName":"Siste Nytt","patternPartial":"organisms-siste-nytt","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-link-liste-with-meta","lineagePath":"../../patterns/01-molecules-lister-05-link-liste-with-meta/01-molecules-lister-05-link-liste-with-meta.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"lineage":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-link-liste-with-meta","lineagePath":"../../patterns/01-molecules-lister-05-link-liste-with-meta/01-molecules-lister-05-link-liste-with-meta.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-orgenhet","lineagePath":"../../patterns/03-templates-01-Inngangssider-30-orgenhet/03-templates-01-Inngangssider-30-orgenhet.rendered.html"},{"lineagePattern":"templates-orgenhet-med-arrangement","lineagePath":"../../patterns/03-templates-01-Inngangssider-31-orgenhet-med-arrangement/03-templates-01-Inngangssider-31-orgenhet-med-arrangement.rendered.html"},{"lineagePattern":"templates-byradsavdeling","lineagePath":"../../patterns/03-templates-01-Inngangssider-35-byradsavdeling/03-templates-01-Inngangssider-35-byradsavdeling.rendered.html"},{"lineagePattern":"templates-skole","lineagePath":"../../patterns/03-templates-01-Inngangssider-37-skole/03-templates-01-Inngangssider-37-skole.rendered.html"},{"lineagePattern":"templates-leirskole","lineagePath":"../../patterns/03-templates-01-Inngangssider-38-leirskole/03-templates-01-Inngangssider-38-leirskole.rendered.html"},{"lineagePattern":"templates-barnehage","lineagePath":"../../patterns/03-templates-01-Inngangssider-40-barnehage/03-templates-01-Inngangssider-40-barnehage.rendered.html"}],"lineageR":[{"lineagePattern":"templates-orgenhet","lineagePath":"../../patterns/03-templates-01-Inngangssider-30-orgenhet/03-templates-01-Inngangssider-30-orgenhet.rendered.html"},{"lineagePattern":"templates-orgenhet-med-arrangement","lineagePath":"../../patterns/03-templates-01-Inngangssider-31-orgenhet-med-arrangement/03-templates-01-Inngangssider-31-orgenhet-med-arrangement.rendered.html"},{"lineagePattern":"templates-byradsavdeling","lineagePath":"../../patterns/03-templates-01-Inngangssider-35-byradsavdeling/03-templates-01-Inngangssider-35-byradsavdeling.rendered.html"},{"lineagePattern":"templates-skole","lineagePath":"../../patterns/03-templates-01-Inngangssider-37-skole/03-templates-01-Inngangssider-37-skole.rendered.html"},{"lineagePattern":"templates-leirskole","lineagePath":"../../patterns/03-templates-01-Inngangssider-38-leirskole/03-templates-01-Inngangssider-38-leirskole.rendered.html"},{"lineagePattern":"templates-barnehage","lineagePath":"../../patterns/03-templates-01-Inngangssider-40-barnehage/03-templates-01-Inngangssider-40-barnehage.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"annet"},"patternExtension":"mustache","patternName":"Siste Nytt","patternPartial":"organisms-siste-nytt","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="organisms-arrangement" class="sg-pattern">
@@ -6064,15 +6100,15 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     </div>
     
     <div class="read_more_link_container event_read_more_link_container">
-    <a title="Vis alle" class="read_more_link read_more_link--17" href="#">
-        Vis alle
+    <a title="Vis flere" class="read_more_link read_more_link--17" href="#">
+        Vis flere
         (15)
     </a>
 </div>
 </section>
   </div>
   <script type="text/json" id="sg-pattern-data-organisms-arrangement" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"atoms-kjop-billett","lineagePath":"../../patterns/00-atoms-15-knapper-21-kjop-billett/00-atoms-15-knapper-21-kjop-billett.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"lineage":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"atoms-kjop-billett","lineagePath":"../../patterns/00-atoms-15-knapper-21-kjop-billett/00-atoms-15-knapper-21-kjop-billett.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-orgenhet-med-arrangement","lineagePath":"../../patterns/03-templates-01-Inngangssider-31-orgenhet-med-arrangement/03-templates-01-Inngangssider-31-orgenhet-med-arrangement.rendered.html"}],"lineageR":[{"lineagePattern":"templates-orgenhet-med-arrangement","lineagePath":"../../patterns/03-templates-01-Inngangssider-31-orgenhet-med-arrangement/03-templates-01-Inngangssider-31-orgenhet-med-arrangement.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"annet"},"patternExtension":"mustache","patternName":"Arrangement","patternPartial":"organisms-arrangement","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"atoms-kjop-billett","lineagePath":"../../patterns/00-atoms-15-knapper-21-kjop-billett/00-atoms-15-knapper-21-kjop-billett.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"lineage":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"atoms-kjop-billett","lineagePath":"../../patterns/00-atoms-15-knapper-21-kjop-billett/00-atoms-15-knapper-21-kjop-billett.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-orgenhet-med-arrangement","lineagePath":"../../patterns/03-templates-01-Inngangssider-31-orgenhet-med-arrangement/03-templates-01-Inngangssider-31-orgenhet-med-arrangement.rendered.html"}],"lineageR":[{"lineagePattern":"templates-orgenhet-med-arrangement","lineagePath":"../../patterns/03-templates-01-Inngangssider-31-orgenhet-med-arrangement/03-templates-01-Inngangssider-31-orgenhet-med-arrangement.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"annet"},"patternExtension":"mustache","patternName":"Arrangement","patternPartial":"organisms-arrangement","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="organisms-skoleruten" class="sg-pattern">
@@ -6598,15 +6634,15 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     </li>
 </ul>
         <div class="read_more_link_container ">
-    <a title="Vis alle" class="read_more_link read_more_link--17" href="#">
-        Vis alle
+    <a title="Vis flere" class="read_more_link read_more_link--17" href="#">
+        Vis flere
         (15)
     </a>
 </div>
 </section>
   </div>
   <script type="text/json" id="sg-pattern-data-organisms-modul-link-liste" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-link-liste","lineagePath":"../../patterns/01-molecules-lister-04-link-liste/01-molecules-lister-04-link-liste.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"lineage":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-link-liste","lineagePath":"../../patterns/01-molecules-lister-04-link-liste/01-molecules-lister-04-link-liste.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-tema","lineagePath":"../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html"},{"lineagePattern":"templates-orgenhet","lineagePath":"../../patterns/03-templates-01-Inngangssider-30-orgenhet/03-templates-01-Inngangssider-30-orgenhet.rendered.html"},{"lineagePattern":"templates-orgenhet-med-arrangement","lineagePath":"../../patterns/03-templates-01-Inngangssider-31-orgenhet-med-arrangement/03-templates-01-Inngangssider-31-orgenhet-med-arrangement.rendered.html"},{"lineagePattern":"templates-skole","lineagePath":"../../patterns/03-templates-01-Inngangssider-37-skole/03-templates-01-Inngangssider-37-skole.rendered.html"},{"lineagePattern":"templates-leirskole","lineagePath":"../../patterns/03-templates-01-Inngangssider-38-leirskole/03-templates-01-Inngangssider-38-leirskole.rendered.html"},{"lineagePattern":"templates-barnehage","lineagePath":"../../patterns/03-templates-01-Inngangssider-40-barnehage/03-templates-01-Inngangssider-40-barnehage.rendered.html"}],"lineageR":[{"lineagePattern":"templates-tema","lineagePath":"../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html"},{"lineagePattern":"templates-orgenhet","lineagePath":"../../patterns/03-templates-01-Inngangssider-30-orgenhet/03-templates-01-Inngangssider-30-orgenhet.rendered.html"},{"lineagePattern":"templates-orgenhet-med-arrangement","lineagePath":"../../patterns/03-templates-01-Inngangssider-31-orgenhet-med-arrangement/03-templates-01-Inngangssider-31-orgenhet-med-arrangement.rendered.html"},{"lineagePattern":"templates-skole","lineagePath":"../../patterns/03-templates-01-Inngangssider-37-skole/03-templates-01-Inngangssider-37-skole.rendered.html"},{"lineagePattern":"templates-leirskole","lineagePath":"../../patterns/03-templates-01-Inngangssider-38-leirskole/03-templates-01-Inngangssider-38-leirskole.rendered.html"},{"lineagePattern":"templates-barnehage","lineagePath":"../../patterns/03-templates-01-Inngangssider-40-barnehage/03-templates-01-Inngangssider-40-barnehage.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"annet"},"patternExtension":"mustache","patternName":"Modul Link Liste","patternPartial":"organisms-modul-link-liste","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-link-liste","lineagePath":"../../patterns/01-molecules-lister-04-link-liste/01-molecules-lister-04-link-liste.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"lineage":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-link-liste","lineagePath":"../../patterns/01-molecules-lister-04-link-liste/01-molecules-lister-04-link-liste.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-tema","lineagePath":"../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html"},{"lineagePattern":"templates-orgenhet","lineagePath":"../../patterns/03-templates-01-Inngangssider-30-orgenhet/03-templates-01-Inngangssider-30-orgenhet.rendered.html"},{"lineagePattern":"templates-orgenhet-med-arrangement","lineagePath":"../../patterns/03-templates-01-Inngangssider-31-orgenhet-med-arrangement/03-templates-01-Inngangssider-31-orgenhet-med-arrangement.rendered.html"},{"lineagePattern":"templates-skole","lineagePath":"../../patterns/03-templates-01-Inngangssider-37-skole/03-templates-01-Inngangssider-37-skole.rendered.html"},{"lineagePattern":"templates-leirskole","lineagePath":"../../patterns/03-templates-01-Inngangssider-38-leirskole/03-templates-01-Inngangssider-38-leirskole.rendered.html"},{"lineagePattern":"templates-barnehage","lineagePath":"../../patterns/03-templates-01-Inngangssider-40-barnehage/03-templates-01-Inngangssider-40-barnehage.rendered.html"}],"lineageR":[{"lineagePattern":"templates-tema","lineagePath":"../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html"},{"lineagePattern":"templates-orgenhet","lineagePath":"../../patterns/03-templates-01-Inngangssider-30-orgenhet/03-templates-01-Inngangssider-30-orgenhet.rendered.html"},{"lineagePattern":"templates-orgenhet-med-arrangement","lineagePath":"../../patterns/03-templates-01-Inngangssider-31-orgenhet-med-arrangement/03-templates-01-Inngangssider-31-orgenhet-med-arrangement.rendered.html"},{"lineagePattern":"templates-skole","lineagePath":"../../patterns/03-templates-01-Inngangssider-37-skole/03-templates-01-Inngangssider-37-skole.rendered.html"},{"lineagePattern":"templates-leirskole","lineagePath":"../../patterns/03-templates-01-Inngangssider-38-leirskole/03-templates-01-Inngangssider-38-leirskole.rendered.html"},{"lineagePattern":"templates-barnehage","lineagePath":"../../patterns/03-templates-01-Inngangssider-40-barnehage/03-templates-01-Inngangssider-40-barnehage.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"annet"},"patternExtension":"mustache","patternName":"Modul Link Liste","patternPartial":"organisms-modul-link-liste","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="organisms-modul-link-liste-with-meta" class="sg-pattern">
@@ -6653,15 +6689,15 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     
 </ul>
         <div class="read_more_link_container ">
-    <a title="Vis alle" class="read_more_link read_more_link--17" href="#">
-        Vis alle
+    <a title="Vis flere" class="read_more_link read_more_link--17" href="#">
+        Vis flere
         (15)
     </a>
 </div>
 </section>
   </div>
   <script type="text/json" id="sg-pattern-data-organisms-modul-link-liste-with-meta" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-link-liste-with-meta","lineagePath":"../../patterns/01-molecules-lister-05-link-liste-with-meta/01-molecules-lister-05-link-liste-with-meta.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"lineage":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-link-liste-with-meta","lineagePath":"../../patterns/01-molecules-lister-05-link-liste-with-meta/01-molecules-lister-05-link-liste-with-meta.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-bydel","lineagePath":"../../patterns/03-templates-01-Inngangssider-44-bydel/03-templates-01-Inngangssider-44-bydel.rendered.html"}],"lineageR":[{"lineagePattern":"templates-bydel","lineagePath":"../../patterns/03-templates-01-Inngangssider-44-bydel/03-templates-01-Inngangssider-44-bydel.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"annet"},"patternExtension":"mustache","patternName":"Modul Link Liste With Meta","patternPartial":"organisms-modul-link-liste-with-meta","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-link-liste-with-meta","lineagePath":"../../patterns/01-molecules-lister-05-link-liste-with-meta/01-molecules-lister-05-link-liste-with-meta.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"lineage":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-link-liste-with-meta","lineagePath":"../../patterns/01-molecules-lister-05-link-liste-with-meta/01-molecules-lister-05-link-liste-with-meta.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-bydel","lineagePath":"../../patterns/03-templates-01-Inngangssider-44-bydel/03-templates-01-Inngangssider-44-bydel.rendered.html"}],"lineageR":[{"lineagePattern":"templates-bydel","lineagePath":"../../patterns/03-templates-01-Inngangssider-44-bydel/03-templates-01-Inngangssider-44-bydel.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"annet"},"patternExtension":"mustache","patternName":"Modul Link Liste With Meta","patternPartial":"organisms-modul-link-liste-with-meta","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="organisms-forsidenyheter" class="sg-pattern">
@@ -6731,7 +6767,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
             
   </div>
   <script type="text/json" id="sg-pattern-data-organisms-forsidenyheter" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"lineage":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-forside","lineagePath":"../../patterns/03-templates-01-Inngangssider-00-forside/03-templates-01-Inngangssider-00-forside.rendered.html"}],"lineageR":[{"lineagePattern":"templates-forside","lineagePath":"../../patterns/03-templates-01-Inngangssider-00-forside/03-templates-01-Inngangssider-00-forside.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"annet"},"patternExtension":"mustache","patternName":"Forsidenyheter","patternPartial":"organisms-forsidenyheter","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"lineage":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-forside","lineagePath":"../../patterns/03-templates-01-Inngangssider-00-forside/03-templates-01-Inngangssider-00-forside.rendered.html"}],"lineageR":[{"lineagePattern":"templates-forside","lineagePath":"../../patterns/03-templates-01-Inngangssider-00-forside/03-templates-01-Inngangssider-00-forside.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"annet"},"patternExtension":"mustache","patternName":"Forsidenyheter","patternPartial":"organisms-forsidenyheter","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="organisms-forsidetjenester" class="sg-pattern">
@@ -6768,7 +6804,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 </section>
   </div>
   <script type="text/json" id="sg-pattern-data-organisms-forsidetjenester" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-lenkeboks-med-lenker","lineagePath":"../../patterns/01-molecules-navigasjon-lenkeboks-med-lenker/01-molecules-navigasjon-lenkeboks-med-lenker.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"lineage":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-lenkeboks-med-lenker","lineagePath":"../../patterns/01-molecules-navigasjon-lenkeboks-med-lenker/01-molecules-navigasjon-lenkeboks-med-lenker.rendered.html"},{"lineagePattern":"molecules-les-mer","lineagePath":"../../patterns/01-molecules-les-mer-30-les-mer/01-molecules-les-mer-30-les-mer.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-forside","lineagePath":"../../patterns/03-templates-01-Inngangssider-00-forside/03-templates-01-Inngangssider-00-forside.rendered.html"}],"lineageR":[{"lineagePattern":"templates-forside","lineagePath":"../../patterns/03-templates-01-Inngangssider-00-forside/03-templates-01-Inngangssider-00-forside.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"annet"},"patternExtension":"mustache","patternName":"Forsidetjenester","patternPartial":"organisms-forsidetjenester","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-lenkeboks-med-lenker","lineagePath":"../../patterns/01-molecules-navigasjon-lenkeboks-med-lenker/01-molecules-navigasjon-lenkeboks-med-lenker.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"lineage":[{"lineagePattern":"molecules-moduloverskrift-h2-med-lenke","lineagePath":"../../patterns/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke/01-molecules-00-overskrifter-31-moduloverskrift-h2-med-lenke.rendered.html"},{"lineagePattern":"molecules-lenkeboks-med-lenker","lineagePath":"../../patterns/01-molecules-navigasjon-lenkeboks-med-lenker/01-molecules-navigasjon-lenkeboks-med-lenker.rendered.html"},{"lineagePattern":"molecules-les-mer-modul","lineagePath":"../../patterns/01-molecules-vis-flere-10-les-mer-modul/01-molecules-vis-flere-10-les-mer-modul.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-forside","lineagePath":"../../patterns/03-templates-01-Inngangssider-00-forside/03-templates-01-Inngangssider-00-forside.rendered.html"}],"lineageR":[{"lineagePattern":"templates-forside","lineagePath":"../../patterns/03-templates-01-Inngangssider-00-forside/03-templates-01-Inngangssider-00-forside.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"annet"},"patternExtension":"mustache","patternName":"Forsidetjenester","patternPartial":"organisms-forsidetjenester","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
   </div> <!--end #sg-patterns-->
@@ -6813,10 +6849,10 @@ https://github.com/pattern-lab/patternlab-php/issues/304
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1505906028425">
+<script id="pl-js-polyfill-insert-1505993943627">
   (function() {
     if (self != top) {
-      var cb = '1505906028425';
+      var cb = '1505993943627';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -6826,10 +6862,10 @@ https://github.com/pattern-lab/patternlab-php/issues/304
   })();
 </script>
 
-<script id="pl-js-insert-1505906028425">
+<script id="pl-js-insert-1505993943627">
   (function() {
     if (self != top) {
-      var cb = '1505906028425';
+      var cb = '1505993943627';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

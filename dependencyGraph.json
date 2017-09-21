@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1505906031229,
+  "timestamp": 1505993946661,
   "graph": {
     "options": {
       "directed": true,
@@ -224,8 +224,8 @@
         "v": "00-atoms/20-skjema-element/14-radioknapp.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-15-skjema-sokefilter-avkrysningsbokser/01-molecules-15-skjema-sokefilter-avkrysningsbokser.rendered.html",
-          "lineagePattern": "molecules-sokefilter-avkrysningsbokser"
+          "lineagePath": "../../patterns/01-molecules-15-skjema-sokefilter-avkrysningsbokser-avansert/01-molecules-15-skjema-sokefilter-avkrysningsbokser-avansert.rendered.html",
+          "lineagePattern": "molecules-sokefilter-avkrysningsbokser-avansert"
         }
       },
       {
@@ -485,22 +485,6 @@
         }
       },
       {
-        "v": "01-molecules/les-mer/30-les-mer.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-20-Listesider-artikkelliste/03-templates-20-Listesider-artikkelliste.rendered.html",
-          "lineagePattern": "templates-artikkelliste"
-        }
-      },
-      {
-        "v": "01-molecules/les-mer/40-minside-les-mer.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-15-minside-02-organisasjon/04-pages-15-minside-02-organisasjon.rendered.html",
-          "lineagePattern": "pages-organisasjon"
-        }
-      },
-      {
         "v": "01-molecules/lister/02-link-liste-enkel.mustache",
         "value": {
           "compileState": "clean",
@@ -720,6 +704,38 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse.rendered.html",
           "lineagePattern": "pages-kemneren-betalingsbekreftelse"
+        }
+      },
+      {
+        "v": "01-molecules/vis-flere/10-les-mer-modul.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-20-Listesider-artikkelliste/03-templates-20-Listesider-artikkelliste.rendered.html",
+          "lineagePattern": "templates-artikkelliste"
+        }
+      },
+      {
+        "v": "01-molecules/vis-flere/20-last-inn-flere.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-20-Listesider-sokeresultat/03-templates-20-Listesider-sokeresultat.rendered.html",
+          "lineagePattern": "templates-sokeresultat"
+        }
+      },
+      {
+        "v": "01-molecules/vis-flere/30-last-inn-flere-sentrert.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-15-minside-06-saker/04-pages-15-minside-06-saker.rendered.html",
+          "lineagePattern": "pages-saker"
+        }
+      },
+      {
+        "v": "01-molecules/vis-flere/40-last-inn-flere-minside.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-15-minside-02-organisasjon/04-pages-15-minside-02-organisasjon.rendered.html",
+          "lineagePattern": "pages-organisasjon"
         }
       },
       {
@@ -1802,11 +1818,6 @@
         "value": {}
       },
       {
-        "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser.mustache",
-        "w": "00-atoms/20-skjema-element/14-radioknapp.mustache",
-        "value": {}
-      },
-      {
         "v": "01-molecules/15-skjema/sokefilter.mustache",
         "w": "00-atoms/20-skjema-element/01-etikett.mustache",
         "value": {}
@@ -1918,7 +1929,7 @@
       },
       {
         "v": "02-organisms/20-kontakt/forsidekontakt.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
+        "w": "01-molecules/vis-flere/10-les-mer-modul.mustache",
         "value": {}
       },
       {
@@ -1943,7 +1954,7 @@
       },
       {
         "v": "02-organisms/30-escenic/10-escenic-inngangsside.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
+        "w": "01-molecules/vis-flere/10-les-mer-modul.mustache",
         "value": {}
       },
       {
@@ -1953,7 +1964,7 @@
       },
       {
         "v": "02-organisms/30-escenic/15-escenic-artikkelliste.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
+        "w": "01-molecules/vis-flere/10-les-mer-modul.mustache",
         "value": {}
       },
       {
@@ -1983,7 +1994,7 @@
       },
       {
         "v": "02-organisms/40-annet/10-siste-nytt.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
+        "w": "01-molecules/vis-flere/10-les-mer-modul.mustache",
         "value": {}
       },
       {
@@ -1998,7 +2009,7 @@
       },
       {
         "v": "02-organisms/40-annet/12-arrangement.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
+        "w": "01-molecules/vis-flere/10-les-mer-modul.mustache",
         "value": {}
       },
       {
@@ -2023,7 +2034,7 @@
       },
       {
         "v": "02-organisms/40-annet/64-modul-link-liste.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
+        "w": "01-molecules/vis-flere/10-les-mer-modul.mustache",
         "value": {}
       },
       {
@@ -2038,7 +2049,7 @@
       },
       {
         "v": "02-organisms/40-annet/66-modul-link-liste-with-meta.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
+        "w": "01-molecules/vis-flere/10-les-mer-modul.mustache",
         "value": {}
       },
       {
@@ -2048,7 +2059,7 @@
       },
       {
         "v": "02-organisms/40-annet/70-forsidenyheter.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
+        "w": "01-molecules/vis-flere/10-les-mer-modul.mustache",
         "value": {}
       },
       {
@@ -2063,7 +2074,7 @@
       },
       {
         "v": "02-organisms/40-annet/71-forsidetjenester.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
+        "w": "01-molecules/vis-flere/10-les-mer-modul.mustache",
         "value": {}
       },
       {
@@ -2133,7 +2144,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/03-hva-skjer.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
+        "w": "01-molecules/vis-flere/10-les-mer-modul.mustache",
         "value": {}
       },
       {
@@ -3163,7 +3174,7 @@
       },
       {
         "v": "03-templates/20-Listesider/artikkelliste.mustache",
-        "w": "01-molecules/les-mer/30-les-mer.mustache",
+        "w": "01-molecules/vis-flere/10-les-mer-modul.mustache",
         "value": {}
       },
       {
@@ -3248,6 +3259,11 @@
       },
       {
         "v": "03-templates/20-Listesider/listeside-med-avansert-filtrering.mustache",
+        "w": "01-molecules/vis-flere/20-last-inn-flere.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-avansert-filtrering.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -3284,6 +3300,11 @@
       {
         "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
         "w": "01-molecules/lister/06-link-liste-filter-soek.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
+        "w": "01-molecules/vis-flere/20-last-inn-flere.mustache",
         "value": {}
       },
       {
@@ -3444,6 +3465,11 @@
       {
         "v": "03-templates/20-Listesider/sokeresultat.mustache",
         "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/sokeresultat.mustache",
+        "w": "01-molecules/vis-flere/20-last-inn-flere.mustache",
         "value": {}
       },
       {
@@ -3808,7 +3834,7 @@
       },
       {
         "v": "04-pages/15-minside/00-minside-velger.mustache",
-        "w": "01-molecules/les-mer/40-minside-les-mer.mustache",
+        "w": "01-molecules/vis-flere/40-last-inn-flere-minside.mustache",
         "value": {}
       },
       {
@@ -3843,6 +3869,11 @@
       },
       {
         "v": "04-pages/15-minside/01-innbygger.mustache",
+        "w": "01-molecules/vis-flere/30-last-inn-flere-sentrert.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/01-innbygger.mustache",
         "w": "01-molecules/00-overskrifter/31-moduloverskrift-h2-med-lenke.mustache",
         "value": {}
       },
@@ -3853,7 +3884,7 @@
       },
       {
         "v": "04-pages/15-minside/01-innbygger.mustache",
-        "w": "01-molecules/les-mer/40-minside-les-mer.mustache",
+        "w": "01-molecules/vis-flere/40-last-inn-flere-minside.mustache",
         "value": {}
       },
       {
@@ -3928,7 +3959,7 @@
       },
       {
         "v": "04-pages/15-minside/02-organisasjon.mustache",
-        "w": "01-molecules/les-mer/40-minside-les-mer.mustache",
+        "w": "01-molecules/vis-flere/40-last-inn-flere-minside.mustache",
         "value": {}
       },
       {
@@ -4009,6 +4040,11 @@
       {
         "v": "04-pages/15-minside/06-saker.mustache",
         "w": "01-molecules/lister/50-saker-liste.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/06-saker.mustache",
+        "w": "01-molecules/vis-flere/30-last-inn-flere-sentrert.mustache",
         "value": {}
       },
       {

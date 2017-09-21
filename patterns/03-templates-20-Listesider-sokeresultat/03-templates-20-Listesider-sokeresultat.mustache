@@ -72,7 +72,7 @@
         </div>
         
         
-        <ol id="js_search_results" class="search_results">
+        <ol id="js_search_results" class="search_results mbj">
                         
             {{# soekeresultatListe }}
                 <li class="{{ type }}">
@@ -98,51 +98,12 @@
             {{/ soekeresultatListe }}
         
         </ol>
-
-
-        <a href="javascript:lastFlere()" id="js_lastflere" class="load_more_link" style="display:none;">
-            <span class="read_more_link read_more_link--20">
-                Vis flere treff <!-- (<span id="js_antallflere"></span>)  -->
-            </span>
-        </a>
         
+        
+        {{# lastFlere }}
+        {{> molecules-last-inn-flere:neg-mtml }}
+        {{/ lastFlere }}
 
-        <script>
-            function lastFlere() {
-                var start = $("#js_search_results").children().length;
-                jQuery.get(
-                        "/sok/flere",
-                        {start: start, q: 'bibliotek', innholdstype: ''},
-                        function(data) {
-                            $("#js_search_results").append(data);
-                            visLastFlere();
-                        }
-                );
-            }
-
-            function visLastFlere() {
-                var visteTreff = $("#js_search_results").children().length;
-                var antallFlere = 484 - visteTreff;
-                $("#js_antallflere").html(antallFlere);
-
-                if (antallFlere > 0) {
-                    $("#js_lastflere").show();
-                } else {
-                    $("#js_lastflere").hide();
-                }
-            }
-
-            $(function() { visLastFlere(); });
-        </script>
-<!--
-        <script type="text/javascript">
-            // focus on search field after it has loaded
-            $(document).ready(function () {
-                $('.js_search_style').focus();
-            });
-        </script>
--->			
-                
 
   </div>
 </div>

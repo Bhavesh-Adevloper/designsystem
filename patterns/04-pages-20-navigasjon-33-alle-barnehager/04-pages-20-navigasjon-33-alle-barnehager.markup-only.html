@@ -137,11 +137,12 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     </button>
 </div>
 
-            <div class="search-checkbox-filter ">
+            <div class="search-checkbox-filter mbml">
     <button id="js_search-checkbox-filter__button" class="search-checkbox-filter__button">Avgrens søket</button>
-    <div class="search-checkbox-filter__content ">
-            <fieldset>
-                <legend class="search-checkbox-filter__title search-checkbox-filter__title--advanced">Vis per type: </legend>
+    <div class="search-checkbox-filter__content search-checkbox-filter__content--open">
+            <fieldset class="search-checkbox-filter__fieldset search-checkbox-filter__fieldset--open mbml">
+                <legend id="js_search-checkbox-filter__title--advanced"><a href="#" class="search-checkbox-filter__title search-checkbox-filter__title--advanced" title="Åpne Vis per type: filter">Vis per type: </a></legend>
+                <div class="search-checkbox-filter__group">
 <div class="form-element mbm">
     <input type="checkbox" id="alle" class="form-element__checkbox" checked>
     <label for="alle" class="form-element__label form-element__label--checkbox"><span></span> Alle </label>
@@ -154,9 +155,11 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     <input type="checkbox" id="privat" class="form-element__checkbox" >
     <label for="privat" class="form-element__label form-element__label--checkbox"><span></span> Privat </label>
 </div>
+                </div>
             </fieldset>
-            <fieldset>
-                <legend class="search-checkbox-filter__title search-checkbox-filter__title--advanced">Vis per bydel: </legend>
+            <fieldset class="search-checkbox-filter__fieldset search-checkbox-filter__fieldset--open mbml">
+                <legend id="js_search-checkbox-filter__title--advanced"><a href="#" class="search-checkbox-filter__title search-checkbox-filter__title--advanced" title="Åpne Vis per bydel: filter">Vis per bydel: </a></legend>
+                <div class="search-checkbox-filter__group">
 <div class="form-element mbm">
     <input type="checkbox" id="allebydeler" class="form-element__checkbox" checked>
     <label for="allebydeler" class="form-element__label form-element__label--checkbox"><span></span> Alle bydeler </label>
@@ -193,9 +196,16 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     <input type="checkbox" id="asane" class="form-element__checkbox" >
     <label for="asane" class="form-element__label form-element__label--checkbox"><span></span> Åsane </label>
 </div>
+                </div>
             </fieldset>
+
+        <div class="mbml">
+            <a class="search-checkbox-filter__reset-link" href="#">Nullstill filtre</a>
+        </div>
     </div>
-</div>        
+    <a href="#" class="search-checkbox-filter__close">Lukk</a>
+</div>
+
             
         </div>
         <div class="col_md_12 col_lg_8">
@@ -425,7 +435,13 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 </ul>
 
             
-            <p>Last inn flere</p>
+            
+                <div class="load-more-container load-more-container--20 neg-mtml">
+    <a href="javascript:lastFlere()" id="js_lastflere" class="read_more_link read_more_link--20" title="Last inn flere">
+        Last inn flere
+    </a>
+</div>
+
             
         </div>
     </div>

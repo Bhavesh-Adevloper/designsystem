@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1505906028425" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1505906028425" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1505993943627" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1505993943627" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <!-- never cache patterns -->
@@ -16,8 +16,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1505906028425" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1505906028425" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1505993943627" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1505993943627" media="all" />
 
     <!-- End Pattern Lab -->
     
@@ -59,33 +59,34 @@
     <fieldset class="payment">
         <legend class="screen-reader-text"></legend>
 
-        <div class="mbml payment__kid">
+        <div class="payment__kid mbml">
             <label for="kid" class="form-element__label"> KID-nummer </label>
             <p class="payment__kid-text">Mangler du KID - <a href="#" class="link link--external link--underline">her
                 kan du få tak i det</a></p>
             <input id="kid" type="number" required min="2" max="25"
-                   class="form-element__number form-element__number--without-spinner" onblur="checkValidity()">
+                   class="form-element__number form-element__number--without-spinner">
             <p class="form-element__helptext--error">KID-nummeret må bestå av minst 2, og opptil 25 siffer</p>
         </div>
 
-        <div class="mbml payment__amount">
+        <div class="payment__amount mbml">
             <label for="kr" class="form-element__label"> Beløp </label>
             <input id="kr" type="number" placeholder="0" required min="10" max="99"
-                   class="form-element__number form-element__number--without-spinner" onblur="checkValidity()">,
+                   class="form-element__number form-element__number--without-spinner">,
+            <label for="ore" class="form-element__label screen-reader-text"> Øre </label>
             <input id="ore" type="number" placeholder="00" required min="10" max="99"
-                   class="form-element__number form-element__number--without-spinner" onblur="checkValidity()">
+                   class="form-element__number form-element__number--without-spinner">
         </div>
 
         <div class="payment__email">
             <div class="mbml">
                 <label class="form-element__label"> E-post </label>
-                <input id="email" type="email" required class="form-element__textfield" onblur="checkValidity()">
+                <input id="email" type="email" required class="form-element__textfield">
                 <span class="form-element__helptext--error">Hjelp</span>
             </div>
 
             <div class="mbxl">
                 <label for="repeat-email" class="form-element__label"> Gjenta e-post </label>
-                <input id="repeat-email" type="email" required class="form-element__textfield" onblur="checkValidity()">
+                <input id="repeat-email" type="email" required class="form-element__textfield" >
                 <span class="form-element__helptext--error">Hjelp</span>
             </div>
         </div>
@@ -227,31 +228,9 @@
     </div>
 </div>
 
-<!--
-<div class="search-checkbox-filter ">
-    <button id="js_search-checkbox-filter__button" class="search-checkbox-filter__button">Avgrens søket</button>
-    <div class="search-checkbox-filter__content">
-        <div class="search-checkbox-filter__content">
-            <fieldset>
-                <legend class="search-checkbox-filter__title mbm ">Per radioknapp </legend>
-<div class="form-element mbm">
-    <input class="form-element__radio" type="radio" name="Per radioknapp" id="not-checked"  >
-    <label class="form-element__label" for="not-checked">eller</label>
-</div>
-<div class="form-element mbml">
-    <input class="form-element__radio" type="radio" name="Per radioknapp" id="checked" checked >
-    <label class="form-element__label" for="checked">radioknapper</label>
-</div>
-
-            </fieldset>
-        </div>
-    </div>
-</div>
--->
-
   </div>
   <script type="text/json" id="sg-pattern-data-molecules-sokefilter-avkrysningsbokser" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-avkryssingsboks","lineagePath":"../../patterns/00-atoms-20-skjema-element-13-avkryssingsboks/00-atoms-20-skjema-element-13-avkryssingsboks.rendered.html"},{"lineagePattern":"atoms-radioknapp","lineagePath":"../../patterns/00-atoms-20-skjema-element-14-radioknapp/00-atoms-20-skjema-element-14-radioknapp.rendered.html"}],"lineage":[{"lineagePattern":"atoms-avkryssingsboks","lineagePath":"../../patterns/00-atoms-20-skjema-element-13-avkryssingsboks/00-atoms-20-skjema-element-13-avkryssingsboks.rendered.html"},{"lineagePattern":"atoms-radioknapp","lineagePath":"../../patterns/00-atoms-20-skjema-element-14-radioknapp/00-atoms-20-skjema-element-14-radioknapp.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-listeside-sas-med-filterboks","lineagePath":"../../patterns/03-templates-20-Listesider-03-listeside-sas-med-filterboks/03-templates-20-Listesider-03-listeside-sas-med-filterboks.rendered.html"}],"lineageR":[{"lineagePattern":"templates-listeside-sas-med-filterboks","lineagePath":"../../patterns/03-templates-20-Listesider-03-listeside-sas-med-filterboks/03-templates-20-Listesider-03-listeside-sas-med-filterboks.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"skjema"},"patternExtension":"mustache","patternName":"Sokefilter Avkrysningsbokser","patternPartial":"molecules-sokefilter-avkrysningsbokser","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+    {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-avkryssingsboks","lineagePath":"../../patterns/00-atoms-20-skjema-element-13-avkryssingsboks/00-atoms-20-skjema-element-13-avkryssingsboks.rendered.html"}],"lineage":[{"lineagePattern":"atoms-avkryssingsboks","lineagePath":"../../patterns/00-atoms-20-skjema-element-13-avkryssingsboks/00-atoms-20-skjema-element-13-avkryssingsboks.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-listeside-sas-med-filterboks","lineagePath":"../../patterns/03-templates-20-Listesider-03-listeside-sas-med-filterboks/03-templates-20-Listesider-03-listeside-sas-med-filterboks.rendered.html"}],"lineageR":[{"lineagePattern":"templates-listeside-sas-med-filterboks","lineagePath":"../../patterns/03-templates-20-Listesider-03-listeside-sas-med-filterboks/03-templates-20-Listesider-03-listeside-sas-med-filterboks.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"skjema"},"patternExtension":"mustache","patternName":"Sokefilter Avkrysningsbokser","patternPartial":"molecules-sokefilter-avkrysningsbokser","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="molecules-sokefilter-avkrysningsbokser-avansert" class="sg-pattern">
@@ -270,9 +249,10 @@
   <div class="sg-pattern-example">
     <div class="search-checkbox-filter ">
     <button id="js_search-checkbox-filter__button" class="search-checkbox-filter__button">Avgrens søket</button>
-    <div class="search-checkbox-filter__content ">
-            <fieldset>
-                <legend class="search-checkbox-filter__title search-checkbox-filter__title--advanced">Per checkbox </legend>
+    <div class="search-checkbox-filter__content search-checkbox-filter__content--open">
+            <fieldset class="search-checkbox-filter__fieldset search-checkbox-filter__fieldset--open mbml">
+                <legend id="js_search-checkbox-filter__title--advanced"><a href="#" class="search-checkbox-filter__title search-checkbox-filter__title--advanced" title="Åpne Per checkbox filter">Per checkbox </a></legend>
+                <div class="search-checkbox-filter__group">
 <div class="form-element mbm">
     <input type="checkbox" id="not-checked" class="form-element__checkbox" >
     <label for="not-checked" class="form-element__label form-element__label--checkbox"><span></span> Enten </label>
@@ -281,9 +261,12 @@
     <input type="checkbox" id="checked" class="form-element__checkbox" checked>
     <label for="checked" class="form-element__label form-element__label--checkbox"><span></span> avkrysningsbokser </label>
 </div>
+                </div>
             </fieldset>
-            <fieldset>
-                <legend class="search-checkbox-filter__title search-checkbox-filter__title--advanced">Per radioknapp </legend>
+
+            <fieldset class="search-checkbox-filter__fieldset mbml">
+                <legend id="js_search-checkbox-filter__title--advanced"><a href="#" class="search-checkbox-filter__title search-checkbox-filter__title--advanced" title="Åpne Per radioknapp filter">Per radioknapp </a></legend>
+                <div class="search-checkbox-filter__group">
 <div class="form-element mbm">
     <input class="form-element__radio" type="radio" name="Per radioknapp" id="not-checked"  >
     <label class="form-element__label" for="not-checked">eller</label>
@@ -293,9 +276,15 @@
     <label class="form-element__label" for="checked">radioknapper</label>
 </div>
 
+                </div>
             </fieldset>
+        <div class="mbml">
+            <a class="search-checkbox-filter__reset-link" href="#">Nullstill filtre</a>
+        </div>
     </div>
+    <a href="#" class="search-checkbox-filter__close">Lukk</a>
 </div>
+
   </div>
   <script type="text/json" id="sg-pattern-data-molecules-sokefilter-avkrysningsbokser-avansert" class="sg-pattern-data">
     {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-avkryssingsboks","lineagePath":"../../patterns/00-atoms-20-skjema-element-13-avkryssingsboks/00-atoms-20-skjema-element-13-avkryssingsboks.rendered.html"},{"lineagePattern":"atoms-radioknapp","lineagePath":"../../patterns/00-atoms-20-skjema-element-14-radioknapp/00-atoms-20-skjema-element-14-radioknapp.rendered.html"}],"lineage":[{"lineagePattern":"atoms-avkryssingsboks","lineagePath":"../../patterns/00-atoms-20-skjema-element-13-avkryssingsboks/00-atoms-20-skjema-element-13-avkryssingsboks.rendered.html"},{"lineagePattern":"atoms-radioknapp","lineagePath":"../../patterns/00-atoms-20-skjema-element-14-radioknapp/00-atoms-20-skjema-element-14-radioknapp.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-listeside-med-avansert-filtrering","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-avansert-filtrering/03-templates-20-Listesider-listeside-med-avansert-filtrering.rendered.html"},{"lineagePattern":"templates-listeside-med-lenkebokser","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-lenkebokser/03-templates-20-Listesider-listeside-med-lenkebokser.rendered.html"}],"lineageR":[{"lineagePattern":"templates-listeside-med-avansert-filtrering","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-avansert-filtrering/03-templates-20-Listesider-listeside-med-avansert-filtrering.rendered.html"},{"lineagePattern":"templates-listeside-med-lenkebokser","lineagePath":"../../patterns/03-templates-20-Listesider-listeside-med-lenkebokser/03-templates-20-Listesider-listeside-med-lenkebokser.rendered.html"}],"patternLineageEExists":true,"patternDesc":"<p>Søkefilter avkrykrysningsbokser: Enten radiobuttons eller checboxer.</p>\n<p>Søkefilter avkrysningsbokser avansert: Flere valg med både radiobuttons og checkboxer.\nForskjellen er llassen &quot;search-checkbox-filter__title--advanced&quot; på &quot;search-checkbox-filter__title&quot;\nfor at hvert område med enten checkboxer eller radiobuttons skal ha hver sin tittel, også på mobil.\nAlle filtrene blir gjemt under samme knapp på mobil.</p>\n","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"skjema"},"patternExtension":"mustache","patternName":"Sokefilter Avkrysningsbokser Avansert","patternPartial":"molecules-sokefilter-avkrysningsbokser-avansert","patternState":"","patternEngineName":"mustache","extraOutput":{}}
@@ -343,10 +332,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1505906028425">
+<script id="pl-js-polyfill-insert-1505993943627">
   (function() {
     if (self != top) {
-      var cb = '1505906028425';
+      var cb = '1505993943627';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -356,10 +345,10 @@
   })();
 </script>
 
-<script id="pl-js-insert-1505906028425">
+<script id="pl-js-insert-1505993943627">
   (function() {
     if (self != top) {
-      var cb = '1505906028425';
+      var cb = '1505993943627';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

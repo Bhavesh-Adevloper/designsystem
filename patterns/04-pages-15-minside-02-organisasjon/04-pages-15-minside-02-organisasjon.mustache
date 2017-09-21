@@ -24,27 +24,27 @@
 <div style="opacity: .5;">
                 {{> molecules-moduloverskrift-h2:mbs(tittel: "Maler") }}
                 {{# maler }}
-                {{> molecules-element-liste-skjema }}
+                {{> molecules-element-liste-skjema:mbj }}
                 {{/ maler }}
 </div>
                 
                 {{> molecules-moduloverskrift-h2-med-lenke:mbs(url: "{{ link.pages-saker }}", tittel: "Saker") }}
                 <p>Listen viser byggesaker og noen andre sakstyper. Du kan ha saker med kommunen som ikke vises i denne oversikten.</p>
                 {{# saker }}
-                {{> molecules-saker-liste }}
+                {{> molecules-saker-liste:mbj }}
                 {{/ saker }}               
                 {{# visFlereSaker }}
-                {{> molecules-minside-les-mer }}
+                {{> molecules-last-inn-flere-minside:neg-mtxl }}
                 {{/ visFlereSaker }}                
                 
                 
                 {{> molecules-moduloverskrift-h2-med-lenke:mbs(url: "{{ link.pages-eiendommer }}", tittel: "Eiendommer") }}
                 {{# eiendommer }}
-                {{> molecules-element-liste-eiendommer }}
+                {{> molecules-element-liste-eiendommer:mbj }}
                 {{/ eiendommer }}
                 
                 {{# visFlereEiendommer }}
-                {{> molecules-minside-les-mer }}
+                {{> molecules-last-inn-flere-minside:neg-mtxl }}
                 {{/ visFlereEiendommer }}                
                 
             </div>

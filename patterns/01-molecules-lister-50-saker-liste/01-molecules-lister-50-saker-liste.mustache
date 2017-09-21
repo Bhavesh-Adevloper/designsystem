@@ -1,6 +1,5 @@
-<div class="case_list_container">
-     <ul class="case_list">
-        {{# sakerliste }}
+<ul class="case_list {{ styleModifier }}">
+    {{# sakerliste }}
         <li>
             <h3 class="case_title">
                 <a href="{{ url }}" title="{{ tittel }}">
@@ -16,15 +15,14 @@
                 <span class="case_last_updated">{{ oppdatertDato }}</span>
             </span>
         </li>
-        {{/ sakerliste }}
-        {{# visBraArkivLink }}
-            <li class="braarkiv_link">
-                <h3 class="case_title">
-                    <a href="#" title="Byggesaker fra før 2006">
-                        Vis byggesaker fra før 2006
-                    </a>
-                </h3>
-            </li>
-        {{/ visBraArkivLink }}
-    </ul>
-</div>
+    {{/ sakerliste }}
+    {{# visBraArkivLink }}
+        <li class="braarkiv_link">
+            <h3 class="case_title">
+                <a href="#" title="Byggesaker fra før 2006">
+                    Vis byggesaker fra før 2006
+                </a>
+            </h3>
+        </li>
+    {{/ visBraArkivLink }}
+</ul>

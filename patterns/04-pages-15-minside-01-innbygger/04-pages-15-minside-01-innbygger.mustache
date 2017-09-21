@@ -21,31 +21,31 @@
             <div class="article_content">
 
                 {{> molecules-moduloverskrift-h2:mbs(tittel: "Påbegynte skjema") }}                
-                {{> molecules-element-liste-skjema }}
-                <div class="min_side_load_more_container">
-                    <a title="Last inn flere skjemaer" href="#">Last inn flere skjema</a>
-                </div>
+                {{> molecules-element-liste-skjema:mbj }}
+                {{# lastFlereSkjema }}
+                {{> molecules-last-inn-flere-sentrert:neg-mtxl }}
+                {{/ lastFlereSkjema }}
                 
                 
                 {{> molecules-moduloverskrift-h2-med-lenke:mbs(url: "{{ link.pages-saker }}", tittel: "Saker") }}   
                 <p>Listen viser byggesaker og noen andre sakstyper. Du kan ha saker med kommunen som ikke vises i denne oversikten.</p>
-                {{> molecules-saker-liste }}                
+                {{> molecules-saker-liste:mbj }}                
                 {{# visFlereSaker }}
-                {{> molecules-minside-les-mer }}
+                {{> molecules-last-inn-flere-minside:neg-mtxl }}
                 {{/ visFlereSaker }}
                 
                 
                 {{> molecules-moduloverskrift-h2-med-lenke:mbs(url: "{{ link.pages-fakturaer }}", tittel: "Fakturaoversikt") }}
                 <p>Faktura vises kun for fakturamottaker.</p>
-                {{> molecules-fakturaer }}                
+                {{> molecules-fakturaer:mbj }}                
                 {{# visFlereFakturaer }}
-                {{> molecules-minside-les-mer }}
+                {{> molecules-last-inn-flere-minside:neg-mtxl }}
                 {{/ visFlereFakturaer }}
 
 
                 {{> molecules-moduloverskrift-h2:mbs(tittel: "Eiendommer") }} 
                 {{# eiendommer }}
-                {{> molecules-element-liste-eiendommer }}
+                {{> molecules-element-liste-eiendommer:mbj }}
                 {{/ eiendommer }}
 
 
@@ -54,7 +54,7 @@
                 {{> molecules-fil-liste:mbj }}
                 {{/ lonnsslipper }}
                 {{# visFlereLonnsslipper }}
-                {{> molecules-minside-les-mer }}
+                {{> molecules-last-inn-flere-minside:neg-mtxl }}
                 {{/ visFlereLonnsslipper }}
             
                 

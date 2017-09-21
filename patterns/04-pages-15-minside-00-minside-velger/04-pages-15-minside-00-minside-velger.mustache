@@ -6,14 +6,14 @@
     <div class="row">
         <div class="col_md_12 col_lg_9">
 
-            {{> molecules-representasjonsliste }}
+            {{> molecules-representasjonsliste:mbj }}
 
             
             {{> molecules-moduloverskrift-h2-med-lenke:mbs(url: "{{ link.pages-org-uten-rettighet }}", tittel: "Organisasjoner hvor du ikke har tilstrekkelige rettigheter") }}
             <p>Tilgang tildeles av rettighetshaver på <a href="altinn.no" title="altinn.no">altinn.no</a>.</p>
 
-            {{> molecules-representasjonsliste-enkel }}
-            {{> molecules-minside-les-mer }}
+            {{> molecules-representasjonsliste-enkel:mbj }}
+            {{> molecules-last-inn-flere-minside:neg-mtxl }}
 
 
         </div>

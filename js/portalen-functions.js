@@ -363,6 +363,20 @@ function openSearchFilter(){
 }
 
 
+//Kun funksjonalitet i PL, Angular ellers
+function openSearchFilterGroup(){
+    $("#js_search-checkbox-filter__title--advanced").click( function() {
+        if ( $(this).parent().hasClass("search-checkbox-filter__fieldset--open")) {
+            $(this).parent().removeClass("search-checkbox-filter__fieldset--open");
+            return false;
+        } else {
+            $(this).parent().addClass("search-checkbox-filter__fieldset--open")
+            return false;
+        }
+    });
+}
+
+
 $(document).ready(function () {
     mainNavMobileToggle();
     addCategoryHeights();
@@ -377,6 +391,7 @@ $(document).ready(function () {
     filterSearch();
     toggleAccordion();
     openSearchFilter();
+    openSearchFilterGroup();
 });
 
 $(window).bind("load", function() {

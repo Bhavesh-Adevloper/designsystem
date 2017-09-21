@@ -19,7 +19,7 @@
                 {{> atoms-filterboks }}
             {{/ searchFilter }}
 
-            {{> molecules-sokefilter-avkrysningsbokser-avansert }}        
+            {{> molecules-sokefilter-avkrysningsbokser-avansert:mbml }}
             
         </div>
         <div class="col_md_12 col_lg_8">
@@ -40,7 +40,10 @@
                 {{> molecules-fil-liste:mbj }}
             {{/ resultatFilListen }}
             
-            <p>Last inn flere</p>
+            
+            {{# lastFlere }}
+                {{> molecules-last-inn-flere:neg-mtml }}
+            {{/ lastFlere }}
             
         </div>
     </div>

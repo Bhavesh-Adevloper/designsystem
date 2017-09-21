@@ -2,33 +2,34 @@
     <fieldset class="payment">
         <legend class="screen-reader-text"></legend>
 
-        <div class="mbml payment__kid">
+        <div class="payment__kid mbml">
             <label for="kid" class="form-element__label"> KID-nummer </label>
             <p class="payment__kid-text">Mangler du KID - <a href="#" class="link link--external link--underline">her
                 kan du få tak i det</a></p>
             <input id="kid" type="number" required min="2" max="25"
-                   class="form-element__number form-element__number--without-spinner" onblur="checkValidity()">
+                   class="form-element__number form-element__number--without-spinner">
             <p class="form-element__helptext--error">KID-nummeret må bestå av minst 2, og opptil 25 siffer</p>
         </div>
 
-        <div class="mbml payment__amount">
+        <div class="payment__amount mbml">
             <label for="kr" class="form-element__label"> Beløp </label>
             <input id="kr" type="number" placeholder="0" required min="10" max="99"
-                   class="form-element__number form-element__number--without-spinner" onblur="checkValidity()">,
+                   class="form-element__number form-element__number--without-spinner">,
+            <label for="ore" class="form-element__label screen-reader-text"> Øre </label>
             <input id="ore" type="number" placeholder="00" required min="10" max="99"
-                   class="form-element__number form-element__number--without-spinner" onblur="checkValidity()">
+                   class="form-element__number form-element__number--without-spinner">
         </div>
 
         <div class="payment__email">
             <div class="mbml">
                 <label class="form-element__label"> E-post </label>
-                <input id="email" type="email" required class="form-element__textfield" onblur="checkValidity()">
+                <input id="email" type="email" required class="form-element__textfield">
                 <span class="form-element__helptext--error">Hjelp</span>
             </div>
 
             <div class="mbxl">
                 <label for="repeat-email" class="form-element__label"> Gjenta e-post </label>
-                <input id="repeat-email" type="email" required class="form-element__textfield" onblur="checkValidity()">
+                <input id="repeat-email" type="email" required class="form-element__textfield" >
                 <span class="form-element__helptext--error">Hjelp</span>
             </div>
         </div>

@@ -26,8 +26,9 @@
             {{/ antallOverskrift }}
 
             {{> molecules-link-liste-filter-soek:mbj }}
-            
-            <p>Last inn flere</p>
+            {{# lastFlere }}
+                {{> molecules-last-inn-flere:neg-mtml }}
+            {{/ lastFlere }}
             
         </div>
         <div class="col_md_12 col_lg_4">

@@ -19,9 +19,10 @@
                     </form>
                 </div>
 
-                {{> molecules-saker-liste }}
-
-                <p class="load_more_cases"><a href="#" title="Flere saker">Last inn flere saker</a></p>
+                {{> molecules-saker-liste:mbj }}
+                {{# lastFlereSaker }}
+                {{> molecules-last-inn-flere-sentrert:neg-mtxl }}
+                {{/ lastFlereSaker }}
 
                 {{> molecules-tilbakemelding }}
 
