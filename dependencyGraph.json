@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1505993946661,
+  "timestamp": 1505996438236,
   "graph": {
     "options": {
       "directed": true,
@@ -926,12 +926,6 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-10-Innholdssider-skolerute/03-templates-10-Innholdssider-skolerute.rendered.html",
           "lineagePattern": "templates-skolerute"
-        }
-      },
-      {
-        "v": "02-organisms/40-annet/22-underavdelinger.mustache",
-        "value": {
-          "compileState": "clean"
         }
       },
       {
