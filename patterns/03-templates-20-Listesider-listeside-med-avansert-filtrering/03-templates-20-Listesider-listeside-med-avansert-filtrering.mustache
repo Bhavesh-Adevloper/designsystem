@@ -2,7 +2,7 @@
 {{> organisms-brodsmuler }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
 
-    <div class="mbxl">
+    <div class="mbl">
         {{# sideoverskriftH1 }}
             {{> molecules-sideoverskrift-h1(sidetittel: "{{ sidetittel }}") }}
         {{/ sideoverskriftH1 }}
@@ -13,6 +13,13 @@
     </div>
         
     <div class="row">
+        <div class="col_md_12 col_lg_8 float_change">
+
+            {{# moduloverskriftH1 }}
+                {{> molecules-moduloverskrift-h1:mbml|mbxl--mob }}
+            {{/ moduloverskriftH1 }}
+            
+        </div>
         <div class="col_md_12 col_lg_4">
 
             {{# searchFilter }}
