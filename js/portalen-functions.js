@@ -47,6 +47,28 @@ function horisontalScroll() {
 }
 
 
+function addClassOnExternalLinks() {
+	var location = window.location.protocol + "//" + window.location.host;
+	var externalLink = new RegExp("^https?://.*", "i");
+	$("a").each(function() {
+		try {
+			var url = this.href.replace(location, "");
+			if (url.match(externalLink)) {
+				if (! $(this).html().match(/<img/i)) {
+    				$(this).addClass("link link--external");
+    				/*
+    				if(! $(this).hasClass("addthis_button_expanded")) {
+    				}
+    				*/
+				}
+			}
+		} catch(e) { 
+			//alert (e); 
+		}
+	});
+}
+
+
 // Main navigation mobile toggle
 function mainNavMobileToggle() {
     $(".js_open_mobile_main_nav").click( function() {
@@ -392,6 +414,7 @@ $(document).ready(function () {
     toggleAccordion();
     openSearchFilter();
     openSearchFilterGroup();
+    addClassOnExternalLinks();
 });
 
 $(window).bind("load", function() {
