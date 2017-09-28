@@ -55,11 +55,15 @@ function addClassOnExternalLinks() {
 			var url = this.href.replace(location, "");
 			if (url.match(externalLink)) {
 				if (! $(this).html().match(/<img/i)) {
-    				$(this).addClass("link link--external");
-    				/*
-    				if(! $(this).hasClass("addthis_button_expanded")) {
+    				if(!(
+        				$(this).hasClass('service_icon') // Feilmelding
+        				|| $(this).hasClass('some_footer_link') // SoMe
+        				|| $(this).hasClass('intern_link') // Ansattpålogging
+        				|| $(this).hasClass('contact_static_image_link') // GoogleMaps
+    				)) {
+    				// if(!$(this).is(".service_icon .some_footer_link")) {
+        				$(this).addClass("link link--external");
     				}
-    				*/
 				}
 			}
 		} catch(e) { 
