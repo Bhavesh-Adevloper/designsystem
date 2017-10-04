@@ -62,7 +62,7 @@ function addClassOnExternalLinks() {
         				|| $(this).hasClass('contact_static_image_link') // GoogleMaps
     				)) {
     				// if(!$(this).is(".service_icon .some_footer_link")) {
-        				$(this).addClass("link link--external");
+        				$(this).addClass("external_link");
     				}
 				}
 			}

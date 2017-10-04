@@ -1,24 +1,30 @@
-<div class="module_container {{ styleModifier }}">
-    {{# bilde }}
-        <div class="module_image_container">
-            <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="module_image"/>
+<div class="row contact-module {{ styleModifier }}">
+
+    <div class="col_lg_6 col_md_12">
+        <div class="contact-module__map-container">
+            <div class="contact-module__map contact-module__map--mobile" style="background-image: url(https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyBmF-VNrEbdzVXStcHSeRQA4RQOdfKJI2s&center=Fjøsangerveien+68+Bergen+Norway&zoom=18&scale=2&size=640x640&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7CFjøsangerveien+68+Bergen+Norway);"></div>
+            <div class="contact-module__map contact-module__map--desktop" style="background-image: url(https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyBmF-VNrEbdzVXStcHSeRQA4RQOdfKJI2s&center=Fjøsangerveien+68+Bergen+Norway&zoom=16&scale=2&size=400x640&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7CFjøsangerveien+68+Bergen+Norway);" role="img" aria-label="Besøksadresse: {{ kartbilde_label }}"></div>
+            <a href="" title="Starhusgaten 16" class="contact-module__link">
+                <span class="contact-module__link-text">
+                    <span class="read_more_link read_more_link--16">Vis større kart</span>
+                </span>
+            </a>
         </div>
-    {{/ bilde }}
-    <div class="module_content_container module_content_container--contact-information">
-        <div class="module_content_excerpt">
-            <dl class="contact_content">
-                <dt class="screen-reader-text">Adresse:</dt>
-                <dd>
-                   Starhusgaten 2A, 5014 Bergen
-                </dd>
-                <dt class="screen-reader-text">Telefon:</dt>
-                <dd class="with_icon">
-                    <a href="tel:55566000" title="Ring oss">
-                        <span class="icon phone_icon medium_size"></span>
-                        55 56 60 00
-                    </a>
-                </dd>
-            </dl>
-        </div>
+    </div>
+
+    <div class="contact-module__contact col_lg_6 col_md_12">
+        <dl class="contact-module__contact-content contact_content">
+            <dt class="screen-reader-text">Adresse:</dt>
+            <dd>
+               Starhusgaten 2A, 5014 Bergen
+            </dd>
+            <dt class="screen-reader-text">Telefon:</dt>
+            <dd class="with_icon">
+                <a href="tel:55566000" title="Ring oss">
+                    <span class="icon phone_icon medium_size"></span>
+                    55 56 60 00
+                </a>
+            </dd>
+        </dl>
     </div>
 </div>
