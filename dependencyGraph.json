@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1506582000619,
+  "timestamp": 1507040228582,
   "graph": {
     "options": {
       "directed": true,
@@ -170,16 +170,22 @@
         "v": "00-atoms/20-skjema-element/01-etikett.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-15-skjema-sokefilter/01-molecules-15-skjema-sokefilter.rendered.html",
+          "lineagePath": "../../patterns/01-molecules-14-sok-og-filtrering-sokefilter/01-molecules-14-sok-og-filtrering-sokefilter.rendered.html",
           "lineagePattern": "molecules-sokefilter"
         }
       },
       {
-        "v": "00-atoms/20-skjema-element/01-hjelpetekst.mustache",
+        "v": "00-atoms/20-skjema-element/02-hjelpetekst.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-15-skjema-sokefilter/01-molecules-15-skjema-sokefilter.rendered.html",
-          "lineagePattern": "molecules-sokefilter"
+          "lineagePath": "../../patterns/01-molecules-15-skjema-kontaktskjema-med-captcha/01-molecules-15-skjema-kontaktskjema-med-captcha.rendered.html",
+          "lineagePattern": "molecules-kontaktskjema-med-captcha"
+        }
+      },
+      {
+        "v": "00-atoms/20-skjema-element/03-hjelpetekst-feil.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -216,7 +222,7 @@
         "v": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-15-skjema-sokefilter-avkrysningsbokser/01-molecules-15-skjema-sokefilter-avkrysningsbokser.rendered.html",
+          "lineagePath": "../../patterns/01-molecules-14-sok-og-filtrering-sokefilter-avkrysningsbokser/01-molecules-14-sok-og-filtrering-sokefilter-avkrysningsbokser.rendered.html",
           "lineagePattern": "molecules-sokefilter-avkrysningsbokser"
         }
       },
@@ -224,7 +230,7 @@
         "v": "00-atoms/20-skjema-element/14-radioknapp.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-15-skjema-sokefilter-avkrysningsbokser-avansert/01-molecules-15-skjema-sokefilter-avkrysningsbokser-avansert.rendered.html",
+          "lineagePath": "../../patterns/01-molecules-14-sok-og-filtrering-sokefilter-avkrysningsbokser-avansert/01-molecules-14-sok-og-filtrering-sokefilter-avkrysningsbokser-avansert.rendered.html",
           "lineagePattern": "molecules-sokefilter-avkrysningsbokser-avansert"
         }
       },
@@ -232,7 +238,7 @@
         "v": "00-atoms/20-skjema-element/15-nedtrekksliste.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-15-skjema-sokefilter/01-molecules-15-skjema-sokefilter.rendered.html",
+          "lineagePath": "../../patterns/01-molecules-14-sok-og-filtrering-sokefilter/01-molecules-14-sok-og-filtrering-sokefilter.rendered.html",
           "lineagePattern": "molecules-sokefilter"
         }
       },
@@ -309,7 +315,7 @@
         }
       },
       {
-        "v": "01-molecules/02-innhold/03-godkjent.mustache",
+        "v": "01-molecules/02-innhold/02-godkjent.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse.rendered.html",
@@ -317,7 +323,13 @@
         }
       },
       {
-        "v": "01-molecules/02-innhold/04-feil.mustache",
+        "v": "01-molecules/02-innhold/03-feil.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-molecules/02-innhold/04-kansellert.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -455,6 +467,30 @@
         }
       },
       {
+        "v": "01-molecules/14-sok-og-filtrering/sokefilter-avkrysningsbokser-avansert.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-20-Listesider-listeside-med-lenkebokser/03-templates-20-Listesider-listeside-med-lenkebokser.rendered.html",
+          "lineagePattern": "templates-listeside-med-lenkebokser"
+        }
+      },
+      {
+        "v": "01-molecules/14-sok-og-filtrering/sokefilter-avkrysningsbokser.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-20-Listesider-03-listeside-sas-med-filterboks/03-templates-20-Listesider-03-listeside-sas-med-filterboks.rendered.html",
+          "lineagePattern": "templates-listeside-sas-med-filterboks"
+        }
+      },
+      {
+        "v": "01-molecules/14-sok-og-filtrering/sokefilter.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-20-Listesider-01-listeside-sas/03-templates-20-Listesider-01-listeside-sas.rendered.html",
+          "lineagePattern": "templates-listeside-sas"
+        }
+      },
+      {
         "v": "01-molecules/15-skjema/30-kemner-betalingsinformasjon.mustache",
         "value": {
           "compileState": "clean",
@@ -466,30 +502,6 @@
         "v": "01-molecules/15-skjema/kontaktskjema-med-captcha.mustache",
         "value": {
           "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser-avansert.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-20-Listesider-listeside-med-lenkebokser/03-templates-20-Listesider-listeside-med-lenkebokser.rendered.html",
-          "lineagePattern": "templates-listeside-med-lenkebokser"
-        }
-      },
-      {
-        "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-20-Listesider-03-listeside-sas-med-filterboks/03-templates-20-Listesider-03-listeside-sas-med-filterboks.rendered.html",
-          "lineagePattern": "templates-listeside-sas-med-filterboks"
-        }
-      },
-      {
-        "v": "01-molecules/15-skjema/sokefilter.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-20-Listesider-01-listeside-sas/03-templates-20-Listesider-01-listeside-sas.rendered.html",
-          "lineagePattern": "templates-listeside-sas"
         }
       },
       {
@@ -1796,53 +1808,53 @@
         "value": {}
       },
       {
+        "v": "01-molecules/14-sok-og-filtrering/sokefilter-avkrysningsbokser-avansert.mustache",
+        "w": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/14-sok-og-filtrering/sokefilter-avkrysningsbokser-avansert.mustache",
+        "w": "00-atoms/20-skjema-element/14-radioknapp.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/14-sok-og-filtrering/sokefilter-avkrysningsbokser.mustache",
+        "w": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/14-sok-og-filtrering/sokefilter.mustache",
+        "w": "00-atoms/20-skjema-element/01-etikett.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/14-sok-og-filtrering/sokefilter.mustache",
+        "w": "00-atoms/20-skjema-element/05-filterboks.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/14-sok-og-filtrering/sokefilter.mustache",
+        "w": "00-atoms/20-skjema-element/02-hjelpetekst.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/14-sok-og-filtrering/sokefilter.mustache",
+        "w": "00-atoms/20-skjema-element/15-nedtrekksliste.mustache",
+        "value": {}
+      },
+      {
         "v": "01-molecules/15-skjema/kontaktskjema-med-captcha.mustache",
         "w": "00-atoms/20-skjema-element/08-tekstfelt.mustache",
         "value": {}
       },
       {
         "v": "01-molecules/15-skjema/kontaktskjema-med-captcha.mustache",
-        "w": "00-atoms/20-skjema-element/01-hjelpetekst.mustache",
+        "w": "00-atoms/20-skjema-element/02-hjelpetekst.mustache",
         "value": {}
       },
       {
         "v": "01-molecules/15-skjema/kontaktskjema-med-captcha.mustache",
         "w": "00-atoms/20-skjema-element/09-tekstomrade.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser-avansert.mustache",
-        "w": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser-avansert.mustache",
-        "w": "00-atoms/20-skjema-element/14-radioknapp.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-molecules/15-skjema/sokefilter-avkrysningsbokser.mustache",
-        "w": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-molecules/15-skjema/sokefilter.mustache",
-        "w": "00-atoms/20-skjema-element/01-etikett.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-molecules/15-skjema/sokefilter.mustache",
-        "w": "00-atoms/20-skjema-element/05-filterboks.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-molecules/15-skjema/sokefilter.mustache",
-        "w": "00-atoms/20-skjema-element/01-hjelpetekst.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-molecules/15-skjema/sokefilter.mustache",
-        "w": "00-atoms/20-skjema-element/15-nedtrekksliste.mustache",
         "value": {}
       },
       {
@@ -3017,7 +3029,7 @@
       },
       {
         "v": "03-templates/20-Listesider/01-listeside-sas.mustache",
-        "w": "01-molecules/15-skjema/sokefilter.mustache",
+        "w": "01-molecules/14-sok-og-filtrering/sokefilter.mustache",
         "value": {}
       },
       {
@@ -3052,7 +3064,7 @@
       },
       {
         "v": "03-templates/20-Listesider/03-listeside-sas-med-filterboks.mustache",
-        "w": "01-molecules/15-skjema/sokefilter-avkrysningsbokser.mustache",
+        "w": "01-molecules/14-sok-og-filtrering/sokefilter-avkrysningsbokser.mustache",
         "value": {}
       },
       {
@@ -3252,7 +3264,7 @@
       },
       {
         "v": "03-templates/20-Listesider/listeside-med-avansert-filtrering.mustache",
-        "w": "01-molecules/15-skjema/sokefilter-avkrysningsbokser-avansert.mustache",
+        "w": "01-molecules/14-sok-og-filtrering/sokefilter-avkrysningsbokser-avansert.mustache",
         "value": {}
       },
       {
@@ -3357,7 +3369,7 @@
       },
       {
         "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
-        "w": "01-molecules/15-skjema/sokefilter-avkrysningsbokser-avansert.mustache",
+        "w": "01-molecules/14-sok-og-filtrering/sokefilter-avkrysningsbokser-avansert.mustache",
         "value": {}
       },
       {
@@ -3837,7 +3849,7 @@
       },
       {
         "v": "04-pages/10-tjenester/22-kemneren-betalingsbekreftelse.mustache",
-        "w": "01-molecules/02-innhold/03-godkjent.mustache",
+        "w": "01-molecules/02-innhold/02-godkjent.mustache",
         "value": {}
       },
       {

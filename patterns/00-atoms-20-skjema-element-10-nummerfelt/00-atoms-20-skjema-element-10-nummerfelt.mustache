@@ -1,10 +1,5 @@
 <div class="form-element {{styleModifier}}">
-    {{#nummerfelt.etikett}}<label class="form-element__label {{#nummerfelt.skjultEtikett}} screen-reader-text{{/nummerfelt.skjultEtikett}}"> {{nummerfelt.etikett}} </label> {{/nummerfelt.etikett}}
-    <input class="form-element__number" type="number" placeholder="{{nummerfelt.placeholder}}">
-</div>
-
-<div class="form-element {{styleModifier}}">
-    {{#nummerfelt.etikett}}<label class="form-element__label {{#nummerfelt.skjultEtikett}} screen-reader-text{{/nummerfelt.skjultEtikett}}"> {{nummerfelt.etikett}} </label> {{/nummerfelt.etikett}}
-    <input class="form-element__number form-element__number--without-spinner" type="number" placeholder="{{nummerfelt.placeholder}}">
+    {{#etikett}}<label class="form-element__label {{#skjultEtikett}} screen-reader-text{{/skjultEtikett}}"> {{etikett}} </label> {{/etikett}}
+    <input class="form-element__number {{#skjultSpinner}}form-element__number--without-spinner {{/skjultSpinner}}" type="number" placeholder="{{placeholder}}">
 </div>
 

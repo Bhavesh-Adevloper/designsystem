@@ -377,7 +377,7 @@ function clearFilter() {
 
 //Kun funksjonalitet i PL, Angular ellers
 function openSearchFilter(){
-    $("#js_search-checkbox-filter__button").click( function() {
+    $(".js_search-checkbox-filter__button").click( function() {
         if ( $(this).parent().hasClass("search-checkbox-filter--open")) {
             $(this).parent().removeClass("search-checkbox-filter--open");
             return false;
@@ -391,12 +391,17 @@ function openSearchFilter(){
 
 //Kun funksjonalitet i PL, Angular ellers
 function openSearchFilterGroup(){
-    $("#js_search-checkbox-filter__title--advanced").click( function() {
-        if ( $(this).parent().hasClass("search-checkbox-filter__fieldset--open")) {
-            $(this).parent().removeClass("search-checkbox-filter__fieldset--open");
+    // Mobile only // Lukk alle fasetter bortsett fra den første
+    if ($(window).width() <= 1019) {
+        $('.search-checkbox-filter__content > .search-checkbox-filter__fieldset--open').slice(1).removeClass("search-checkbox-filter__fieldset--open");
+    }
+    
+    $(".js_search-checkbox-filter__title--advanced").click( function() {
+        if ( $(this).parent().parent().hasClass("search-checkbox-filter__fieldset--open")) {
+            $(this).parent().parent().removeClass("search-checkbox-filter__fieldset--open");
             return false;
         } else {
-            $(this).parent().addClass("search-checkbox-filter__fieldset--open")
+            $(this).parent().parent().addClass("search-checkbox-filter__fieldset--open")
             return false;
         }
     });

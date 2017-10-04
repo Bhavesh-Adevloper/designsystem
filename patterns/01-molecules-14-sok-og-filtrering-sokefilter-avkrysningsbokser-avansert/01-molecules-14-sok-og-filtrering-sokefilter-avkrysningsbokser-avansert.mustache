@@ -1,0 +1,34 @@
+<div class="search-checkbox-filter {{styleModifier}}">
+    <button class="js_search-checkbox-filter__button search-checkbox-filter__button">Avgrens søket</button>
+    <div class="search-checkbox-filter__content">
+        {{# avkryssingsbokser }}
+            <fieldset class="search-checkbox-filter__fieldset mbxl mbml--mob search-checkbox-filter__fieldset--open">
+                <legend>
+                    <a href="#" class="js_search-checkbox-filter__title--advanced search-checkbox-filter__title search-checkbox-filter__title--advanced" title="Åpne {{ legend }} filter">
+                    {{ legend }}
+                    </a>
+                </legend>
+                <div class="search-checkbox-filter__group">
+                    {{> atoms-avkryssingsboks }}
+                </div>
+            </fieldset>
+        {{/ avkryssingsbokser }}
+
+        {{# radioknapper }}
+            <fieldset class="search-checkbox-filter__fieldset mbxl mbml--mob search-checkbox-filter__fieldset--open">
+                <legend>
+                    <a href="#" class="js_search-checkbox-filter__title--advanced search-checkbox-filter__title search-checkbox-filter__title--advanced" title="Åpne {{ legend }} filter">
+                    {{ legend }}
+                    </a>
+                </legend>
+                <div class="search-checkbox-filter__group">
+                    {{> atoms-radioknapp }}
+                </div>
+            </fieldset>
+        {{/ radioknapper }}
+        <div class="mbml">
+            <a class="search-checkbox-filter__reset-link" href="#">Nullstill filtre</a>
+        </div>
+    </div>
+    <a href="#" class="search-checkbox-filter__close-button">Lukk</a>
+</div>
