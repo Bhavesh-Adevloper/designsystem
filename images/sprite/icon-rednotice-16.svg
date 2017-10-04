@@ -1,8 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
     <g fill="none" fill-rule="evenodd">
         <circle cx="8" cy="8" r="7.5" stroke="#E45555"/>
-        <text fill="#C00" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="12" font-weight="500">
-            <tspan x="6.11" y="12">!</tspan>
-        </text>
+        <path fill="#C00" d="M7.346 5.328L7.31 3.96h1.392l-.048 1.368-.192 4.092h-.924l-.192-4.092zm-.24 5.88c0-.272.086-.496.258-.672a.861.861 0 0 1 .642-.264c.256 0 .468.088.636.264.168.176.252.4.252.672a.934.934 0 0 1-.252.672.842.842 0 0 1-.636.264.861.861 0 0 1-.642-.264.922.922 0 0 1-.258-.672z"/>
     </g>
 </svg>

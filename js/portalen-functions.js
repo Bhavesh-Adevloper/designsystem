@@ -60,8 +60,8 @@ function addClassOnExternalLinks() {
         				|| $(this).hasClass('some_footer_link') // SoMe
         				|| $(this).hasClass('intern_link') // Ansattpålogging
         				|| $(this).hasClass('contact_static_image_link') // GoogleMaps
+                        || $(this).hasClass('external_url_link') // Ekstern org-lenke
     				)) {
-    				// if(!$(this).is(".service_icon .some_footer_link")) {
         				$(this).addClass("external_link");
     				}
 				}

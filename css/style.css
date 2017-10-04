@@ -4674,6 +4674,10 @@ footer {
     background-image: url("../images/blue_list_style_image_large.svg");
     background-position: right 18px; }
 
+.external_link:before {
+  white-space: pre-wrap;
+  display: inline-block; }
+
 .external_link:after {
   content: '';
   width: 10px;
@@ -4694,14 +4698,18 @@ footer {
   margin-right: 2px;
   margin-right: 0.125rem; }
 
-.external_link:before {
-  white-space: pre-wrap;
-  display: inline-block; }
-
 .external_link.read_more_link,
-.external_link .read_more_link {
+.external_link > .read_more_link {
   padding-right: 0;
   background-image: none; }
+
+.ece_hvaskjer_grid .ece_module_content_container .ece_module_title .external_link .read_more_link {
+  padding-right: 0;
+  background-image: none; }
+
+.button.external_link:after {
+  margin-left: 8px;
+  margin-left: 0.5rem; }
 
 .button.external_link:hover:after {
   background-position: -299px -235px;
@@ -6642,6 +6650,9 @@ footer {
       padding: 9px 4px 5px;
       padding: 0.5625rem 0.25rem 0.3125rem;
       margin: 0; }
+      .external_url_header .external_url_link .external_url_link_text .external_link:after {
+        margin-left: 6px;
+        margin-left: 0.375rem; }
     .external_url_header .external_url_link:hover .external_url_link_text,
     .external_url_header .external_url_link:active .external_url_link_text {
       color: #2d4e7e;
