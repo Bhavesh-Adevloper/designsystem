@@ -80,11 +80,13 @@
                         <h2 class="search_result_title">
                             {{ tittel }}
                         </h2>
+                        {{# breadcrumbLabelContainer }}
                         <span class="search_result_breadcrumbs">
                             {{# breadcrumbLabel }}
                                 <span class="section"><span class="separator">&gt;</span> {{ breadcrumbLabel }}</span>
                             {{/ breadcrumbLabel }}
                         </span>
+                        {{/ breadcrumbLabelContainer }}
                     </a>
                     <div class="search_result_excerpt">
                         {{# dato }}

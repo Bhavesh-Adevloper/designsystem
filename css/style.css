@@ -4707,6 +4707,15 @@ footer {
   padding-right: 0;
   background-image: none; }
 
+.search_result_link.external_link {
+  position: relative; }
+  .search_result_link.external_link:after {
+    position: absolute;
+    top: 12px;
+    top: 0.75rem;
+    right: -17px;
+    right: -1.0625rem; }
+
 .button.external_link:after {
   margin-left: 8px;
   margin-left: 0.5rem; }
