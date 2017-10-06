@@ -4,7 +4,7 @@ Name: Portalen style
 URI: https://www.bergen.kommune.no/
 */
 .svg-icon-arrow-down, .form-element__label--dropdown-icon::after, .svg-icon-bluearrow-down, .search-checkbox-filter__title--advanced::after, .search-checkbox-filter__button::after, .svg-icon-checkmark, .form-element__checkbox:checked + label span::before, .svg-icon-greencheck-16, .svg-icon-greencheck-60, .notice--approved::before, .svg-icon-notice-16, .svg-icon-notice-60, .notice--cancelled::before, .svg-icon-rednotice-16, .svg-icon-rednotice-60, .notice--error::before, .svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after, .svg-icon-small-grey-searchglass, .filter_search_input_container .filter_search_label::after {
-  background: url("../../images/gulp-sprite.svg") no-repeat; }
+  background: url("../../../images/gulp-sprite.svg") no-repeat; }
 
 .svg-icon-arrow-down, .form-element__label--dropdown-icon::after {
   background-position: 0 0;
@@ -9377,7 +9377,7 @@ a.itslearning_link {
       padding-top: 0.5625rem; } }
 
 .svg-icon-arrow-down, .form-element__label--dropdown-icon::after, .svg-icon-bluearrow-down, .search-checkbox-filter__title--advanced::after, .search-checkbox-filter__button::after, .svg-icon-checkmark, .form-element__checkbox:checked + label span::before, .svg-icon-greencheck-16, .svg-icon-greencheck-60, .notice--approved::before, .svg-icon-notice-16, .svg-icon-notice-60, .notice--cancelled::before, .svg-icon-rednotice-16, .svg-icon-rednotice-60, .notice--error::before, .svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after, .svg-icon-small-grey-searchglass, .filter_search_input_container .filter_search_label::after {
-  background: url("../../images/gulp-sprite.svg") no-repeat; }
+  background: url("../../../images/gulp-sprite.svg") no-repeat; }
 
 .svg-icon-arrow-down, .form-element__label--dropdown-icon::after {
   background-position: 0 0;
