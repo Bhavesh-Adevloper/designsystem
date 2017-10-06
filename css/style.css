@@ -4680,23 +4680,21 @@ footer {
 
 .external_link:after {
   content: '';
-  width: 10px;
-  width: 0.625rem;
-  height: 10px;
-  height: 0.625rem;
+  width: 12px;
+  width: 0.75rem;
+  height: 12px;
+  height: 0.75rem;
   background-image: url("../images/mainSprite.svg?v=20171003");
-  background-position: -267px -235px;
-  background-position: -16.6875rem -14.6875rem;
+  background-position: -266px -234px;
+  background-position: -16.625rem -14.625rem;
   background-color: transparent;
   background-repeat: no-repeat;
   display: inline-block;
   text-decoration: none;
   overflow: hidden;
   white-space: pre-wrap;
-  margin-left: 4px;
-  margin-left: 0.25rem;
-  margin-right: 2px;
-  margin-right: 0.125rem; }
+  margin: 0 2px -1px 3px;
+  margin: 0 0.125rem -0.0625rem 0.1875rem; }
 
 .external_link.read_more_link,
 .external_link > .read_more_link {

@@ -57,10 +57,12 @@ function addClassOnExternalLinks() {
 				if (! $(this).html().match(/<img/i)) {
     				if(!(
         				$(this).hasClass('service_icon') // Feilmelding
-        				|| $(this).hasClass('some_footer_link') // SoMe
+        				|| $(this).hasClass('some_footer_link') // Footer SoMe
         				|| $(this).hasClass('intern_link') // Ansattpålogging
         				|| $(this).hasClass('contact_static_image_link') // GoogleMaps
                         || $(this).hasClass('external_url_link') // Ekstern org-lenke
+                        || $(this).hasClass('map_link') // Vis i kart i tjenestebeskrivelse
+                        || $(this).parent().hasClass('module_header') // Kart over Bergenhus overskrift
     				)) {
         				$(this).addClass("external_link");
     				}
