@@ -6167,7 +6167,7 @@ footer {
   padding: 0;
   border: 1px solid #e7d5a6;
   border: 0.0625rem solid #e7d5a6;
-  border-radius: 5px; }
+  border-radius: 0.3125rem; }
   .search-checkbox-filter legend {
     width: 100%;
     padding-left: 0;
@@ -6210,7 +6210,7 @@ footer {
     background-color: #fff;
     font-size: 21px;
     font-size: 1.3125rem;
-    border-radius: 5px; }
+    border-radius: 0.3125rem; }
     .search-checkbox-filter__button::after {
       content: '';
       display: inline-block;
@@ -6255,9 +6255,7 @@ footer {
     .search-checkbox-filter--open .search-checkbox-filter__close-button {
       display: block;
       text-align: center;
-      border-radius: 5px;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
+      border-radius: 0 0 0.3125rem 0.3125rem;
       border: 1px solid #e7d5a6;
       border: 0.0625rem solid #e7d5a6;
       border-top: none;
