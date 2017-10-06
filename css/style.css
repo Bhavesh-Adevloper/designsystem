@@ -6266,12 +6266,13 @@ footer {
       margin: 0 auto;
       left: 0;
       right: 0;
-      max-width: 69px;
-      max-width: 4.3125rem;
-      padding: 8px 17px 4px 17px;
-      padding: 0.5rem 1.0625rem 0.25rem 1.0625rem;
+      max-width: 70px;
+      max-width: 4.375rem;
+      padding: 7px 17px;
+      padding: 0.4375rem 1.0625rem;
       font-size: 17px;
-      font-size: 1.0625rem; }
+      font-size: 1.0625rem;
+      line-height: 1.23529; }
   @media only screen and (min-width: 1020px) {
     .search-checkbox-filter {
       border: none; }
