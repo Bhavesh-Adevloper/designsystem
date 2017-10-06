@@ -379,7 +379,7 @@ function clearFilter() {
 
 //Kun funksjonalitet i PL, Angular ellers
 function openSearchFilter(){
-    $(".js_search-checkbox-filter__button").click( function() {
+    $(".js_search-checkbox-filter__toggle").click( function() {
         if ( $(this).parent().hasClass("search-checkbox-filter--open")) {
             $(this).parent().removeClass("search-checkbox-filter--open");
             return false;
