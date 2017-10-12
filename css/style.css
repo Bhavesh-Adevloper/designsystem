@@ -197,6 +197,90 @@ textarea {
   .vr * {
     background-color: transparent !important; }
 
+.spacing .mbs {
+  margin-bottom: 7px;
+  margin-bottom: 0.4375rem;
+  box-shadow: 0px 7px 0px rgba(46, 204, 64, 0.5); }
+  .spacing .mbs:after {
+    content: "mbs 7px";
+    position: absolute;
+    right: 0;
+    color: #cc0000;
+    font-size: 12px;
+    font-size: 0.75rem; }
+
+.spacing .mbm {
+  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
+  box-shadow: 0px 14px 0px rgba(61, 153, 112, 0.5); }
+  .spacing .mbm:after {
+    content: "mbm 14px";
+    position: absolute;
+    right: 0;
+    color: #cc0000;
+    font-size: 12px;
+    font-size: 0.75rem; }
+
+.spacing .mbml {
+  margin-bottom: 21px;
+  margin-bottom: 1.3125rem;
+  box-shadow: 0px 21px 0px rgba(0, 31, 63, 0.5); }
+  .spacing .mbml:after {
+    content: "mbml 21px";
+    position: absolute;
+    right: 0;
+    color: #cc0000;
+    font-size: 12px;
+    font-size: 0.75rem; }
+
+.spacing .mbl {
+  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
+  box-shadow: 0px 28px 0px rgba(255, 133, 27, 0.5); }
+  .spacing .mbl:after {
+    content: "mbl 28px";
+    position: absolute;
+    right: 0;
+    color: #cc0000;
+    font-size: 12px;
+    font-size: 0.75rem; }
+
+.spacing .mbxl {
+  margin-bottom: 35px;
+  margin-bottom: 2.1875rem;
+  box-shadow: 0px 35px 0px rgba(255, 220, 0, 0.5); }
+  .spacing .mbxl:after {
+    content: "mbxl 35px";
+    position: absolute;
+    right: 0;
+    color: #cc0000;
+    font-size: 12px;
+    font-size: 0.75rem; }
+
+.spacing .mbxxl {
+  margin-bottom: 42px;
+  margin-bottom: 2.625rem;
+  box-shadow: 0px 42px 0px rgba(133, 20, 75, 0.5); }
+  .spacing .mbxxl:after {
+    content: "mbxxl 42px";
+    position: absolute;
+    right: 0;
+    color: #cc0000;
+    font-size: 12px;
+    font-size: 0.75rem; }
+
+.spacing .mbj {
+  margin-bottom: 56px;
+  margin-bottom: 3.5rem;
+  box-shadow: 0px 56px 0px rgba(255, 65, 54, 0.8); }
+  .spacing .mbj:after {
+    content: "mbj 56px";
+    position: absolute;
+    right: 0;
+    color: #cc0000;
+    font-size: 12px;
+    font-size: 0.75rem; }
+
 body {
   margin: 0;
   position: relative;
@@ -6351,10 +6435,6 @@ footer {
 
 .js_filter_search_result_list .match .list_highlight {
   font-weight: 600; }
-
-.empty_filter_search {
-  margin-top: 36px;
-  margin-top: 2.25rem; }
 
 .tabs {
   list-style: none;

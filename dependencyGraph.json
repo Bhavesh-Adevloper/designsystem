@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1507292619334,
+  "timestamp": 1507806539817,
   "graph": {
     "options": {
       "directed": true,
@@ -724,6 +724,12 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-18-offentlig-journal-dokument/04-pages-18-offentlig-journal-dokument.rendered.html",
           "lineagePattern": "pages-dokument"
+        }
+      },
+      {
+        "v": "01-molecules/tabeller/10-flex-tabell-eksempler.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
