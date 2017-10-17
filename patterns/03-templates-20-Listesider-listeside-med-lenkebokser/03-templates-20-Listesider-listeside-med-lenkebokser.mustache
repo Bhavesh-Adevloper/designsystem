@@ -7,11 +7,11 @@
     </div>
 
     <div class="row">
-        <div class="col_md_12 col_lg_8 float_change mbxl">
-            {{# tabs }}
+        {{# tabs }}
+            <div class="col_md_12 col_lg_8 float_change mbxl">
                 {{> molecules-tabs }}
-            {{/ tabs }}
-        </div>
+            </div>
+        {{/ tabs }}
         <div class="col_md_12 col_lg_4">
 
             {{# searchFilter }}
@@ -30,6 +30,10 @@
             {{# lenkeboksListe }}
                 {{> molecules-lenkeboks-liten:mbm }}
             {{/ lenkeboksListe }}
+            
+            {{# lastFlere }}
+                {{> molecules-last-inn-flere }}
+            {{/ lastFlere }}
 
         </div>
     </div>

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1507806539817,
+  "timestamp": 1508247833165,
   "graph": {
     "options": {
       "directed": true,
@@ -120,6 +120,20 @@
       },
       {
         "v": "00-atoms/10-tabeller/00-tabell.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/10-tabeller/09-flex-tabell.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-OJ-dokument/04-pages-30-mikrotjenester-OJ-dokument.rendered.html",
+          "lineagePattern": "pages-OJ-dokument"
+        }
+      },
+      {
+        "v": "00-atoms/10-tabeller/10-flex-tabell-eksempler.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -254,8 +268,8 @@
         "v": "01-molecules/00-overskrifter/01-sideoverskrift-h1-med-print.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-17-politiker-og-utvalg-11-motekalender/04-pages-17-politiker-og-utvalg-11-motekalender.rendered.html",
-          "lineagePattern": "pages-motekalender"
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-POU-motekalender/04-pages-30-mikrotjenester-POU-motekalender.rendered.html",
+          "lineagePattern": "pages-POU-motekalender"
         }
       },
       {
@@ -270,8 +284,8 @@
         "v": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-10-tjenester-12-fysioterapi-institutt/04-pages-10-tjenester-12-fysioterapi-institutt.rendered.html",
-          "lineagePattern": "pages-fysioterapi-institutt"
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-fysio-institutt/04-pages-30-mikrotjenester-fysio-institutt.rendered.html",
+          "lineagePattern": "pages-fysio-institutt"
         }
       },
       {
@@ -286,8 +300,8 @@
         "v": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-15-minside-08-eiendom/04-pages-15-minside-08-eiendom.rendered.html",
-          "lineagePattern": "pages-eiendom"
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-fysio-institutt/04-pages-30-mikrotjenester-fysio-institutt.rendered.html",
+          "lineagePattern": "pages-fysio-institutt"
         }
       },
       {
@@ -326,8 +340,8 @@
         "v": "01-molecules/02-innhold/02-godkjent.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse.rendered.html",
-          "lineagePattern": "pages-kemneren-betalingsbekreftelse"
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-kemner-betalingsbekreftelse/04-pages-30-mikrotjenester-kemner-betalingsbekreftelse.rendered.html",
+          "lineagePattern": "pages-kemner-betalingsbekreftelse"
         }
       },
       {
@@ -374,8 +388,8 @@
         "v": "01-molecules/02-innhold/11-ekstern-url.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-10-tjenester-12-fysioterapi-institutt/04-pages-10-tjenester-12-fysioterapi-institutt.rendered.html",
-          "lineagePattern": "pages-fysioterapi-institutt"
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-fysio-institutt/04-pages-30-mikrotjenester-fysio-institutt.rendered.html",
+          "lineagePattern": "pages-fysio-institutt"
         }
       },
       {
@@ -406,8 +420,8 @@
         "v": "01-molecules/02-innhold/20-modul-liten-kontaktinformasjon.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-10-tjenester-12-fysioterapi-institutt/04-pages-10-tjenester-12-fysioterapi-institutt.rendered.html",
-          "lineagePattern": "pages-fysioterapi-institutt"
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-fysio-institutt/04-pages-30-mikrotjenester-fysio-institutt.rendered.html",
+          "lineagePattern": "pages-fysio-institutt"
         }
       },
       {
@@ -475,6 +489,12 @@
         }
       },
       {
+        "v": "01-molecules/14-sok-og-filtrering/eiendomsskatt-sok.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "01-molecules/14-sok-og-filtrering/sokefilter-avkrysningsbokser-avansert.mustache",
         "value": {
           "compileState": "clean",
@@ -502,8 +522,8 @@
         "v": "01-molecules/15-skjema/30-kemner-betalingsinformasjon.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-10-tjenester-21-kemneren-betalingsinformasjon/04-pages-10-tjenester-21-kemneren-betalingsinformasjon.rendered.html",
-          "lineagePattern": "pages-kemneren-betalingsinformasjon"
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-kemner-betalingsinformasjon/04-pages-30-mikrotjenester-kemner-betalingsinformasjon.rendered.html",
+          "lineagePattern": "pages-kemner-betalingsinformasjon"
         }
       },
       {
@@ -719,25 +739,11 @@
         }
       },
       {
-        "v": "01-molecules/tabeller/09-flex-tabell.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-18-offentlig-journal-dokument/04-pages-18-offentlig-journal-dokument.rendered.html",
-          "lineagePattern": "pages-dokument"
-        }
-      },
-      {
-        "v": "01-molecules/tabeller/10-flex-tabell-eksempler.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
         "v": "01-molecules/tabeller/kemner-faktura.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse.rendered.html",
-          "lineagePattern": "pages-kemneren-betalingsbekreftelse"
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-kemner-betalingsbekreftelse/04-pages-30-mikrotjenester-kemner-betalingsbekreftelse.rendered.html",
+          "lineagePattern": "pages-kemner-betalingsbekreftelse"
         }
       },
       {
@@ -840,16 +846,16 @@
         "v": "02-organisms/00-global/_03-header-3.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse/04-pages-10-tjenester-22-kemneren-betalingsbekreftelse.rendered.html",
-          "lineagePattern": "pages-kemneren-betalingsbekreftelse"
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-kemner-betalingsinformasjon/04-pages-30-mikrotjenester-kemner-betalingsinformasjon.rendered.html",
+          "lineagePattern": "pages-kemner-betalingsinformasjon"
         }
       },
       {
         "v": "02-organisms/00-global/_04-header-4.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-18-offentlig-journal-dokument/04-pages-18-offentlig-journal-dokument.rendered.html",
-          "lineagePattern": "pages-dokument"
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-POU-motekalender/04-pages-30-mikrotjenester-POU-motekalender.rendered.html",
+          "lineagePattern": "pages-POU-motekalender"
         }
       },
       {
@@ -1180,24 +1186,24 @@
         "v": "03-templates/20-Listesider/01-listeside-sas.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-18-offentlig-journal-postjournal/04-pages-18-offentlig-journal-postjournal.rendered.html",
-          "lineagePattern": "pages-postjournal"
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-POU-sporsmal-og-svar/04-pages-30-mikrotjenester-POU-sporsmal-og-svar.rendered.html",
+          "lineagePattern": "pages-POU-sporsmal-og-svar"
         }
       },
       {
         "v": "03-templates/20-Listesider/03-listeside-sas-med-filterboks.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-17-politiker-og-utvalg-01-politiske-utvalg/04-pages-17-politiker-og-utvalg-01-politiske-utvalg.rendered.html",
-          "lineagePattern": "pages-politiske-utvalg"
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-POU-utvalg/04-pages-30-mikrotjenester-POU-utvalg.rendered.html",
+          "lineagePattern": "pages-POU-utvalg"
         }
       },
       {
         "v": "03-templates/20-Listesider/05-listeside-sas-med-kontaktinformasjon.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-17-politiker-og-utvalg-04-en-politiker/04-pages-17-politiker-og-utvalg-04-en-politiker.rendered.html",
-          "lineagePattern": "pages-en-politiker"
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-POU-en-politiker/04-pages-30-mikrotjenester-POU-en-politiker.rendered.html",
+          "lineagePattern": "pages-POU-en-politiker"
         }
       },
       {
@@ -1252,8 +1258,8 @@
         "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-10-tjenester-11-fysioterapi-kart/04-pages-10-tjenester-11-fysioterapi-kart.rendered.html",
-          "lineagePattern": "pages-fysioterapi-kart"
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-fysio-liste/04-pages-30-mikrotjenester-fysio-liste.rendered.html",
+          "lineagePattern": "pages-fysio-liste"
         }
       },
       {
@@ -1354,6 +1360,12 @@
       },
       {
         "v": "04-pages/01-hva-skjer/17-personalrommet.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/01-hva-skjer/20-kunngjoringer.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -1485,36 +1497,6 @@
         }
       },
       {
-        "v": "04-pages/10-tjenester/10-fysioterapi-liste.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/10-tjenester/11-fysioterapi-kart.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/10-tjenester/12-fysioterapi-institutt.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/10-tjenester/21-kemneren-betalingsinformasjon.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/10-tjenester/22-kemneren-betalingsbekreftelse.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
         "v": "04-pages/10-tjenester/40-skjema-alle.mustache",
         "value": {
           "compileState": "clean"
@@ -1587,66 +1569,6 @@
         }
       },
       {
-        "v": "04-pages/17-politiker-og-utvalg/01-politiske-utvalg.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/02-politikere.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/03-politiske-saker.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/04-en-politiker.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/05-politiske-sporsmal-og-svar.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/06-et-mote.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/10-en-sak.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/11-motekalender.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/18-offentlig-journal/dokument.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/18-offentlig-journal/postjournal.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
         "v": "04-pages/20-navigasjon/00-om-kommunen.mustache",
         "value": {
           "compileState": "clean"
@@ -1696,6 +1618,96 @@
       },
       {
         "v": "04-pages/20-navigasjon/33-alle-barnehager.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/OJ-dokument.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/OJ-postjournal.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-en-politiker.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-en-sak.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-et-mote.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-motekalender.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-politikere.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-saker.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-sporsmal-og-svar.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-utvalg.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/fysio-institutt.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/fysio-kart.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/fysio-liste.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/kemner-betalingsbekreftelse.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/kemner-betalingsinformasjon.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -3048,7 +3060,7 @@
       },
       {
         "v": "03-templates/20-Listesider/01-listeside-sas.mustache",
-        "w": "01-molecules/tabeller/09-flex-tabell.mustache",
+        "w": "00-atoms/10-tabeller/09-flex-tabell.mustache",
         "value": {}
       },
       {
@@ -3083,7 +3095,7 @@
       },
       {
         "v": "03-templates/20-Listesider/03-listeside-sas-med-filterboks.mustache",
-        "w": "01-molecules/tabeller/09-flex-tabell.mustache",
+        "w": "00-atoms/10-tabeller/09-flex-tabell.mustache",
         "value": {}
       },
       {
@@ -3113,7 +3125,7 @@
       },
       {
         "v": "03-templates/20-Listesider/05-listeside-sas-med-kontaktinformasjon.mustache",
-        "w": "01-molecules/tabeller/09-flex-tabell.mustache",
+        "w": "00-atoms/10-tabeller/09-flex-tabell.mustache",
         "value": {}
       },
       {
@@ -3398,6 +3410,11 @@
       },
       {
         "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "w": "01-molecules/vis-flere/20-last-inn-flere.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -3662,6 +3679,11 @@
         "value": {}
       },
       {
+        "v": "04-pages/01-hva-skjer/20-kunngjoringer.mustache",
+        "w": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "value": {}
+      },
+      {
         "v": "04-pages/01-hva-skjer/30-kvalitetsportalen-resultater.mustache",
         "w": "03-templates/20-Listesider/listeside-med-avansert-filtrering.mustache",
         "value": {}
@@ -3789,91 +3811,6 @@
       {
         "v": "04-pages/10-tjenester/02-tjenestebeskrivelse.mustache",
         "w": "03-templates/10-Innholdssider/tjenestebeskrivelse.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/10-fysioterapi-liste.mustache",
-        "w": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/11-fysioterapi-kart.mustache",
-        "w": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/12-fysioterapi-institutt.mustache",
-        "w": "02-organisms/00-global/_03-header-3.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/12-fysioterapi-institutt.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/12-fysioterapi-institutt.mustache",
-        "w": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/12-fysioterapi-institutt.mustache",
-        "w": "01-molecules/02-innhold/11-ekstern-url.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/12-fysioterapi-institutt.mustache",
-        "w": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/12-fysioterapi-institutt.mustache",
-        "w": "01-molecules/02-innhold/20-modul-liten-kontaktinformasjon.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/12-fysioterapi-institutt.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/21-kemneren-betalingsinformasjon.mustache",
-        "w": "02-organisms/00-global/_03-header-3.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/21-kemneren-betalingsinformasjon.mustache",
-        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/21-kemneren-betalingsinformasjon.mustache",
-        "w": "01-molecules/15-skjema/30-kemner-betalingsinformasjon.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/21-kemneren-betalingsinformasjon.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/22-kemneren-betalingsbekreftelse.mustache",
-        "w": "02-organisms/00-global/_03-header-3.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/22-kemneren-betalingsbekreftelse.mustache",
-        "w": "01-molecules/02-innhold/02-godkjent.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/22-kemneren-betalingsbekreftelse.mustache",
-        "w": "01-molecules/tabeller/kemner-faktura.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/10-tjenester/22-kemneren-betalingsbekreftelse.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {
@@ -4272,101 +4209,6 @@
         "value": {}
       },
       {
-        "v": "04-pages/17-politiker-og-utvalg/01-politiske-utvalg.mustache",
-        "w": "03-templates/20-Listesider/03-listeside-sas-med-filterboks.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/02-politikere.mustache",
-        "w": "03-templates/20-Listesider/01-listeside-sas.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/03-politiske-saker.mustache",
-        "w": "03-templates/20-Listesider/01-listeside-sas.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/04-en-politiker.mustache",
-        "w": "03-templates/20-Listesider/05-listeside-sas-med-kontaktinformasjon.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/05-politiske-sporsmal-og-svar.mustache",
-        "w": "03-templates/20-Listesider/01-listeside-sas.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/06-et-mote.mustache",
-        "w": "03-templates/20-Listesider/01-listeside-sas.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/10-en-sak.mustache",
-        "w": "03-templates/20-Listesider/01-listeside-sas.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/11-motekalender.mustache",
-        "w": "02-organisms/00-global/_04-header-4.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/11-motekalender.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/11-motekalender.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/11-motekalender.mustache",
-        "w": "01-molecules/navigasjon/org-meny.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/11-motekalender.mustache",
-        "w": "01-molecules/00-overskrifter/01-sideoverskrift-h1-med-print.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/17-politiker-og-utvalg/11-motekalender.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/18-offentlig-journal/dokument.mustache",
-        "w": "02-organisms/00-global/_04-header-4.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/18-offentlig-journal/dokument.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/18-offentlig-journal/dokument.mustache",
-        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/18-offentlig-journal/dokument.mustache",
-        "w": "01-molecules/tabeller/09-flex-tabell.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/18-offentlig-journal/dokument.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/18-offentlig-journal/postjournal.mustache",
-        "w": "03-templates/20-Listesider/01-listeside-sas.mustache",
-        "value": {}
-      },
-      {
         "v": "04-pages/20-navigasjon/00-om-kommunen.mustache",
         "w": "03-templates/08-Navigasjon/10-navigasjonsside.mustache",
         "value": {}
@@ -4409,6 +4251,186 @@
       {
         "v": "04-pages/20-navigasjon/33-alle-barnehager.mustache",
         "w": "03-templates/20-Listesider/listeside-med-avansert-filtrering.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/OJ-dokument.mustache",
+        "w": "02-organisms/00-global/_04-header-4.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/OJ-dokument.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/OJ-dokument.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/OJ-dokument.mustache",
+        "w": "00-atoms/10-tabeller/09-flex-tabell.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/OJ-dokument.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/OJ-postjournal.mustache",
+        "w": "03-templates/20-Listesider/01-listeside-sas.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-en-politiker.mustache",
+        "w": "03-templates/20-Listesider/05-listeside-sas-med-kontaktinformasjon.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-en-sak.mustache",
+        "w": "03-templates/20-Listesider/01-listeside-sas.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-et-mote.mustache",
+        "w": "03-templates/20-Listesider/01-listeside-sas.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-motekalender.mustache",
+        "w": "02-organisms/00-global/_04-header-4.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-motekalender.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-motekalender.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-motekalender.mustache",
+        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-motekalender.mustache",
+        "w": "01-molecules/00-overskrifter/01-sideoverskrift-h1-med-print.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-motekalender.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-politikere.mustache",
+        "w": "03-templates/20-Listesider/01-listeside-sas.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-saker.mustache",
+        "w": "03-templates/20-Listesider/01-listeside-sas.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-sporsmal-og-svar.mustache",
+        "w": "03-templates/20-Listesider/01-listeside-sas.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/POU-utvalg.mustache",
+        "w": "03-templates/20-Listesider/03-listeside-sas-med-filterboks.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/fysio-institutt.mustache",
+        "w": "02-organisms/00-global/_03-header-3.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/fysio-institutt.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/fysio-institutt.mustache",
+        "w": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/fysio-institutt.mustache",
+        "w": "01-molecules/02-innhold/11-ekstern-url.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/fysio-institutt.mustache",
+        "w": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/fysio-institutt.mustache",
+        "w": "01-molecules/02-innhold/20-modul-liten-kontaktinformasjon.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/fysio-institutt.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/fysio-kart.mustache",
+        "w": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/fysio-liste.mustache",
+        "w": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/kemner-betalingsbekreftelse.mustache",
+        "w": "02-organisms/00-global/_03-header-3.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/kemner-betalingsbekreftelse.mustache",
+        "w": "01-molecules/02-innhold/02-godkjent.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/kemner-betalingsbekreftelse.mustache",
+        "w": "01-molecules/tabeller/kemner-faktura.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/kemner-betalingsbekreftelse.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/kemner-betalingsinformasjon.mustache",
+        "w": "02-organisms/00-global/_03-header-3.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/kemner-betalingsinformasjon.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/kemner-betalingsinformasjon.mustache",
+        "w": "01-molecules/15-skjema/30-kemner-betalingsinformasjon.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/kemner-betalingsinformasjon.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {

@@ -2,10 +2,11 @@
     <h2 class=" {{ styleModifier }}">
         {{ tittel }}
     </h2>
+    {{# feillenke }}
     <div class="error_link_container">
-        <a href="{{ url }}" title="{{ sidetittel }}">
-            {{ sidetittel }}
+        <a href="{{ url }}" title="{{ tittel }}">
+            {{ tittel }}
         </a>
     </div>
-
+    {{/ feillenke }}
 </div>

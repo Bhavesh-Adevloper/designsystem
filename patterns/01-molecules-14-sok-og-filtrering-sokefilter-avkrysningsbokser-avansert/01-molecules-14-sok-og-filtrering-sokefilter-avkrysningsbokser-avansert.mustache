@@ -1,6 +1,7 @@
 <div class="search-checkbox-filter {{styleModifier}}">
     <button class="js_search-checkbox-filter__toggle search-checkbox-filter__button">Avgrens søket</button>
     <div class="search-checkbox-filter__content">
+
         {{# avkryssingsbokser }}
             <fieldset class="search-checkbox-filter__fieldset mbml search-checkbox-filter__fieldset--open">
                 <legend>
@@ -15,7 +16,7 @@
         {{/ avkryssingsbokser }}
 
         {{# radioknapper }}
-            <fieldset class="search-checkbox-filter__fieldset mbm search-checkbox-filter__fieldset--open">
+            <fieldset class="search-checkbox-filter__fieldset mbml search-checkbox-filter__fieldset--open">
                 <legend>
                     <a href="#" class="js_search-checkbox-filter__title--advanced search-checkbox-filter__title search-checkbox-filter__title--advanced" title="Åpne {{ legend }} filter">
                     {{ legend }}
@@ -26,6 +27,7 @@
                 </div>
             </fieldset>
         {{/ radioknapper }}
+
         <div class="mbml">
             <a class="search-checkbox-filter__reset-link" href="#">Nullstill filtre</a>
         </div>
