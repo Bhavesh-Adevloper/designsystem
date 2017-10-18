@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1508247833165,
+  "timestamp": 1508311359059,
   "graph": {
     "options": {
       "directed": true,
@@ -491,7 +491,9 @@
       {
         "v": "01-molecules/14-sok-og-filtrering/eiendomsskatt-sok.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-eiendomssok/03-templates-eiendomssok.rendered.html",
+          "lineagePattern": "templates-eiendomssok"
         }
       },
       {
@@ -1308,6 +1310,12 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-02-orgenhet-16-underavdelinger/04-pages-02-orgenhet-16-underavdelinger.rendered.html",
           "lineagePattern": "pages-underavdelinger"
+        }
+      },
+      {
+        "v": "03-templates/eiendomssok.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -3610,6 +3618,36 @@
       },
       {
         "v": "03-templates/20-Listesider/underavdelinger.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/eiendomssok.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/eiendomssok.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/eiendomssok.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/eiendomssok.mustache",
+        "w": "01-molecules/14-sok-og-filtrering/eiendomsskatt-sok.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/eiendomssok.mustache",
+        "w": "00-atoms/10-tabeller/09-flex-tabell.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/eiendomssok.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },

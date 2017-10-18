@@ -23,14 +23,23 @@
                     </a>
                 </legend>
                 <div class="search-checkbox-filter__group">
+                    
                     {{> atoms-radioknapp }}
+                    
+                    {{# omRadioknapperLink }}
+                        <p class="{{styleModifier}}">
+                            <a href="{{ url }}" title="{{ tittel }}" class="read_more_link">{{ tittel }}</a>
+                        </p>
+                    {{/ omRadioknapperLink }}
                 </div>
             </fieldset>
         {{/ radioknapper }}
 
+        {{# nullstillFiltre }}
         <div class="mbml">
             <a class="search-checkbox-filter__reset-link" href="#">Nullstill filtre</a>
         </div>
+        {{/ nullstillFiltre }}
     </div>
     <a href="#" class="js_search-checkbox-filter__toggle search-checkbox-filter__close-button">Lukk</a>
 </div>
