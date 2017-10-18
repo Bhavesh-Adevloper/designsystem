@@ -1,6 +1,4 @@
 
-
-
 <div id="skiplink_container">
     <div class="desktop_centered">
         <a href="#innhold" class="skiplink">Hopp til innhold</a>
@@ -58,9 +56,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
             <div class="nav_container">
                 <a class="js_close_mobile_main_nav close_nav_btn icon close_icon" href="#" title="Lukk menyen">Lukk menyen</a>
                 <ul class="main_nav_list">
-                    <li><a href="&#x2F;patterns&#x2F;04-pages-01-hva-skjer-00-hva-skjer&#x2F;04-pages-01-hva-skjer-00-hva-skjer.rendered.html" title="Hva skjer"><span>Hva skjer</span></a></li>
+                    <li class="active"><a href="&#x2F;patterns&#x2F;04-pages-01-hva-skjer-00-hva-skjer&#x2F;04-pages-01-hva-skjer-00-hva-skjer.rendered.html" title="Hva skjer"><span>Hva skjer</span></a></li>
                     <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-00-om-kommunen&#x2F;04-pages-20-navigasjon-00-om-kommunen.rendered.html" title="Om kommunen"><span>Om kommunen</span></a></li>
-                    <li class="active"><a href="&#x2F;patterns&#x2F;04-pages-10-tjenester-00-tjenester&#x2F;04-pages-10-tjenester-00-tjenester.rendered.html" title="Tjenester"><span>Tjenester</span></a></li>
+                    <li><a href="&#x2F;patterns&#x2F;04-pages-10-tjenester-00-tjenester&#x2F;04-pages-10-tjenester-00-tjenester.rendered.html" title="Tjenester"><span>Tjenester</span></a></li>
                     <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-04-politikk&#x2F;04-pages-20-navigasjon-04-politikk.rendered.html" title="Politikk"><span>Politikk</span></a></li>
                     <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-06-ledige-stillinger&#x2F;04-pages-20-navigasjon-06-ledige-stillinger.rendered.html" title="Ledige stillinger"><span>Ledige stillinger</span></a></li>
                 </ul>
@@ -97,6 +95,8 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 
 
 
+
+
 <div class="smMa desktop_centered bc_container js_breadcrumbs clearfix">
     <div class="bc_label mobile">Gå tilbake til:</div>
     <div class="bc_label desktop">Du er her:</div>
@@ -114,29 +114,24 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 </div>
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
 
-        <div class="page_header ">
+    <div class="page_header ">
     <h1>
         Eiendomsskatt
     </h1>
 </div>
 
-        <div class="content_max_width mbxl">
-            <p>
-                Nedenfor kan du søke i listen over eiendommer i Bergen hvor det er skrevet ut eiendomsskatt. For alle eiendommer er det oppført hva som er grunnlaget for skatten. Det er mulig å søke på adresse eller gårds- og bruksnummer. Vær oppmerksom på at det ikke er alle eiendommer i Bergen som har tildelt adresse. Eksempel på dette er boliger tilknyttet borettslag.
+    <div class="content_max_width mbxl">
+        <p>Nedenfor kan du søke i listen over eiendommer i Bergen hvor det er skrevet ut eiendomsskatt. For alle eiendommer er det oppført hva som er grunnlaget for skatten. Det er mulig å søke på adresse eller gårds- og bruksnummer. Vær oppmerksom på at det ikke er alle eiendommer i Bergen som har tildelt adresse. Eksempel på dette er boliger tilknyttet borettslag.</p>
+        <p>Mer informasjon om eiendomsskatt og klageadgang finner du på <a href="#"> kemnerens nettsider</a>.</p>
+    </div>
 
-                Mer informasjon om eiendomsskatt og klageadgang finner du på <a href="#"> kemnerens nettsider </a>.
-            </p>
-        </div>
-
-        <div class="row">
-
-            <div class="col_md_12 col_lg_8 mbj">
-                <div class="case_search_container">
+    <div class="mbj">
+        <div class="case_search_container">
     <form action="#">
         <fieldset>
-            <legend class="mbs" >Søk på adresse</legend>
+            <legend class="mbs">Søk på adresse</legend>
             <div class="search-property__searchfield">
-                <input id="adressesok" type="search" class="search_input" accesskey="4">
+                <input id="adressesok" type="search" class="search_input" accesskey="4" placeholder="Søk på adresse">
                 <button><span class="icon searchglass_icon"><span class="screen-reader-text">Søk</span></span></button>
             </div>
         </fieldset>
@@ -168,10 +163,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         </div>
     </fieldset>
 </form>
+        
+    </div>
 
-            </div>
-
-            <div class="col_md_12 col_lg_12">
 
 <div class="flex-table  flex-table--column-border" role="grid" aria-labelledby="Treff på eiendommer ">
 
@@ -352,8 +346,6 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     </div>
 </div>
 
-            </div>
-        </div>
 
 </main>
 

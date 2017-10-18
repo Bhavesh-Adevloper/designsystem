@@ -2,26 +2,18 @@
 {{> organisms-brodsmuler }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
 
-        {{> molecules-sideoverskrift-h1(sidetittel: "{{ sidetittel }}") }}
+    {{> molecules-sideoverskrift-h1(sidetittel: "{{ sidetittel }}") }}
 
-        <div class="content_max_width mbxl">
-            <p>
-                Nedenfor kan du søke i listen over eiendommer i Bergen hvor det er skrevet ut eiendomsskatt. For alle eiendommer er det oppført hva som er grunnlaget for skatten. Det er mulig å søke på adresse eller gårds- og bruksnummer. Vær oppmerksom på at det ikke er alle eiendommer i Bergen som har tildelt adresse. Eksempel på dette er boliger tilknyttet borettslag.
+    <div class="content_max_width mbxl">
+        <p>Nedenfor kan du søke i listen over eiendommer i Bergen hvor det er skrevet ut eiendomsskatt. For alle eiendommer er det oppført hva som er grunnlaget for skatten. Det er mulig å søke på adresse eller gårds- og bruksnummer. Vær oppmerksom på at det ikke er alle eiendommer i Bergen som har tildelt adresse. Eksempel på dette er boliger tilknyttet borettslag.</p>
+        <p>Mer informasjon om eiendomsskatt og klageadgang finner du på <a href="#"> kemnerens nettsider</a>.</p>
+    </div>
 
-                Mer informasjon om eiendomsskatt og klageadgang finner du på <a href="#"> kemnerens nettsider </a>.
-            </p>
-        </div>
+    <div class="mbj">
+        {{> molecules-eiendomsskatt-sok }}        
+    </div>
 
-        <div class="row">
-
-            <div class="col_md_12 col_lg_8 mbj">
-                {{> molecules-eiendomsskatt-sok }}
-            </div>
-
-            <div class="col_md_12 col_lg_12">
-                {{> atoms-flex-tabell }}
-            </div>
-        </div>
+    {{> atoms-flex-tabell }}
 
 </main>
 {{> organisms-footer }}
