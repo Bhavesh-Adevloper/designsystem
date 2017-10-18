@@ -13,17 +13,17 @@
     </div>
         
     <div class="row">
-        <div class="col_md_12 col_lg_8 float_change">
-
-            {{# moduloverskriftH1 }}
+        
+        {{# moduloverskriftH1 }}
+            <div class="col_md_12 col_lg_8 float_change">
                 {{> molecules-moduloverskrift-h1:mbml|mbxl--mob }}
-            {{/ moduloverskriftH1 }}
-            
-        </div>
+            </div>
+        {{/ moduloverskriftH1 }}
+        
         <div class="col_md_12 col_lg_4">
 
             {{# searchFilter }}
-                {{> atoms-filterboks }}
+                {{> atoms-filterboks:mbml }}
             {{/ searchFilter }}
 
             {{> molecules-sokefilter-avkrysningsbokser-avansert:mbml }}
@@ -32,7 +32,7 @@
         <div class="col_md_12 col_lg_8">
 
             {{# antallOverskrift }}
-                {{> molecules-moduloverskrift-h2:mbs }}
+                {{> molecules-moduloverskrift-h2:mbm }}
             {{/ antallOverskrift }}
 
             <p class="js_empty_filter_search no_results mtml" style="display: none;">
@@ -49,7 +49,7 @@
             
             
             {{# lastFlere }}
-                {{> molecules-last-inn-flere:neg-mtml }}
+                {{> molecules-last-inn-flere:neg-mtxl }}
             {{/ lastFlere }}
             
         </div>

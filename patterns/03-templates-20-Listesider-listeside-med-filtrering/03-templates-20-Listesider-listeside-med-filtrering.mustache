@@ -2,7 +2,7 @@
 {{> organisms-brodsmuler }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
 
-    <div class="mbxl">
+    <div class="mbl">
         {{> molecules-sideoverskrift-h1(sidetittel: "{{ sidetittel }}") }}
     </div>
         
@@ -14,7 +14,7 @@
             {{/ tabs }}
 
             {{# searchFilter }}
-                {{> atoms-filterboks }}
+                {{> atoms-filterboks:mbml }}
             {{/ searchFilter }}
 
             <p class="js_empty_filter_search no_results mtml" style="display: none;">
@@ -27,14 +27,14 @@
 
             {{> molecules-link-liste-filter-soek:mbj }}
             {{# lastFlere }}
-                {{> molecules-last-inn-flere:neg-mtml }}
+                {{> molecules-last-inn-flere:neg-mtxl }}
             {{/ lastFlere }}
             
         </div>
         <div class="col_md_12 col_lg_4">
         
             {{# touts }}
-                {{> molecules-tout }}
+                {{> molecules-tout:mbj|mtm|mtn--mob }}
             {{/ touts }}
             
         </div>

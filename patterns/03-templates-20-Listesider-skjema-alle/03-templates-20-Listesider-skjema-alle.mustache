@@ -2,7 +2,7 @@
 {{> organisms-brodsmuler }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
 
-    <div class="mbxl">
+    <div class="mbl">
         {{> molecules-sideoverskrift-h1(sidetittel: "{{ sidetittel }}") }}
     </div>
     
@@ -10,7 +10,7 @@
         <div class="col_md_12 col_lg_8">
 
             {{# searchFilter }}
-                {{> atoms-filterboks:no_max_width|mbml }}
+                {{> atoms-filterboks:mbml }}
             {{/ searchFilter }}
 
             {{# antallOverskrift }}
@@ -21,7 +21,12 @@
                 Ingenting funnet
             </p>
             
-            {{> molecules-skjema-med-tjenester-liste }}
+            {{> molecules-skjema-med-tjenester-liste:mbj }}
+            
+            
+            {{# lastFlere }}
+                {{> molecules-last-inn-flere:neg-mtxl }}
+            {{/ lastFlere }}
 
         </div>
         <div class="col_md_12 col_lg_4">

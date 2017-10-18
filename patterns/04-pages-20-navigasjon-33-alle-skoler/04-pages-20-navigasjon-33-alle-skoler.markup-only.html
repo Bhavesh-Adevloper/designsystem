@@ -108,7 +108,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
             
                 <li class="bc_last_link"><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-31-avdelinger&#x2F;04-pages-20-navigasjon-31-avdelinger.rendered.html" title="Avdelinger">Avdelinger</a></li>
             
-                <li class="bc_current">Barnehager i Bergen</li>
+                <li class="bc_current">Skoler i Bergen</li>
             
         </ul>
     </div>
@@ -118,20 +118,18 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     <div class="mbl">
             <div class="page_header ">
     <h1>
-        Barnehager i Bergen
+        Skoler i Bergen
     </h1>
 </div>
 
     </div>
         
     <div class="row">
-        <div class="col_md_12 col_lg_8 float_change">
-
-            
-        </div>
+        
+        
         <div class="col_md_12 col_lg_4">
 
-                <div id="js_filter_search" name="sok" class="filter_search_input_container ">
+                <div id="js_filter_search" name="sok" class="filter_search_input_container mbml">
     <label for="filter_search" class="filter_search_label">
         <span class="screen-reader-text">Søk på navn</span>
     </label>
@@ -147,22 +145,22 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 
             <fieldset class="search-checkbox-filter__fieldset mbml search-checkbox-filter__fieldset--open">
                 <legend>
-                    <a href="#" class="js_search-checkbox-filter__title--advanced search-checkbox-filter__title search-checkbox-filter__title--advanced" title="Åpne Vis per type: filter">
-                    Vis per type:
+                    <a href="#" class="js_search-checkbox-filter__title--advanced search-checkbox-filter__title search-checkbox-filter__title--advanced" title="Åpne Vis per type skole: filter">
+                    Vis per type skole:
                     </a>
                 </legend>
                 <div class="search-checkbox-filter__group">
 <div class="form-element mbm">
-    <input type="checkbox" id="alle" class="form-element__checkbox" checked>
-    <label for="alle" class="form-element__label form-element__label--checkbox"><span></span> Alle </label>
+    <input type="checkbox" id="barneskole" class="form-element__checkbox" >
+    <label for="barneskole" class="form-element__label form-element__label--checkbox"><span></span> Barneskole </label>
 </div>
-<div class="form-element mbml">
-    <input type="checkbox" id="kommunal" class="form-element__checkbox" >
-    <label for="kommunal" class="form-element__label form-element__label--checkbox"><span></span> Kommunal </label>
+<div class="form-element mbm">
+    <input type="checkbox" id="barne-og-ungdomsskole" class="form-element__checkbox" >
+    <label for="barne-og-ungdomsskole" class="form-element__label form-element__label--checkbox"><span></span> Barne- og ungdomsskole </label>
 </div>
-<div class="form-element mbml">
-    <input type="checkbox" id="privat" class="form-element__checkbox" >
-    <label for="privat" class="form-element__label form-element__label--checkbox"><span></span> Privat </label>
+<div class="form-element mbm">
+    <input type="checkbox" id="ungdomsskole" class="form-element__checkbox" >
+    <label for="ungdomsskole" class="form-element__label form-element__label--checkbox"><span></span> Ungdomsskole </label>
 </div>
                 </div>
             </fieldset>
@@ -174,38 +172,34 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                 </legend>
                 <div class="search-checkbox-filter__group">
 <div class="form-element mbm">
-    <input type="checkbox" id="allebydeler" class="form-element__checkbox" checked>
-    <label for="allebydeler" class="form-element__label form-element__label--checkbox"><span></span> Alle bydeler </label>
-</div>
-<div class="form-element mbml">
     <input type="checkbox" id="arna" class="form-element__checkbox" >
     <label for="arna" class="form-element__label form-element__label--checkbox"><span></span> Arna </label>
 </div>
-<div class="form-element mbml">
+<div class="form-element mbm">
     <input type="checkbox" id="bergenhus" class="form-element__checkbox" >
     <label for="bergenhus" class="form-element__label form-element__label--checkbox"><span></span> Bergenhus </label>
 </div>
-<div class="form-element mbml">
+<div class="form-element mbm">
     <input type="checkbox" id="fana" class="form-element__checkbox" >
     <label for="fana" class="form-element__label form-element__label--checkbox"><span></span> Fana </label>
 </div>
-<div class="form-element mbml">
+<div class="form-element mbm">
     <input type="checkbox" id="fyllingsdalen" class="form-element__checkbox" >
     <label for="fyllingsdalen" class="form-element__label form-element__label--checkbox"><span></span> Fyllingsdalen </label>
 </div>
-<div class="form-element mbml">
+<div class="form-element mbm">
     <input type="checkbox" id="Laksevag" class="form-element__checkbox" >
     <label for="Laksevag" class="form-element__label form-element__label--checkbox"><span></span> Laksevåg </label>
 </div>
-<div class="form-element mbml">
+<div class="form-element mbm">
     <input type="checkbox" id="ytrebygda" class="form-element__checkbox" >
     <label for="ytrebygda" class="form-element__label form-element__label--checkbox"><span></span> Ytrebygda </label>
 </div>
-<div class="form-element mbml">
+<div class="form-element mbm">
     <input type="checkbox" id="arstad" class="form-element__checkbox" >
     <label for="arstad" class="form-element__label form-element__label--checkbox"><span></span> Årstad </label>
 </div>
-<div class="form-element mbml">
+<div class="form-element mbm">
     <input type="checkbox" id="asane" class="form-element__checkbox" >
     <label for="asane" class="form-element__label form-element__label--checkbox"><span></span> Åsane </label>
 </div>
@@ -224,8 +218,8 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         </div>
         <div class="col_md_12 col_lg_8">
 
-                <h2 class="module_header mbs">
-    000 totalt
+                <h2 class="module_header mbm">
+    Antall: 89
 </h2>
 
             <p class="js_empty_filter_search no_results mtml" style="display: none;">
@@ -236,213 +230,127 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     
     
         <li>
-            <a href="#" title="A2G barnehage">
-                <span class="title">A2G barnehage</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Alvøen skole">
+                <span class="title">Alvøen skole</span>
+                    <span class="meta">barneskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Arna kyrkjelyd sin barnehage">
-                <span class="title">Akasia Arna kyrkjelyd sin barnehage</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Apeltun skole">
+                <span class="title">Apeltun skole</span>
+                    <span class="meta">barneskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Bjerknesparken">
-                <span class="title">Akasia Bjerknesparken</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Aurdalslia skole">
+                <span class="title">Aurdalslia skole</span>
+                    <span class="meta">barneskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Domkirken barnehage">
-                <span class="title">Akasia Domkirken barnehage</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Bergen Kompetansesenter for Læringsmiljø">
+                <span class="title">Bergen Kompetansesenter for Læringsmiljø</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Fana barnehage">
-                <span class="title">Akasia Fana barnehage</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Bergen Voksenopplæring - skole og kompetansesenter">
+                <span class="title">Bergen Voksenopplæring - skole og kompetansesenter</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Laksevåg kirkes barnehage">
-                <span class="title">Akasia Laksevåg kirkes barnehage</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Bjørndalsskogen skole">
+                <span class="title">Bjørndalsskogen skole</span>
+                    <span class="meta">barneskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Landås menighetsbarnehage">
-                <span class="title">Akasia Landås menighetsbarnehage</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Blokkhaugen skole">
+                <span class="title">Blokkhaugen skole</span>
+                    <span class="meta">ungdomsskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Litlafjell barnehage">
-                <span class="title">Akasia Litlafjell barnehage</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Breimyra skole">
+                <span class="title">Breimyra skole</span>
+                    <span class="meta">ungdomsskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Neshaugane barnehage">
-                <span class="title">Akasia Neshaugane barnehage</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Bønes skole">
+                <span class="title">Bønes skole</span>
+                    <span class="meta">barneskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Nygård menighetsbarnehage">
-                <span class="title">Akasia Nygård menighetsbarnehage</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Christi Krybbe skoler">
+                <span class="title">Christi Krybbe skoler</span>
+                    <span class="meta">barneskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Nykirken barnehage">
-                <span class="title">Akasia Nykirken barnehage</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Damsgård skole">
+                <span class="title">Damsgård skole</span>
+                    <span class="meta">barneskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Paradis barnehage AS">
-                <span class="title">Akasia Paradis barnehage AS</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Eidsvåg skole">
+                <span class="title">Eidsvåg skole</span>
+                    <span class="meta">barne- og ungdomsskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Ramstad barnehage AS">
-                <span class="title">Akasia Ramstad barnehage AS</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Fjellsdalen skole">
+                <span class="title">Fjellsdalen skole</span>
+                    <span class="meta">barneskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Råtun barnehage">
-                <span class="title">Akasia Råtun barnehage</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Flaktveit skole">
+                <span class="title">Flaktveit skole</span>
+                    <span class="meta">barneskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Sandviken menighet barnehage">
-                <span class="title">Akasia Sandviken menighet barnehage</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Fridalen skole">
+                <span class="title">Fridalen skole</span>
+                    <span class="meta">barneskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Skjold menighetsbarnehage">
-                <span class="title">Akasia Skjold menighetsbarnehage</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Garnes skule">
+                <span class="title">Garnes skule</span>
+                    <span class="meta">barneskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Skranesvingen barnehage">
-                <span class="title">Akasia Skranesvingen barnehage</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Garnes ungdomsskole">
+                <span class="title">Garnes ungdomsskole</span>
+                    <span class="meta">ungdomsskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Sædalen barnehage AS">
-                <span class="title">Akasia Sædalen barnehage AS</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Gimle oppveksttun - skole">
+                <span class="title">Gimle oppveksttun - skole</span>
+                    <span class="meta">ungdomsskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akasia Søreide menighetsbarnehage">
-                <span class="title">Akasia Søreide menighetsbarnehage</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Haugland skole">
+                <span class="title">Haugland skole</span>
+                    <span class="meta">barneskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Akrobaten barnehage AS">
-                <span class="title">Akrobaten barnehage AS</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Haukedalen skole">
+                <span class="title">Haukedalen skole</span>
+                    <span class="meta">barneskole</span>
             </a>
         </li>
         <li>
-            <a href="#" title="Apeltun barnehage">
-                <span class="title">Apeltun barnehage</span>
-                    <span class="meta">kommunal</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" title="Arna familiebarnehage">
-                <span class="title">Arna familiebarnehage</span>
-                    <span class="meta">kommunal</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" title="Arnatveit barnehage">
-                <span class="title">Arnatveit barnehage</span>
-                    <span class="meta">kommunal</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" title="Aurdalslia barnehage">
-                <span class="title">Aurdalslia barnehage</span>
-                    <span class="meta">kommunal</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" title="Bedehusbarnehagen">
-                <span class="title">Bedehusbarnehagen</span>
-                    <span class="meta">privat</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" title="Bergen Barnehage AS">
-                <span class="title">Bergen Barnehage AS</span>
-                    <span class="meta">privat</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" title="Bergen miljøbarnehage">
-                <span class="title">Bergen miljøbarnehage</span>
-                    <span class="meta">privat</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" title="Bergens barneasyl">
-                <span class="title">Bergens barneasyl</span>
-                    <span class="meta">privat</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" title="Betanien barnehage">
-                <span class="title">Betanien barnehage</span>
-                    <span class="meta">privat</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" title="Birken barnehage AS">
-                <span class="title">Birken barnehage AS</span>
-                    <span class="meta">privat</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" title="Biskopshavn barnehage SA">
-                <span class="title">Biskopshavn barnehage SA</span>
-                    <span class="meta">privat</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" title="Bjørgedalen barnehage">
-                <span class="title">Bjørgedalen barnehage</span>
-                    <span class="meta">kommunal</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" title="Blokkhaugen barnehage">
-                <span class="title">Blokkhaugen barnehage</span>
-                    <span class="meta">kommunal</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" title="Blokksberg barnehage">
-                <span class="title">Blokksberg barnehage</span>
-                    <span class="meta">privat</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" title="Blomsterdalen barnehage AS">
-                <span class="title">Blomsterdalen barnehage AS</span>
-                    <span class="meta">privat</span>
+            <a href="#" title="Haukeland skole">
+                <span class="title">Haukeland skole</span>
+                    <span class="meta">barneskole</span>
             </a>
         </li>
     
@@ -450,9 +358,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 
             
             
-                <div class="load-more-container load-more-container--20 neg-mtml">
-    <a href="javascript:lastFlere()" id="js_lastflere" class="read_more_link read_more_link--20" title="Last inn flere">
-        Last inn flere
+                <div class="load-more-container load-more-container--20 neg-mtxl">
+    <a href="javascript:lastFlere()" id="js_lastflere" class="read_more_link read_more_link--20" title="Last inn flere (39)">
+        Last inn flere (39)
     </a>
 </div>
 

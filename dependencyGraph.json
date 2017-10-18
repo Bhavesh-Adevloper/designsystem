@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1508315587431,
+  "timestamp": 1508327790091,
   "graph": {
     "options": {
       "directed": true,
@@ -1244,8 +1244,8 @@
         "v": "03-templates/20-Listesider/listeside-med-avansert-filtrering.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-20-navigasjon-33-alle-barnehager/04-pages-20-navigasjon-33-alle-barnehager.rendered.html",
-          "lineagePattern": "pages-alle-barnehager"
+          "lineagePath": "../../patterns/04-pages-20-navigasjon-33-alle-skoler/04-pages-20-navigasjon-33-alle-skoler.rendered.html",
+          "lineagePattern": "pages-alle-skoler"
         }
       },
       {
@@ -1625,7 +1625,7 @@
         }
       },
       {
-        "v": "04-pages/20-navigasjon/33-alle-barnehager.mustache",
+        "v": "04-pages/20-navigasjon/33-alle-skoler.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -3513,6 +3513,11 @@
       },
       {
         "v": "03-templates/20-Listesider/skjema-alle.mustache",
+        "w": "01-molecules/vis-flere/20-last-inn-flere.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/skjema-alle.mustache",
         "w": "01-molecules/02-innhold/30-tout.mustache",
         "value": {}
       },
@@ -4287,7 +4292,7 @@
         "value": {}
       },
       {
-        "v": "04-pages/20-navigasjon/33-alle-barnehager.mustache",
+        "v": "04-pages/20-navigasjon/33-alle-skoler.mustache",
         "w": "03-templates/20-Listesider/listeside-med-avansert-filtrering.mustache",
         "value": {}
       },
