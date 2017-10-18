@@ -5871,8 +5871,8 @@ footer {
     border-radius: 0.1875rem;
     border: 1px solid #3b65a3;
     border: 0.0625rem solid #3b65a3;
-    margin: -2px 10px 0 0;
-    margin: -0.125rem 0.625rem 0 0; }
+    margin: -2px 4px 0 0;
+    margin: -0.125rem 0.25rem 0 0; }
   .form-element__checkbox + label {
     cursor: pointer; }
   .form-element__checkbox:checked + label span {
@@ -5951,8 +5951,8 @@ footer {
       outline: 3px solid #f0c646; }
   .form-element__radio + label {
     position: relative;
-    padding: 1px 0 0 35px;
-    padding: 0.0625rem 0 0 2.1875rem;
+    padding: 1px 0 0 30px;
+    padding: 0.0625rem 0 0 1.875rem;
     cursor: pointer; }
   .form-element__radio + label::before {
     height: 20px;
@@ -5978,8 +5978,8 @@ footer {
     border: 1px solid #cc0000;
     border: 0.0625rem solid #cc0000; }
   .form-element--indented {
-    margin-left: 35px;
-    margin-left: 2.1875rem; }
+    margin-left: 30px;
+    margin-left: 1.875rem; }
 
 .leaflet-container,
 .marker-cluster div,
