@@ -2793,8 +2793,7 @@ h1.article_header {
 
 @media only screen and (min-width: 700px) {
   h1.module_header {
-    margin-top: -5px;
-    margin-top: -0.3125rem;
+    margin-top: 0;
     font-size: 30px;
     font-size: 1.875rem;
     line-height: 1.16667; } }
@@ -3180,8 +3179,8 @@ a.file {
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 1.23529;
-  margin: 4px 0 3px;
-  margin: 0.25rem 0 0.1875rem;
+  margin: 9px 0 3px;
+  margin: 0.5625rem 0 0.1875rem;
   padding-left: 31px;
   padding-left: 1.9375rem;
   text-decoration: underline; }
@@ -8769,8 +8768,8 @@ li.with_org_sub_menu {
     opacity: 1; } }
 
 .org_main_col {
-  margin-top: 15px;
-  margin-top: 0.9375rem; }
+  margin-top: 10px;
+  margin-top: 0.625rem; }
 
 .contact_content {
   word-wrap: break-word;

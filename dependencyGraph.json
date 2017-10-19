@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1508334815372,
+  "timestamp": 1508403427688,
   "graph": {
     "options": {
       "directed": true,
@@ -284,8 +284,8 @@
         "v": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-fysio-institutt/04-pages-30-mikrotjenester-fysio-institutt.rendered.html",
-          "lineagePattern": "pages-fysio-institutt"
+          "lineagePath": "../../patterns/03-templates-20-Listesider-underavdelinger/03-templates-20-Listesider-underavdelinger.rendered.html",
+          "lineagePattern": "templates-underavdelinger"
         }
       },
       {
@@ -492,7 +492,7 @@
         "v": "01-molecules/14-sok-og-filtrering/eiendomsskatt-sok.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-eiendomssok/03-templates-eiendomssok.rendered.html",
+          "lineagePath": "../../patterns/03-templates-10-Innholdssider-eiendomssok/03-templates-10-Innholdssider-eiendomssok.rendered.html",
           "lineagePattern": "templates-eiendomssok"
         }
       },
@@ -1153,6 +1153,12 @@
         }
       },
       {
+        "v": "03-templates/10-Innholdssider/eiendomssok.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "03-templates/10-Innholdssider/kontakt.mustache",
         "value": {
           "compileState": "clean",
@@ -1310,12 +1316,6 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-02-orgenhet-16-underavdelinger/04-pages-02-orgenhet-16-underavdelinger.rendered.html",
           "lineagePattern": "pages-underavdelinger"
-        }
-      },
-      {
-        "v": "03-templates/eiendomssok.mustache",
-        "value": {
-          "compileState": "clean"
         }
       },
       {
@@ -2877,6 +2877,36 @@
         "value": {}
       },
       {
+        "v": "03-templates/10-Innholdssider/eiendomssok.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/eiendomssok.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/eiendomssok.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/eiendomssok.mustache",
+        "w": "01-molecules/14-sok-og-filtrering/eiendomsskatt-sok.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/eiendomssok.mustache",
+        "w": "00-atoms/10-tabeller/09-flex-tabell.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/eiendomssok.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
         "v": "03-templates/10-Innholdssider/kontakt.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
@@ -3627,36 +3657,6 @@
         "value": {}
       },
       {
-        "v": "03-templates/eiendomssok.mustache",
-        "w": "02-organisms/00-global/_00-header-varianter.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/eiendomssok.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/eiendomssok.mustache",
-        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/eiendomssok.mustache",
-        "w": "01-molecules/14-sok-og-filtrering/eiendomsskatt-sok.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/eiendomssok.mustache",
-        "w": "00-atoms/10-tabeller/09-flex-tabell.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/eiendomssok.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
-        "value": {}
-      },
-      {
         "v": "04-pages/00-forside/00-forside.mustache",
         "w": "03-templates/01-Inngangssider/00-forside.mustache",
         "value": {}
@@ -4403,7 +4403,7 @@
       },
       {
         "v": "04-pages/30-mikrotjenester/fysio-institutt.mustache",
-        "w": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
         "value": {}
       },
       {
