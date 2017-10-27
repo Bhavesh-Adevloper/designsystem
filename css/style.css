@@ -5648,9 +5648,12 @@ footer {
     font-size: 19px;
     font-size: 1.1875rem;
     margin: 0; }
-  .flex-table--column-border a {
-    text-decoration: underline;
-    font-size: 16px; }
+    .flex-table--column-border .flex-table__cell--title .flex-table__cell-item a {
+      text-decoration: none;
+      font-size: 19px;
+      font-size: 1.1875rem; }
+  .flex-table--column-border .flex-table__cell-item a {
+    text-decoration: underline; }
   .flex-table--postjournal .flex-table__cell {
     padding: 0;
     padding: 0; }
@@ -5766,6 +5769,14 @@ footer {
     .flex-table--column-border .flex-table__cell--title {
       font-size: 16px;
       font-size: 1rem; }
+    .flex-table--column-border .flex-table__cell--title {
+      font-size: 17px;
+      font-size: 1.0625rem;
+      margin: 0; }
+      .flex-table--column-border .flex-table__cell--title .flex-table__cell-item a {
+        text-decoration: underline;
+        font-size: 17px;
+        font-size: 1.0625rem; }
     .flex-table--postjournal .flex-table__cell {
       padding: 4px;
       padding: 0.25rem; } }
