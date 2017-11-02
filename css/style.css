@@ -3,7 +3,7 @@
 Name: Portalen style
 URI: https://www.bergen.kommune.no/
 */
-.svg-icon-arrow-down, .form-element__label--dropdown-icon::after, .svg-icon-bluearrow-down, .search-checkbox-filter__title--advanced::after, .search-checkbox-filter__button::after, .svg-icon-checkmark, .form-element__checkbox:checked + label span::before, .svg-icon-greencheck-16, .svg-icon-greencheck-60, .notice--approved::before, .svg-icon-notice-16, .svg-icon-notice-60, .notice--cancelled::before, .svg-icon-rednotice-16, .svg-icon-rednotice-60, .notice--error::before, .svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after, .svg-icon-small-grey-searchglass, .filter_search_input_container .filter_search_label::after {
+.svg-icon-arrow-down, .form-element__label--dropdown-icon::after, .svg-icon-bluearrow-down, .search-checkbox-filter__title--advanced::after, .search-checkbox-filter__button::after, .svg-icon-checkmark, .form-element__checkbox:checked + label span::before, .svg-icon-greencheck-16, .svg-icon-greencheck-60, .notice--approved::before, .svg-icon-notice-16, .svg-icon-notice-60, .notice--cancelled::before, .svg-icon-rednotice-16, .svg-icon-rednotice-60, .notice--error::before, .svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after, .aktivitetsoversikt .case_search_container .clear_search_button::after, .svg-icon-small-grey-searchglass, .filter_search_input_container .filter_search_label::after {
   background: url("../images/gulp-sprite.svg?v=' + 20171006'") no-repeat; }
 
 .svg-icon-arrow-down, .form-element__label--dropdown-icon::after {
@@ -51,7 +51,7 @@ URI: https://www.bergen.kommune.no/
   width: 60px;
   height: 60px; }
 
-.svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after {
+.svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after, .aktivitetsoversikt .case_search_container .clear_search_button::after {
   background-position: 90% 89.29765886287625%;
   width: 32px;
   height: 32px; }
@@ -5855,13 +5855,11 @@ footer {
     .form-element__checkbox:focus + label {
       outline: 3px solid #f0c646;
       outline: 0.1875rem solid #f0c646; }
-  .form-element__checkbox,
-  .form-element__checkbox input:not(checked),
-  .form-element__checkbox input[disabled] {
-    opacity: 0 !important;
-    position: absolute; }
-  .form-element__checkbox + label span,
-  .form-element__checkbox input:not(checked) + label {
+  .form-element__checkbox {
+    opacity: 0;
+    position: absolute;
+    box-shadow: none; }
+  .form-element__checkbox + label span {
     cursor: pointer;
     display: inline-block;
     height: 20px;
@@ -5884,15 +5882,6 @@ footer {
       content: '';
       display: inline-block;
       margin: 0 0 2px 1px; }
-  .form-element__checkbox:disabled {
-    cursor: not-allowed; }
-    .form-element__checkbox:disabled + label span {
-      border: 1px solid #535353;
-      border: 0.0625rem solid #535353;
-      cursor: not-allowed; }
-    .form-element__checkbox:disabled + .form-element__label {
-      color: #535353;
-      cursor: not-allowed; }
   .form-element__dropdown {
     background-color: #fff;
     background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
@@ -5915,8 +5904,6 @@ footer {
     min-width: 100px;
     border: 1px solid #3b65a3;
     border: 0.0625rem solid #3b65a3;
-    box-shadow: 0 1px 2px #e0e0e0 inset;
-    box-shadow: 0 0.0625rem 0.125rem #e0e0e0 inset;
     padding: 7px 40px 7px 10px;
     padding: 0.4375rem 2.5rem 0.4375rem 0.625rem;
     box-shadow: 0 1px 2px #e0e0e0 inset;
@@ -5947,34 +5934,63 @@ footer {
       top: -1.75rem; }
   .form-element__radio {
     opacity: 0;
-    position: absolute; }
+    position: absolute;
+    box-shadow: none; }
     .form-element__radio:focus + label {
-      outline: 3px solid #f0c646; }
+      outline: 3px solid #f0c646;
+      outline: 0.1875rem solid #f0c646; }
   .form-element__radio + label {
     position: relative;
     padding: 1px 0 0 30px;
     padding: 0.0625rem 0 0 1.875rem;
     cursor: pointer; }
   .form-element__radio + label::before {
-    height: 20px;
-    width: 20px;
     left: 0;
     top: 1px;
+    top: 0.0625rem;
+    width: 20px;
+    width: 1.25rem;
+    height: 20px;
+    height: 1.25rem;
     box-shadow: 0 1px 2px #e0e0e0 inset;
     box-shadow: 0 0.0625rem 0.125rem #e0e0e0 inset;
     border-radius: 50%;
-    border: 1px solid #3b65a3; }
-  .form-element__radio + label::before, .form-element__radio:checked + label::after {
+    border: 1px solid #3b65a3;
+    border: 0.0625rem solid #3b65a3; }
+  .form-element__radio + label::before,
+  .form-element__radio:checked + label::after {
     position: absolute;
     content: '';
     display: inline-block; }
   .form-element__radio + label::after {
     left: 6px;
+    left: 0.375rem;
     top: 7px;
+    top: 0.4375rem;
     width: 10px;
+    width: 0.625rem;
     height: 10px;
+    height: 0.625rem;
     background: #3b65a3;
     border-radius: 50%; }
+  .form-element__checkbox[disabled] {
+    opacity: 0;
+    cursor: not-allowed; }
+    .form-element__checkbox[disabled] + label span {
+      cursor: not-allowed;
+      border-color: #727272; }
+    .form-element__checkbox[disabled] + label {
+      cursor: not-allowed;
+      color: #727272; }
+  .form-element__radio[disabled] {
+    opacity: 0;
+    cursor: not-allowed; }
+    .form-element__radio[disabled] + label::before {
+      cursor: not-allowed;
+      border-color: #727272; }
+    .form-element__radio[disabled] + label {
+      cursor: not-allowed;
+      color: #727272; }
   .form-element--error {
     border: 1px solid #cc0000;
     border: 0.0625rem solid #cc0000; }
@@ -9545,7 +9561,66 @@ a.itslearning_link {
       padding-top: 9px;
       padding-top: 0.5625rem; } }
 
-.svg-icon-arrow-down, .form-element__label--dropdown-icon::after, .svg-icon-bluearrow-down, .search-checkbox-filter__title--advanced::after, .search-checkbox-filter__button::after, .svg-icon-checkmark, .form-element__checkbox:checked + label span::before, .svg-icon-greencheck-16, .svg-icon-greencheck-60, .notice--approved::before, .svg-icon-notice-16, .svg-icon-notice-60, .notice--cancelled::before, .svg-icon-rednotice-16, .svg-icon-rednotice-60, .notice--error::before, .svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after, .svg-icon-small-grey-searchglass, .filter_search_input_container .filter_search_label::after {
+.aktivitetsoversikt .button_reset {
+  background: none;
+  border: none;
+  color: #3b65a3;
+  margin: 0;
+  padding: 0;
+  text-align: left; }
+  .aktivitetsoversikt .button_reset:hover {
+    color: #2d4e7e;
+    text-decoration: underline !important; }
+
+.aktivitetsoversikt .case_search_container {
+  position: relative; }
+  .aktivitetsoversikt .case_search_container .clear_search_button {
+    background: none;
+    border: none;
+    box-shadow: none;
+    top: -39px;
+    top: -2.4375rem;
+    right: 52px;
+    right: 3.25rem;
+    width: 38px;
+    width: 2.375rem; }
+    .aktivitetsoversikt .case_search_container .clear_search_button::after {
+      content: '';
+      display: inline-block;
+      margin: 3px 4px 0; }
+
+.aktivitetsoversikt .aktivitetsvelger {
+  padding: 0; }
+  .aktivitetsoversikt .aktivitetsvelger li {
+    display: block; }
+    .aktivitetsoversikt .aktivitetsvelger li button.selected {
+      font-weight: 700;
+      font-style: normal; }
+
+.aktivitetsoversikt .linkbox .linkbox_extended_content {
+  display: none; }
+
+.aktivitetsoversikt .linkbox.active .linkbox_extended_content {
+  display: inherit; }
+
+.aktivitetsoversikt .linkbox dl dt {
+  float: left;
+  margin-right: 4px;
+  margin-right: 0.25rem; }
+
+.aktivitetsoversikt .linkbox dl dd {
+  margin-bottom: 0; }
+
+.aktivitetsoversikt .linkbox .valgte_typer {
+  color: #535353;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.3125; }
+  .aktivitetsoversikt .linkbox .valgte_typer span {
+    margin-right: 18px;
+    margin-right: 1.125rem; }
+
+.svg-icon-arrow-down, .form-element__label--dropdown-icon::after, .svg-icon-bluearrow-down, .search-checkbox-filter__title--advanced::after, .search-checkbox-filter__button::after, .svg-icon-checkmark, .form-element__checkbox:checked + label span::before, .svg-icon-greencheck-16, .svg-icon-greencheck-60, .notice--approved::before, .svg-icon-notice-16, .svg-icon-notice-60, .notice--cancelled::before, .svg-icon-rednotice-16, .svg-icon-rednotice-60, .notice--error::before, .svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after, .aktivitetsoversikt .case_search_container .clear_search_button::after, .svg-icon-small-grey-searchglass, .filter_search_input_container .filter_search_label::after {
   background: url("../images/gulp-sprite.svg?v=' + 20171006'") no-repeat; }
 
 .svg-icon-arrow-down, .form-element__label--dropdown-icon::after {
@@ -9593,7 +9668,7 @@ a.itslearning_link {
   width: 60px;
   height: 60px; }
 
-.svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after {
+.svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after, .aktivitetsoversikt .case_search_container .clear_search_button::after {
   background-position: 90% 89.29765886287625%;
   width: 32px;
   height: 32px; }

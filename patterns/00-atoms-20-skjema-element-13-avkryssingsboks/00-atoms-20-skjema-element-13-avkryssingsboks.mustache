@@ -1,6 +1,6 @@
 {{#checkbox}}
 <div class="form-element {{styleModifier}}">
-    <input type="checkbox" id="{{name}}" class="form-element__checkbox" {{#checked}}checked{{/checked}}>
+    <input type="checkbox" id="{{name}}" class="form-element__checkbox" {{#checked}}checked{{/checked}} {{#disabled}}disabled{{/disabled}}>
     <label for="{{name}}" class="form-element__label form-element__label--checkbox"><span></span> {{label}} </label>
 </div>
 {{/checkbox}}
