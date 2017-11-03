@@ -6305,10 +6305,11 @@ footer {
   margin-right: 4px;
   margin-right: 0.25rem;
   text-align: right; }
-  .payment__amount .form-element__number:last-child {
-    max-width: 52px;
-    max-width: 3.25rem;
-    text-align: left; }
+
+.payment__amount .form-element__textfield {
+  max-width: 52px;
+  max-width: 3.25rem;
+  text-align: left; }
 
 .payment__email .form-element__textfield {
   max-width: 530px;
