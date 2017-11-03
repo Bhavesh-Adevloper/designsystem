@@ -1,0 +1,59 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    <div class="mbl">
+        {{# sideoverskriftH1 }}
+            {{> molecules-sideoverskrift-h1(sidetittel: "{{ sidetittel }}") }}
+        {{/ sideoverskriftH1 }}
+
+        {{# sideoverskriftH2 }}
+            {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ sidetittel }}") }}
+        {{/ sideoverskriftH2 }}
+    </div>
+        
+    <div class="row">
+        
+        {{# moduloverskriftH1 }}
+            <div class="col_md_12 col_lg_8 float_change">
+                {{> molecules-moduloverskrift-h1:mbml|mbxl--mob }}
+            </div>
+        {{/ moduloverskriftH1 }}
+        
+        <div class="col_md_12 col_lg_4">
+
+            {{# searchFilter }}
+                {{> atoms-filterboks:mbml }}
+            {{/ searchFilter }}
+
+            {{> molecules-sokefilter-avkrysningsbokser-avansert:mbml }}
+            
+        </div>
+        <div class="col_md_12 col_lg_8">
+
+            {{# antallOverskrift }}
+                {{> molecules-moduloverskrift-h2:mbm }}
+            {{/ antallOverskrift }}
+
+            <p class="js_empty_filter_search no_results mtml" style="display: none;">
+                Ingenting funnet
+            </p>
+
+            {{# resultatLenkeListen }}
+                {{> molecules-link-liste-with-meta:mbj }}
+            {{/ resultatLenkeListen }}
+
+            {{# resultatFilListen }}
+                {{> molecules-fil-liste:mbj }}
+            {{/ resultatFilListen }}
+            
+            
+            {{# lastFlere }}
+                {{> molecules-last-inn-flere:neg-mtxl }}
+            {{/ lastFlere }}
+            
+        </div>
+    </div>
+    
+</main>
+{{> organisms-footer }}
