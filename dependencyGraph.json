@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1509718408608,
+  "timestamp": 1509720812575,
   "graph": {
     "options": {
       "directed": true,
@@ -1374,6 +1374,12 @@
       },
       {
         "v": "04-pages/01-hva-skjer/20-kunngjoringer.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/01-hva-skjer/21-kunngjoring.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -3730,6 +3736,26 @@
       {
         "v": "04-pages/01-hva-skjer/20-kunngjoringer.mustache",
         "w": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/21-kunngjoring.mustache",
+        "w": "02-organisms/00-global/_01-header-1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/21-kunngjoring.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/21-kunngjoring.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/21-kunngjoring.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {
