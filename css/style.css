@@ -1515,7 +1515,7 @@ h1.article_header {
     width: 2rem;
     height: 28px;
     height: 1.75rem;
-    background: rgba(0, 0, 0, 0.2) url("../images/mainSprite.svg?v=20171003") no-repeat -288px -194px;
+    background: rgba(0, 0, 0, 0.2) url("../images/mainSprite.svg?v=20171109") no-repeat -288px -194px;
     border-radius: 2px;
     opacity: .7; }
   .related_image .image_link:hover:before, .related_image .image_link:active:before, .related_image .image_link:focus:before {
@@ -1575,7 +1575,7 @@ h1.article_header {
         width: 2rem;
         height: 32px;
         height: 2rem;
-        background: transparent url("../images/mainSprite.svg?v=20171003") no-repeat -256px -192px; }
+        background: transparent url("../images/mainSprite.svg?v=20171109") no-repeat -256px -192px; }
     .related_image_container.slideshow .imageset img {
       display: none; }
 
@@ -1623,7 +1623,7 @@ h1.article_header {
     width: 2rem;
     height: 32px;
     height: 2rem;
-    background: transparent url("../images/mainSprite.svg?v=20171003") no-repeat -256px -192px; }
+    background: transparent url("../images/mainSprite.svg?v=20171109") no-repeat -256px -192px; }
 
 .related_image_gallery_container .imageset img {
   display: none; }
@@ -2662,6 +2662,69 @@ h1.article_header {
   .page_header .print_link_container {
     display: none; }
 
+.page_header.page_header_with_flag {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between; }
+  .page_header.page_header_with_flag h1 {
+    -webkit-order: 0;
+    -moz-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 1 auto;
+    -moz-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto; }
+  .page_header.page_header_with_flag .flag_link_container {
+    float: right;
+    -webkit-order: 1;
+    -moz-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-flex: 0 0 auto;
+    -moz-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto; }
+    .page_header.page_header_with_flag .flag_link_container a {
+      display: block;
+      margin-left: 14px;
+      margin-left: 0.875rem; }
+    .page_header.page_header_with_flag .flag_link_container a.hidden {
+      display: none; }
+    @media (max-width: 699px) {
+      .page_header.page_header_with_flag .flag_link_container .lang {
+        clip: rect(1px, 1px, 1px, 1px);
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        position: absolute !important; } }
+    @media (min-width: 700px) {
+      .page_header.page_header_with_flag .flag_link_container a {
+        position: relative;
+        padding-right: 1px;
+        padding-right: 0.0625rem;
+        padding-left: 42px;
+        padding-left: 2.625rem; }
+        .page_header.page_header_with_flag .flag_link_container a .icon {
+          position: absolute;
+          top: 6px;
+          top: 0.375rem;
+          left: 2px;
+          left: 0.125rem; }
+        .page_header.page_header_with_flag .flag_link_container a .lang {
+          text-decoration: underline;
+          font-size: 17px;
+          font-size: 1.0625rem;
+          line-height: 1.23529; } }
+
 @media (min-width: 700px) {
   .page_header_with_print {
     display: -webkit-flex;
@@ -2914,7 +2977,7 @@ h1.article_header {
 
 .icon {
   display: block;
-  background-image: url("../images/mainSprite.svg?v=20171003");
+  background-image: url("../images/mainSprite.svg?v=20171109");
   background-repeat: no-repeat;
   background-color: transparent;
   height: 32px;
@@ -3098,6 +3161,20 @@ h1.article_header {
 .icon.innbyggerservice_icon.medium_size {
   background-position: -64px -321px; }
 
+.icon.norsk {
+  background-position: -174px -326px;
+  width: 36px;
+  width: 2.25rem;
+  height: 20px;
+  height: 1.25rem; }
+
+.icon.english {
+  background-position: -110px -326px;
+  width: 36px;
+  width: 2.25rem;
+  height: 20px;
+  height: 1.25rem; }
+
 .odd_even_table {
   font-size: 20px;
   font-size: 1.25rem;
@@ -3191,7 +3268,7 @@ a.file {
     left: 0;
     top: -4px;
     top: -0.25rem;
-    background: url("../images/mainSprite.svg?v=20171003") no-repeat -256px -256px transparent;
+    background: url("../images/mainSprite.svg?v=20171109") no-repeat -256px -256px transparent;
     height: 32px;
     height: 2rem;
     width: 32px;
@@ -3380,7 +3457,7 @@ a.file {
     top: 1.3125rem;
     left: 16px;
     left: 1rem;
-    background: url("../images/mainSprite.svg?v=20171003") no-repeat -160px -192px transparent;
+    background: url("../images/mainSprite.svg?v=20171109") no-repeat -160px -192px transparent;
     height: 32px;
     height: 2rem;
     width: 32px;
@@ -3525,7 +3602,7 @@ a.file {
     top: -1rem;
     left: 5px;
     left: 0.3125rem;
-    background: url("../images/mainSprite.svg?v=20171003") no-repeat -160px -192px transparent;
+    background: url("../images/mainSprite.svg?v=20171109") no-repeat -160px -192px transparent;
     height: 32px;
     height: 2rem;
     width: 32px;
@@ -3832,7 +3909,7 @@ a.file {
   box-sizing: border-box; }
   .logo span {
     display: inline-block;
-    background: url("../images/mainSprite.svg?v=20171003") no-repeat -14px 0 transparent;
+    background: url("../images/mainSprite.svg?v=20171109") no-repeat -14px 0 transparent;
     text-indent: -3000em;
     overflow: hidden;
     width: 164px;
@@ -4746,7 +4823,7 @@ footer {
   width: 0.75rem;
   height: 12px;
   height: 0.75rem;
-  background-image: url("../images/mainSprite.svg?v=20171003");
+  background-image: url("../images/mainSprite.svg?v=20171109");
   background-position: -266px -234px;
   background-position: -16.625rem -14.625rem;
   background-color: transparent;
@@ -4804,7 +4881,7 @@ footer {
     width: 2rem;
     height: 32px;
     height: 2rem;
-    background: url("../images/mainSprite.svg?v=20171003") no-repeat -160px -96px transparent; }
+    background: url("../images/mainSprite.svg?v=20171109") no-repeat -160px -96px transparent; }
   .application-link--small {
     display: block;
     font-size: 17px;
@@ -5400,7 +5477,7 @@ footer {
     .file-link .file-icon.html {
       background-image: url(../images/html.svg); }
     .file-link .file-icon.skjema {
-      background-image: url("../images/mainSprite.svg?v=20171003");
+      background-image: url("../images/mainSprite.svg?v=20171109");
       background-position: -167px -99px; }
   .file-link .file-info {
     color: #535353;
@@ -5587,7 +5664,7 @@ footer {
         margin: 11px 5px 0 0;
         margin: 0.6875rem 0.3125rem 0 0; }
     .flex-table__cell--document-icon:before {
-      background: url("../images/mainSprite.svg?v=20171003") no-repeat -160px -96px transparent;
+      background: url("../images/mainSprite.svg?v=20171109") no-repeat -160px -96px transparent;
       content: "";
       width: 32px;
       width: 2rem;
@@ -7714,7 +7791,7 @@ footer {
       top: 0.0625rem;
       left: 6px;
       left: 0.375rem;
-      background: url("../images/mainSprite.svg?v=20171003") no-repeat 32px 32px transparent;
+      background: url("../images/mainSprite.svg?v=20171109") no-repeat 32px 32px transparent;
       height: 32px;
       height: 2rem;
       width: 32px;
@@ -9128,7 +9205,7 @@ a.itslearning_link {
     width: 2rem;
     height: 32px;
     height: 2rem;
-    background: url("../images/mainSprite.svg?v=20171003") no-repeat -160px -161px transparent; }
+    background: url("../images/mainSprite.svg?v=20171109") no-repeat -160px -161px transparent; }
   .important_link:hover {
     color: #fff; }
 
@@ -9620,64 +9697,6 @@ a.itslearning_link {
   .aktivitetsoversikt .linkbox .valgte_typer span {
     margin-right: 18px;
     margin-right: 1.125rem; }
-
-.svg-icon-arrow-down, .form-element__label--dropdown-icon::after, .svg-icon-bluearrow-down, .search-checkbox-filter__title--advanced::after, .search-checkbox-filter__button::after, .svg-icon-checkmark, .form-element__checkbox:checked + label span::before, .svg-icon-greencheck-16, .svg-icon-greencheck-60, .notice--approved::before, .svg-icon-notice-16, .svg-icon-notice-60, .notice--cancelled::before, .svg-icon-rednotice-16, .svg-icon-rednotice-60, .notice--error::before, .svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after, .aktivitetsoversikt .case_search_container .clear_search_button::after, .svg-icon-small-grey-searchglass, .filter_search_input_container .filter_search_label::after {
-  background: url("../images/gulp-sprite.svg?v=' + 20171006'") no-repeat; }
-
-.svg-icon-arrow-down, .form-element__label--dropdown-icon::after {
-  background-position: 0 0;
-  width: 22px;
-  height: 12px; }
-
-.svg-icon-bluearrow-down, .search-checkbox-filter__title--advanced::after, .search-checkbox-filter__button::after {
-  background-position: 6.666666666666667% 3.761755485893417%;
-  width: 22px;
-  height: 12px; }
-
-.svg-icon-checkmark, .form-element__checkbox:checked + label span::before {
-  background-position: 13.095238095238095% 7.594936708860759%;
-  width: 16px;
-  height: 15px; }
-
-.svg-icon-greencheck-16 {
-  background-position: 17.857142857142858% 12.380952380952381%;
-  width: 16px;
-  height: 16px; }
-
-.svg-icon-greencheck-60, .notice--approved::before {
-  background-position: 26.027397260273972% 20.29520295202952%;
-  width: 60px;
-  height: 60px; }
-
-.svg-icon-notice-16 {
-  background-position: 40.476190476190474% 36.507936507936506%;
-  width: 16px;
-  height: 16px; }
-
-.svg-icon-notice-60, .notice--cancelled::before {
-  background-position: 52.054794520547944% 48.33948339483395%;
-  width: 60px;
-  height: 60px; }
-
-.svg-icon-rednotice-16 {
-  background-position: 63.095238095238095% 60.63492063492063%;
-  width: 16px;
-  height: 16px; }
-
-.svg-icon-rednotice-60, .notice--error::before {
-  background-position: 78.08219178082192% 76.38376383763837%;
-  width: 60px;
-  height: 60px; }
-
-.svg-icon-small-grey-close-button, .filter_search_input_container .clear_search_button::after, .aktivitetsoversikt .case_search_container .clear_search_button::after {
-  background-position: 90% 89.29765886287625%;
-  width: 32px;
-  height: 32px; }
-
-.svg-icon-small-grey-searchglass, .filter_search_input_container .filter_search_label::after {
-  background-position: 100% 100%;
-  width: 32px;
-  height: 32px; }
 
 .mbs {
   margin-bottom: 7px;

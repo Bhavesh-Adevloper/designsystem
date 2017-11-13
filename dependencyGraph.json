@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1509722542796,
+  "timestamp": 1510578260291,
   "graph": {
     "options": {
       "directed": true,
@@ -270,6 +270,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-30-mikrotjenester-POU-motekalender/04-pages-30-mikrotjenester-POU-motekalender.rendered.html",
           "lineagePattern": "pages-POU-motekalender"
+        }
+      },
+      {
+        "v": "01-molecules/00-overskrifter/02-sideoverskrift-h1-med-flag.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-kemner-betalingsinformasjon/04-pages-30-mikrotjenester-kemner-betalingsinformasjon.rendered.html",
+          "lineagePattern": "pages-kemner-betalingsinformasjon"
         }
       },
       {
@@ -4475,6 +4483,11 @@
       },
       {
         "v": "04-pages/30-mikrotjenester/kemner-betalingsbekreftelse.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/kemner-betalingsbekreftelse.mustache",
         "w": "01-molecules/02-innhold/02-godkjent.mustache",
         "value": {}
       },
@@ -4495,7 +4508,12 @@
       },
       {
         "v": "04-pages/30-mikrotjenester/kemner-betalingsinformasjon.mustache",
-        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/kemner-betalingsinformasjon.mustache",
+        "w": "01-molecules/00-overskrifter/02-sideoverskrift-h1-med-flag.mustache",
         "value": {}
       },
       {
