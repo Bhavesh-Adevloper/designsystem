@@ -98,6 +98,7 @@ function feedbackToggle() {
             $(this).addClass("active");
             $("#js_feedback_text").removeClass("feedback_collapsed");
             $("#js_feedback_text textarea").attr("placeholder", "Så bra! Fortell oss gjerne hva du liker med siden!");
+            $("#feedback_label").html("Så bra! Fortell oss gjerne hva du liker med siden!");
         }
     });
     $("#js_feedback .feedback_btn.no").click( function() {
@@ -106,6 +107,7 @@ function feedbackToggle() {
             $(this).addClass("active");
             $("#js_feedback_text").removeClass("feedback_collapsed");
             $("#js_feedback_text textarea").attr("placeholder", "Så kjedelig! Vil du fortelle oss hva som vil gjøre siden bedre?");
+            $("#feedback_label").html("Så kjedelig! Vil du fortelle oss hva som vil gjøre siden bedre?");
         }
     });
 }
@@ -432,11 +434,11 @@ $(window).bind("load", function() {
     updateBreadcrumbs();
 });
 
-window.onresize = function() {
+$(window).resize(function () {
     addCategoryHeights();
     updateBreadcrumbs();
     horisontalScroll();
-}; 
+});
 
 
 

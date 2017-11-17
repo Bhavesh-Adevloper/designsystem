@@ -5870,6 +5870,8 @@ footer {
         .form-element__label--checkbox {
           font-size: 19px;
           font-size: 1.1875rem; } }
+    .form-element__label.screen-reader-text {
+      width: 1px; }
   .form-element__helptext {
     margin: 0; }
     .form-element__helptext--error {
