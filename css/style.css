@@ -2335,11 +2335,12 @@ h1.article_header {
   #lightcase-overlay {
     background-color: rgba(0, 0, 0, 0.36); }
   #lightcase-content {
-    border: 24px solid #fff;
-    border: 1.5rem solid #fff;
-    border-bottom: 0 none;
     border-radius: 0.1875rem 0.1875rem 0 0;
     box-shadow: none !important; }
+    #lightcase-content img {
+      border: 24px solid #fff;
+      border: 1.5rem solid #fff;
+      border-bottom: 0 none; }
   #lightcase-info {
     border-style: solid;
     border-color: #fff;
@@ -5299,6 +5300,34 @@ footer {
         width: 1px;
         overflow: hidden;
         position: absolute; } }
+
+.button--edit-mode {
+  float: right;
+  padding: 0 14px;
+  padding: 0 0.875rem;
+  border-color: #e0e0e0; }
+  .button--edit-mode:hover, .button--edit-mode:active {
+    color: #3b65a3;
+    background-color: #fdfdfd;
+    border-color: #3b65a3;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08) inset;
+    box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.08) inset; }
+  .button--edit-mode .icon {
+    display: none; }
+  .button--edit-mode.active {
+    border-color: green; }
+  .button--edit-mode[disabled] {
+    color: #333;
+    border-color: #727272;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.08) inset;
+    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.06), 0 0 0.125rem rgba(0, 0, 0, 0.08) inset;
+    cursor: default;
+    opacity: .35; }
+    .button--edit-mode[disabled].active {
+      border-color: #d7272d;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08) inset;
+      box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.08) inset; }
 
 .contact-module {
   *zoom: 1; }
@@ -8663,7 +8692,24 @@ footer {
             width: 100%;
             @include rem('border-bottom', 1px solid $janna);
         }
-        */ } }
+        */ }
+    .link_list--search-facetts:before, .link_list--search-facetts:after {
+      content: none; }
+    .link_list--search-facetts li {
+      box-sizing: content-box;
+      display: inline-block;
+      width: 100%; }
+    .link_list--search-facetts a {
+      padding: 7px 10px;
+      padding: 0.4375rem 0.625rem;
+      background-position: 0 17px;
+      background-position: 0 1.0625rem;
+      border: 3px solid #fff;
+      border: 0.1875rem solid #fff; }
+    .link_list--search-facetts a:focus,
+    .link_list--search-facetts a:active {
+      border-color: #f0c646;
+      outline: 0; } }
 
 .fasett_header_mobile.single {
   border-color: transparent; }
