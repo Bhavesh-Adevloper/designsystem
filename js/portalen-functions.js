@@ -255,44 +255,23 @@ function addCategoryHeights() {
 
 // Change long breadcrumbs to position right
 function breadcrumbs() {
+
+    var tilgang,
+        container,
+        list = 0;
+
     // Desktop only
     if ($(window).width() >= 700) {
-        var container,
-            list = 0;
+
         // Get current widths
-        container = $(".js_breadcrumbs").outerWidth() - 80;
+        tilgang = $(".js_edit_mode_button").outerWidth();
+        container = $(".js_breadcrumbs").outerWidth() - tilgang - 80;
         $(".js_breadcrumbs .bc_list li").each(function() {
             list += $(this).outerWidth() + 16;
         });
+
         // Add current widths
-        $(".js_breadcrumbs .bc_list_container").css("width", container);
-        $(".js_breadcrumbs .bc_list").css("width", list);
-        // If container is too small
-        if (( 16 + container) <= list) {
-            // Position right
-            $(".js_breadcrumbs .bc_list").addClass("too_small");
-            // Add separator
-            $(".js_breadcrumbs .bc_label.desktop").addClass("separator");
-        }
-    }
-}
-
-// Update breadcrumbs after load (font is loaded completely) or on resize
-function updateBreadcrumbs() {
-    var container,
-        list = 0;
-    
-    // Desktop
-    if ($(window).width() >= 700) {
-
-        // Get current widths
-        container = $(".js_breadcrumbs").outerWidth() - 80;
-        $(".js_breadcrumbs .bc_list li").each(function() {
-            list += $(this).outerWidth() + 16;
-        });
-        
-        // Add current widths // update this when font is loaded
-        $(".js_breadcrumbs .bc_list_container").css("width", container);
+        $(".js_breadcrumbs .bc_list_container").css({'width': container, 'margin-right': tilgang});
         $(".js_breadcrumbs .bc_list").css("width", list);
 
         // If container is too small
@@ -302,15 +281,24 @@ function updateBreadcrumbs() {
             // Add separator
             $(".js_breadcrumbs .bc_label.desktop").addClass("separator");
         } else {
-            // remove classes
+            // Remove class
             $(".js_breadcrumbs .bc_list").removeClass("too_small");
             $(".js_breadcrumbs .bc_label.desktop").removeClass("separator");
         }
-        
-    // Mobile: reset desktop
+
+        // Mobile only
     } else {
-        $(".js_breadcrumbs .bc_list_container").css("width", '');
-        $(".js_breadcrumbs .bc_list").css("width", '');
+
+        // Get current widths
+        tilgang = $(".js_edit_mode_button").outerWidth();
+        container = $(".js_breadcrumbs").outerWidth() - tilgang - 102;
+        list = $(".bc_last_link").outerWidth() + 18;
+
+        // Add current widths
+        $(".js_breadcrumbs .bc_list_container").css({'width': container, 'margin-right': tilgang});
+        $(".js_breadcrumbs .bc_list").css("width", list);
+
+        // Remove class
         $(".js_breadcrumbs .bc_list").removeClass("too_small");
         $(".js_breadcrumbs .bc_label.desktop").removeClass("separator");
     }
@@ -431,12 +419,12 @@ $(document).ready(function () {
 });
 
 $(window).bind("load", function() {
-    updateBreadcrumbs();
+    breadcrumbs();
 });
 
 $(window).resize(function () {
     addCategoryHeights();
-    updateBreadcrumbs();
+    breadcrumbs();
     horisontalScroll();
 });
 
