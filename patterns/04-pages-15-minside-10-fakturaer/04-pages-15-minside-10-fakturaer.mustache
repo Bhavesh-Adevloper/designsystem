@@ -1,0 +1,59 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    <div class="page_header_container_with_org_menu">
+        
+        {{# sideoverskriftInnbygger }}
+        {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ innbygger.tittel }}", url: "{{ innbygger.url }}") }}
+        {{/ sideoverskriftInnbygger }}
+        
+        {{# sideoverskriftOrganisasjon }}
+        {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ organisasjon.tittel }}", url: "{{ organisasjon.url }}") }}
+        {{/ sideoverskriftOrganisasjon }}
+        
+    </div>
+    
+    <!--
+    {{> molecules-sideoverskrift-h1:mbs(visH2: "true", title: "{{ innbygger.tittel }}", sidetittel: "Fakturaoversikt") }}
+    -->
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+            
+            {{# meny }}
+            {{> molecules-org-meny }}
+            {{/ meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+            
+            {{> molecules-moduloverskrift-h1:mbm(tittel: "Fakturaer") }}
+            
+            <p>Faktura vises kun for fakturamottaker.</p>
+
+            <div id="js_scroll_container" class="select_year_gradient_container">
+                <span id="js_scroll_to_left" class="show_more left_arrow"></span>
+                <span id="js_scroll_to_right" class="show_more right_arrow"></span>
+                <div id="js_scroll_area" class="select_year_list_container">
+                    <ul id="js_scroll_content" class="select_year_list year_count_9 js_select_year">
+                        <li class="active"><a href="#" title="Faktura for 2017">2017</a></li>
+                        <li><a href="#" title="Faktura for 2016">2016</a></li>
+                        <li><a href="#" title="Faktura for 2015">2015</a></li>
+                        <li><a href="#" title="Faktura for 2014">2014</a></li>
+                        <li><a href="#" title="Faktura for 2013">2013</a></li>
+                        <li><a href="#" title="Faktura for 2012">2012</a></li>
+                        <li><a href="#" title="Faktura for 2011">2011</a></li>
+                        <li><a href="#" title="Faktura for 2010">2010</a></li>
+                        <li><a href="#" title="Faktura for 2009">2009</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            {{> molecules-fakturaer:mbj }}
+
+        </div>
+    </div>
+  
+</main>
+{{> organisms-footer }}

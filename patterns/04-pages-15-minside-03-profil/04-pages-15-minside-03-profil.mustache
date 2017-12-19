@@ -1,0 +1,90 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    <div class="page_header_container_with_org_menu">
+        
+        {{# sideoverskriftInnbygger }}
+        {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ innbygger.tittel }}", url: "{{ innbygger.url }}") }}
+        {{/ sideoverskriftInnbygger }}
+        
+        {{# sideoverskriftOrganisasjon }}
+        {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ organisasjon.tittel }}", url: "{{ organisasjon.url }}") }}
+        {{/ sideoverskriftOrganisasjon }}
+        
+    </div>
+    
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+            
+            {{# meny }}
+            {{> molecules-org-meny }}
+            {{/ meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+            
+            {{> molecules-moduloverskrift-h1:mbm(tittel: "Profil") }}
+
+            <p>
+                {{# sideoverskriftInnbygger }}
+                {{ innbygger.tittel }} - Fødselsnummer: {{ innbygger.nummer }}
+                {{/ sideoverskriftInnbygger }}
+
+                {{# sideoverskriftOrganisasjon }}
+                {{ organisasjon.tittel }}
+                {{/ sideoverskriftOrganisasjon }}
+            </p>
+            <h3>Adresse</h3>
+            <p>
+                Rådhusgaten 10
+                <br>
+                5014 Bergen
+                <br>
+                <a href="https://brukerprofil.difi.no/minprofil/" title="Endre kontaktopplysninger">Meld flytting til Folkeregisteret</a>
+            </p>
+            
+            <h3>Telefon</h3>
+            <p>
+                123 45 678 - <a href="https://brukerprofil.difi.no/minprofil/" title="Endre kontaktopplysninger">endre</a>
+            </p>
+            
+            <h3>E-post</h3>
+            <p>
+                epost@epost.no - <a href="https://brukerprofil.difi.no/minprofil/" title="Endre kontaktopplysninger">endre</a>
+            </p>
+            
+            <h3>Digital postkasse</h3>
+            <p>
+                <!-- 
+                <a href="http://www.e-boks.no/" title="Gå til eBoks">E-boks</a> -->
+                <a href="http://www.digipost.no/" title="Gå til digipost">Digipost</a> - 
+                <a href="http://www.norge.no/nb/velg-digital-postkasse" title="Velg digital postkasse">endre</a>
+            </p>
+            
+            <h3 class="module_header">Mine data</h3>
+            <p>
+                Bergen kommune henter data om deg fra ulike datakilder og fagsystemer, for å tilby deg best mulige tjenester her på Min side.
+            </p>
+            <p>
+                Noen av disse datakildene kan du selv styre bruken av. Andre datakilder, som Folkeregisteret, er det vi som bestemmer over. Vi skal likevel bare bruke de opplysningene som er nødvendig for å gi deg de tjenestene du enten har krav på eller behov for som innbygger i Bergen kommune.
+            </p>
+            <p>
+                Du kan styre vår tilgang til å lage tjenester for deg basert på dine data fra følgende datakilder:
+            </p>
+            <ul>
+                <li></li>
+            </ul>
+            <p>
+                Du har ikke anledning til å overstyre Bergen kommunes eventuelle bruk av følgende datakilder:
+            </p>
+            <ul>
+                <li>Folkgeregisteret</li>
+                <li>Kontakt- og reservasjonsregisteret</li>
+                <li>Dine valg av tilgjengelige datakilder i bruk av Min side-tjenester</li>
+            </ul>
+            
+        </div>
+    </div> 
+</main>
+{{> organisms-footer }}

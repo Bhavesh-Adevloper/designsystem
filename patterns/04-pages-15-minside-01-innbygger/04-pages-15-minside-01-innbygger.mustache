@@ -1,23 +1,16 @@
 {{> organisms-header-6 }}
 {{> organisms-brodsmuler }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
-    
-    {{> molecules-sideoverskrift-h1:mbs(sidetittel: "{{ innbygger.tittel }}") }}
+        
+    {{# sideoverskriftInnbygger }}
+    {{> molecules-sideoverskrift-h1(sidetittel: "{{ innbygger.tittel }}") }}
+    {{/ sideoverskriftInnbygger }}
 
-    <div class="page_header_info">
-        <p>
-            Fødselsnummer: {{ innbygger.nummer }}
-            &nbsp;&#8226;&nbsp;
-             {{# linkliste }}
-                <a href="{{ url }}" title="{{ tittel }}">
-                    {{ tittel }}</a>{{# visTegn }}&nbsp;&nbsp;&#8226;&nbsp;{{/ visTegn }}
-            {{/ linkliste }}
-        </p>
-    </div>
+    {{# sideoverskriftOrganisasjon }}
+    {{> molecules-sideoverskrift-h1(sidetittel: "{{ organisasjon.tittel }}") }}
+    {{/ sideoverskriftOrganisasjon }}
 
     <div class="row">
-        <!--
-        TEST AV VENSTREMENY
         <div class="col_md_12 col_lg_4">
             
             {{# meny }}
@@ -26,8 +19,6 @@
 
         </div>
         <div class="col_md_12 col_lg_8 org_main_col">
-        -->
-        <div class="col_md_12 col_lg_9">
 
             <div class="article_content">
 

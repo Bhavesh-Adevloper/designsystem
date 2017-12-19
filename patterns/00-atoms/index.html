@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1513594554982" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1513594554982" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1513680235944" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1513680235944" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <!-- never cache patterns -->
@@ -16,8 +16,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1513594554982" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1513594554982" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1513680235944" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1513680235944" media="all" />
 
     <!-- End Pattern Lab -->
     
@@ -1633,23 +1633,56 @@
     
   </div>
   <div class="sg-pattern-example">
-    <p>
+    <div style="display: flex; justify-content: space-between; max-width: 400px;">
     <button>Standard</button>
-    <br>
+    <p><code>button</code></p>
+</div>
+<div style="display: flex; justify-content: space-between; max-width: 400px;">
     <button class="button active">Aktiv</button>
-    <br>
+    <p>.button .active</p>
+</div>
+
+<div style="display: flex; justify-content: space-between; max-width: 400px;">
     <button class="button important">Viktig</button>
-    <br>
+    <p>.button .important</p>
+</div>
+<div style="display: flex; justify-content: space-between; max-width: 400px;">
     <button class="small">Mindre tekststørrelse</button>
-    <br>
+    <p>.small</p>
+</div>
+<div style="display: flex; justify-content: space-between; max-width: 400px;">
     <button class="large">Større tekststørrelse</button>
-    <br>
+    <p>.large</p>
+</div>
+<div style="display: flex; justify-content: space-between; max-width: 400px;">
     <button disabled="disabled">Deaktivert knapp</button>
-    <br>
+    <p><code>disabled</code></p>
+</div>
+<div style="display: flex; justify-content: space-between; max-width: 400px;">
     <input type="button" disabled="disabled" value="Deaktivert input">
-    <br>
+    <p><code>input disabled</code></p>
+</div>
+<div style="display: flex; justify-content: space-between; max-width: 400px;">
     <a href="#" class="button" title="Lenke som knapp">Bare en lenke</a>
-</p>
+    <span><code>a</code> .button</span>
+</div>
+<div style="display: flex; justify-content: space-between; max-width: 400px;">
+    <button class="button button--danger" title="Lenke som knapp">Avbryt</button>
+    <span>.button .button--danger</span>
+</div>
+<div style="display: flex; justify-content: space-between; max-width: 400px;">
+    <button class="button active button--danger " title="Lenke som knapp">Slett</button>
+    <span>.button .button--danger .active</span>
+</div>
+<div style="display: flex; justify-content: space-between; max-width: 400px;">
+    <button class="button button--success" title="Lenke som knapp">Lagre</button>
+    <span>.button .button--success</span>
+</div>
+<div class="mbm" style="display: flex; justify-content: space-between; max-width: 400px;">
+    <button class="button active button--success " title="Lenke som knapp">Mega-lagre</button>
+    <span>.button .button--success .active</span>
+</div>
+
 <p class="mbs">Fra tilbakemeldingsboksen:</p>
 <form class="feedback_form">
     <div class="feedback_yes_no clearfix">
@@ -2068,10 +2101,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1513594554982">
+<script id="pl-js-polyfill-insert-1513680235944">
   (function() {
     if (self != top) {
-      var cb = '1513594554982';
+      var cb = '1513680235944';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -2081,10 +2114,10 @@
   })();
 </script>
 
-<script id="pl-js-insert-1513594554982">
+<script id="pl-js-insert-1513680235944">
   (function() {
     if (self != top) {
-      var cb = '1513594554982';
+      var cb = '1513680235944';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

@@ -5345,6 +5345,44 @@ footer {
         overflow: hidden;
         position: absolute; } }
 
+.button--success {
+  color: #15ab29;
+  border: 1px solid #15ab29;
+  border: 0.0625rem solid #15ab29; }
+  .button--success:hover {
+    color: #fff;
+    background-color: #15ab29;
+    border: 1px solid #15ab29;
+    border: 0.0625rem solid #15ab29; }
+  .button--success.active {
+    border: 1px solid #15ab29;
+    border: 0.0625rem solid #15ab29;
+    background-color: #15ab29;
+    color: #fff; }
+    .button--success.active:hover {
+      border: 1px solid #15ab29;
+      border: 0.0625rem solid #15ab29;
+      background-color: #129424; }
+
+.button--danger {
+  color: #d7272d;
+  border: 1px solid #d7272d;
+  border: 0.0625rem solid #d7272d; }
+  .button--danger:hover {
+    color: #fff;
+    background-color: #d7272d;
+    border: 1px solid #d7272d;
+    border: 0.0625rem solid #d7272d; }
+  .button--danger.active {
+    border: 1px solid #d7272d;
+    border: 0.0625rem solid #d7272d;
+    background-color: #d7272d;
+    color: #fff; }
+    .button--danger.active:hover {
+      border: 1px solid #d7272d;
+      border: 0.0625rem solid #d7272d;
+      background-color: #c12328; }
+
 .edit_mode_button_container {
   position: absolute;
   right: 0;
