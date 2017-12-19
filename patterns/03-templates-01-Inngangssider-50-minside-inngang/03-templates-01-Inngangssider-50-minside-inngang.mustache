@@ -1,0 +1,106 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+        
+    {{# forInnbygger }}
+    {{> molecules-sideoverskrift-h1(sidetittel: "{{ innbygger.tittel }}") }}
+    {{/ forInnbygger }}
+
+    {{# forOrganisasjon }}
+    {{> molecules-sideoverskrift-h1(sidetittel: "{{ organisasjon.tittel }}") }}
+    {{/ forOrganisasjon }}
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+            
+            {{# meny }}
+            {{> molecules-org-meny }}
+            {{/ meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+
+            <div class="article_content">
+                
+                {{# forOrganisasjon }}
+                <div style="opacity: .5;">
+                    {{> molecules-moduloverskrift-h2:mbs(tittel: "Maler") }}
+                    {{# maler }}
+                    {{> molecules-element-liste-skjema:mbj }}
+                    {{/ maler }}
+                </div>
+                {{/ forOrganisasjon }}
+                
+                
+                {{# forInnbygger }}
+                    {{> molecules-moduloverskrift-h2:mbs(tittel: "Påbegynte skjema") }}                
+                    {{> molecules-element-liste-skjema:mbj }}
+                    {{# lastFlereSkjema }}
+                    {{> molecules-last-inn-flere-sentrert:neg-mtxl }}
+                    {{/ lastFlereSkjema }}
+                {{/ forInnbygger }}
+                
+                
+                {{> molecules-moduloverskrift-h2-med-lenke:mbs(url: "{{ link.pages-saker }}", tittel: "Saker") }} 
+                <p>Listen viser byggesaker og noen andre sakstyper. Du kan ha saker med kommunen som ikke vises i denne oversikten.</p>
+                {{# saker }}
+                {{> molecules-saker-liste:mbj }}  
+                {{/ saker }}                   
+                {{# visFlereSaker }}
+                {{> molecules-last-inn-flere-minside:neg-mtxl }}
+                {{/ visFlereSaker }}
+                
+                
+                {{# forInnbygger }}
+                    {{> molecules-moduloverskrift-h2-med-lenke:mbs(url: "{{ link.pages-fakturaer }}", tittel: "Fakturaoversikt") }}
+                    <p>Faktura vises kun for fakturamottaker.</p>
+                    {{> molecules-fakturaer:mbj }}                
+                    {{# visFlereFakturaer }}
+                    {{> molecules-last-inn-flere-minside:neg-mtxl }}
+                    {{/ visFlereFakturaer }}
+                {{/ forInnbygger }}
+
+                {{# forInnbygger }}
+                    {{> molecules-moduloverskrift-h2:mbs(tittel: "Eiendommer") }}
+                {{/ forInnbygger }}
+                {{# forOrganisasjon }}
+                    {{> molecules-moduloverskrift-h2-med-lenke:mbs(url: "{{ link.pages-org-eiendommer }}", tittel: "Eiendommer") }}
+                {{/ forOrganisasjon }}
+                {{# eiendommer }}
+                {{> molecules-element-liste-eiendommer:mbj }}
+                {{/ eiendommer }}
+                {{# visFlereEiendommer }}
+                {{> molecules-last-inn-flere-minside:neg-mtxl }}
+                {{/ visFlereEiendommer }}    
+
+
+                {{# forInnbygger }}
+                    {{> molecules-moduloverskrift-h2-med-lenke:mbs(url: "{{ link.pages-lonnsslipper }}", tittel: "Lønnsslipper") }}
+                    {{# lonnsslipper }}
+                    {{> molecules-fil-liste:mbj }}
+                    {{/ lonnsslipper }}
+                    {{# visFlereLonnsslipper }}
+                    {{> molecules-last-inn-flere-minside:neg-mtxl }}
+                    {{/ visFlereLonnsslipper }}
+
+
+                    {{> molecules-moduloverskrift-h2:mbs(tittel: "Flere tjenester") }}
+                    {{# nyttigetjenester }}
+                    {{> molecules-link-liste:mbj }}
+                    {{/ nyttigetjenester }}
+                {{/ forInnbygger }}
+                
+                {{# personPromo }}
+                {{> molecules-promo }}
+                {{/ personPromo }}
+                
+            </div>
+            
+            
+            {{> molecules-tilbakemelding }}
+
+        </div>
+    </div>
+
+</main>
+{{> organisms-footer }}

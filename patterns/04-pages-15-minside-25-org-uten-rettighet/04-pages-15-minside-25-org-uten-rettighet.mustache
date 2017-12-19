@@ -1,21 +1,18 @@
-{{> organisms-header-6 }}
+{{> organisms-header-varianter }}
 {{> organisms-brodsmuler }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">    
-    <article>
     
-        {{> molecules-sideoverskrift-h1:mbs(sidetittel: "Organisasjoner hvor du ikke har tilstrekkelige rettigheter") }}
+    {{> molecules-sideoverskrift-h1:mbs(sidetittel: "Organisasjoner hvor du ikke har tilstrekkelige rettigheter") }}
 
+    <div class="row">
+        <div class="col_md_12 col_lg_8">
 
-        <div class="row">
-            <div class="col_md_12 col_lg_9">
+            <p>Tilgang tildeles av rettighetshaver på <a href="altinn.no" title="altinn.no">altinn.no</a>.</p>
 
-                <p>Tilgang tildeles av rettighetshaver på <a href="altinn.no" title="altinn.no">altinn.no</a>.</p>
-                
-                {{> molecules-representasjonsliste-enkel:mbj }}
+            {{> molecules-representasjonsliste-enkel:mbj }}
 
-            </div>
         </div>
-
-    </article>    
+    </div>
+    
 </main>
 {{> organisms-footer }}
