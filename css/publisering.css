@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Name: Publisering style
 URI: https://www.bergen.kommune.no/
@@ -35,13 +36,25 @@ URI: https://www.bergen.kommune.no/
     max-width: 60%;
     margin: 14px auto 12px;
     margin: 0.875rem auto 0.75rem; }
-  .action-line .main_status_info {
+    .action-line__center-info--absolute {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      margin-left: auto;
+      margin-right: auto; }
+  .action-line__left-info {
     float: left;
+    color: #fff;
     padding: 14px 15px 10px;
     padding: 0.875rem 0.9375rem 0.625rem; }
-    .action-line .main_status_info .icon {
+    .action-line__left-info .icon {
       margin-top: -1px;
       margin-top: -0.0625rem; }
+  .action-line__uppercase {
+    text-transform: uppercase; }
+  .action-line__label {
+    color: #fff; }
   .action-line .action_menu_header {
     position: absolute;
     left: 0;
@@ -170,116 +183,126 @@ URI: https://www.bergen.kommune.no/
   width: 160px;
   width: 10rem; }
 
-.ck-editor__ingress {
-  outline: 0 !important;
-  border: 1px solid #727272;
-  border: 0.0625rem solid #727272;
-  padding: 6px 8px 12px;
-  padding: 0.375rem 0.5rem 0.75rem;
-  min-height: 48px;
-  min-height: 3rem; }
+/*
+// CK Editor style
+// -------------------------------------------------------------
+*/
+/*
+.ck-editor {
 
-.ck-editor__avsnitt {
-  outline: 0 !important;
-  border-top: 1px solid #727272;
-  border-top: 0.0625rem solid #727272;
-  border-right: 1px solid #727272;
-  border-right: 0.0625rem solid #727272;
-  padding: 6px 8px 12px;
-  padding: 0.375rem 0.5rem 0.75rem;
-  min-height: 73px;
-  min-height: 4.5625rem;
-  *zoom: 1; }
-  .ck-editor__avsnitt:before, .ck-editor__avsnitt:after {
-    content: "";
-    display: table;
-    line-height: 0; }
-  .ck-editor__avsnitt:after {
-    clear: both; }
+    &__ingress {
+        outline: 0 !important;
+        @include rem('border', 1px solid $grey7);
+        @include rem('padding', 6px 8px 12px);
+        @include rem('min-height', 48px);
+    }
 
-.ck-editor__hovedtekst {
-  outline: 0 !important;
-  min-height: 380px;
-  min-height: 23.75rem;
-  *zoom: 1; }
-  .ck-editor__hovedtekst:before, .ck-editor__hovedtekst:after {
-    content: "";
-    display: table;
-    line-height: 0; }
-  .ck-editor__hovedtekst:after {
-    clear: both; }
+    // Oppgaveløser
+    &__avsnitt {
+        outline: 0 !important;
+        @include rem('border-top', 1px solid $grey7);
+        @include rem('border-right', 1px solid $grey7);
+        @include rem('padding', 6px 8px 12px);
+        @include rem('min-height', 73px);
+        @include clearfix();
+    }
 
+    // News
+    &__hovedtekst {
+        outline: 0 !important;
+        // @include rem('border', 1px solid $grey7);
+        // @include rem('padding', 6px 8px 12px);
+        @include rem('min-height', 380px);
+        @include clearfix();
+    }
+}
+
+// CK Editor - Extra style for Moono skin
 .cke {
-  min-height: 37px;
-  min-height: 2.3125rem; }
+    @include rem('min-height', 37px);
+}
 
 .cke_chrome {
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
-  border: 1px solid #727272 !important;
-  border: 0.0625rem solid #727272 !important;
-  border-bottom: none !important; }
+    @include box-shadow(none !important);
+    @include rem('border', 1px solid $grey7 !important);
+    border-bottom: none !important;
+}
 
 .accordion_content_editable .cke_chrome {
-  border-left: none !important;
-  border-top: none !important; }
+    border-left: none !important;
+    border-top: none !important;
+}
 
 .cke_top {
-  background-color: #f5f2f2 !important;
-  background-image: none !important;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
-  border-bottom: none !important;
-  padding: 5px 4px 0 !important;
-  padding: 0.3125rem 0.25rem 0 !important; }
+    background-color: #f5f2f2 !important;
+    background-image: none !important;
+    @include box-shadow(none !important);
+    border-bottom: none !important;
+    @include rem('padding', 5px 4px 0 !important);
+}
 
 .cke_toolgroup {
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important; }
+    @include box-shadow(none !important);
+}
 
 .cke_toolgroup {
-  border-color: #727272 !important; }
-  .cke_toolgroup a {
-    border: 1px solid transparent !important;
-    border: 0.0625rem solid transparent !important; }
-    .cke_toolgroup a:hover, .cke_toolgroup a:focus, .cke_toolgroup a:active, .cke_toolgroup a.cke_button_on {
-      background-image: none !important;
-      background-color: transparent !important;
-      border-color: #d7272d !important; }
-  .cke_toolgroup a.cke_button_on {
-    background: 0 none !important;
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important; }
+    border-color: $grey7 !important;
+
+    a {
+        @include rem('border', 1px solid transparent !important);
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.cke_button_on {
+            background-image: none !important;
+            background-color: transparent !important;
+            border-color: $main_red !important;
+        }
+    }
+
+    a.cke_button_on {
+        background: 0 none !important;
+        @include box-shadow(none !important);
+    }
+
+    a.cke_button_off {
+
+    }
+
+    a.cke_button_disabled {
+    }
+}
 
 .cke_combo_button {
-  background: #fff !important;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important; }
-  .cke_combo_button:hover, .cke_combo_button:focus, .cke_combo_button:active {
-    border-color: #d7272d !important; }
+    background: $white !important;
+    @include box-shadow(none !important);
+
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: $main_red !important;
+    }
+}
 
 .cke_panel_listItem.cke_selected a {
-  border-color: #d7272d !important;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important; }
+    border-color: $main_red !important;
+    @include box-shadow(none !important);
+}
 
 .cke_combo_button .cke_combo_text {
-  width: auto; }
+    width: auto;
+}
 
+*/
 .helpers_header {
+  display: block;
+  margin: 0;
   font-size: 21px;
   font-size: 1.3125rem;
   line-height: 1.33333;
   font-weight: 600;
-  font-style: normal;
-  margin: 0 0 7px;
-  margin: 0 0 0.4375rem; }
+  font-style: normal; }
 
 .helpers_info {
   position: relative;
@@ -298,99 +321,155 @@ URI: https://www.bergen.kommune.no/
   border-bottom: 2px solid #3b65a3;
   border-bottom: 0.125rem solid #3b65a3; }
 
-.image-upload-start-link {
-  display: block;
+.file-upload-input {
+  position: relative;
+  border: 1px dashed #157cb0;
+  border: 0.0625rem dashed #157cb0;
+  background-color: #fff;
+  color: #3b65a3;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  min-height: 70px;
+  min-height: 4.375rem;
   text-align: center;
+  vertical-align: baseline;
+  cursor: pointer !important;
+  display: inline-block !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: background-color 0.2s ease 0ms;
+  -moz-transition: background-color 0.2s ease 0ms;
+  -ms-transition: background-color 0.2s ease 0ms;
+  -o-transition: background-color 0.2s ease 0ms;
+  transition: background-color 0.2s ease 0ms;
+  opacity: 1; }
+  .file-upload-input:hover, .file-upload-input:active {
+    background-color: #f8fbfd; }
+  .file-upload-input.hover {
+    background-color: #f8fbfd; }
+  .file-upload-input__image-preview {
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    z-index: 1; }
+    .file-upload-input__image-preview img {
+      background-color: red;
+      max-width: 100%;
+      margin: 10px 12px 4px;
+      margin: 0.625rem 0.75rem 0.25rem;
+      min-height: 60px;
+      min-height: 3.75rem;
+      max-height: 160px;
+      max-height: 10rem; }
+  .file-upload-input:hover .file-upload-input__image-preview,
+  .file-upload-input:active .file-upload-input__image-preview,
+  .file-upload-input:focus .file-upload-input__image-preview,
+  .file-upload-input.in .file-upload-input__image-preview {
+    background-color: #f8fbfd; }
+  .file-upload-input__filename-container {
+    background-color: #fff;
+    position: relative;
+    z-index: 1; }
+    .file-upload-input__filename-container .file-upload-input__filename {
+      max-width: 100%;
+      white-space: normal;
+      text-align: center;
+      padding: 22px 12px;
+      padding: 1.375rem 0.75rem;
+      min-height: 24px;
+      min-height: 1.5rem;
+      max-height: 160px;
+      max-height: 10rem; }
+  .file-upload-input__filename {
+    color: #333 !important; }
+  .file-upload-input:hover .file-upload-input__image-preview,
+  .file-upload-input:active .file-upload-input__image-preview,
+  .file-upload-input:focus .file-upload-input__image-preview,
+  .file-upload-input.in .file-upload-input__image-preview,
+  .file-upload-input:hover .file_name_container,
+  .file-upload-input:active .file_name_container,
+  .file-upload-input:focus .file_name_container {
+    background-color: #f8fbfd; }
+  .file-upload-input.hover .file-upload-input__image-preview {
+    background-color: #f8fbfd; }
+  .file-upload-input .label {
+    position: absolute;
+    top: 32%;
+    left: 0;
+    width: 100%;
+    text-align: center; }
+  .file-upload-input input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.33333;
+    text-align: left;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: transparent;
+    cursor: inherit;
+    display: block; }
+
+.image-upload-link {
   background-color: #f8fbfd;
   border: 1px dashed #157cb0;
   border: 0.0625rem dashed #157cb0;
-  padding: 14px;
-  padding: 0.875rem;
   -webkit-border-radius: 0.1875rem;
   -moz-border-radius: 0.1875rem;
   border-radius: 0.1875rem; }
-
-.allmenningen_image_dialog .image_position .cke_dialog_ui_hbox_last .cke_dialog_ui_hbox_first,
-.allmenningen_image_dialog .image_position .cke_dialog_ui_hbox_last .cke_dialog_ui_hbox_last {
-  width: 50% !important;
-  position: relative;
-  padding: 0; }
-  .allmenningen_image_dialog .image_position .cke_dialog_ui_hbox_last .cke_dialog_ui_hbox_first label.image_position,
-  .allmenningen_image_dialog .image_position .cke_dialog_ui_hbox_last .cke_dialog_ui_hbox_last label.image_position {
-    border: 1px solid #d7272d;
-    border: 0.0625rem solid #d7272d; }
-
-.allmenningen_image_dialog .image_position .cke_dialog_ui_hbox_last .cke_dialog_ui_hbox_first label.image_position {
-  -webkit-border-radius: 5px 0 0 5px;
-  -moz-border-radius: 5px 0 0 5px;
-  border-radius: 5px 0 0 5px; }
-  .allmenningen_image_dialog .image_position .cke_dialog_ui_hbox_last .cke_dialog_ui_hbox_first label.image_position:before {
-    background-position: -8px -72px; }
-
-.allmenningen_image_dialog .image_position .cke_dialog_ui_hbox_last .cke_dialog_ui_hbox_last label.image_position {
-  -webkit-border-radius: 0 5px 5px 0;
-  -moz-border-radius: 0 5px 5px 0;
-  border-radius: 0 5px 5px 0;
-  border-left: 0 none; }
-  .allmenningen_image_dialog .image_position .cke_dialog_ui_hbox_last .cke_dialog_ui_hbox_last label.image_position:before {
-    background-position: -8px -104px; }
-
-.allmenningen_image_dialog input[type="radio"].image_position {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  filter: alpha(opacity=0);
-  opacity: 0;
-  margin: 0;
-  outline: none;
-  background: transparent;
-  display: block;
-  cursor: pointer; }
-  .allmenningen_image_dialog input[type="radio"].image_position:checked {
-    cursor: inherit; }
-
-.allmenningen_image_dialog label.image_position {
-  background-color: #fff;
-  color: #3b65a3;
-  text-align: center;
-  width: 100%;
-  padding: 3px 12px 4px 19px !important;
-  padding: 0.1875rem 0.75rem 0.25rem 1.1875rem !important;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  .allmenningen_image_dialog label.image_position:before {
-    content: "";
-    display: inline-block;
-    position: relative;
-    top: 2px;
-    top: 0.125rem;
-    right: 8px;
-    right: 0.5rem;
-    width: 16px;
-    width: 1rem;
-    height: 16px;
-    height: 1rem;
-    background-image: url(../images/editModeSprite.svg); }
-
-.allmenningen_image_dialog input[type="radio"].image_position:hover + label.image_position,
-.allmenningen_image_dialog input[type="radio"].image_position:active + label.image_position {
-  background-color: #d7272d; }
-
-.allmenningen_image_dialog input[type="radio"].image_position:checked + label.image_position {
-  background-color: #d7272d;
-  color: #fff; }
-
-.allmenningen_image_dialog .image_position .cke_dialog_ui_hbox_last .cke_dialog_ui_hbox_first input[type="radio"].image_position:checked + label.image_position:before {
-  background-position: -40px -72px; }
-
-.allmenningen_image_dialog .image_position .cke_dialog_ui_hbox_last .cke_dialog_ui_hbox_last input[type="radio"].image_position:checked + label.image_position:before {
-  background-position: -40px -104px; }
+  .image-upload-link__start-link {
+    display: block;
+    text-align: center;
+    padding: 14px;
+    padding: 0.875rem; }
+  .image-upload-link__change-link {
+    display: block;
+    text-decoration: none;
+    padding: 12px 12px 0;
+    padding: 0.75rem 0.75rem 0;
+    -webkit-transition: opacity 100ms ease 0ms;
+    -moz-transition: opacity 100ms ease 0ms;
+    -ms-transition: opacity 100ms ease 0ms;
+    -o-transition: opacity 100ms ease 0ms;
+    transition: opacity 100ms ease 0ms; }
+    .image-upload-link__change-link:hover, .image-upload-link__change-link:active {
+      opacity: .84;
+      text-decoration: none; }
+    .image-upload-link__change-link img {
+      width: 100%;
+      min-height: 60px;
+      min-height: 3.75rem; }
+    .image-upload-link__change-link .figcaption {
+      display: block;
+      color: #333;
+      padding: 6px 0 5px;
+      padding: 0.375rem 0 0.3125rem; }
+  .image-upload-link__delete-link {
+    display: block;
+    text-align: center;
+    border-top: 1px solid #a3a3a3;
+    border-top: 0.0625rem solid #a3a3a3;
+    margin: 0 14px;
+    margin: 0 0.875rem;
+    padding: 6px 0;
+    padding: 0.375rem 0; }
 
 .modal {
   position: fixed;
@@ -422,7 +501,7 @@ URI: https://www.bergen.kommune.no/
     .modal__window__title {
       color: #fff;
       text-align: center;
-      background-color: #157cb0;
+      background-color: #3b65a3;
       font-size: 24px;
       font-size: 1.5rem;
       line-height: 1.16667;
@@ -435,24 +514,25 @@ URI: https://www.bergen.kommune.no/
       border-radius: 0.1875rem 0.1875rem 0 0;
       margin: 0; }
     .modal__window__content {
-      text-align: center;
-      font-size: 20px;
-      font-size: 1.25rem;
-      line-height: 1.4;
       padding: 14px 40px 28px;
       padding: 0.875rem 2.5rem 1.75rem; }
       .modal__window__content form {
-        text-align: left; }
-        .modal__window__content form label {
-          color: #727272;
-          font-weight: 400;
-          font-style: italic; }
-        .modal__window__content form input {
-          width: 100%; }
+        margin: 0; }
+      .modal__window__content input {
+        width: 100%; }
+      .modal__window__content button,
       .modal__window__content .button {
         margin: 0 7px;
         margin: 0 0.4375rem; }
-  .modal .cancel_modal_window {
+      .modal__window__content .submit {
+        color: #fff;
+        background-color: #3b65a3;
+        border-color: #3b65a3; }
+        .modal__window__content .submit:hover, .modal__window__content .submit:active {
+          color: #fff;
+          background-color: #375e98;
+          border-color: #375e98; }
+  .modal__cancel {
     position: absolute;
     top: 0;
     right: 0;
@@ -468,6 +548,8 @@ URI: https://www.bergen.kommune.no/
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.33333; }
+  .cke_dialog .cke_dialog_body * label.cke_required {
+    font-weight: 400; }
 
 .cke_dialog .cke_dialog_title {
   color: #fff;
@@ -478,7 +560,7 @@ URI: https://www.bergen.kommune.no/
   font-size: 1.5rem;
   line-height: 0.75;
   text-shadow: none;
-  background-color: #d7272d;
+  background-color: #3b65a3 !important;
   background-image: none !important;
   border-bottom: 0 none !important;
   padding: 12px;
@@ -486,9 +568,15 @@ URI: https://www.bergen.kommune.no/
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  -webkit-border-radius: 5px 5px 0 0;
-  -moz-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0; }
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.16);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.16);
+  -webkit-border-radius: 0.1875rem 0.1875rem 0 0;
+  -moz-border-radius: 0.1875rem 0.1875rem 0 0;
+  border-radius: 0.1875rem 0.1875rem 0 0; }
 
 .cke_dialog .cke_dialog_close_button {
   display: none !important; }
@@ -496,9 +584,9 @@ URI: https://www.bergen.kommune.no/
 .cke_dialog .cke_dialog_body {
   border: 0 none !important;
   background-color: #f5f5f5 !important;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 0.1875rem;
+  -moz-border-radius: 0.1875rem;
+  border-radius: 0.1875rem;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
   -webkit-box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
@@ -520,13 +608,28 @@ URI: https://www.bergen.kommune.no/
 
 .cke_dialog input.cke_dialog_ui_input_text,
 .cke_dialog input.cke_dialog_ui_input_password,
-.cke_dialog textarea.cke_dialog_ui_input_textarea {
-  border-color: #727272;
-  padding: 4px 6px;
-  padding: 0.25rem 0.375rem;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none; }
+.cke_dialog textarea.cke_dialog_ui_input_textarea,
+.cke_dialog select.cke_dialog_ui_input_select {
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  border: 1px solid #a3a3a3;
+  border: 0.0625rem solid #a3a3a3;
+  color: #000;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  padding: 7px 10px 7px;
+  padding: 0.4375rem 0.625rem 0.4375rem;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px #e0e0e0 inset;
+  -webkit-box-shadow: 0 0.0625rem 0.125rem #e0e0e0 inset;
+  -moz-box-shadow: 0 1px 2px #e0e0e0 inset;
+  -moz-box-shadow: 0 0.0625rem 0.125rem #e0e0e0 inset;
+  box-shadow: 0 1px 2px #e0e0e0 inset;
+  box-shadow: 0 0.0625rem 0.125rem #e0e0e0 inset;
+  margin: 0 !important;
+  width: 100% !important; }
   .cke_dialog input.cke_dialog_ui_input_text:focus, .cke_dialog input.cke_dialog_ui_input_text:focus, .cke_dialog input.cke_dialog_ui_input_text:focus, .cke_dialog input.cke_dialog_ui_input_text:focus,
   .cke_dialog input.cke_dialog_ui_input_password:focus,
   .cke_dialog input.cke_dialog_ui_input_password:focus,
@@ -535,8 +638,16 @@ URI: https://www.bergen.kommune.no/
   .cke_dialog textarea.cke_dialog_ui_input_textarea:focus,
   .cke_dialog textarea.cke_dialog_ui_input_textarea:focus,
   .cke_dialog textarea.cke_dialog_ui_input_textarea:focus,
-  .cke_dialog textarea.cke_dialog_ui_input_textarea:focus {
-    border-color: #d7272d; }
+  .cke_dialog textarea.cke_dialog_ui_input_textarea:focus,
+  .cke_dialog select.cke_dialog_ui_input_select:focus,
+  .cke_dialog select.cke_dialog_ui_input_select:focus,
+  .cke_dialog select.cke_dialog_ui_input_select:focus,
+  .cke_dialog select.cke_dialog_ui_input_select:focus {
+    border: 1px solid #3b65a3;
+    border: 0.0625rem solid #3b65a3;
+    margin: 0 !important;
+    padding: 7px 10px 7px;
+    padding: 0.4375rem 0.625rem 0.4375rem; }
 
 .cke_dialog textarea.cke_dialog_ui_input_textarea {
   white-space: normal; }
@@ -548,13 +659,23 @@ URI: https://www.bergen.kommune.no/
   -moz-box-shadow: none;
   box-shadow: none;
   background-image: none !important;
-  background-color: transparent; }
+  background-color: transparent;
+  border: none; }
   .cke_dialog .cke_dialog_footer .cke_dialog_footer_buttons {
     margin: 0 0 18px;
     margin: 0 0 1.125rem; }
   .cke_dialog .cke_dialog_footer a.cke_dialog_ui_button {
     padding: 6px 12px 7px;
-    padding: 0.375rem 0.75rem 0.4375rem; }
+    padding: 0.375rem 0.75rem 0.4375rem;
+    box-shadow: none;
+    text-decoration: none;
+    border-radius: 0.1875rem;
+    background-image: none;
+    font-size: 20px;
+    font-size: 20px;
+    line-height: 1.4;
+    line-height: 1.4;
+    cursor: pointer; }
     .cke_dialog .cke_dialog_footer a.cke_dialog_ui_button:hover {
       text-decoration: none; }
     .cke_dialog .cke_dialog_footer a.cke_dialog_ui_button span {
@@ -562,27 +683,28 @@ URI: https://www.bergen.kommune.no/
       font-size: 20px;
       font-size: 1.25rem;
       line-height: 1.2;
-      padding: 0; }
+      padding: 0;
+      font-weight: 400; }
   .cke_dialog .cke_dialog_footer a.cke_dialog_ui_button.cke_dialog_ui_button_cancel {
     color: #3b65a3;
     background-image: none;
     background-color: #fff;
-    border: 1px solid #d7272d;
+    border: 1px solid #3b65a3;
     margin: 0 7px 0 12px;
     margin: 0 0.4375rem 0 0.75rem; }
     .cke_dialog .cke_dialog_footer a.cke_dialog_ui_button.cke_dialog_ui_button_cancel:hover, .cke_dialog .cke_dialog_footer a.cke_dialog_ui_button.cke_dialog_ui_button_cancel:focus, .cke_dialog .cke_dialog_footer a.cke_dialog_ui_button.cke_dialog_ui_button_cancel:active {
       color: #fff;
-      background-color: #d7272d; }
+      background-color: #3b65a3; }
   .cke_dialog .cke_dialog_footer a.cke_dialog_ui_button.cke_dialog_ui_button_ok {
-    background-image: none;
-    background-color: #d7272d;
-    border: 1px solid #d7272d;
-    border: 0.0625rem solid #d7272d;
+    border: 1px solid #3b65a3;
+    border: 0.0625rem solid #3b65a3;
     margin: 0 12px;
-    margin: 0 0.75rem; }
+    margin: 0 0.75rem;
+    background-color: #3b65a3;
+    color: #fff; }
     .cke_dialog .cke_dialog_footer a.cke_dialog_ui_button.cke_dialog_ui_button_ok:hover, .cke_dialog .cke_dialog_footer a.cke_dialog_ui_button.cke_dialog_ui_button_ok:focus, .cke_dialog .cke_dialog_footer a.cke_dialog_ui_button.cke_dialog_ui_button_ok:active {
-      border-color: #c12328;
-      background-color: #c12328; }
+      border-color: #2d4e7e;
+      background-color: #2d4e7e; }
 
 .cke_dialog .cke_resizer {
   display: none !important; }
@@ -593,12 +715,164 @@ URI: https://www.bergen.kommune.no/
 .allmenningen_image_dialog .cke_dialog_ui_hbox_last {
   width: inherit !important; }
 
+.cke_dialog_ui_input_select {
+  height: auto !important; }
+
+a.cke_dialog_tab {
+  margin-right: 5px !important;
+  padding: 6px 12px 7px !important;
+  padding: 0.375rem 0.75rem 0.4375rem !important;
+  background: none !important;
+  background-image: none !important;
+  background-color: #fff !important;
+  font-size: 20px !important; }
+
+a.cke_dialog_tab_selected {
+  padding: 6px 12px 7px !important;
+  padding: 0.375rem 0.75rem 0.4375rem !important;
+  background: none !important;
+  background-image: none !important;
+  background-color: #3b65a3 !important;
+  border-bottom: 2px #3b65a3 !important;
+  border-bottom: 0.125rem #3b65a3 !important;
+  color: #fff !important;
+  outline: none !important; }
+  a.cke_dialog_tab_selected a:hover {
+    background: none !important;
+    background-color: #3b65a3 !important;
+    border-bottom: 2px #3b65a3 !important;
+    border-bottom: 0.125rem #3b65a3 !important; }
+
+a.cke_dialog_tab:focus {
+  border: 1px solid #d1d1d1 !important;
+  border: 0.0625rem solid #d1d1d1 !important;
+  outline: none !important; }
+
+.cke_dialog_contents {
+  margin-top: 48px !important;
+  margin-top: 3rem !important; }
+
+.cke_dialog_background_cover {
+  background-color: rgba(255, 255, 255, 0.72) !important; }
+
+.modal__image-position {
+  *zoom: 1; }
+  .modal__image-position:before, .modal__image-position:after {
+    content: "";
+    display: table;
+    line-height: 0; }
+  .modal__image-position:after {
+    clear: both; }
+  .modal__image-position__legend {
+    margin-bottom: 7px;
+    margin-bottom: 0.4375rem; }
+  .modal__image-position__button-container {
+    position: relative;
+    float: left;
+    width: 50%; }
+  .modal__image-position label {
+    position: relative;
+    background-color: #fff;
+    color: #3b65a3;
+    text-align: center;
+    display: block !important;
+    width: 100%;
+    padding: 3px 12px 4px 19px;
+    padding: 0.1875rem 0.75rem 0.25rem 1.1875rem;
+    border: 1px solid #3b65a3;
+    border: 0.0625rem solid #3b65a3;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .modal__image-position label:before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      top: 0.125rem;
+      right: 8px;
+      right: 0.5rem;
+      width: 16px;
+      width: 1rem;
+      height: 16px;
+      height: 1rem;
+      background-image: url(../images/editModeSprite.svg); }
+  .modal__image-position input[type="radio"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    margin: 0;
+    outline: none;
+    background: transparent;
+    display: block;
+    cursor: pointer; }
+    .modal__image-position input[type="radio"]:checked {
+      cursor: inherit; }
+  .modal__image-position .modal__image-position__label-left {
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px; }
+    .modal__image-position .modal__image-position__label-left:before {
+      background-position: -8px -72px; }
+  .modal__image-position .modal__image-position__label-center {
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    border-left: 0 none; }
+    .modal__image-position .modal__image-position__label-center:before {
+      background-position: -8px -104px; }
+  .modal__image-position input[type="radio"]:hover + label,
+  .modal__image-position input[type="radio"]:active + label {
+    background-color: #f8fbfd; }
+  .modal__image-position input[type="radio"]:checked + label {
+    background-color: #3b65a3;
+    color: #fff; }
+  .modal__image-position input[type="radio"].modal__image-position__input-left:checked + label.modal__image-position__label-left:before {
+    background-position: -40px -72px; }
+  .modal__image-position input[type="radio"].modal__image-position__input-center:checked + label.modal__image-position__label-center:before {
+    background-position: -40px -104px; }
+  .modal__image-position input[type="radio"]:focus + label {
+    outline: 3px solid #f0c646;
+    z-index: 6;
+    pointer-events: none; }
+  @media (min-width: 700px) {
+    .modal__image-position__legend {
+      float: left;
+      width: 22%;
+      margin: 0; }
+    .modal__image-position__radiogroup {
+      float: left;
+      width: 78%; } }
+
 .input--title {
   font-size: 19px;
   font-size: 1.1875rem;
   line-height: 1.47368;
   border-color: #3b65a3;
   width: 100%; }
+
+.textarea--excerpt {
+  padding: 21px 18px 46px;
+  padding: 1.3125rem 1.125rem 2.875rem;
+  border-color: #727272;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.icon.small_edit_icon {
+  background-image: url("../images/editModeSprite.svg");
+  background-position: -160px -192px; }
 
 .add_helper_content_link {
   border: 2px solid #f5f5f5;
@@ -735,141 +1009,6 @@ URI: https://www.bergen.kommune.no/
   border-radius: 0.1875rem;
   padding: 11px 12px;
   padding: 0.6875rem 0.75rem; }
-
-.page_header_editable {
-  position: relative;
-  margin: 0 0 32px;
-  margin: 0 0 2rem;
-  border-bottom: 2px solid #d7272d;
-  border-bottom: 0.125rem solid #d7272d; }
-  .page_header_editable.category_page_header_editable {
-    border-top: 1px solid transparent;
-    border-top: 0.0625rem solid transparent;
-    border-left: 1px solid transparent;
-    border-left: 0.0625rem solid transparent; }
-  .page_header_editable .page_header_label {
-    cursor: pointer;
-    position: absolute;
-    top: 8px;
-    top: 0.5rem;
-    left: -32px;
-    left: -2rem; }
-  .page_header_editable .page_header_input {
-    position: relative;
-    color: #000;
-    font-size: 32px;
-    font-size: 2rem;
-    line-height: 1.3125;
-    font-weight: 400;
-    font-style: normal;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -o-hyphens: auto;
-    hyphens: auto;
-    width: 100%;
-    padding: 0 0 1px;
-    padding: 0 0 0.0625rem;
-    margin: 0;
-    border: 0 none;
-    background-color: transparent;
-    -webkit-border-radius: 5px 5px 0 0;
-    -moz-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important;
-    -webkit-transition: padding 200ms ease 0ms;
-    -moz-transition: padding 200ms ease 0ms;
-    -ms-transition: padding 200ms ease 0ms;
-    -o-transition: padding 200ms ease 0ms;
-    transition: padding 200ms ease 0ms; }
-  .page_header_editable.has_error {
-    border-bottom-color: #cc0000; }
-  .page_header_editable .title_features {
-    position: absolute;
-    top: 8px;
-    top: 0.5rem;
-    right: 0;
-    bottom: 0;
-    height: 35px;
-    height: 2.1875rem;
-    z-index: 2;
-    background-color: #fff; }
-    .page_header_editable .title_features .save_title_button {
-      float: left;
-      color: #fff;
-      background-color: #d7272d;
-      height: 46px;
-      height: 2.875rem;
-      padding: 8px 22px 10px 23px;
-      padding: 0.5rem 1.375rem 0.625rem 1.4375rem;
-      margin: -9px 0 0;
-      margin: -0.5625rem 0 0;
-      -webkit-border-radius: 0 5px 0 0;
-      -moz-border-radius: 0 5px 0 0;
-      border-radius: 0 5px 0 0;
-      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
-      -webkit-box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1) inset;
-      -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
-      -moz-box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1) inset;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
-      box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1) inset; }
-      .page_header_editable .title_features .save_title_button:hover, .page_header_editable .title_features .save_title_button:focus, .page_header_editable .title_features .save_title_button:active {
-        background-color: #c12328; }
-    .page_header_editable .title_features .cancel_link {
-      float: left;
-      font-size: 16px;
-      font-size: 1rem;
-      line-height: 1.125;
-      margin: 4px 6px 0;
-      margin: 0.25rem 0.375rem 0;
-      padding: 1px 10px;
-      padding: 0.0625rem 0.625rem; }
-    .page_header_editable .title_features .error_message {
-      float: left;
-      color: #cc0000;
-      font-size: 20px;
-      font-size: 1.25rem;
-      line-height: 1.5;
-      margin: -2px 0 0 12px;
-      margin: -0.125rem 0 0 0.75rem; }
-  .page_header_editable.category_page_header_editable .title_features {
-    -webkit-transition: opacity 500ms ease 0ms;
-    -moz-transition: opacity 500ms ease 0ms;
-    -ms-transition: opacity 500ms ease 0ms;
-    -o-transition: opacity 500ms ease 0ms;
-    transition: opacity 500ms ease 0ms;
-    opacity: 0;
-    clip: rect(1px, 1px, 1px, 1px); }
-  .page_header_editable.category_page_header_editable .error_message:after {
-    content: "";
-    float: right;
-    border-right: 1px solid #727272;
-    border-right: 0.0625rem solid #727272;
-    height: 20px;
-    height: 1.25rem;
-    margin: 5px 1px 0 24px;
-    margin: 0.3125rem 0.0625rem 0 1.5rem; }
-  .page_header_editable.is_focused.category_page_header_editable {
-    border-top-color: #727272;
-    border-left-color: #727272;
-    -webkit-border-radius: 5px 5px 0 0;
-    -moz-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06) inset;
-    -webkit-box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.06) inset;
-    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06) inset;
-    -moz-box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.06) inset;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06) inset;
-    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.06) inset; }
-    .page_header_editable.is_focused.category_page_header_editable .title_features {
-      opacity: 1;
-      clip: auto; }
-    .page_header_editable.is_focused.category_page_header_editable .page_header_input {
-      padding-left: 8px;
-      padding-left: 0.5rem; }
 
 .accordion_header_button_editable {
   position: relative; }
@@ -1446,48 +1585,6 @@ URI: https://www.bergen.kommune.no/
   .upload_image_area:hover .upload_image_link_text, .upload_image_area:active .upload_image_link_text {
     text-decoration: underline; }
 
-.change_image_area {
-  background-color: #d92f35;
-  padding: 12px 12px 0;
-  padding: 0.75rem 0.75rem 0;
-  border: 1px dashed #d7272d;
-  border: 0.0625rem dashed #d7272d;
-  -webkit-border-radius: 3px 3px 0 0;
-  -moz-border-radius: 3px 3px 0 0;
-  border-radius: 3px 3px 0 0;
-  border-bottom: 0 none; }
-  .change_image_area a {
-    display: block;
-    color: #333;
-    text-decoration: none;
-    -webkit-transition: opacity 100ms ease 0ms;
-    -moz-transition: opacity 100ms ease 0ms;
-    -ms-transition: opacity 100ms ease 0ms;
-    -o-transition: opacity 100ms ease 0ms;
-    transition: opacity 100ms ease 0ms; }
-    .change_image_area a:hover, .change_image_area a:active {
-      opacity: .84; }
-  .change_image_area img {
-    width: 100%;
-    min-height: 60px;
-    min-height: 3.75rem; }
-
-.delete_image_link_area {
-  text-align: center;
-  background-color: #d92f35;
-  border: 1px dashed #d7272d;
-  border: 0.0625rem dashed #d7272d;
-  border-top: 0 none;
-  padding: 6px 0;
-  padding: 0.375rem 0;
-  -webkit-border-radius: 0 0 3px 3px;
-  -moz-border-radius: 0 0 3px 3px;
-  border-radius: 0 0 3px 3px; }
-  .delete_image_link_area a {
-    display: inline-block;
-    padding: 3px 12px;
-    padding: 0.1875rem 0.75rem; }
-
 .preview_article_image_edit {
   margin-bottom: 18px;
   margin-bottom: 1.125rem; }
@@ -1496,13 +1593,6 @@ URI: https://www.bergen.kommune.no/
   .preview_article_image_edit .change_image_area img {
     max-width: 270px;
     max-width: 16.875rem; }
-
-.hero_image_edit {
-  margin-bottom: 40px;
-  margin-bottom: 2.5rem; }
-  .hero_image_edit .upload_image_area {
-    height: 380px;
-    height: 23.75rem; }
 
 .expiration_date {
   position: relative;
@@ -1572,3 +1662,159 @@ URI: https://www.bergen.kommune.no/
 .update_published_date {
   margin-top: 42px;
   margin-top: 2.625rem; }
+
+.mbs {
+  margin-bottom: 7px;
+  margin-bottom: 0.4375rem; }
+
+.mbm {
+  margin-bottom: 14px;
+  margin-bottom: 0.875rem; }
+
+.mbml {
+  margin-bottom: 21px;
+  margin-bottom: 1.3125rem; }
+
+.mbl {
+  margin-bottom: 28px;
+  margin-bottom: 1.75rem; }
+
+.mbxl {
+  margin-bottom: 35px;
+  margin-bottom: 2.1875rem; }
+
+.mbxxl {
+  margin-bottom: 42px;
+  margin-bottom: 2.625rem; }
+
+.mbj {
+  margin-bottom: 56px;
+  margin-bottom: 3.5rem; }
+
+.mbn {
+  margin-bottom: 0; }
+
+@media (max-width: 699px) {
+  .mbs--mob {
+    margin-bottom: 7px;
+    margin-bottom: 0.4375rem; }
+  .mbm--mob {
+    margin-bottom: 14px;
+    margin-bottom: 0.875rem; }
+  .mbml--mob {
+    margin-bottom: 21px;
+    margin-bottom: 1.3125rem; }
+  .mbl--mob {
+    margin-bottom: 28px;
+    margin-bottom: 1.75rem; }
+  .mbxl--mob {
+    margin-bottom: 35px;
+    margin-bottom: 2.1875rem; }
+  .mbxxl--mob {
+    margin-bottom: 42px;
+    margin-bottom: 2.625rem; }
+  .mbj--mob {
+    margin-bottom: 56px;
+    margin-bottom: 3.5rem; }
+  .mbn--mob {
+    margin-bottom: 0; } }
+
+@media (max-width: 1019px) {
+  .page_header_container_with_org_menu .page_header,
+  .page_header_container_with_org_menu .h2_page_header_with_link {
+    margin-bottom: 0; } }
+
+@media (min-width: 700px) {
+  .mbl .read_more_link_container {
+    margin-bottom: -28px;
+    margin-bottom: -1.75rem; }
+  .mbxl .read_more_link_container {
+    margin-bottom: -28px;
+    margin-bottom: -1.75rem; }
+  .mbxxl .read_more_link_container {
+    margin-bottom: -28px;
+    margin-bottom: -1.75rem; }
+  .mbj .read_more_link_container {
+    margin-bottom: -21px;
+    margin-bottom: -1.3125rem; } }
+
+.mts {
+  margin-top: 7px;
+  margin-top: 0.4375rem; }
+
+.mtm {
+  margin-top: 14px;
+  margin-top: 0.875rem; }
+
+.mtml {
+  margin-top: 21px;
+  margin-top: 1.3125rem; }
+
+.mtl {
+  margin-top: 28px;
+  margin-top: 1.75rem; }
+
+.mtxl {
+  margin-top: 35px;
+  margin-top: 2.1875rem; }
+
+.mtxxl {
+  margin-top: 42px;
+  margin-top: 2.625rem; }
+
+.mtj {
+  margin-top: 56px;
+  margin-top: 3.5rem; }
+
+@media (max-width: 699px) {
+  .mts--mob {
+    margin-top: 7px;
+    margin-top: 0.4375rem; }
+  .mtm--mob {
+    margin-top: 14px;
+    margin-top: 0.875rem; }
+  .mtml--mob {
+    margin-top: 21px;
+    margin-top: 1.3125rem; }
+  .mtl--mob {
+    margin-top: 28px;
+    margin-top: 1.75rem; }
+  .mtxl--mob {
+    margin-top: 35px;
+    margin-top: 2.1875rem; }
+  .mtxxl--mob {
+    margin-top: 42px;
+    margin-top: 2.625rem; }
+  .mtj--mob {
+    margin-top: 56px;
+    margin-top: 3.5rem; }
+  .mtn--mob {
+    margin-bottom: 0; } }
+
+.neg-mts {
+  margin-top: -7px;
+  margin-top: -0.4375rem; }
+
+.neg-mtm {
+  margin-top: -14px;
+  margin-top: -0.875rem; }
+
+.neg-mtml {
+  margin-top: -21px;
+  margin-top: -1.3125rem; }
+
+.neg-mtl {
+  margin-top: -28px;
+  margin-top: -1.75rem; }
+
+.neg-mtxl {
+  margin-top: -35px;
+  margin-top: -2.1875rem; }
+
+.neg-mtxxl {
+  margin-top: -42px;
+  margin-top: -2.625rem; }
+
+.neg-mtj {
+  margin-top: -56px;
+  margin-top: -3.5rem; }
