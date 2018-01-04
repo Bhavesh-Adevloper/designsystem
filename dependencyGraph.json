@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1515067456627,
+  "timestamp": 1515070317828,
   "graph": {
     "options": {
       "directed": true,
@@ -1890,6 +1890,12 @@
       },
       {
         "v": "04-pages/50-escenic/88-artikkelliste-sp.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/88-publisering/artikkel-forhandsvisning.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -4902,6 +4908,41 @@
       {
         "v": "04-pages/50-escenic/88-artikkelliste-sp.mustache",
         "w": "03-templates/20-Listesider/artikkelliste.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/artikkel-forhandsvisning.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/artikkel-forhandsvisning.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/artikkel-forhandsvisning.mustache",
+        "w": "01-molecules/publisering/action-line.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/artikkel-forhandsvisning.mustache",
+        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/artikkel-forhandsvisning.mustache",
+        "w": "01-molecules/publisering/rediger-status-meta.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/artikkel-forhandsvisning.mustache",
+        "w": "01-molecules/publisering/rediger-listebilde.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/artikkel-forhandsvisning.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {

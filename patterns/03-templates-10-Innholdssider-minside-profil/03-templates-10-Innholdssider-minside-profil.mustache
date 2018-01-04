@@ -24,9 +24,10 @@
         </div>
         <div class="col_md_12 col_lg_8 org_main_col">
             
-            {{> molecules-moduloverskrift-h1:mbm(tittel: "Profil") }}
-            
             {{# forInnbygger }}
+            
+                {{> molecules-moduloverskrift-h1:mbm(tittel: "Min profil") }}
+                
                 <p>
                     {{ innbygger.tittel }} - Fødselsnummer: {{ innbygger.nummer }}
                 </p>
@@ -91,6 +92,9 @@
             
             
             {{# forOrganisasjon }}
+            
+                {{> molecules-moduloverskrift-h1:mbm(tittel: "Profil") }}
+            
                 <p>
                     {{ organisasjon.tittel }} - Organisasjonsnummer: 865497586258
                 </p>
