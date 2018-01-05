@@ -9,18 +9,13 @@ URI: https://www.bergen.kommune.no/
   *zoom: 1;
   color: #fff;
   background-color: #535353;
-  border: 1px solid #000;
-  border: 0.0625rem solid #000;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  margin-bottom: 32px;
-  margin-bottom: 2rem;
-  padding-right: 12px;
-  padding-right: 0.75rem;
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.5; }
+  margin-bottom: 35px;
+  margin-bottom: 2.1875rem;
+  min-height: 87px;
+  min-height: 5.4375rem; }
   .action-line:before, .action-line:after {
     content: "";
     display: table;
@@ -46,15 +41,25 @@ URI: https://www.bergen.kommune.no/
   .action-line__left-info {
     float: left;
     color: #fff;
-    padding: 14px 15px 10px;
-    padding: 0.875rem 0.9375rem 0.625rem; }
+    padding: 30px 20px;
+    padding: 1.875rem 1.25rem; }
     .action-line__left-info .icon {
       margin-top: -1px;
       margin-top: -0.0625rem; }
   .action-line__uppercase {
     text-transform: uppercase; }
   .action-line__label {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 1.07692;
     color: #fff; }
+  .action-line .align_right {
+    padding: 22px 24px 0 0;
+    padding: 1.375rem 1.5rem 0 0; }
+    .action-line .align_right button,
+    .action-line .align_right .button {
+      margin-left: 21px;
+      margin-left: 1.3125rem; }
   .action-line .action_menu_header {
     position: absolute;
     left: 0;
@@ -85,47 +90,6 @@ URI: https://www.bergen.kommune.no/
     float: left;
     color: #fff;
     text-transform: uppercase; }
-  .action-line button,
-  .action-line .button {
-    border: 0 none;
-    margin: 11px 0 10px 12px;
-    margin: 0.6875rem 0 0.625rem 0.75rem;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 -1px 1px rgba(0, 0, 0, 0.16) inset, 0 1px 2px rgba(255, 255, 255, 0.32) inset;
-    -webkit-box-shadow: 0 0.0625rem 0.0625rem rgba(0, 0, 0, 0.24), 0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.16) inset, 0 0.0625rem 0.125rem rgba(255, 255, 255, 0.32) inset;
-    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 -1px 1px rgba(0, 0, 0, 0.16) inset, 0 1px 2px rgba(255, 255, 255, 0.32) inset;
-    -moz-box-shadow: 0 0.0625rem 0.0625rem rgba(0, 0, 0, 0.24), 0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.16) inset, 0 0.0625rem 0.125rem rgba(255, 255, 255, 0.32) inset;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 -1px 1px rgba(0, 0, 0, 0.16) inset, 0 1px 2px rgba(255, 255, 255, 0.32) inset;
-    box-shadow: 0 0.0625rem 0.0625rem rgba(0, 0, 0, 0.24), 0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.16) inset, 0 0.0625rem 0.125rem rgba(255, 255, 255, 0.32) inset; }
-  .action-line button.low_contrast,
-  .action-line .button.low_contrast {
-    background-color: #5f5f5f;
-    color: #fff;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none; }
-    .action-line button.low_contrast:hover,
-    .action-line .button.low_contrast:hover {
-      text-decoration: underline; }
-  .action-line button.go_back,
-  .action-line .button.go_back {
-    position: relative;
-    padding-left: 25px;
-    padding-left: 1.5625rem; }
-    .action-line button.go_back .icon,
-    .action-line .button.go_back .icon {
-      position: absolute;
-      top: 2px;
-      top: 0.125rem;
-      left: -3px;
-      left: -0.1875rem; }
-    .action-line button.go_back:hover, .action-line button.go_back:focus, .action-line button.go_back:active,
-    .action-line .button.go_back:hover,
-    .action-line .button.go_back:focus,
-    .action-line .button.go_back:active {
-      text-decoration: underline; }
 
 .second_action_line {
   position: relative;
