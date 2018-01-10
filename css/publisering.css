@@ -16,8 +16,8 @@ URI: https://www.bergen.kommune.no/
   padding-right: 0.1875rem;
   padding-left: 20px;
   padding-left: 1.25rem;
-  margin-bottom: 42px;
-  margin-bottom: 2.625rem;
+  margin-bottom: 49px;
+  margin-bottom: 3.0625rem;
   min-height: 87px;
   min-height: 5.4375rem; }
   .action-line:before, .action-line:after {
@@ -55,30 +55,43 @@ URI: https://www.bergen.kommune.no/
     margin-bottom: 0; }
   .action-line__feedback {
     position: absolute;
-    bottom: -33px;
-    bottom: -2.0625rem;
-    text-align: center;
+    left: 0;
+    bottom: 0;
     width: 100%; }
     .action-line__feedback-message {
-      display: inline-block;
-      color: #333;
-      font-size: 20px;
-      font-size: 1.25rem;
-      line-height: 1.5;
-      padding: 1px 16px;
-      padding: 0.0625rem 1rem;
-      border: 1px solid #535353;
-      border: 0.0625rem solid #535353;
-      border-top: 0 none;
-      -webkit-border-radius: 0 0 3px 3px;
-      -moz-border-radius: 0 0 3px 3px;
-      border-radius: 0 0 3px 3px; }
-      .action-line__feedback-message--danger {
-        color: #cc0000;
+      position: absolute;
+      top: 0;
+      right: 7px;
+      right: 0.4375rem;
+      left: 7px;
+      left: 0.4375rem;
+      text-align: center;
+      margin: 0 auto; }
+      .action-line__feedback-message div {
+        display: block;
+        color: #333;
+        font-size: 20px;
+        font-size: 1.25rem;
+        line-height: 1.4;
+        padding: 7px 14px 6px;
+        padding: 0.4375rem 0.875rem 0.375rem;
+        background-color: #f5f8fb;
+        border: 1px solid #bdcfe4;
+        border: 0.0625rem solid #bdcfe4;
+        border-top: 0 none;
+        -webkit-border-radius: 0 0 3px 3px;
+        -moz-border-radius: 0 0 3px 3px;
+        border-radius: 0 0 3px 3px; }
+      .action-line__feedback-message--danger div {
+        background-color: transparent;
         border-color: #cc0000; }
-      .action-line__feedback-message--success {
-        color: #15ab29;
-        border-color: #15ab29; }
+      .action-line__feedback-message--success div {
+        background-color: #f7fdf8;
+        border-color: #42c453; }
+  @media (min-width: 700px) {
+    .action-line__feedback-message {
+      width: 400px;
+      width: 25rem; } }
 
 /*
 // CK Editor style
@@ -972,8 +985,8 @@ a.cke_dialog_tab:focus {
     padding: 0 0.375rem;
     width: 44px;
     width: 2.75rem;
-    background-color: #15ab29;
-    border-color: #0f7e1e;
+    background-color: #42c453;
+    border-color: #32a141;
     -webkit-border-radius: 0 3px 3px 0;
     -moz-border-radius: 0 3px 3px 0;
     border-radius: 0 3px 3px 0; }
