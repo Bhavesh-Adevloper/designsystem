@@ -12,8 +12,12 @@ URI: https://www.bergen.kommune.no/
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  margin-bottom: 35px;
-  margin-bottom: 2.1875rem;
+  padding-right: 3px;
+  padding-right: 0.1875rem;
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  margin-bottom: 42px;
+  margin-bottom: 2.625rem;
   min-height: 87px;
   min-height: 5.4375rem; }
   .action-line:before, .action-line:after {
@@ -24,128 +28,57 @@ URI: https://www.bergen.kommune.no/
     clear: both; }
   .action-line a {
     color: #fff; }
-  .action-line__center-info {
+    .action-line a.button {
+      color: #3b65a3; }
+  .action-line__status {
     color: #fff;
-    text-align: center;
-    display: block;
-    max-width: 60%;
-    margin: 14px auto 12px;
-    margin: 0.875rem auto 0.75rem; }
-    .action-line__center-info--absolute {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      margin-left: auto;
-      margin-right: auto; }
-  .action-line__left-info {
-    float: left;
-    color: #fff;
-    padding: 30px 20px;
-    padding: 1.875rem 1.25rem; }
-    .action-line__left-info .icon {
-      margin-top: -1px;
-      margin-top: -0.0625rem; }
-  .action-line__uppercase {
-    text-transform: uppercase; }
-  .action-line__label {
+    text-transform: uppercase;
     font-size: 26px;
     font-size: 1.625rem;
     line-height: 1.07692;
-    color: #fff; }
+    margin-top: 30px;
+    margin-top: 1.875rem; }
   .action-line .align_right {
-    padding: 22px 24px 0 0;
-    padding: 1.375rem 1.5rem 0 0; }
+    padding-top: 22px;
+    padding-top: 1.375rem; }
+    .action-line .align_right a,
     .action-line .align_right button,
     .action-line .align_right .button {
-      margin-left: 21px;
-      margin-left: 1.3125rem; }
-  .action-line .action_menu_header {
+      margin-right: 21px;
+      margin-right: 1.3125rem; }
+  @media (max-width: 540px) {
+    .action-line .align_right {
+      clear: left;
+      float: left; } }
+  .action-line label,
+  .action-line select {
+    margin-bottom: 0; }
+  .action-line__feedback {
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 8px;
-    top: 0.5rem;
-    margin: 0 auto; }
-    .action-line .action_menu_header .label {
-      position: absolute;
-      top: 6px;
-      top: 0.375rem;
-      left: -37px;
-      left: -2.3125rem;
-      color: #fff; }
-    .action-line .action_menu_header .action_menu_header_link {
-      display: inline-block;
-      color: #fff;
-      padding: 6px 4px 0 4px;
-      padding: 0.375rem 0.25rem 0 0.25rem;
-      margin-left: 11px;
-      margin-left: 0.6875rem; }
-    .action-line .action_menu_header .header_title {
-      float: left; }
-    .action-line .action_menu_header .icon {
-      margin-top: -1px;
-      margin-top: -0.0625rem; }
-  .action-line .status {
-    float: left;
-    color: #fff;
-    text-transform: uppercase; }
-
-.second_action_line {
-  position: relative;
-  z-index: 2; }
-  .second_action_line .edit_action_menu {
-    position: absolute;
-    left: 0;
-    top: -33px;
-    top: -2.0625rem;
-    z-index: 3;
-    background-color: #535353;
-    border: 1px solid #000;
-    border: 0.0625rem solid #000;
-    border-top: 0 none;
-    -webkit-border-radius: 0 0 3px 3px;
-    -moz-border-radius: 0 0 3px 3px;
-    border-radius: 0 0 3px 3px;
-    display: none; }
-    .second_action_line .edit_action_menu.center {
-      right: 0;
-      margin: 0 auto; }
-    .second_action_line .edit_action_menu.active {
-      display: inherit; }
-    .second_action_line .edit_action_menu a {
-      display: block;
-      color: #fff;
-      font-size: 20px;
-      font-size: 1.25rem;
-      line-height: 1.5;
-      border-top: 1px solid #000;
-      padding: 9px 24px 9px 15px;
-      padding: 0.5625rem 1.5rem 0.5625rem 0.9375rem; }
-  .second_action_line .warn_feedback {
-    position: relative;
-    top: -32px;
+    bottom: -33px;
+    bottom: -2.0625rem;
     text-align: center;
     width: 100%; }
-    .second_action_line .warn_feedback span {
+    .action-line__feedback-message {
       display: inline-block;
-      color: #cc0000;
+      color: #333;
       font-size: 20px;
       font-size: 1.25rem;
       line-height: 1.5;
       padding: 1px 16px;
       padding: 0.0625rem 1rem;
-      border: 1px solid #cc0000;
-      border: 0.0625rem solid #cc0000;
+      border: 1px solid #535353;
+      border: 0.0625rem solid #535353;
       border-top: 0 none;
       -webkit-border-radius: 0 0 3px 3px;
       -moz-border-radius: 0 0 3px 3px;
       border-radius: 0 0 3px 3px; }
-
-.action-line .action_menu_header,
-.second_action_line .edit_action_menu.center {
-  width: 160px;
-  width: 10rem; }
+      .action-line__feedback-message--danger {
+        color: #cc0000;
+        border-color: #cc0000; }
+      .action-line__feedback-message--success {
+        color: #15ab29;
+        border-color: #15ab29; }
 
 /*
 // CK Editor style
@@ -267,23 +200,15 @@ URI: https://www.bergen.kommune.no/
   line-height: 1.33333;
   font-weight: 600;
   font-style: normal; }
+  .sidebar .helpers_header {
+    border-bottom: 2px solid #3b65a3;
+    border-bottom: 0.125rem solid #3b65a3; }
 
 .helpers_info {
   position: relative;
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 1.64706; }
-
-.helpers_sidebar_header {
-  font-size: 21px;
-  font-size: 1.3125rem;
-  line-height: 1.33333;
-  font-weight: 600;
-  font-style: normal;
-  margin: 34px 0 8px;
-  margin: 2.125rem 0 0.5rem;
-  border-bottom: 2px solid #3b65a3;
-  border-bottom: 0.125rem solid #3b65a3; }
 
 .file-upload-input {
   position: relative;
@@ -816,6 +741,100 @@ a.cke_dialog_tab:focus {
       float: left;
       width: 78%; } }
 
+.editor-article-list .ece_module_container {
+  border-bottom: 0 none;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+.editor-article-list .artikkel-sammendrag {
+  padding: 21px 21px 0;
+  padding: 1.3125rem 1.3125rem 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px dashed #3b65a3;
+  border: 0.0625rem dashed #3b65a3;
+  -webkit-border-radius: 0.1875rem;
+  -moz-border-radius: 0.1875rem;
+  border-radius: 0.1875rem;
+  margin-bottom: 21px;
+  margin-bottom: 1.3125rem; }
+
+.editor-article-list .escenic-artikkel-sammendrag {
+  position: relative;
+  padding: 21px 21px 0;
+  padding: 1.3125rem 1.3125rem 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid rgba(59, 101, 163, 0.5);
+  border: 0.0625rem solid rgba(59, 101, 163, 0.5);
+  border-top: 0 none;
+  border-bottom: 0 none;
+  margin-bottom: 0; }
+  .editor-article-list .escenic-artikkel-sammendrag:after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    right: 21px;
+    right: 1.3125rem;
+    left: 21px;
+    left: 1.3125rem;
+    content: "";
+    height: 1px;
+    height: 0.0625rem;
+    background-color: rgba(59, 101, 163, 0.5); }
+
+.editor-article-list > .escenic-artikkel-sammendrag {
+  margin-top: 100px;
+  margin-top: 6.25rem; }
+  .editor-article-list > .escenic-artikkel-sammendrag:before {
+    position: absolute;
+    display: block;
+    top: -44px;
+    top: -2.75rem;
+    right: -1px;
+    right: -0.0625rem;
+    left: -1px;
+    left: -0.0625rem;
+    content: "Escenic artikler";
+    padding: 8px 21px 0;
+    padding: 0.5rem 1.3125rem 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 44px;
+    height: 2.75rem;
+    background-color: #f5f8fb;
+    border: 1px solid rgba(59, 101, 163, 0.5);
+    border: 0.0625rem solid rgba(59, 101, 163, 0.5);
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0; }
+
+.editor-article-list > .escenic-artikkel-sammendrag ~ .escenic-artikkel-sammendrag {
+  margin-top: 0; }
+  .editor-article-list > .escenic-artikkel-sammendrag ~ .escenic-artikkel-sammendrag:before {
+    display: none; }
+
+.editor-article-list .escenic-artikkel-sammendrag:last-child {
+  border-bottom: 1px solid rgba(59, 101, 163, 0.5);
+  border-bottom: 0.0625rem solid rgba(59, 101, 163, 0.5);
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px; }
+  .editor-article-list .escenic-artikkel-sammendrag:last-child:after {
+    display: none; }
+
+.editor-article-list__sort {
+  display: block;
+  padding: 0 0 0 21px;
+  padding: 0 0 0 1.3125rem;
+  background-color: #f5f8fb;
+  -webkit-border-radius: 0.1875rem;
+  -moz-border-radius: 0.1875rem;
+  border-radius: 0.1875rem; }
+
 .input--title {
   font-size: 19px;
   font-size: 1.1875rem;
@@ -832,7 +851,15 @@ a.cke_dialog_tab:focus {
   border-radius: 0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
-  box-shadow: none; }
+  box-shadow: none;
+  resize: none;
+  overflow: hidden; }
+
+.edit-article-authors {
+  border-top: 1px solid #e0e0e0;
+  border-top: 0.0625rem solid #e0e0e0;
+  padding: 14px 0 0;
+  padding: 0.875rem 0 0; }
 
 .icon.small_edit_icon {
   background-image: url("../images/editModeSprite.svg");
@@ -1071,25 +1098,6 @@ a.cke_dialog_tab:focus {
     position: absolute;
     right: 0;
     bottom: 0; } }
-
-.exerpt_counter {
-  color: #727272;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 400;
-  font-style: italic;
-  border: 1px solid #727272;
-  border: 0.0625rem solid #727272;
-  border-top: 0 none;
-  padding: 6px 15px 4px;
-  padding: 0.375rem 0.9375rem 0.25rem;
-  margin-bottom: 36px;
-  margin-bottom: 2.25rem; }
-  .exerpt_counter.warn {
-    color: #5c0002; }
-  .exerpt_counter.super_warn {
-    color: #cc0000; }
 
 .edit_important_button_container {
   position: relative; }

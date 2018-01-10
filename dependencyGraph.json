@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1515154685402,
+  "timestamp": 1515578072024,
   "graph": {
     "options": {
       "directed": true,
@@ -732,6 +732,12 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-10-Innholdssider-tjenestebeskrivelse/03-templates-10-Innholdssider-tjenestebeskrivelse.rendered.html",
           "lineagePattern": "templates-tjenestebeskrivelse"
+        }
+      },
+      {
+        "v": "01-molecules/publisering/action-line-feedback.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
