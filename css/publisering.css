@@ -87,11 +87,11 @@ URI: https://www.bergen.kommune.no/
         border-color: #cc0000; }
       .action-line__feedback-message--success div {
         background-color: #f7fdf8;
-        border-color: #42c453; }
+        border-color: #15ab29; }
   @media (min-width: 700px) {
     .action-line__feedback-message {
-      width: 400px;
-      width: 25rem; } }
+      width: 480px;
+      width: 30rem; } }
 
 /*
 // CK Editor style
@@ -866,6 +866,8 @@ a.cke_dialog_tab:focus {
   -moz-box-shadow: none;
   box-shadow: none;
   resize: none;
+  overflow: hidden;
+  resize: none;
   overflow: hidden; }
 
 .edit-article-authors {
@@ -873,6 +875,24 @@ a.cke_dialog_tab:focus {
   border-top: 0.0625rem solid #e0e0e0;
   padding: 14px 0 0;
   padding: 0.875rem 0 0; }
+
+.excerpt_counter__area {
+  position: relative; }
+
+.excerpt_counter {
+  color: #727272;
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 1.41176;
+  position: absolute;
+  right: 12px;
+  right: 0.75rem;
+  bottom: 38px;
+  bottom: 2.375rem; }
+  .excerpt_counter.warn {
+    color: #000; }
+  .excerpt_counter.super_warn {
+    color: #cc0000; }
 
 .icon.small_edit_icon {
   background-image: url("../images/editModeSprite.svg");
@@ -985,8 +1005,8 @@ a.cke_dialog_tab:focus {
     padding: 0 0.375rem;
     width: 44px;
     width: 2.75rem;
-    background-color: #42c453;
-    border-color: #32a141;
+    background-color: #15ab29;
+    border-color: #0f7e1e;
     -webkit-border-radius: 0 3px 3px 0;
     -moz-border-radius: 0 3px 3px 0;
     border-radius: 0 3px 3px 0; }
@@ -1750,6 +1770,9 @@ a.cke_dialog_tab:focus {
 .mtj {
   margin-top: 56px;
   margin-top: 3.5rem; }
+
+.mtn {
+  margin-top: 0; }
 
 @media (max-width: 699px) {
   .mts--mob {
