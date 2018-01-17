@@ -961,8 +961,8 @@ input[type="submit"] {
   font-size: 1.5rem;
   line-height: 1.16667;
   border-radius: 0.1875rem;
-  padding: 7px 15px;
-  padding: 0.4375rem 0.9375rem;
+  padding: 7px 13px;
+  padding: 0.4375rem 0.8125rem;
   box-shadow: none;
   text-decoration: none; }
   button:focus,

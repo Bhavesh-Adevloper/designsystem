@@ -44,12 +44,20 @@ URI: https://www.bergen.kommune.no/
     .action-line .align_right a,
     .action-line .align_right button,
     .action-line .align_right .button {
-      margin-right: 21px;
-      margin-right: 1.3125rem; }
+      margin-right: 20px;
+      margin-right: 1.25rem; }
   @media (max-width: 540px) {
     .action-line .align_right {
       clear: left;
       float: left; } }
+  .action-line__preview-link {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.16667;
+    margin-right: 20px;
+    margin-right: 1.25rem; }
+    .action-line__preview-link--disabled {
+      color: #a3a3a3; }
   .action-line label,
   .action-line select {
     margin-bottom: 0; }
