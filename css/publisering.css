@@ -874,15 +874,36 @@ a.cke_dialog_tab:focus {
   -moz-box-shadow: none;
   box-shadow: none;
   resize: none;
-  overflow: hidden;
-  resize: none;
   overflow: hidden; }
 
 .edit-article-authors {
-  border-top: 1px solid #e0e0e0;
-  border-top: 0.0625rem solid #e0e0e0;
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 1.33333;
+  font-weight: 600;
+  font-style: normal;
   padding: 14px 0 0;
   padding: 0.875rem 0 0; }
+  .edit-article-authors__input {
+    display: block;
+    min-width: 300px;
+    min-width: 18.75rem;
+    margin: 7px 0;
+    margin: 0.4375rem 0; }
+    @media (min-width: 700px) {
+      .edit-article-authors__input {
+        display: inline-block;
+        min-width: 240px;
+        min-width: 15rem;
+        margin: 0 2px 7px 4px;
+        margin: 0 0.125rem 0.4375rem 0.25rem; } }
+    @media (min-width: 1020px) {
+      .edit-article-authors__input {
+        min-width: inherit; } }
+    @media (min-width: 1270px) {
+      .edit-article-authors__input {
+        min-width: 300px;
+        min-width: 18.75rem; } }
 
 .excerpt_counter__area {
   position: relative; }
