@@ -1,3 +1,5 @@
+
+
 <div id="skiplink_container">
     <div class="desktop_centered">
         <a href="#innhold" class="skiplink">Hopp til innhold</a>
@@ -56,7 +58,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                 <a class="js_close_mobile_main_nav close_nav_btn icon close_icon" href="#" title="Lukk menyen">Lukk menyen</a>
                 <ul class="main_nav_list">
                     <li><a href="&#x2F;patterns&#x2F;04-pages-01-hva-skjer-00-hva-skjer&#x2F;04-pages-01-hva-skjer-00-hva-skjer.rendered.html" title="Hva skjer"><span>Hva skjer</span></a></li>
-                    <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-00-om-kommunen&#x2F;04-pages-20-navigasjon-00-om-kommunen.rendered.html" title="Om kommunen"><span>Om kommunen</span></a></li>
+                    <li class="active"><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-00-om-kommunen&#x2F;04-pages-20-navigasjon-00-om-kommunen.rendered.html" title="Om kommunen"><span>Om kommunen</span></a></li>
                     <li><a href="&#x2F;patterns&#x2F;04-pages-10-tjenester-00-tjenester&#x2F;04-pages-10-tjenester-00-tjenester.rendered.html" title="Tjenester"><span>Tjenester</span></a></li>
                     <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-04-politikk&#x2F;04-pages-20-navigasjon-04-politikk.rendered.html" title="Politikk"><span>Politikk</span></a></li>
                     <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-06-ledige-stillinger&#x2F;04-pages-20-navigasjon-06-ledige-stillinger.rendered.html" title="Ledige stillinger"><span>Ledige stillinger</span></a></li>
@@ -96,7 +98,6 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 
 
 
-
 <div class="smMa desktop_centered bc_container js_breadcrumbs clearfix">
     
     <div class="edit_mode_button_container js_edit_mode_button">
@@ -113,39 +114,53 @@ https://github.com/pattern-lab/patternlab-php/issues/304
             
                 <li><a href="&#x2F;patterns&#x2F;04-pages-00-forside-00-forside&#x2F;04-pages-00-forside-00-forside.rendered.html" title="Forside">Forside</a></li>
                 <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-00-om-kommunen&#x2F;04-pages-20-navigasjon-00-om-kommunen.rendered.html" title="Om kommunen">Om kommunen</a></li>
+                <li><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-31-avdelinger&#x2F;04-pages-20-navigasjon-31-avdelinger.rendered.html" title="Avdelinger">Avdelinger</a></li>
+                <li><a href="&#x2F;patterns&#x2F;04-pages-02-orgenhet-04-VA-etaten&#x2F;04-pages-02-orgenhet-04-VA-etaten.rendered.html" title="Vann- og avløpsetaten">Vann- og avløpsetaten</a></li>
             
-                <li class="bc_last_link"><a href="&#x2F;patterns&#x2F;04-pages-20-navigasjon-31-avdelinger&#x2F;04-pages-20-navigasjon-31-avdelinger.rendered.html" title="Avdelinger">Avdelinger</a></li>
+                <li class="bc_last_link"><a href="#" title="Siste nytt">Siste nytt</a></li>
             
-                <li class="bc_current">Avdeling</li>
+                <li class="bc_current">Ny artikkel</li>
             
         </ul>
     </div>
 </div>
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
     
-    <div class="action-line">
+    <div class="article">
+        
+        <div class="h2_page_header_with_link ">
+    <h2>
+        <a href="#" title="Vann- og avløpsetaten" class="page_header_link">
+            Vann- og avløpsetaten
+        </a>
+    </h2>
+</div>
+        
+    <div class="action-line ">
         <div class="align_left">
             <div class="action-line__status">KLADD</div>
         </div>
         <div class="align_right">
-            <a href="#" title="Forhåndsvisning" class="action-line__preview-link">Forhåndsvis</a>
+            <a href="&#x2F;patterns&#x2F;04-pages-88-publisering-05-artikkel-forhandsvisning&#x2F;04-pages-88-publisering-05-artikkel-forhandsvisning.rendered.html" title="Forhåndsvis" class="action-line__preview-link">
+                <span class="icon preview_icon"></span>
+                Forhåndsvis</a>
             <button class="button button--success active">Lagre kladd</button>
             <button class="button">Publiser</button>
         </div>
     </div>
-    
-    <div class="row">
-        
 
-        <div class="col_md_12 col_lg_8"><!-- org_main_col -->
-            
-            <h3 class="helpers_header">Overskrift</h3>
-<input class="input--title" value="Ny artikkel">
-            
-                <bildevelger>
+        <div class="row">
+
+
+            <div class="col_md_12 col_lg_8"><!-- org_main_col -->
+
+                <h3 class="helpers_header mbs">Overskrift</h3>
+<input class="input--title mbl" value="Ny artikkel">
+
+                    <bildevelger>
     
     <div class="mbm">
-        <h3 class="helpers_header">Skal siden ha et toppbilde?</h3>
+        <h3 class="helpers_header mbs">Skal siden ha et toppbilde?</h3>
         <a href="" title="" class="button">
             Last opp bilde
         </a>
@@ -186,45 +201,59 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     </div>
     
 </bildevelger>
-            
-            <h3 class="helpers_header">Ingress</h3>
+
+                <h3 class="helpers_header">Ingress</h3>
 <div class="helpers_info mbs">Maks 400 tegn</div>
-<div class="excerpt_counter__area">
-    <textarea class="textarea--excerpt"></textarea>
+<div class="excerpt_counter__area mbl">
+    <textarea class="textarea--excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis pellentesque ex sed venenatis. Vivamus id rutrum purus. Aliquam auctor pretium iaculis.</textarea>
     <div id="ingress_counter" class="excerpt_counter">
-        <span> 0 av 400 tegn </span>
+        <span> 160 av 400 tegn </span>
     </div>
 </div>
-            
-            <h3 class="helpers_header">Hovedtekst</h3>
+
+                <h3 class="helpers_header mbs">Hovedtekst</h3>
 <script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
-<div class="mbl">
+<div class="mbxxl">
     <textarea name="editor1"></textarea>
     <script>
         CKEDITOR.replace( 'editor1' );
     </script>
 </div>
 
-            <div class="edit-article-authors mbl">
+                <div class="edit-article-authors mbxxl">
     Skrevet av:
-    <input value="fn440" class="edit-article-authors__input">
+    <input value="" class="edit-article-authors__input">
     og
     <input class="edit-article-authors__input">
-</div>
-            
+        <div class="edit-article-authors__error">
+            Forfatter mangler
         </div>
-        
-            <div class="col_md_12 col_lg_4">
+</div>
 
-                <div class="mbl">
-    <h3 class="helpers_sidebar_header">Status</h3>
+                <div class="article__byline article__byline--top-border">
+    <div class="article__byline-date">
+        Publisert: 01.01.1970
+        <span class="article__byline-separator">|</span>
+        Oppdatert: 01.01.1970
+    </div>
+</div>
+
+            </div>
+
+                <div class="col_md_12 col_lg_4">
+
+                    <div class="sidebar">
+                        
+                        <div class="mbl">
+    <h3 class="helpers_header mbm">Status</h3>
+    <button class="button button--danger">Slett artikkel</button>
 </div>
 
 
-                    <bildevelger>
+                            <bildevelger>
     
     <div class="mbm">
-        <h3 class="helpers_sidebar_header">Ingressbilde</h3>
+        <h3 class="helpers_header mbm">Ingressbilde</h3>
         <div class="image-upload-link">
             <a href="" title="" class="image-upload-link__start-link">
                 Valgfritt ingressbilde<br>Minimum 680 piksler bredde
@@ -267,11 +296,13 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     </div>
     
 </bildevelger>
+                        
+                    </div>
 
-            </div>
-        
+                </div>
+
+        </div>
     </div>
-
 
 </main>
 
@@ -385,5 +416,8 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         <a href="#" title="Personvern og informasjonskapsler">Personvern og informasjonskapsler</a>
     </p>
       
+        <div class="web_editor_info clearfix smMa desktop_centered" style="">
+            Du er logget inn som: fn440
+        </div>
       
   </footer>

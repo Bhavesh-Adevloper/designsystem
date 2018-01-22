@@ -1,6 +1,11 @@
-<div class="edit-article-authors mbl">
+<div class="edit-article-authors mbxxl">
     Skrevet av:
-    <input value="fn440" class="edit-article-authors__input">
+    <input value="{{ artikkelForfatter }}" class="edit-article-authors__input">
     og
     <input class="edit-article-authors__input">
+    {{# ingenForfatterMelding }}
+        <div class="edit-article-authors__error">
+            {{ ingenForfatterMelding }}
+        </div>
+    {{/ ingenForfatterMelding }}
 </div>

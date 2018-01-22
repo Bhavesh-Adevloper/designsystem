@@ -3,6 +3,26 @@
 Name: Publisering style
 URI: https://www.bergen.kommune.no/
 */
+.icon.small_edit_icon {
+  background-image: url("../images/editModeSprite.svg");
+  background-position: -160px -192px; }
+
+.icon.align_left_icon {
+  background-image: url("../images/editModeSprite.svg");
+  background-position: 0 -64px; }
+
+.icon.align_center_icon {
+  background-image: url("../images/editModeSprite.svg");
+  background-position: 0 -96px; }
+
+.icon.align_right_icon {
+  background-image: url("../images/editModeSprite.svg");
+  background-position: -96px -64px; }
+
+.icon.preview_icon {
+  background-image: url("../images/editModeSprite.svg");
+  background-position: -64px -128px; }
+
 .action-line {
   position: relative;
   z-index: 1;
@@ -16,10 +36,10 @@ URI: https://www.bergen.kommune.no/
   padding-right: 0.1875rem;
   padding-left: 20px;
   padding-left: 1.25rem;
-  margin-bottom: 49px;
-  margin-bottom: 3.0625rem;
   min-height: 87px;
-  min-height: 5.4375rem; }
+  min-height: 5.4375rem;
+  margin-bottom: 49px;
+  margin-bottom: 3.0625rem; }
   .action-line:before, .action-line:after {
     content: "";
     display: table;
@@ -51,13 +71,22 @@ URI: https://www.bergen.kommune.no/
       clear: left;
       float: left; } }
   .action-line__preview-link {
+    position: relative;
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.16667;
     margin-right: 20px;
     margin-right: 1.25rem; }
+    .action-line__preview-link .preview_icon {
+      position: absolute;
+      top: 1px;
+      top: 0.0625rem;
+      left: -41px;
+      left: -2.5625rem; }
     .action-line__preview-link--disabled {
       color: #a3a3a3; }
+      .action-line__preview-link--disabled .preview_icon {
+        background-position: -96px -128px; }
   .action-line label,
   .action-line select {
     margin-bottom: 0; }
@@ -707,7 +736,7 @@ a.cke_dialog_tab:focus {
       width: 1rem;
       height: 16px;
       height: 1rem;
-      background-image: url(../images/editModeSprite.svg); }
+      background-image: url("../images/editModeSprite.svg"); }
   .modal__image-position input[type="radio"] {
     position: absolute;
     top: 0;
@@ -863,6 +892,12 @@ a.cke_dialog_tab:focus {
   border-color: #3b65a3;
   width: 100%; }
 
+.input--title-error {
+  color: #cc0000;
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 1.64706; }
+
 .textarea--excerpt {
   padding: 21px 18px 46px;
   padding: 1.3125rem 1.125rem 2.875rem;
@@ -882,28 +917,42 @@ a.cke_dialog_tab:focus {
   line-height: 1.33333;
   font-weight: 600;
   font-style: normal;
-  padding: 14px 0 0;
-  padding: 0.875rem 0 0; }
+  position: relative; }
   .edit-article-authors__input {
     display: block;
-    min-width: 300px;
-    min-width: 18.75rem;
+    width: 300px;
+    width: 18.75rem;
     margin: 7px 0;
     margin: 0.4375rem 0; }
     @media (min-width: 700px) {
       .edit-article-authors__input {
         display: inline-block;
-        min-width: 240px;
-        min-width: 15rem;
-        margin: 0 2px 7px 4px;
-        margin: 0 0.125rem 0.4375rem 0.25rem; } }
+        width: 240px;
+        width: 15rem;
+        margin: 0 2px 0 4px;
+        margin: 0 0.125rem 0 0.25rem; } }
     @media (min-width: 1020px) {
       .edit-article-authors__input {
-        min-width: inherit; } }
+        width: 226px;
+        width: 14.125rem; } }
     @media (min-width: 1270px) {
       .edit-article-authors__input {
-        min-width: 300px;
-        min-width: 18.75rem; } }
+        width: 300px;
+        width: 18.75rem; } }
+  .edit-article-authors__error {
+    color: #cc0000;
+    font-size: 17px;
+    font-size: 1.0625rem;
+    line-height: 1.64706;
+    font-weight: 400;
+    font-style: normal; }
+    @media (min-width: 700px) {
+      .edit-article-authors__error {
+        position: absolute;
+        top: 48px;
+        top: 3rem;
+        left: 108px;
+        left: 6.75rem; } }
 
 .excerpt_counter__area {
   position: relative; }
@@ -922,10 +971,6 @@ a.cke_dialog_tab:focus {
     color: #000; }
   .excerpt_counter.super_warn {
     color: #cc0000; }
-
-.icon.small_edit_icon {
-  background-image: url("../images/editModeSprite.svg");
-  background-position: -160px -192px; }
 
 .add_helper_content_link {
   border: 2px solid #f5f5f5;
@@ -1208,15 +1253,15 @@ a.cke_dialog_tab:focus {
     width: 28px;
     width: 1.75rem; }
   .additional_features_link .useradmin_icon {
-    background-image: url(../images/editModeSprite.svg);
+    background-image: url("../images/editModeSprite.svg");
     background-position: 1px -33px; }
   .additional_features_link .position_icon {
-    background-image: url(../images/editModeSprite.svg);
+    background-image: url("../images/editModeSprite.svg");
     background-position: -30px -33px; }
   .additional_features_link .single_arrow_down_small_icon {
     background-position: -322px -157px; }
   .additional_features_link .trash_icon {
-    background-image: url(../images/editModeSprite.svg);
+    background-image: url("../images/editModeSprite.svg");
     background-position: -66px -33px; }
   .additional_features_link .icon_text {
     float: left;
@@ -1408,7 +1453,7 @@ a.cke_dialog_tab:focus {
       top: 3px;
       top: 0.1875rem; }
     .useradmin_feature .dropdown_container ul li .arrow_up_icon {
-      background-image: url(../images/editModeSprite.svg);
+      background-image: url("../images/editModeSprite.svg");
       background-position: -64px 0px; }
 
 .useradmin_feature .dropdown_container ul li.add_user {
@@ -1607,7 +1652,7 @@ a.cke_dialog_tab:focus {
   transition: background-color 100ms ease 0ms; }
   .upload_image_area .image_icon {
     display: inline-block;
-    background-image: url(../images/editModeSprite.svg);
+    background-image: url("../images/editModeSprite.svg");
     background-position: -96px 0;
     height: 64px;
     height: 4rem;
@@ -1647,7 +1692,7 @@ a.cke_dialog_tab:focus {
       height: 1.125rem;
       width: 18px;
       width: 1.125rem;
-      background: url(../images/editModeSprite.svg) -71px -71px no-repeat transparent; }
+      background: url("../images/editModeSprite.svg") -71px -71px no-repeat transparent; }
   .expiration_date input {
     position: relative;
     z-index: 1;

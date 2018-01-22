@@ -5,6 +5,8 @@
     {{# actionLine }}
         {{> molecules-action-line }}
     {{/ actionLine }}
+        
+    {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ sidetittel }}", url: "{{ sideURL }}") }}
 
     <div class="row">
 
@@ -13,13 +15,55 @@
                 {{> molecules-org-meny }}
             </div>
         {{/ meny }}
-
+        
+        <!--
+        ORIGINAL:
+        https://www.bergen.kommune.no/omkommunen/avdelinger/vannog-avlopsetaten/9081/article-129920
+        -->
+        
         <div class="col_md_12 col_lg_8 org_main_col">
             <div class="article">
-                <h1 class="article__header">Bomber over Laksevåg</h1>
-                <p class="article__excerpt">På byarkivets tirsdagskveld 14. oktober markerer vi at det er 70 år siden en av de største sivile katastrofene i Norge under 2. verdenskrig, bombingen av Laksevåg 4. oktober 1944.</p>
+                <h1 class="article__header">Slik kan du avverge oversvømmelser</h1>
+                <p class="article__excerpt">Når det er varslet mye nedbør, gjelder det å være forberedt! Enkle grep gjør at du kan unngå de verste vannskadene.</p>
                 <div class="article__content">
-                    <p>Laksevåg ble også bombet 29. oktober samme år, og 12. januar 1945. Med utgangspunkt i fotografier fra området forteller Paul Sedal om Laksevåg før, under og etter angrepene. Sedal er arkivar ved Hordaland fylkesarkiv, og var billedredaktør for boken «Bombemål S/N 102 Bergen», utgitt 2012. Du kan også se vår nye utstilling med arkivmateriale knyttet til hendelsene på Laksevåg.</p>
+                    <figure class="align_right article__figure">
+                        <a class="lightbox article__figure-link" href="">
+                            <img alt="{{imgLandscape.alt}}" src="https://www.bergen.kommune.no/bk/multimedia/dynamic/00245/200703_6643_245608n.jpg" class="article__figure-image">
+                        </a>
+                        <figcaption class="article__figcaption">
+                            <div class="article__figcaption-tekst">Sørg for at vannet får plass! Rens sluk og avløp for blader og annet som kan tette igjen.</div>
+                            <div class="article__figcaption-credit">BILDE: VA-Etaten</div>
+                        </figcaption>
+                    </figure>
+                    <p><strong>Enkle tips:</strong></p>
+                    <ul>
+                        <li>Rens stikkrenner og sluker for at vannet skal renne unna. Vær også oppmerksom på flate tak.</li>
+                        <li>Regnvannet kan ta med seg gjenstander som bidrar til å tette avløpssystemet. Derfor er det viktig å rydde bort ting, skrot og kvister fra hagen som lett kan blir tatt av vannmassene.</li>
+                        <li>Sørg for at avløp og kummer ikke blir demmet opp. Vannet må få fritt leide inn i avløpskummene.</li>
+                        <li>Vannet tar alltid letteste vei. Om du har problemer med vann i kjelleren eller på uønskede steder, må du derfor gå gjennom hagen eller området rundt huset og lede vannet "rett" vei - uten å lage problem for naboen. Litt arbeid, men vel verdt innsatsen!</li>
+                    </ul>
+            
+                    <p> <b>Les også:</b> <a href="https://www.bergen.kommune.no/omkommunen/avdelinger/vannog-avlopsetaten/9330/9333/article-111420">Slik kan vi håndtere enda mer nedbør</a>
+                    </p>
+    		
+                    <h3>Vedlegg</h3>
+                    <ul>
+                        <li>
+                            <a href="/bk/multimedia/archive/00245/Tips_til_huseiere___245611a.pdf" title="Tips til huseiere: Overvann og klimatilpasning" class="multimedia_link">
+                                <span class="icon icon_pdf">icon_pdf</span>
+                                <span class="file_title">Tips til huseiere: Overvann og klimatilpasning</span>
+                                <span class="file_size">[1.8 Mb]</span>
+
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <h2>Kontakt oss ved feil:</h2>
+                    <p> Kommunen jobber forebyggende, men er også i beredskap og håndterer hendelser    fortløpende.  </p> <p> Har du meldinger om feil og mangler på offentlig vei, vann, avløp og miljø -    også om rister, sluk og bekkeinntak er tette - kan du kontakte <a href="https://www.bergen.kommune.no/aktuelt/meldinger-fra-vaktsentralen">Vaktsentralen</a>,    tlf. 5556 7815 eller registrere på <a target="_blank" href="http://feilmelding.bergen.kommune.no/" class="external_link" title="Åpnes i nytt vindu">MELD    INN FEIL.</a>  </p> 
+            
+                    
+                    
+                    
                     <div class="file_container">
                         <a class="file_link" href="" target="_self" title="Vakkert filvedlegg [jpg,7.00 B]">
                             <span class="file_icon jpg screen-reader-text-container">
