@@ -419,9 +419,8 @@ URI: https://www.bergen.kommune.no/
   background-color: rgba(255, 255, 255, 0.72);
   z-index: 100; }
   .modal__window {
-    position: relative;
+    position: fixed;
     z-index: 1;
-    margin: 10% auto 0;
     background-color: #f5f5f5;
     border: 1px solid #e0e0e0;
     border: 0.0625rem solid #e0e0e0;
@@ -436,7 +435,11 @@ URI: https://www.bergen.kommune.no/
     box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.16);
     -webkit-border-radius: 0.1875rem;
     -moz-border-radius: 0.1875rem;
-    border-radius: 0.1875rem; }
+    border-radius: 0.1875rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden; }
     .modal__window__title {
       color: #fff;
       text-align: center;
@@ -479,6 +482,11 @@ URI: https://www.bergen.kommune.no/
     left: 0;
     z-index: 0;
     cursor: default; }
+  .modal--absolute {
+    position: absolute; }
+    .modal--absolute .modal__window {
+      position: absolute;
+      transform: translate(-50%, -60%); }
 
 .cke_dialog .cke_dialog_body * {
   font-weight: 400;
@@ -755,29 +763,29 @@ a.cke_dialog_tab:focus {
     cursor: pointer; }
     .modal__image-position input[type="radio"]:checked {
       cursor: inherit; }
-  .modal__image-position .modal__image-position__label-left {
+  .modal__image-position .modal__image-position__label-center {
     -webkit-border-radius: 5px 0 0 5px;
     -moz-border-radius: 5px 0 0 5px;
     border-radius: 5px 0 0 5px; }
-    .modal__image-position .modal__image-position__label-left:before {
-      background-position: -8px -72px; }
-  .modal__image-position .modal__image-position__label-center {
+    .modal__image-position .modal__image-position__label-center:before {
+      background-position: -8px -104px; }
+  .modal__image-position .modal__image-position__label-right {
     -webkit-border-radius: 0 5px 5px 0;
     -moz-border-radius: 0 5px 5px 0;
     border-radius: 0 5px 5px 0;
     border-left: 0 none; }
-    .modal__image-position .modal__image-position__label-center:before {
-      background-position: -8px -104px; }
+    .modal__image-position .modal__image-position__label-right:before {
+      background-position: -104px -72px; }
   .modal__image-position input[type="radio"]:hover + label,
   .modal__image-position input[type="radio"]:active + label {
     background-color: #f8fbfd; }
   .modal__image-position input[type="radio"]:checked + label {
     background-color: #3b65a3;
     color: #fff; }
-  .modal__image-position input[type="radio"].modal__image-position__input-left:checked + label.modal__image-position__label-left:before {
-    background-position: -40px -72px; }
   .modal__image-position input[type="radio"].modal__image-position__input-center:checked + label.modal__image-position__label-center:before {
     background-position: -40px -104px; }
+  .modal__image-position input[type="radio"].modal__image-position__input-right:checked + label.modal__image-position__label-right:before {
+    background-position: -136px -72px; }
   .modal__image-position input[type="radio"]:focus + label {
     outline: 3px solid #f0c646;
     z-index: 6;
@@ -796,7 +804,7 @@ a.cke_dialog_tab:focus {
   padding-bottom: 0;
   margin-bottom: 0; }
 
-.editor-article-list .artikkel-sammendrag {
+.editor-article-list__item {
   padding: 21px 21px 0;
   padding: 1.3125rem 1.3125rem 0;
   -webkit-box-sizing: border-box;
@@ -812,16 +820,12 @@ a.cke_dialog_tab:focus {
 
 .editor-article-list .escenic-artikkel-sammendrag {
   position: relative;
-  padding: 21px 21px 0;
-  padding: 1.3125rem 1.3125rem 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   border: 1px solid rgba(59, 101, 163, 0.5);
   border: 0.0625rem solid rgba(59, 101, 163, 0.5);
   border-top: 0 none;
   border-bottom: 0 none;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  border-radius: 0 none; }
   .editor-article-list .escenic-artikkel-sammendrag:after {
     position: absolute;
     bottom: 0;

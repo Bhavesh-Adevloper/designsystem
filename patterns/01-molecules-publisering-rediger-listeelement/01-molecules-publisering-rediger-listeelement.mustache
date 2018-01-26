@@ -1,0 +1,58 @@
+<div class="editor-article-list__item">
+    
+    <div class="ece_module_container{{# imgLandscape }} has_image{{/ imgLandscape }} {{ styleModifier }}">
+        
+        {{# imgLandscape }}
+            <div class="ece_module_image_container">
+                <a href="{{ url }}" title="{{ tittel }}" class="ece_module_image_link">
+                    <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="ece_module_image">
+                </a>
+            </div>
+        {{/ imgLandscape }}
+        
+        <div class="ece_module_content_container">
+            
+            <h3 class="ece_module_title">
+                <a href="{{ url }}" title="{{ tittel }}">
+                    <span class="read_more_link read_more_link--24">
+                        {{ tittel }}
+                    </span>
+                </a>
+            </h3>
+        
+            {{# ingress }}
+            <div class="ece_module_excerpt">
+                <p>		
+                    {{ ingress }}
+                </p>
+            </div>
+            {{/ ingress }}
+        
+            {{# meta }}
+            <div class="ece_module_meta">
+                <p>
+                    {{# lesmertekst }}
+                        <a href="{{ url }}" class="read_more_link">{{ lesmertekst }}</a>
+                    {{/ lesmertekst }}
+
+                    {{# seksjonslenke }}
+                        <a href="{{ url }}" class="section_link read_more_link">{{ seksjonslenke }}</a>
+                    {{/ seksjonslenke }}
+
+                    {{# dato }}
+                        <span class="date">({{ dato }})</span>
+                    {{/ dato }}
+                </p>
+            </div>
+            {{/ meta }}
+            
+        </div>
+    </div>
+    
+    <div class="editor-article-list__sort mbml">
+        Flytt artikkelen:
+        <a class="editor-article-list__sort__link-up" href="#">Opp</a>
+        <a class="editor-article-list__sort__link-down" href="#">Ned</a>
+    </div>
+
+</div>
