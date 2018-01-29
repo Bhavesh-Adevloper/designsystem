@@ -72,17 +72,19 @@ URI: https://www.bergen.kommune.no/
       float: left; } }
   .action-line__preview-link {
     position: relative;
+    display: inline-block;
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.16667;
-    margin-right: 20px;
-    margin-right: 1.25rem; }
+    margin: 0 20px 14px 0;
+    margin: 0 1.25rem 0.875rem 0;
+    padding-left: 41px;
+    padding-left: 2.5625rem; }
     .action-line__preview-link .preview_icon {
       position: absolute;
-      top: 1px;
-      top: 0.0625rem;
-      left: -41px;
-      left: -2.5625rem; }
+      left: 0;
+      top: -1px;
+      top: -0.0625rem; }
     .action-line__preview-link--disabled {
       color: #a3a3a3; }
       .action-line__preview-link--disabled .preview_icon {
@@ -825,7 +827,9 @@ a.cke_dialog_tab:focus {
   border-top: 0 none;
   border-bottom: 0 none;
   margin-bottom: 0;
-  border-radius: 0 none; }
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
   .editor-article-list .escenic-artikkel-sammendrag:after {
     position: absolute;
     bottom: 0;
