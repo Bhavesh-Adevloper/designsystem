@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1517218842164,
+  "timestamp": 1517822368656,
   "graph": {
     "options": {
       "directed": true,
@@ -78,6 +78,12 @@
       },
       {
         "v": "00-atoms/07-tekst/04-lenker-med-piler.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/07-tekst/05-fil-lenke.mustache",
         "value": {
           "compileState": "clean"
         }

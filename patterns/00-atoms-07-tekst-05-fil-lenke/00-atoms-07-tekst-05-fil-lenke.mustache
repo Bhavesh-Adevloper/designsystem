@@ -1,0 +1,11 @@
+{{# filLenke }}
+    <div class="file-container">
+        <a href="{{ url }}" title="{{ tittel }}" class="file-link" target="_blank">
+            <span class="file-icon {{ fileType }}"></span>
+            <span class="file-title">{{ tittel }}</span>
+            {{# fileInfo }}
+                <span class="file-info">{{ fileInfo }}</span>
+            {{/ fileInfo }}
+        </a>
+    </div>
+{{/ filLenke }}
