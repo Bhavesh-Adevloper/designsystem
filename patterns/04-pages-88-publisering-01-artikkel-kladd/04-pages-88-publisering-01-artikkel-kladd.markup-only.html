@@ -162,13 +162,16 @@ https://github.com/pattern-lab/patternlab-php/issues/304
             <div class="col_md_12 col_lg_8"><!-- org_main_col -->
 
                 <h3 class="helpers_header mbs">Overskrift</h3>
-<input class="input--title mbl" value="Ny artikkel">
+<label class="screen-reader-text" for="ny-artikkel">Overskrift</label>
+
+    <input class="input--title mbxxl" id="ny-artikkel" value="Ny artikkel">
+
 
                     <bildevelger>
     
-    <div class="mbm">
+    <div class="mbxxl">
         <h3 class="helpers_header mbs">Skal siden ha et toppbilde?</h3>
-        <a href="" title="" class="button">
+        <a href="" title="" class="button mbn">
             Last opp bilde
         </a>
     </div>
@@ -200,14 +203,20 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     
 </bildevelger>
 
-                <h3 class="helpers_header">Ingress</h3>
-<div class="helpers_info mbs">Maks 400 tegn</div>
-<div class="excerpt_counter__area mbl">
-    <textarea class="textarea--excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis pellentesque ex sed venenatis. Vivamus id rutrum purus. Aliquam auctor pretium iaculis.</textarea>
-    <div id="ingress_counter" class="excerpt_counter">
-        <span> 160 av 200 tegn </span>
+                <h3 class="helpers_header" id="ingress_tittel">Ingress</h3>
+<p class="helpers_info mbs">Maks 200 tegn</p>
+
+    <div class="excerpt_counter__area mbxxl">
+        <textarea aria-labelledby="ingress_tittel"
+                  id="ingress"
+                  draggable="false"
+                  class="textarea--excerpt mbn"
+                  name="ingress">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
+        <div id="ingress_counter" class="excerpt_counter">
+            <span> 124 av 200 tegn </span>
+        </div>
     </div>
-</div>
+
 
                 <h3 class="helpers_header mbs">Hovedtekst</h3>
 <script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
@@ -220,12 +229,11 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 
                 <div class="edit-article-authors mbxxl">
     Skrevet av:
-    <input value="" class="edit-article-authors__input">
-    og
-    <input class="edit-article-authors__input">
-        <div class="edit-article-authors__error">
-            Forfatter mangler
-        </div>
+    
+        <input value="Ola Nordmann" class="edit-article-authors__input">
+        og
+        <input class="edit-article-authors__input">
+    
 </div>
 
                 <div class="article__byline article__byline--top-border">
@@ -242,7 +250,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 
                     <div class="sidebar">
                         
-                        <div class="mbl">
+                        <div class="mbml">
     <h3 class="helpers_header mbm">Status</h3>
     <button class="button button--danger">Slett artikkel</button>
 </div>
@@ -406,7 +414,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     </p>
       
         <div class="web_editor_info clearfix smMa desktop_centered" style="">
-            Du er logget inn som: fn440
+            Du er logget inn som: abc123
         </div>
       
   </footer>

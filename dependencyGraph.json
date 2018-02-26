@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1518622453983,
+  "timestamp": 1519657035965,
   "graph": {
     "options": {
       "directed": true,
@@ -1924,6 +1924,12 @@
       },
       {
         "v": "04-pages/88-publisering/01-artikkel-kladd.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -5017,6 +5023,76 @@
       },
       {
         "v": "04-pages/88-publisering/01-artikkel-kladd.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
+        "w": "01-molecules/publisering/action-line.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
+        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
+        "w": "01-molecules/publisering/rediger-sidetittel.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
+        "w": "01-molecules/publisering/rediger-toppbilde.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
+        "w": "01-molecules/publisering/rediger-ingress.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
+        "w": "01-molecules/publisering/rediger-hovedtekst.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
+        "w": "01-molecules/publisering/rediger-forfatter.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
+        "w": "01-molecules/publisering/rediger-byline.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
+        "w": "01-molecules/publisering/rediger-status-meta.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
+        "w": "01-molecules/publisering/rediger-listebilde.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },

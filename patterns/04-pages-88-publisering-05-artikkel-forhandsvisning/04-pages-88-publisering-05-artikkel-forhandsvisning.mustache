@@ -6,13 +6,13 @@
         {{> molecules-action-line }}
     {{/ actionLine }}
         
-    {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ sidetittel }}", url: "{{ sideURL }}") }}
+    {{> molecules-sideoverskrift-h2-med-lenke:h2_page_header_with_link--inactive(sidetittel: "{{ sidetittel }}", url: "{{ sideURL }}") }}
 
     <div class="row">
 
         {{# meny }}
             <div class="col_md_12 col_lg_4">
-                {{> molecules-org-meny }}
+                {{> molecules-org-meny:org_menu_container--inactive }}
             </div>
         {{/ meny }}
         
@@ -119,9 +119,9 @@
                     </div>
                     <div class="author">
                         <span>Tekst:</span>
-                        <a href="#">Bjørn Vindenes</a>
+                        <a href="#">Ola Nordmann</a>
                         <span class="separator">|</span>
-                        <a href="#">Ragnar Bøe</a>
+                        <a href="#">Kari Nordmann</a>
                     </div>
                 </div>
             </div>

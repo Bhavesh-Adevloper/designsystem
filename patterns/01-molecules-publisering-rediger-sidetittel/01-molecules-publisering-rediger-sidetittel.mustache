@@ -1,7 +1,11 @@
 <h3 class="helpers_header mbs">Overskrift</h3>
-<input class="input--title mbl" value="Ny artikkel">
-{{# ingenTittelMelding }}
-    <div class="input--title-error neg-mtml mbl">
-        {{ ingenTittelMelding }}
-    </div>
-{{/ ingenTittelMelding }}
+<label class="screen-reader-text" for="ny-artikkel">Overskrift</label>
+
+{{# redigerSidetittel }}
+    <input class="input--title mbxxl" id="ny-artikkel" value="{{ redigerSidetittel }}">
+{{/ redigerSidetittel }}
+
+{{# redigerSidetittelFeil }}
+    <input class="input--title error-input mbxxl" id="ny-artikkel" value="">
+    <div class="error-text neg-mtxl mbxxl">{{ redigerSidetittelFeil }}</div>
+{{/ redigerSidetittelFeil }}

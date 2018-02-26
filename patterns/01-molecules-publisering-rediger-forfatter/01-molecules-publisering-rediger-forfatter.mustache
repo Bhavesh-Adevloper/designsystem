@@ -1,11 +1,18 @@
 <div class="edit-article-authors mbxxl">
     Skrevet av:
-    <input value="{{ artikkelForfatter }}" class="edit-article-authors__input">
-    og
-    <input class="edit-article-authors__input">
-    {{# ingenForfatterMelding }}
+    
+    {{# redigerForfatter }}
+        <input value="{{ redigerForfatter }}" class="edit-article-authors__input">
+        og
+        <input class="edit-article-authors__input">
+    {{/ redigerForfatter }}
+    
+    {{# redigerForfatterFeil }}
+        <input value="" class="edit-article-authors__input error-input">
+        og
+        <input class="edit-article-authors__input" disabled>
         <div class="edit-article-authors__error">
-            {{ ingenForfatterMelding }}
+            {{ redigerForfatterFeil }}
         </div>
-    {{/ ingenForfatterMelding }}
+    {{/ redigerForfatterFeil }}
 </div>
