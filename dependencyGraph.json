@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1519723016375,
+  "timestamp": 1519730309292,
   "graph": {
     "options": {
       "directed": true,
@@ -298,8 +298,8 @@
         "v": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-88-publisering-20-artikkelliste-publiserte/04-pages-88-publisering-20-artikkelliste-publiserte.rendered.html",
-          "lineagePattern": "pages-artikkelliste-publiserte"
+          "lineagePath": "../../patterns/04-pages-88-publisering-20-sne-artikkelliste/04-pages-88-publisering-20-sne-artikkelliste.rendered.html",
+          "lineagePattern": "pages-sne-artikkelliste"
         }
       },
       {
@@ -720,8 +720,8 @@
         "v": "01-molecules/navigasjon/tabs.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-88-publisering-20-artikkelliste-publiserte/04-pages-88-publisering-20-artikkelliste-publiserte.rendered.html",
-          "lineagePattern": "pages-artikkelliste-publiserte"
+          "lineagePath": "../../patterns/04-pages-88-publisering-20-sne-artikkelliste/04-pages-88-publisering-20-sne-artikkelliste.rendered.html",
+          "lineagePattern": "pages-sne-artikkelliste"
         }
       },
       {
@@ -750,8 +750,8 @@
         "v": "01-molecules/publisering/action-line.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-88-publisering-20-artikkelliste-publiserte/04-pages-88-publisering-20-artikkelliste-publiserte.rendered.html",
-          "lineagePattern": "pages-artikkelliste-publiserte"
+          "lineagePath": "../../patterns/04-pages-88-publisering-20-sne-artikkelliste/04-pages-88-publisering-20-sne-artikkelliste.rendered.html",
+          "lineagePattern": "pages-sne-artikkelliste"
         }
       },
       {
@@ -798,8 +798,8 @@
         "v": "01-molecules/publisering/rediger-listeelement.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-88-publisering-20-artikkelliste-publiserte/04-pages-88-publisering-20-artikkelliste-publiserte.rendered.html",
-          "lineagePattern": "pages-artikkelliste-publiserte"
+          "lineagePath": "../../patterns/04-pages-88-publisering-20-sne-artikkelliste/04-pages-88-publisering-20-sne-artikkelliste.rendered.html",
+          "lineagePattern": "pages-sne-artikkelliste"
         }
       },
       {
@@ -1947,7 +1947,7 @@
         }
       },
       {
-        "v": "04-pages/88-publisering/20-artikkelliste-publiserte.mustache",
+        "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -5213,47 +5213,47 @@
         "value": {}
       },
       {
-        "v": "04-pages/88-publisering/20-artikkelliste-publiserte.mustache",
+        "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/88-publisering/20-artikkelliste-publiserte.mustache",
+        "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/88-publisering/20-artikkelliste-publiserte.mustache",
+        "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
         "w": "01-molecules/publisering/action-line.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/88-publisering/20-artikkelliste-publiserte.mustache",
+        "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
         "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/88-publisering/20-artikkelliste-publiserte.mustache",
+        "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
         "w": "01-molecules/navigasjon/org-meny.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/88-publisering/20-artikkelliste-publiserte.mustache",
+        "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
         "w": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/88-publisering/20-artikkelliste-publiserte.mustache",
+        "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
         "w": "01-molecules/navigasjon/tabs.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/88-publisering/20-artikkelliste-publiserte.mustache",
+        "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
         "w": "01-molecules/publisering/rediger-listeelement.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/88-publisering/20-artikkelliste-publiserte.mustache",
+        "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },

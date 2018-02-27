@@ -20,6 +20,10 @@
 
         <div class="col_md_12 col_lg_8 org_main_col">
             
+            <div class="rssicon_floatRight">
+                <a href="#" type="application/rss+xml" rel="alternate" title="Abonner med RSS">RSS - abonner</a>
+            </div>
+            
             {{> molecules-moduloverskrift-h1:mbxl(tittel: "{{ sidetittel }}") }}
             
             {{# tabs }}
@@ -27,11 +31,10 @@
             {{/ tabs }}
             
             <div class="editor-article-list ece_module_list mbj">
+                
                 {{# artikkelliste }}
                     {{> molecules-rediger-listeelement }}
                 {{/ artikkelliste }}
-                
-                
                 
                 <!-- GAMLE ESCENIC ARTIKLER I ELP -->
                 <div class="editor-article-list__item escenic-artikkel-sammendrag">
