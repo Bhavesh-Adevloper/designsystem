@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1519657035965,
+  "timestamp": 1519723016375,
   "graph": {
     "options": {
       "directed": true,
@@ -290,8 +290,8 @@
         "v": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-88-publisering-20-artikkelliste-publiserte/04-pages-88-publisering-20-artikkelliste-publiserte.rendered.html",
-          "lineagePattern": "pages-artikkelliste-publiserte"
+          "lineagePath": "../../patterns/04-pages-88-publisering-50-sne-artikkel/04-pages-88-publisering-50-sne-artikkel.rendered.html",
+          "lineagePattern": "pages-sne-artikkel"
         }
       },
       {
@@ -1948,6 +1948,12 @@
       },
       {
         "v": "04-pages/88-publisering/20-artikkelliste-publiserte.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/88-publisering/50-sne-artikkel.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -5248,6 +5254,31 @@
       },
       {
         "v": "04-pages/88-publisering/20-artikkelliste-publiserte.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/50-sne-artikkel.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/50-sne-artikkel.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/50-sne-artikkel.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/50-sne-artikkel.mustache",
+        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/50-sne-artikkel.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
