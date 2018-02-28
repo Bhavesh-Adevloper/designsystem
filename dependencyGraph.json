@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1519730309292,
+  "timestamp": 1519817053844,
   "graph": {
     "options": {
       "directed": true,
@@ -260,6 +260,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/01-molecules-14-sok-og-filtrering-sokefilter/01-molecules-14-sok-og-filtrering-sokefilter.rendered.html",
           "lineagePattern": "molecules-sokefilter"
+        }
+      },
+      {
+        "v": "00-atoms/50-loader/loader.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-publisering-last-opp-fil/01-molecules-publisering-last-opp-fil.rendered.html",
+          "lineagePattern": "molecules-last-opp-fil"
         }
       },
       {
@@ -752,6 +760,12 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-88-publisering-20-sne-artikkelliste/04-pages-88-publisering-20-sne-artikkelliste.rendered.html",
           "lineagePattern": "pages-sne-artikkelliste"
+        }
+      },
+      {
+        "v": "01-molecules/publisering/last-opp-fil.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -2100,6 +2114,11 @@
       {
         "v": "01-molecules/navigasjon/trekkspill.mustache",
         "w": "00-atoms/15-knapper/20-kontakt-knapp.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/publisering/last-opp-fil.mustache",
+        "w": "00-atoms/50-loader/loader.mustache",
         "value": {}
       },
       {
@@ -4974,11 +4993,6 @@
       },
       {
         "v": "04-pages/88-publisering/01-artikkel-kladd.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/88-publisering/01-artikkel-kladd.mustache",
         "w": "01-molecules/publisering/action-line.mustache",
         "value": {}
       },
@@ -5040,11 +5054,6 @@
       {
         "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5129,16 +5138,6 @@
       },
       {
         "v": "04-pages/88-publisering/05-artikkel-forhandsvisning.mustache",
-        "w": "01-molecules/publisering/rediger-status-meta.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/88-publisering/05-artikkel-forhandsvisning.mustache",
-        "w": "01-molecules/publisering/rediger-listebilde.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/88-publisering/05-artikkel-forhandsvisning.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -5150,11 +5149,6 @@
       {
         "v": "04-pages/88-publisering/10-artikkel-publisert.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/88-publisering/10-artikkel-publisert.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {}
       },
       {
