@@ -2,3 +2,12 @@
     {{#tekstfelt.etikett}}<label class="form-element__label {{#tekstfelt.skjultEtikett}} screen-reader-text{{/tekstfelt.skjultEtikett}}"> {{tekstfelt.etikett}} </label> {{/tekstfelt.etikett}}
     <input class="form-element__textfield" type="text" placeholder="{{tekstfelt.placeholder}}">
 </div>
+
+{{#tekstfelt.hjelpetekst}}
+<div class="form-element {{styleModifier}}">
+    {{#tekstfelt.etikett}}<label class="form-element__label {{#tekstfelt.skjultEtikett}} screen-reader-text{{/tekstfelt.skjultEtikett}}"> {{tekstfelt.etikett}} </label> {{/tekstfelt.etikett}}
+    {{hjelpetekst}}
+    <input class="form-element__textfield" type="text" placeholder="{{tekstfelt.placeholder}}">
+</div>
+{{/tekstfelt.hjelpetekst}}
+
