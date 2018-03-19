@@ -271,8 +271,30 @@
     line-height: 1.09375;
 }
 
-
-
+/* Grunticon-preview */
+.grunticon-preview-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.grunticon-preview {
+    flex-grow: 1;
+    flex-basis: 22%;
+    border: 2px solid #fff;
+}
+.grunticon-preview .grunticon-preview__label {
+    text-align: center;
+    line-height: .8;
+}
+.grunticon-preview .grunticon-preview__container {
+    min-height: 77px;
+    background: url(../images/examples/patternlab_background.svg) repeat 0 0 #eaeaea;
+    display: flex;
+    align-items: center;
+}
+.grunticon-preview .grunticon-preview__icon {
+    margin: 0 auto;
+    outline: 1px dashed #aaa;
+}
 
 
 /* Gridwax help */

@@ -13,23 +13,23 @@ function horisontalScroll() {
         
     // Add gradient boxes right when content is larger than the container
     if( scroll_area.scrollLeft() + scroll_area.width() >= scroll_content.width() ) {        
-        scroll_container.removeClass("after");        
+        scroll_container.removeClass("js_scrollToRightGradient");        
     } else {        
-        scroll_container.addClass("after");        
+        scroll_container.addClass("js_scrollToRightGradient");        
     }
     
     // Add gradient boxes when scrolling
     scroll_area.scroll(function() {
         if( scroll_area.scrollLeft() == 0 ) {
-            scroll_container.removeClass("before");
+            scroll_container.removeClass("js_scrollToLeftGradient");
         } else {
-            scroll_container.addClass("before");
+            scroll_container.addClass("js_scrollToLeftGradient");
         }
         
         if( scroll_area.scrollLeft() + scroll_area.width() >= scroll_content.width() ) {
-            scroll_container.removeClass("after");
+            scroll_container.removeClass("js_scrollToRightGradient");
         } else {
-            scroll_container.addClass("after");
+            scroll_container.addClass("js_scrollToRightGradient");
         }        
     });    
     
