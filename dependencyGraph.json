@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1521466924531,
+  "timestamp": 1523369215521,
   "graph": {
     "options": {
       "directed": true,
@@ -48,12 +48,6 @@
       },
       {
         "v": "00-atoms/03-farger/15-funksjonsfarger.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "00-atoms/04-ikoner/ikoner.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -248,8 +242,8 @@
         "v": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-14-sok-og-filtrering-sokefilter-avkrysningsbokser/01-molecules-14-sok-og-filtrering-sokefilter-avkrysningsbokser.rendered.html",
-          "lineagePattern": "molecules-sokefilter-avkrysningsbokser"
+          "lineagePath": "../../patterns/01-molecules-publisering-rediger-forfatter/01-molecules-publisering-rediger-forfatter.rendered.html",
+          "lineagePattern": "molecules-rediger-forfatter"
         }
       },
       {
@@ -850,6 +844,12 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-88-publisering-10-artikkel-publisert/04-pages-88-publisering-10-artikkel-publisert.rendered.html",
           "lineagePattern": "pages-artikkel-publisert"
+        }
+      },
+      {
+        "v": "01-molecules/publisering/vis-flere.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -2131,6 +2131,11 @@
       {
         "v": "01-molecules/publisering/last-opp-fil.mustache",
         "w": "00-atoms/50-loader/loader.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/publisering/rediger-forfatter.mustache",
+        "w": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
         "value": {}
       },
       {

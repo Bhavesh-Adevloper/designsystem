@@ -1,7 +1,7 @@
 <nav id="js_org_menu_container" class="org_menu_container mbl {{styleModifier}}">
     <a href="" title="Meny" class="org_menu_mobile_header">
         Meny
-        <span class="arrow-icon"></span>
+        <span class="icon"></span>
     </a>
     <ul class="org_menu">
         {{# orgMenyListe }}
@@ -17,10 +17,7 @@
                 <a title="{{ tittel }}" href="{{ url }}" class="org_menu_link">
                     {{ tittel }}
                 </a>
-                <a href="" title="Undermeny" class="org_sub_menu_toggle_link">
-                    <span class="arrow-icon"></span>
-                    <span class="screen-reader-text">Undermeny</span>
-                </a>
+                <a href="" title="Undermeny" class="org_sub_menu_toggle_link"><span class="icon">Undermeny</span></a>
                 <ul>
                     {{# linkliste }}
                     <li class="{{ aktivStilSub }}">

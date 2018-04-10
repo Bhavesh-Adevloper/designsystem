@@ -1,18 +1,19 @@
 <div class="edit-article-authors mbxxl">
-    Skrevet av:
-    
+    <h3 class="helpers_header mbs">Skrevet av (obligatorisk)</h3>
     {{# redigerForfatter }}
-        <input value="{{ redigerForfatter }}" class="edit-article-authors__input">
+        <input value="{{ redigerForfatter }}" class="edit-article-authors__input mbm">
         og
-        <input class="edit-article-authors__input">
+        <input class="edit-article-authors__input mbm">
     {{/ redigerForfatter }}
     
     {{# redigerForfatterFeil }}
-        <input value="" class="edit-article-authors__input error-input">
+        <input value="" class="edit-article-authors__input mbm error-input">
         og
-        <input class="edit-article-authors__input" disabled>
+        <input class="edit-article-authors__input mbm" disabled>
         <div class="edit-article-authors__error">
             {{ redigerForfatterFeil }}
         </div>
     {{/ redigerForfatterFeil }}
+
+    {{>atoms-avkryssingsboks}}
 </div>
