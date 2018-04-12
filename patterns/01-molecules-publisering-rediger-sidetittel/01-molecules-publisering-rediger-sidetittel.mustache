@@ -1,11 +1,10 @@
-<h3 class="helpers_header mbs">Overskrift</h3>
-<label class="screen-reader-text" for="ny-artikkel">Overskrift</label>
+<h3 class="helpers_header mbs" id="page_title">Overskrift (obligatorisk)</h3>
 
 {{# redigerSidetittel }}
-    <input class="input--title mbxxl" id="ny-artikkel" value="{{ redigerSidetittel }}">
+    <input class="input--title mbxxl" value="{{ redigerSidetittel }}" aria-labelledby="page_title">
 {{/ redigerSidetittel }}
 
 {{# redigerSidetittelFeil }}
-    <input class="input--title error-input mbxxl" id="ny-artikkel" value="">
+    <input class="input--title error-input mbxxl" value="" aria-labelledby="page_title">
     <div class="error-text neg-mtxl mbxxl">{{ redigerSidetittelFeil }}</div>
 {{/ redigerSidetittelFeil }}

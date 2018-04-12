@@ -1,19 +1,35 @@
-<div class="edit-article-authors mbxxl">
-    <h3 class="helpers_header mbs">Skrevet av (obligatorisk)</h3>
-    {{# redigerForfatter }}
-        <input value="{{ redigerForfatter }}" class="edit-article-authors__input mbm">
-        og
-        <input class="edit-article-authors__input mbm">
-    {{/ redigerForfatter }}
-    
-    {{# redigerForfatterFeil }}
-        <input value="" class="edit-article-authors__input mbm error-input">
-        og
-        <input class="edit-article-authors__input mbm" disabled>
-        <div class="edit-article-authors__error">
-            {{ redigerForfatterFeil }}
-        </div>
-    {{/ redigerForfatterFeil }}
+<h3 class="helpers_header mbs">Skrevet av (obligatorisk)</h3>
+<fieldset>
+    <div class="edit-article-authors mbm">
+        {{# redigerForfatter }}
+            <div class="mbs">
+                <label class="screen-reader-text" for="forfatter1">Første forfatter</label>
+                <input value="{{ redigerForfatter }}" class="edit-article-authors__input mbn" id="forfatter1">
+            </div>
+            <div class="edit-article-authors__connection mbs--mob">og</div>
+            <div class="mbl--mob">
+                <label class="screen-reader-text" for="forfatter2">Andre forfatter</label>
+                <input class="edit-article-authors__input mbn" id="forfatter2">
+            </div>
+        {{/ redigerForfatter }}
 
-    {{>atoms-avkryssingsboks}}
-</div>
+        {{# redigerForfatterFeil }}
+            <div class="mbs">
+                <label class="screen-reader-text" for="forfatter1">Første forfatter</label>
+                <input value="" class="edit-article-authors__input mbn error-input" id="forfatter1">
+            </div>
+            <div class="error-text mbs">
+                {{ redigerForfatterFeil }}
+            </div>
+            <div class="edit-article-authors__connection mbs--mob">og</div>
+            <div class="mbl--mob">
+                <label class="screen-reader-text" for="forfatter2">Andre forfatter</label>
+                <input class="edit-article-authors__input mbn" id="forfatter2" disabled>
+            </div>
+        {{/ redigerForfatterFeil }}
+    </div>
+
+    {{# visForfatter }}
+        {{> atoms-avkryssingsboks:mbxxl|neg-mts }}
+    {{/ visForfatter }}
+</fieldset>

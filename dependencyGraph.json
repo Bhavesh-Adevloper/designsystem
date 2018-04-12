@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1523369215521,
+  "timestamp": 1523521996545,
   "graph": {
     "options": {
       "directed": true,
@@ -746,6 +746,12 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-10-Innholdssider-tjenestebeskrivelse/03-templates-10-Innholdssider-tjenestebeskrivelse.rendered.html",
           "lineagePattern": "templates-tjenestebeskrivelse"
+        }
+      },
+      {
+        "v": "01-molecules/publisering/_rediger-flytt-artikkel.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {

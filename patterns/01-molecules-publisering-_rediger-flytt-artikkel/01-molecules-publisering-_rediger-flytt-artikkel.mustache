@@ -1,0 +1,25 @@
+<div class="move-article">
+    <label class="move-article__label" for="moveArticle">Flytt artikkelen fra menypunkt <strong> Skattetrekk </strong> til <strong> Arbeidsgiveravgift </strong></label>
+    <input id="moveArticle" class="move-article__input" type="text" placeholder="Velg ny plassering" onfocusin="openMoveArticleDropdown();" onfocusout="closeMoveArticleDropdown();">
+    <div id="moveArticleDropdown" class="move-article__dropdown">
+        <ul class="move-article__list">
+            {{#parent}}
+                    {{#disabled}}
+                    <li class="move-article__list-item move-article__list-item--disabled">
+                        <span>{{parentTitle}}</span>
+                    {{/disabled}}
+                    {{^disabled}}
+                    <li class="move-article__list-item {{styleModifier}}"> <a href="#">{{parentTitle}}</a>
+                    {{/disabled}}
+                    {{#childList}} <ul> {{/childList}}
+                        {{#child}}
+                            <li class="move-article__list-item {{styleModifier}}">
+                                <a href="#">{{childTitle}}</a>
+                            </li>
+                        {{/child}}
+                    {{#childList}} </ul> {{/childList}}
+                </li>
+            {{/parent}}
+        </ul>
+    </div>
+</div>

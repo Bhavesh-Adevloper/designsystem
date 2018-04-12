@@ -153,10 +153,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 
             <div class="col_md_12 col_lg_8"><!-- org_main_col -->
 
-                <h3 class="helpers_header mbs">Overskrift</h3>
-<label class="screen-reader-text" for="ny-artikkel">Overskrift</label>
+                <h3 class="helpers_header mbs" id="page_title">Overskrift (obligatorisk)</h3>
 
-    <input class="input--title mbxxl" id="ny-artikkel" value="Min første testartikkel">
+    <input class="input--title mbxxl" value="Min første testartikkel" aria-labelledby="page_title">
 
 
                     <bildevelger>
@@ -202,24 +201,28 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     </script>
 </div>
 
-                <div class="edit-article-authors mbxxl">
-    <h3 class="helpers_header mbs">Skrevet av (obligatorisk)</h3>
-        <input value="Ola Nordmann" class="edit-article-authors__input mbm">
-        og
-        <input class="edit-article-authors__input mbm">
-    
+                <h3 class="helpers_header mbs">Skrevet av (obligatorisk)</h3>
+<fieldset>
+    <div class="edit-article-authors mbm">
+            <div class="mbs">
+                <label class="screen-reader-text" for="forfatter1">Første forfatter</label>
+                <input value="Ola Nordmann" class="edit-article-authors__input mbn" id="forfatter1">
+            </div>
+            <div class="edit-article-authors__connection mbs--mob">og</div>
+            <div class="mbl--mob">
+                <label class="screen-reader-text" for="forfatter2">Andre forfatter</label>
+                <input class="edit-article-authors__input mbn" id="forfatter2">
+            </div>
 
-<div class="form-element mbm">
-    <input type="checkbox" id="not-checked" class="form-element__checkbox"  >
-    <label for="not-checked" class="form-element__label form-element__label--checkbox"><span></span> Ikke krysset av </label>
-</div>
-<div class="form-element mbm">
-    <input type="checkbox" id="checked" class="form-element__checkbox" checked >
-    <label for="checked" class="form-element__label form-element__label--checkbox"><span></span> Krysset av </label>
-</div>
-</div>
+    </div>
 
-                <div class="article__byline article__byline--top-border">
+<div class="form-element mbxxl neg-mts">
+    <input type="checkbox" id="Skjulforfatter" class="form-element__checkbox"  >
+    <label for="Skjulforfatter" class="form-element__label form-element__label--checkbox"><span></span> Skjul forfatter </label>
+</div>
+</fieldset>
+
+                <div class="article__byline article__byline--top-border mbxxl">
     <div class="article__byline-date">
         Publisert: 01.01.1970
         <span class="article__byline-separator">|</span>

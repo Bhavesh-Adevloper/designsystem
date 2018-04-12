@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1523369211104" media="all" />
-    <link rel="stylesheet" href="../../css/publisering.css?1523369211104" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1523369211104" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1523521991703" media="all" />
+    <link rel="stylesheet" href="../../css/publisering.css?1523521991703" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1523521991703" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <!-- never cache patterns -->
@@ -17,8 +17,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1523369211104" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1523369211104" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1523521991703" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1523521991703" media="all" />
 
     <!-- End Pattern Lab -->
     
@@ -3231,7 +3231,7 @@
     
   </div>
   <div class="sg-pattern-example">
-    <div class="article__byline article__byline--top-border">
+    <div class="article__byline article__byline--top-border mbxxl">
     <div class="article__byline-date">
         Publisert: 01.01.1970
         <span class="article__byline-separator">|</span>
@@ -3257,18 +3257,26 @@
     
   </div>
   <div class="sg-pattern-example">
-    <div class="edit-article-authors mbxxl">
     <h3 class="helpers_header mbs">Skrevet av (obligatorisk)</h3>
-        <input value="Ola Nordmann" class="edit-article-authors__input mbm">
-        og
-        <input class="edit-article-authors__input mbm">
-    
+<fieldset>
+    <div class="edit-article-authors mbm">
+            <div class="mbs">
+                <label class="screen-reader-text" for="forfatter1">Første forfatter</label>
+                <input value="Ola Nordmann" class="edit-article-authors__input mbn" id="forfatter1">
+            </div>
+            <div class="edit-article-authors__connection mbs--mob">og</div>
+            <div class="mbl--mob">
+                <label class="screen-reader-text" for="forfatter2">Andre forfatter</label>
+                <input class="edit-article-authors__input mbn" id="forfatter2">
+            </div>
 
-<div class="form-element ">
+    </div>
+
+<div class="form-element mbxxl neg-mts">
     <input type="checkbox" id="Skjulforfatter" class="form-element__checkbox"  >
     <label for="Skjulforfatter" class="form-element__label form-element__label--checkbox"><span></span> Skjul forfatter </label>
 </div>
-</div>
+</fieldset>
   </div>
   <script type="text/json" id="sg-pattern-data-molecules-rediger-forfatter" class="sg-pattern-data">
     {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-avkryssingsboks","lineagePath":"../../patterns/00-atoms-20-skjema-element-13-avkryssingsboks/00-atoms-20-skjema-element-13-avkryssingsboks.rendered.html"}],"lineage":[{"lineagePattern":"atoms-avkryssingsboks","lineagePath":"../../patterns/00-atoms-20-skjema-element-13-avkryssingsboks/00-atoms-20-skjema-element-13-avkryssingsboks.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-artikkel-kladd","lineagePath":"../../patterns/04-pages-88-publisering-01-artikkel-kladd/04-pages-88-publisering-01-artikkel-kladd.rendered.html"},{"lineagePattern":"pages-artikkel-kladd-med-feil","lineagePath":"../../patterns/04-pages-88-publisering-02-artikkel-kladd-med-feil/04-pages-88-publisering-02-artikkel-kladd-med-feil.rendered.html"},{"lineagePattern":"pages-artikkel-publisert","lineagePath":"../../patterns/04-pages-88-publisering-10-artikkel-publisert/04-pages-88-publisering-10-artikkel-publisert.rendered.html"}],"lineageR":[{"lineagePattern":"pages-artikkel-kladd","lineagePath":"../../patterns/04-pages-88-publisering-01-artikkel-kladd/04-pages-88-publisering-01-artikkel-kladd.rendered.html"},{"lineagePattern":"pages-artikkel-kladd-med-feil","lineagePath":"../../patterns/04-pages-88-publisering-02-artikkel-kladd-med-feil/04-pages-88-publisering-02-artikkel-kladd-med-feil.rendered.html"},{"lineagePattern":"pages-artikkel-publisert","lineagePath":"../../patterns/04-pages-88-publisering-10-artikkel-publisert/04-pages-88-publisering-10-artikkel-publisert.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"publisering"},"patternExtension":"mustache","patternName":"Rediger Forfatter","patternPartial":"molecules-rediger-forfatter","patternState":"","patternEngineName":"mustache","extraOutput":{}}
@@ -3434,10 +3442,9 @@
     
   </div>
   <div class="sg-pattern-example">
-    <h3 class="helpers_header mbs">Overskrift</h3>
-<label class="screen-reader-text" for="ny-artikkel">Overskrift</label>
+    <h3 class="helpers_header mbs" id="page_title">Overskrift (obligatorisk)</h3>
 
-    <input class="input--title mbxxl" id="ny-artikkel" value="Ny artikkel">
+    <input class="input--title mbxxl" value="Ny artikkel" aria-labelledby="page_title">
 
 
   </div>
@@ -3965,10 +3972,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1523369211104">
+<script id="pl-js-polyfill-insert-1523521991703">
   (function() {
     if (self != top) {
-      var cb = '1523369211104';
+      var cb = '1523521991703';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -3978,10 +3985,10 @@
   })();
 </script>
 
-<script id="pl-js-insert-1523369211104">
+<script id="pl-js-insert-1523521991703">
   (function() {
     if (self != top) {
-      var cb = '1523369211104';
+      var cb = '1523521991703';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

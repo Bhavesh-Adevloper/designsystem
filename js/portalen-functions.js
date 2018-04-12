@@ -393,12 +393,19 @@ function openSearchFilterGroup(){
             $(this).parent().parent().removeClass("search-checkbox-filter__fieldset--open");
             return false;
         } else {
-            $(this).parent().parent().addClass("search-checkbox-filter__fieldset--open")
+            $(this).parent().parent().addClass("search-checkbox-filter__fieldset--open");
             return false;
         }
     });
 }
 
+//Kun funksjonalitet i PL, Angular ellers
+function openMoveArticleDropdown(){
+    document.getElementById("moveArticleDropdown").classList.add("move-article__dropdown--open");
+}
+function closeMoveArticleDropdown(){
+    document.getElementById("moveArticleDropdown").classList.remove("move-article__dropdown--open");
+}
 
 $(document).ready(function () {
     mainNavMobileToggle();
