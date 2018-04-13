@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1523609108184,
+  "timestamp": 1523620425442,
   "graph": {
     "options": {
       "directed": true,
@@ -5056,12 +5056,12 @@
       },
       {
         "v": "04-pages/88-publisering/01-artikkel-kladd.mustache",
-        "w": "01-molecules/publisering/rediger-status-meta.mustache",
+        "w": "01-molecules/publisering/rediger-listebilde.mustache",
         "value": {}
       },
       {
         "v": "04-pages/88-publisering/01-artikkel-kladd.mustache",
-        "w": "01-molecules/publisering/rediger-listebilde.mustache",
+        "w": "01-molecules/publisering/rediger-status-meta.mustache",
         "value": {}
       },
       {
@@ -5121,12 +5121,12 @@
       },
       {
         "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
-        "w": "01-molecules/publisering/rediger-status-meta.mustache",
+        "w": "01-molecules/publisering/rediger-listebilde.mustache",
         "value": {}
       },
       {
         "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
-        "w": "01-molecules/publisering/rediger-listebilde.mustache",
+        "w": "01-molecules/publisering/rediger-status-meta.mustache",
         "value": {}
       },
       {
@@ -5216,12 +5216,12 @@
       },
       {
         "v": "04-pages/88-publisering/10-artikkel-publisert.mustache",
-        "w": "01-molecules/publisering/rediger-status-meta.mustache",
+        "w": "01-molecules/publisering/rediger-listebilde.mustache",
         "value": {}
       },
       {
         "v": "04-pages/88-publisering/10-artikkel-publisert.mustache",
-        "w": "01-molecules/publisering/rediger-listebilde.mustache",
+        "w": "01-molecules/publisering/rediger-status-meta.mustache",
         "value": {}
       },
       {

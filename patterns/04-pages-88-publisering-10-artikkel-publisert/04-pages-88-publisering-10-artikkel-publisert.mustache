@@ -37,15 +37,11 @@
             {{# redigeringSidebar }}
                 <div class="col_md_12 col_lg_4">
 
-                    <div class="sidebar">
+                    {{# listebilde }}
+                        {{> molecules-rediger-listebilde }}
+                    {{/ listebilde }}
                         
-                        {{> molecules-rediger-status-meta }}
-
-                        {{# listebilde }}
-                            {{> molecules-rediger-listebilde }}
-                        {{/ listebilde }}
-                        
-                    </div>
+                    {{> molecules-rediger-status-meta }}
 
                 </div>
             {{/ redigeringSidebar }}
