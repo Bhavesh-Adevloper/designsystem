@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1523627060072,
+  "timestamp": 1524140913688,
   "graph": {
     "options": {
       "directed": true,
@@ -616,8 +616,8 @@
         "v": "01-molecules/lister/26-fil-liste.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-15-minside-30-lonnsslipper/04-pages-15-minside-30-lonnsslipper.rendered.html",
-          "lineagePattern": "pages-lonnsslipper"
+          "lineagePath": "../../patterns/04-pages-15-minside-32-aarsoppgaver/04-pages-15-minside-32-aarsoppgaver.rendered.html",
+          "lineagePattern": "pages-aarsoppgaver"
         }
       },
       {
@@ -789,6 +789,14 @@
         }
       },
       {
+        "v": "01-molecules/publisering/rediger-flytt-plassering.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-88-publisering-10-artikkel-publisert/04-pages-88-publisering-10-artikkel-publisert.rendered.html",
+          "lineagePattern": "pages-artikkel-publisert"
+        }
+      },
+      {
         "v": "01-molecules/publisering/rediger-forfatter.mustache",
         "value": {
           "compileState": "clean",
@@ -855,7 +863,9 @@
       {
         "v": "01-molecules/publisering/vis-flere.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-88-publisering-20-sne-artikkelliste/04-pages-88-publisering-20-sne-artikkelliste.rendered.html",
+          "lineagePattern": "pages-sne-artikkelliste"
         }
       },
       {
@@ -1763,6 +1773,18 @@
         }
       },
       {
+        "v": "04-pages/15-minside/31-utlegg.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/15-minside/32-aarsoppgaver.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "04-pages/20-navigasjon/00-om-kommunen.mustache",
         "value": {
           "compileState": "clean"
@@ -1902,6 +1924,12 @@
       },
       {
         "v": "04-pages/30-mikrotjenester/kemner-betalingsinformasjon.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/vannmalerkalkulator.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -2137,6 +2165,11 @@
       {
         "v": "01-molecules/publisering/last-opp-fil.mustache",
         "w": "00-atoms/50-loader/loader.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/publisering/modal.mustache",
+        "w": "01-molecules/publisering/rediger-ingress.mustache",
         "value": {}
       },
       {
@@ -4645,6 +4678,76 @@
         "value": {}
       },
       {
+        "v": "04-pages/15-minside/31-utlegg.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/31-utlegg.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/31-utlegg.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/31-utlegg.mustache",
+        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/31-utlegg.mustache",
+        "w": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/31-utlegg.mustache",
+        "w": "01-molecules/lister/26-fil-liste.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/31-utlegg.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/32-aarsoppgaver.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/32-aarsoppgaver.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/32-aarsoppgaver.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/32-aarsoppgaver.mustache",
+        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/32-aarsoppgaver.mustache",
+        "w": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/32-aarsoppgaver.mustache",
+        "w": "01-molecules/lister/26-fil-liste.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/32-aarsoppgaver.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
         "v": "04-pages/20-navigasjon/00-om-kommunen.mustache",
         "w": "03-templates/08-Navigasjon/10-navigasjonsside.mustache",
         "value": {}
@@ -4880,6 +4983,26 @@
         "value": {}
       },
       {
+        "v": "04-pages/30-mikrotjenester/vannmalerkalkulator.mustache",
+        "w": "02-organisms/00-global/_03-header-3.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/vannmalerkalkulator.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/vannmalerkalkulator.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/vannmalerkalkulator.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
         "v": "04-pages/50-escenic/00-artikkel.mustache",
         "w": "02-organisms/00-global/_02-header-2.mustache",
         "value": {}
@@ -5066,6 +5189,11 @@
       },
       {
         "v": "04-pages/88-publisering/01-artikkel-kladd.mustache",
+        "w": "01-molecules/publisering/rediger-flytt-plassering.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/01-artikkel-kladd.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -5127,6 +5255,11 @@
       {
         "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
         "w": "01-molecules/publisering/rediger-status-meta.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
+        "w": "01-molecules/publisering/rediger-flytt-plassering.mustache",
         "value": {}
       },
       {
@@ -5222,6 +5355,11 @@
       {
         "v": "04-pages/88-publisering/10-artikkel-publisert.mustache",
         "w": "01-molecules/publisering/rediger-status-meta.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/10-artikkel-publisert.mustache",
+        "w": "01-molecules/publisering/rediger-flytt-plassering.mustache",
         "value": {}
       },
       {
@@ -5267,6 +5405,11 @@
       {
         "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
         "w": "01-molecules/publisering/rediger-listeelement.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
+        "w": "01-molecules/publisering/vis-flere.mustache",
         "value": {}
       },
       {

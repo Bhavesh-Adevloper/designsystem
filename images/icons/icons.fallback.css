@@ -4,35 +4,127 @@
 
 .icon-7-fjell { background-image: url('png/7-fjell.png'); background-repeat: no-repeat; }
 
-.icon-arrow-down { background-image: url('png/arrow-down.png'); background-repeat: no-repeat; }
+.icon-aligncenter { background-image: url('png/aligncenter.png'); background-repeat: no-repeat; }
 
-.icon-bluearrow-down { background-image: url('png/bluearrow-down.png'); background-repeat: no-repeat; }
+.icon-alignleft { background-image: url('png/alignleft.png'); background-repeat: no-repeat; }
+
+.icon-alignright { background-image: url('png/alignright.png'); background-repeat: no-repeat; }
+
+.icon-arrow-down--blue { background-image: url('png/arrow-down--blue.png'); background-repeat: no-repeat; }
+
+.icon-arrow-down--grey { background-image: url('png/arrow-down--grey.png'); background-repeat: no-repeat; }
+
+.icon-arrow-left-bow { background-image: url('png/arrow-left-bow.png'); background-repeat: no-repeat; }
+
+.icon-arrow-right-bow { background-image: url('png/arrow-right-bow.png'); background-repeat: no-repeat; }
+
+.icon-calendar { background-image: url('png/calendar.png'); background-repeat: no-repeat; }
+
+.icon-cellphone { background-image: url('png/cellphone.png'); background-repeat: no-repeat; }
+
+.icon-chat--blue { background-image: url('png/chat--blue.png'); background-repeat: no-repeat; }
+
+.icon-chat { background-image: url('png/chat.png'); background-repeat: no-repeat; }
 
 .icon-checkmark { background-image: url('png/checkmark.png'); background-repeat: no-repeat; }
 
-.icon-doc { background-image: url('png/doc.png'); background-repeat: no-repeat; }
+.icon-clock { background-image: url('png/clock.png'); background-repeat: no-repeat; }
+
+.icon-close-18 { background-image: url('png/close-18.png'); background-repeat: no-repeat; }
+
+.icon-close { background-image: url('png/close.png'); background-repeat: no-repeat; }
+
+.icon-department { background-image: url('png/department.png'); background-repeat: no-repeat; }
+
+.icon-email { background-image: url('png/email.png'); background-repeat: no-repeat; }
+
+.icon-employee--20 { background-image: url('png/employee--20.png'); background-repeat: no-repeat; }
+
+.icon-english { background-image: url('png/english.png'); background-repeat: no-repeat; }
+
+.icon-event { background-image: url('png/event.png'); background-repeat: no-repeat; }
+
+.icon-external--white { background-image: url('png/external--white.png'); background-repeat: no-repeat; }
+
+.icon-external { background-image: url('png/external.png'); background-repeat: no-repeat; }
+
+.icon-facebook { background-image: url('png/facebook.png'); background-repeat: no-repeat; }
+
+.icon-fana_kulturhus_logo { background-image: url('png/fana_kulturhus_logo.png'); background-repeat: no-repeat; }
 
 .icon-greencheck-16 { background-image: url('png/greencheck-16.png'); background-repeat: no-repeat; }
 
 .icon-greencheck-60 { background-image: url('png/greencheck-60.png'); background-repeat: no-repeat; }
 
+.icon-helper { background-image: url('png/helper.png'); background-repeat: no-repeat; }
+
+.icon-idporten { background-image: url('png/idporten.png'); background-repeat: no-repeat; }
+
+.icon-info { background-image: url('png/info.png'); background-repeat: no-repeat; }
+
+.icon-innbyggerservice { background-image: url('png/innbyggerservice.png'); background-repeat: no-repeat; }
+
+.icon-instagram { background-image: url('png/instagram.png'); background-repeat: no-repeat; }
+
 .icon-itslearning_logo { background-image: url('png/itslearning_logo.png'); background-repeat: no-repeat; }
+
+.icon-lightbox { background-image: url('png/lightbox.png'); background-repeat: no-repeat; }
+
+.icon-login { background-image: url('png/login.png'); background-repeat: no-repeat; }
+
+.icon-logo { background-image: url('png/logo.png'); background-repeat: no-repeat; }
+
+.icon-logout--white { background-image: url('png/logout--white.png'); background-repeat: no-repeat; }
+
+.icon-map { background-image: url('png/map.png'); background-repeat: no-repeat; }
+
+.icon-minside--active { background-image: url('png/minside--active.png'); background-repeat: no-repeat; }
+
+.icon-minside { background-image: url('png/minside.png'); background-repeat: no-repeat; }
+
+.icon-nav_toggle { background-image: url('png/nav_toggle.png'); background-repeat: no-repeat; }
+
+.icon-norsk { background-image: url('png/norsk.png'); background-repeat: no-repeat; }
 
 .icon-notice-16 { background-image: url('png/notice-16.png'); background-repeat: no-repeat; }
 
 .icon-notice-60 { background-image: url('png/notice-60.png'); background-repeat: no-repeat; }
 
-.icon-pdf { background-image: url('png/pdf.png'); background-repeat: no-repeat; }
+.icon-notice-large { background-image: url('png/notice-large.png'); background-repeat: no-repeat; }
+
+.icon-notice { background-image: url('png/notice.png'); background-repeat: no-repeat; }
+
+.icon-offline { background-image: url('png/offline.png'); background-repeat: no-repeat; }
+
+.icon-online { background-image: url('png/online.png'); background-repeat: no-repeat; }
+
+.icon-organisation { background-image: url('png/organisation.png'); background-repeat: no-repeat; }
+
+.icon-phone { background-image: url('png/phone.png'); background-repeat: no-repeat; }
+
+.icon-press { background-image: url('png/press.png'); background-repeat: no-repeat; }
 
 .icon-print { background-image: url('png/print.png'); background-repeat: no-repeat; }
+
+.icon-profile { background-image: url('png/profile.png'); background-repeat: no-repeat; }
 
 .icon-rednotice-16 { background-image: url('png/rednotice-16.png'); background-repeat: no-repeat; }
 
 .icon-rednotice-60 { background-image: url('png/rednotice-60.png'); background-repeat: no-repeat; }
 
-.icon-small-grey-close-button { background-image: url('png/small-grey-close-button.png'); background-repeat: no-repeat; }
+.icon-rss { background-image: url('png/rss.png'); background-repeat: no-repeat; }
 
-.icon-small-grey-searchglass { background-image: url('png/small-grey-searchglass.png'); background-repeat: no-repeat; }
+.icon-searchglass-18 { background-image: url('png/searchglass-18.png'); background-repeat: no-repeat; }
 
-.icon-xls { background-image: url('png/xls.png'); background-repeat: no-repeat; }
+.icon-searchglass { background-image: url('png/searchglass.png'); background-repeat: no-repeat; }
+
+.icon-slideshow { background-image: url('png/slideshow.png'); background-repeat: no-repeat; }
+
+.icon-twitter { background-image: url('png/twitter.png'); background-repeat: no-repeat; }
+
+.icon-warning-large { background-image: url('png/warning-large.png'); background-repeat: no-repeat; }
+
+.icon-warning { background-image: url('png/warning.png'); background-repeat: no-repeat; }
+
+.icon-world { background-image: url('png/world.png'); background-repeat: no-repeat; }
 

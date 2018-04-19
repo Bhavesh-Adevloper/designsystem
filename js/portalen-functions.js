@@ -374,7 +374,21 @@ function openSearchFilter(){
             $(this).parent().removeClass("search-checkbox-filter--open");
             return false;
         } else {
-            $(this).parent().addClass("search-checkbox-filter--open")
+            $(this).parent().addClass("search-checkbox-filter--open");
+            return false;
+        }
+
+    });
+}
+
+//Kun funksjonalitet i PL, Angular ellers
+function openEditorMenu(){
+    $(".editor-article-list__menu-button").click( function() {
+        if ( $(this).parent().hasClass("editor-article-list__menu--open")) {
+            $(this).parent().removeClass("editor-article-list__menu--open");
+            return false;
+        } else {
+            $(this).parent().addClass("editor-article-list__menu--open");
             return false;
         }
     });
@@ -423,6 +437,7 @@ $(document).ready(function () {
     openSearchFilter();
     openSearchFilterGroup();
     addClassOnExternalLinks();
+    openEditorMenu();
 });
 
 $(window).bind("load", function() {

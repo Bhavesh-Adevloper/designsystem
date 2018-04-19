@@ -5,7 +5,26 @@
             <h3 class="modal__window__title">{{ modalTittel }}</h3>
             <div class="modal__window__content">
                 <form>
-                    
+
+                    {{# pekerInput }}
+                    <div class="mbs">
+                        <div>
+                            <label for="url">URL-adresse</label>
+                            <input id="url" type="text" class="mbl">
+                        </div>
+                        <div >
+                            <label for="overskrift">Overskrift</label>
+                            <input id="overskrift" type="text" class="mbl">
+                        </div>
+                        {{>molecules-rediger-ingress}}
+                    </div>
+                    {{/ pekerInput }}
+
+                    {{#bildetekst}}
+                        <label for="modalimage" class="mbn">Listebilde</label>
+                        <p class="helpers_info mbs">Vises på sider med artikler i liste</p>
+                    {{/bildetekst}}
+
                     {{# bildeopplasting }}
                     <div class="file-upload-input mbl">
                         <div class="file-upload-input__image-preview">
@@ -64,10 +83,28 @@
                             </div>
                         </fieldset>
                     {{/ bildeplasseringInput }}
+
+                    {{# pekerByline }}
+                        <div class="modal__byline modal__byline--top-border mbxl">
+                            <div class="modal__byline-text">
+                                Peker laget av Anne Margrete Markstad - 15.03.2018
+                            </div>
+                        </div>
+                    {{/ pekerByline }}
+
                     
                     <div class="text_align_center">
-                        <button class="button">Avbryt</button>
-                        <button class="submit">OK</button>
+                        {{#buttonButton}}
+                            <button class="button">{{buttonText}}</button>
+                        {{/buttonButton}}
+                        {{#buttonSubmit}}
+                            <button class="submit">{{buttonText}}</button>
+                        {{/buttonSubmit}}
+                        {{#buttonSuccess}}
+                            <button class="button button--success active" type="submit"> {{buttonText}}</button>
+                        {{/buttonSuccess}}
+
+
                     </div>
 
                 </form>
