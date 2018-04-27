@@ -1,15 +1,21 @@
+{{#imageUploader}}
 <div class="mbxxl">
     
     <h3 class="sidebar-header mbm sidebar-header--open">
       <a href="#" title="" class="sidebar-header__toggle">
-        Listebilde
+        {{title}}
         <span class="arrow-icon"></span>
       </a>
     </h3>
-    <div class="image-upload-link">
+    {{#helpText}}
+    <div class="helpers_info mbs">
+        {{helpText}}
+    </div>
+    {{/helpText}}
+    <div class="image-upload-link {{styleModifier}}">
         {{# startLink }}
             <a href="" title="" class="image-upload-link__start-link">
-                Valgfritt listebilde<br>Minimum 680 piksler bredde
+                {{startLink}}
             </a>
         {{/ startLink }}
         {{# changeLink }}
@@ -19,10 +25,17 @@
                 {{/ imgLandscape }}
                 <span class="figcaption"></span>
             </a>
-            <a href="" title="Slett listebilde" class="image-upload-link__delete-link">
-                Slett listebilde
+            <a href="" title="{{deleteText}}" class="image-upload-link__delete-link">
+                {{# deleteText }}
+                   {{ deleteText }}
+                {{/ deleteText }}
             </a>
         {{/ changeLink }}
     </div>
+
+    {{# brukSomListebilde }}
+        {{> atoms-avkryssingsboks }}
+    {{/ brukSomListebilde }}
     
 </div>
+{{/imageUploader}}

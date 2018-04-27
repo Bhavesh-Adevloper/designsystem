@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1524492878610,
+  "timestamp": 1524828965144,
   "graph": {
     "options": {
       "directed": true,
@@ -781,6 +781,14 @@
         }
       },
       {
+        "v": "01-molecules/publisering/rediger-bildeopplaster.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-88-publisering-10-artikkel-publisert/04-pages-88-publisering-10-artikkel-publisert.rendered.html",
+          "lineagePattern": "pages-artikkel-publisert"
+        }
+      },
+      {
         "v": "01-molecules/publisering/rediger-byline.mustache",
         "value": {
           "compileState": "clean",
@@ -814,14 +822,6 @@
       },
       {
         "v": "01-molecules/publisering/rediger-ingress.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-88-publisering-10-artikkel-publisert/04-pages-88-publisering-10-artikkel-publisert.rendered.html",
-          "lineagePattern": "pages-artikkel-publisert"
-        }
-      },
-      {
-        "v": "01-molecules/publisering/rediger-listebilde.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-88-publisering-10-artikkel-publisert/04-pages-88-publisering-10-artikkel-publisert.rendered.html",
@@ -2170,6 +2170,11 @@
       {
         "v": "01-molecules/publisering/modal.mustache",
         "w": "01-molecules/publisering/rediger-ingress.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/publisering/rediger-bildeopplaster.mustache",
+        "w": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
         "value": {}
       },
       {
@@ -5149,12 +5154,12 @@
       },
       {
         "v": "04-pages/88-publisering/01-artikkel-kladd.mustache",
-        "w": "01-molecules/publisering/rediger-sidetittel.mustache",
+        "w": "01-molecules/publisering/rediger-toppbilde.mustache",
         "value": {}
       },
       {
         "v": "04-pages/88-publisering/01-artikkel-kladd.mustache",
-        "w": "01-molecules/publisering/rediger-toppbilde.mustache",
+        "w": "01-molecules/publisering/rediger-sidetittel.mustache",
         "value": {}
       },
       {
@@ -5179,7 +5184,7 @@
       },
       {
         "v": "04-pages/88-publisering/01-artikkel-kladd.mustache",
-        "w": "01-molecules/publisering/rediger-listebilde.mustache",
+        "w": "01-molecules/publisering/rediger-bildeopplaster.mustache",
         "value": {}
       },
       {
@@ -5219,12 +5224,12 @@
       },
       {
         "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
-        "w": "01-molecules/publisering/rediger-sidetittel.mustache",
+        "w": "01-molecules/publisering/rediger-toppbilde.mustache",
         "value": {}
       },
       {
         "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
-        "w": "01-molecules/publisering/rediger-toppbilde.mustache",
+        "w": "01-molecules/publisering/rediger-sidetittel.mustache",
         "value": {}
       },
       {
@@ -5249,7 +5254,7 @@
       },
       {
         "v": "04-pages/88-publisering/02-artikkel-kladd-med-feil.mustache",
-        "w": "01-molecules/publisering/rediger-listebilde.mustache",
+        "w": "01-molecules/publisering/rediger-bildeopplaster.mustache",
         "value": {}
       },
       {
@@ -5319,12 +5324,12 @@
       },
       {
         "v": "04-pages/88-publisering/10-artikkel-publisert.mustache",
-        "w": "01-molecules/publisering/rediger-sidetittel.mustache",
+        "w": "01-molecules/publisering/rediger-toppbilde.mustache",
         "value": {}
       },
       {
         "v": "04-pages/88-publisering/10-artikkel-publisert.mustache",
-        "w": "01-molecules/publisering/rediger-toppbilde.mustache",
+        "w": "01-molecules/publisering/rediger-sidetittel.mustache",
         "value": {}
       },
       {
@@ -5349,7 +5354,7 @@
       },
       {
         "v": "04-pages/88-publisering/10-artikkel-publisert.mustache",
-        "w": "01-molecules/publisering/rediger-listebilde.mustache",
+        "w": "01-molecules/publisering/rediger-bildeopplaster.mustache",
         "value": {}
       },
       {
