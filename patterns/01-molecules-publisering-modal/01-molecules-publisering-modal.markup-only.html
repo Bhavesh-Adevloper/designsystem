@@ -7,12 +7,13 @@
 
 
 
-                    <div class="file-upload-input mbl">
-                        <div class="file-upload-input__image-preview">
-                        </div>
-                        <input id="modalimage" name="file" placeholder="Last opp bilde..." type="file">
-                        <label class="label" for="modalimage">Trykk her for å laste opp</label>
-                    </div>
+                      <div class="file-upload-input mbl">
+                          <div class="file-upload-input__image-preview">
+                          </div>
+                          <input id="image_upload" name="file" placeholder="Last opp bilde..." type="file">
+                          <label class="label" for="image_upload">Trykk her for å laste opp</label>
+                      </div>
+                  
                     
 
                     <div class="mbs">
@@ -32,12 +33,11 @@
                     
 
 
-                    
                     <div class="text_align_center">
+                      
+                      
                             <button class="button">Avbryt</button>
                             <button class="submit">OK</button>
-
-
                     </div>
 
                 </form>
@@ -53,12 +53,13 @@
 
 
 
-                    <div class="file-upload-input mbl">
-                        <div class="file-upload-input__image-preview">
-                        </div>
-                        <input id="modalimage" name="file" placeholder="Last opp bilde..." type="file">
-                        <label class="label" for="modalimage">Trykk her for å laste opp</label>
-                    </div>
+                      <div class="file-upload-input mbl">
+                          <div class="file-upload-input__image-preview">
+                          </div>
+                          <input id="image_upload" name="file" placeholder="Last opp bilde..." type="file">
+                          <label class="label" for="image_upload">Trykk her for å laste opp</label>
+                      </div>
+                  
                     
 
                     <div class="mbs">
@@ -70,12 +71,11 @@
                     
 
 
-                    
                     <div class="text_align_center">
+                      
+                      
                             <button class="button">Avbryt</button>
                             <button class="submit">OK</button>
-
-
                     </div>
 
                 </form>
@@ -91,12 +91,13 @@
 
 
 
-                    <div class="file-upload-input mbl">
-                        <div class="file-upload-input__image-preview">
-                        </div>
-                        <input id="modalimage" name="file" placeholder="Last opp bilde..." type="file">
-                        <label class="label" for="modalimage">Trykk her for å laste opp</label>
-                    </div>
+                      <div class="file-upload-input mbl">
+                          <div class="file-upload-input__image-preview">
+                          </div>
+                          <input id="image_upload" name="file" placeholder="Last opp bilde..." type="file">
+                          <label class="label" for="image_upload">Trykk her for å laste opp</label>
+                      </div>
+                  
                     
 
                     <div class="mbs">
@@ -129,12 +130,11 @@
                         </fieldset>
 
 
-                    
                     <div class="text_align_center">
+                      
+                      
                             <button class="button">Avbryt</button>
                             <button class="submit">OK</button>
-
-
                     </div>
 
                 </form>
@@ -150,6 +150,7 @@
 
 
 
+                  
                     
                     <div class="file-upload-input mbl">
                         <input class="fileupload" id="modalfil" name="file" placeholder="Last opp fil..." type="file">
@@ -165,19 +166,18 @@
                     
 
 
-                    
                     <div class="text_align_center">
+                      
+                      
                             <button class="button">Avbryt</button>
                             <button class="submit">OK</button>
-
-
                     </div>
 
                 </form>
             </div>
         </div>
     </div>
-    <p class="mbn"><code>Peker</code></p>
+    <p class="mbn"><code>Ny peker</code></p>
     <div class="modal" style="position: inherit; margin-bottom: 1.75rem;">
         <div class="modal__window" style="position: inherit; top: inherit; left: inherit; transform: none;">
             <h3 class="modal__window__title">Legg inn ny peker</h3>
@@ -187,36 +187,44 @@
                     <div class="mbs">
                         <div>
                             <label for="url">URL-adresse</label>
-                            <input id="url" type="text" class="mbl">
+                            <input id="url" type="text" class="mbl" value="">
                         </div>
-                        <div >
+                        <div>
                             <label for="overskrift">Overskrift</label>
-                            <input id="overskrift" type="text" class="mbl">
+                            <input id="overskrift" type="text" class="mbl" value="">
                         </div>
-                        <h3 class="helpers_header" id="ingress_tittel">Ingress</h3>
-<p class="helpers_info mbs">Maks 200 tegn</p>
 
-    <div class="excerpt_counter__area mbl">
+
+    <label class="modal__excerpt-label mbl" for="modalIngress">Ingress
+        <p class="helpers_info mbs">Maks 200 tegn</p>
         <textarea aria-labelledby="ingress_tittel"
-                  id="ingress"
-                  draggable="false"
-                  class="textarea--excerpt mbn"
-                  name="ingress">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
-        <div id="ingress_counter" class="excerpt_counter">
-            <span> 124 av 200 tegn </span>
+            id="modalIngress"
+            draggable="false"
+            class="modal__excerpt mbs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
+
+        <div class="modal__excerpt-area">
+            <div class="error-text">
+              <!-- <span>Ingressen er for lang</span>-->
+            </div>
+            <div class="modal__excerpt-counter">
+                <span> 124 av 200 tegn </span>
+            </div>
         </div>
-    </div>
+    </label>
 
                     </div>
 
-                        <label for="modalimage" class="mbn">Listebilde</label>
+                        <label for="image_upload" class="mbn">Listebilde</label>
                         <p class="helpers_info mbs">Vises på sider med artikler i liste</p>
 
+                      <div class="file-upload-input mbl">
+                          <div class="file-upload-input__image-preview">
+                          </div>
+                          <input id="image_upload" name="file" placeholder="Last opp bilde..." type="file">
+                          <label class="label" for="image_upload">Trykk her for å laste opp</label>
+                      </div>
+                  
                     
-                    <div class="file-upload-input mbl">
-                        <input class="fileupload" id="modalfil" name="file" placeholder="Last opp fil..." type="file">
-                        <label class="label" for="modalfil">Trykk her for å laste opp</label>
-                    </div>
 
                     <div class="mbs">
                     </div>
@@ -228,12 +236,83 @@
                             </div>
                         </div>
 
-                    
                     <div class="text_align_center">
+                      
+                      
                             <button class="button">Avbryt</button>
                             <button class="button">Publiser</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <p class="mbn"><code>Ny peker - feilmeldinger</code></p>
+    <div class="modal" style="position: inherit; margin-bottom: 1.75rem;">
+        <div class="modal__window" style="position: inherit; top: inherit; left: inherit; transform: none;">
+            <h3 class="modal__window__title">Legg inn ny peker</h3>
+            <div class="modal__window__content">
+                <form>
+
+                    <div class="mbs">
+                        <div>
+                            <label for="url">URL-adresse</label>
+                            <input id="url" type="text" class="mbl error-input" value="">
+                              <div class="error-text neg-mtml mbl"><span>URL mangler</span></div>
+                        </div>
+                        <div>
+                            <label for="overskrift">Overskrift</label>
+                            <input id="overskrift" type="text" class="mbl error-input" value="">
+                              <div class="error-text neg-mtml mbl"><span>Tittel mangler</span></div>
+                        </div>
 
 
+
+    <label class="modal__excerpt-label mbl" for="modalIngress">Ingress
+        <p class="helpers_info mbs">Maks 200 tegn</p>
+        <textarea aria-labelledby="ingress_tittel"
+            id="modalIngress"
+            draggable="false"
+            class="modal__excerpt mbs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
+
+        <div class="modal__excerpt-area">
+            <div class="error-text">
+              <span>Ingressen er for lang</span>
+            </div>
+            <div class="modal__excerpt-counter super_warn">
+                <span> 248 av 200 tegn </span>
+            </div>
+        </div>
+    </label>
+                    </div>
+
+                        <label for="image_upload" class="mbn">Listebilde</label>
+                        <p class="helpers_info mbs">Vises på sider med artikler i liste</p>
+
+                      <div class="file-upload-input mbl">
+                          <div class="file-upload-input__image-preview">
+                          </div>
+                          <input id="image_upload" name="file" placeholder="Last opp bilde..." type="file">
+                          <label class="label" for="image_upload">Trykk her for å laste opp</label>
+                      </div>
+                  
+                    
+
+                    <div class="mbs">
+                    </div>
+                    
+
+                        <div class="modal__byline modal__byline--top-border mbxl">
+                            <div class="modal__byline-text">
+                                Peker laget av Anne Margrete Markstad - 15.03.2018
+                            </div>
+                        </div>
+
+                    <div class="text_align_center">
+                      
+                      
+                            <button class="button">Avbryt</button>
+                            <button class="button" disabled>Publiser</button>
                     </div>
 
                 </form>
@@ -243,43 +322,55 @@
     <p class="mbn"><code>Rediger peker</code></p>
     <div class="modal" style="position: inherit; margin-bottom: 1.75rem;">
         <div class="modal__window" style="position: inherit; top: inherit; left: inherit; transform: none;">
-            <h3 class="modal__window__title">Legg inn ny peker</h3>
+            <h3 class="modal__window__title">Rediger peker</h3>
             <div class="modal__window__content">
                 <form>
 
                     <div class="mbs">
                         <div>
                             <label for="url">URL-adresse</label>
-                            <input id="url" type="text" class="mbl">
+                            <input id="url" type="text" class="mbl" value="https:&#x2F;&#x2F;www.bergen.kommune.no">
                         </div>
-                        <div >
+                        <div>
                             <label for="overskrift">Overskrift</label>
-                            <input id="overskrift" type="text" class="mbl">
+                            <input id="overskrift" type="text" class="mbl" value="Bergen kommune">
                         </div>
-                        <h3 class="helpers_header" id="ingress_tittel">Ingress</h3>
-<p class="helpers_info mbs">Maks 200 tegn</p>
 
-    <div class="excerpt_counter__area mbl">
+
+    <label class="modal__excerpt-label mbl" for="modalIngress">Ingress
+        <p class="helpers_info mbs">Maks 200 tegn</p>
         <textarea aria-labelledby="ingress_tittel"
-                  id="ingress"
-                  draggable="false"
-                  class="textarea--excerpt mbn"
-                  name="ingress">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
-        <div id="ingress_counter" class="excerpt_counter">
-            <span> 124 av 200 tegn </span>
+            id="modalIngress"
+            draggable="false"
+            class="modal__excerpt mbs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
+
+        <div class="modal__excerpt-area">
+            <div class="error-text">
+              <!-- <span>Ingressen er for lang</span>-->
+            </div>
+            <div class="modal__excerpt-counter">
+                <span> 124 av 200 tegn </span>
+            </div>
         </div>
-    </div>
+    </label>
 
                     </div>
 
-                        <label for="modalimage" class="mbn">Listebilde</label>
+                        <label for="image_upload" class="mbn">Listebilde</label>
                         <p class="helpers_info mbs">Vises på sider med artikler i liste</p>
 
+                      <div class="file-upload-input mbl">
+                          <div class="file-upload-input__image-preview">
+                                <img src="..&#x2F;..&#x2F;images&#x2F;examples&#x2F;fpo_16x9.png" alt="Landscape Image" class="js_preview_image">
+                          </div>
+                          <input id="image_upload" name="file" placeholder="Last opp bilde..." type="file">
+                          <label class="label" for="image_upload">Trykk her for å laste opp</label>
+                      </div>
+                  
+                      <div class="text_align_center mbl neg-mtml">
+                        <a href="" title="Fjern listebilde">Slett listebilde</a>
+                      </div>
                     
-                    <div class="file-upload-input mbl">
-                        <input class="fileupload" id="modalfil" name="file" placeholder="Last opp fil..." type="file">
-                        <label class="label" for="modalfil">Trykk her for å laste opp</label>
-                    </div>
 
                     <div class="mbs">
                     </div>
@@ -291,12 +382,69 @@
                             </div>
                         </div>
 
-                    
                     <div class="text_align_center">
+                      
+                      
                             <button class="button">Avbryt</button>
                             <button class="button button--success active" type="submit"> Oppdater</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <p class="mbn"><code>Slett</code></p>
+    <div class="modal" style="position: inherit; margin-bottom: 1.75rem;">
+        <div class="modal__window" style="position: inherit; top: inherit; left: inherit; transform: none;">
+            <h3 class="modal__window__title">Slette peker?</h3>
+            <div class="modal__window__content">
+                <form>
 
 
+
+                  
+                    
+
+                    <div class="mbs">
+                    </div>
+                    
+
+
+                    <div class="text_align_center">
+                      
+                          <p>Det er ikke mulig å angre denne handlingen!</p>
+                      
+                            <button class="button">Avbryt</button>
+                            <button class="button button--danger" type="submit"> Slett peker</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <p class="mbn"><code>Slett</code></p>
+    <div class="modal" style="position: inherit; margin-bottom: 1.75rem;">
+        <div class="modal__window" style="position: inherit; top: inherit; left: inherit; transform: none;">
+            <h3 class="modal__window__title">Slette artikkelen?</h3>
+            <div class="modal__window__content">
+                <form>
+
+
+
+                  
+                    
+
+                    <div class="mbs">
+                    </div>
+                    
+
+
+                    <div class="text_align_center">
+                      
+                          <p>Det er ikke mulig å angre denne handlingen!</p>
+                      
+                            <button class="button">Avbryt</button>
+                            <button class="button button--danger" type="submit"> Slett artikkelen</button>
                     </div>
 
                 </form>

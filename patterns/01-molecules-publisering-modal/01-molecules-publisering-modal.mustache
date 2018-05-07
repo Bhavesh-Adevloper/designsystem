@@ -7,32 +7,47 @@
                 <form>
 
                     {{# pekerInput }}
-                    <div class="mbs">
+                    <div class="{{ styleModifier }}">
                         <div>
                             <label for="url">URL-adresse</label>
-                            <input id="url" type="text" class="mbl">
+                            <input id="url" type="text" class="mbl{{# urlFeil }} error-input{{/ urlFeil }}" value="{{ url }}">
+                            {{# urlFeil }}
+                              <div class="error-text neg-mtml mbl"><span>URL mangler</span></div>
+                            {{/ urlFeil }}
                         </div>
-                        <div >
+                        <div>
                             <label for="overskrift">Overskrift</label>
-                            <input id="overskrift" type="text" class="mbl">
+                            <input id="overskrift" type="text" class="mbl{{# tittelFeil }} error-input{{/ tittelFeil }}" value="{{ tittel }}">
+                            {{# tittelFeil }}
+                              <div class="error-text neg-mtml mbl"><span>Tittel mangler</span></div>
+                            {{/ tittelFeil }}
                         </div>
                         {{>molecules-rediger-ingress}}
                     </div>
                     {{/ pekerInput }}
 
                     {{#bildetekst}}
-                        <label for="modalimage" class="mbn">Listebilde</label>
+                        <label for="image_upload" class="mbn">Listebilde</label>
                         <p class="helpers_info mbs">Vises på sider med artikler i liste</p>
                     {{/bildetekst}}
 
                     {{# bildeopplasting }}
-                    <div class="file-upload-input mbl">
-                        <div class="file-upload-input__image-preview">
-                        </div>
-                        <input id="modalimage" name="file" placeholder="Last opp bilde..." type="file">
-                        <label class="label" for="modalimage">Trykk her for å laste opp</label>
-                    </div>
+                      <div class="file-upload-input mbl">
+                          <div class="file-upload-input__image-preview">
+                              {{# imgLandscape }}
+                                <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="js_preview_image">
+                              {{/ imgLandscape }}
+                          </div>
+                          <input id="image_upload" name="file" placeholder="Last opp bilde..." type="file">
+                          <label class="label" for="image_upload">Trykk her for å laste opp</label>
+                      </div>
                     {{/ bildeopplasting }}
+                  
+                    {{# slettBildeLink }}
+                      <div class="text_align_center mbl neg-mtml">
+                        <a href="" title="Fjern listebilde">Slett listebilde</a>
+                      </div>
+                    {{/ slettBildeLink }}
                     
                     {{# filopplasting }}
                     <div class="file-upload-input mbl">
@@ -92,19 +107,24 @@
                         </div>
                     {{/ pekerByline }}
 
-                    
                     <div class="text_align_center">
+                      
+                        {{# sletteInfo }}
+                          <p>{{ sletteInfo }}</p>
+                        {{/ sletteInfo }} 
+                      
                         {{#buttonButton}}
-                            <button class="button">{{buttonText}}</button>
+                            <button class="button"{{#buttonDisabled}} disabled{{/buttonDisabled}}>{{buttonText}}</button>
                         {{/buttonButton}}
                         {{#buttonSubmit}}
-                            <button class="submit">{{buttonText}}</button>
+                            <button class="submit"{{#buttonDisabled}} disabled{{/buttonDisabled}}>{{buttonText}}</button>
                         {{/buttonSubmit}}
                         {{#buttonSuccess}}
-                            <button class="button button--success active" type="submit"> {{buttonText}}</button>
+                            <button class="button button--success active" type="submit"{{#buttonDisabled}} disabled{{/buttonDisabled}}> {{buttonText}}</button>
                         {{/buttonSuccess}}
-
-
+                        {{#buttonDanger}}
+                            <button class="button button--danger" type="submit"> {{buttonText}}</button>
+                        {{/buttonDanger}}
                     </div>
 
                 </form>
