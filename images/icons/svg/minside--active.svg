@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="c-minside--active" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop stop-color="#F53137" offset="0%"/>
+      <stop stop-color="#D7272D" offset="100%"/>
+    </linearGradient>
+    <path id="b-minside--active" d="M32,52 C20.9569231,52 12,43.0446154 12,31.9984615 C12,20.9553846 20.9569231,12 32,12 C43.0430769,12 52,20.9553846 52,31.9984615 C52,43.0446154 43.0430769,52 32,52 Z"/>
+    <filter id="a-minside--active" width="125%" height="125%" x="-12.5%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.32 0" in="shadowBlurOuter1"/>
+    </filter>
+    <filter id="d-minside--active" y="-7.5%" filterUnits="objectBoundingBox">
+      <feGaussianBlur stdDeviation=".5" in="SourceAlpha" result="shadowBlurInner1"/>
+      <feOffset dy="-1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+      <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.24 0" in="shadowInnerInner1"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="black" filter="url(#a-minside--active)" xlink:href="#b-minside--active"/>
+    <use fill="url(#c-minside--active)" xlink:href="#b-minside--active"/>
+    <use fill="black" filter="url(#d-minside--active)" xlink:href="#b-minside--active"/>
+    <path fill="#FFFFFF" d="M35.375,34.375 C34.638125,34.2355 34.25,34.025125 34.25,33.25 C34.25,33.25 34.23875,32.326375 34.25,32.125 C34.647125,31.559125 35.9375,31 35.9375,29.875 C36.5,29.875 37.0625,29.3125 37.0625,28.75 C37.0625,28.1875 36.69125,27.90175 36.5,27.625 L36.5,26.5 C36.5,23.6875 34.1465,22 32,22 C29.8535,22 27.5,23.6875 27.5,26.5 L27.5,27.625 C27.30875,27.902875 26.9375,28.1875 26.9375,28.75 C26.9375,29.3125 27.5,29.875 28.0625,29.875 C28.0625,31 29.352875,31.559125 29.75,32.125 C29.760125,32.326375 29.75,33.25 29.75,33.25 C29.75,34.025125 29.361875,34.2355 28.625,34.375 C28.625,34.375 26.848625,34.8295 26.375,34.9375 C24.9125,35.269375 23,36.761125 23,38.3125 L23,40 L41,40 L41,38.3125 C41,36.761125 39.08525,35.269375 37.625,34.9375 C37.15025,34.8295 35.375,34.375 35.375,34.375 Z"/>
+  </g>
+</svg>
