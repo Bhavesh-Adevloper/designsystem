@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1525783490091,
+  "timestamp": 1526033230615,
   "graph": {
     "options": {
       "directed": true,
@@ -777,7 +777,9 @@
       {
         "v": "01-molecules/publisering/modal.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-publisering-rediger-listeelement/01-molecules-publisering-rediger-listeelement.rendered.html",
+          "lineagePattern": "molecules-rediger-listeelement"
         }
       },
       {
@@ -2180,6 +2182,11 @@
       {
         "v": "01-molecules/publisering/rediger-forfatter.mustache",
         "w": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/publisering/rediger-listeelement.mustache",
+        "w": "01-molecules/publisering/modal.mustache",
         "value": {}
       },
       {

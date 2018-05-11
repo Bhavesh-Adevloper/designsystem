@@ -421,6 +421,44 @@ function closeMoveArticleDropdown(){
     document.getElementById("moveArticleDropdown").classList.remove("move-article__dropdown--open");
 }
 
+//Kun funksjonalitet i PL, Angular ellers
+function openModal() {
+    $(".js_openModal").click( function() {
+      
+      // Get ID / class
+      var href = $(this).attr("href"); // get href anchor
+      var modalID = href.substring(1, href.length); // remove #
+      var modalClass = "." + modalID; // add .
+      
+      // Remove hidden
+      $(modalClass + " .modal").removeClass("hidden").addClass("openModal"); // remove hidden to show this modal
+      
+      // Sett modal position
+      modalPosition();
+      
+      return false;
+    });
+}
+//Kun funksjonalitet i PL, Angular ellers
+function modalPosition() {
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    var modalHeight = $(".openModal .modal__window").outerHeight();
+    if( windowHeight < modalHeight ) {
+      $(".openModal ").addClass("modal--absolute");
+      $(".openModal  .modal__window").css("top", scroll + 20);
+    } else {
+      $(".openModal ").removeClass("modal--absolute");
+      $(".openModal  .modal__window").css("top", "");
+    }
+}
+//Kun funksjonalitet i PL, Angular ellers
+function closeModal() {
+    $(".js_closeModal").click( function() {
+      $(".modal").addClass("hidden").removeClass("openModal");
+    });
+}
+
 $(document).ready(function () {
     mainNavMobileToggle();
     addCategoryHeights();
@@ -438,6 +476,8 @@ $(document).ready(function () {
     openSearchFilterGroup();
     addClassOnExternalLinks();
     openEditorMenu();
+    openModal();
+    closeModal();
 });
 
 $(window).bind("load", function() {
@@ -448,6 +488,7 @@ $(window).resize(function () {
     addCategoryHeights();
     breadcrumbs();
     horisontalScroll();
+    modalPosition();
 });
 
 

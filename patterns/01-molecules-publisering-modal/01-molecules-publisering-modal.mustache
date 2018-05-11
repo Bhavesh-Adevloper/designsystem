@@ -1,7 +1,7 @@
 {{# modal }}
     {{# modalinfo }}<p class="mbn"><code>{{ modalinfo }}</code></p>{{/ modalinfo }}
-    <div class="modal" style="position: inherit; margin-bottom: 1.75rem;">
-        <div class="modal__window" style="position: inherit; top: inherit; left: inherit; transform: none;">
+    <div class="modal hidden {{ styleModifier }}"{{# visModaliliste }} style="display: block; position: inherit; margin-bottom: 1.75rem;"{{/ visModaliliste }}>
+        <div class="modal__window"{{# visModaliliste }} style="position: inherit; top: inherit; left: inherit; transform: none;"{{/ visModaliliste }}>
             <h3 class="modal__window__title">{{ modalTittel }}</h3>
             <div class="modal__window__content">
                 <form>
@@ -130,5 +130,8 @@
                 </form>
             </div>
         </div>
+        <a href="" class="modal__cancel js_closeModal" title="Avbryt">
+          <span class="screen-reader-text">Avbryt og lukk</span>
+        </a>
     </div>
 {{/ modal }}

@@ -6,10 +6,17 @@
             <div class="editor-article-list__menu">
                 <a href="#" class="editor-article-list__menu-button"> Endre <span class="arrow-icon" onclick=""></span> </a>
                 <ul class="editor-article-list__menu-list">
-                    <li class="editor-article-list__menu-list-item "> <a href="#"> Rediger </a></li>
-                    <li class="editor-article-list__menu-list-item editor-article-list__menu-list-item--danger"> <a href="#">Slett peker </a> </li>
+                    <li class="editor-article-list__menu-list-item ">
+                      <a href="#{{ pekerID }}" class="js_openModal">Rediger</a>
+                    </li>
+                    <li class="editor-article-list__menu-list-item editor-article-list__menu-list-item--danger">
+                      <a href="#aapneSlettPeker" class="js_openModal" href="">Slett peker</a>
+                    </li>
                 </ul>
             </div>
+        </div>
+        <div class="{{ pekerID }}">
+          {{> molecules-modal }}
         </div>
     {{/peker}}
     
