@@ -2,12 +2,11 @@
     <fieldset>
         <legend class="screen-reader-text">{{legend}}</legend>
 
-        {{#tekstfelt}}{{> atoms-tekstfelt:mbl }}{{/tekstfelt}}
-        {{#tekstfelt-hjelpetekst}} {{> atoms-hjelpetekst}} {{/tekstfelt-hjelpetekst}}
+        {{# tekstfelt }}
+            {{> atoms-tekstfelt:mbl }}
+        {{/ tekstfelt }}
 
-        {{atoms-etikett}}
         {{> atoms-tekstomrade:mbl }}
-        {{#tekstomrade-hjelpetekst}} {{> atoms-hjelpetekst}} {{/tekstomrade-hjelpetekst}}
 
         <div class="mbl">
             <script src="https://www.google.com/recaptcha/api.js?hl=no" async defer></script>

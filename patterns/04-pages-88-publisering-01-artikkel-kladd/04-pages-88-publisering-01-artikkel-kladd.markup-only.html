@@ -245,18 +245,31 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 </div>
 
                     <div class="mbxxl">
-  <h3 class="sidebar-header mbm sidebar-header--open">
-    <a href="#" title="" class="sidebar-header__toggle">
-      Endre status
-      <span class="arrow-icon"></span>
-    </a>
-  </h3>
-  <button class="button button--danger mbn">Slett artikkel</button>
+    <h3 class="sidebar-header mbm sidebar-header--open">
+        <a href="#" title="" class="sidebar-header__toggle">
+            Status
+            <span class="arrow-icon"></span>
+        </a>
+    </h3>
+        <div class="form-element__helptext mbs">
+    Artikkelen er en kladd
+</div>
+    <button class="button button--danger mbn">Slett artikkel</button>
+</div>
+
+                    <div class="mbxxl">
+    <h3 class="sidebar-header mbm sidebar-header--open">
+        <a href="#" title="" class="sidebar-header__toggle">
+            Dato
+            <span class="arrow-icon"></span>
+        </a>
+    </h3>
 </div>
 
                     <div class="mbxxl">
     <h3 class="sidebar-header sidebar-header--open mbm">
-        <a class="sidebar-header__toggle" href="#"> Plassering i menyen
+        <a class="sidebar-header__toggle" href="#">
+            Flytt
             <span class="arrow-icon"></span>
         </a>
     </h3>
@@ -265,7 +278,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         <div class="move-article form-element" *ngIf="flytteTreNoder && visPlassering">
             <label for="plassering" class="form-element__label form-element__label--dropdown-icon form">
                 <span class="screen-reader-text">Plassering i menyen</span>
-                <div class="form-element__helptext mbs">Flytt artikkelen til nytt menypunkt</div>
+                <div class="form-element__helptext mbs">
+    Flytt artikkelen til nytt menypunkt
+</div>
                 <select id="plassering" name="Etikett" class="form-element__dropdown">
                     <option > Om oss</option>
                     <option > Siste nytt</option>
