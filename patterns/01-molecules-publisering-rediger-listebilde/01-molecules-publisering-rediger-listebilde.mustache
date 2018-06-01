@@ -1,21 +1,15 @@
-{{#imageUploader}}
 <div class="mbxxl">
     
     <h3 class="sidebar-header mbm sidebar-header--open">
       <a href="#" title="" class="sidebar-header__toggle">
-        {{title}}
+        Listebilde
         <span class="arrow-icon"></span>
       </a>
     </h3>
-    {{#helpText}}
-    <div class="helpers_info mbs">
-        {{helpText}}
-    </div>
-    {{/helpText}}
-    <div class="image-upload-link {{styleModifier}}">
+    <div class="image-upload-link">
         {{# startLink }}
             <a href="" title="" class="image-upload-link__start-link">
-                {{startLink}}
+                Valgfritt listebilde<br>Minimum 680 piksler bredde
             </a>
         {{/ startLink }}
         {{# changeLink }}
@@ -32,10 +26,5 @@
             </a>
         {{/ changeLink }}
     </div>
-
-    {{# brukSomListebilde }}
-        {{> atoms-avkryssingsboks }}
-    {{/ brukSomListebilde }}
     
 </div>
-{{/imageUploader}}

@@ -6,22 +6,6 @@
 
     <div class="row">
 
-        {{#notice}}
-            <div class="col_md_12 col_lg_8 clear_left mbxxl">
-                <div class="notice_container {{ styleModifier }}">
-                    <div class="notice_inner">
-                        <div>
-                            <p>Kort og presist tekst om at det eksisterer to løsninger for tiden. Aliquam sed iaculis nibh, laoreet laoreet lorem. Vestibulum massa dui, facilisis at tristique eu, convallis et nisi. In malesuada non ante id mattis.</p>
-                        </div>
-                    </div>
-                    <div class="notice_inner__actions">
-                        <p><a href="#"> Mer informasjon</a></p>
-                        <button class="button"> Til den eldre løsningen</button>
-                    </div>
-                </div>
-            </div>
-        {{/notice}}
-
         {{# sok }}
             <div class="col_md_12 col_lg_6 clear_left {{styleModifier }} mbm">
                  {{> molecules-sokefilter }}
@@ -30,9 +14,33 @@
 
         {{#table}}
         <div class="{{tableModifier}}">
-            {{> atoms-flex-tabell }}
+            {{> atoms-flex-tabell:mbxl }}
+            
+            {{# lastFlere }}
+                {{> molecules-last-inn-flere }}
+            {{/ lastFlere }}
+            
+            {{# gammelLoesningInfo }}
+                <div class="mbxxl mtj">
+                    <div class="notice_container">
+                        <div class="notice_inner">
+                            <div>
+                                <p>Bergen kommune har anskaffet nytt system for saksbehandling og arkiv, som ble satt i drift sommeren 2017.</p>
+                            </div>
+                        </div>
+                        <div class="notice_inner__actions mbm">
+                            <a class="button" href="http://www3.bergen.kommune.no/bksak/default.asp">Gå til gammelt
+								arkiv</a>
+                        </div>
+                        <div class="notice_inner__actions mbm">
+                            <p><a href="{{ link.pages-POU-utvalg }}">Leter du etter et bestemt møte? Det finner du her</a></p>
+                        </div>
+                    </div>
+                </div>
+            {{/ gammelLoesningInfo }}
         </div>
         {{/table}}
+        
     </div>
 
 </main>

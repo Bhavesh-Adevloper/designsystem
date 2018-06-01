@@ -8,11 +8,17 @@
 
         {{# searchFilter }}
             <div class="col_md_12 col_lg_4 mbl">
-                {{> atoms-filterboks:mbl }}
-                {{> molecules-sokefilter-avkrysningsbokser }}
+                {{> atoms-filterboks:mbs }}
+                {{> molecules-sokefilter-avkrysningsbokser:mbl }}
+                
+                {{# spesialLink }}
+                    <a class="read_more_link" href="{{ url }}" title="{{ tittel }}">
+                        {{ tittel }}
+                    </a>
+                {{/ spesialLink }}
             </div>
         {{/ searchFilter }}
-
+        
         {{# table }}
             <div class="col_md_12 col_lg_8 {{tableModifier}}">
                 {{> atoms-flex-tabell }}

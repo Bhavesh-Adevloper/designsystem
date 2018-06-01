@@ -18,11 +18,11 @@
 
             <div class="col_md_12 col_lg_8"><!-- org_main_col -->
 
+                {{> molecules-rediger-sidetittel }}
+                
                 {{# toppbilde }}
                     {{> molecules-rediger-toppbilde }}
                 {{/ toppbilde }}
-
-                {{> molecules-rediger-sidetittel }}
 
                 {{> molecules-rediger-ingress:mbxxl }}
 
@@ -36,8 +36,10 @@
 
             {{# redigeringSidebar }}
                 <div class="col_md_12 col_lg_4">
-
-                    {{> molecules-rediger-bildeopplaster }}
+                    
+                    {{# listebilde }}
+                        {{> molecules-rediger-listebilde }}
+                    {{/ listebilde }}
 
                     {{> molecules-rediger-status-meta }}
 
