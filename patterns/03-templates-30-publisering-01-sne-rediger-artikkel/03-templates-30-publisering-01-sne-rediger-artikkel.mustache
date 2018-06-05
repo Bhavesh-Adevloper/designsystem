@@ -41,11 +41,15 @@
                         {{> molecules-rediger-listebilde }}
                     {{/ listebilde }}
 
-                    {{> molecules-rediger-status }}
-
+                    {{# endrestatus }}
+                        {{> molecules-rediger-status }}
+                    {{/ endrestatus }}
+                    
                     {{> molecules-rediger-dato }}
 
-                    {{> molecules-rediger-flytt }}
+                    {{# flytting }}
+                        {{> molecules-rediger-flytt }}
+                    {{/ flytting }}
 
                 </div>
             {{/ redigeringSidebar }}

@@ -158,24 +158,26 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     <input class="input--title mbxxl" value="Min første testartikkel" aria-labelledby="page_title">
 
                 
-                    <bildevelger>
+                    <div class="mbxxl">
     
-    <div class="mbxxl">
-            <h3 class="helpers_header mbs">Toppbilde</h3>
-            <div class="image-upload-link">
-                <a href="" title="Endre toppbilde" class="image-upload-link__change-link">
-                        <img src="..&#x2F;..&#x2F;images&#x2F;examples&#x2F;fpo_16x9.png" alt="Landscape Image">
-                    <span class="figcaption">
-                        Bildetekst lorem ipsum dolor sit amet <span>BILDE: Fotograf</span>
-                    </span>
-                </a>
-                <a href="" title="Slett toppbilde" class="image-upload-link__delete-link">
-                    Slett toppbilde
-                </a>
-            </div>
+    <h3 class="helpers_header mbs">Toppbilde</h3>
+    <div class="form-element__helptext mbs">
+    Bruk kun hvis bildet er godt og viktig for saken
+</div>
+    
+    <div class="image-upload-link">
+            <a href="" title="Endre toppbilde" class="image-upload-link__change-link">
+                    <img src="..&#x2F;..&#x2F;images&#x2F;examples&#x2F;fpo_16x9.png" alt="Landscape Image">
+                <span class="figcaption">
+                    Bildetekst lorem ipsum dolor sit amet <span>BILDE: Fotograf</span>
+                </span>
+            </a>
+            <a href="" title="Slett toppbilde" class="image-upload-link__delete-link">
+                Slett toppbilde
+            </a>
     </div>
     
-</bildevelger>
+</div>
 
     <h3 class="helpers_header" id="ingress_tittel">Ingress</h3>
     <p class="helpers_info mbs">Maks 200 tegn</p>
@@ -235,7 +237,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 
                 <div class="col_md_12 col_lg_4">
                     
-                        <div class="mbxxl">
+                        <div class="mbxxl js_sidebar-accordion-1">
     
     <h3 class="sidebar-header mbm sidebar-header--open">
       <a href="#" title="" class="sidebar-header__toggle">
@@ -243,18 +245,22 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         <span class="arrow-icon"></span>
       </a>
     </h3>
+    <div class="form-element__helptext mbs">
+    Vises kun i artikkellisten
+</div>
+    
     <div class="image-upload-link">
             <a href="" title="Endre listebilde" class="image-upload-link__change-link">
                     <img src="..&#x2F;..&#x2F;images&#x2F;examples&#x2F;fpo_16x9.png" alt="Landscape Image">
-                <span class="figcaption"></span>
             </a>
-            <a href="" title="" class="image-upload-link__delete-link">
+            <a href="" title="Slett listebilde" class="image-upload-link__delete-link">
+                Slett listebilde
             </a>
     </div>
     
 </div>
 
-                    <div class="mbxxl">
+                        <div class="mbxxl">
     <h3 class="sidebar-header mbm sidebar-header--open">
         <a href="#" title="" class="sidebar-header__toggle">
             Status
@@ -267,7 +273,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         <button class="button mrm mbn">Avpubliser</button>
     <button class="button button--danger mbn">Slett artikkel</button>
 </div>
-
+                    
                     <div class="mbxxl">
     <h3 class="sidebar-header mbm sidebar-header--open">
         <a href="#" title="" class="sidebar-header__toggle">
@@ -275,9 +281,16 @@ https://github.com/pattern-lab/patternlab-php/issues/304
             <span class="arrow-icon"></span>
         </a>
     </h3>
+    <div class="date-picker">
+        Artikkelen er gyldig til:
+        <span class="expiration_date">
+            <label for="expiration_date">Velg gyldig-til-dato</label>
+            <input id="expiration_date" size="9" class="" aria-invalid="false">
+        </span>
+    </div>
 </div>
 
-                    <div class="mbxxl">
+                        <div class="mbxxl">
     <h3 class="sidebar-header sidebar-header--open mbm">
         <a class="sidebar-header__toggle" href="#">
             Flytt

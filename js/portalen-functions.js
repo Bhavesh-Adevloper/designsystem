@@ -122,6 +122,16 @@ function toggleAccordion() {
     }
 }
 
+// ELP sidebar accordion toggle
+function toggleSidebarAccordion() {
+    if ( document.getElementById( "js_sidebar-accordion-1" ) != null ) {
+        $(".js_sidebar-accordion-1 .sidebar-header a").click( function() {
+            $(this).parent(".sidebar-header").toggleClass("sidebar-header--open");
+            return false;
+        });
+    }
+}
+
 // Orgenhet menu toggles
 function orgMenuToggle() {
     
@@ -472,6 +482,7 @@ $(document).ready(function () {
     horisontalScroll();
     filterSearch();
     toggleAccordion();
+    toggleSidebarAccordion();
     openSearchFilter();
     openSearchFilterGroup();
     addClassOnExternalLinks();

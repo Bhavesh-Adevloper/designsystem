@@ -1,28 +1,27 @@
-<bildevelger>
+<div class="mbxxl">
     
-    <div class="mbxxl">
+    <h3 class="helpers_header mbs">Toppbilde</h3>
+    {{> atoms-hjelpetekst:mbs(hjelpetekst: "Bruk kun hvis bildet er godt og viktig for saken") }}
+    
+    <div class="image-upload-link">
         {{# startLink }}
-            <h3 class="helpers_header mbs">Skal siden ha et toppbilde?</h3>
-            <a href="" title="" class="button mbn">
-                Last opp bilde
+            <a href="" title="" class="image-upload-link__start-link">
+                Valgfritt bilde<br>Minimum 1420 piksler bredde
             </a>
         {{/ startLink }}
         {{# changeLink }}
-            <h3 class="helpers_header mbs">Toppbilde</h3>
-            <div class="image-upload-link">
-                <a href="" title="Endre toppbilde" class="image-upload-link__change-link">
-                    {{# imgLandscape }}
-                        <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}">
-                    {{/ imgLandscape }}
-                    <span class="figcaption">
-                        Bildetekst lorem ipsum dolor sit amet <span>BILDE: Fotograf</span>
-                    </span>
-                </a>
-                <a href="" title="Slett toppbilde" class="image-upload-link__delete-link">
-                    Slett toppbilde
-                </a>
-            </div>
+            <a href="" title="Endre toppbilde" class="image-upload-link__change-link">
+                {{# imgLandscape }}
+                    <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}">
+                {{/ imgLandscape }}
+                <span class="figcaption">
+                    Bildetekst lorem ipsum dolor sit amet <span>BILDE: Fotograf</span>
+                </span>
+            </a>
+            <a href="" title="Slett toppbilde" class="image-upload-link__delete-link">
+                Slett toppbilde
+            </a>
         {{/ changeLink }}
     </div>
     
-</bildevelger>
+</div>
