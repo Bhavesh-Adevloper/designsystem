@@ -124,10 +124,17 @@ function toggleAccordion() {
 
 // ELP sidebar accordion toggle
 function toggleSidebarAccordion() {
-    if ( document.getElementById( "js_sidebar-accordion" ) != null ) {
-        $(".sidebar-header a").click( function() {
-            $(this).parent(".sidebar-header").toggleClass("sidebar-header--open");
-            $(this).parent(".sidebar-header").next("div").toggle();
+    if ( $(".js_sidebar-accordion")[0] ) {
+        // Hide accordion-content after load on pages
+        $("#js_sidebar-accordion-container .js_sidebar-accordion").removeClass("sidebar-header--open");
+        $("#js_sidebar-accordion-container .js_sidebar-accordion").next("div").hide();
+        // Open listebilde-accordion
+        $("#js_sidebar-accordion-container .js_listebilde-accordion").addClass("sidebar-header--open");
+        $("#js_sidebar-accordion-container .js_listebilde-accordion").next("div").show();
+        // Click
+        $(".js_sidebar-accordion a").click( function() {
+            $(this).parent(".js_sidebar-accordion").toggleClass("sidebar-header--open");
+            $(this).parent(".js_sidebar-accordion").next("div").toggle();
             return false;
         });
     }
@@ -483,7 +490,6 @@ $(document).ready(function () {
     horisontalScroll();
     filterSearch();
     toggleAccordion();
-    toggleSidebarAccordion();
     openSearchFilter();
     openSearchFilterGroup();
     addClassOnExternalLinks();
@@ -494,6 +500,7 @@ $(document).ready(function () {
 
 $(window).bind("load", function() {
     breadcrumbs();
+    toggleSidebarAccordion();
 });
 
 $(window).resize(function () {
