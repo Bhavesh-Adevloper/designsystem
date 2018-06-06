@@ -1,15 +1,21 @@
 <div class="mbxxl">
-    <h3 class="sidebar-header mbm sidebar-header--open">
+    <h3 class="sidebar-header mbm">
         <a href="#" title="" class="sidebar-header__toggle">
             Dato
             <span class="arrow-icon"></span>
         </a>
     </h3>
-    <div class="date-picker">
-        Artikkelen er gyldig til:
-        <span class="expiration_date">
-            <label for="expiration_date">Velg gyldig-til-dato</label>
-            <input id="expiration_date" size="9" class="" aria-invalid="false">
-        </span>
+    <div style="display: none;">
+            <div class="form-element ">
+        <div class="form-element__helptext mbs">
+    Artikkelen er gyldig til
+</div>
+        <label class="form-element__label screen-reader-text">
+            Velg gyldig-til-dato
+        </label>
+    <input class="form-element__date" type="date" value="2018-10-20" aria-required="true">
+</div>
+
+
     </div>
 </div>

@@ -1,4 +1,4 @@
-<div class="mbxxl js_sidebar-accordion-1">
+<div class="mbxxl">
     
     <h3 class="sidebar-header mbm sidebar-header--open">
       <a href="#" title="" class="sidebar-header__toggle">
@@ -6,24 +6,27 @@
         <span class="arrow-icon"></span>
       </a>
     </h3>
-    {{> atoms-hjelpetekst:mbs(hjelpetekst: "Vises kun i artikkellisten")  }}
     
-    <div class="image-upload-link">
-        {{# startLink }}
-            <a href="" title="" class="image-upload-link__start-link">
-                Valgfritt bilde<br>Minimum 1420 piksler bredde
-            </a>
-        {{/ startLink }}
-        {{# changeLink }}
-            <a href="" title="Endre listebilde" class="image-upload-link__change-link">
-                {{# imgLandscape }}
-                    <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}">
-                {{/ imgLandscape }}
-            </a>
-            <a href="" title="Slett listebilde" class="image-upload-link__delete-link">
-                Slett listebilde
-            </a>
-        {{/ changeLink }}
+    <div style="display: block;">
+        {{> atoms-hjelpetekst:mbs(hjelpetekst: "Vises kun i artikkellisten")  }}
+
+        <div class="image-upload-link">
+            {{# startLink }}
+                <a href="" title="" class="image-upload-link__start-link">
+                    Valgfritt bilde<br>Minimum 1420 piksler bredde
+                </a>
+            {{/ startLink }}
+            {{# changeLink }}
+                <a href="" title="Endre listebilde" class="image-upload-link__change-link">
+                    {{# imgLandscape }}
+                        <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}">
+                    {{/ imgLandscape }}
+                </a>
+                <a href="" title="Slett listebilde" class="image-upload-link__delete-link">
+                    Slett listebilde
+                </a>
+            {{/ changeLink }}
+        </div>
     </div>
     
 </div>

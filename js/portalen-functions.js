@@ -124,9 +124,10 @@ function toggleAccordion() {
 
 // ELP sidebar accordion toggle
 function toggleSidebarAccordion() {
-    if ( document.getElementById( "js_sidebar-accordion-1" ) != null ) {
-        $(".js_sidebar-accordion-1 .sidebar-header a").click( function() {
+    if ( document.getElementById( "js_sidebar-accordion" ) != null ) {
+        $(".sidebar-header a").click( function() {
             $(this).parent(".sidebar-header").toggleClass("sidebar-header--open");
+            $(this).parent(".sidebar-header").next("div").toggle();
             return false;
         });
     }

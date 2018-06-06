@@ -1,15 +1,13 @@
 <div class="mbxxl">
-    <h3 class="sidebar-header mbm sidebar-header--open">
+    <h3 class="sidebar-header mbm">
         <a href="#" title="" class="sidebar-header__toggle">
             Dato
             <span class="arrow-icon"></span>
         </a>
     </h3>
-    <div class="date-picker">
-        Artikkelen er gyldig til:
-        <span class="expiration_date">
-            <label for="expiration_date">Velg gyldig-til-dato</label>
-            <input id="expiration_date" size="9" class="" aria-invalid="false">
-        </span>
+    <div style="display: none;">
+        {{# utlopsdato }}
+            {{> atoms-datofelt }}
+        {{/ utlopsdato }}
     </div>
 </div>

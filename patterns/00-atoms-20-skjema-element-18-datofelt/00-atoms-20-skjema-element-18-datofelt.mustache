@@ -1,0 +1,12 @@
+<div class="form-element {{styleModifier}}">
+    {{# hjelpetekst }}
+        {{> atoms-hjelpetekst:mbs }}
+    {{/ hjelpetekst }}
+    {{# etikett }}
+        <label class="form-element__label{{#skjultEtikett}} screen-reader-text{{/skjultEtikett}}">
+            {{ etikett }}
+        </label>
+    {{/ etikett }}
+    <input class="form-element__date" type="date"{{# datoInput }} value="{{ datoInput }}"{{/ datoInput }}{{# paakrevd }} aria-required="true"{{/ paakrevd }}>
+</div>
+

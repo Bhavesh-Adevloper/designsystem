@@ -35,7 +35,7 @@
             </div>
 
             {{# redigeringSidebar }}
-                <div class="col_md_12 col_lg_4">
+                <div id="js_sidebar-accordion" class="col_md_12 col_lg_4">
                     
                     {{# listebilde }}
                         {{> molecules-rediger-listebilde }}
@@ -45,7 +45,9 @@
                         {{> molecules-rediger-status }}
                     {{/ endrestatus }}
                     
-                    {{> molecules-rediger-dato }}
+                    {{# endredato }}
+                        {{> molecules-rediger-dato }}
+                    {{/ endredato }}
 
                     {{# flytting }}
                         {{> molecules-rediger-flytt }}

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1528193809604,
+  "timestamp": 1528272749692,
   "graph": {
     "options": {
       "directed": true,
@@ -272,6 +272,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/01-molecules-14-sok-og-filtrering-sokefilter/01-molecules-14-sok-og-filtrering-sokefilter.rendered.html",
           "lineagePattern": "molecules-sokefilter"
+        }
+      },
+      {
+        "v": "00-atoms/20-skjema-element/18-datofelt.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-publisering-rediger-dato/01-molecules-publisering-rediger-dato.rendered.html",
+          "lineagePattern": "molecules-rediger-dato"
         }
       },
       {
@@ -2134,6 +2142,11 @@
         "value": {}
       },
       {
+        "v": "00-atoms/20-skjema-element/18-datofelt.mustache",
+        "w": "00-atoms/20-skjema-element/02-hjelpetekst.mustache",
+        "value": {}
+      },
+      {
         "v": "01-molecules/14-sok-og-filtrering/sokefilter-avkrysningsbokser-avansert.mustache",
         "w": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
         "value": {}
@@ -2201,6 +2214,11 @@
       {
         "v": "01-molecules/publisering/modal.mustache",
         "w": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/publisering/rediger-dato.mustache",
+        "w": "00-atoms/20-skjema-element/18-datofelt.mustache",
         "value": {}
       },
       {
