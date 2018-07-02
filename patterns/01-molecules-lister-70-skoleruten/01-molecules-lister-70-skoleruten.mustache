@@ -6,7 +6,13 @@
         {{# ferieListe }}
             <li class="holidays_list_item">
                 <div class="holiday_date">
-                    <time>{{ dato }}</time>
+                    {{# fraDato }}
+                    <time datetime="{{ datetime_fraDato }}">{{ fraDato }}</time>
+                    {{/ fraDato }}
+                    {{# tilDato }}
+                        - 
+                        <time datetime="{{ datetime_tilDato }}">{{ tilDato }}</time>
+                    {{/ tilDato }}
                 </div>
                 <div class="holiday_title_container">
                     <div class="holiday_title">
@@ -15,7 +21,10 @@
                     {{# HarFerieExtraInfo }}
                         <ul class="holiday_additional_info_list">
                         {{# ferieExtraInfo }}
-                            <li>{{ ekstraInfo }}</li>
+                            <li>
+                                {{ ekstraInfo }}
+                                <time datetime="{{ datetime_fraDato }}">{{ fraDato }}</time>{{# tilDato }}-<time datetime="{{ datetime_tilDato }}">{{ tilDato }}</time>{{/ tilDato }}
+                            </li>
                         {{/ ferieExtraInfo }}
                         </ul>
                     {{/ HarFerieExtraInfo }}
