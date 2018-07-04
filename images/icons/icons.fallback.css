@@ -44,6 +44,8 @@
 
 .icon-employee--20 { background-image: url('png/employee--20.png'); background-repeat: no-repeat; }
 
+.icon-en { background-image: url('png/en.png'); background-repeat: no-repeat; }
+
 .icon-english { background-image: url('png/english.png'); background-repeat: no-repeat; }
 
 .icon-event { background-image: url('png/event.png'); background-repeat: no-repeat; }
@@ -72,11 +74,9 @@
 
 .icon-lightbox { background-image: url('png/lightbox.png'); background-repeat: no-repeat; }
 
-.icon-login { background-image: url('png/login.png'); background-repeat: no-repeat; }
-
 .icon-logo { background-image: url('png/logo.png'); background-repeat: no-repeat; }
 
-.icon-logout--white { background-image: url('png/logout--white.png'); background-repeat: no-repeat; }
+.icon-logout { background-image: url('png/logout.png'); background-repeat: no-repeat; }
 
 .icon-map { background-image: url('png/map.png'); background-repeat: no-repeat; }
 
