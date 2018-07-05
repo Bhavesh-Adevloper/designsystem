@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1530707977977,
+  "timestamp": 1530779493143,
   "graph": {
     "options": {
       "directed": true,
@@ -4749,6 +4749,11 @@
       {
         "v": "04-pages/15-minside/15-eiendom.mustache",
         "w": "01-molecules/lister/50-saker-liste.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/15-eiendom.mustache",
+        "w": "01-molecules/lister/26-fil-liste.mustache",
         "value": {}
       },
       {
