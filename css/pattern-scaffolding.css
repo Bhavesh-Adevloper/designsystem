@@ -149,7 +149,7 @@
 
 
 /* Logo */
-.sg-main .sg-pattern-example > a.logo {
+.sg-main .sg-pattern-example > .logo-link {
     float: left;
     height: 6.5rem;
     width: 12.75rem;
@@ -157,7 +157,7 @@
     margin: 0 2rem .5rem 0;
     border-radius: 5px;
 }
-.sg-main .sg-pattern-example > a.logo span {
+.sg-main .sg-pattern-example > .logo-link .icon-logo {
     margin: 1rem 0 0 1rem;
 }
 .sg-main .sg-pattern-example > .share_and_print_logo {

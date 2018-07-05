@@ -15,20 +15,12 @@ https://github.com/pattern-lab/patternlab-php/issues/304
             
             {{> atoms-logo }}
 
-            <a class="js_open_mobile_main_nav nav_toggle_btn" href="#">Meny<span class="icon nav_toggle_icon"></span></a>
+            <a class="js_open_mobile_main_nav nav_toggle_btn" href="#">Meny<span class="icon-nav_toggle"></span></a>
             
-<!--		
-            <div class="login_container">
-                <a href="{{ minside.url }}" title="{{ minside.tittel }}" class="login_link">
-                  <span class="icon login_icon"></span>
-                  <span class="text">{{ minside.tittel }}</span>
-                </a>
-            </div>
--->
-
             <div class="login_container">
                 <a href="{{ minside.url }}" title="Min side - Hvem representerer du?" class="login_link">
-                    <span class="icon login_icon"></span>
+                    <span class="icon-minside grunt-icon grunt-icon--64"></span>
+                    <span class="icon-minside--active grunt-icon grunt-icon--64"></span>
                     <span class="text">{{ minside.tittel }}</span>
                 </a>
                 <span class="seperator"></span>
@@ -42,7 +34,10 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                 <form action="#">
                     <label for="search" class="screen-reader-text">Søk:</label>
                     <input placeholder="Hva leter du etter?" id="search" accesskey="4" class="search_input" type="search">
-                    <button><span class="icon searchglass_icon"><span class="screen-reader-text">Søk</span></span></button>
+                    <button>
+                        <span class="icon-searchglass grunt-icon grunt-icon--32"></span>
+                        <span class="screen-reader-text">Søk</span>
+                    </button>
                 </form>
             </div>
         </div>
