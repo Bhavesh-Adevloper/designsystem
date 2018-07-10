@@ -5,7 +5,9 @@
         </a>
     </h2>
     <div class="linkbox__content">
-        <a href="{{ url }}" title="{{ tittel }}" id="{{ tjenesteIkon }}" class="linkbox__icon service_icon"></a>
+        <a href="{{ url }}" title="{{ tittel }}" class="linkbox__icon-link">
+            <span class="{{ ikonKlasseNavn }} grunt-icon grunt-icon--64"></span>
+        </a>
         <ul class="linkbox__cat_list">
             {{# linkliste }}<li>
                 <a href="{{ url }}" title="{{ tittel }}">

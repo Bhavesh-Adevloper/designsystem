@@ -64,8 +64,6 @@
 
 .icon-idporten { background-image: url('png/idporten.png'); background-repeat: no-repeat; }
 
-.icon-info { background-image: url('png/info.png'); background-repeat: no-repeat; }
-
 .icon-innbyggerservice { background-image: url('png/innbyggerservice.png'); background-repeat: no-repeat; }
 
 .icon-instagram { background-image: url('png/instagram.png'); background-repeat: no-repeat; }
@@ -87,8 +85,6 @@
 .icon-nav_toggle { background-image: url('png/nav_toggle.png'); background-repeat: no-repeat; }
 
 .icon-norsk { background-image: url('png/norsk.png'); background-repeat: no-repeat; }
-
-.icon-notice-large { background-image: url('png/notice-large.png'); background-repeat: no-repeat; }
 
 .icon-notice { background-image: url('png/notice.png'); background-repeat: no-repeat; }
 
@@ -112,15 +108,65 @@
 
 .icon-searchglass { background-image: url('png/searchglass.png'); background-repeat: no-repeat; }
 
+.icon-service-activity { background-image: url('png/service-activity.png'); background-repeat: no-repeat; }
+
+.icon-service-arrow { background-image: url('png/service-arrow.png'); background-repeat: no-repeat; }
+
+.icon-service-building { background-image: url('png/service-building.png'); background-repeat: no-repeat; }
+
+.icon-service-child { background-image: url('png/service-child.png'); background-repeat: no-repeat; }
+
+.icon-service-clock { background-image: url('png/service-clock.png'); background-repeat: no-repeat; }
+
+.icon-service-court { background-image: url('png/service-court.png'); background-repeat: no-repeat; }
+
+.icon-service-education { background-image: url('png/service-education.png'); background-repeat: no-repeat; }
+
+.icon-service-employee { background-image: url('png/service-employee.png'); background-repeat: no-repeat; }
+
+.icon-service-family { background-image: url('png/service-family.png'); background-repeat: no-repeat; }
+
+.icon-service-hands { background-image: url('png/service-hands.png'); background-repeat: no-repeat; }
+
+.icon-service-health { background-image: url('png/service-health.png'); background-repeat: no-repeat; }
+
+.icon-service-hearth { background-image: url('png/service-hearth.png'); background-repeat: no-repeat; }
+
+.icon-service-home { background-image: url('png/service-home.png'); background-repeat: no-repeat; }
+
+.icon-service-industry { background-image: url('png/service-industry.png'); background-repeat: no-repeat; }
+
+.icon-service-nature { background-image: url('png/service-nature.png'); background-repeat: no-repeat; }
+
+.icon-service-plan { background-image: url('png/service-plan.png'); background-repeat: no-repeat; }
+
+.icon-service-school { background-image: url('png/service-school.png'); background-repeat: no-repeat; }
+
+.icon-service-search { background-image: url('png/service-search.png'); background-repeat: no-repeat; }
+
+.icon-service-sections { background-image: url('png/service-sections.png'); background-repeat: no-repeat; }
+
+.icon-service-shopping { background-image: url('png/service-shopping.png'); background-repeat: no-repeat; }
+
+.icon-service-society { background-image: url('png/service-society.png'); background-repeat: no-repeat; }
+
+.icon-service-sport { background-image: url('png/service-sport.png'); background-repeat: no-repeat; }
+
+.icon-service-tax { background-image: url('png/service-tax.png'); background-repeat: no-repeat; }
+
+.icon-service-tool { background-image: url('png/service-tool.png'); background-repeat: no-repeat; }
+
+.icon-service-traffic { background-image: url('png/service-traffic.png'); background-repeat: no-repeat; }
+
+.icon-service-work { background-image: url('png/service-work.png'); background-repeat: no-repeat; }
+
 .icon-slideshow { background-image: url('png/slideshow.png'); background-repeat: no-repeat; }
 
 .icon-twitter { background-image: url('png/twitter.png'); background-repeat: no-repeat; }
 
-.icon-warning-circle { background-image: url('png/warning-circle.png'); background-repeat: no-repeat; }
+.icon-warning--circle { background-image: url('png/warning--circle.png'); background-repeat: no-repeat; }
 
-.icon-warning-large { background-image: url('png/warning-large.png'); background-repeat: no-repeat; }
-
-.icon-warning { background-image: url('png/warning.png'); background-repeat: no-repeat; }
+.icon-warning--triangle { background-image: url('png/warning--triangle.png'); background-repeat: no-repeat; }
 
 .icon-world { background-image: url('png/world.png'); background-repeat: no-repeat; }
 

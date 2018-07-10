@@ -56,7 +56,7 @@ function addClassOnExternalLinks() {
 			if (url.match(externalLink)) {
 				if (! $(this).html().match(/<img/i)) {
     				if(!(
-        				$(this).hasClass('service_icon') // Feilmelding
+        				$(this).hasClass('service_shortcut_icon_link') // Feilmelding
         				|| $(this).hasClass('some_footer_link') // Footer SoMe
         				|| $(this).hasClass('intern_link') // Ansattpålogging
         				|| $(this).hasClass('contact_static_image_link') // GoogleMaps

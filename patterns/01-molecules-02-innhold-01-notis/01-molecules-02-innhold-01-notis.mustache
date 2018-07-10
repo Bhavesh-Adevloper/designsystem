@@ -1,0 +1,21 @@
+{{# notice-box }}
+    <div class="notice {{ styleModifier }}">
+        <div class="notice__content">
+            <span class="{{ ikon }} grunt-icon" data-grunticon-embed></span>
+            {{# tittel }}<h1>{{ tittel }}</h1>{{/ tittel }}
+            {{{ htmlIngress }}}
+        </div>
+    </div>
+{{/ notice-box }}
+
+{{# notice-box--redigering }}
+    <button>Lagre</button>
+    <button>Avbryt</button>
+    <div class="notice {{ styleModifier }}">
+        <div class="notice__content">
+            <span class="{{ ikon }} grunt-icon" data-grunticon-embed></span>
+            <div class="antall-tegn">200</div>
+            <textarea>{{ ingress }}</textarea>
+        </div>
+    </div>
+{{/ notice-box--redigering }}
