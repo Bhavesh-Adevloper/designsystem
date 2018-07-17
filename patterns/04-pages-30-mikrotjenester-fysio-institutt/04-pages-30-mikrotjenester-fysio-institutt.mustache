@@ -2,19 +2,19 @@
 {{> organisms-brodsmuler }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
     
-    {{> molecules-sideoverskrift-h1:mbxl(sidetittel: "{{ sidetittel }}") }}
+    {{> molecules-sideoverskrift-h1:mbl(sidetittel: "{{ sidetittel }}") }}
 
     <div class="row">
         <div class="col_lg_8 col_md_12">
-            {{# lenke }}
+            {{# eksternURL }}
                 {{> molecules-ekstern-url }}
-            {{/lenke}}
+            {{/ eksternURL }}
         </div>
 
         {{#kontakt}}
             <div class="col_lg_8 col_md_12 mbj">
                 {{> molecules-moduloverskrift-h2:mbml }}
-                {{> molecules-modul-liten-kontaktinformasjon }}
+                {{> organisms-kontakt-fysio-institutt }}
             </div>
         {{/kontakt}}
 

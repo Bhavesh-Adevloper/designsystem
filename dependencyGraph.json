@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1531746988172,
+  "timestamp": 1531829510371,
   "graph": {
     "options": {
       "directed": true,
@@ -416,14 +416,6 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/01-molecules-lister-05-link-liste-with-meta/01-molecules-lister-05-link-liste-with-meta.rendered.html",
           "lineagePattern": "molecules-link-liste-with-meta"
-        }
-      },
-      {
-        "v": "01-molecules/02-innhold/20-modul-liten-kontaktinformasjon.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-fysio-institutt/04-pages-30-mikrotjenester-fysio-institutt.rendered.html",
-          "lineagePattern": "pages-fysio-institutt"
         }
       },
       {
@@ -1022,6 +1014,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html",
           "lineagePattern": "templates-tema"
+        }
+      },
+      {
+        "v": "02-organisms/20-kontakt/kontakt-fysio-institutt.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-fysio-institutt/04-pages-30-mikrotjenester-fysio-institutt.rendered.html",
+          "lineagePattern": "pages-fysio-institutt"
         }
       },
       {
@@ -4998,7 +4998,7 @@
       },
       {
         "v": "04-pages/30-mikrotjenester/fysio-institutt.mustache",
-        "w": "01-molecules/02-innhold/20-modul-liten-kontaktinformasjon.mustache",
+        "w": "02-organisms/20-kontakt/kontakt-fysio-institutt.mustache",
         "value": {}
       },
       {
