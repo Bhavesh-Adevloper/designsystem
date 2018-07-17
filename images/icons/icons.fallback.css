@@ -42,7 +42,7 @@
 
 .icon-email { background-image: url('png/email.png'); background-repeat: no-repeat; }
 
-.icon-employee--20 { background-image: url('png/employee--20.png'); background-repeat: no-repeat; }
+.icon-employee { background-image: url('png/employee.png'); background-repeat: no-repeat; }
 
 .icon-en { background-image: url('png/en.png'); background-repeat: no-repeat; }
 
@@ -68,9 +68,9 @@
 
 .icon-instagram { background-image: url('png/instagram.png'); background-repeat: no-repeat; }
 
-.icon-itslearning_logo { background-image: url('png/itslearning_logo.png'); background-repeat: no-repeat; }
-
 .icon-lightbox { background-image: url('png/lightbox.png'); background-repeat: no-repeat; }
+
+.icon-logo-itslearning { background-image: url('png/logo-itslearning.png'); background-repeat: no-repeat; }
 
 .icon-logo { background-image: url('png/logo.png'); background-repeat: no-repeat; }
 
@@ -107,6 +107,8 @@
 .icon-searchglass-18 { background-image: url('png/searchglass-18.png'); background-repeat: no-repeat; }
 
 .icon-searchglass { background-image: url('png/searchglass.png'); background-repeat: no-repeat; }
+
+.icon-send-email { background-image: url('png/send-email.png'); background-repeat: no-repeat; }
 
 .icon-service-activity { background-image: url('png/service-activity.png'); background-repeat: no-repeat; }
 
