@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1531829510371,
+  "timestamp": 1531927010809,
   "graph": {
     "options": {
       "directed": true,
@@ -486,8 +486,8 @@
         "v": "01-molecules/14-sok-og-filtrering/eiendomsskatt-sok.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-10-Innholdssider-eiendomssok/03-templates-10-Innholdssider-eiendomssok.rendered.html",
-          "lineagePattern": "templates-eiendomssok"
+          "lineagePath": "../../patterns/04-pages-01-hva-skjer-40-eiendomsskatt/04-pages-01-hva-skjer-40-eiendomsskatt.rendered.html",
+          "lineagePattern": "pages-eiendomsskatt"
         }
       },
       {
@@ -1293,12 +1293,6 @@
         }
       },
       {
-        "v": "03-templates/10-Innholdssider/eiendomssok.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
         "v": "03-templates/10-Innholdssider/kontakt.mustache",
         "value": {
           "compileState": "clean",
@@ -1550,6 +1544,12 @@
       },
       {
         "v": "04-pages/01-hva-skjer/30-kvalitetsportalen-resultater.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/01-hva-skjer/40-eiendomsskatt.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -3242,36 +3242,6 @@
         "value": {}
       },
       {
-        "v": "03-templates/10-Innholdssider/eiendomssok.mustache",
-        "w": "02-organisms/00-global/_00-header-varianter.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/10-Innholdssider/eiendomssok.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/10-Innholdssider/eiendomssok.mustache",
-        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/10-Innholdssider/eiendomssok.mustache",
-        "w": "01-molecules/14-sok-og-filtrering/eiendomsskatt-sok.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/10-Innholdssider/eiendomssok.mustache",
-        "w": "00-atoms/10-tabeller/09-flex-tabell.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/10-Innholdssider/eiendomssok.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
-        "value": {}
-      },
-      {
         "v": "03-templates/10-Innholdssider/kontakt.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
@@ -4259,6 +4229,36 @@
       {
         "v": "04-pages/01-hva-skjer/30-kvalitetsportalen-resultater.mustache",
         "w": "03-templates/20-Listesider/listeside-med-avansert-filtrering.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/40-eiendomsskatt.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/40-eiendomsskatt.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/40-eiendomsskatt.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/40-eiendomsskatt.mustache",
+        "w": "01-molecules/14-sok-og-filtrering/eiendomsskatt-sok.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/40-eiendomsskatt.mustache",
+        "w": "00-atoms/10-tabeller/09-flex-tabell.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/01-hva-skjer/40-eiendomsskatt.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {
