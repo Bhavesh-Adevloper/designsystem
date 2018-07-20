@@ -10,10 +10,6 @@
 
 .icon-alignright { background-image: url('png/alignright.png'); background-repeat: no-repeat; }
 
-.icon-arrow-down--blue { background-image: url('png/arrow-down--blue.png'); background-repeat: no-repeat; }
-
-.icon-arrow-down--grey { background-image: url('png/arrow-down--grey.png'); background-repeat: no-repeat; }
-
 .icon-arrow-left-bow { background-image: url('png/arrow-left-bow.png'); background-repeat: no-repeat; }
 
 .icon-arrow-ordering { background-image: url('png/arrow-ordering.png'); background-repeat: no-repeat; }
@@ -34,7 +30,7 @@
 
 .icon-clock { background-image: url('png/clock.png'); background-repeat: no-repeat; }
 
-.icon-close-18 { background-image: url('png/close-18.png'); background-repeat: no-repeat; }
+.icon-close--small { background-image: url('png/close--small.png'); background-repeat: no-repeat; }
 
 .icon-close { background-image: url('png/close.png'); background-repeat: no-repeat; }
 
@@ -102,7 +98,7 @@
 
 .icon-rss { background-image: url('png/rss.png'); background-repeat: no-repeat; }
 
-.icon-searchglass-18 { background-image: url('png/searchglass-18.png'); background-repeat: no-repeat; }
+.icon-searchglass--small { background-image: url('png/searchglass--small.png'); background-repeat: no-repeat; }
 
 .icon-searchglass { background-image: url('png/searchglass.png'); background-repeat: no-repeat; }
 

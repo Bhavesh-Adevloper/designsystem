@@ -1,9 +1,16 @@
-<div class="form-element {{styleModifier}}">
-    <label for="{{nedtrekksliste.etikett}}" class="form-element__label form-element__label--dropdown-icon {{#nedtrekksliste.skjultEtikett}}form-element__label--dropdown-icon--without-label {{/nedtrekksliste.skjultEtikett}}">
+{{# nedtrekksliste }}
+    <div class="form-element {{styleModifier}}">
+        <label for="{{nedtrekksliste.etikett}}" class="form-element__label form-element__label--dropdown-icon {{#nedtrekksliste.skjultEtikett}}form-element__label--dropdown-icon--without-label {{/nedtrekksliste.skjultEtikett}}">
             <div class="{{#nedtrekksliste.skjultEtikett}}screen-reader-text {{/nedtrekksliste.skjultEtikett}}">{{nedtrekksliste.etikett}}</div>
-        <select id="{{nedtrekksliste.etikett}}" name="{{nedtrekksliste.etikett}}" class="form-element__dropdown">
-            {{#nedtrekksliste.placeholder}}<option value="{{nedtrekksliste.placeholder}}">{{nedtrekksliste.placeholder}}</option>{{/nedtrekksliste.placeholder}}
-            {{#nedtrekksliste.alternativer}}<option value="{{alternativ}}">{{alternativ}}</option>{{/nedtrekksliste.alternativer}}
-        </select>
-    </label>
-</div>
+            <span class="arrow-icon"></span>
+            <select id="{{nedtrekksliste.etikett}}" name="{{nedtrekksliste.etikett}}" class="form-element__dropdown">
+                {{# nedtrekksliste.placeholder }}
+                    <option value="" hidden>{{ nedtrekksliste.placeholder }}</option>
+                {{/ nedtrekksliste.placeholder }}
+                {{# nedtrekksliste.alternativer }}
+                    <option {{#disabled}}disabled{{/disabled}} value="{{ alternativ }}">{{{ alternativ }}}</option>
+                {{/ nedtrekksliste.alternativer }}
+            </select>
+        </label>
+    </div>
+{{/ nedtrekksliste }}
