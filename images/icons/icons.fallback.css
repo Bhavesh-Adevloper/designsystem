@@ -94,6 +94,8 @@
 
 .icon-press { background-image: url('png/press.png'); background-repeat: no-repeat; }
 
+.icon-preview--silver { background-image: url('png/preview--silver.png'); background-repeat: no-repeat; }
+
 .icon-preview { background-image: url('png/preview.png'); background-repeat: no-repeat; }
 
 .icon-print { background-image: url('png/print.png'); background-repeat: no-repeat; }
