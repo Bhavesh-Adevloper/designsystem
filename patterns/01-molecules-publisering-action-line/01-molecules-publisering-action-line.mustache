@@ -1,12 +1,12 @@
 {{# patterninfo }}<p class="mbn"><code>kladd ikke lagret:</code></p>{{/ patterninfo }}
 {{# kladdIkkeLagret }}
-    <div class="action-line {{ styleModifier }}">
+    <div class="action-line hidden-on-print {{ styleModifier }}">
         <div class="align_left">
             <div class="action-line__status">KLADD</div>
         </div>
         <div class="align_right">
             <span class="action-line__preview-link action-line__preview-link--disabled">
-                <span class="icon preview_icon"></span>
+                <span class="icon-preview grunt-icon grunt-icon--32 grunt-icon--silver" data-grunticon-embed></span>
                 Forhåndsvis
             </span>
             <button class="button button--success" disabled>Lagre kladd</button>
@@ -16,13 +16,13 @@
 {{/ kladdIkkeLagret }}
 {{# patterninfo }}<p class="mbn"><code>kladd lagret:</code></p>{{/ patterninfo }}
 {{# kladdLagret }}
-    <div class="action-line {{ styleModifier }}">
+    <div class="action-line hidden-on-print {{ styleModifier }}">
         <div class="align_left">
             <div class="action-line__status">KLADD</div>
         </div>
         <div class="align_right">
             <a href="{{ url }}" title="Forhåndsvis" class="action-line__preview-link">
-                <span class="icon preview_icon"></span>
+                <span class="icon-preview grunt-icon grunt-icon--32" data-grunticon-embed></span>
                 Forhåndsvis</a>
             <button class="button button--success active">Lagre kladd</button>
             <button class="button">Publiser</button>
@@ -31,13 +31,13 @@
 {{/ kladdLagret }}
 {{# patterninfo }}<p class="mbn"><code>publisert:</code></p>{{/ patterninfo }}
 {{# publisert }}
-    <div class="action-line {{ styleModifier }}">
+    <div class="action-line hidden-on-print {{ styleModifier }}">
         <div class="align_left">
             <div class="action-line__status">PUBLISERT</div>
         </div>
         <div class="align_right">
             <a href="{{ url }}" title="Forhåndsvis" class="action-line__preview-link">
-                <span class="icon preview_icon"></span>
+                <span class="icon-preview grunt-icon grunt-icon--32" data-grunticon-embed></span>
                 Forhåndsvis</a>
             <button class="button button--success active">Oppdater</button>
         </div>
@@ -45,7 +45,7 @@
 {{/ publisert }}
 {{# patterninfo }}<p class="mbn"><code>forhandsvisning:</code></p>{{/ patterninfo }}
 {{# forhandsvisning }}
-    <div class="action-line {{ styleModifier }}">
+    <div class="action-line hidden-on-print {{ styleModifier }}">
         <div class="align_left">
             <div class="action-line__status">FORHÅNDSVISNING</div>
         </div>
@@ -56,7 +56,7 @@
 {{/ forhandsvisning }}
 {{# patterninfo }}<p class="mbn"><code>utgatt:</code></p>{{/ patterninfo }}
 {{# utgatt }}
-    <div class="action-line {{ styleModifier }}">
+    <div class="action-line hidden-on-print {{ styleModifier }}">
         <div class="align_left">
             <div class="action-line__status">UTGÅTT</div>
         </div>
@@ -68,7 +68,7 @@
 {{/ utgatt }}
 {{# patterninfo }}<p class="mbn"><code>escenic-artikkel:</code></p>{{/ patterninfo }}
 {{# escenicArtikkel }}
-    <div class="action-line {{ styleModifier }}">
+    <div class="action-line hidden-on-print {{ styleModifier }}">
         <div class="align_left">
             <div class="action-line__status">ESCENIC ARTIKKEL</div>
         </div>
@@ -80,7 +80,7 @@
 {{/ escenicArtikkel }}
 {{# patterninfo }}<p class="mbn"><code>artikkelliste:</code></p>{{/ patterninfo }}
 {{# artikkelliste }}
-    <div class="action-line {{ styleModifier }}">
+    <div class="action-line hidden-on-print {{ styleModifier }}">
         <div class="align_right">
             <button class="button">Ny peker</button>
             <button class="button">Ny artikkel</button>

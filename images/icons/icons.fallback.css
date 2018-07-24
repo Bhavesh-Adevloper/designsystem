@@ -4,9 +4,11 @@
 
 .icon-7-fjell { background-image: url('png/7-fjell.png'); background-repeat: no-repeat; }
 
+.icon-aligncenter--white { background-image: url('png/aligncenter--white.png'); background-repeat: no-repeat; }
+
 .icon-aligncenter { background-image: url('png/aligncenter.png'); background-repeat: no-repeat; }
 
-.icon-alignleft { background-image: url('png/alignleft.png'); background-repeat: no-repeat; }
+.icon-alignright--white { background-image: url('png/alignright--white.png'); background-repeat: no-repeat; }
 
 .icon-alignright { background-image: url('png/alignright.png'); background-repeat: no-repeat; }
 
@@ -91,6 +93,8 @@
 .icon-phone { background-image: url('png/phone.png'); background-repeat: no-repeat; }
 
 .icon-press { background-image: url('png/press.png'); background-repeat: no-repeat; }
+
+.icon-preview { background-image: url('png/preview.png'); background-repeat: no-repeat; }
 
 .icon-print { background-image: url('png/print.png'); background-repeat: no-repeat; }
 
