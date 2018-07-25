@@ -50,6 +50,14 @@
 
 .icon-external { background-image: url('png/external.png'); background-repeat: no-repeat; }
 
+.icon-face--green { background-image: url('png/face--green.png'); background-repeat: no-repeat; }
+
+.icon-face--orange { background-image: url('png/face--orange.png'); background-repeat: no-repeat; }
+
+.icon-face--red { background-image: url('png/face--red.png'); background-repeat: no-repeat; }
+
+.icon-face--violet { background-image: url('png/face--violet.png'); background-repeat: no-repeat; }
+
 .icon-facebook { background-image: url('png/facebook.png'); background-repeat: no-repeat; }
 
 .icon-greencheck { background-image: url('png/greencheck.png'); background-repeat: no-repeat; }
