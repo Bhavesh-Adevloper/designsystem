@@ -151,7 +151,7 @@ function orgMenuToggle() {
             $(this).parent().addClass("org_menu_expanded");
             return false;
         } else {
-            $(".with_org_sub_menu").addClass("org_sub_menu_collapsed");
+            $(".js_org_sub_menu_toggle").addClass("org_sub_menu_collapsed");
             $(this).parent().addClass("org_menu_collapsed");
             $(this).parent().removeClass("org_menu_expanded");
             return false;
@@ -161,10 +161,10 @@ function orgMenuToggle() {
     
     // Sub menu toggle
     // Collapse everything beside the active element
-    if ( !$('.with_org_sub_menu').hasClass('active') ) {
+    if ( !$('.js_org_sub_menu_toggle').hasClass('active') ) {
         $(this).addClass("org_sub_menu_collapsed");
     }
-    $(".with_org_sub_menu .org_sub_menu_toggle_link").click( function() {
+    $(".js_org_sub_menu_toggle .org_sub_menu_toggle_link").click( function() {
         if ( $(this).parent().hasClass("org_sub_menu_collapsed")) {
             //$(".with_org_sub_menu").addClass("org_sub_menu_collapsed");
             $(this).parent().removeClass("org_sub_menu_collapsed");

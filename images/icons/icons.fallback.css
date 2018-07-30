@@ -38,6 +38,8 @@
 
 .icon-department { background-image: url('png/department.png'); background-repeat: no-repeat; }
 
+.icon-edit--small { background-image: url('png/edit--small.png'); background-repeat: no-repeat; }
+
 .icon-email { background-image: url('png/email.png'); background-repeat: no-repeat; }
 
 .icon-employee { background-image: url('png/employee.png'); background-repeat: no-repeat; }
@@ -171,6 +173,8 @@
 .icon-service-work { background-image: url('png/service-work.png'); background-repeat: no-repeat; }
 
 .icon-slideshow { background-image: url('png/slideshow.png'); background-repeat: no-repeat; }
+
+.icon-trash { background-image: url('png/trash.png'); background-repeat: no-repeat; }
 
 .icon-twitter { background-image: url('png/twitter.png'); background-repeat: no-repeat; }
 
