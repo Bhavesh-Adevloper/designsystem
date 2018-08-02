@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1532949059393,
+  "timestamp": 1533205903341,
   "graph": {
     "options": {
       "directed": true,
@@ -686,6 +686,12 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/02-organisms-40-annet-60-navigasjonssideliste/02-organisms-40-annet-60-navigasjonssideliste.rendered.html",
           "lineagePattern": "organisms-navigasjonssideliste"
+        }
+      },
+      {
+        "v": "01-molecules/navigasjon/org-meny--redigering.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {

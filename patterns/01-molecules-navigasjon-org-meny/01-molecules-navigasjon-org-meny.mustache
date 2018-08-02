@@ -5,36 +5,18 @@
     </a>
     <ul class="org_menu">
         {{# orgMenyListe }}
-            <li class="js_org_sub_menu_toggle org_sub_menu_collapsed{{# harUndermeny }} with_org_sub_menu{{/ harUndermeny }} {{ aktivStil }}  ">
+            {{# harIkkeUndermeny }}
+            <li class="{{ aktivStil }}">
                 <a title="{{ tittel }}" href="{{ url }}" class="org_menu_link">
                     {{ tittel }}
                 </a>
-                {{# redigeringsmodus }}
-                    {{# redigerMenypunktnavn }}
-                    <form novalidate="" class="ng-untouched ng-pristine ng-valid">
-                        <label>Rediger menypunktnavn</label>
-                        <input name="Navn" placeholder="Menypunktnavn" type="text">
-                        <button type="submit">Oppdater</button>
-                    </form>
-                    {{/ redigerMenypunktnavn }}
-                    <a href="" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title">
-                        <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
-                        <span class="screen-reader-text">Rediger menypunktnavn</span>
-                    </a>
-                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
-                        <span class="icon-trash grunt-icon grunt-icon--32"></span>
-                        <span class="screen-reader-text">Slett menypunkt</span>
-                    </a>
-                {{/ redigeringsmodus }}
-                {{# harIkkeUndermeny }}
-                    {{# redigeringsmodus }}
-                        <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link">
-                            <span class="plus-arrow-icon"></span>
-                            <span class="screen-reader-text">Lag ny undermeny</span>
-                        </a>
-                    {{/ redigeringsmodus }}
-                {{/ harIkkeUndermeny }}
-                {{# harUndermeny }}
+            </li>
+            {{/ harIkkeUndermeny }}
+            {{# harUndermeny }}
+            <li class="js_org_sub_menu_toggle with_org_sub_menu {{ aktivStil }}">
+                <a title="{{ tittel }}" href="{{ url }}" class="org_menu_link">
+                    {{ tittel }}
+                </a>
                 <a href="" title="Undermeny" class="org_sub_menu_toggle_link">
                     <span class="arrow-icon"></span>
                     <span class="screen-reader-text">Undermeny</span>
@@ -45,53 +27,11 @@
                         <a title="{{ tittel }}" href="{{ url }}" class="org_sub_menu_link">
                             {{ tittel }}
                         </a>
-                        {{# redigeringsmodus }}
-                            {{# redigerMenypunktnavn }}
-                            <form novalidate="" class="ng-untouched ng-pristine ng-valid">
-                                <label>Rediger menypunktnavn</label>
-                                <input name="Navn" placeholder="Menypunktnavn" type="text">
-                                <button type="submit">Oppdater</button>
-                            </form>
-                            {{/ redigerMenypunktnavn }}
-                            <a href="" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title">
-                                <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
-                                <span class="screen-reader-text">Rediger menypunktnavn</span>
-                            </a>
-                            <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
-                                <span class="icon-trash grunt-icon grunt-icon--32"></span>
-                                <span class="screen-reader-text">Slett menypunkt</span>
-                            </a>
-                        {{/ redigeringsmodus }}
                     </li>
                     {{/ linkliste }}
-                    {{# redigeringsmodus }}
-                        <li>
-                            <a href="" title="Nytt undermenypunkt" class="org_sub_menu_link">
-                                Nytt undermenypunkt
-                            </a>
-                        </li>
-                    {{/ redigeringsmodus }}
                 </ul>
-                {{/ harUndermeny }}
-                {{# harIkkeUndermeny }}
-                    {{# redigeringsmodus }}
-                        <ul>
-                            <li>
-                                <a href="" title="Nytt undermenypunkt" class="org_sub_menu_link">
-                                    Nytt undermenypunkt
-                                </a>
-                            </li>
-                        </ul>
-                    {{/ redigeringsmodus }}
-                {{/ harIkkeUndermeny }}
             </li>
+            {{/ harUndermeny }}
         {{/ orgMenyListe }}
-        {{# redigeringsmodus }}
-            <li>
-                <a href="" title="Nytt undermenypunkt" class="org_menu_link">
-                    Nytt undermenypunkt
-                </a>
-            </li>
-        {{/ redigeringsmodus }}
     </ul>
 </nav>
