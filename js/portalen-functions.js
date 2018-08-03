@@ -145,45 +145,34 @@ function orgMenuToggle() {
     
     // Mobile menu toggle
     $("#js_org_menu_container").addClass("org_menu_collapsed");
-    $('.org_menu_mobile_header').on('click', function(){
-        $(this).parent().toggleClass( 'org_menu_collapsed', 'org_menu_expanded');
-        return false;
-    }); 
-    
-    
-    // Sub menu toggle
-    // Collapse everything beside the active element
-    
-    //$(".js_org_sub_menu_toggle").addClass("org_sub_menu_collapsed");
-    
-    
-    $('.js_org_sub_menu_toggle').not('.org_sub_menu_expanded').addClass("org_sub_menu_collapsed").addClass("TEST");
-    /*
-    console.log('før');
-    if ( !$('.js_org_sub_menu_toggle').hasClass('org_sub_menu_expanded') ) {
-        console.log('ok');
-        $(this).addClass("org_sub_menu_collapsed");
-    }
-    console.log('etter');
-    */
-    $(".with_org_sub_menu .org_sub_menu_toggle_link").click( function() {
-        if ( $(this).parent().hasClass("org_sub_menu_collapsed")) {
-            $(this).parent().removeClass("org_sub_menu_collapsed");
-            $(this).parent().addClass("org_sub_menu_expanded");
+    $(".org_menu_mobile_header").click( function() {
+        if ( $(this).parent().hasClass("org_menu_collapsed")) {
+            $(this).parent().removeClass("org_menu_collapsed");
+            $(this).parent().addClass("org_menu_expanded");
             return false;
         } else {
-            $(this).parent().addClass("org_sub_menu_collapsed");
-            $(this).parent().removeClass("org_sub_menu_expanded");
+            $(".with_org_sub_menu").addClass("org_sub_menu_collapsed");
+            $(this).parent().addClass("org_menu_collapsed");
+            $(this).parent().removeClass("org_menu_expanded");
             return false;
         }
     });
-
-    /*
-    $('.js_org_sub_menu_toggle .org_sub_menu_toggle_link').on('click', function(){
-        $(this).closest('.js_org_sub_menu_toggle').toggleClass( 'org_sub_menu_collapsed', 'org_sub_menu_expanded');
-        return false;
+    
+    
+    // Sub menu toggle
+    // Collapse everything beside the already expanded element // Not needed if we add this per default
+    // $('.js_org_sub_menu_toggle').not('.org_sub_menu_expanded').addClass("org_sub_menu_collapsed");
+    $(".js_org_sub_menu_toggle .org_sub_menu_toggle_link").click( function() {
+        if ( $(this).closest(".js_org_sub_menu_toggle").hasClass("org_sub_menu_collapsed")) {
+            $(this).closest(".js_org_sub_menu_toggle").removeClass("org_sub_menu_collapsed");
+            $(this).closest(".js_org_sub_menu_toggle").addClass("org_sub_menu_expanded");
+            return false;
+        } else {
+            $(this).closest(".js_org_sub_menu_toggle").addClass("org_sub_menu_collapsed");
+            $(this).closest(".js_org_sub_menu_toggle").removeClass("org_sub_menu_expanded");
+            return false;
+        }
     });
-    */
 }
 
 

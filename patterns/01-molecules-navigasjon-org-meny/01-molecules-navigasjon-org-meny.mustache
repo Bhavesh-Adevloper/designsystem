@@ -6,14 +6,14 @@
     <ul class="org_menu">
         {{# orgMenyListe }}
             {{# harIkkeUndermeny }}
-            <li class="{{ aktivStil }}">
+            <li class="{{# isActive }} active{{/ isActive }}">
                 <a title="{{ tittel }}" href="{{ url }}" class="org_menu_link">
                     {{ tittel }}
                 </a>
             </li>
             {{/ harIkkeUndermeny }}
             {{# harUndermeny }}
-            <li class="js_org_sub_menu_toggle with_org_sub_menu {{ aktivStil }}">
+            <li class="js_org_sub_menu_toggle with_org_sub_menu {{collapsedExpanded}}{{# isActive }} active{{/ isActive }}">
                 <a title="{{ tittel }}" href="{{ url }}" class="org_menu_link">
                     {{ tittel }}
                 </a>
@@ -23,7 +23,7 @@
                 </a>
                 <ul>
                     {{# linkliste }}
-                    <li class="{{ aktivStilSub }}">
+                    <li class="{{# isActiveSub }}active{{/ isActiveSub }}">
                         <a title="{{ tittel }}" href="{{ url }}" class="org_sub_menu_link">
                             {{ tittel }}
                         </a>

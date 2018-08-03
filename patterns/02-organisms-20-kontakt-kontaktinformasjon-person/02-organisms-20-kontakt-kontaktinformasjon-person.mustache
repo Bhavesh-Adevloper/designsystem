@@ -10,52 +10,53 @@
 
     <dl class="contact-information-person__info-list">
 
-        <!-- Rolle -->
+        <!-- Tilhørighet -->
+        <!-- Leder -->
         <!-- Postnr -->
         <!-- Poststed -->
-        {{#feltMedEtikett}}
-        <dt class="contact-information-person__label"> {{etikett}}:</dt>
-        <dd class="contact-information-person__content"> {{{innhold}}} </dd>
-        {{/feltMedEtikett}}
+        {{# feltMedEtikett }}
+            <dt class="contact-information-person__label">{{etikett}}:</dt>
+            <dd class="contact-information-person__content">{{{innhold}}}</dd>
+        {{/ feltMedEtikett }}
 
         <!--Telefon-->
-        {{#telefon}}
-        <dt class="contact-information-person__label contact-information-person__label--srt">Telefon:</dt>
-        <dd class="contact-information-person__content contact-information-person__content--with-icon">
-            <a href="tel:{{telefon}}">
-                <span class="icon-phone grunt-icon grunt-icon--32"></span>
-                {{telefon}}
-            </a>
-        </dd>
-        {{/telefon}}
+        {{# telefon }}
+            <dt class="contact-information-person__label contact-information-person__label--srt">Telefon:</dt>
+            <dd class="contact-information-person__content contact-information-person__content--with-icon">
+                <a href="tel:{{telefon}}">
+                    <span class="icon-phone grunt-icon grunt-icon--32"></span>
+                    {{telefon}}
+                </a>
+            </dd>
+        {{/ telefon }}
 
         <!--Mobil-->
-        {{#mobil}}
-        <dt class="contact-information-person__label contact-information-person__label--srt">Mobil:</dt>
-        <dd class="contact-information-person__content contact-information-person__content--with-icon">
-            <a href="tel:{{mobil}}">
-                <span class="icon-cellphone grunt-icon grunt-icon--32"></span>
-                {{mobil}}
-            </a>
-        </dd>
-        {{/mobil}}
+        {{# mobil }}
+            <dt class="contact-information-person__label contact-information-person__label--srt">Mobil:</dt>
+            <dd class="contact-information-person__content contact-information-person__content--with-icon">
+                <a href="tel:{{mobil}}">
+                    <span class="icon-cellphone grunt-icon grunt-icon--32"></span>
+                    {{ mobil }}
+                </a>
+            </dd>
+        {{/ mobil }}
 
         <!--E-post-->
-        {{#epost}}
-        <dt class="contact-information-person__label contact-information-person__label--srt">E-post:</dt>
-        <dd class="contact-information-person__content contact-information-person__content--email contact-information-person__content--with-icon">
-            <a href="mailto: {{epost}}" title="{{epost}}">
-                <span class="icon-email grunt-icon grunt-icon--32"></span>
-                {{epost}}
-            </a>
-        </dd>
-        {{/epost}}
+        {{# epost }}
+            <dt class="contact-information-person__label contact-information-person__label--srt">E-post:</dt>
+            <dd class="contact-information-person__content contact-information-person__content--email contact-information-person__content--with-icon">
+                <a href="mailto: {{epost}}" title="{{epost}}">
+                    <span class="icon-email grunt-icon grunt-icon--32"></span>
+                    {{ epost }}
+                </a>
+            </dd>
+        {{/ epost }}
 
     </dl>
 
-    {{#bilde}}
-    <div class="contact-information-person__image">
-        <img src="{{ img.avatar.src }}" alt="{{ img.avatar.alt }}" class="module_image" />
-    </div>
-    {{/bilde}}
+    {{# bilde }}
+        <div class="contact-information-person__image">
+            <img src="{{ img.avatar.src }}" alt="{{ img.avatar.alt }}" class="module_image" />
+        </div>
+    {{/ bilde }}
 </div>
