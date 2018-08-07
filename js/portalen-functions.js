@@ -151,7 +151,7 @@ function orgMenuToggle() {
             $(this).parent().addClass("org_menu_expanded");
             return false;
         } else {
-            $(".with_org_sub_menu").addClass("org_sub_menu_collapsed");
+            $(".js_org_sub_menu_toggle").addClass("org_sub_menu_collapsed");
             $(this).parent().addClass("org_menu_collapsed");
             $(this).parent().removeClass("org_menu_expanded");
             return false;
@@ -208,6 +208,29 @@ function hvaskjerMenuToggle() {
             $(this).parent().removeClass("expanded");
             return false;
         }
+    });
+}
+
+// Redigeringstoggle i menyen - kun i PL
+function hideAndShowSiblings() {
+    $(".js-hide-and-show").click( function() {
+        $(this).siblings(".js-hide-this").hide();
+        $(this).siblings(".js-show-this").show();
+        $(this).hide();
+        return false;
+    });
+}
+function clearInlineStyle() {
+    $(".js-clear-inline-style").click( function() {
+        $(this).parent().siblings().attr( "style", "" );
+        $(this).parent().attr( "style", "" );
+        return false;
+    });
+}
+function addFocus() {
+    $(".js-add-focus").click( function() {
+        $(this).siblings().find(".form-element__textfield").focus();
+        return false;
     });
 }
 
@@ -481,6 +504,9 @@ $(document).ready(function () {
     orgMenuToggle();
     mobMenuToggle();
     hvaskjerMenuToggle();
+    hideAndShowSiblings();
+    clearInlineStyle();
+    addFocus();
     breadcrumbs();
     $(".js_chat_link").click(function() { return false; });
     selectYear();

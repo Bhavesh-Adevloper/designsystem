@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1533287574201,
+  "timestamp": 1533647924127,
   "graph": {
     "options": {
       "directed": true,
@@ -686,6 +686,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/02-organisms-40-annet-60-navigasjonssideliste/02-organisms-40-annet-60-navigasjonssideliste.rendered.html",
           "lineagePattern": "organisms-navigasjonssideliste"
+        }
+      },
+      {
+        "v": "01-molecules/navigasjon/org-meny--redigering.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-88-publisering-20-sne-artikkelliste/04-pages-88-publisering-20-sne-artikkelliste.rendered.html",
+          "lineagePattern": "pages-sne-artikkelliste"
         }
       },
       {
@@ -5289,7 +5297,7 @@
       },
       {
         "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
-        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "w": "01-molecules/navigasjon/org-meny--redigering.mustache",
         "value": {}
       },
       {
