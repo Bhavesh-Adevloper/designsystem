@@ -158,16 +158,17 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         <span class="arrow-icon"></span>
     </a>
     <ul class="org_menu org_menu--editable">
-            <li class="js_org_sub_menu_toggle with_org_sub_menu org_sub_menu_collapsed">
-                <span class="org_menu--editable__flex-container">
-                    
-                    <!-- Menypunkt -->
-                    <a title="Om oss" href="#" class="org_menu_link js-hide-this">
-                        Om oss
-                    </a>
-                    
+            <li class="with_org_sub_menu">
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Om oss" href="#" class="org_menu_link js-hide-this">
+                            Om oss
+                        </a>
+
                         <!-- Rediger-knapp -->
-                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                             <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Rediger menypunktnavn</span>
                         </a>
@@ -177,78 +178,135 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                 Rediger menypunktnavn
                             </label>
                             <input id="editItem1" type="text" value="Om oss" placeholder="Menypunktnavn" class="form-element__textfield">
-                            <button type="reset" class="button--clean js-clear-inline-style">
-                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                <span class="screen-reader-text">Avbryt</span>
-                            </button>
                             <button type="submit" class="button--success active">
                                 <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                 <span class="screen-reader-text">Oppdater menypunkt</span>
                             </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
                         </form>
                         <!-- Slett-knapp -->
-                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                             <span class="icon-trash grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Slett menypunkt</span>
                         </a>
 
                         <!-- Toggle-knapp -->
-                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link js-hide-this">
+                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link">
                                 <span class="plus-arrow-icon"></span>
                                 <span class="screen-reader-text">Lag ny undermeny</span>
                             </a>
-                    
-                    
-                </span>
-                
-                <!-- Undermeny -->
+
+
+                    </span>
+
+                    <!-- Undermeny -->
                     <ul>
                         <li>
                             <!-- Ny-menypunkt-funksjon undermeny -->
-                            <form class="form-element">
-                                <label for="newItem1" class="form-element__label js-hide-and-show js-add-focus">
-                                    <span class="plus-icon"></span>
+                            <a href="#" title="Legg til nytt undermenypunkt" class="org_sub_menu_link add_item_link js-hide-and-show">
+                                <span class="plus-icon"></span>Nytt menypunkt
+                            </a>
+                            <form class="form-element js-show-this hidden">
+                                <label for="newItem1" class="form-element__label screen-reader-text">
                                     Nytt menypunkt
                                 </label>
-                                <span class="js-show-this hidden">
-                                    <input id="newItem1" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
-                                    <button type="reset" class="button--clean js-clear-inline-style">
-                                        <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Avbryt</span>
-                                    </button>
-                                    <button type="submit" class="button--success active">
-                                        <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Legg til nytt menypunkt</span>
-                                    </button>
-                                </span>
+                                <input id="newItem1" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                                <button type="submit" class="button--success active">
+                                    <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                                </button>
+                                <button type="reset" class="button--clean js-clear-inline-style">
+                                    <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Avbryt</span>
+                                </button>
                             </form>
                         </li>
                     </ul>
-            </li>
-            <li class="js_org_sub_menu_toggle with_org_sub_menu org_sub_menu_collapsed active">
-                <span class="org_menu--editable__flex-container">
-                    
-                    <!-- Menypunkt -->
-                    <a title="Siste nytt" href="&#x2F;patterns&#x2F;04-pages-88-publisering-20-sne-artikkelliste&#x2F;04-pages-88-publisering-20-sne-artikkelliste.rendered.html" class="org_menu_link js-hide-this">
-                        Siste nytt
-                    </a>
-                    
-                    
-                    
                 </span>
-                
-                <!-- Undermeny -->
             </li>
-            <li class="js_org_sub_menu_toggle with_org_sub_menu org_sub_menu_collapsed">
-                <span class="org_menu--editable__flex-container">
-                    
-                    <!-- Menypunkt -->
-                    <a title="Her jobbes det" href="#" class="org_menu_link js-hide-this">
-                        Her jobbes det
-                    </a>
-                    
+            <li class="with_org_sub_menu active">
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Siste nytt" href="&#x2F;patterns&#x2F;04-pages-88-publisering-20-sne-artikkelliste&#x2F;04-pages-88-publisering-20-sne-artikkelliste.rendered.html" class="org_menu_link js-hide-this">
+                            Siste nytt
+                        </a>
+
                         <!-- Rediger-knapp -->
-                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Rediger menypunktnavn</span>
+                        </a>
+                        <!-- Rediger-funksjon -->
+                        <form class="form-element hidden js-show-this">
+                            <label for="editItem2" class="form-element__label screen-reader-text">
+                                Rediger menypunktnavn
+                            </label>
+                            <input id="editItem2" type="text" value="Siste nytt" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Oppdater menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                        <!-- Slett-knapp -->
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Slett menypunkt</span>
+                        </a>
+
+                        <!-- Toggle-knapp -->
+                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link">
+                                <span class="plus-arrow-icon"></span>
+                                <span class="screen-reader-text">Lag ny undermeny</span>
+                            </a>
+
+
+                    </span>
+
+                    <!-- Undermeny -->
+                    <ul>
+                        <li>
+                            <!-- Ny-menypunkt-funksjon undermeny -->
+                            <a href="#" title="Legg til nytt undermenypunkt" class="org_sub_menu_link add_item_link js-hide-and-show">
+                                <span class="plus-icon"></span>Nytt menypunkt
+                            </a>
+                            <form class="form-element js-show-this hidden">
+                                <label for="newItem2" class="form-element__label screen-reader-text">
+                                    Nytt menypunkt
+                                </label>
+                                <input id="newItem2" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                                <button type="submit" class="button--success active">
+                                    <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                                </button>
+                                <button type="reset" class="button--clean js-clear-inline-style">
+                                    <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Avbryt</span>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </span>
+            </li>
+            <li class="with_org_sub_menu">
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Her jobbes det" href="#" class="org_menu_link js-hide-this">
+                            Her jobbes det
+                        </a>
+
+                        <!-- Rediger-knapp -->
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                             <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Rediger menypunktnavn</span>
                         </a>
@@ -258,31 +316,31 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                 Rediger menypunktnavn
                             </label>
                             <input id="editItem3" type="text" value="Her jobbes det" placeholder="Menypunktnavn" class="form-element__textfield">
-                            <button type="reset" class="button--clean js-clear-inline-style">
-                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                <span class="screen-reader-text">Avbryt</span>
-                            </button>
                             <button type="submit" class="button--success active">
                                 <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                 <span class="screen-reader-text">Oppdater menypunkt</span>
                             </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
                         </form>
                         <!-- Slett-knapp -->
-                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                             <span class="icon-trash grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Slett menypunkt</span>
                         </a>
 
                         <!-- Toggle-knapp -->
-                    
-                        <a href="" title="Undermeny" class="org_sub_menu_toggle_link js-hide-this">
-                            <span class="arrow-icon"></span>
-                            <span class="screen-reader-text">Undermeny</span>
-                        </a>
-                    
-                </span>
-                
-                <!-- Undermeny -->
+
+                            <a href="" title="Undermeny" class="org_sub_menu_toggle_link">
+                                <span class="arrow-icon"></span>
+                                <span class="screen-reader-text">Undermeny</span>
+                            </a>
+
+                    </span>
+
+                    <!-- Undermeny -->
                     <ul>
                             <li class="">
                                 <span class="org_menu--editable__flex-container">
@@ -292,7 +350,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                         Oppgradering av renseannlegg
                                     </a>
                                     <!-- Rediger-knapp -->
-                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
@@ -302,17 +360,17 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                             Rediger menypunktnavn
                                         </label>
                                         <input id="editItem3" type="text" value="Oppgradering av renseannlegg" placeholder="Menypunktnavn" class="form-element__textfield">
-                                        <button type="reset" class="button--clean js-clear-inline-style">
-                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                            <span class="screen-reader-text">Avbryt</span>
-                                        </button>
                                         <button type="submit" class="button--success active">
                                             <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                             <span class="screen-reader-text">Oppdater menypunkt</span>
                                         </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
                                     </form>
                                     <!-- Slett-knapp -->
-                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                                         <span class="icon-trash grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
@@ -320,36 +378,38 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                             </li>
                         <li>
                             <!-- Ny-menypunkt-funksjon undermeny -->
-                            <form class="form-element">
-                                <label for="newItem3" class="form-element__label js-hide-and-show js-add-focus">
-                                    <span class="plus-icon"></span>
+                            <a href="#" title="Legg til nytt undermenypunkt" class="org_sub_menu_link add_item_link js-hide-and-show">
+                                <span class="plus-icon"></span>Nytt menypunkt
+                            </a>
+                            <form class="form-element js-show-this hidden">
+                                <label for="newItem3" class="form-element__label screen-reader-text">
                                     Nytt menypunkt
                                 </label>
-                                <span class="js-show-this hidden">
-                                    <input id="newItem3" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
-                                    <button type="reset" class="button--clean js-clear-inline-style">
-                                        <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Avbryt</span>
-                                    </button>
-                                    <button type="submit" class="button--success active">
-                                        <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Legg til nytt menypunkt</span>
-                                    </button>
-                                </span>
+                                <input id="newItem3" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                                <button type="submit" class="button--success active">
+                                    <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                                </button>
+                                <button type="reset" class="button--clean js-clear-inline-style">
+                                    <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Avbryt</span>
+                                </button>
                             </form>
                         </li>
                     </ul>
+                </span>
             </li>
-            <li class="js_org_sub_menu_toggle with_org_sub_menu org_sub_menu_collapsed">
-                <span class="org_menu--editable__flex-container">
-                    
-                    <!-- Menypunkt -->
-                    <a title="For bedrifter" href="#" class="org_menu_link js-hide-this">
-                        For bedrifter
-                    </a>
-                    
+            <li class="with_org_sub_menu">
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="For bedrifter" href="#" class="org_menu_link js-hide-this">
+                            For bedrifter
+                        </a>
+
                         <!-- Rediger-knapp -->
-                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                             <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Rediger menypunktnavn</span>
                         </a>
@@ -359,31 +419,31 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                 Rediger menypunktnavn
                             </label>
                             <input id="editItem4" type="text" value="For bedrifter" placeholder="Menypunktnavn" class="form-element__textfield">
-                            <button type="reset" class="button--clean js-clear-inline-style">
-                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                <span class="screen-reader-text">Avbryt</span>
-                            </button>
                             <button type="submit" class="button--success active">
                                 <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                 <span class="screen-reader-text">Oppdater menypunkt</span>
                             </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
                         </form>
                         <!-- Slett-knapp -->
-                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                             <span class="icon-trash grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Slett menypunkt</span>
                         </a>
 
                         <!-- Toggle-knapp -->
-                    
-                        <a href="" title="Undermeny" class="org_sub_menu_toggle_link js-hide-this">
-                            <span class="arrow-icon"></span>
-                            <span class="screen-reader-text">Undermeny</span>
-                        </a>
-                    
-                </span>
-                
-                <!-- Undermeny -->
+
+                            <a href="" title="Undermeny" class="org_sub_menu_toggle_link">
+                                <span class="arrow-icon"></span>
+                                <span class="screen-reader-text">Undermeny</span>
+                            </a>
+
+                    </span>
+
+                    <!-- Undermeny -->
                     <ul>
                             <li class="">
                                 <span class="org_menu--editable__flex-container">
@@ -393,7 +453,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                         Lover og regler
                                     </a>
                                     <!-- Rediger-knapp -->
-                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
@@ -403,17 +463,17 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                             Rediger menypunktnavn
                                         </label>
                                         <input id="editItem4" type="text" value="Lover og regler" placeholder="Menypunktnavn" class="form-element__textfield">
-                                        <button type="reset" class="button--clean js-clear-inline-style">
-                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                            <span class="screen-reader-text">Avbryt</span>
-                                        </button>
                                         <button type="submit" class="button--success active">
                                             <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                             <span class="screen-reader-text">Oppdater menypunkt</span>
                                         </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
                                     </form>
                                     <!-- Slett-knapp -->
-                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                                         <span class="icon-trash grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
@@ -421,36 +481,38 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                             </li>
                         <li>
                             <!-- Ny-menypunkt-funksjon undermeny -->
-                            <form class="form-element">
-                                <label for="newItem4" class="form-element__label js-hide-and-show js-add-focus">
-                                    <span class="plus-icon"></span>
+                            <a href="#" title="Legg til nytt undermenypunkt" class="org_sub_menu_link add_item_link js-hide-and-show">
+                                <span class="plus-icon"></span>Nytt menypunkt
+                            </a>
+                            <form class="form-element js-show-this hidden">
+                                <label for="newItem4" class="form-element__label screen-reader-text">
                                     Nytt menypunkt
                                 </label>
-                                <span class="js-show-this hidden">
-                                    <input id="newItem4" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
-                                    <button type="reset" class="button--clean js-clear-inline-style">
-                                        <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Avbryt</span>
-                                    </button>
-                                    <button type="submit" class="button--success active">
-                                        <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Legg til nytt menypunkt</span>
-                                    </button>
-                                </span>
+                                <input id="newItem4" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                                <button type="submit" class="button--success active">
+                                    <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                                </button>
+                                <button type="reset" class="button--clean js-clear-inline-style">
+                                    <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Avbryt</span>
+                                </button>
                             </form>
                         </li>
                     </ul>
+                </span>
             </li>
-            <li class="js_org_sub_menu_toggle with_org_sub_menu org_sub_menu_collapsed">
-                <span class="org_menu--editable__flex-container">
-                    
-                    <!-- Menypunkt -->
-                    <a title="Trykksaker" href="#" class="org_menu_link js-hide-this">
-                        Trykksaker
-                    </a>
-                    
+            <li class="with_org_sub_menu">
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Trykksaker" href="#" class="org_menu_link js-hide-this">
+                            Trykksaker
+                        </a>
+
                         <!-- Rediger-knapp -->
-                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                             <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Rediger menypunktnavn</span>
                         </a>
@@ -460,64 +522,66 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                 Rediger menypunktnavn
                             </label>
                             <input id="editItem5" type="text" value="Trykksaker" placeholder="Menypunktnavn" class="form-element__textfield">
-                            <button type="reset" class="button--clean js-clear-inline-style">
-                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                <span class="screen-reader-text">Avbryt</span>
-                            </button>
                             <button type="submit" class="button--success active">
                                 <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                 <span class="screen-reader-text">Oppdater menypunkt</span>
                             </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
                         </form>
                         <!-- Slett-knapp -->
-                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                             <span class="icon-trash grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Slett menypunkt</span>
                         </a>
 
                         <!-- Toggle-knapp -->
-                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link js-hide-this">
+                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link">
                                 <span class="plus-arrow-icon"></span>
                                 <span class="screen-reader-text">Lag ny undermeny</span>
                             </a>
-                    
-                    
-                </span>
-                
-                <!-- Undermeny -->
+
+
+                    </span>
+
+                    <!-- Undermeny -->
                     <ul>
                         <li>
                             <!-- Ny-menypunkt-funksjon undermeny -->
-                            <form class="form-element">
-                                <label for="newItem5" class="form-element__label js-hide-and-show js-add-focus">
-                                    <span class="plus-icon"></span>
+                            <a href="#" title="Legg til nytt undermenypunkt" class="org_sub_menu_link add_item_link js-hide-and-show">
+                                <span class="plus-icon"></span>Nytt menypunkt
+                            </a>
+                            <form class="form-element js-show-this hidden">
+                                <label for="newItem5" class="form-element__label screen-reader-text">
                                     Nytt menypunkt
                                 </label>
-                                <span class="js-show-this hidden">
-                                    <input id="newItem5" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
-                                    <button type="reset" class="button--clean js-clear-inline-style">
-                                        <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Avbryt</span>
-                                    </button>
-                                    <button type="submit" class="button--success active">
-                                        <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Legg til nytt menypunkt</span>
-                                    </button>
-                                </span>
+                                <input id="newItem5" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                                <button type="submit" class="button--success active">
+                                    <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                                </button>
+                                <button type="reset" class="button--clean js-clear-inline-style">
+                                    <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Avbryt</span>
+                                </button>
                             </form>
                         </li>
                     </ul>
+                </span>
             </li>
-            <li class="js_org_sub_menu_toggle with_org_sub_menu org_sub_menu_collapsed">
-                <span class="org_menu--editable__flex-container">
-                    
-                    <!-- Menypunkt -->
-                    <a title="Drikkevann" href="#" class="org_menu_link js-hide-this">
-                        Drikkevann
-                    </a>
-                    
+            <li class="with_org_sub_menu">
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Drikkevann" href="#" class="org_menu_link js-hide-this">
+                            Drikkevann
+                        </a>
+
                         <!-- Rediger-knapp -->
-                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                             <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Rediger menypunktnavn</span>
                         </a>
@@ -527,31 +591,31 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                 Rediger menypunktnavn
                             </label>
                             <input id="editItem6" type="text" value="Drikkevann" placeholder="Menypunktnavn" class="form-element__textfield">
-                            <button type="reset" class="button--clean js-clear-inline-style">
-                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                <span class="screen-reader-text">Avbryt</span>
-                            </button>
                             <button type="submit" class="button--success active">
                                 <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                 <span class="screen-reader-text">Oppdater menypunkt</span>
                             </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
                         </form>
                         <!-- Slett-knapp -->
-                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                             <span class="icon-trash grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Slett menypunkt</span>
                         </a>
 
                         <!-- Toggle-knapp -->
-                    
-                        <a href="" title="Undermeny" class="org_sub_menu_toggle_link js-hide-this">
-                            <span class="arrow-icon"></span>
-                            <span class="screen-reader-text">Undermeny</span>
-                        </a>
-                    
-                </span>
-                
-                <!-- Undermeny -->
+
+                            <a href="" title="Undermeny" class="org_sub_menu_toggle_link">
+                                <span class="arrow-icon"></span>
+                                <span class="screen-reader-text">Undermeny</span>
+                            </a>
+
+                    </span>
+
+                    <!-- Undermeny -->
                     <ul>
                             <li class="">
                                 <span class="org_menu--editable__flex-container">
@@ -561,7 +625,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                         Vannbehandlingsanlegg
                                     </a>
                                     <!-- Rediger-knapp -->
-                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
@@ -571,17 +635,17 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                             Rediger menypunktnavn
                                         </label>
                                         <input id="editItem6" type="text" value="Vannbehandlingsanlegg" placeholder="Menypunktnavn" class="form-element__textfield">
-                                        <button type="reset" class="button--clean js-clear-inline-style">
-                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                            <span class="screen-reader-text">Avbryt</span>
-                                        </button>
                                         <button type="submit" class="button--success active">
                                             <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                             <span class="screen-reader-text">Oppdater menypunkt</span>
                                         </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
                                     </form>
                                     <!-- Slett-knapp -->
-                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                                         <span class="icon-trash grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
@@ -595,7 +659,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                         Behandlingsmetoder
                                     </a>
                                     <!-- Rediger-knapp -->
-                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
@@ -605,17 +669,17 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                             Rediger menypunktnavn
                                         </label>
                                         <input id="editItem6" type="text" value="Behandlingsmetoder" placeholder="Menypunktnavn" class="form-element__textfield">
-                                        <button type="reset" class="button--clean js-clear-inline-style">
-                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                            <span class="screen-reader-text">Avbryt</span>
-                                        </button>
                                         <button type="submit" class="button--success active">
                                             <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                             <span class="screen-reader-text">Oppdater menypunkt</span>
                                         </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
                                     </form>
                                     <!-- Slett-knapp -->
-                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                                         <span class="icon-trash grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
@@ -629,7 +693,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                         Vannkvalitet
                                     </a>
                                     <!-- Rediger-knapp -->
-                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
@@ -639,17 +703,17 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                             Rediger menypunktnavn
                                         </label>
                                         <input id="editItem6" type="text" value="Vannkvalitet" placeholder="Menypunktnavn" class="form-element__textfield">
-                                        <button type="reset" class="button--clean js-clear-inline-style">
-                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                            <span class="screen-reader-text">Avbryt</span>
-                                        </button>
                                         <button type="submit" class="button--success active">
                                             <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                             <span class="screen-reader-text">Oppdater menypunkt</span>
                                         </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
                                     </form>
                                     <!-- Slett-knapp -->
-                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                                         <span class="icon-trash grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
@@ -663,7 +727,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                         Ledningsnett
                                     </a>
                                     <!-- Rediger-knapp -->
-                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
@@ -673,17 +737,17 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                             Rediger menypunktnavn
                                         </label>
                                         <input id="editItem6" type="text" value="Ledningsnett" placeholder="Menypunktnavn" class="form-element__textfield">
-                                        <button type="reset" class="button--clean js-clear-inline-style">
-                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                            <span class="screen-reader-text">Avbryt</span>
-                                        </button>
                                         <button type="submit" class="button--success active">
                                             <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                             <span class="screen-reader-text">Oppdater menypunkt</span>
                                         </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
                                     </form>
                                     <!-- Slett-knapp -->
-                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                                         <span class="icon-trash grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
@@ -691,36 +755,38 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                             </li>
                         <li>
                             <!-- Ny-menypunkt-funksjon undermeny -->
-                            <form class="form-element">
-                                <label for="newItem6" class="form-element__label js-hide-and-show js-add-focus">
-                                    <span class="plus-icon"></span>
+                            <a href="#" title="Legg til nytt undermenypunkt" class="org_sub_menu_link add_item_link js-hide-and-show">
+                                <span class="plus-icon"></span>Nytt menypunkt
+                            </a>
+                            <form class="form-element js-show-this hidden">
+                                <label for="newItem6" class="form-element__label screen-reader-text">
                                     Nytt menypunkt
                                 </label>
-                                <span class="js-show-this hidden">
-                                    <input id="newItem6" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
-                                    <button type="reset" class="button--clean js-clear-inline-style">
-                                        <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Avbryt</span>
-                                    </button>
-                                    <button type="submit" class="button--success active">
-                                        <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Legg til nytt menypunkt</span>
-                                    </button>
-                                </span>
+                                <input id="newItem6" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                                <button type="submit" class="button--success active">
+                                    <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                                </button>
+                                <button type="reset" class="button--clean js-clear-inline-style">
+                                    <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Avbryt</span>
+                                </button>
                             </form>
                         </li>
                     </ul>
+                </span>
             </li>
-            <li class="js_org_sub_menu_toggle with_org_sub_menu org_sub_menu_collapsed">
-                <span class="org_menu--editable__flex-container">
-                    
-                    <!-- Menypunkt -->
-                    <a title="Avløp og miljø" href="#" class="org_menu_link js-hide-this">
-                        Avløp og miljø
-                    </a>
-                    
+            <li class="with_org_sub_menu">
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Avløp og miljø" href="#" class="org_menu_link js-hide-this">
+                            Avløp og miljø
+                        </a>
+
                         <!-- Rediger-knapp -->
-                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                             <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Rediger menypunktnavn</span>
                         </a>
@@ -730,31 +796,31 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                 Rediger menypunktnavn
                             </label>
                             <input id="editItem7" type="text" value="Avløp og miljø" placeholder="Menypunktnavn" class="form-element__textfield">
-                            <button type="reset" class="button--clean js-clear-inline-style">
-                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                <span class="screen-reader-text">Avbryt</span>
-                            </button>
                             <button type="submit" class="button--success active">
                                 <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                 <span class="screen-reader-text">Oppdater menypunkt</span>
                             </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
                         </form>
                         <!-- Slett-knapp -->
-                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                             <span class="icon-trash grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Slett menypunkt</span>
                         </a>
 
                         <!-- Toggle-knapp -->
-                    
-                        <a href="" title="Undermeny" class="org_sub_menu_toggle_link js-hide-this">
-                            <span class="arrow-icon"></span>
-                            <span class="screen-reader-text">Undermeny</span>
-                        </a>
-                    
-                </span>
-                
-                <!-- Undermeny -->
+
+                            <a href="" title="Undermeny" class="org_sub_menu_toggle_link">
+                                <span class="arrow-icon"></span>
+                                <span class="screen-reader-text">Undermeny</span>
+                            </a>
+
+                    </span>
+
+                    <!-- Undermeny -->
                     <ul>
                             <li class="">
                                 <span class="org_menu--editable__flex-container">
@@ -764,7 +830,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                         Avløpsrensing
                                     </a>
                                     <!-- Rediger-knapp -->
-                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
@@ -774,17 +840,17 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                             Rediger menypunktnavn
                                         </label>
                                         <input id="editItem7" type="text" value="Avløpsrensing" placeholder="Menypunktnavn" class="form-element__textfield">
-                                        <button type="reset" class="button--clean js-clear-inline-style">
-                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                            <span class="screen-reader-text">Avbryt</span>
-                                        </button>
                                         <button type="submit" class="button--success active">
                                             <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                             <span class="screen-reader-text">Oppdater menypunkt</span>
                                         </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
                                     </form>
                                     <!-- Slett-knapp -->
-                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                                         <span class="icon-trash grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
@@ -798,7 +864,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                         Ledningsnett
                                     </a>
                                     <!-- Rediger-knapp -->
-                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
@@ -808,17 +874,17 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                             Rediger menypunktnavn
                                         </label>
                                         <input id="editItem7" type="text" value="Ledningsnett" placeholder="Menypunktnavn" class="form-element__textfield">
-                                        <button type="reset" class="button--clean js-clear-inline-style">
-                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                            <span class="screen-reader-text">Avbryt</span>
-                                        </button>
                                         <button type="submit" class="button--success active">
                                             <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                             <span class="screen-reader-text">Oppdater menypunkt</span>
                                         </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
                                     </form>
                                     <!-- Slett-knapp -->
-                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                                         <span class="icon-trash grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
@@ -832,7 +898,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                         Overvann og klima
                                     </a>
                                     <!-- Rediger-knapp -->
-                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
@@ -842,17 +908,17 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                             Rediger menypunktnavn
                                         </label>
                                         <input id="editItem7" type="text" value="Overvann og klima" placeholder="Menypunktnavn" class="form-element__textfield">
-                                        <button type="reset" class="button--clean js-clear-inline-style">
-                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                            <span class="screen-reader-text">Avbryt</span>
-                                        </button>
                                         <button type="submit" class="button--success active">
                                             <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                             <span class="screen-reader-text">Oppdater menypunkt</span>
                                         </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
                                     </form>
                                     <!-- Slett-knapp -->
-                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                                         <span class="icon-trash grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
@@ -866,7 +932,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                         Et menypunkt med et lengre navn med et lengre navn
                                     </a>
                                     <!-- Rediger-knapp -->
-                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
@@ -876,17 +942,17 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                             Rediger menypunktnavn
                                         </label>
                                         <input id="editItem7" type="text" value="Et menypunkt med et lengre navn med et lengre navn" placeholder="Menypunktnavn" class="form-element__textfield">
-                                        <button type="reset" class="button--clean js-clear-inline-style">
-                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                            <span class="screen-reader-text">Avbryt</span>
-                                        </button>
                                         <button type="submit" class="button--success active">
                                             <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                             <span class="screen-reader-text">Oppdater menypunkt</span>
                                         </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
                                     </form>
                                     <!-- Slett-knapp -->
-                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                                         <span class="icon-trash grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
@@ -900,7 +966,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                         Etmenypunktmedetlengrenavnasdfasdfasdf
                                     </a>
                                     <!-- Rediger-knapp -->
-                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
@@ -910,17 +976,17 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                             Rediger menypunktnavn
                                         </label>
                                         <input id="editItem7" type="text" value="Etmenypunktmedetlengrenavnasdfasdfasdf" placeholder="Menypunktnavn" class="form-element__textfield">
-                                        <button type="reset" class="button--clean js-clear-inline-style">
-                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                            <span class="screen-reader-text">Avbryt</span>
-                                        </button>
                                         <button type="submit" class="button--success active">
                                             <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                             <span class="screen-reader-text">Oppdater menypunkt</span>
                                         </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
                                     </form>
                                     <!-- Slett-knapp -->
-                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                                         <span class="icon-trash grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
@@ -928,36 +994,38 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                             </li>
                         <li>
                             <!-- Ny-menypunkt-funksjon undermeny -->
-                            <form class="form-element">
-                                <label for="newItem7" class="form-element__label js-hide-and-show js-add-focus">
-                                    <span class="plus-icon"></span>
+                            <a href="#" title="Legg til nytt undermenypunkt" class="org_sub_menu_link add_item_link js-hide-and-show">
+                                <span class="plus-icon"></span>Nytt menypunkt
+                            </a>
+                            <form class="form-element js-show-this hidden">
+                                <label for="newItem7" class="form-element__label screen-reader-text">
                                     Nytt menypunkt
                                 </label>
-                                <span class="js-show-this hidden">
-                                    <input id="newItem7" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
-                                    <button type="reset" class="button--clean js-clear-inline-style">
-                                        <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Avbryt</span>
-                                    </button>
-                                    <button type="submit" class="button--success active">
-                                        <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Legg til nytt menypunkt</span>
-                                    </button>
-                                </span>
+                                <input id="newItem7" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                                <button type="submit" class="button--success active">
+                                    <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                                </button>
+                                <button type="reset" class="button--clean js-clear-inline-style">
+                                    <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Avbryt</span>
+                                </button>
                             </form>
                         </li>
                     </ul>
+                </span>
             </li>
-            <li class="js_org_sub_menu_toggle with_org_sub_menu org_sub_menu_collapsed">
-                <span class="org_menu--editable__flex-container">
-                    
-                    <!-- Menypunkt -->
-                    <a title="For skoler" href="#" class="org_menu_link js-hide-this">
-                        For skoler
-                    </a>
-                    
+            <li class="with_org_sub_menu">
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="For skoler" href="#" class="org_menu_link js-hide-this">
+                            For skoler
+                        </a>
+
                         <!-- Rediger-knapp -->
-                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                             <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Rediger menypunktnavn</span>
                         </a>
@@ -967,31 +1035,31 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                 Rediger menypunktnavn
                             </label>
                             <input id="editItem8" type="text" value="For skoler" placeholder="Menypunktnavn" class="form-element__textfield">
-                            <button type="reset" class="button--clean js-clear-inline-style">
-                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                <span class="screen-reader-text">Avbryt</span>
-                            </button>
                             <button type="submit" class="button--success active">
                                 <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                 <span class="screen-reader-text">Oppdater menypunkt</span>
                             </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
                         </form>
                         <!-- Slett-knapp -->
-                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                             <span class="icon-trash grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Slett menypunkt</span>
                         </a>
 
                         <!-- Toggle-knapp -->
-                    
-                        <a href="" title="Undermeny" class="org_sub_menu_toggle_link js-hide-this">
-                            <span class="arrow-icon"></span>
-                            <span class="screen-reader-text">Undermeny</span>
-                        </a>
-                    
-                </span>
-                
-                <!-- Undermeny -->
+
+                            <a href="" title="Undermeny" class="org_sub_menu_toggle_link">
+                                <span class="arrow-icon"></span>
+                                <span class="screen-reader-text">Undermeny</span>
+                            </a>
+
+                    </span>
+
+                    <!-- Undermeny -->
                     <ul>
                             <li class="">
                                 <span class="org_menu--editable__flex-container">
@@ -1001,7 +1069,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                         Omvisning
                                     </a>
                                     <!-- Rediger-knapp -->
-                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
@@ -1011,17 +1079,17 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                             Rediger menypunktnavn
                                         </label>
                                         <input id="editItem8" type="text" value="Omvisning" placeholder="Menypunktnavn" class="form-element__textfield">
-                                        <button type="reset" class="button--clean js-clear-inline-style">
-                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                            <span class="screen-reader-text">Avbryt</span>
-                                        </button>
                                         <button type="submit" class="button--success active">
                                             <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                             <span class="screen-reader-text">Oppdater menypunkt</span>
                                         </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
                                     </form>
                                     <!-- Slett-knapp -->
-                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                                         <span class="icon-trash grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
@@ -1035,7 +1103,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                         Vann
                                     </a>
                                     <!-- Rediger-knapp -->
-                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
@@ -1045,17 +1113,17 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                             Rediger menypunktnavn
                                         </label>
                                         <input id="editItem8" type="text" value="Vann" placeholder="Menypunktnavn" class="form-element__textfield">
-                                        <button type="reset" class="button--clean js-clear-inline-style">
-                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                            <span class="screen-reader-text">Avbryt</span>
-                                        </button>
                                         <button type="submit" class="button--success active">
                                             <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                             <span class="screen-reader-text">Oppdater menypunkt</span>
                                         </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
                                     </form>
                                     <!-- Slett-knapp -->
-                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                                         <span class="icon-trash grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
@@ -1069,7 +1137,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                         Avløp
                                     </a>
                                     <!-- Rediger-knapp -->
-                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
@@ -1079,17 +1147,17 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                             Rediger menypunktnavn
                                         </label>
                                         <input id="editItem8" type="text" value="Avløp" placeholder="Menypunktnavn" class="form-element__textfield">
-                                        <button type="reset" class="button--clean js-clear-inline-style">
-                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                            <span class="screen-reader-text">Avbryt</span>
-                                        </button>
                                         <button type="submit" class="button--success active">
                                             <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                             <span class="screen-reader-text">Oppdater menypunkt</span>
                                         </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
                                     </form>
                                     <!-- Slett-knapp -->
-                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                                         <span class="icon-trash grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
@@ -1103,7 +1171,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                         Undervisningsmateriell
                                     </a>
                                     <!-- Rediger-knapp -->
-                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
@@ -1113,17 +1181,17 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                             Rediger menypunktnavn
                                         </label>
                                         <input id="editItem8" type="text" value="Undervisningsmateriell" placeholder="Menypunktnavn" class="form-element__textfield">
-                                        <button type="reset" class="button--clean js-clear-inline-style">
-                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                            <span class="screen-reader-text">Avbryt</span>
-                                        </button>
                                         <button type="submit" class="button--success active">
                                             <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                             <span class="screen-reader-text">Oppdater menypunkt</span>
                                         </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
                                     </form>
                                     <!-- Slett-knapp -->
-                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                                         <span class="icon-trash grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
@@ -1137,7 +1205,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                         Film
                                     </a>
                                     <!-- Rediger-knapp -->
-                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
@@ -1147,17 +1215,17 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                             Rediger menypunktnavn
                                         </label>
                                         <input id="editItem8" type="text" value="Film" placeholder="Menypunktnavn" class="form-element__textfield">
-                                        <button type="reset" class="button--clean js-clear-inline-style">
-                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                            <span class="screen-reader-text">Avbryt</span>
-                                        </button>
                                         <button type="submit" class="button--success active">
                                             <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                             <span class="screen-reader-text">Oppdater menypunkt</span>
                                         </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
                                     </form>
                                     <!-- Slett-knapp -->
-                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                                         <span class="icon-trash grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
@@ -1165,36 +1233,38 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                             </li>
                         <li>
                             <!-- Ny-menypunkt-funksjon undermeny -->
-                            <form class="form-element">
-                                <label for="newItem8" class="form-element__label js-hide-and-show js-add-focus">
-                                    <span class="plus-icon"></span>
+                            <a href="#" title="Legg til nytt undermenypunkt" class="org_sub_menu_link add_item_link js-hide-and-show">
+                                <span class="plus-icon"></span>Nytt menypunkt
+                            </a>
+                            <form class="form-element js-show-this hidden">
+                                <label for="newItem8" class="form-element__label screen-reader-text">
                                     Nytt menypunkt
                                 </label>
-                                <span class="js-show-this hidden">
-                                    <input id="newItem8" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
-                                    <button type="reset" class="button--clean js-clear-inline-style">
-                                        <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Avbryt</span>
-                                    </button>
-                                    <button type="submit" class="button--success active">
-                                        <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Legg til nytt menypunkt</span>
-                                    </button>
-                                </span>
+                                <input id="newItem8" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                                <button type="submit" class="button--success active">
+                                    <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                                </button>
+                                <button type="reset" class="button--clean js-clear-inline-style">
+                                    <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Avbryt</span>
+                                </button>
                             </form>
                         </li>
                     </ul>
+                </span>
             </li>
-            <li class="js_org_sub_menu_toggle with_org_sub_menu org_sub_menu_collapsed">
-                <span class="org_menu--editable__flex-container">
-                    
-                    <!-- Menypunkt -->
-                    <a title="Risikoabonnenter" href="#" class="org_menu_link js-hide-this">
-                        Risikoabonnenter
-                    </a>
-                    
+            <li class="with_org_sub_menu">
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Risikoabonnenter" href="#" class="org_menu_link js-hide-this">
+                            Risikoabonnenter
+                        </a>
+
                         <!-- Rediger-knapp -->
-                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                             <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Rediger menypunktnavn</span>
                         </a>
@@ -1204,64 +1274,66 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                 Rediger menypunktnavn
                             </label>
                             <input id="editItem9" type="text" value="Risikoabonnenter" placeholder="Menypunktnavn" class="form-element__textfield">
-                            <button type="reset" class="button--clean js-clear-inline-style">
-                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                <span class="screen-reader-text">Avbryt</span>
-                            </button>
                             <button type="submit" class="button--success active">
                                 <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                 <span class="screen-reader-text">Oppdater menypunkt</span>
                             </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
                         </form>
                         <!-- Slett-knapp -->
-                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                             <span class="icon-trash grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Slett menypunkt</span>
                         </a>
 
                         <!-- Toggle-knapp -->
-                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link js-hide-this">
+                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link">
                                 <span class="plus-arrow-icon"></span>
                                 <span class="screen-reader-text">Lag ny undermeny</span>
                             </a>
-                    
-                    
-                </span>
-                
-                <!-- Undermeny -->
+
+
+                    </span>
+
+                    <!-- Undermeny -->
                     <ul>
                         <li>
                             <!-- Ny-menypunkt-funksjon undermeny -->
-                            <form class="form-element">
-                                <label for="newItem9" class="form-element__label js-hide-and-show js-add-focus">
-                                    <span class="plus-icon"></span>
+                            <a href="#" title="Legg til nytt undermenypunkt" class="org_sub_menu_link add_item_link js-hide-and-show">
+                                <span class="plus-icon"></span>Nytt menypunkt
+                            </a>
+                            <form class="form-element js-show-this hidden">
+                                <label for="newItem9" class="form-element__label screen-reader-text">
                                     Nytt menypunkt
                                 </label>
-                                <span class="js-show-this hidden">
-                                    <input id="newItem9" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
-                                    <button type="reset" class="button--clean js-clear-inline-style">
-                                        <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Avbryt</span>
-                                    </button>
-                                    <button type="submit" class="button--success active">
-                                        <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Legg til nytt menypunkt</span>
-                                    </button>
-                                </span>
+                                <input id="newItem9" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                                <button type="submit" class="button--success active">
+                                    <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                                </button>
+                                <button type="reset" class="button--clean js-clear-inline-style">
+                                    <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Avbryt</span>
+                                </button>
                             </form>
                         </li>
                     </ul>
+                </span>
             </li>
-            <li class="js_org_sub_menu_toggle with_org_sub_menu org_sub_menu_collapsed">
-                <span class="org_menu--editable__flex-container">
-                    
-                    <!-- Menypunkt -->
-                    <a title="Et menypunkt med et lengre navn" href="&#x2F;patterns&#x2F;04-pages-88-publisering-20-sne-artikkelliste&#x2F;04-pages-88-publisering-20-sne-artikkelliste.rendered.html" class="org_menu_link js-hide-this">
-                        Et menypunkt med et lengre navn
-                    </a>
-                    
+            <li class="with_org_sub_menu">
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Et menypunkt med et lengre navn" href="&#x2F;patterns&#x2F;04-pages-88-publisering-20-sne-artikkelliste&#x2F;04-pages-88-publisering-20-sne-artikkelliste.rendered.html" class="org_menu_link js-hide-this">
+                            Et menypunkt med et lengre navn
+                        </a>
+
                         <!-- Rediger-knapp -->
-                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                             <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Rediger menypunktnavn</span>
                         </a>
@@ -1271,64 +1343,66 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                 Rediger menypunktnavn
                             </label>
                             <input id="editItem10" type="text" value="Et menypunkt med et lengre navn" placeholder="Menypunktnavn" class="form-element__textfield">
-                            <button type="reset" class="button--clean js-clear-inline-style">
-                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                <span class="screen-reader-text">Avbryt</span>
-                            </button>
                             <button type="submit" class="button--success active">
                                 <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                 <span class="screen-reader-text">Oppdater menypunkt</span>
                             </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
                         </form>
                         <!-- Slett-knapp -->
-                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                             <span class="icon-trash grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Slett menypunkt</span>
                         </a>
 
                         <!-- Toggle-knapp -->
-                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link js-hide-this">
+                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link">
                                 <span class="plus-arrow-icon"></span>
                                 <span class="screen-reader-text">Lag ny undermeny</span>
                             </a>
-                    
-                    
-                </span>
-                
-                <!-- Undermeny -->
+
+
+                    </span>
+
+                    <!-- Undermeny -->
                     <ul>
                         <li>
                             <!-- Ny-menypunkt-funksjon undermeny -->
-                            <form class="form-element">
-                                <label for="newItem10" class="form-element__label js-hide-and-show js-add-focus">
-                                    <span class="plus-icon"></span>
+                            <a href="#" title="Legg til nytt undermenypunkt" class="org_sub_menu_link add_item_link js-hide-and-show">
+                                <span class="plus-icon"></span>Nytt menypunkt
+                            </a>
+                            <form class="form-element js-show-this hidden">
+                                <label for="newItem10" class="form-element__label screen-reader-text">
                                     Nytt menypunkt
                                 </label>
-                                <span class="js-show-this hidden">
-                                    <input id="newItem10" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
-                                    <button type="reset" class="button--clean js-clear-inline-style">
-                                        <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Avbryt</span>
-                                    </button>
-                                    <button type="submit" class="button--success active">
-                                        <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Legg til nytt menypunkt</span>
-                                    </button>
-                                </span>
+                                <input id="newItem10" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                                <button type="submit" class="button--success active">
+                                    <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                                </button>
+                                <button type="reset" class="button--clean js-clear-inline-style">
+                                    <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Avbryt</span>
+                                </button>
                             </form>
                         </li>
                     </ul>
+                </span>
             </li>
-            <li class="js_org_sub_menu_toggle with_org_sub_menu org_sub_menu_collapsed">
-                <span class="org_menu--editable__flex-container">
-                    
-                    <!-- Menypunkt -->
-                    <a title="Etmenypunktmedetlengrenavn" href="&#x2F;patterns&#x2F;04-pages-88-publisering-20-sne-artikkelliste&#x2F;04-pages-88-publisering-20-sne-artikkelliste.rendered.html" class="org_menu_link js-hide-this">
-                        Etmenypunktmedetlengrenavn
-                    </a>
-                    
+            <li class="with_org_sub_menu">
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Etmenypunktmedetlengrenavn" href="&#x2F;patterns&#x2F;04-pages-88-publisering-20-sne-artikkelliste&#x2F;04-pages-88-publisering-20-sne-artikkelliste.rendered.html" class="org_menu_link js-hide-this">
+                            Etmenypunktmedetlengrenavn
+                        </a>
+
                         <!-- Rediger-knapp -->
-                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show js-add-focus">
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                             <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Rediger menypunktnavn</span>
                         </a>
@@ -1338,101 +1412,212 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                                 Rediger menypunktnavn
                             </label>
                             <input id="editItem11" type="text" value="Etmenypunktmedetlengrenavn" placeholder="Menypunktnavn" class="form-element__textfield">
-                            <button type="reset" class="button--clean js-clear-inline-style">
-                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                <span class="screen-reader-text">Avbryt</span>
-                            </button>
                             <button type="submit" class="button--success active">
                                 <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
                                 <span class="screen-reader-text">Oppdater menypunkt</span>
                             </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
                         </form>
                         <!-- Slett-knapp -->
-                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem js-hide-this">
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
                             <span class="icon-trash grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Slett menypunkt</span>
                         </a>
 
                         <!-- Toggle-knapp -->
-                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link js-hide-this">
+                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link">
                                 <span class="plus-arrow-icon"></span>
                                 <span class="screen-reader-text">Lag ny undermeny</span>
                             </a>
-                    
-                    
-                </span>
-                
-                <!-- Undermeny -->
+
+
+                    </span>
+
+                    <!-- Undermeny -->
                     <ul>
                         <li>
                             <!-- Ny-menypunkt-funksjon undermeny -->
-                            <form class="form-element">
-                                <label for="newItem11" class="form-element__label js-hide-and-show js-add-focus">
-                                    <span class="plus-icon"></span>
+                            <a href="#" title="Legg til nytt undermenypunkt" class="org_sub_menu_link add_item_link js-hide-and-show">
+                                <span class="plus-icon"></span>Nytt menypunkt
+                            </a>
+                            <form class="form-element js-show-this hidden">
+                                <label for="newItem11" class="form-element__label screen-reader-text">
                                     Nytt menypunkt
                                 </label>
-                                <span class="js-show-this hidden">
-                                    <input id="newItem11" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
-                                    <button type="reset" class="button--clean js-clear-inline-style">
-                                        <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Avbryt</span>
-                                    </button>
-                                    <button type="submit" class="button--success active">
-                                        <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
-                                        <span class="screen-reader-text">Legg til nytt menypunkt</span>
-                                    </button>
-                                </span>
+                                <input id="newItem11" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                                <button type="submit" class="button--success active">
+                                    <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                                </button>
+                                <button type="reset" class="button--clean js-clear-inline-style">
+                                    <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Avbryt</span>
+                                </button>
                             </form>
                         </li>
                     </ul>
-            </li>
-            <li class="js_org_sub_menu_toggle with_org_sub_menu org_sub_menu_collapsed">
-                <span class="org_menu--editable__flex-container">
-                    
-                    <!-- Menypunkt -->
-                    <a title="Tjenester og skjema" href="&#x2F;patterns&#x2F;04-pages-02-orgenhet-14-tjenester-og-skjema&#x2F;04-pages-02-orgenhet-14-tjenester-og-skjema.rendered.html" class="org_menu_link js-hide-this">
-                        Tjenester og skjema
-                    </a>
-                    
-                    
-                    
                 </span>
-                
-                <!-- Undermeny -->
             </li>
-            <li class="js_org_sub_menu_toggle with_org_sub_menu org_sub_menu_collapsed">
-                <span class="org_menu--editable__flex-container">
-                    
-                    <!-- Menypunkt -->
-                    <a title="Kontakt" href="&#x2F;patterns&#x2F;04-pages-02-orgenhet-18-kontakt&#x2F;04-pages-02-orgenhet-18-kontakt.rendered.html" class="org_menu_link js-hide-this">
-                        Kontakt
-                    </a>
-                    
-                    
-                    
+            <li class="with_org_sub_menu">
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Tjenester og skjema" href="&#x2F;patterns&#x2F;04-pages-02-orgenhet-14-tjenester-og-skjema&#x2F;04-pages-02-orgenhet-14-tjenester-og-skjema.rendered.html" class="org_menu_link js-hide-this">
+                            Tjenester og skjema
+                        </a>
+
+                        <!-- Rediger-knapp -->
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Rediger menypunktnavn</span>
+                        </a>
+                        <!-- Rediger-funksjon -->
+                        <form class="form-element hidden js-show-this">
+                            <label for="editItem12" class="form-element__label screen-reader-text">
+                                Rediger menypunktnavn
+                            </label>
+                            <input id="editItem12" type="text" value="Tjenester og skjema" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Oppdater menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                        <!-- Slett-knapp -->
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Slett menypunkt</span>
+                        </a>
+
+                        <!-- Toggle-knapp -->
+                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link">
+                                <span class="plus-arrow-icon"></span>
+                                <span class="screen-reader-text">Lag ny undermeny</span>
+                            </a>
+
+
+                    </span>
+
+                    <!-- Undermeny -->
+                    <ul>
+                        <li>
+                            <!-- Ny-menypunkt-funksjon undermeny -->
+                            <a href="#" title="Legg til nytt undermenypunkt" class="org_sub_menu_link add_item_link js-hide-and-show">
+                                <span class="plus-icon"></span>Nytt menypunkt
+                            </a>
+                            <form class="form-element js-show-this hidden">
+                                <label for="newItem12" class="form-element__label screen-reader-text">
+                                    Nytt menypunkt
+                                </label>
+                                <input id="newItem12" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                                <button type="submit" class="button--success active">
+                                    <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                                </button>
+                                <button type="reset" class="button--clean js-clear-inline-style">
+                                    <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Avbryt</span>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
                 </span>
-                
-                <!-- Undermeny -->
+            </li>
+            <li class="with_org_sub_menu">
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Kontakt" href="&#x2F;patterns&#x2F;04-pages-02-orgenhet-18-kontakt&#x2F;04-pages-02-orgenhet-18-kontakt.rendered.html" class="org_menu_link js-hide-this">
+                            Kontakt
+                        </a>
+
+                        <!-- Rediger-knapp -->
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Rediger menypunktnavn</span>
+                        </a>
+                        <!-- Rediger-funksjon -->
+                        <form class="form-element hidden js-show-this">
+                            <label for="editItem13" class="form-element__label screen-reader-text">
+                                Rediger menypunktnavn
+                            </label>
+                            <input id="editItem13" type="text" value="Kontakt" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Oppdater menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                        <!-- Slett-knapp -->
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Slett menypunkt</span>
+                        </a>
+
+                        <!-- Toggle-knapp -->
+                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link">
+                                <span class="plus-arrow-icon"></span>
+                                <span class="screen-reader-text">Lag ny undermeny</span>
+                            </a>
+
+
+                    </span>
+
+                    <!-- Undermeny -->
+                    <ul>
+                        <li>
+                            <!-- Ny-menypunkt-funksjon undermeny -->
+                            <a href="#" title="Legg til nytt undermenypunkt" class="org_sub_menu_link add_item_link js-hide-and-show">
+                                <span class="plus-icon"></span>Nytt menypunkt
+                            </a>
+                            <form class="form-element js-show-this hidden">
+                                <label for="newItem13" class="form-element__label screen-reader-text">
+                                    Nytt menypunkt
+                                </label>
+                                <input id="newItem13" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                                <button type="submit" class="button--success active">
+                                    <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                                </button>
+                                <button type="reset" class="button--clean js-clear-inline-style">
+                                    <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                    <span class="screen-reader-text">Avbryt</span>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </span>
             </li>
         
         <li>
             <!-- Ny-menypunkt-funksjon hovedmeny -->
-            <form class="form-element">
-                <label for="newMainItem" class="form-element__label js-hide-and-show js-add-focus">
-                    <span class="plus-icon"></span>
+            <a href="#" title="Legg til nytt menypunkt" class="org_menu_link add_item_link js-hide-and-show">
+                <span class="plus-icon"></span>Nytt menypunkt
+            </a>
+            <form class="form-element js-show-this hidden">
+                <label for="newMainItem" class="form-element__label screen-reader-text">
                     Nytt menypunkt
                 </label>
-                <span class="js-show-this hidden">
-                    <input id="newMainItem" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
-                    <button type="reset" class="button--clean js-clear-inline-style">
-                        <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                        <span class="screen-reader-text">Avbryt</span>
-                    </button>
-                    <button type="submit" class="button--success active">
-                        <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
-                        <span class="screen-reader-text">Legg til nytt menypunkt</span>
-                    </button>
-                </span>
+                <input id="newMainItem" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                <button type="submit" class="button--success active">
+                    <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                    <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                </button>
+                <button type="reset" class="button--clean js-clear-inline-style">
+                    <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                    <span class="screen-reader-text">Avbryt</span>
+                </button>
             </form>
         </li>
     </ul>

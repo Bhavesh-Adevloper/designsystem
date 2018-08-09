@@ -216,6 +216,7 @@ function hideAndShowSiblings() {
     $(".js-hide-and-show").click( function() {
         $(this).siblings(".js-hide-this").hide();
         $(this).siblings(".js-show-this").show();
+        $(this).siblings().find(".form-element__textfield").focus();
         $(this).hide();
         return false;
     });
@@ -227,13 +228,6 @@ function clearInlineStyle() {
         return false;
     });
 }
-function addFocus() {
-    $(".js-add-focus").click( function() {
-        $(this).siblings().find(".form-element__textfield").focus();
-        return false;
-    });
-}
-
 
 
 
@@ -506,7 +500,6 @@ $(document).ready(function () {
     hvaskjerMenuToggle();
     hideAndShowSiblings();
     clearInlineStyle();
-    addFocus();
     breadcrumbs();
     $(".js_chat_link").click(function() { return false; });
     selectYear();
