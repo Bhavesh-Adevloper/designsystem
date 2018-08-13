@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1533811643391,
+  "timestamp": 1534164765959,
   "graph": {
     "options": {
       "directed": true,
@@ -686,14 +686,6 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/02-organisms-40-annet-60-navigasjonssideliste/02-organisms-40-annet-60-navigasjonssideliste.rendered.html",
           "lineagePattern": "organisms-navigasjonssideliste"
-        }
-      },
-      {
-        "v": "01-molecules/navigasjon/org-meny--redigering.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-88-publisering-20-sne-artikkelliste/04-pages-88-publisering-20-sne-artikkelliste.rendered.html",
-          "lineagePattern": "pages-sne-artikkelliste"
         }
       },
       {
@@ -1480,8 +1472,8 @@
         "v": "03-templates/30-publisering/01-sne-rediger-artikkel.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-88-publisering-10-artikkel-publisert/04-pages-88-publisering-10-artikkel-publisert.rendered.html",
-          "lineagePattern": "pages-artikkel-publisert"
+          "lineagePath": "../../patterns/04-pages-88-publisering-11-artikkel-utgatt/04-pages-88-publisering-11-artikkel-utgatt.rendered.html",
+          "lineagePattern": "pages-artikkel-utgatt"
         }
       },
       {
@@ -2014,6 +2006,12 @@
       },
       {
         "v": "04-pages/88-publisering/10-artikkel-publisert.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/88-publisering/11-artikkel-utgatt.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -5276,6 +5274,11 @@
         "value": {}
       },
       {
+        "v": "04-pages/88-publisering/11-artikkel-utgatt.mustache",
+        "w": "03-templates/30-publisering/01-sne-rediger-artikkel.mustache",
+        "value": {}
+      },
+      {
         "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
@@ -5297,7 +5300,7 @@
       },
       {
         "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
-        "w": "01-molecules/navigasjon/org-meny--redigering.mustache",
+        "w": "01-molecules/navigasjon/org-meny.mustache",
         "value": {}
       },
       {
