@@ -34,5 +34,28 @@
         </div>
     </div>
     {{/ fakturaer }}
-    
+    {{# fakturaerIkkeTilgjengelig }}
+    <div class="div_table_row">
+        <div class="div_table_cell div_table_row_title">
+            <span class="invoice_link invoice_link--disabled">
+                <span class="file_icon {{ filikon }}">
+                    <span class="screen-reader-text">{{ filtype }}</span>
+                </span>
+                {{ tittel }}
+            </span>
+        </div>
+        <div class="div_table_cell div_table_row_content">
+            <span class="div_table_mobile_header">Fakturanr.</span>
+            {{ nummer }}
+        </div>
+        <div class="div_table_cell div_table_row_content">
+            <span class="div_table_mobile_header">Forfallsdato</span>
+            {{ dato }}
+        </div>
+        <div class="div_table_cell div_table_row_content">
+            <span class="div_table_mobile_header">Beløp</span>
+            {{ belop }}
+        </div>
+    </div>
+    {{/ fakturaerIkkeTilgjengelig }}
 </div>
