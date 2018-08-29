@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1535371273196,
+  "timestamp": 1535528383849,
   "graph": {
     "options": {
       "directed": true,
@@ -4081,6 +4081,11 @@
       {
         "v": "03-templates/30-publisering/01-sne-rediger-artikkel.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/30-publisering/01-sne-rediger-artikkel.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {}
       },
       {
