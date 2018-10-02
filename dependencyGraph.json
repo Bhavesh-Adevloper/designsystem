@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1538477551662,
+  "timestamp": 1538487323287,
   "graph": {
     "options": {
       "directed": true,
@@ -2096,12 +2096,6 @@
       },
       {
         "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/old_sprite-html.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -4498,6 +4492,11 @@
       {
         "v": "04-pages/15-minside/03-mine-data.mustache",
         "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/03-mine-data.mustache",
+        "w": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
         "value": {}
       },
       {
