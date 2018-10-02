@@ -1,0 +1,60 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+
+<main id="innhold" tabindex="-1" class="smMa desktop_centered"> 
+
+    <div class="page_header_container_with_org_menu">
+        {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ innbygger.tittel }}", url: "{{ innbygger.url }}") }}
+    </div>
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+            
+            {{# meny }}
+            {{> molecules-org-meny }}
+            {{/ meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+            
+            <div class="article">
+                
+                <h1 class="article__header">Mine data</h1>
+                
+                <p class="article__excerpt">For å tilby deg best mulige tjenester på Min side, henter vi data om deg fra ulike datakilder og fagsystemer:</p>
+                
+                <div class="article__content">
+                    <h5>Saksbehandlingssystemet</h5>
+
+                    <p>Søknader du sender inn til kommunen registreres i hovedsak i sak-arkivsystemet.<br>
+                    Vanligvis vil saker i saks- arkivsystemet være knyttet til deg via personnummeret ditt. Alt fra byggesaker til søknad om SFO-plass ligger i Bk360.</p>
+
+                    <p><strong>Økonomi-, lønn- og personalsystemet UBW</strong><br>
+                    Hvis du er eller har vært i lønnet arbeid for Bergen kommune vil lønnslippene dine fra og med 2009 vises her på MinSide.</p>
+
+                    <p>Fakturaer for kommunale avgifter (vann og avløp, SFO, eiendomsskatt, kulturskole, med flere) vil listes ut på Min side, så sant du er registrert som betaler.</p>
+
+                    <p>Vi bruker personnummeret ditt for å hente ut riktige data fra UBW.</p>
+
+                    <h5>Norsk eiendomsregister</h5>
+
+                    <p>Informasjon om arealplaner og reguleringsplaner som angår din eiendom baseres på kobling mellom ditt personnummer og informasjon om eiendommer i Norsk Eiendomsregister.</p>
+
+                    <p>Bergen kommune bruker så langt det er mulig sentrale, nasjonale datakilder for å kvalitetssikre dataene dine. Disse inkluderer:</p>
+
+                    <ul>
+                        <li>Folkeregisteret (adresse, familierelasjoner)</li>
+                        <li>Kontakt- og reservasjonsregisteret (telefonnummer og e-postadresse)</li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <p><a href="{{ link.pages-forside }}" title="Trekk tilbake samtykke" class="button button--danger active">Trekk tilbake samtykke for å bruke dine persondata på "Min side"</a></p>
+        
+
+        </div>
+      </div>
+   
+</main>
+{{> organisms-footer }}
