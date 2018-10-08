@@ -151,7 +151,7 @@ function orgMenuToggle() {
             $(this).parent().addClass("org_menu_expanded");
             return false;
         } else {
-            $(".with_org_sub_menu").addClass("org_sub_menu_collapsed");
+            $(".js_org_sub_menu_toggle").addClass("org_sub_menu_collapsed");
             $(this).parent().addClass("org_menu_collapsed");
             $(this).parent().removeClass("org_menu_expanded");
             return false;
@@ -162,14 +162,14 @@ function orgMenuToggle() {
     // Sub menu toggle
     // Collapse everything beside the already expanded element // Not needed if we add this per default
     // $('.js_org_sub_menu_toggle').not('.org_sub_menu_expanded').addClass("org_sub_menu_collapsed");
-    $(".with_org_sub_menu .org_sub_menu_toggle_link").click( function() {
-        if ( $(this).parent().hasClass("org_sub_menu_collapsed")) {
-            $(this).parent().removeClass("org_sub_menu_collapsed");
-            $(this).parent().addClass("org_sub_menu_expanded");
+    $(".js_org_sub_menu_toggle .org_sub_menu_toggle_link").click( function() {
+        if ( $(this).closest(".js_org_sub_menu_toggle").hasClass("org_sub_menu_collapsed")) {
+            $(this).closest(".js_org_sub_menu_toggle").removeClass("org_sub_menu_collapsed");
+            $(this).closest(".js_org_sub_menu_toggle").addClass("org_sub_menu_expanded");
             return false;
         } else {
-            $(this).parent().addClass("org_sub_menu_collapsed");
-            $(this).parent().removeClass("org_sub_menu_expanded");
+            $(this).closest(".js_org_sub_menu_toggle").addClass("org_sub_menu_collapsed");
+            $(this).closest(".js_org_sub_menu_toggle").removeClass("org_sub_menu_expanded");
             return false;
         }
     });
@@ -211,6 +211,23 @@ function hvaskjerMenuToggle() {
     });
 }
 
+// Redigeringstoggle i menyen - kun i PL
+function hideAndShowSiblings() {
+    $(".js-hide-and-show").click( function() {
+        $(this).siblings(".js-hide-this").hide();
+        $(this).siblings(".js-show-this").show();
+        $(this).siblings().find(".form-element__textfield").focus();
+        $(this).hide();
+        return false;
+    });
+}
+function clearInlineStyle() {
+    $(".js-clear-inline-style").click( function() {
+        $(this).parent().siblings().attr( "style", "" );
+        $(this).parent().attr( "style", "" );
+        return false;
+    });
+}
 
 
 
@@ -436,17 +453,17 @@ function closeMoveArticleDropdown(){
     document.getElementById("moveArticleDropdown").classList.remove("move-article__dropdown--open");
 }
 
-//Kun funksjonalitet i PL, Angular ellers
+// Kun funksjonalitet i PL, Angular ellers
 function openModal() {
     $(".js_openModal").click( function() {
       
-      // Get ID / class
+      // Get href to open the right modal
       var href = $(this).attr("href"); // get href anchor
-      var modalID = href.substring(1, href.length); // remove #
-      var modalClass = "." + modalID; // add .
+      var hrefID = href.substring(1, href.length); // remove #
+      var openThisClass = "." + hrefID; // add .
       
       // Remove hidden
-      $(modalClass + " .modal").removeClass("hidden").addClass("openModal"); // remove hidden to show this modal
+      $(openThisClass).removeClass("hidden").addClass("openModal");
       
       // Sett modal position
       modalPosition();
@@ -456,15 +473,19 @@ function openModal() {
 }
 //Kun funksjonalitet i PL, Angular ellers
 function modalPosition() {
+    // Variabler
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     var modalHeight = $(".openModal .modal__window").outerHeight();
+    
     if( windowHeight < modalHeight ) {
-      $(".openModal ").addClass("modal--absolute");
-      $(".openModal  .modal__window").css("top", scroll + 20);
+        // Hvis skjerm er for lite
+        $(".openModal ").addClass("modal--absolute");
+        $(".openModal  .modal__window").css("top", scroll + 20);
     } else {
-      $(".openModal ").removeClass("modal--absolute");
-      $(".openModal  .modal__window").css("top", "");
+        // Hvis skjerm er stor nok
+        $(".openModal ").removeClass("modal--absolute");
+        $(".openModal  .modal__window").css("top", "");
     }
 }
 //Kun funksjonalitet i PL, Angular ellers
@@ -481,6 +502,8 @@ $(document).ready(function () {
     orgMenuToggle();
     mobMenuToggle();
     hvaskjerMenuToggle();
+    hideAndShowSiblings();
+    clearInlineStyle();
     breadcrumbs();
     $(".js_chat_link").click(function() { return false; });
     selectYear();

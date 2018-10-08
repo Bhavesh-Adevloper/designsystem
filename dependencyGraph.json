@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1538487323287,
+  "timestamp": 1539000579169,
   "graph": {
     "options": {
       "directed": true,
@@ -689,6 +689,14 @@
         }
       },
       {
+        "v": "01-molecules/navigasjon/org-meny--redigering.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-88-publisering-20-sne-artikkelliste/04-pages-88-publisering-20-sne-artikkelliste.rendered.html",
+          "lineagePattern": "pages-sne-artikkelliste"
+        }
+      },
+      {
         "v": "01-molecules/navigasjon/org-meny.mustache",
         "value": {
           "compileState": "clean",
@@ -750,8 +758,8 @@
         "v": "01-molecules/publisering/modal.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-publisering-rediger-listeelement/01-molecules-publisering-rediger-listeelement.rendered.html",
-          "lineagePattern": "molecules-rediger-listeelement"
+          "lineagePath": "../../patterns/04-pages-88-publisering-20-sne-artikkelliste/04-pages-88-publisering-20-sne-artikkelliste.rendered.html",
+          "lineagePattern": "pages-sne-artikkelliste"
         }
       },
       {
@@ -1290,6 +1298,12 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-03-skole-og-barnehage-08-arbeidsplaner/04-pages-03-skole-og-barnehage-08-arbeidsplaner.rendered.html",
           "lineagePattern": "pages-arbeidsplaner"
+        }
+      },
+      {
+        "v": "03-templates/10-Innholdssider/artikkel.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -2212,11 +2226,6 @@
       {
         "v": "01-molecules/publisering/rediger-listebilde.mustache",
         "w": "00-atoms/20-skjema-element/02-hjelpetekst.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-molecules/publisering/rediger-listeelement.mustache",
-        "w": "01-molecules/publisering/modal.mustache",
         "value": {}
       },
       {
@@ -3256,6 +3265,41 @@
       },
       {
         "v": "03-templates/10-Innholdssider/arbeidsplaner.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/artikkel.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/artikkel.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/artikkel.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/artikkel.mustache",
+        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/artikkel.mustache",
+        "w": "01-molecules/vis-flere/10-les-mer-modul.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/artikkel.mustache",
+        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/artikkel.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -5351,12 +5395,17 @@
       },
       {
         "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
+        "w": "01-molecules/publisering/modal.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
         "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {}
       },
       {
         "v": "04-pages/88-publisering/20-sne-artikkelliste.mustache",
-        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "w": "01-molecules/navigasjon/org-meny--redigering.mustache",
         "value": {}
       },
       {

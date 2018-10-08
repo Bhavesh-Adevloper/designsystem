@@ -1,0 +1,61 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    <div class="page_header_container_with_org_menu">
+        {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ organisasjonsenhet.tittel }}", url: "{{ organisasjonsenhet.url }}") }}
+    </div>
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+
+            {{> molecules-org-meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+
+            <div class="rssicon_floatRight">
+                <a href="#" type="application/rss+xml" rel="alternate" title="Abonner med RSS">
+                    RSS - abonner
+                </a>
+            </div>
+            
+            <div id="newsDetail">
+                <div class="module normal_ep_pf">
+                    <h1 class="article_header">06.09.2017 Holalien vannsperring</h1>
+                    <p class="ingress">Det vil bli foretatt en vannavstenging i området Holalien i morgen onsdag 06.09 fra kl. 10.00. Arbeidet forventes ferdig ca. kl. 13.00.</p>
+                    <div class="article_body_content">
+                        <p>Har du ikke fått varsel ? Gå til vår nettside under VARSLING VED VANNAVSTENGING for info.<br>Vannet kan være misfarget brunt/gult når det kommer tilbake. Skyll da godt ut på egen kaldtvannskran, fortrinnsvis på laveste punktet i huset. Rengjør siler om nødvendig.<br></p>
+                    </div>
+                    <div class="article_footer_print_link_container">
+                        <a href="javascript:window.print()" title="Skriv ut">
+                            <span class="icon-print grunt-icon grunt-icon--32"></span>
+                            <span class="print_link_txt">Skriv ut</span>
+                        </a>
+                    </div>
+                    <div class="articleinfo">
+                        <div class="date">
+                            <span>
+                                <!-- Sjekk om oppdatert dato er stoerre en publisert dato-->
+                                Publisert:&nbsp;05.09.2017
+                                <span class="separator">|</span>
+                                Oppdatert:&nbsp;05.09.2017
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TEMPLATE:   archiveLink_jsp -->
+            {{> molecules-les-mer-modul:toarchive|read_more_link_container--larger-font(lesMerTekst: "Arkiv", url: "{{ link.pages-arkivliste }}", antall: false) }}
+
+            <div class="row_no_clearfix equal_height_container mbxl">
+                <div class="col_lg_6 col_md_6 equal_height_item">
+                    {{> molecules-tout:etjeneste }}
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</main>
+{{> organisms-footer }}

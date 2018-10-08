@@ -6,6 +6,10 @@
         {{> molecules-action-line }}
     {{/ actionLine }}
     
+    {{# visModalPaSiden }}
+        {{> molecules-modal }}
+    {{/ visModalPaSiden }}
+    
     <div class="page_header_container_with_org_menu">
         {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ organisasjonsenhet.tittel }}", url: "{{ organisasjonsenhet.url }}") }}
     </div>
@@ -14,7 +18,7 @@
 
         {{# meny }}
             <div class="col_md_12 col_lg_4">
-                {{> molecules-org-meny }}
+                {{> molecules-org-meny--redigering }}
             </div>
         {{/ meny }}
 
