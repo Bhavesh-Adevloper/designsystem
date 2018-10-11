@@ -122,6 +122,16 @@ function toggleAccordion() {
     }
 }
 
+// Toggle
+function toggle() {
+    if (document.getElementsByClassName(".js_toggle")) {
+        $(".js_toggle").click( function() {
+            $(".js_toggle-hidden").toggleClass("hidden");
+            return false;
+        });
+    }
+}
+
 // ELP sidebar accordion toggle
 function toggleSidebarAccordion() {
     if ( $(".js_sidebar-accordion")[0] ) {
@@ -510,6 +520,7 @@ $(document).ready(function () {
     horisontalScroll();
     filterSearch();
     toggleAccordion();
+    toggle();
     openSearchFilter();
     openSearchFilterGroup();
     addClassOnExternalLinks();
