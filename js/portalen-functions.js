@@ -122,6 +122,7 @@ function toggleAccordion() {
     }
 }
 
+// Patternlab only
 // Toggle
 function toggle() {
     if (document.getElementsByClassName(".js_toggle")) {
