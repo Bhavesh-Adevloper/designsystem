@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1540203675386,
+  "timestamp": 1540214191177,
   "graph": {
     "options": {
       "directed": true,
@@ -726,6 +726,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-10-Innholdssider-tjenestebeskrivelse/03-templates-10-Innholdssider-tjenestebeskrivelse.rendered.html",
           "lineagePattern": "templates-tjenestebeskrivelse"
+        }
+      },
+      {
+        "v": "01-molecules/publisering/00-publiseringstopp.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-00-global-_06-header-6/02-organisms-00-global-_06-header-6.rendered.html",
+          "lineagePattern": "organisms-header-6"
         }
       },
       {
@@ -2240,6 +2248,11 @@
       },
       {
         "v": "02-organisms/00-global/00-header.mustache",
+        "w": "01-molecules/publisering/00-publiseringstopp.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/00-global/00-header.mustache",
         "w": "00-atoms/00-basics/01-logo.mustache",
         "value": {}
       },
@@ -2250,7 +2263,17 @@
       },
       {
         "v": "02-organisms/00-global/_01-header-1.mustache",
+        "w": "01-molecules/publisering/00-publiseringstopp.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/00-global/_01-header-1.mustache",
         "w": "00-atoms/00-basics/01-logo.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/00-global/_02-header-2.mustache",
+        "w": "01-molecules/publisering/00-publiseringstopp.mustache",
         "value": {}
       },
       {
@@ -2260,7 +2283,17 @@
       },
       {
         "v": "02-organisms/00-global/_03-header-3.mustache",
+        "w": "01-molecules/publisering/00-publiseringstopp.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/00-global/_03-header-3.mustache",
         "w": "00-atoms/00-basics/01-logo.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/00-global/_04-header-4.mustache",
+        "w": "01-molecules/publisering/00-publiseringstopp.mustache",
         "value": {}
       },
       {
@@ -2270,7 +2303,17 @@
       },
       {
         "v": "02-organisms/00-global/_05-header-5.mustache",
+        "w": "01-molecules/publisering/00-publiseringstopp.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/00-global/_05-header-5.mustache",
         "w": "00-atoms/00-basics/01-logo.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/00-global/_06-header-6.mustache",
+        "w": "01-molecules/publisering/00-publiseringstopp.mustache",
         "value": {}
       },
       {
