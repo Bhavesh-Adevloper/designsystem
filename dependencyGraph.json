@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1540300901528,
+  "timestamp": 1540455812965,
   "graph": {
     "options": {
       "directed": true,
@@ -97,7 +97,9 @@
       {
         "v": "00-atoms/07-tekst/05-fil-lenke.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-10-Innholdssider-styringsdokument/03-templates-10-Innholdssider-styringsdokument.rendered.html",
+          "lineagePattern": "templates-styringsdokument"
         }
       },
       {
@@ -1347,6 +1349,14 @@
         }
       },
       {
+        "v": "03-templates/10-Innholdssider/styringsdokument.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-99-diverse-50-styringsdokument/04-pages-99-diverse-50-styringsdokument.rendered.html",
+          "lineagePattern": "pages-styringsdokument"
+        }
+      },
+      {
         "v": "03-templates/10-Innholdssider/tjenestebeskrivelse.mustache",
         "value": {
           "compileState": "clean",
@@ -2106,6 +2116,12 @@
       },
       {
         "v": "04-pages/99-diverse/35-sidekart.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/99-diverse/50-styringsdokument.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -3478,6 +3494,31 @@
       },
       {
         "v": "03-templates/10-Innholdssider/skolerute.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/styringsdokument.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/styringsdokument.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/styringsdokument.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/styringsdokument.mustache",
+        "w": "00-atoms/07-tekst/05-fil-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/styringsdokument.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -5579,6 +5620,11 @@
       {
         "v": "04-pages/99-diverse/35-sidekart.mustache",
         "w": "03-templates/20-Listesider/sidekart.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/50-styringsdokument.mustache",
+        "w": "03-templates/10-Innholdssider/styringsdokument.mustache",
         "value": {}
       },
       {
