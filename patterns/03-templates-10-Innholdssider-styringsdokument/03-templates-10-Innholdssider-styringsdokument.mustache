@@ -18,7 +18,8 @@
         </div>
         <div class="col_md_12 col_lg_4">
             
-            <div class="doc_info new hidden">
+            {{# styringsdokument-meta }}
+            <div class="doc_info new">
                 <div class="doc_status">nytt</div>
                 <div class="doc_id">BKDOK-2018-00824</div>
                 <dl>
@@ -56,6 +57,7 @@
                     </dd>
                 </dl>
             </div>
+            {{/ styringsdokument-meta }}
             
         </div>
     
@@ -64,6 +66,7 @@
             
     </div>
     
+    {{# styringsdokument-footer }}
     <div class="page_footer hidden">
         <div class="page_footer_line"></div>
         <div class="row">
@@ -79,6 +82,7 @@
             </div>
         </div>
     </div>
+    {{/ styringsdokument-footer }}
 
 
 </main>
