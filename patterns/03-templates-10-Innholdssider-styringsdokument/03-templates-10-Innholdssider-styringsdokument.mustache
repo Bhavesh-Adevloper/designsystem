@@ -3,87 +3,14 @@
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
     
     {{> molecules-sideoverskrift-h1(sidetittel: "{{ sidetittel }}") }}
-    
-    <div class="row">
-        <div class="col_md_12 col_lg_8">
-            
-            {{# ingress }}
-            <div class="content_max_width">
-                <p>{{ ingress }}</p>
-            </div>
-            {{/ ingress }}
-            
-            {{> atoms-fil-lenke }}
-            
-        </div>
-        <div class="col_md_12 col_lg_4">
-            
-            {{# styringsdokument-meta }}
-            <div class="doc_info new">
-                <div class="doc_status">nytt</div>
-                <div class="doc_id">BKDOK-2018-00824</div>
-                <dl>
-                    <dt>Type:</dt>
-                    <dd>Prosedyre</dd>
-                    <dt class="info_list_header">Gjelder for:</dt>
-                    <dd class="info_list">
-                        <ul>
-                            <li>
-                                Etat for hjemmebaserte tjenester
-                            </li>
-                            <li>
-                                Etat for hjemmebaserte tjenester
-                            </li>
-                            <li>
-                                Etat for hjemmebaserte tjenester
-                            </li>
-                        </ul>
-                    </dd>
-
-                    <dt class="info_list_header">Fagområde:</dt>
-                    <dd class="info_list">
-                        <ul>
-                            <li>
-                                Nivå 3
-                                <ul>
-                                    <li>Nivå 2
-                                        <ul>
-                                            <li>Nivå 1</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </dd>
-                </dl>
-            </div>
-            {{/ styringsdokument-meta }}
-            
-        </div>
-    
-
-    
-            
+      
+    <div class="content_max_width mbj">
+        {{> atoms-fil-lenke }}
     </div>
     
-    {{# styringsdokument-footer }}
-    <div class="page_footer hidden">
-        <div class="page_footer_line"></div>
-        <div class="row">
-            <div class="col_md_6 col_lg_6">
-                <p>Forfatter: <a href="#" title="">Ola Nordmann</a></p>
-            </div>
-            <div class="col_md_6 col_lg_6 meta_info">
-                <p>
-                    Publiseringsdato: {{ dato }}
-                    <br/>
-                    Gyldig til: {{ dato }}
-                </p>
-            </div>
-        </div>
+    <div class="page_footer">
+        <p>Dokument: {{ styringsdokumentID }}</p>
     </div>
-    {{/ styringsdokument-footer }}
-
-
+    
 </main>
 {{> organisms-footer }}
