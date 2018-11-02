@@ -98,51 +98,48 @@
                             </li>
                             {{/ linkliste }}
                         {{/ harUndermeny }}
-                        <li>
-                            <!-- Ny-menypunkt-funksjon undermeny -->
-                            <a href="#" title="Legg til nytt undermenypunkt" class="org_sub_menu_link add_item_link js-hide-and-show">
-                                <span class="plus-icon"></span>Nytt menypunkt
-                            </a>
-                            <form class="form-element js-show-this hidden">
-                                <label for="newItem{{id}}" class="form-element__label screen-reader-text">
-                                    Nytt menypunkt
-                                </label>
-                                <input id="newItem{{id}}" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
-                                <button type="submit" class="button--success active">
-                                    <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
-                                    <span class="screen-reader-text">Legg til nytt menypunkt</span>
-                                </button>
-                                <button type="reset" class="button--clean js-clear-inline-style">
-                                    <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                                    <span class="screen-reader-text">Avbryt</span>
-                                </button>
-                            </form>
-                        </li>
+                        
+                        <!-- Ny-menypunkt-funksjon undermeny -->
+                        <a href="#" title="Legg til nytt undermenypunkt" class="org_sub_menu_link add_org_menu_item js-hide-and-show">
+                            <span class="plus-icon"></span>Nytt menypunkt
+                        </a>
+                        <form class="form-element js-show-this hidden">
+                            <label for="newItem{{id}}" class="form-element__label screen-reader-text">
+                                Nytt menypunkt
+                            </label>
+                            <input id="newItem{{id}}" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
                     </ul>
                 </span>
             </li>
         {{/ orgMenyListe }}
-        
-        <li>
-            <!-- Ny-menypunkt-funksjon hovedmeny -->
-            <a href="#" title="Legg til nytt menypunkt" class="org_menu_link add_item_link js-hide-and-show">
-                <span class="plus-icon"></span>Nytt menypunkt
-            </a>
-            <form class="form-element js-show-this hidden">
-                <label for="newMainItem" class="form-element__label screen-reader-text">
-                    Nytt menypunkt
-                </label>
-                <input id="newMainItem" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
-                <button type="submit" class="button--success active">
-                    <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
-                    <span class="screen-reader-text">Legg til nytt menypunkt</span>
-                </button>
-                <button type="reset" class="button--clean js-clear-inline-style">
-                    <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-                    <span class="screen-reader-text">Avbryt</span>
-                </button>
-            </form>
-        </li>
     </ul>
+    
+    <!-- Ny-menypunkt-funksjon hovedmeny -->
+    <a href="#" title="Legg til nytt menypunkt" class="add_org_menu_item js-hide-and-show">
+        <span class="plus-icon"></span>Nytt menypunkt
+    </a>
+    <form class="form-element js-show-this hidden">
+        <label for="newMainItem" class="form-element__label screen-reader-text">
+            Nytt menypunkt
+        </label>
+        <input id="newMainItem" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+        <button type="submit" class="button--success active">
+            <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+            <span class="screen-reader-text">Legg til nytt menypunkt</span>
+        </button>
+        <button type="reset" class="button--clean js-clear-inline-style">
+            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+            <span class="screen-reader-text">Avbryt</span>
+        </button>
+    </form>
 </nav>
 {{/ redigeringsmodus }}

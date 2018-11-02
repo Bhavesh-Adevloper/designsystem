@@ -131,14 +131,30 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         <span class="arrow-icon"></span>
     </a>
     <ul class="org_menu">
-            <li class=" active">
-                <a title="Møtekalender" href="#" class="org_menu_link">
+            <li class="js_org_sub_menu_toggle with_org_sub_menu org_sub_menu_expanded active">
+                <a title="Møtekalender" href="&#x2F;patterns&#x2F;04-pages-30-mikrotjenester-POU-motekalender&#x2F;04-pages-30-mikrotjenester-POU-motekalender.rendered.html" class="org_menu_link">
                     Møtekalender
+                </a>
+                <a href="" title="Undermeny" class="org_sub_menu_toggle_link">
+                    <span class="arrow-icon"></span>
+                    <span class="screen-reader-text">Undermeny</span>
+                </a>
+                <ul>
+                    <li class="">
+                        <a title="Møtearkiv" href="&#x2F;patterns&#x2F;04-pages-30-mikrotjenester-POU-motearkiv&#x2F;04-pages-30-mikrotjenester-POU-motearkiv.rendered.html" class="org_sub_menu_link">
+                            Møtearkiv
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="">
+                <a title="Medlemmer" href="&#x2F;patterns&#x2F;04-pages-30-mikrotjenester-POU-utvalg-medlemmer&#x2F;04-pages-30-mikrotjenester-POU-utvalg-medlemmer.rendered.html" class="org_menu_link">
+                    Medlemmer
                 </a>
             </li>
             <li class="">
-                <a title="Medlemmer" href="#" class="org_menu_link">
-                    Medlemmer
+                <a title="Søk etter sak" href="&#x2F;patterns&#x2F;04-pages-30-mikrotjenester-POU-saker&#x2F;04-pages-30-mikrotjenester-POU-saker.rendered.html" class="org_menu_link">
+                    Søk etter sak
                 </a>
             </li>
     </ul>
@@ -146,86 +162,120 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         </div>
 
         <div class="col_md_8 col_lg_8">
-            <div class="page_header page_header_with_print mbs">
-    <div class="print_link_container">
-        <a href="javascript:window.print()" title="Skriv ut">
-            <span class="icon-print grunt-icon grunt-icon--32"></span>
-            <span class="print_link_txt">Skriv ut</span>
-        </a>
-    </div>
-    <h1>Møtekalender</h1>
+            <div class="page_header mbl">
+    <h1>
+        Møtekalender
+    </h1>
 </div>
-            <p class="mbxl">
-                <span id="vis_passerte" class="toggle_passerte">
-                    Tabellen viser kommende møter. <a href="#" title="Vis passerte ferie og fridager" class="toggle_holidays_link">Vis tidligere møter.</a>
-                </span>
-            </p>
+            
             <a href="#" title="Legg til &quot;Møter i Bergen bystyre 2017&quot; i kalenderen din"
                class="important_link hidden-on-print mbm">
                 <span class="icon-calendar grunt-icon grunt-icon--32"></span>
-                Legg til &quot;Møter i Bergen bystyre 2017&quot; i kalenderen din
+                Legg til &quot;Møter i Bergen bystyre &quot; i kalenderen din
             </a>
 
-            <div class="holidays_container">
-                <h4 class="holidays_header">Januar 2017</h4>
-                <ul class="holidays_list">
-                    <li class="holidays_list_item">
-                        <div class="holiday_date">
-                            <time datetime="2018-01-26T09:00">
-                                <span class="holiday_date__date">26.01</span>
-                                <span class="holiday_date__time">kl 0900</span>
-                            </time>
-                        </div>
-                        <div class="holiday_title_container">
-                            <div class="holiday_title">
-                                <div class="meeting_title">
-                                    <a href="#" class="meeting_title_link">Møte i Kontrollutvalget </a>
+            <section class="mbj">
+                <div class="holidays_container">
+                    <h4 class="holidays_header">Desember 2018</h4>
+                    <ul class="holidays_list">
+                        <li class="holidays_list_item">
+                            <div class="holiday_date">
+                                <time datetime="2018-01-26T09:00">
+                                    <span class="holiday_date__date">10.12</span>
+                                    <span class="holiday_date__time">kl 09:00</span>
+                                </time>
+                            </div>
+                            <div class="holiday_title_container">
+                                <div class="holiday_title">
+                                    <div class="meeting_title">
+                                        <a href="#" class="meeting_title_link">Bergen bystyre (10.12.2018)</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="holidays_list_item">
-                        <div class="holiday_date">
-                            <time datetime="2018-01-26T09:00">
-                                <span class="holiday_date__date">26.01</span>
-                                <span class="holiday_date__time">kl 0900</span>
-                            </time>
-                        </div>
-                        <div class="holiday_title_container">
-                            <div class="holiday_title">
-                                <a href="#" class="meeting_title_link"> Møte i Kontrollutvalget </a>
+                        </li>
+                        <li class="holidays_list_item">
+                            <div class="holiday_date">
+                                <time datetime="2018-01-26T09:00">
+                                    <span class="holiday_date__date">20.12</span>
+                                    <span class="holiday_date__time">kl 09:00</span>
+                                </time>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="holidays_container">
-                <h4 class="holidays_header">Januar 2017</h4>
-                <ul class="holidays_list">
-                    <li class="holidays_list_item">
-                        <div class="holiday_date">
-                            <time datetime="2018-01-26T09:00">
-                                <span class="holiday_date__date">26.01</span>
-                                <span class="holiday_date__time">kl 0900</span>
-                            </time>
-                        </div>
-                        <div class="holiday_title_container">
-                            <div class="holiday_title">
-                                <div class="meeting_title">
-                                    <a href="#" class="meeting_title_link">Møte i Kontrollutvalget </a>
+                            <div class="holiday_title_container">
+                                <div class="holiday_title">
+                                    <div class="meeting_title">
+                                        <span>Bergen bystyre (20.12.2018)</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="holidays_container">
+                    <h4 class="holidays_header">Januar 2019</h4>
+                    <ul class="holidays_list">
+                        <li class="holidays_list_item">
+                            <div class="holiday_date">
+                                <time datetime="2018-01-26T09:00">
+                                    <span class="holiday_date__date">26.01</span>
+                                    <span class="holiday_date__time">kl 09:00</span>
+                                </time>
+                            </div>
+                            <div class="holiday_title_container">
+                                <div class="holiday_title">
+                                    <div class="meeting_title">
+                                        <span>Bergen bystyre (26.01.2019)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
+<!--
             <div class="read_more_link_container read_more_link_container--top-border ">
                 <a title="Vis flere" class="read_more_link" href="#">
                     Vis flere
                         (15)
                 </a>
             </div>
+-->
+            
+            <div id="js_feedback" class="feedback ">
+    <div class="feedback_header">Fornøyd med denne siden?</div>
+    <form class="feedback_form" name="sendTilbakemeldingForm" action="#">
+        <fieldset>
+
+            <legend id="feedback_legend" class="screen-reader-text"> Er du fornøyd med denne siden? Velg ja eller nei</legend>
+
+            <div class="feedback_yes_no clearfix" role="radiogroup" aria-labelledby="feedback_legend">
+                <button role="radio" type="button" class="feedback_btn yes">Ja</button>
+                <button role="radio" type="button" class="feedback_btn no">Nei</button>
+                <label class="hidden" style="display: none;" for="Radiobutton1">Ja</label>
+                <input class="hidden" type="radio" name="TilbakemeldingCheckbox" id="Radiobutton1" value="Ja" />
+                <label class="hidden" style="display: none;" for="Radiobutton2">Nei</label>
+                <input class="hidden" type="radio" name="TilbakemeldingCheckbox" id="Radiobutton2" value="Nei" />
+            </div>
+            <div id="js_feedback_text" class="feedback_collapsed clearfix">
+                <label class="error" for="tilbakemeldingSvarKommentar">
+                    <span class="screen-reader-text" id="tilbakemeldingsLabel"> Fortell oss hva du synes</span>
+                    <span style="display: none; height: 0;" id="tilbakemeldingSvarKommentar_error"> Fortell oss hva du synes! </span>
+                </label>
+                <textarea id="tilbakemeldingSvarKommentar" name="tilbakemeldingSvarKommentar" rows="4" cols="30" placeholder=""></textarea>
+                <div class="feedback_info">
+                    <strong>NB:</strong>
+                    <span>Tilbakemeldingen din er anonym og du vil ikke få svar.</span>
+                </div>
+                <button type="submit" class="feedback_submit align_right">Send</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <div class="feedback_is_submitted_message" id="takkForSvar">Takk for din tilbakemelding!</div>
+</div>
+
+
+                
         </div>
     </div>
 </main>
