@@ -6,7 +6,7 @@
     </a>
     <ul class="org_menu org_menu--editable">
         {{# orgMenyListe }}
-            <li class="with_org_sub_menu{{# isActive }} active{{/ isActive }}">
+            <li class="with_org_sub_menu dragula-menuitem{{# isActive }} active{{/ isActive }}">
                 <!-- next item gets either: org_sub_menu_collapsed or org_sub_menu_expanded -->
                 <span class="js_org_sub_menu_toggle {{collapsedExpanded}}">
                     <span class="org_menu--editable__flex-container">
@@ -63,7 +63,7 @@
                     <ul>
                         {{# harUndermeny }}
                             {{# linkliste }}
-                            <li class="{{# isActiveSub }}active{{/ isActiveSub }}">
+                            <li class="dragula-menuitem{{# isActiveSub }} active{{/ isActiveSub }}">
                                 <span class="org_menu--editable__flex-container">
 
                                     <!-- Menypunkt -->
