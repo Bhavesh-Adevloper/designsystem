@@ -7,6 +7,7 @@
     <ul class="org_menu org_menu--editable">
         {{# orgMenyListe }}
             <li class="with_org_sub_menu{{# isActive }} active{{/ isActive }}">
+                <!-- next item gets either: org_sub_menu_collapsed or org_sub_menu_expanded -->
                 <span class="js_org_sub_menu_toggle {{collapsedExpanded}}">
                     <span class="org_menu--editable__flex-container">
 
@@ -95,15 +96,18 @@
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
                                 </span>
+                                <ul><li></li></ul>
                             </li>
                             {{/ linkliste }}
                         {{/ harUndermeny }}
-                        
+                    </ul>
+                    
+                    <span class="add-menu-item add-menu-item--sub">
                         <!-- Ny-menypunkt-funksjon undermeny -->
-                        <a href="#" title="Legg til nytt undermenypunkt" class="org_sub_menu_link add_org_menu_item js-hide-and-show">
+                        <a href="#" title="Legg til nytt undermenypunkt" class="add-menu-item__sub-link js-hide-and-show">
                             <span class="plus-icon"></span>Nytt menypunkt
                         </a>
-                        <form class="form-element js-show-this hidden">
+                        <form class="form-element form-element--sub js-show-this hidden">
                             <label for="newItem{{id}}" class="form-element__label screen-reader-text">
                                 Nytt menypunkt
                             </label>
@@ -117,29 +121,31 @@
                                 <span class="screen-reader-text">Avbryt</span>
                             </button>
                         </form>
-                    </ul>
+                    </span>
                 </span>
             </li>
         {{/ orgMenyListe }}
     </ul>
     
-    <!-- Ny-menypunkt-funksjon hovedmeny -->
-    <a href="#" title="Legg til nytt menypunkt" class="add_org_menu_item js-hide-and-show">
-        <span class="plus-icon"></span>Nytt menypunkt
-    </a>
-    <form class="form-element js-show-this hidden">
-        <label for="newMainItem" class="form-element__label screen-reader-text">
-            Nytt menypunkt
-        </label>
-        <input id="newMainItem" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
-        <button type="submit" class="button--success active">
-            <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
-            <span class="screen-reader-text">Legg til nytt menypunkt</span>
-        </button>
-        <button type="reset" class="button--clean js-clear-inline-style">
-            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
-            <span class="screen-reader-text">Avbryt</span>
-        </button>
-    </form>
+    <span class="add-menu-item">
+        <!-- Ny-menypunkt-funksjon hovedmeny -->
+        <a href="#" title="Legg til nytt menypunkt" class="add-menu-item__link js-hide-and-show">
+            <span class="plus-icon"></span>Nytt menypunkt
+        </a>
+        <form class="form-element js-show-this hidden">
+            <label for="newMainItem" class="form-element__label screen-reader-text">
+                Nytt menypunkt
+            </label>
+            <input id="newMainItem" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+            <button type="submit" class="button--success active">
+                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                <span class="screen-reader-text">Legg til nytt menypunkt</span>
+            </button>
+            <button type="reset" class="button--clean js-clear-inline-style">
+                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                <span class="screen-reader-text">Avbryt</span>
+            </button>
+        </form>
+    </span>
 </nav>
 {{/ redigeringsmodus }}
