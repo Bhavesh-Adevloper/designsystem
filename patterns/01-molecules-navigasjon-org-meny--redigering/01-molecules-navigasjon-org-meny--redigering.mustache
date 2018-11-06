@@ -15,6 +15,9 @@
                         <a title="{{ tittel }}" href="{{ url }}" class="org_menu_link js-hide-this">
                             {{ tittel }}
                         </a>
+                        
+                        <!-- Drag&drop-knapp -->
+                        <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
 
                         <!-- Rediger-knapp -->
                         <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
@@ -63,20 +66,24 @@
                     <ul>
                         {{# harUndermeny }}
                             {{# linkliste }}
-                            <li class="dragula-menuitem{{# isActiveSub }} active{{/ isActiveSub }}">
+                            <li class="dragula-menuitem dragula-menuitem--sub{{# isActiveSub }} active{{/ isActiveSub }}">
                                 <span class="org_menu--editable__flex-container">
 
                                     <!-- Menypunkt -->
                                     <a title="{{ tittel }}" href="{{ url }}" class="org_sub_menu_link js-hide-this">
                                         {{ tittel }}
                                     </a>
+                        
+                                    <!-- Drag&drop-knapp -->
+                                    <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
+                                    
                                     <!-- Rediger-knapp -->
                                     <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
                                     <!-- Rediger-funksjon -->
-                                    <form class="form-element hidden js-show-this">
+                                    <form class="form-element form-element--sub hidden js-show-this">
                                         <label for="editItem{{id}}" class="form-element__label screen-reader-text">
                                             Rediger menypunktnavn
                                         </label>
