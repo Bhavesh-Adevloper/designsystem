@@ -1,0 +1,56 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+    
+    {{> molecules-sideoverskrift-h1:mbxl(sidetittel: "{{ sidetittel }}") }}
+
+    <div class="row">
+        
+        {{# imgLandscape }}
+        <div class="col_md_12 col_lg_4 float_change">
+            <figure class="service_image_desktop">
+                <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}">
+            </figure>
+        </div>
+        {{/ imgLandscape }}
+        
+        <div class="col_md_12 col_lg_8">
+
+            {{# notis }}
+            {{> molecules-notis }}
+            {{/ notis }}
+
+            {{# kortIntro }}
+                <div class="service_description service_content_max_width">
+                    {{{ kortIntro }}}
+                </div>
+            {{/ kortIntro }}
+
+            {{# digitaltSkjema }}
+                <ul class="application-link-list action">
+                    <li>
+                        <a href="{{ url }}" title="{{ tittel }}" class="application-link application-link--important">
+                            {{ tittel }}
+                        </a>
+                    </li>
+                </ul>
+            {{/ digitaltSkjema }}
+
+            {{> molecules-trekkspill-innbyggerhjelp }}
+
+            {{# beslektedeTjenester }}
+                <h2>Nyttig innhold</h2>
+                {{> molecules-link-liste:mbxxl }}
+            {{/ beslektedeTjenester }}
+
+            {{# footer }}
+                {{> organisms-tjeneste-footer }}
+            {{/ footer }}
+
+            {{> molecules-tilbakemelding }}
+
+        </div>
+    </div>
+        
+</main>
+{{> organisms-footer }}
