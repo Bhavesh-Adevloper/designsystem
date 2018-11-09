@@ -8,7 +8,7 @@
         
         {{# imgLandscape }}
         <div class="col_md_12 col_lg_4 float_change">
-            <figure class="service_image_desktop">
+            <figure class="mtn mbl">
                 <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}">
             </figure>
         </div>
@@ -21,7 +21,7 @@
             {{/ notis }}
 
             {{# kortIntro }}
-                <div class="service_description service_content_max_width">
+                <div class="short-service-description service_content_max_width mbl">
                     {{{ kortIntro }}}
                 </div>
             {{/ kortIntro }}
@@ -29,22 +29,18 @@
             {{> molecules-trekkspill-innbyggerhjelp }}
 
             {{# digitaltSkjema }}
-                <ul class="application-link-list action">
-                    <li>
-                        <a href="{{ url }}" title="{{ tittel }}" class="application-link application-link--important">
-                            {{ tittel }}
-                        </a>
-                    </li>
-                </ul>
+                <a href="{{ url }}" title="{{ tittel }}" class="button important active mbj">
+                    {{ tittel }}
+                </a>
             {{/ digitaltSkjema }}
 
             {{# beslektedeTjenester }}
-                <h2>Nyttig innhold</h2>
-                {{> molecules-link-liste:mbxxl }}
+                <h2 class="mtn">Nyttig innhold</h2>
+                {{> molecules-link-liste:mbj }}
             {{/ beslektedeTjenester }}
 
             {{# footer }}
-                {{> organisms-tjeneste-footer }}
+                {{> organisms-tjeneste-footer:mbj }}
             {{/ footer }}
 
             {{> molecules-tilbakemelding }}
