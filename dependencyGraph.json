@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1541763595990,
+  "timestamp": 1541769049688,
   "graph": {
     "options": {
       "directed": true,
@@ -1008,8 +1008,8 @@
         "v": "02-organisms/00-global/_03-header-ih.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/02-organisms-00-global-_00-header-varianter/02-organisms-00-global-_00-header-varianter.rendered.html",
-          "lineagePattern": "organisms-header-varianter"
+          "lineagePath": "../../patterns/04-pages-11-innbyggerhjelpen-01-innbyggerhjelpkategori/04-pages-11-innbyggerhjelpen-01-innbyggerhjelpkategori.rendered.html",
+          "lineagePattern": "pages-innbyggerhjelpkategori"
         }
       },
       {
@@ -1338,7 +1338,7 @@
         "v": "03-templates/10-Innholdssider/innbyggerhjelp.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-71-tjeneste-pub-50-boligsoneparkering/04-pages-71-tjeneste-pub-50-boligsoneparkering.rendered.html",
+          "lineagePath": "../../patterns/04-pages-11-innbyggerhjelpen-05-boligsoneparkering/04-pages-11-innbyggerhjelpen-05-boligsoneparkering.rendered.html",
           "lineagePattern": "pages-boligsoneparkering"
         }
       },
@@ -1759,6 +1759,12 @@
         }
       },
       {
+        "v": "04-pages/11-innbyggerhjelpen/05-boligsoneparkering.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "04-pages/15-minside/00-minside-samtykke.mustache",
         "value": {
           "compileState": "clean"
@@ -2144,12 +2150,6 @@
       },
       {
         "v": "04-pages/71-tjeneste-pub/01-sideoversikt-publiserte.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/71-tjeneste-pub/50-boligsoneparkering.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -4721,7 +4721,7 @@
       },
       {
         "v": "04-pages/11-innbyggerhjelpen/01-innbyggerhjelpkategori.mustache",
-        "w": "02-organisms/00-global/_03-header-3.mustache",
+        "w": "02-organisms/00-global/_03-header-ih.mustache",
         "value": {}
       },
       {
@@ -4747,6 +4747,11 @@
       {
         "v": "04-pages/11-innbyggerhjelpen/01-innbyggerhjelpkategori.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/11-innbyggerhjelpen/05-boligsoneparkering.mustache",
+        "w": "03-templates/10-Innholdssider/innbyggerhjelp.mustache",
         "value": {}
       },
       {
@@ -5877,11 +5882,6 @@
       {
         "v": "04-pages/71-tjeneste-pub/01-sideoversikt-publiserte.mustache",
         "w": "03-templates/71-tjeneste-pub/00-sideoversikt.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/71-tjeneste-pub/50-boligsoneparkering.mustache",
-        "w": "03-templates/10-Innholdssider/innbyggerhjelp.mustache",
         "value": {}
       },
       {
