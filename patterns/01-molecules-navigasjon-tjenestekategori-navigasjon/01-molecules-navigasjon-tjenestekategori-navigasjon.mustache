@@ -2,36 +2,40 @@
     <div class="col_md_6 col_lg_4">
 
         <ul class="category_navigation_1 js_cat_1">
-            <li><a href="#" title="Arbeidsliv">Arbeidsliv<span class="arrow-icon"></span><span class="arrow-icon--2"></span></a></li>
-            <li class="active">
-                <a href="#" title="Arbeidssøking og rekruttering">
-                    Arbeidssøking og rekruttering
+            {{# cat_liste_1 }}
+            <li class="{{# active1 }}active{{/ active1 }}">
+                <a href="#" title="{{ tittel }}">
+                    {{ tittel }}
                     <span class="arrow-icon"></span>
                     <span class="arrow-icon--2"></span>
                 </a>
+                {{# active1 }}
                 <ul class="category_navigation_2 js_cat_2 active">
-                    <li><a title="Arbeidsmarkedstiltak" href="#!">Arbeidsmarkedstiltak<span class="arrow-icon"></span></a></li>
-                    <li><a title="Arbeidssøking" href="#!">Arbeidssøking<span class="arrow-icon"></span></a></li>
-                    <li class="active">
-                        <a title="Arbeidstillatelse" href="#!">
-                            Arbeidstillatelse
+                    {{# cat_liste_2 }}
+                    <li class="{{# active2 }}active{{/ active2 }}">
+                        <a title="{{ tittel }}" href="#!">
+                            {{ tittel }}
                             <span class="arrow-icon"></span>
                         </a>
+                        {{# active2 }}
                         <ul class="category_navigation_3 js_cat_3 active">
+                            {{# tjenesteliste }}
                             <li>
-                                <a title="Introduksjonsordning for nyankomne flyktninger" href="{{ url }}">
-                                    Introduksjonsordning for nyankomne flyktninger
+                                <a title="{{ tittel }}" href="{{ url }}">
+                                    {{ tittel }}
                                     <span class="arrow-icon"></span>
                                     <span class="arrow-icon--2"></span>
                                 </a>
                             </li>
+                            {{/ tjenesteliste }}
                         </ul>
+                        {{/ active2 }}
                     </li>
-                    <li><a title="CV" href="#!">CV<span class="arrow-icon"></span></a></li>
-                    <li><a title="Rekruttering" href="#!">Rekruttering<span class="arrow-icon"></span></a></li>
+                    {{/ cat_liste_2 }}
                 </ul>
+                {{/ active1 }}
             </li>
-            <li><a href="#" title="Inntekt">Inntekt<span class="arrow-icon"></span><span class="arrow-icon--2"></span></a></li>
+            {{/ cat_liste_1 }}
         </ul>
 
     </div>
