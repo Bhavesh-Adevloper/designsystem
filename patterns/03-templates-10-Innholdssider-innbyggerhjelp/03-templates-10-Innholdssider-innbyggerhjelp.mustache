@@ -29,10 +29,23 @@
             {{> molecules-trekkspill-innbyggerhjelp }}
 
             {{# digitaltSkjema }}
-                <a href="{{ url }}" title="{{ tittel }}" class="button important active mbj">
+                <a href="{{ url }}" title="{{ tittel }}" class="button important active button--digital-form mbj">
                     {{ tittel }}
                 </a>
             {{/ digitaltSkjema }}
+            
+            {{# nyttigInnhold }}
+            <div class="tout-box-style">
+                <h2 class="mtn mbml">Nyttig innhold</h2>
+                <div class="row_no_clearfix equal_height_container">
+                    {{# touts }}
+                        <div class="col_md_6 col_lg_6 equal_height_item">
+                            {{> molecules-tout }}
+                        </div>
+                    {{/ touts }}
+                </div>
+            </div>
+            {{/ nyttigInnhold }}
 
             {{# footer }}
                 {{> organisms-tjeneste-footer:mbj }}
