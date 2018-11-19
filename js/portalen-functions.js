@@ -139,9 +139,9 @@ function toggleSidebarAccordion() {
         // Hide accordion-content after load on pages
         $("#js_sidebar-accordion-container .js_sidebar-accordion").removeClass("sidebar-header--open");
         $("#js_sidebar-accordion-container .js_sidebar-accordion").next("div").hide();
-        // Open listebilde-accordion
-        $("#js_sidebar-accordion-container .js_listebilde-accordion").addClass("sidebar-header--open");
-        $("#js_sidebar-accordion-container .js_listebilde-accordion").next("div").show();
+        // Open bilde-accordion
+        $("#js_sidebar-accordion-container .js_bilde-accordion").addClass("sidebar-header--open");
+        $("#js_sidebar-accordion-container .js_bilde-accordion").next("div").show();
         // Click
         $(".js_sidebar-accordion a").click( function() {
             $(this).parent(".js_sidebar-accordion").toggleClass("sidebar-header--open");

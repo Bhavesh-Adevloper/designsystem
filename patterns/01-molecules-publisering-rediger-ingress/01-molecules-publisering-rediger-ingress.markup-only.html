@@ -1,7 +1,7 @@
-    <h3 class="helpers_header" id="ingress_tittel">Ingress</h3>
+    <h3 class="helpers_header" id="tittel">Ingress</h3>
     <p class="helpers_info mbs">Maks 200 tegn</p>
     <div class="excerpt_counter__area ">
-        <textarea aria-labelledby="ingress_tittel"
+        <textarea aria-labelledby="tittel"
                   id="ingress"
                   draggable="false"
                   class="textarea--excerpt mbn"
@@ -11,5 +11,97 @@
         </div>
     </div>
 
+<p class="mbn mtl"><code>Med feilmelding:</code></p>
+    <h3 class="helpers_header" id="tittel">Ingress</h3>
+    <p class="helpers_info mbs">Maks 200 tegn</p>
+    <div class="excerpt_counter__area ">
+        <textarea aria-labelledby="tittel"
+                  id="ingress"
+                  draggable="false"
+                  class="textarea--excerpt mbn error-input"
+                  name="ingress"
+                  style="height: 151px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+        <div id="ingress_counter" class="excerpt_counter super_warn">
+            <span> 232 av 200 tegn </span>
+        </div>
+    </div>
+    <div class="error-text mbxxl"><!-- neg-mtxl -->
+        <span>Ingressen er for lang</span>
+    </div>
 
+<p class="mbn"><code>I en modal:</code></p>
+    <label class="modal__excerpt-label mbl" for="modalIngress">Ingress
+        <p class="helpers_info mbs">Maks 200 tegn</p>
+        <textarea
+            id="modalIngress"
+            draggable="false"
+            class="modal__excerpt mbs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
 
+        <div class="modal__excerpt-area">
+            <div class="error-text">
+              <!-- <span>Ingressen er for lang</span>-->
+            </div>
+            <div class="modal__excerpt-counter">
+                <span> 124 av 200 tegn </span>
+            </div>
+        </div>
+    </label>
+
+<p class="mbn"><code>Feilmelding i en modal:</code></p>
+    <label class="modal__excerpt-label mbl" for="modalIngress">Ingress
+        <p class="helpers_info mbs">Maks 200 tegn</p>
+        <textarea
+            id="modalIngress"
+            draggable="false"
+            class="modal__excerpt mbs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
+
+        <div class="modal__excerpt-area">
+            <div class="error-text">
+              <span>Ingressen er for lang</span>
+            </div>
+            <div class="modal__excerpt-counter super_warn">
+                <span> 248 av 200 tegn </span>
+            </div>
+        </div>
+    </label>
+
+<p class="mbn"><code>Ingress i innbyggerhjelp:</code></p>
+    <h3 class="helpers_header" id="kortIntro1">Kort intro</h3>
+    <p class="helpers_info mbs">Maks 300 tegn</p>
+    <script src="https://cdn.ckeditor.com/4.8.0/basic/ckeditor.js"></script>
+    <div class="excerpt_counter__area ">
+        <textarea aria-labelledby="kortIntro1"
+                  id="ingress"
+                  draggable="false"
+                  class="textarea--excerpt mbn"
+                  name="kortIntro1textarea"
+                  style="height: 160px;"></textarea>
+        <div id="ingress_counter" class="excerpt_counter">
+            <span> 0 av 300 tegn </span>
+        </div>
+        <script>
+            CKEDITOR.replace( 'kortIntro1textarea' );
+        </script>
+    </div>
+
+<p class="mbn mtl"><code>Ingress i innbyggerhjelp med feilmelding:</code></p>
+    <h3 class="helpers_header" id="kortIntro2">Kort intro</h3>
+    <p class="helpers_info mbs">Maks 300 tegn</p>
+    <script src="https://cdn.ckeditor.com/4.8.0/basic/ckeditor.js"></script>
+    <div class="excerpt_counter__area ">
+        <textarea aria-labelledby="kortIntro2"
+                  id="ingress"
+                  draggable="false"
+                  class="textarea--excerpt mbn error-input"
+                  name="kortIntro2textarea"
+                  style="height: 160px;"></textarea>
+        <div id="ingress_counter" class="excerpt_counter super_warn">
+            <span> 332 av 300 tegn </span>
+        </div>
+        <script>
+            CKEDITOR.replace( 'kortIntro2textarea' );
+        </script>
+    </div>
+    <div class="error-text mbxxl"><!-- neg-mtxl -->
+        <span>Ingressen er for lang</span>
+    </div>

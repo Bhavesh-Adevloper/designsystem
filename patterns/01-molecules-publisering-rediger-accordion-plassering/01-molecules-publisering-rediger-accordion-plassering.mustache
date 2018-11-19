@@ -13,9 +13,9 @@
                 <span class="arrow-icon"></span>
                 {{> atoms-hjelpetekst:mbs(hjelpetekst: "Flytt artikkelen til nytt menypunkt") }}
                 <select id="plassering" name="Etikett" class="form-element__dropdown">
-                    {{# kategori }}
-                    <option {{#disabled}}disabled{{/disabled}}> {{{ kategoritittel }}}</option>
-                    {{/ kategori }}
+                    {{# flyttTilKategori }}
+                    <option {{#disabled}}disabled{{/disabled}}> {{{ tittel }}}</option>
+                    {{/ flyttTilKategori }}
                 </select>
             </label>
         </div>

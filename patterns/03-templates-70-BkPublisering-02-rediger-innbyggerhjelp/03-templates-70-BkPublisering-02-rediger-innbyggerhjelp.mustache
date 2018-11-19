@@ -1,10 +1,6 @@
 {{> organisms-header-varianter }}
 {{> organisms-brodsmuler }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
-
-    <div class="page_header_container_with_org_menu">
-        {{> molecules-sideoverskrift-h2-med-lenke(sidetittel: "{{ organisasjonsenhet.tittel }}", url: "{{ organisasjonsenhet.url }}") }}
-    </div>
     
     <div class="article">
         
@@ -24,15 +20,9 @@
 
                 {{> molecules-rediger-sidetittel }}
                 
-                {{# toppbilde }}
-                    {{> molecules-rediger-toppbilde }}
-                {{/ toppbilde }}
-
                 {{> molecules-rediger-ingress:mbxxl }}
-
-                {{> molecules-rediger-hovedtekst }}
-
-                {{> molecules-rediger-forfatter }}
+                
+                {{> molecules-rediger-avsnitt:mbxxl }}
 
                 {{> molecules-rediger-byline }}
 
@@ -41,21 +31,21 @@
             {{# redigeringSidebar }}
                 <div id="js_sidebar-accordion-container" class="col_md_12 col_lg_4">
                     
-                    {{# listebilde }}
-                        {{> molecules-rediger-listebilde }}
-                    {{/ listebilde }}
+                    {{# redigerAccordionBilde }}
+                        {{> molecules-rediger-accordion-bilde }}
+                    {{/ redigerAccordionBilde }}
 
-                    {{# endrestatus }}
-                        {{> molecules-rediger-status }}
-                    {{/ endrestatus }}
+                    {{# redigerAccordionStatus }}
+                        {{> molecules-rediger-accordion-status }}
+                    {{/ redigerAccordionStatus }}
                     
-                    {{# endredato }}
-                        {{> molecules-rediger-dato }}
-                    {{/ endredato }}
+                    {{# redigerAccordionDato }}
+                        {{> molecules-rediger-accordion-dato }}
+                    {{/ redigerAccordionDato }}
 
-                    {{# flytting }}
-                        {{> molecules-rediger-flytt }}
-                    {{/ flytting }}
+                    {{# redigerAccordionPlassering }}
+                        {{> molecules-rediger-accordion-plassering }}
+                    {{/ redigerAccordionPlassering }}
 
                 </div>
             {{/ redigeringSidebar }}
