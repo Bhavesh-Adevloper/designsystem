@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1542634680287,
+  "timestamp": 1542804830921,
   "graph": {
     "options": {
       "directed": true,
@@ -1852,6 +1852,12 @@
       },
       {
         "v": "04-pages/15-minside/12-fakturaer.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -5166,6 +5172,46 @@
       },
       {
         "v": "04-pages/15-minside/12-fakturaer.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "w": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "w": "00-atoms/10-tabeller/09-flex-tabell.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "w": "00-atoms/20-skjema-element/15-nedtrekksliste.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
