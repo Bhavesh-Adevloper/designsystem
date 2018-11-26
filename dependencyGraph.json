@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1543237099126,
+  "timestamp": 1543242853945,
   "graph": {
     "options": {
       "directed": true,
@@ -65,37 +65,37 @@
         }
       },
       {
-        "v": "00-atoms/07-tekst/00-overskrifter.mustache",
+        "v": "00-atoms/06-tekst/00-overskrifter.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "00-atoms/07-tekst/01-avsnitt.mustache",
+        "v": "00-atoms/06-tekst/01-avsnitt.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "00-atoms/07-tekst/02-inline-elementer.mustache",
+        "v": "00-atoms/06-tekst/02-inline-elementer.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "00-atoms/07-tekst/03-vertikal-rytme.mustache",
+        "v": "00-atoms/06-tekst/03-vertikal-rytme.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "00-atoms/07-tekst/04-lenker-med-piler.mustache",
+        "v": "00-atoms/06-tekst/04-lenker-med-piler.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "00-atoms/07-tekst/05-fil-lenke.mustache",
+        "v": "00-atoms/06-tekst/05-fil-lenke.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-10-Innholdssider-styringsdokument/03-templates-10-Innholdssider-styringsdokument.rendered.html",
@@ -103,7 +103,13 @@
         }
       },
       {
-        "v": "00-atoms/07-tekst/_03-preformatert-tekst.mustache",
+        "v": "00-atoms/06-tekst/_03-preformatert-tekst.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/07-bilder/00-bildestoerrelser.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -2261,7 +2267,7 @@
     ],
     "edges": [
       {
-        "v": "00-atoms/07-tekst/04-lenker-med-piler.mustache",
+        "v": "00-atoms/06-tekst/04-lenker-med-piler.mustache",
         "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {}
       },
@@ -3677,7 +3683,7 @@
       },
       {
         "v": "03-templates/10-Innholdssider/styringsdokument.mustache",
-        "w": "00-atoms/07-tekst/05-fil-lenke.mustache",
+        "w": "00-atoms/06-tekst/05-fil-lenke.mustache",
         "value": {}
       },
       {
