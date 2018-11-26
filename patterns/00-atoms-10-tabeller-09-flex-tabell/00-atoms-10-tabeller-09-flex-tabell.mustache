@@ -1,8 +1,8 @@
 {{#flexTable}}
 
-<div class="flex-table {{styleModifier}} {{#tableStyleModifier}} flex-table--{{tableStyleModifier}}{{/tableStyleModifier}}" role="grid" aria-labelledby="{{title}} {{resultsTitle}}">
+<div class="flex-table{{#tableStyleModifier}} flex-table--{{tableStyleModifier}}{{/tableStyleModifier}}{{#styleModifier}} {{styleModifier}}{{/styleModifier}}" role="grid"{{# arialabel }} aria-labelledby="{{ arialabel }} {{resultsTitle}}"{{/ arialabel }}>
 
-    {{#title}}<h2 id="{{#title}}{{/title}}" class="flex-table__title {{titleModifier}}"> {{title}}</h2>{{/title}}
+    {{#title}}<h2 class="flex-table__title{{#titleModifier}} {{titleModifier}}{{/titleModifier}}"{{# arialabel }} id="{{ arialabel }}"{{/ arialabel }}> {{title}}</h2>{{/title}}
     {{#resultsTitle}}<h2 class="flex-table__title flex-table__title--results" aria-live="assertive"> {{resultsTitle}}</h2>{{/resultsTitle}}
 
     {{#desktopTitles}}

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1542980655682,
+  "timestamp": 1543237099126,
   "graph": {
     "options": {
       "directed": true,
@@ -4388,11 +4388,6 @@
       {
         "v": "03-templates/70-BkPublisering/00-sideoversikt.mustache",
         "w": "00-atoms/20-skjema-element/05-filterboks.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/70-BkPublisering/00-sideoversikt.mustache",
-        "w": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
         "value": {}
       },
       {

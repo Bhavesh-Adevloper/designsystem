@@ -20,20 +20,20 @@
         </div>
         <div class="col_md_12 col_lg_8 org_main_col">
             
-            {{> molecules-moduloverskrift-h1:mbm(tittel: "Fakturaer") }}
+            {{> molecules-moduloverskrift-h1:mbxl(tittel: "Fakturaer") }}
             
             <div class="form-element__helptext hidden">
                 Tabellen er satt opp med 40% / 20% / 20% / 20%
             </div>
 
-            <h3 class="mbm">Ubetalte fakturaer</h3>
+            <h3 class="flex-table__title flex-table__title--results mbm" id="ubetalte-fakturaer">Ubetalte fakturaer</h3>
             {{# tableUbetalt }}
                 <div class="{{tableModifier}}">
                     {{> atoms-flex-tabell }}
                 </div>
             {{/ tableUbetalt }}
             
-            <h3 class="mbm">Betalte fakturaer</h3>
+            <h3 class="flex-table__title mbm" id="betalte-fakturaer">Betalte fakturaer</h3>
             {{> atoms-nedtrekksliste:mbm }}
             {{# tableBetalt }}
                 <div class="{{tableModifier}}">
