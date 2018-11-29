@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1543491874637,
+  "timestamp": 1543504277442,
   "graph": {
     "options": {
       "directed": true,
@@ -4422,11 +4422,6 @@
       {
         "v": "03-templates/30-Innbyggerhjelpen/10-ibh-start.mustache",
         "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/30-Innbyggerhjelpen/10-ibh-start.mustache",
-        "w": "01-molecules/publisering/action-line.mustache",
         "value": {}
       },
       {

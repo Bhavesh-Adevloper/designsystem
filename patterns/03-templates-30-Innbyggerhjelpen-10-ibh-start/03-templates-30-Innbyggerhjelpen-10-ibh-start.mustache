@@ -1,20 +1,14 @@
 {{> organisms-header-varianter }}
 
 {{# redigeringsmodusknapp }}
-    <div class="em_container smMa desktop_centered {{ styleModifier }}">
+    <div class="emb_container smMa desktop_centered {{ styleModifier }}">
         {{> atoms-redigeringsmodusknapp }}
     </div>
 {{/ redigeringsmodusknapp }}
 
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
     
-    {{# visSidetittel }}
     {{> molecules-sideoverskrift-h1:mbxl }}
-    {{/ visSidetittel }}
-        
-    {{# actionLine }}
-    {{> molecules-action-line }}
-    {{/ actionLine }}
     
     <div class="row">
         <div class="col_md_12 col_lg_4 float_change">
@@ -32,7 +26,7 @@
 
             <div class="row_no_clearfix service_link_container equal_height_container mbj">
                 {{# ibhKategorier }}
-                    <div class="col_md_6 col_lg_6 clear_col_md_6 clear_col_lg_6 equal_height_item">
+                    <div class="col_md_6 col_lg_6 clear_col_md_6 clear_col_lg_6 equal_height_item{{# draOgFlytt }} linkbox-dragula-container{{/ draOgFlytt }}">
                         {{> molecules-lenkeboks-tjenestekategori:mbm--mob|mbl }}
                     </div>
                 {{/ ibhKategorier }}
