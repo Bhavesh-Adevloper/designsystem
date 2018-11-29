@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1543412261553,
+  "timestamp": 1543491874637,
   "graph": {
     "options": {
       "directed": true,
@@ -204,6 +204,14 @@
         "v": "00-atoms/15-knapper/25-kalender-knapp.mustache",
         "value": {
           "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/15-knapper/30-redigeringsmodusknapp.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-30-Innbyggerhjelpen-10-ibh-start/03-templates-30-Innbyggerhjelpen-10-ibh-start.rendered.html",
+          "lineagePattern": "templates-ibh-start"
         }
       },
       {
@@ -540,8 +548,8 @@
         "v": "01-molecules/lister/02-link-liste-enkel.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-08-Navigasjon-20-tjenestetilbud/03-templates-08-Navigasjon-20-tjenestetilbud.rendered.html",
-          "lineagePattern": "templates-tjenestetilbud"
+          "lineagePath": "../../patterns/03-templates-30-Innbyggerhjelpen-10-ibh-start/03-templates-30-Innbyggerhjelpen-10-ibh-start.rendered.html",
+          "lineagePattern": "templates-ibh-start"
         }
       },
       {
@@ -684,8 +692,8 @@
         "v": "01-molecules/navigasjon/lenkeboks-tjenestekategori.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-08-Navigasjon-20-tjenestetilbud/03-templates-08-Navigasjon-20-tjenestetilbud.rendered.html",
-          "lineagePattern": "templates-tjenestetilbud"
+          "lineagePath": "../../patterns/03-templates-30-Innbyggerhjelpen-10-ibh-start/03-templates-30-Innbyggerhjelpen-10-ibh-start.rendered.html",
+          "lineagePattern": "templates-ibh-start"
         }
       },
       {
@@ -724,8 +732,8 @@
         "v": "01-molecules/navigasjon/tjenestekategori-navigasjon.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-11-innbyggerhjelpen-01-innbyggerhjelpkategori/04-pages-11-innbyggerhjelpen-01-innbyggerhjelpkategori.rendered.html",
-          "lineagePattern": "pages-innbyggerhjelpkategori"
+          "lineagePath": "../../patterns/04-pages-71-tjeneste-pub-03-rediger-ibh-navigasjon/04-pages-71-tjeneste-pub-03-rediger-ibh-navigasjon.rendered.html",
+          "lineagePattern": "pages-rediger-ibh-navigasjon"
         }
       },
       {
@@ -790,48 +798,48 @@
         "v": "01-molecules/publisering/rediger-accordion-bilde.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-innbyggerhjelp/03-templates-70-BkPublisering-02-rediger-innbyggerhjelp.rendered.html",
-          "lineagePattern": "templates-rediger-innbyggerhjelp"
+          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-ibh-artikkel/03-templates-70-BkPublisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
       {
         "v": "01-molecules/publisering/rediger-accordion-dato.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-innbyggerhjelp/03-templates-70-BkPublisering-02-rediger-innbyggerhjelp.rendered.html",
-          "lineagePattern": "templates-rediger-innbyggerhjelp"
+          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-ibh-artikkel/03-templates-70-BkPublisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
       {
         "v": "01-molecules/publisering/rediger-accordion-plassering.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-innbyggerhjelp/03-templates-70-BkPublisering-02-rediger-innbyggerhjelp.rendered.html",
-          "lineagePattern": "templates-rediger-innbyggerhjelp"
+          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-ibh-artikkel/03-templates-70-BkPublisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
       {
         "v": "01-molecules/publisering/rediger-accordion-status.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-innbyggerhjelp/03-templates-70-BkPublisering-02-rediger-innbyggerhjelp.rendered.html",
-          "lineagePattern": "templates-rediger-innbyggerhjelp"
+          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-ibh-artikkel/03-templates-70-BkPublisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
       {
         "v": "01-molecules/publisering/rediger-avsnitt.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-innbyggerhjelp/03-templates-70-BkPublisering-02-rediger-innbyggerhjelp.rendered.html",
-          "lineagePattern": "templates-rediger-innbyggerhjelp"
+          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-ibh-artikkel/03-templates-70-BkPublisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
       {
         "v": "01-molecules/publisering/rediger-byline.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-innbyggerhjelp/03-templates-70-BkPublisering-02-rediger-innbyggerhjelp.rendered.html",
-          "lineagePattern": "templates-rediger-innbyggerhjelp"
+          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-ibh-artikkel/03-templates-70-BkPublisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
       {
@@ -854,8 +862,8 @@
         "v": "01-molecules/publisering/rediger-ingress.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-innbyggerhjelp/03-templates-70-BkPublisering-02-rediger-innbyggerhjelp.rendered.html",
-          "lineagePattern": "templates-rediger-innbyggerhjelp"
+          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-ibh-artikkel/03-templates-70-BkPublisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
       {
@@ -870,8 +878,8 @@
         "v": "01-molecules/publisering/rediger-sidetittel.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-innbyggerhjelp/03-templates-70-BkPublisering-02-rediger-innbyggerhjelp.rendered.html",
-          "lineagePattern": "templates-rediger-innbyggerhjelp"
+          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-ibh-artikkel/03-templates-70-BkPublisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
       {
@@ -1022,8 +1030,8 @@
         "v": "02-organisms/00-global/_03-header-ih.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-11-innbyggerhjelpen-01-innbyggerhjelpkategori/04-pages-11-innbyggerhjelpen-01-innbyggerhjelpkategori.rendered.html",
-          "lineagePattern": "pages-innbyggerhjelpkategori"
+          "lineagePath": "../../patterns/04-pages-71-tjeneste-pub-03-rediger-ibh-navigasjon/04-pages-71-tjeneste-pub-03-rediger-ibh-navigasjon.rendered.html",
+          "lineagePattern": "pages-rediger-ibh-navigasjon"
         }
       },
       {
@@ -1322,8 +1330,8 @@
         "v": "03-templates/08-Navigasjon/20-tjenestetilbud.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-11-innbyggerhjelpen-00-innbyggerhjelpen/04-pages-11-innbyggerhjelpen-00-innbyggerhjelpen.rendered.html",
-          "lineagePattern": "pages-innbyggerhjelpen"
+          "lineagePath": "../../patterns/04-pages-10-tjenester-00-tjenestetilbud/04-pages-10-tjenester-00-tjenestetilbud.rendered.html",
+          "lineagePattern": "pages-tjenestetilbud"
         }
       },
       {
@@ -1352,8 +1360,8 @@
         "v": "03-templates/10-Innholdssider/innbyggerhjelp.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-11-innbyggerhjelpen-05-boligsoneparkering/04-pages-11-innbyggerhjelpen-05-boligsoneparkering.rendered.html",
-          "lineagePattern": "pages-boligsoneparkering"
+          "lineagePath": "../../patterns/04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering/04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html",
+          "lineagePattern": "pages-ibh-boligsoneparkering"
         }
       },
       {
@@ -1541,6 +1549,14 @@
         }
       },
       {
+        "v": "03-templates/30-Innbyggerhjelpen/10-ibh-start.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-71-tjeneste-pub-02-rediger-ibh-start/04-pages-71-tjeneste-pub-02-rediger-ibh-start.rendered.html",
+          "lineagePattern": "pages-rediger-ibh-start"
+        }
+      },
+      {
         "v": "03-templates/70-BkPublisering/00-sideoversikt.mustache",
         "value": {
           "compileState": "clean",
@@ -1557,7 +1573,7 @@
         }
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-innbyggerhjelp.mustache",
+        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -1767,19 +1783,19 @@
         }
       },
       {
-        "v": "04-pages/11-innbyggerhjelpen/00-innbyggerhjelpen.mustache",
+        "v": "04-pages/11-innbyggerhjelpen/00-ibh-start.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/11-innbyggerhjelpen/01-innbyggerhjelpkategori.mustache",
+        "v": "04-pages/11-innbyggerhjelpen/01-ibh-navigasjon.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/11-innbyggerhjelpen/05-boligsoneparkering.mustache",
+        "v": "04-pages/11-innbyggerhjelpen/05-ibh-boligsoneparkering.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -2187,7 +2203,13 @@
         }
       },
       {
-        "v": "04-pages/71-tjeneste-pub/03-innbyggerhjelpkategori.mustache",
+        "v": "04-pages/71-tjeneste-pub/02-rediger-ibh-start.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/71-tjeneste-pub/03-rediger-ibh-navigasjon.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -2385,6 +2407,11 @@
       {
         "v": "02-organisms/00-global/00-header.mustache",
         "w": "00-atoms/00-basics/01-logo.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/00-global/02-brodsmuler.mustache",
+        "w": "00-atoms/15-knapper/30-redigeringsmodusknapp.mustache",
         "value": {}
       },
       {
@@ -4383,6 +4410,51 @@
         "value": {}
       },
       {
+        "v": "03-templates/30-Innbyggerhjelpen/10-ibh-start.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/30-Innbyggerhjelpen/10-ibh-start.mustache",
+        "w": "00-atoms/15-knapper/30-redigeringsmodusknapp.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/30-Innbyggerhjelpen/10-ibh-start.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/30-Innbyggerhjelpen/10-ibh-start.mustache",
+        "w": "01-molecules/publisering/action-line.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/30-Innbyggerhjelpen/10-ibh-start.mustache",
+        "w": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/30-Innbyggerhjelpen/10-ibh-start.mustache",
+        "w": "01-molecules/lister/02-link-liste-enkel.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/30-Innbyggerhjelpen/10-ibh-start.mustache",
+        "w": "01-molecules/navigasjon/lenkeboks-tjenestekategori.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/30-Innbyggerhjelpen/10-ibh-start.mustache",
+        "w": "02-organisms/40-annet/30-service-snarvei.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/30-Innbyggerhjelpen/10-ibh-start.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
         "v": "03-templates/70-BkPublisering/00-sideoversikt.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
@@ -4493,67 +4565,67 @@
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-innbyggerhjelp.mustache",
+        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-innbyggerhjelp.mustache",
+        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-innbyggerhjelp.mustache",
+        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/action-line.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-innbyggerhjelp.mustache",
+        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/navigasjon/org-meny.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-innbyggerhjelp.mustache",
+        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-sidetittel.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-innbyggerhjelp.mustache",
+        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-ingress.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-innbyggerhjelp.mustache",
+        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-avsnitt.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-innbyggerhjelp.mustache",
+        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-byline.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-innbyggerhjelp.mustache",
+        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-accordion-bilde.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-innbyggerhjelp.mustache",
+        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-accordion-status.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-innbyggerhjelp.mustache",
+        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-accordion-dato.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-innbyggerhjelp.mustache",
+        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-accordion-plassering.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-innbyggerhjelp.mustache",
+        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -4813,42 +4885,42 @@
         "value": {}
       },
       {
-        "v": "04-pages/11-innbyggerhjelpen/00-innbyggerhjelpen.mustache",
-        "w": "03-templates/08-Navigasjon/20-tjenestetilbud.mustache",
+        "v": "04-pages/11-innbyggerhjelpen/00-ibh-start.mustache",
+        "w": "03-templates/30-Innbyggerhjelpen/10-ibh-start.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/11-innbyggerhjelpen/01-innbyggerhjelpkategori.mustache",
+        "v": "04-pages/11-innbyggerhjelpen/01-ibh-navigasjon.mustache",
         "w": "02-organisms/00-global/_03-header-ih.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/11-innbyggerhjelpen/01-innbyggerhjelpkategori.mustache",
+        "v": "04-pages/11-innbyggerhjelpen/01-ibh-navigasjon.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/11-innbyggerhjelpen/01-innbyggerhjelpkategori.mustache",
+        "v": "04-pages/11-innbyggerhjelpen/01-ibh-navigasjon.mustache",
         "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/11-innbyggerhjelpen/01-innbyggerhjelpkategori.mustache",
+        "v": "04-pages/11-innbyggerhjelpen/01-ibh-navigasjon.mustache",
         "w": "01-molecules/navigasjon/tjenestekategori-navigasjon.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/11-innbyggerhjelpen/01-innbyggerhjelpkategori.mustache",
+        "v": "04-pages/11-innbyggerhjelpen/01-ibh-navigasjon.mustache",
         "w": "02-organisms/40-annet/30-service-snarvei.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/11-innbyggerhjelpen/01-innbyggerhjelpkategori.mustache",
+        "v": "04-pages/11-innbyggerhjelpen/01-ibh-navigasjon.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/11-innbyggerhjelpen/05-boligsoneparkering.mustache",
+        "v": "04-pages/11-innbyggerhjelpen/05-ibh-boligsoneparkering.mustache",
         "w": "03-templates/10-Innholdssider/innbyggerhjelp.mustache",
         "value": {}
       },
@@ -6058,32 +6130,37 @@
         "value": {}
       },
       {
-        "v": "04-pages/71-tjeneste-pub/03-innbyggerhjelpkategori.mustache",
+        "v": "04-pages/71-tjeneste-pub/02-rediger-ibh-start.mustache",
+        "w": "03-templates/30-Innbyggerhjelpen/10-ibh-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/71-tjeneste-pub/03-rediger-ibh-navigasjon.mustache",
         "w": "02-organisms/00-global/_03-header-ih.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/71-tjeneste-pub/03-innbyggerhjelpkategori.mustache",
+        "v": "04-pages/71-tjeneste-pub/03-rediger-ibh-navigasjon.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/71-tjeneste-pub/03-innbyggerhjelpkategori.mustache",
+        "v": "04-pages/71-tjeneste-pub/03-rediger-ibh-navigasjon.mustache",
         "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/71-tjeneste-pub/03-innbyggerhjelpkategori.mustache",
+        "v": "04-pages/71-tjeneste-pub/03-rediger-ibh-navigasjon.mustache",
         "w": "01-molecules/navigasjon/tjenestekategori-navigasjon.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/71-tjeneste-pub/03-innbyggerhjelpkategori.mustache",
+        "v": "04-pages/71-tjeneste-pub/03-rediger-ibh-navigasjon.mustache",
         "w": "02-organisms/40-annet/30-service-snarvei.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/71-tjeneste-pub/03-innbyggerhjelpkategori.mustache",
+        "v": "04-pages/71-tjeneste-pub/03-rediger-ibh-navigasjon.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },

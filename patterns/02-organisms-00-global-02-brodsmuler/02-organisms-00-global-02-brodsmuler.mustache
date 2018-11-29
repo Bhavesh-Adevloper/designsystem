@@ -1,23 +1,7 @@
 {{# breadcrumbs }}
 <div class="smMa desktop_centered bc_container js_breadcrumbs clearfix">
     
-    {{# redigeringsmodus }}
-    <div class="edit_mode_button_container js_edit_mode_button">
-        <button class="button button--edit-mode active">
-            <span class="icon-online grunt-icon grunt-icon--32"></span>
-            <span class="button--edit-mode__label">Slå av redigering</span>
-        </button>
-    </div>
-    {{/ redigeringsmodus }}
-    
-    {{# redigeringsmodusAv }}
-    <div class="edit_mode_button_container js_edit_mode_button">
-        <button class="button button--edit-mode">
-            <span class="icon-offline grunt-icon grunt-icon--32"></span>
-            <span class="button--edit-mode__label">Slå på redigering</span>
-        </button>
-    </div>
-    {{/ redigeringsmodusAv }}
+    {{> atoms-redigeringsmodusknapp }}
     
     <div class="bc_label mobile">Gå tilbake til:</div>
     <div class="bc_label desktop">Du er her:</div>
