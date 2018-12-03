@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1543826088230,
+  "timestamp": 1543835322965,
   "graph": {
     "options": {
       "directed": true,
@@ -154,7 +154,7 @@
         "v": "00-atoms/10-tabeller/09-flex-tabell.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-70-artikkel-pub-15-sidehistorikk/04-pages-70-artikkel-pub-15-sidehistorikk.rendered.html",
+          "lineagePath": "../../patterns/04-pages-71-Pub-artikkel-15-sidehistorikk/04-pages-71-Pub-artikkel-15-sidehistorikk.rendered.html",
           "lineagePattern": "pages-sidehistorikk"
         }
       },
@@ -334,7 +334,7 @@
         "v": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-70-artikkel-pub-50-sne-artikkel/04-pages-70-artikkel-pub-50-sne-artikkel.rendered.html",
+          "lineagePath": "../../patterns/04-pages-71-Pub-artikkel-50-sne-artikkel/04-pages-71-Pub-artikkel-50-sne-artikkel.rendered.html",
           "lineagePattern": "pages-sne-artikkel"
         }
       },
@@ -342,7 +342,7 @@
         "v": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-70-artikkel-pub-20-sne-artikkelliste/04-pages-70-artikkel-pub-20-sne-artikkelliste.rendered.html",
+          "lineagePath": "../../patterns/04-pages-71-Pub-artikkel-20-sne-artikkelliste/04-pages-71-Pub-artikkel-20-sne-artikkelliste.rendered.html",
           "lineagePattern": "pages-sne-artikkelliste"
         }
       },
@@ -708,7 +708,7 @@
         "v": "01-molecules/navigasjon/org-meny--redigering.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-70-artikkel-pub-20-sne-artikkelliste/04-pages-70-artikkel-pub-20-sne-artikkelliste.rendered.html",
+          "lineagePath": "../../patterns/04-pages-71-Pub-artikkel-20-sne-artikkelliste/04-pages-71-Pub-artikkel-20-sne-artikkelliste.rendered.html",
           "lineagePattern": "pages-sne-artikkelliste"
         }
       },
@@ -724,7 +724,7 @@
         "v": "01-molecules/navigasjon/tabs.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-70-artikkel-pub-20-sne-artikkelliste/04-pages-70-artikkel-pub-20-sne-artikkelliste.rendered.html",
+          "lineagePath": "../../patterns/04-pages-71-Pub-artikkel-20-sne-artikkelliste/04-pages-71-Pub-artikkel-20-sne-artikkelliste.rendered.html",
           "lineagePattern": "pages-sne-artikkelliste"
         }
       },
@@ -732,7 +732,7 @@
         "v": "01-molecules/navigasjon/tjenestekategori-navigasjon.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-71-tjeneste-pub-03-rediger-ibh-navigasjon/04-pages-71-tjeneste-pub-03-rediger-ibh-navigasjon.rendered.html",
+          "lineagePath": "../../patterns/04-pages-72-Pub-ibh-03-rediger-ibh-navigasjon/04-pages-72-Pub-ibh-03-rediger-ibh-navigasjon.rendered.html",
           "lineagePattern": "pages-rediger-ibh-navigasjon"
         }
       },
@@ -776,7 +776,7 @@
         "v": "01-molecules/publisering/action-line.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-70-artikkel-pub-20-sne-artikkelliste/04-pages-70-artikkel-pub-20-sne-artikkelliste.rendered.html",
+          "lineagePath": "../../patterns/04-pages-71-Pub-artikkel-20-sne-artikkelliste/04-pages-71-Pub-artikkel-20-sne-artikkelliste.rendered.html",
           "lineagePattern": "pages-sne-artikkelliste"
         }
       },
@@ -790,7 +790,7 @@
         "v": "01-molecules/publisering/modal.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-70-artikkel-pub-20-sne-artikkelliste/04-pages-70-artikkel-pub-20-sne-artikkelliste.rendered.html",
+          "lineagePath": "../../patterns/04-pages-71-Pub-artikkel-20-sne-artikkelliste/04-pages-71-Pub-artikkel-20-sne-artikkelliste.rendered.html",
           "lineagePattern": "pages-sne-artikkelliste"
         }
       },
@@ -798,7 +798,7 @@
         "v": "01-molecules/publisering/rediger-accordion-bilde.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-ibh-artikkel/03-templates-70-BkPublisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
           "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
@@ -806,7 +806,7 @@
         "v": "01-molecules/publisering/rediger-accordion-dato.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-ibh-artikkel/03-templates-70-BkPublisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
           "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
@@ -814,7 +814,7 @@
         "v": "01-molecules/publisering/rediger-accordion-plassering.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-ibh-artikkel/03-templates-70-BkPublisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
           "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
@@ -822,7 +822,7 @@
         "v": "01-molecules/publisering/rediger-accordion-status.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-ibh-artikkel/03-templates-70-BkPublisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
           "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
@@ -830,7 +830,7 @@
         "v": "01-molecules/publisering/rediger-avsnitt.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-ibh-artikkel/03-templates-70-BkPublisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
           "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
@@ -838,7 +838,7 @@
         "v": "01-molecules/publisering/rediger-byline.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-ibh-artikkel/03-templates-70-BkPublisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
           "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
@@ -846,7 +846,7 @@
         "v": "01-molecules/publisering/rediger-forfatter.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-01-rediger-sne-artikkel/03-templates-70-BkPublisering-01-rediger-sne-artikkel.rendered.html",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-01-rediger-sne-artikkel/03-templates-70-Publisering-01-rediger-sne-artikkel.rendered.html",
           "lineagePattern": "templates-rediger-sne-artikkel"
         }
       },
@@ -854,7 +854,7 @@
         "v": "01-molecules/publisering/rediger-hovedtekst.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-01-rediger-sne-artikkel/03-templates-70-BkPublisering-01-rediger-sne-artikkel.rendered.html",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-01-rediger-sne-artikkel/03-templates-70-Publisering-01-rediger-sne-artikkel.rendered.html",
           "lineagePattern": "templates-rediger-sne-artikkel"
         }
       },
@@ -862,7 +862,7 @@
         "v": "01-molecules/publisering/rediger-ingress.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-ibh-artikkel/03-templates-70-BkPublisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
           "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
@@ -870,7 +870,7 @@
         "v": "01-molecules/publisering/rediger-listeelement.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-70-artikkel-pub-20-sne-artikkelliste/04-pages-70-artikkel-pub-20-sne-artikkelliste.rendered.html",
+          "lineagePath": "../../patterns/04-pages-71-Pub-artikkel-20-sne-artikkelliste/04-pages-71-Pub-artikkel-20-sne-artikkelliste.rendered.html",
           "lineagePattern": "pages-sne-artikkelliste"
         }
       },
@@ -878,7 +878,7 @@
         "v": "01-molecules/publisering/rediger-sidetittel.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-02-rediger-ibh-artikkel/03-templates-70-BkPublisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
           "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
@@ -886,7 +886,7 @@
         "v": "01-molecules/publisering/rediger-toppbilde.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-BkPublisering-01-rediger-sne-artikkel/03-templates-70-BkPublisering-01-rediger-sne-artikkel.rendered.html",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-01-rediger-sne-artikkel/03-templates-70-Publisering-01-rediger-sne-artikkel.rendered.html",
           "lineagePattern": "templates-rediger-sne-artikkel"
         }
       },
@@ -894,7 +894,7 @@
         "v": "01-molecules/publisering/vis-flere.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-70-artikkel-pub-20-sne-artikkelliste/04-pages-70-artikkel-pub-20-sne-artikkelliste.rendered.html",
+          "lineagePath": "../../patterns/04-pages-71-Pub-artikkel-20-sne-artikkelliste/04-pages-71-Pub-artikkel-20-sne-artikkelliste.rendered.html",
           "lineagePattern": "pages-sne-artikkelliste"
         }
       },
@@ -1030,7 +1030,7 @@
         "v": "02-organisms/00-global/_03-header-ih.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-71-tjeneste-pub-03-rediger-ibh-navigasjon/04-pages-71-tjeneste-pub-03-rediger-ibh-navigasjon.rendered.html",
+          "lineagePath": "../../patterns/04-pages-72-Pub-ibh-03-rediger-ibh-navigasjon/04-pages-72-Pub-ibh-03-rediger-ibh-navigasjon.rendered.html",
           "lineagePattern": "pages-rediger-ibh-navigasjon"
         }
       },
@@ -1552,28 +1552,28 @@
         "v": "03-templates/30-Innbyggerhjelpen/10-ibh-start.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-71-tjeneste-pub-02-rediger-ibh-start/04-pages-71-tjeneste-pub-02-rediger-ibh-start.rendered.html",
+          "lineagePath": "../../patterns/04-pages-72-Pub-ibh-02-rediger-ibh-start/04-pages-72-Pub-ibh-02-rediger-ibh-start.rendered.html",
           "lineagePattern": "pages-rediger-ibh-start"
         }
       },
       {
-        "v": "03-templates/70-BkPublisering/00-sideoversikt.mustache",
+        "v": "03-templates/70-Publisering/00-sideoversikt.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-71-tjeneste-pub-01-sideoversikt-publiserte/04-pages-71-tjeneste-pub-01-sideoversikt-publiserte.rendered.html",
+          "lineagePath": "../../patterns/04-pages-70-Pub-global-01-sideoversikt-publiserte/04-pages-70-Pub-global-01-sideoversikt-publiserte.rendered.html",
           "lineagePattern": "pages-sideoversikt-publiserte"
         }
       },
       {
-        "v": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-70-artikkel-pub-11-artikkel-utgatt/04-pages-70-artikkel-pub-11-artikkel-utgatt.rendered.html",
+          "lineagePath": "../../patterns/04-pages-71-Pub-artikkel-11-artikkel-utgatt/04-pages-71-Pub-artikkel-11-artikkel-utgatt.rendered.html",
           "lineagePattern": "pages-artikkel-utgatt"
         }
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -2137,79 +2137,79 @@
         }
       },
       {
-        "v": "04-pages/70-artikkel-pub/00-artikkel-kladd-ikke-lagret.mustache",
+        "v": "04-pages/70-Pub-global/00-sideoversikt.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/70-artikkel-pub/01-artikkel-kladd.mustache",
+        "v": "04-pages/70-Pub-global/01-sideoversikt-publiserte.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/70-artikkel-pub/02-artikkel-kladd-med-feil.mustache",
+        "v": "04-pages/71-Pub-artikkel/00-artikkel-kladd-ikke-lagret.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/70-artikkel-pub/05-artikkel-forhandsvisning.mustache",
+        "v": "04-pages/71-Pub-artikkel/01-artikkel-kladd.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/70-artikkel-pub/10-artikkel-publisert.mustache",
+        "v": "04-pages/71-Pub-artikkel/02-artikkel-kladd-med-feil.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/70-artikkel-pub/11-artikkel-utgatt.mustache",
+        "v": "04-pages/71-Pub-artikkel/05-artikkel-forhandsvisning.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/70-artikkel-pub/15-sidehistorikk.mustache",
+        "v": "04-pages/71-Pub-artikkel/10-artikkel-publisert.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/70-artikkel-pub/20-sne-artikkelliste.mustache",
+        "v": "04-pages/71-Pub-artikkel/11-artikkel-utgatt.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/70-artikkel-pub/50-sne-artikkel.mustache",
+        "v": "04-pages/71-Pub-artikkel/15-sidehistorikk.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/71-tjeneste-pub/00-sideoversikt.mustache",
+        "v": "04-pages/71-Pub-artikkel/20-sne-artikkelliste.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/71-tjeneste-pub/01-sideoversikt-publiserte.mustache",
+        "v": "04-pages/71-Pub-artikkel/50-sne-artikkel.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/71-tjeneste-pub/02-rediger-ibh-start.mustache",
+        "v": "04-pages/72-Pub-ibh/02-rediger-ibh-start.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/71-tjeneste-pub/03-rediger-ibh-navigasjon.mustache",
+        "v": "04-pages/72-Pub-ibh/03-rediger-ibh-navigasjon.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -4450,177 +4450,177 @@
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/00-sideoversikt.mustache",
+        "v": "03-templates/70-Publisering/00-sideoversikt.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/00-sideoversikt.mustache",
+        "v": "03-templates/70-Publisering/00-sideoversikt.mustache",
         "w": "01-molecules/publisering/action-line.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/00-sideoversikt.mustache",
+        "v": "03-templates/70-Publisering/00-sideoversikt.mustache",
         "w": "01-molecules/navigasjon/tabs.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/00-sideoversikt.mustache",
+        "v": "03-templates/70-Publisering/00-sideoversikt.mustache",
         "w": "00-atoms/20-skjema-element/05-filterboks.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/00-sideoversikt.mustache",
+        "v": "03-templates/70-Publisering/00-sideoversikt.mustache",
         "w": "00-atoms/10-tabeller/09-flex-tabell.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/00-sideoversikt.mustache",
+        "v": "03-templates/70-Publisering/00-sideoversikt.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "01-molecules/publisering/action-line.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "01-molecules/navigasjon/org-meny.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-sidetittel.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-toppbilde.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-ingress.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-hovedtekst.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-forfatter.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-byline.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-accordion-bilde.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-accordion-status.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-accordion-dato.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-accordion-plassering.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/action-line.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/navigasjon/org-meny.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-sidetittel.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-ingress.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-avsnitt.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-byline.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-accordion-bilde.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-accordion-status.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-accordion-dato.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/rediger-accordion-plassering.mustache",
         "value": {}
       },
       {
-        "v": "03-templates/70-BkPublisering/02-rediger-ibh-artikkel.mustache",
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -5945,217 +5945,217 @@
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/00-artikkel-kladd-ikke-lagret.mustache",
-        "w": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "04-pages/70-Pub-global/00-sideoversikt.mustache",
+        "w": "03-templates/70-Publisering/00-sideoversikt.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/01-artikkel-kladd.mustache",
-        "w": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "04-pages/70-Pub-global/01-sideoversikt-publiserte.mustache",
+        "w": "03-templates/70-Publisering/00-sideoversikt.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/02-artikkel-kladd-med-feil.mustache",
-        "w": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "04-pages/71-Pub-artikkel/00-artikkel-kladd-ikke-lagret.mustache",
+        "w": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/05-artikkel-forhandsvisning.mustache",
+        "v": "04-pages/71-Pub-artikkel/01-artikkel-kladd.mustache",
+        "w": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/71-Pub-artikkel/02-artikkel-kladd-med-feil.mustache",
+        "w": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/71-Pub-artikkel/05-artikkel-forhandsvisning.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/05-artikkel-forhandsvisning.mustache",
+        "v": "04-pages/71-Pub-artikkel/05-artikkel-forhandsvisning.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/05-artikkel-forhandsvisning.mustache",
+        "v": "04-pages/71-Pub-artikkel/05-artikkel-forhandsvisning.mustache",
         "w": "01-molecules/publisering/action-line.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/05-artikkel-forhandsvisning.mustache",
+        "v": "04-pages/71-Pub-artikkel/05-artikkel-forhandsvisning.mustache",
         "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/05-artikkel-forhandsvisning.mustache",
+        "v": "04-pages/71-Pub-artikkel/05-artikkel-forhandsvisning.mustache",
         "w": "01-molecules/navigasjon/org-meny.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/05-artikkel-forhandsvisning.mustache",
+        "v": "04-pages/71-Pub-artikkel/05-artikkel-forhandsvisning.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/10-artikkel-publisert.mustache",
-        "w": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "04-pages/71-Pub-artikkel/10-artikkel-publisert.mustache",
+        "w": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/11-artikkel-utgatt.mustache",
-        "w": "03-templates/70-BkPublisering/01-rediger-sne-artikkel.mustache",
+        "v": "04-pages/71-Pub-artikkel/11-artikkel-utgatt.mustache",
+        "w": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/15-sidehistorikk.mustache",
+        "v": "04-pages/71-Pub-artikkel/15-sidehistorikk.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/15-sidehistorikk.mustache",
+        "v": "04-pages/71-Pub-artikkel/15-sidehistorikk.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/15-sidehistorikk.mustache",
+        "v": "04-pages/71-Pub-artikkel/15-sidehistorikk.mustache",
         "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/15-sidehistorikk.mustache",
+        "v": "04-pages/71-Pub-artikkel/15-sidehistorikk.mustache",
         "w": "01-molecules/publisering/action-line.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/15-sidehistorikk.mustache",
+        "v": "04-pages/71-Pub-artikkel/15-sidehistorikk.mustache",
         "w": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/15-sidehistorikk.mustache",
+        "v": "04-pages/71-Pub-artikkel/15-sidehistorikk.mustache",
         "w": "00-atoms/10-tabeller/09-flex-tabell.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/15-sidehistorikk.mustache",
+        "v": "04-pages/71-Pub-artikkel/15-sidehistorikk.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/20-sne-artikkelliste.mustache",
+        "v": "04-pages/71-Pub-artikkel/20-sne-artikkelliste.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/20-sne-artikkelliste.mustache",
+        "v": "04-pages/71-Pub-artikkel/20-sne-artikkelliste.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/20-sne-artikkelliste.mustache",
+        "v": "04-pages/71-Pub-artikkel/20-sne-artikkelliste.mustache",
         "w": "01-molecules/publisering/action-line.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/20-sne-artikkelliste.mustache",
+        "v": "04-pages/71-Pub-artikkel/20-sne-artikkelliste.mustache",
         "w": "01-molecules/publisering/modal.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/20-sne-artikkelliste.mustache",
+        "v": "04-pages/71-Pub-artikkel/20-sne-artikkelliste.mustache",
         "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/20-sne-artikkelliste.mustache",
+        "v": "04-pages/71-Pub-artikkel/20-sne-artikkelliste.mustache",
         "w": "01-molecules/navigasjon/org-meny--redigering.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/20-sne-artikkelliste.mustache",
+        "v": "04-pages/71-Pub-artikkel/20-sne-artikkelliste.mustache",
         "w": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/20-sne-artikkelliste.mustache",
+        "v": "04-pages/71-Pub-artikkel/20-sne-artikkelliste.mustache",
         "w": "01-molecules/navigasjon/tabs.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/20-sne-artikkelliste.mustache",
+        "v": "04-pages/71-Pub-artikkel/20-sne-artikkelliste.mustache",
         "w": "01-molecules/publisering/rediger-listeelement.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/20-sne-artikkelliste.mustache",
+        "v": "04-pages/71-Pub-artikkel/20-sne-artikkelliste.mustache",
         "w": "01-molecules/publisering/vis-flere.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/20-sne-artikkelliste.mustache",
+        "v": "04-pages/71-Pub-artikkel/20-sne-artikkelliste.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/50-sne-artikkel.mustache",
+        "v": "04-pages/71-Pub-artikkel/50-sne-artikkel.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/50-sne-artikkel.mustache",
+        "v": "04-pages/71-Pub-artikkel/50-sne-artikkel.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/50-sne-artikkel.mustache",
+        "v": "04-pages/71-Pub-artikkel/50-sne-artikkel.mustache",
         "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/50-sne-artikkel.mustache",
+        "v": "04-pages/71-Pub-artikkel/50-sne-artikkel.mustache",
         "w": "01-molecules/navigasjon/org-meny.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/70-artikkel-pub/50-sne-artikkel.mustache",
+        "v": "04-pages/71-Pub-artikkel/50-sne-artikkel.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/71-tjeneste-pub/00-sideoversikt.mustache",
-        "w": "03-templates/70-BkPublisering/00-sideoversikt.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/71-tjeneste-pub/01-sideoversikt-publiserte.mustache",
-        "w": "03-templates/70-BkPublisering/00-sideoversikt.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/71-tjeneste-pub/02-rediger-ibh-start.mustache",
+        "v": "04-pages/72-Pub-ibh/02-rediger-ibh-start.mustache",
         "w": "03-templates/30-Innbyggerhjelpen/10-ibh-start.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/71-tjeneste-pub/03-rediger-ibh-navigasjon.mustache",
+        "v": "04-pages/72-Pub-ibh/03-rediger-ibh-navigasjon.mustache",
         "w": "02-organisms/00-global/_03-header-ih.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/71-tjeneste-pub/03-rediger-ibh-navigasjon.mustache",
+        "v": "04-pages/72-Pub-ibh/03-rediger-ibh-navigasjon.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/71-tjeneste-pub/03-rediger-ibh-navigasjon.mustache",
+        "v": "04-pages/72-Pub-ibh/03-rediger-ibh-navigasjon.mustache",
         "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/71-tjeneste-pub/03-rediger-ibh-navigasjon.mustache",
+        "v": "04-pages/72-Pub-ibh/03-rediger-ibh-navigasjon.mustache",
         "w": "01-molecules/navigasjon/tjenestekategori-navigasjon.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/71-tjeneste-pub/03-rediger-ibh-navigasjon.mustache",
+        "v": "04-pages/72-Pub-ibh/03-rediger-ibh-navigasjon.mustache",
         "w": "02-organisms/40-annet/30-service-snarvei.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/71-tjeneste-pub/03-rediger-ibh-navigasjon.mustache",
+        "v": "04-pages/72-Pub-ibh/03-rediger-ibh-navigasjon.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
