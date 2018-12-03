@@ -1,10 +1,10 @@
 <div class="row category_navigation_container js_categories">
     <div class="col_md_6 col_lg_4">
 
-        <ul class="category_navigation_1 js_cat_1">
+        <ul class="category_navigation_1 js_cat_1{{# visEmneordInfoBoks }} info_emneord_tjeneste{{/ visEmneordInfoBoks }}{{# visTjenesteInfoBoks }} info_tjeneste{{/ visTjenesteInfoBoks }}">
             {{# cat_liste_1 }}
             <li class="los {{# active1 }}active{{/ active1 }}">
-                <a href="#" title="{{ tittel }}">
+                <a href="{{ url }}" title="{{ tittel }}">
                     {{ tittel }}
                     <span class="arrow-icon"></span>
                     <span class="arrow-icon--2"></span>
@@ -13,7 +13,7 @@
                 <ul class="category_navigation_2 js_cat_2 active">
                     {{# cat_liste_2 }}
                     <li class="los2 {{# active2 }}active{{/ active2 }}">
-                        <a title="{{ tittel }}" href="#!">
+                        <a href="{{ url }}" title="{{ tittel }}">
                             {{ tittel }}
                             <span class="arrow-icon"></span>
                         </a>
@@ -21,14 +21,14 @@
                         <ul class="category_navigation_3 js_cat_3 active">
                             {{# nyInnbyggerhjelpLenke }}
                             <li class="tjenestebeskrivelse add_new">
-                                <a title="{{ tittel }}" href="{{ url }}">
+                                <a href="{{ url }}" title="{{ tittel }}">
                                     {{ tittel }}
                                 </a>
                             </li>
                             {{/ nyInnbyggerhjelpLenke }}
                             {{# tjenesteliste }}
                             <li class="tjenestebeskrivelse">
-                                <a title="{{ tittel }}" href="{{ url }}">
+                                <a href="{{ url }}" title="{{ tittel }}">
                                     {{ tittel }}
                                     <span class="arrow-icon"></span>
                                     <span class="arrow-icon--2"></span>
