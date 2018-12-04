@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1543922206622,
+  "timestamp": 1543927474746,
   "graph": {
     "options": {
       "directed": true,
@@ -6027,6 +6027,11 @@
       {
         "v": "04-pages/71-Pub-artikkel/05-artikkel-forhandsvisning.mustache",
         "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/71-Pub-artikkel/05-artikkel-forhandsvisning.mustache",
+        "w": "01-molecules/navigasjon/org-meny--redigering.mustache",
         "value": {}
       },
       {

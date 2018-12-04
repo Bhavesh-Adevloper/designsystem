@@ -112,6 +112,12 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 <div class="smMa desktop_centered bc_container js_breadcrumbs clearfix">
     
     
+        <div class="edit_mode_button_container js_edit_mode_button">
+            <a href="#" class="button button--edit-mode active">
+                <span class="icon-online grunt-icon grunt-icon--32"></span>
+                <span class="button--edit-mode__label">Slå av redigering</span>
+            </a>
+        </div>
 
 
 
@@ -164,91 +170,823 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 
     <div class="row">
 
+
             <div class="col_md_12 col_lg_4">
-                <nav id="js_org_menu_container" class="org_menu_container mbl org_menu_container--inactive">
+<nav id="js_org_menu_container" class="org_menu_container mbl org_menu_container--inactive">
     <a href="" title="Meny" class="org_menu_mobile_header">
         Meny
         <span class="arrow-icon"></span>
     </a>
-    <ul class="org_menu">
-            <li class=" active">
-                <a title="Siste nytt" href="#" class="org_menu_link">
-                    Siste nytt
-                </a>
-            </li>
-            <li class="js_org_sub_menu_toggle with_org_sub_menu org_sub_menu_collapsed">
-                <a title="Om oss" href="#" class="org_menu_link">
-                    Om oss
-                </a>
-                <a href="" title="Undermeny" class="org_sub_menu_toggle_link">
-                    <span class="arrow-icon"></span>
-                    <span class="screen-reader-text">Undermeny</span>
-                </a>
-                <ul>
-                    <li class="">
-                        <a title="Serviceerklæring" href="#" class="org_sub_menu_link">
-                            Serviceerklæring
+    <ul class="org_menu org_menu--editable">
+            <li class="with_org_sub_menu dragula-menuitem">
+                <!-- next item gets either: org_sub_menu_collapsed or org_sub_menu_expanded -->
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Siste nytt" href="#" class="org_menu_link js-hide-this">
+                            Siste nytt
                         </a>
-                    </li>
-                    <li class="">
-                        <a title="Ofte stilte spørsmål" href="#" class="org_sub_menu_link">
-                            Ofte stilte spørsmål
+                        
+                        <!-- Drag&drop-knapp -->
+                        <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
+
+                        <!-- Rediger-knapp -->
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Rediger menypunktnavn</span>
                         </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="js_org_sub_menu_toggle with_org_sub_menu org_sub_menu_collapsed">
-                <a title="Arbeidsgiver&#x2F;selskap" href="#" class="org_menu_link">
-                    Arbeidsgiver&#x2F;selskap
-                </a>
-                <a href="" title="Undermeny" class="org_sub_menu_toggle_link">
-                    <span class="arrow-icon"></span>
-                    <span class="screen-reader-text">Undermeny</span>
-                </a>
-                <ul>
-                    <li class="">
-                        <a title="Lønnsinnberetning" href="#" class="org_sub_menu_link">
-                            Lønnsinnberetning
+                        <!-- Rediger-funksjon -->
+                        <form class="form-element hidden js-show-this">
+                            <label for="editItem1" class="form-element__label screen-reader-text">
+                                Rediger menypunktnavn
+                            </label>
+                            <input id="editItem1" type="text" value="Siste nytt" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Oppdater menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                        <!-- Slett-knapp -->
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Slett menypunkt</span>
                         </a>
-                    </li>
-                    <li class="">
-                        <a title="Skattetrekk" href="#" class="org_sub_menu_link">
-                            Skattetrekk
+
+                        <!-- Toggle-knapp -->
+                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link">
+                                <span class="plus-arrow-icon"></span>
+                                <span class="screen-reader-text">Lag ny undermeny</span>
+                            </a>
+
+
+                    </span>
+
+                    <!-- Undermeny -->
+                    <ul>
+                    </ul>
+                    
+                    <span class="add-menu-item add-menu-item--sub">
+                        <!-- Ny-menypunkt-funksjon undermeny -->
+                        <a href="#" title="Legg til nytt undermenypunkt" class="add-menu-item__sub-link js-hide-and-show">
+                            <span class="plus-icon"></span>Nytt menypunkt
                         </a>
-                    </li>
-                    <li class="">
-                        <a title="Arbeidsgiveravgift" href="#" class="org_sub_menu_link">
-                            Arbeidsgiveravgift
+                        <form class="form-element form-element--sub js-show-this hidden">
+                            <label for="newItem1" class="form-element__label screen-reader-text">
+                                Nytt menypunkt
+                            </label>
+                            <input id="newItem1" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                    </span>
+                </span>
+            </li>
+            <li class="with_org_sub_menu dragula-menuitem">
+                <!-- next item gets either: org_sub_menu_collapsed or org_sub_menu_expanded -->
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Om oss" href="#" class="org_menu_link js-hide-this">
+                            Om oss
                         </a>
-                    </li>
-                </ul>
+                        
+                        <!-- Drag&drop-knapp -->
+                        <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
+
+                        <!-- Rediger-knapp -->
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Rediger menypunktnavn</span>
+                        </a>
+                        <!-- Rediger-funksjon -->
+                        <form class="form-element hidden js-show-this">
+                            <label for="editItem2" class="form-element__label screen-reader-text">
+                                Rediger menypunktnavn
+                            </label>
+                            <input id="editItem2" type="text" value="Om oss" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Oppdater menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                        <!-- Slett-knapp -->
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Slett menypunkt</span>
+                        </a>
+
+                        <!-- Toggle-knapp -->
+
+                            <a href="" title="Undermeny" class="org_sub_menu_toggle_link">
+                                <span class="arrow-icon"></span>
+                                <span class="screen-reader-text">Undermeny</span>
+                            </a>
+
+                    </span>
+
+                    <!-- Undermeny -->
+                    <ul>
+                            <li class="dragula-menuitem dragula-menuitem--sub">
+                                <span class="org_menu--editable__flex-container">
+
+                                    <!-- Menypunkt -->
+                                    <a title="Serviceerklæring" href="#" class="org_sub_menu_link js-hide-this">
+                                        Serviceerklæring
+                                    </a>
+                        
+                                    <!-- Drag&drop-knapp -->
+                                    <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
+                                    
+                                    <!-- Rediger-knapp -->
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                                        <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                        <span class="screen-reader-text">Rediger menypunktnavn</span>
+                                    </a>
+                                    <!-- Rediger-funksjon -->
+                                    <form class="form-element form-element--sub hidden js-show-this">
+                                        <label for="editItem2" class="form-element__label screen-reader-text">
+                                            Rediger menypunktnavn
+                                        </label>
+                                        <input id="editItem2" type="text" value="Serviceerklæring" placeholder="Menypunktnavn" class="form-element__textfield">
+                                        <button type="submit" class="button--success active">
+                                            <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Oppdater menypunkt</span>
+                                        </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
+                                    </form>
+                                    <!-- Slett-knapp -->
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                                        <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                        <span class="screen-reader-text">Slett menypunkt</span>
+                                    </a>
+                                </span>
+                                <ul><li></li></ul>
+                            </li>
+                            <li class="dragula-menuitem dragula-menuitem--sub">
+                                <span class="org_menu--editable__flex-container">
+
+                                    <!-- Menypunkt -->
+                                    <a title="Ofte stilte spørsmål" href="#" class="org_sub_menu_link js-hide-this">
+                                        Ofte stilte spørsmål
+                                    </a>
+                        
+                                    <!-- Drag&drop-knapp -->
+                                    <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
+                                    
+                                    <!-- Rediger-knapp -->
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                                        <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                        <span class="screen-reader-text">Rediger menypunktnavn</span>
+                                    </a>
+                                    <!-- Rediger-funksjon -->
+                                    <form class="form-element form-element--sub hidden js-show-this">
+                                        <label for="editItem2" class="form-element__label screen-reader-text">
+                                            Rediger menypunktnavn
+                                        </label>
+                                        <input id="editItem2" type="text" value="Ofte stilte spørsmål" placeholder="Menypunktnavn" class="form-element__textfield">
+                                        <button type="submit" class="button--success active">
+                                            <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Oppdater menypunkt</span>
+                                        </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
+                                    </form>
+                                    <!-- Slett-knapp -->
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                                        <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                        <span class="screen-reader-text">Slett menypunkt</span>
+                                    </a>
+                                </span>
+                                <ul><li></li></ul>
+                            </li>
+                    </ul>
+                    
+                    <span class="add-menu-item add-menu-item--sub">
+                        <!-- Ny-menypunkt-funksjon undermeny -->
+                        <a href="#" title="Legg til nytt undermenypunkt" class="add-menu-item__sub-link js-hide-and-show">
+                            <span class="plus-icon"></span>Nytt menypunkt
+                        </a>
+                        <form class="form-element form-element--sub js-show-this hidden">
+                            <label for="newItem2" class="form-element__label screen-reader-text">
+                                Nytt menypunkt
+                            </label>
+                            <input id="newItem2" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                    </span>
+                </span>
             </li>
-            <li class="">
-                <a title="Personlig skattyter" href="#" class="org_menu_link">
-                    Personlig skattyter
-                </a>
+            <li class="with_org_sub_menu dragula-menuitem">
+                <!-- next item gets either: org_sub_menu_collapsed or org_sub_menu_expanded -->
+                <span class="js_org_sub_menu_toggle org_sub_menu_expanded">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Arbeidsgiver&#x2F;selskap" href="#" class="org_menu_link js-hide-this">
+                            Arbeidsgiver&#x2F;selskap
+                        </a>
+                        
+                        <!-- Drag&drop-knapp -->
+                        <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
+
+                        <!-- Rediger-knapp -->
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Rediger menypunktnavn</span>
+                        </a>
+                        <!-- Rediger-funksjon -->
+                        <form class="form-element hidden js-show-this">
+                            <label for="editItem3" class="form-element__label screen-reader-text">
+                                Rediger menypunktnavn
+                            </label>
+                            <input id="editItem3" type="text" value="Arbeidsgiver&#x2F;selskap" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Oppdater menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                        <!-- Slett-knapp -->
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Slett menypunkt</span>
+                        </a>
+
+                        <!-- Toggle-knapp -->
+
+                            <a href="" title="Undermeny" class="org_sub_menu_toggle_link">
+                                <span class="arrow-icon"></span>
+                                <span class="screen-reader-text">Undermeny</span>
+                            </a>
+
+                    </span>
+
+                    <!-- Undermeny -->
+                    <ul>
+                            <li class="dragula-menuitem dragula-menuitem--sub active">
+                                <span class="org_menu--editable__flex-container">
+
+                                    <!-- Menypunkt -->
+                                    <a title="Lønnsinnberetning" href="#" class="org_sub_menu_link js-hide-this">
+                                        Lønnsinnberetning
+                                    </a>
+                        
+                                    <!-- Drag&drop-knapp -->
+                                    <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
+                                    
+                                    <!-- Rediger-knapp -->
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                                        <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                        <span class="screen-reader-text">Rediger menypunktnavn</span>
+                                    </a>
+                                    <!-- Rediger-funksjon -->
+                                    <form class="form-element form-element--sub hidden js-show-this">
+                                        <label for="editItem3" class="form-element__label screen-reader-text">
+                                            Rediger menypunktnavn
+                                        </label>
+                                        <input id="editItem3" type="text" value="Lønnsinnberetning" placeholder="Menypunktnavn" class="form-element__textfield">
+                                        <button type="submit" class="button--success active">
+                                            <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Oppdater menypunkt</span>
+                                        </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
+                                    </form>
+                                    <!-- Slett-knapp -->
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                                        <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                        <span class="screen-reader-text">Slett menypunkt</span>
+                                    </a>
+                                </span>
+                                <ul><li></li></ul>
+                            </li>
+                            <li class="dragula-menuitem dragula-menuitem--sub">
+                                <span class="org_menu--editable__flex-container">
+
+                                    <!-- Menypunkt -->
+                                    <a title="Skattetrekk" href="#" class="org_sub_menu_link js-hide-this">
+                                        Skattetrekk
+                                    </a>
+                        
+                                    <!-- Drag&drop-knapp -->
+                                    <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
+                                    
+                                    <!-- Rediger-knapp -->
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                                        <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                        <span class="screen-reader-text">Rediger menypunktnavn</span>
+                                    </a>
+                                    <!-- Rediger-funksjon -->
+                                    <form class="form-element form-element--sub hidden js-show-this">
+                                        <label for="editItem3" class="form-element__label screen-reader-text">
+                                            Rediger menypunktnavn
+                                        </label>
+                                        <input id="editItem3" type="text" value="Skattetrekk" placeholder="Menypunktnavn" class="form-element__textfield">
+                                        <button type="submit" class="button--success active">
+                                            <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Oppdater menypunkt</span>
+                                        </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
+                                    </form>
+                                    <!-- Slett-knapp -->
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                                        <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                        <span class="screen-reader-text">Slett menypunkt</span>
+                                    </a>
+                                </span>
+                                <ul><li></li></ul>
+                            </li>
+                            <li class="dragula-menuitem dragula-menuitem--sub">
+                                <span class="org_menu--editable__flex-container">
+
+                                    <!-- Menypunkt -->
+                                    <a title="Arbeidsgiveravgift" href="#" class="org_sub_menu_link js-hide-this">
+                                        Arbeidsgiveravgift
+                                    </a>
+                        
+                                    <!-- Drag&drop-knapp -->
+                                    <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
+                                    
+                                    <!-- Rediger-knapp -->
+                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                                        <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                        <span class="screen-reader-text">Rediger menypunktnavn</span>
+                                    </a>
+                                    <!-- Rediger-funksjon -->
+                                    <form class="form-element form-element--sub hidden js-show-this">
+                                        <label for="editItem3" class="form-element__label screen-reader-text">
+                                            Rediger menypunktnavn
+                                        </label>
+                                        <input id="editItem3" type="text" value="Arbeidsgiveravgift" placeholder="Menypunktnavn" class="form-element__textfield">
+                                        <button type="submit" class="button--success active">
+                                            <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Oppdater menypunkt</span>
+                                        </button>
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Avbryt</span>
+                                        </button>
+                                    </form>
+                                    <!-- Slett-knapp -->
+                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                                        <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                        <span class="screen-reader-text">Slett menypunkt</span>
+                                    </a>
+                                </span>
+                                <ul><li></li></ul>
+                            </li>
+                    </ul>
+                    
+                    <span class="add-menu-item add-menu-item--sub">
+                        <!-- Ny-menypunkt-funksjon undermeny -->
+                        <a href="#" title="Legg til nytt undermenypunkt" class="add-menu-item__sub-link js-hide-and-show">
+                            <span class="plus-icon"></span>Nytt menypunkt
+                        </a>
+                        <form class="form-element form-element--sub js-show-this hidden">
+                            <label for="newItem3" class="form-element__label screen-reader-text">
+                                Nytt menypunkt
+                            </label>
+                            <input id="newItem3" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                    </span>
+                </span>
             </li>
-            <li class="">
-                <a title="Eiendomsskatt" href="#" class="org_menu_link">
-                    Eiendomsskatt
-                </a>
+            <li class="with_org_sub_menu dragula-menuitem">
+                <!-- next item gets either: org_sub_menu_collapsed or org_sub_menu_expanded -->
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Personlig skattyter" href="#" class="org_menu_link js-hide-this">
+                            Personlig skattyter
+                        </a>
+                        
+                        <!-- Drag&drop-knapp -->
+                        <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
+
+                        <!-- Rediger-knapp -->
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Rediger menypunktnavn</span>
+                        </a>
+                        <!-- Rediger-funksjon -->
+                        <form class="form-element hidden js-show-this">
+                            <label for="editItem4" class="form-element__label screen-reader-text">
+                                Rediger menypunktnavn
+                            </label>
+                            <input id="editItem4" type="text" value="Personlig skattyter" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Oppdater menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                        <!-- Slett-knapp -->
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Slett menypunkt</span>
+                        </a>
+
+                        <!-- Toggle-knapp -->
+                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link">
+                                <span class="plus-arrow-icon"></span>
+                                <span class="screen-reader-text">Lag ny undermeny</span>
+                            </a>
+
+
+                    </span>
+
+                    <!-- Undermeny -->
+                    <ul>
+                    </ul>
+                    
+                    <span class="add-menu-item add-menu-item--sub">
+                        <!-- Ny-menypunkt-funksjon undermeny -->
+                        <a href="#" title="Legg til nytt undermenypunkt" class="add-menu-item__sub-link js-hide-and-show">
+                            <span class="plus-icon"></span>Nytt menypunkt
+                        </a>
+                        <form class="form-element form-element--sub js-show-this hidden">
+                            <label for="newItem4" class="form-element__label screen-reader-text">
+                                Nytt menypunkt
+                            </label>
+                            <input id="newItem4" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                    </span>
+                </span>
             </li>
-            <li class="">
-                <a title="Kommunale regninger" href="#" class="org_menu_link">
-                    Kommunale regninger
-                </a>
+            <li class="with_org_sub_menu dragula-menuitem">
+                <!-- next item gets either: org_sub_menu_collapsed or org_sub_menu_expanded -->
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Eiendomsskatt" href="#" class="org_menu_link js-hide-this">
+                            Eiendomsskatt
+                        </a>
+                        
+                        <!-- Drag&drop-knapp -->
+                        <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
+
+                        <!-- Rediger-knapp -->
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Rediger menypunktnavn</span>
+                        </a>
+                        <!-- Rediger-funksjon -->
+                        <form class="form-element hidden js-show-this">
+                            <label for="editItem5" class="form-element__label screen-reader-text">
+                                Rediger menypunktnavn
+                            </label>
+                            <input id="editItem5" type="text" value="Eiendomsskatt" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Oppdater menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                        <!-- Slett-knapp -->
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Slett menypunkt</span>
+                        </a>
+
+                        <!-- Toggle-knapp -->
+                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link">
+                                <span class="plus-arrow-icon"></span>
+                                <span class="screen-reader-text">Lag ny undermeny</span>
+                            </a>
+
+
+                    </span>
+
+                    <!-- Undermeny -->
+                    <ul>
+                    </ul>
+                    
+                    <span class="add-menu-item add-menu-item--sub">
+                        <!-- Ny-menypunkt-funksjon undermeny -->
+                        <a href="#" title="Legg til nytt undermenypunkt" class="add-menu-item__sub-link js-hide-and-show">
+                            <span class="plus-icon"></span>Nytt menypunkt
+                        </a>
+                        <form class="form-element form-element--sub js-show-this hidden">
+                            <label for="newItem5" class="form-element__label screen-reader-text">
+                                Nytt menypunkt
+                            </label>
+                            <input id="newItem5" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                    </span>
+                </span>
             </li>
-            <li class="">
-                <a title="Tjenester og skjema" href="&#x2F;patterns&#x2F;04-pages-02-orgenhet-14-tjenester-og-skjema&#x2F;04-pages-02-orgenhet-14-tjenester-og-skjema.rendered.html" class="org_menu_link">
-                    Tjenester og skjema
-                </a>
+            <li class="with_org_sub_menu dragula-menuitem">
+                <!-- next item gets either: org_sub_menu_collapsed or org_sub_menu_expanded -->
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Kommunale regninger" href="#" class="org_menu_link js-hide-this">
+                            Kommunale regninger
+                        </a>
+                        
+                        <!-- Drag&drop-knapp -->
+                        <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
+
+                        <!-- Rediger-knapp -->
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Rediger menypunktnavn</span>
+                        </a>
+                        <!-- Rediger-funksjon -->
+                        <form class="form-element hidden js-show-this">
+                            <label for="editItem6" class="form-element__label screen-reader-text">
+                                Rediger menypunktnavn
+                            </label>
+                            <input id="editItem6" type="text" value="Kommunale regninger" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Oppdater menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                        <!-- Slett-knapp -->
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Slett menypunkt</span>
+                        </a>
+
+                        <!-- Toggle-knapp -->
+                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link">
+                                <span class="plus-arrow-icon"></span>
+                                <span class="screen-reader-text">Lag ny undermeny</span>
+                            </a>
+
+
+                    </span>
+
+                    <!-- Undermeny -->
+                    <ul>
+                    </ul>
+                    
+                    <span class="add-menu-item add-menu-item--sub">
+                        <!-- Ny-menypunkt-funksjon undermeny -->
+                        <a href="#" title="Legg til nytt undermenypunkt" class="add-menu-item__sub-link js-hide-and-show">
+                            <span class="plus-icon"></span>Nytt menypunkt
+                        </a>
+                        <form class="form-element form-element--sub js-show-this hidden">
+                            <label for="newItem6" class="form-element__label screen-reader-text">
+                                Nytt menypunkt
+                            </label>
+                            <input id="newItem6" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                    </span>
+                </span>
             </li>
-            <li class="">
-                <a title="Kontakt" href="&#x2F;patterns&#x2F;04-pages-02-orgenhet-18-kontakt&#x2F;04-pages-02-orgenhet-18-kontakt.rendered.html" class="org_menu_link">
-                    Kontakt
-                </a>
+            <li class="with_org_sub_menu dragula-menuitem">
+                <!-- next item gets either: org_sub_menu_collapsed or org_sub_menu_expanded -->
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Tjenester og skjema" href="&#x2F;patterns&#x2F;04-pages-02-orgenhet-14-tjenester-og-skjema&#x2F;04-pages-02-orgenhet-14-tjenester-og-skjema.rendered.html" class="org_menu_link js-hide-this">
+                            Tjenester og skjema
+                        </a>
+                        
+                        <!-- Drag&drop-knapp -->
+                        <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
+
+                        <!-- Rediger-knapp -->
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Rediger menypunktnavn</span>
+                        </a>
+                        <!-- Rediger-funksjon -->
+                        <form class="form-element hidden js-show-this">
+                            <label for="editItem7" class="form-element__label screen-reader-text">
+                                Rediger menypunktnavn
+                            </label>
+                            <input id="editItem7" type="text" value="Tjenester og skjema" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Oppdater menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                        <!-- Slett-knapp -->
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Slett menypunkt</span>
+                        </a>
+
+                        <!-- Toggle-knapp -->
+                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link">
+                                <span class="plus-arrow-icon"></span>
+                                <span class="screen-reader-text">Lag ny undermeny</span>
+                            </a>
+
+
+                    </span>
+
+                    <!-- Undermeny -->
+                    <ul>
+                    </ul>
+                    
+                    <span class="add-menu-item add-menu-item--sub">
+                        <!-- Ny-menypunkt-funksjon undermeny -->
+                        <a href="#" title="Legg til nytt undermenypunkt" class="add-menu-item__sub-link js-hide-and-show">
+                            <span class="plus-icon"></span>Nytt menypunkt
+                        </a>
+                        <form class="form-element form-element--sub js-show-this hidden">
+                            <label for="newItem7" class="form-element__label screen-reader-text">
+                                Nytt menypunkt
+                            </label>
+                            <input id="newItem7" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                    </span>
+                </span>
+            </li>
+            <li class="with_org_sub_menu dragula-menuitem">
+                <!-- next item gets either: org_sub_menu_collapsed or org_sub_menu_expanded -->
+                <span class="js_org_sub_menu_toggle org_sub_menu_collapsed">
+                    <span class="org_menu--editable__flex-container">
+
+                        <!-- Menypunkt -->
+                        <a title="Kontakt" href="&#x2F;patterns&#x2F;04-pages-02-orgenhet-18-kontakt&#x2F;04-pages-02-orgenhet-18-kontakt.rendered.html" class="org_menu_link js-hide-this">
+                            Kontakt
+                        </a>
+                        
+                        <!-- Drag&drop-knapp -->
+                        <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
+
+                        <!-- Rediger-knapp -->
+                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Rediger menypunktnavn</span>
+                        </a>
+                        <!-- Rediger-funksjon -->
+                        <form class="form-element hidden js-show-this">
+                            <label for="editItem8" class="form-element__label screen-reader-text">
+                                Rediger menypunktnavn
+                            </label>
+                            <input id="editItem8" type="text" value="Kontakt" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Oppdater menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                        <!-- Slett-knapp -->
+                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Slett menypunkt</span>
+                        </a>
+
+                        <!-- Toggle-knapp -->
+                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link">
+                                <span class="plus-arrow-icon"></span>
+                                <span class="screen-reader-text">Lag ny undermeny</span>
+                            </a>
+
+
+                    </span>
+
+                    <!-- Undermeny -->
+                    <ul>
+                    </ul>
+                    
+                    <span class="add-menu-item add-menu-item--sub">
+                        <!-- Ny-menypunkt-funksjon undermeny -->
+                        <a href="#" title="Legg til nytt undermenypunkt" class="add-menu-item__sub-link js-hide-and-show">
+                            <span class="plus-icon"></span>Nytt menypunkt
+                        </a>
+                        <form class="form-element form-element--sub js-show-this hidden">
+                            <label for="newItem8" class="form-element__label screen-reader-text">
+                                Nytt menypunkt
+                            </label>
+                            <input id="newItem8" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Legg til nytt menypunkt</span>
+                            </button>
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Avbryt</span>
+                            </button>
+                        </form>
+                    </span>
+                </span>
             </li>
     </ul>
+    
+    <span class="add-menu-item">
+        <!-- Ny-menypunkt-funksjon hovedmeny -->
+        <a href="#" title="Legg til nytt menypunkt" class="add-menu-item__link js-hide-and-show">
+            <span class="plus-icon"></span>Nytt menypunkt
+        </a>
+        <form class="form-element js-show-this hidden">
+            <label for="newMainItem" class="form-element__label screen-reader-text">
+                Nytt menypunkt
+            </label>
+            <input id="newMainItem" type="text" placeholder="Menypunktnavn" class="form-element__textfield">
+            <button type="submit" class="button--success active">
+                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                <span class="screen-reader-text">Legg til nytt menypunkt</span>
+            </button>
+            <button type="reset" class="button--clean js-clear-inline-style">
+                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                <span class="screen-reader-text">Avbryt</span>
+            </button>
+        </form>
+    </span>
 </nav>
             </div>
         
