@@ -54,6 +54,9 @@
                 {{# forInnbygger }}
                     {{> molecules-moduloverskrift-h2-med-lenke:mbs(url: "{{ link.pages-fakturaer }}", tittel: "Fakturaoversikt") }}
                     <p>Faktura vises kun for fakturamottaker.</p>
+                    {{# fakturaNotis }}
+                    {{> molecules-notis }}
+                    {{/ fakturaNotis }}
                     {{> molecules-fakturaer:mbj }}                
                     {{# visFlereFakturaer }}
                     {{> molecules-last-inn-flere-minside:neg-mtxl }}

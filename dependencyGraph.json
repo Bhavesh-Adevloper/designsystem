@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1543999979522,
+  "timestamp": 1544004093916,
   "graph": {
     "options": {
       "directed": true,
@@ -902,8 +902,8 @@
         "v": "01-molecules/tabeller/05-fakturaer.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-15-minside-12-fakturaer/04-pages-15-minside-12-fakturaer.rendered.html",
-          "lineagePattern": "pages-fakturaer"
+          "lineagePath": "../../patterns/04-pages-15-minside-12-fakturaer-gammel/04-pages-15-minside-12-fakturaer-gammel.rendered.html",
+          "lineagePattern": "pages-fakturaer-gammel"
         }
       },
       {
@@ -1893,13 +1893,13 @@
         }
       },
       {
-        "v": "04-pages/15-minside/12-fakturaer.mustache",
+        "v": "04-pages/15-minside/12-fakturaer-gammel.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "v": "04-pages/15-minside/13-fakturaer.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -3347,6 +3347,11 @@
       {
         "v": "03-templates/01-Inngangssider/50-minside-inngang.mustache",
         "w": "01-molecules/vis-flere/40-last-inn-flere-minside.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Inngangssider/50-minside-inngang.mustache",
+        "w": "01-molecules/02-innhold/01-notis.mustache",
         "value": {}
       },
       {
@@ -5240,87 +5245,87 @@
         "value": {}
       },
       {
-        "v": "04-pages/15-minside/12-fakturaer.mustache",
+        "v": "04-pages/15-minside/12-fakturaer-gammel.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/15-minside/12-fakturaer.mustache",
+        "v": "04-pages/15-minside/12-fakturaer-gammel.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/15-minside/12-fakturaer.mustache",
+        "v": "04-pages/15-minside/12-fakturaer-gammel.mustache",
         "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/15-minside/12-fakturaer.mustache",
+        "v": "04-pages/15-minside/12-fakturaer-gammel.mustache",
         "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/15-minside/12-fakturaer.mustache",
+        "v": "04-pages/15-minside/12-fakturaer-gammel.mustache",
         "w": "01-molecules/navigasjon/org-meny.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/15-minside/12-fakturaer.mustache",
+        "v": "04-pages/15-minside/12-fakturaer-gammel.mustache",
         "w": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/15-minside/12-fakturaer.mustache",
+        "v": "04-pages/15-minside/12-fakturaer-gammel.mustache",
         "w": "01-molecules/tabeller/05-fakturaer.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/15-minside/12-fakturaer.mustache",
+        "v": "04-pages/15-minside/12-fakturaer-gammel.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "v": "04-pages/15-minside/13-fakturaer.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "v": "04-pages/15-minside/13-fakturaer.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "v": "04-pages/15-minside/13-fakturaer.mustache",
         "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "v": "04-pages/15-minside/13-fakturaer.mustache",
         "w": "01-molecules/navigasjon/org-meny.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "v": "04-pages/15-minside/13-fakturaer.mustache",
         "w": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "v": "04-pages/15-minside/13-fakturaer.mustache",
         "w": "01-molecules/02-innhold/01-notis.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "v": "04-pages/15-minside/13-fakturaer.mustache",
         "w": "00-atoms/10-tabeller/09-flex-tabell.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "v": "04-pages/15-minside/13-fakturaer.mustache",
         "w": "00-atoms/20-skjema-element/15-nedtrekksliste.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "v": "04-pages/15-minside/13-fakturaer.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
