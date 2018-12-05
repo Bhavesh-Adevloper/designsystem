@@ -2,60 +2,51 @@
 {{> organisms-brodsmuler }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
     
-    <div class="article">
-        
-        {{# actionLine }}
-        {{> molecules-action-line }}
-        {{/ actionLine }}
+    {{# actionLine }}
+    {{> molecules-action-line }}
+    {{/ actionLine }}
 
-        <div class="row">
+    <div class="row">
 
-            {{# meny }}
-                <div class="col_md_12 col_lg_4">
-                    {{> molecules-org-meny }}
-                </div>
-            {{/ meny }}
+        <div class="col_md_12 col_lg_8">
 
-            <div class="col_md_12 col_lg_8"><!-- org_main_col -->
+            {{> molecules-rediger-sidetittel }}
 
-                {{> molecules-rediger-sidetittel }}
-                
-                {{> molecules-rediger-ingress:mbxxl }}
-                
-                {{> molecules-rediger-avsnitt:mbxxl }}
-                
-                <p>Digitalt skjema</p>
-                
-                <p>Nyttig innhold</p>
+            {{> molecules-rediger-ingress:mbxxl }}
 
-                {{> molecules-rediger-byline }}
+            {{> molecules-rediger-avsnitt:mbxxl }}
 
-            </div>
+            <p>Digitalt skjema</p>
 
-            {{# redigeringSidebar }}
-                <div id="js_sidebar-accordion-container" class="col_md_12 col_lg_4">
-                    
-                    {{# redigerAccordionBilde }}
-                        {{> molecules-rediger-accordion-bilde }}
-                    {{/ redigerAccordionBilde }}
+            <p>Nyttig innhold</p>
 
-                    {{# redigerAccordionStatus }}
-                        {{> molecules-rediger-accordion-status }}
-                    {{/ redigerAccordionStatus }}
-                    
-                    {{# redigerAccordionDato }}
-                        {{> molecules-rediger-accordion-dato }}
-                    {{/ redigerAccordionDato }}
-
-                    {{# redigerAccordionPlassering }}
-                        {{> molecules-rediger-accordion-plassering }}
-                    {{/ redigerAccordionPlassering }}
-
-                </div>
-            {{/ redigeringSidebar }}
+            {{> molecules-rediger-byline }}
 
         </div>
-    </div>
 
+        {{# redigeringSidebar }}
+            <div id="js_sidebar-accordion-container" class="col_md_12 col_lg_4">
+
+                {{# redigerAccordionBilde }}
+                    {{> molecules-rediger-accordion-bilde }}
+                {{/ redigerAccordionBilde }}
+
+                {{# redigerAccordionStatus }}
+                    {{> molecules-rediger-accordion-status }}
+                {{/ redigerAccordionStatus }}
+
+                {{# redigerAccordionDato }}
+                    {{> molecules-rediger-accordion-dato }}
+                {{/ redigerAccordionDato }}
+
+                {{# redigerAccordionPlassering }}
+                    {{> molecules-rediger-accordion-plassering }}
+                {{/ redigerAccordionPlassering }}
+
+            </div>
+        {{/ redigeringSidebar }}
+
+    </div>
+    
 </main>
 {{> organisms-footer }}
