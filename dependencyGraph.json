@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1543999526752,
+  "timestamp": 1543999902441,
   "graph": {
     "options": {
       "directed": true,
@@ -5302,6 +5302,11 @@
       {
         "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
         "w": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/15-minside/13-fakturaer-ny.mustache",
+        "w": "01-molecules/02-innhold/01-notis.mustache",
         "value": {}
       },
       {

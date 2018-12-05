@@ -218,8 +218,34 @@
     Fakturaer
 </h1>
             
+    <div class="notice notice--red mbxxl">
+        <div class="notice__content">
+            <span class="icon-warning--triangle grunt-icon" data-grunticon-embed></span>
+            
+            <p><a href="#" title="Lorem ipsum">Lorem ipsum dolor sit amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+
+
+
+<!--
+
+OBS:
+Thymeleaf klarer ikke data-grunticon-embed
+
+Netaxept bruker thymeleaf. Der har vi brukt notice-boksene uten dette.
+
+****
+
+Notis-boksene trenger data-grunticon-embed hvis:
+- icon-warning--circle
+- icon-warning--triangle (mobil)
+
+
+-->
+            
             <div class="form-element__helptext hidden">
-                Tabellen er satt opp med 40% / 20% / 20% / 20%
+                Tabellene er satt opp med 50% / 25% / 25%
             </div>
 
             <h3 class="flex-table__title flex-table__title--results mbm" id="ubetalte-fakturaer">Ubetalte fakturaer</h3>
@@ -231,55 +257,55 @@
     
 
     <div class="flex-table__desktop-headerarea " role="row">
-        <span class="flex-table__desktop-header  flex-table__desktop-header--twofith" role="columnheader"> Faktura </span><span class="flex-table__desktop-header  flex-table__desktop-header--onefifth flex-table__desktop-header--text-right" role="columnheader"> Forfall </span><span class="flex-table__desktop-header  flex-table__desktop-header--onefifth flex-table__desktop-header--text-right" role="columnheader"> Beløp </span>
+        <span class="flex-table__desktop-header  flex-table__desktop-header--onehalf" role="columnheader"> Faktura </span><span class="flex-table__desktop-header  flex-table__desktop-header--onefourth flex-table__desktop-header--text-right" role="columnheader"> Forfall </span><span class="flex-table__desktop-header  flex-table__desktop-header--onefourth flex-table__desktop-header--text-right" role="columnheader"> Beløp </span>
     </div>
 
     <div class="flex-table__row " role="row">
-        <div class="flex-table__cell  flex-table__cell--twofith flex-table__cell--title" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onehalf flex-table__cell--title" role="gridcell">
             
             <span class="flex-table__cell-item flex-table__cell-item--text "><a href="#" title="Bergen kulturskole" class="file-link" target="_blank"><span class="file-icon pdf"></span><span class="file-title">Bergen kulturskole</span> <span class="file-info">[10 kB]</span></a></span>
             
         </div>
-        <div class="flex-table__cell  flex-table__cell--onefifth flex-table__cell--desktop-text-right" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onefourth flex-table__cell--desktop-text-right" role="gridcell">
             <span class="flex-table__cell-item flex-table__cell-item--mobile-header">Forfall</span>
             <span class="flex-table__cell-item flex-table__cell-item--text "><span class="error">01.01.2018</span></span>
             
         </div>
-        <div class="flex-table__cell  flex-table__cell--onefifth flex-table__cell--desktop-text-right" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onefourth flex-table__cell--desktop-text-right" role="gridcell">
             <span class="flex-table__cell-item flex-table__cell-item--mobile-header">Beløp</span>
             <span class="flex-table__cell-item flex-table__cell-item--text ">kr 2 300,50</span>
             
         </div>
     </div>
     <div class="flex-table__row " role="row">
-        <div class="flex-table__cell  flex-table__cell--twofith flex-table__cell--title" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onehalf flex-table__cell--title" role="gridcell">
             
             <span class="flex-table__cell-item flex-table__cell-item--text "><a href="#" title="Bergen legevakt" class="file-link" target="_blank"><span class="file-icon pdf"></span><span class="file-title">Bergen legevakt</span> <span class="file-info">[10 kB]</span></a></span>
             
         </div>
-        <div class="flex-table__cell  flex-table__cell--onefifth flex-table__cell--desktop-text-right" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onefourth flex-table__cell--desktop-text-right" role="gridcell">
             <span class="flex-table__cell-item flex-table__cell-item--mobile-header">Forfall</span>
             <span class="flex-table__cell-item flex-table__cell-item--text "><span class="error">01.01.2018</span></span>
             
         </div>
-        <div class="flex-table__cell  flex-table__cell--onefifth flex-table__cell--desktop-text-right" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onefourth flex-table__cell--desktop-text-right" role="gridcell">
             <span class="flex-table__cell-item flex-table__cell-item--mobile-header">Beløp</span>
             <span class="flex-table__cell-item flex-table__cell-item--text ">kr 1 700,50</span>
             
         </div>
     </div>
     <div class="flex-table__row " role="row">
-        <div class="flex-table__cell  flex-table__cell--twofith flex-table__cell--title" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onehalf flex-table__cell--title" role="gridcell">
             
             <span class="flex-table__cell-item flex-table__cell-item--text "><a href="#" title="Bergen off. bibliotek" class="file-link" target="_blank"><span class="file-icon pdf"></span><span class="file-title">Bergen off. bibliotek</span> <span class="file-info">[10 kB]</span></a></span>
             
         </div>
-        <div class="flex-table__cell  flex-table__cell--onefifth flex-table__cell--desktop-text-right" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onefourth flex-table__cell--desktop-text-right" role="gridcell">
             <span class="flex-table__cell-item flex-table__cell-item--mobile-header">Forfall</span>
             <span class="flex-table__cell-item flex-table__cell-item--text "><span>11.12.2017</span></span>
             
         </div>
-        <div class="flex-table__cell  flex-table__cell--onefifth flex-table__cell--desktop-text-right" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onefourth flex-table__cell--desktop-text-right" role="gridcell">
             <span class="flex-table__cell-item flex-table__cell-item--mobile-header">Beløp</span>
             <span class="flex-table__cell-item flex-table__cell-item--text ">kr 350,00</span>
             
@@ -316,55 +342,55 @@
     
 
     <div class="flex-table__desktop-headerarea " role="row">
-        <span class="flex-table__desktop-header  flex-table__desktop-header--twofith" role="columnheader"> Faktura </span><span class="flex-table__desktop-header  flex-table__desktop-header--onefifth flex-table__desktop-header--text-right" role="columnheader"> Forfall </span><span class="flex-table__desktop-header  flex-table__desktop-header--onefifth flex-table__desktop-header--text-right" role="columnheader"> Beløp </span>
+        <span class="flex-table__desktop-header  flex-table__desktop-header--onehalf" role="columnheader"> Faktura </span><span class="flex-table__desktop-header  flex-table__desktop-header--onefourth flex-table__desktop-header--text-right" role="columnheader"> Forfall </span><span class="flex-table__desktop-header  flex-table__desktop-header--onefourth flex-table__desktop-header--text-right" role="columnheader"> Beløp </span>
     </div>
 
     <div class="flex-table__row " role="row">
-        <div class="flex-table__cell  flex-table__cell--twofith flex-table__cell--title flex-table__cell--cell--document-icon" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onehalf flex-table__cell--title flex-table__cell--cell--document-icon" role="gridcell">
             
             <span class="flex-table__cell-item flex-table__cell-item--text "><a href="#" title="Bergen kulturskole" class="file-link" target="_blank"><span class="file-icon pdf"></span><span class="file-title">Bergen kulturskole</span> <span class="file-info">[10 kB]</span></a></span>
             
         </div>
-        <div class="flex-table__cell  flex-table__cell--onefifth flex-table__cell--desktop-text-right" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onefourth flex-table__cell--desktop-text-right" role="gridcell">
             <span class="flex-table__cell-item flex-table__cell-item--mobile-header">Forfall</span>
             <span class="flex-table__cell-item flex-table__cell-item--text ">15.12.2017</span>
             
         </div>
-        <div class="flex-table__cell  flex-table__cell--onefifth flex-table__cell--desktop-text-right" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onefourth flex-table__cell--desktop-text-right" role="gridcell">
             <span class="flex-table__cell-item flex-table__cell-item--mobile-header">Beløp</span>
             <span class="flex-table__cell-item flex-table__cell-item--text ">kr 2 300,50</span>
             
         </div>
     </div>
     <div class="flex-table__row " role="row">
-        <div class="flex-table__cell  flex-table__cell--twofith flex-table__cell--title flex-table__cell--cell--document-icon" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onehalf flex-table__cell--title flex-table__cell--cell--document-icon" role="gridcell">
             
             <span class="flex-table__cell-item flex-table__cell-item--text "><a href="#" title="Bergen legevakt" class="file-link" target="_blank"><span class="file-icon pdf"></span><span class="file-title">Bergen legevakt</span> <span class="file-info">[10 kB]</span></a></span>
             
         </div>
-        <div class="flex-table__cell  flex-table__cell--onefifth flex-table__cell--desktop-text-right" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onefourth flex-table__cell--desktop-text-right" role="gridcell">
             <span class="flex-table__cell-item flex-table__cell-item--mobile-header">Forfall</span>
             <span class="flex-table__cell-item flex-table__cell-item--text ">11.12.2017</span>
             
         </div>
-        <div class="flex-table__cell  flex-table__cell--onefifth flex-table__cell--desktop-text-right" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onefourth flex-table__cell--desktop-text-right" role="gridcell">
             <span class="flex-table__cell-item flex-table__cell-item--mobile-header">Beløp</span>
             <span class="flex-table__cell-item flex-table__cell-item--text ">kr 1 700,50</span>
             
         </div>
     </div>
     <div class="flex-table__row " role="row">
-        <div class="flex-table__cell  flex-table__cell--twofith flex-table__cell--title flex-table__cell--cell--document-icon" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onehalf flex-table__cell--title flex-table__cell--cell--document-icon" role="gridcell">
             
             <span class="flex-table__cell-item flex-table__cell-item--text "><a href="#" title="Bergen kulturskole" class="file-link" target="_blank"><span class="file-icon pdf"></span><span class="file-title">Bergen off. bibliotek</span> <span class="file-info">[10 kB]</span></a></span>
             
         </div>
-        <div class="flex-table__cell  flex-table__cell--onefifth flex-table__cell--desktop-text-right" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onefourth flex-table__cell--desktop-text-right" role="gridcell">
             <span class="flex-table__cell-item flex-table__cell-item--mobile-header">Forfall</span>
             <span class="flex-table__cell-item flex-table__cell-item--text ">01.12.2017</span>
             
         </div>
-        <div class="flex-table__cell  flex-table__cell--onefifth flex-table__cell--desktop-text-right" role="gridcell">
+        <div class="flex-table__cell  flex-table__cell--onefourth flex-table__cell--desktop-text-right" role="gridcell">
             <span class="flex-table__cell-item flex-table__cell-item--mobile-header">Beløp</span>
             <span class="flex-table__cell-item flex-table__cell-item--text ">kr 350,00</span>
             
