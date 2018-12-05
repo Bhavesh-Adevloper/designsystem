@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1544004093916,
+  "timestamp": 1544008344804,
   "graph": {
     "options": {
       "directed": true,
@@ -899,7 +899,7 @@
         }
       },
       {
-        "v": "01-molecules/tabeller/05-fakturaer.mustache",
+        "v": "01-molecules/tabeller/05-fakturaer-gammel.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-15-minside-12-fakturaer-gammel/04-pages-15-minside-12-fakturaer-gammel.rendered.html",
@@ -3356,7 +3356,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/50-minside-inngang.mustache",
-        "w": "01-molecules/tabeller/05-fakturaer.mustache",
+        "w": "00-atoms/10-tabeller/09-flex-tabell.mustache",
         "value": {}
       },
       {
@@ -5276,7 +5276,7 @@
       },
       {
         "v": "04-pages/15-minside/12-fakturaer-gammel.mustache",
-        "w": "01-molecules/tabeller/05-fakturaer.mustache",
+        "w": "01-molecules/tabeller/05-fakturaer-gammel.mustache",
         "value": {}
       },
       {

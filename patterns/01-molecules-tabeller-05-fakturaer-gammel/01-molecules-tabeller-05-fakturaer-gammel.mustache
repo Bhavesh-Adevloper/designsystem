@@ -1,6 +1,6 @@
 <div class="invoice_table {{ styleModifier }}">
     <div class="invoice_table_caption">
-        Faktura for 2016
+        Faktura for 2018
     </div>
     
     <div class="div_table_desktop_header_row">
@@ -10,7 +10,7 @@
         <div class="div_table_cell div_table_row_content">Beløp</div>
     </div>
     
-    {{# fakturaer }}
+    {{# gammelFakturaTabell }}
     <div class="div_table_row">
         <div class="div_table_cell div_table_row_title">
             <a href="{{ url }}" title="Faktura" class="invoice_link" target="_blank">
@@ -33,8 +33,8 @@
             {{ belop }}
         </div>
     </div>
-    {{/ fakturaer }}
-    {{# fakturaerIkkeTilgjengelig }}
+    {{/ gammelFakturaTabell }}
+    {{# gammelFakturaTabellIkkeTilgjengelig }}
     <div class="div_table_row">
         <div class="div_table_cell div_table_row_title">
             <span class="invoice_link invoice_link--disabled">
@@ -57,5 +57,5 @@
             {{ belop }}
         </div>
     </div>
-    {{/ fakturaerIkkeTilgjengelig }}
+    {{/ gammelFakturaTabellIkkeTilgjengelig }}
 </div>

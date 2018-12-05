@@ -57,7 +57,11 @@
                     {{# fakturaNotis }}
                     {{> molecules-notis }}
                     {{/ fakturaNotis }}
-                    {{> molecules-fakturaer:mbj }}                
+                    {{# fakturaTabell }}
+                        <div class="{{tableModifier}}">
+                            {{> atoms-flex-tabell }}
+                        </div>
+                    {{/ fakturaTabell }}
                     {{# visFlereFakturaer }}
                     {{> molecules-last-inn-flere-minside:neg-mtxl }}
                     {{/ visFlereFakturaer }}
