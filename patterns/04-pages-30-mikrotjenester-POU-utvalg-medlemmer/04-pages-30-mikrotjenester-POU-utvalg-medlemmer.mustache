@@ -18,7 +18,11 @@
                 {{> atoms-filterboks:mbml }}
             {{/ searchFilter }}
             
-            {{> molecules-medlemmer:mbj }}
+            {{# medlemmerTabell }}
+                <div class="{{tableModifier}}">
+                    {{> atoms-flex-tabell }}
+                </div>
+            {{/ medlemmerTabell }}
                 
         </div>
     </div>

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1544008344804,
+  "timestamp": 1544016820503,
   "graph": {
     "options": {
       "directed": true,
@@ -162,6 +162,22 @@
         "v": "00-atoms/10-tabeller/10-flex-tabell-eksempler.mustache",
         "value": {
           "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/10-tabeller/50-kemner-faktura.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-kemner-betalingsbekreftelse/04-pages-30-mikrotjenester-kemner-betalingsbekreftelse.rendered.html",
+          "lineagePattern": "pages-kemner-betalingsbekreftelse"
+        }
+      },
+      {
+        "v": "00-atoms/10-tabeller/60-fakturaer-gammel.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-15-minside-12-fakturaer-gammel/04-pages-15-minside-12-fakturaer-gammel.rendered.html",
+          "lineagePattern": "pages-fakturaer-gammel"
         }
       },
       {
@@ -896,30 +912,6 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-71-Pub-artikkel-20-sne-artikkelliste/04-pages-71-Pub-artikkel-20-sne-artikkelliste.rendered.html",
           "lineagePattern": "pages-sne-artikkelliste"
-        }
-      },
-      {
-        "v": "01-molecules/tabeller/05-fakturaer-gammel.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-15-minside-12-fakturaer-gammel/04-pages-15-minside-12-fakturaer-gammel.rendered.html",
-          "lineagePattern": "pages-fakturaer-gammel"
-        }
-      },
-      {
-        "v": "01-molecules/tabeller/06-medlemmer.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-POU-utvalg-medlemmer/04-pages-30-mikrotjenester-POU-utvalg-medlemmer.rendered.html",
-          "lineagePattern": "pages-POU-utvalg-medlemmer"
-        }
-      },
-      {
-        "v": "01-molecules/tabeller/kemner-faktura.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-kemner-betalingsbekreftelse/04-pages-30-mikrotjenester-kemner-betalingsbekreftelse.rendered.html",
-          "lineagePattern": "pages-kemner-betalingsbekreftelse"
         }
       },
       {
@@ -5276,7 +5268,7 @@
       },
       {
         "v": "04-pages/15-minside/12-fakturaer-gammel.mustache",
-        "w": "01-molecules/tabeller/05-fakturaer-gammel.mustache",
+        "w": "00-atoms/10-tabeller/60-fakturaer-gammel.mustache",
         "value": {}
       },
       {
@@ -5736,7 +5728,7 @@
       },
       {
         "v": "04-pages/30-mikrotjenester/POU-utvalg-medlemmer.mustache",
-        "w": "01-molecules/tabeller/06-medlemmer.mustache",
+        "w": "00-atoms/10-tabeller/09-flex-tabell.mustache",
         "value": {}
       },
       {
@@ -5806,7 +5798,7 @@
       },
       {
         "v": "04-pages/30-mikrotjenester/kemner-betalingsbekreftelse.mustache",
-        "w": "01-molecules/tabeller/kemner-faktura.mustache",
+        "w": "00-atoms/10-tabeller/50-kemner-faktura.mustache",
         "value": {}
       },
       {
