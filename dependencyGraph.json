@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1544022159021,
+  "timestamp": 1545307639647,
   "graph": {
     "options": {
       "directed": true,
@@ -854,8 +854,8 @@
         "v": "01-molecules/publisering/rediger-byline.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
-          "lineagePattern": "templates-rediger-ibh-artikkel"
+          "lineagePath": "../../patterns/03-templates-70-Publisering-01-rediger-sne-artikkel/03-templates-70-Publisering-01-rediger-sne-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-sne-artikkel"
         }
       },
       {
@@ -872,6 +872,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-70-Publisering-01-rediger-sne-artikkel/03-templates-70-Publisering-01-rediger-sne-artikkel.rendered.html",
           "lineagePattern": "templates-rediger-sne-artikkel"
+        }
+      },
+      {
+        "v": "01-molecules/publisering/rediger-ibh-footer.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
       {
@@ -4638,7 +4646,7 @@
       },
       {
         "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
-        "w": "01-molecules/publisering/rediger-byline.mustache",
+        "w": "01-molecules/publisering/rediger-ibh-footer.mustache",
         "value": {}
       },
       {
