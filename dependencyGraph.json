@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1545318444945,
+  "timestamp": 1545399638339,
   "graph": {
     "options": {
       "directed": true,
@@ -925,7 +925,7 @@
         }
       },
       {
-        "v": "01-molecules/publisering/rediger-flytt-artikkel.mustache",
+        "v": "01-molecules/publisering/_rediger-flytt-artikkel.mustache",
         "value": {
           "compileState": "clean"
         }

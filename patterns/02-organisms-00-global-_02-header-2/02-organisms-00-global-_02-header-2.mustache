@@ -16,8 +16,6 @@ https://github.com/pattern-lab/patternlab-php/issues/304
             
             {{> atoms-logo }}
 
-            <a class="js_open_mobile_main_nav nav_toggle_btn" href="#">Meny<span class="icon-nav_toggle"></span></a>
-
             <div class="login_container">
                 <a href="{{ minside.url }}" title="Min side - Hvem representerer du?" class="login_link">
                     <span class="icon-minside grunt-icon grunt-icon--64"></span>
@@ -41,15 +39,12 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                     </button>
                 </form>
             </div>
+
+            <a class="js_open_mobile_main_nav open_mobile_main_nav hidden-on-print" href="#">Meny<span class="icon-nav_toggle"></span></a>
         </div>
         
         <nav class="js_main_nav main_nav main_nav_collapsed">
-            <a class="js_close_mobile_main_nav hide_nav_toggle_area" href="#" title="Lukk menyen"></a>
             <div class="nav_container">
-                <a class="js_close_mobile_main_nav close_nav_btn" href="#" title="Lukk menyen">
-                    <span class="icon-close grunt-icon grunt-icon--32"></span>
-                    <span class="screen-reader-text">Lukk menyen</span>
-                </a>
                 <ul class="main_nav_list">
                     <li><a href="{{ hovedmenypunkt_1.url }}" title="{{ hovedmenypunkt_1.tittel }}"><span>{{ hovedmenypunkt_1.tittel }}</span></a></li>
                     <li class="active"><a href="{{ hovedmenypunkt_2.url }}" title="{{ hovedmenypunkt_2.tittel }}"><span>{{ hovedmenypunkt_2.tittel }}</span></a></li>
@@ -80,6 +75,14 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                 <a href="{{ forside.url }}" title="Logg ut" class="mobile_logout_link">
                     <span class="icon-logout grunt-icon grunt-icon--32 grunt-icon--white" data-grunticon-embed></span>
                     <span class="text">Logg ut</span>
+                </a>
+            </div>
+            <div class="close_mobile_main_nav">
+                <a class="js_close_mobile_main_nav close_mobile_main_nav_link hidden-on-print" href="#" title="Lukk meny">
+                    <span class="close_mobile_main_nav_button">
+                        <span class="icon-close grunt-icon grunt-icon--32"></span>
+                        <span class="screen-reader-text">Lukk meny</span>
+                    </span>
                 </a>
             </div>
         </nav>
