@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1545399638339,
+  "timestamp": 1547024716332,
   "graph": {
     "options": {
       "directed": true,
@@ -888,6 +888,14 @@
       },
       {
         "v": "01-molecules/publisering/33-rediger-accordion-plassering.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-01-rediger-sne-artikkel/03-templates-70-Publisering-01-rediger-sne-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-sne-artikkel"
+        }
+      },
+      {
+        "v": "01-molecules/publisering/34-rediger-accordion-kategorivelger.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
@@ -4674,12 +4682,12 @@
       },
       {
         "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
-        "w": "01-molecules/publisering/32-rediger-accordion-dato.mustache",
+        "w": "01-molecules/publisering/34-rediger-accordion-kategorivelger.mustache",
         "value": {}
       },
       {
         "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
-        "w": "01-molecules/publisering/33-rediger-accordion-plassering.mustache",
+        "w": "01-molecules/publisering/32-rediger-accordion-dato.mustache",
         "value": {}
       },
       {
