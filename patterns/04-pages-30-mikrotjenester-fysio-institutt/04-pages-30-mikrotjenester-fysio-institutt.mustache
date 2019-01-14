@@ -1,0 +1,31 @@
+{{> organisms-header-3 }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+    
+    {{> molecules-sideoverskrift-h1:mbl(sidetittel: "{{ sidetittel }}") }}
+
+    <div class="row">
+        <div class="col_lg_8 col_md_12">
+            {{# eksternURL }}
+                {{> molecules-ekstern-url }}
+            {{/ eksternURL }}
+        </div>
+
+        {{#kontakt}}
+            <div class="col_lg_8 col_md_12 mbj">
+                {{> molecules-moduloverskrift-h2:mbml }}
+                {{> organisms-kontakt-fysio-institutt }}
+            </div>
+        {{/kontakt}}
+
+        <div class="col_lg_8 col_md_12">
+            {{#liste}}
+            {{> molecules-moduloverskrift-h2:mbm }}
+            <ul class="link_list_simple mbj">
+                {{#listeelement}}<li>{{tittel}}</li>{{/listeelement}}
+            </ul>
+            {{/liste}}
+        </div>
+    </div>
+</main>
+{{> organisms-footer }}

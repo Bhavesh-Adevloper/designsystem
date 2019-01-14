@@ -1,0 +1,164 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    {{# actionLine }}
+        {{> molecules-action-line }}
+    {{/ actionLine }}
+    
+    {{# visModalPaSiden }}
+        {{> molecules-modal }}
+    {{/ visModalPaSiden }}
+    
+    <div class="page_header_container_with_org_menu">
+        {{> molecules-sideoverskrift-med-lenke(sidetittel: "{{ organisasjonsenhet.tittel }}", url: "{{ organisasjonsenhet.url }}") }}
+    </div>
+    
+    <div class="row">
+
+        {{# menyRedigering }}
+            <div class="col_md_12 col_lg_4">
+                {{> molecules-org-meny--redigering }}
+            </div>
+        {{/ menyRedigering }}
+
+        <div class="col_md_12 col_lg_8 org_main_col">
+            
+            <div class="rssicon_floatRight">
+                <a href="#" type="application/rss+xml" rel="alternate" title="Abonner med RSS">RSS - abonner</a>
+            </div>
+            
+            {{> molecules-moduloverskrift-h1:mbxl(tittel: "{{ sidetittel }}") }}
+            
+            {{# tabs }}
+                {{> molecules-tabs:mbl }}
+            {{/ tabs }}
+            
+            <div class="editor-article-list ece_module_list mbj">
+                
+                {{# artikkelliste }}
+                    {{> molecules-rediger-listeelement }}
+                {{/ artikkelliste }}
+                
+                <!-- GAMLE ESCENIC ARTIKLER I ELP -->
+                <div class="editor-article-list__item escenic-artikkel">
+                    <div class="ece_module_container">
+                        <div class="ece_module_image_container">
+                            <a class="#">
+                                <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="ece_module_image">
+                            </a>
+                        </div>
+                        <div class="ece_module_content_container">
+                            <h3 class="ece_module_title">
+                                <a href="/omkommunen/avdelinger/kemneren/arbeidsgiverselskap/article-148536"><span class="read_more_link read_more_link--24">Handlevenn</span></a>
+                            </h3>
+                            <div class="ece_module_excerpt">
+                                <p>Bergen kommune tilbyr nå handlevenner som henter deg hjemme og følger deg til butikken.</p>
+                            </div>
+                            <div class="ece_module_meta">
+                                <p>
+                                    <span class="date">(20.12.2017)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_align_right">
+                      <a href="#" title="Slett" class="button button--danger mrml">Slett</a>
+                      <a href="#" title="Behold" class="button button--success">Behold</a>
+                    </div>
+                </div>
+                
+                <!-- GAMLE ESCENIC PEKER-ARTIKLER I ELP -->
+                <div class="editor-article-list__item escenic-artikkel">
+                    <div class="ece_module_container">
+                        <div class="ece_module_image_container">
+                            <a class="#">
+                                <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="ece_module_image">
+                            </a>
+                        </div>
+                        <div class="ece_module_content_container">
+                            <h3 class="ece_module_title">
+                                <a href="http://www.bt.no"><span class="read_more_link read_more_link--24">Bergens Tidende</span></a>
+                            </h3>
+                            <div class="ece_module_excerpt">
+                                <p>En viktig artikkel hos BT forteller mer, men vi må peke dit for å vise den også til brukerne.</p>
+                            </div>
+                            <div class="ece_module_meta">
+                                <p>
+                                    <span class="date">(24.12.2017)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_align_right">
+                      <a href="#" title="Slett" class="button button--danger mrml">Slett</a>
+                    </div>
+                </div>
+                
+                <div class="editor-article-list__item escenic-artikkel">
+                    <div class="ece_module_container">
+                        <div class="ece_module_image_container">
+                            <a class="ece_module_image_link" href="#">
+                                <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="ece_module_image">
+                            </a>
+                        </div>
+                        <div class="ece_module_content_container">
+                            <h3 class="ece_module_title">
+                                <a href="/omkommunen/avdelinger/kemneren/personlig-skattyter/article-148540"><span class="read_more_link read_more_link--24">Det blir hvit jul</span></a>
+                            </h3>
+                            <div class="ece_module_excerpt">
+                                <p>Rekord mye snø i Bergen til jul. Byens befolkning må ty til langrennsski som fremkomstmidler.</p>
+                            </div>
+                            <div class="ece_module_meta">
+                                <p>
+                                    <span class="date">(20.12.2017)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_align_right">
+                      <a href="#" title="Slett" class="button button--danger mrml">Slett</a>
+                      <a href="#" title="Behold" class="button button--success">Behold</a>
+                    </div>
+                </div>
+                
+                <div class="editor-article-list__item escenic-artikkel">
+                    <div class="ece_module_container">
+                        <div class="ece_module_image_container">
+                            <a class="ece_module_image_link" href="#">
+                                <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="ece_module_image">
+                            </a>
+                        </div>
+                        <div class="ece_module_content_container">
+                            <h3 class="ece_module_title">
+                                <a href="/omkommunen/avdelinger/kemneren/personlig-skattyter/article-148540"><span class="read_more_link read_more_link--24">Det blir hvit jul</span></a>
+                            </h3>
+                            <div class="ece_module_excerpt">
+                                <p>Rekord mye snø i Bergen til jul. Byens befolkning må ty til langrennsski som fremkomstmidler.</p>
+                            </div>
+                            <div class="ece_module_meta">
+                                <p>
+                                    <span class="date">(20.12.2017)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_align_right">
+                      <a href="#" title="Slett" class="button button--danger mrml">Slett</a>
+                      <a href="#" title="Behold" class="button button--success">Behold</a>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <div class="load_more_container load_more_container--20 neg-mtm mbj">
+                {{>molecules-vis-flere}}
+            </div>
+            
+        </div>
+
+    </div>
+
+</main>
+{{> organisms-footer }}

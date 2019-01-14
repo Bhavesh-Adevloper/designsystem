@@ -1,0 +1,115 @@
+{{> organisms-header }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">    
+    
+    {{> molecules-sideoverskrift-h1:mbl|mbl--mob(sidetittel: "Søkeresultat") }}
+
+<div class="row">
+    <div class="col_md_12 col_lg_8">
+        
+        <div id="js_search" class="collapsed_on_mobile collapsed">
+            <h3 class="module_header mbn fasett_header_desktop">
+                Avgrens søket:
+            </h3>
+            <h3 class="fasett_header_mobile">
+                <a href="#" onClick="document.getElementById('js_search').classList.toggle('collapsed')" title="Menu" class="fasett_name">
+                    Viser: 
+                    <span class="fasett_name">Alle treff</span>
+                    <span class="search_hits">(38498)</span>
+                </a>
+            </h3>
+            <ul class="link_list link_list--search-facetts">
+                  <li>
+                      <a href="#" title="Alle treff">
+                          <span class="fasett_name">Alle treff</span>
+                          <span class="search_hits">(38498)</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="Artikler">
+                          <span class="fasett_name">Artikler</span>
+                          <span class="search_hits">(482)</span>
+                      </a>
+                  </li>
+                  <li class="selected">
+                      <a href="#" title="Avdelinger">
+                          <span class="fasett_name">Avdelinger</span>
+                          <span class="search_hits">(2)</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="Utbyggingsavtaler">
+                          <span class="fasett_name">Utbyggingsavtaler</span>
+                          <span class="search_hits">(182)</span>
+                      </a>
+                  </li>
+                  <li><!--  class="hidden" -->
+                      <a href="#" title="Utbyggingsavtaler">
+                          <span class="fasett_name">Den siste fasetten med veldig langt navn men bare et treff</span>
+                          <span class="search_hits">(1)</span>
+                      </a>
+                  </li>
+            </ul>
+        </div>
+        
+        <div class="hidden">
+          <!-- Single - bare en fasett -->
+          <div id="js_search" class="collapsed_on_mobile collapsed">
+              <h3 class="module_header mbn fasett_header_desktop">
+                  Avgrens søket:
+              </h3>
+              <h3 class="fasett_header_mobile single">
+                Viser: 
+                <span class="fasett_name">Avdelinger</span>
+                <span class="search_hits">(2)</span>
+              </h3>
+              <ul class="link_list link_list--search-facetts">
+                  <li class="selected single">
+                      <span class="fasett_name">Avdelinger</span>
+                      <span class="search_hits">(2)</span>
+                  </li>
+              </ul>
+          </div>
+        </div>
+        
+        
+        <ol id="js_search_results" class="search_results mbj">
+                        
+            {{# soekeresultatListe }}
+                <li class="{{ type }}">
+                    <a href="{{ url }}" title="{{ tittel }}" class="search_result_link">
+                        <h2 class="search_result_title">
+                            {{ tittel }}
+                        </h2>
+                        {{# breadcrumbLabelContainer }}
+                        <span class="search_result_breadcrumbs">
+                            {{# breadcrumbLabel }}
+                                <span class="section"><span class="separator">&gt;</span> {{ breadcrumbLabel }}</span>
+                            {{/ breadcrumbLabel }}
+                        </span>
+                        {{/ breadcrumbLabelContainer }}
+                    </a>
+                    <div class="search_result_excerpt">
+                        {{# dato }}
+                            <span class="search_result_date">
+                                {{ dato }}
+                            </span> - 
+                        {{/ dato }}
+                        {{{ htmlIngress }}}
+                    </div>
+                </li>
+            {{/ soekeresultatListe }}
+        
+        </ol>
+        
+        
+        {{# lastFlere }}
+        {{> molecules-last-inn-flere:neg-mtml }}
+        {{/ lastFlere }}
+
+
+  </div>
+</div>
+
+
+</main>
+{{> organisms-footer }}
