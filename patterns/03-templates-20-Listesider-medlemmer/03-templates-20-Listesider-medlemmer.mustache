@@ -1,0 +1,41 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    <div class="page_header_container_with_org_menu">
+        {{> molecules-sideoverskrift-med-lenke(sidetittel: "{{ organisasjonsenhet.tittel }}", url: "{{ organisasjonsenhet.url }}") }}
+    </div>
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+
+            {{> molecules-org-meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+            
+            <div class="rssicon_floatRight">
+                <a href="#" type="application/rss+xml" rel="alternate" title="Abonner med RSS">
+                    RSS - abonner
+                </a>
+            </div>
+            
+            {{> molecules-moduloverskrift-h1(tittel: "Byråder") }}
+            
+            {{> organisms-modul-liste:mbj }}
+            
+            <div class="row_no_clearfix equal_height_container mbxl">
+                
+                {{# touts }}
+                    <div class="col_md_6 col_lg_6 equal_height_item">
+                        {{> molecules-tout }}
+                    </div>
+                {{/ touts }}
+                
+            </div>
+
+        </div>
+    </div>
+</main>
+
+{{> organisms-footer }}
