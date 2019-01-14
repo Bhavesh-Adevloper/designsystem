@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1547031448172,
+  "timestamp": 1547475128482,
   "graph": {
     "options": {
       "directed": true,
@@ -347,7 +347,7 @@
         }
       },
       {
-        "v": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "v": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-71-Pub-artikkel-50-sne-artikkel/04-pages-71-Pub-artikkel-50-sne-artikkel.rendered.html",
@@ -1615,6 +1615,12 @@
         }
       },
       {
+        "v": "04-pages/00-forside/tom.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "04-pages/01-hva-skjer/00-hva-skjer.mustache",
         "value": {
           "compileState": "clean"
@@ -2332,7 +2338,7 @@
     "edges": [
       {
         "v": "00-atoms/06-tekst/04-lenker-med-piler.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -2772,7 +2778,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/03-hva-skjer.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -3572,7 +3578,7 @@
       },
       {
         "v": "03-templates/10-Innholdssider/arbeidsplaner.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -3607,7 +3613,7 @@
       },
       {
         "v": "03-templates/10-Innholdssider/artikkel.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -3687,7 +3693,7 @@
       },
       {
         "v": "03-templates/10-Innholdssider/kontakt.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -3722,7 +3728,7 @@
       },
       {
         "v": "03-templates/10-Innholdssider/minside-profil.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -3752,7 +3758,7 @@
       },
       {
         "v": "03-templates/10-Innholdssider/modul-helside.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -3787,7 +3793,7 @@
       },
       {
         "v": "03-templates/10-Innholdssider/skolerute.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -4037,7 +4043,7 @@
       },
       {
         "v": "03-templates/20-Listesider/arkiv.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -4062,7 +4068,7 @@
       },
       {
         "v": "03-templates/20-Listesider/artikkelliste.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -4137,7 +4143,7 @@
       },
       {
         "v": "03-templates/20-Listesider/listeside-med-avansert-filtrering.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -4292,7 +4298,7 @@
       },
       {
         "v": "03-templates/20-Listesider/medlemmer.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -4332,7 +4338,7 @@
       },
       {
         "v": "03-templates/20-Listesider/minside-eiendommer.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -4452,7 +4458,7 @@
       },
       {
         "v": "03-templates/20-Listesider/tjenester-og-skjema.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -4487,7 +4493,7 @@
       },
       {
         "v": "03-templates/20-Listesider/underavdelinger.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -4562,7 +4568,7 @@
       },
       {
         "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -4703,6 +4709,16 @@
       {
         "v": "04-pages/00-forside/02-forside-enkel-nyhet.mustache",
         "w": "03-templates/01-Inngangssider/00-forside.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/00-forside/tom.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/00-forside/tom.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {
@@ -5047,7 +5063,7 @@
       },
       {
         "v": "04-pages/15-minside/03-mine-data.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5087,7 +5103,7 @@
       },
       {
         "v": "04-pages/15-minside/06-enkelt-sak.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5122,7 +5138,7 @@
       },
       {
         "v": "04-pages/15-minside/07-braarkiv-sak.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5152,7 +5168,7 @@
       },
       {
         "v": "04-pages/15-minside/08-saker.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5197,7 +5213,7 @@
       },
       {
         "v": "04-pages/15-minside/09-innsendte-skjema.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5242,7 +5258,7 @@
       },
       {
         "v": "04-pages/15-minside/10-mottatte-meldinger.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5277,12 +5293,7 @@
       },
       {
         "v": "04-pages/15-minside/12-fakturaer-gammel.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/15-minside/12-fakturaer-gammel.mustache",
-        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5317,7 +5328,7 @@
       },
       {
         "v": "04-pages/15-minside/13-fakturaer.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5362,7 +5373,7 @@
       },
       {
         "v": "04-pages/15-minside/15-eiendom.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5447,7 +5458,7 @@
       },
       {
         "v": "04-pages/15-minside/30-lonnsslipper.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5482,7 +5493,7 @@
       },
       {
         "v": "04-pages/15-minside/31-utlegg.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5517,7 +5528,7 @@
       },
       {
         "v": "04-pages/15-minside/32-aarsoppgaver.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5642,7 +5653,7 @@
       },
       {
         "v": "04-pages/30-mikrotjenester/POU-motearkiv.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5682,7 +5693,7 @@
       },
       {
         "v": "04-pages/30-mikrotjenester/POU-motekalender.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5737,7 +5748,7 @@
       },
       {
         "v": "04-pages/30-mikrotjenester/POU-utvalg-medlemmer.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5892,7 +5903,7 @@
       },
       {
         "v": "04-pages/50-escenic/00-artikkel.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5917,7 +5928,7 @@
       },
       {
         "v": "04-pages/50-escenic/02-artikkel-2.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5947,7 +5958,7 @@
       },
       {
         "v": "04-pages/50-escenic/03-artikkel-3.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -5972,7 +5983,7 @@
       },
       {
         "v": "04-pages/50-escenic/04-pressemelding.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -6047,7 +6058,7 @@
       },
       {
         "v": "04-pages/71-Pub-artikkel/05-artikkel-forhandsvisning.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -6087,7 +6098,7 @@
       },
       {
         "v": "04-pages/71-Pub-artikkel/15-sidehistorikk.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -6132,7 +6143,7 @@
       },
       {
         "v": "04-pages/71-Pub-artikkel/20-sne-artikkelliste.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
@@ -6177,7 +6188,7 @@
       },
       {
         "v": "04-pages/71-Pub-artikkel/50-sne-artikkel.mustache",
-        "w": "01-molecules/00-overskrifter/10-sideoverskrift-h2-med-lenke.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
         "value": {}
       },
       {
