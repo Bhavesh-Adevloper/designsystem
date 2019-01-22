@@ -1,0 +1,39 @@
+<div class="mbxxl">
+    <h2 class="sidebar-header sidebar-header--open mbm js_sidebar-accordion">
+        <a class="sidebar-header__toggle" href="#">
+            Innholdsansvarlig
+            <span class="arrow-icon"></span>
+        </a>
+    </h2>
+
+    <div class="multiselect-list">
+        {{# valgtFormidlingsansvarlig }}
+            <h3 class="helpers_header">Formidlingsansvarlig</h3>
+            <div class="multiselect-list__flex">
+                <div class="multiselect-list__selected">{{valgtFormidlingsansvarlig}}</div>
+                <a href="#" title="Fjern formidlingsansvarlig" class="button button--remove mbs">
+                    Fjern
+                </a>
+            </div>
+            <div class="multiselect-list__flex">
+                {{> atoms-tekstfelt-autofullfor }}
+            </div>
+            <div class="align_right mrm mtn"><a href="#">Legg til</a></div>
+        {{/ valgtFormidlingsansvarlig }}
+
+
+        <h3 class="helpers_header mtxl">Fagansvarlig</h3>
+        <div class="multiselect-list__flex">
+            {{# valgtFagansvarlig }}
+                <div class="multiselect-list__selected">{{valgtFagansvarlig}}</div>
+                <a href="#" title="Fjern fagansvarlig" class="button button--remove mbs">
+                    Fjern
+                </a>
+            {{/ valgtFagansvarlig }}
+            {{^ valgtFagansvarlig}}
+                {{> atoms-tekstfelt-autofullfor }}
+                <div class="align_right mrm mtn"><a href="#">Legg til</a></div>
+            {{/valgtFagansvarlig}}
+        </div>
+    </div>
+</div>

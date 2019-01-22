@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1547554611002,
+  "timestamp": 1548155668621,
   "graph": {
     "options": {
       "directed": true,
@@ -269,7 +269,15 @@
         }
       },
       {
-        "v": "00-atoms/20-skjema-element/09-tekstomrade.mustache",
+        "v": "00-atoms/20-skjema-element/09-tekstfelt-autofullfor.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-publisering-35-rediger-accordion-innholdsansvarlig/01-molecules-publisering-35-rediger-accordion-innholdsansvarlig.rendered.html",
+          "lineagePattern": "molecules-rediger-accordion-innholdsansvarlig"
+        }
+      },
+      {
+        "v": "00-atoms/20-skjema-element/10-tekstomrade.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/01-molecules-15-skjema-kontaktskjema-med-captcha/01-molecules-15-skjema-kontaktskjema-med-captcha.rendered.html",
@@ -277,7 +285,7 @@
         }
       },
       {
-        "v": "00-atoms/20-skjema-element/10-nummerfelt.mustache",
+        "v": "00-atoms/20-skjema-element/11-nummerfelt.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -896,6 +904,14 @@
       },
       {
         "v": "01-molecules/publisering/34-rediger-accordion-kategorivelger.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-ibh-artikkel"
+        }
+      },
+      {
+        "v": "01-molecules/publisering/35-rediger-accordion-innholdsansvarlig.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
@@ -2377,7 +2393,7 @@
       },
       {
         "v": "01-molecules/15-skjema/kontaktskjema-med-captcha.mustache",
-        "w": "00-atoms/20-skjema-element/09-tekstomrade.mustache",
+        "w": "00-atoms/20-skjema-element/10-tekstomrade.mustache",
         "value": {}
       },
       {
@@ -2418,6 +2434,11 @@
       {
         "v": "01-molecules/publisering/33-rediger-accordion-plassering.mustache",
         "w": "00-atoms/20-skjema-element/02-hjelpetekst.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/publisering/35-rediger-accordion-innholdsansvarlig.mustache",
+        "w": "00-atoms/20-skjema-element/09-tekstfelt-autofullfor.mustache",
         "value": {}
       },
       {
@@ -4688,6 +4709,11 @@
       {
         "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/32-rediger-accordion-dato.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
+        "w": "01-molecules/publisering/35-rediger-accordion-innholdsansvarlig.mustache",
         "value": {}
       },
       {
