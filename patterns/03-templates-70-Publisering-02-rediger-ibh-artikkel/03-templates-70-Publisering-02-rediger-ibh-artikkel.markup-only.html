@@ -152,9 +152,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         <ul class="bc_list">
             
                 <li><a href="&#x2F;patterns&#x2F;04-pages-00-forside-00-forside&#x2F;04-pages-00-forside-00-forside.rendered.html" title="Forside">Forside</a></li>
-                <li><a href="&#x2F;patterns&#x2F;04-pages-72-Pub-ibh-02-rediger-ibh-oversikt&#x2F;04-pages-72-Pub-ibh-02-rediger-ibh-oversikt.rendered.html" title="Innbyggerhjelpen">Innbyggerhjelpen</a></li>
+                <li><a href="&#x2F;patterns&#x2F;04-pages-72-Pub-ibh-51-rediger-ibh-oversikt&#x2F;04-pages-72-Pub-ibh-51-rediger-ibh-oversikt.rendered.html" title="Innbyggerhjelpen">Innbyggerhjelpen</a></li>
             
-                <li class="bc_last_link"><a href="&#x2F;patterns&#x2F;04-pages-72-Pub-ibh-03-rediger-ibh-kategori&#x2F;04-pages-72-Pub-ibh-03-rediger-ibh-kategori.rendered.html" title="Trafikk, reiser, vei">Trafikk, reiser, vei</a></li>
+                <li class="bc_last_link"><a href="&#x2F;patterns&#x2F;04-pages-72-Pub-ibh-52-rediger-ibh-kategori&#x2F;04-pages-72-Pub-ibh-52-rediger-ibh-kategori.rendered.html" title="Trafikk, reiser, vei">Trafikk, reiser, vei</a></li>
             
                 <li class="bc_current">Ny innbyggerhjelp</li>
             
@@ -512,19 +512,36 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                 </a>
             </div>
             <div class="multiselect-list__flex">
-                <div class="form-element ">
-    
-    <input class="form-element__textfield" type="text" placeholder="Søk etter navn på ansatt" list="options">
-    <datalist id="options">
-        <option>Oskar Nilsen</option>
-        <option>Janne Nilsen</option>
-        <option>Gunnhild Svendsen</option>
-    </datalist>
+                <div id="js_filter_search" name="sok" class="filter-search no_max_width full_width">
+    <label for="filter_search" class="filter-search__label">
+        <span class="icon-searchglass--small grunt-icon grunt-icon--32"></span>
+        <span class="screen-reader-text">Lorem ipsum (27 characters)</span>
+    </label>
+    <input type="search" id="filter_search" placeholder="" class="js_filter_search_input filter-search__input mbn" />
+    <button class="filter-search__clear-search-button js_clear_search" style="display: none;">
+        <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+        <span class="screen-reader-text">Fjern søkeord</span>
+    </button>
+    <div class="js_filter_search_result filter-search__result">
+        <ul>
+                <li>
+                    <span class="icon-employee grunt-icon grunt-icon--32"></span>
+                    <a href="#">Oskar Nilsen</a>
+                </li>
+                <li>
+                    <span class="icon-employee grunt-icon grunt-icon--32"></span>
+                    <a href="#">Janne Nilsen</a>
+                </li>
+                <li>
+                    <span class="icon-employee grunt-icon grunt-icon--32"></span>
+                    <a href="#">Gunnhild Svendsen</a>
+                </li>
+        </ul>
+    </div>
 </div>
 
 
             </div>
-            <div class="align_right mrm mtn"><a href="#">Legg til</a></div>
 
 
         <h3 class="helpers_header mtxl">Fagansvarlig</h3>
@@ -563,9 +580,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         </script>
         <script src="https://www.bergen.kommune.no/internet/htdocs/js/eDialog24EntrypointScript3.js"></script>
             
-        <a href="#" id="ed24DivOnline" class="chat_link js_chat_link" title="Spør kommunen"></a>
-        <a href="#" id="ed24DivOffline" class="chat_link js_chat_link" title="Spør kommunen"></a>
-        <a href="#" id="ed24DivBusy" class="chat_link js_chat_link" title="Spør kommunen"></a>
+        <a href="#" id="ed24DivOnline" class="chat_link js_chat_link" title="Spør kommunen" role="button"></a>
+        <a href="#" id="ed24DivOffline" class="chat_link js_chat_link" title="Spør kommunen" role="button"></a>
+        <a href="#" id="ed24DivBusy" class="chat_link js_chat_link" title="Spør kommunen" role="button"></a>
         
     </div>
 

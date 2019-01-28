@@ -9,10 +9,12 @@
     {{# visModalPaSiden }}
         {{> molecules-modal }}
     {{/ visModalPaSiden }}
-    
-    <div class="page_header_container_with_org_menu">
-        {{> molecules-sideoverskrift-med-lenke(sidetittel: "{{ organisasjonsenhet.tittel }}", url: "{{ organisasjonsenhet.url }}") }}
-    </div>
+
+    {{# sideoverskriftMedLenke }}
+        <div class="page_header_container_with_org_menu">
+            {{> molecules-sideoverskrift-med-lenke }}
+        </div>
+    {{/ sideoverskriftMedLenke }}
     
     <div class="row">
 
@@ -49,9 +51,9 @@
                             </a>
                         </div>
                         <div class="ece_module_content_container">
-                            <h3 class="ece_module_title">
+                            <h2 class="ece_module_title">
                                 <a href="/omkommunen/avdelinger/kemneren/arbeidsgiverselskap/article-148536"><span class="read_more_link read_more_link--24">Handlevenn</span></a>
-                            </h3>
+                            </h2>
                             <div class="ece_module_excerpt">
                                 <p>Bergen kommune tilbyr nå handlevenner som henter deg hjemme og følger deg til butikken.</p>
                             </div>
@@ -77,9 +79,9 @@
                             </a>
                         </div>
                         <div class="ece_module_content_container">
-                            <h3 class="ece_module_title">
+                            <h2 class="ece_module_title">
                                 <a href="http://www.bt.no"><span class="read_more_link read_more_link--24">Bergens Tidende</span></a>
-                            </h3>
+                            </h2>
                             <div class="ece_module_excerpt">
                                 <p>En viktig artikkel hos BT forteller mer, men vi må peke dit for å vise den også til brukerne.</p>
                             </div>
@@ -103,9 +105,9 @@
                             </a>
                         </div>
                         <div class="ece_module_content_container">
-                            <h3 class="ece_module_title">
+                            <h2 class="ece_module_title">
                                 <a href="/omkommunen/avdelinger/kemneren/personlig-skattyter/article-148540"><span class="read_more_link read_more_link--24">Det blir hvit jul</span></a>
-                            </h3>
+                            </h2>
                             <div class="ece_module_excerpt">
                                 <p>Rekord mye snø i Bergen til jul. Byens befolkning må ty til langrennsski som fremkomstmidler.</p>
                             </div>
@@ -130,9 +132,9 @@
                             </a>
                         </div>
                         <div class="ece_module_content_container">
-                            <h3 class="ece_module_title">
+                            <h2 class="ece_module_title">
                                 <a href="/omkommunen/avdelinger/kemneren/personlig-skattyter/article-148540"><span class="read_more_link read_more_link--24">Det blir hvit jul</span></a>
-                            </h3>
+                            </h2>
                             <div class="ece_module_excerpt">
                                 <p>Rekord mye snø i Bergen til jul. Byens befolkning må ty til langrennsski som fremkomstmidler.</p>
                             </div>

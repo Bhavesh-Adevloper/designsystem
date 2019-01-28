@@ -15,19 +15,36 @@
                 </a>
             </div>
             <div class="multiselect-list__flex">
-                <div class="form-element ">
-    
-    <input class="form-element__textfield" type="text" placeholder="Søk etter navn på ansatt" list="options">
-    <datalist id="options">
-        <option>Oskar Nilsen</option>
-        <option>Janne Nilsen</option>
-        <option>Gunnhild Svendsen</option>
-    </datalist>
+                <div id="js_filter_search" name="sok" class="filter-search no_max_width full_width">
+    <label for="filter_search" class="filter-search__label">
+        <span class="icon-searchglass--small grunt-icon grunt-icon--32"></span>
+        <span class="screen-reader-text">Lorem ipsum (27 characters)</span>
+    </label>
+    <input type="search" id="filter_search" placeholder="" class="js_filter_search_input filter-search__input mbn" />
+    <button class="filter-search__clear-search-button js_clear_search" style="display: none;">
+        <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+        <span class="screen-reader-text">Fjern søkeord</span>
+    </button>
+    <div class="js_filter_search_result filter-search__result">
+        <ul>
+                <li>
+                    <span class="icon-employee grunt-icon grunt-icon--32"></span>
+                    <a href="#">Oskar Nilsen</a>
+                </li>
+                <li>
+                    <span class="icon-employee grunt-icon grunt-icon--32"></span>
+                    <a href="#">Janne Nilsen</a>
+                </li>
+                <li>
+                    <span class="icon-employee grunt-icon grunt-icon--32"></span>
+                    <a href="#">Gunnhild Svendsen</a>
+                </li>
+        </ul>
+    </div>
 </div>
 
 
             </div>
-            <div class="align_right mrm mtn"><a href="#">Legg til</a></div>
 
 
         <h3 class="helpers_header mtxl">Fagansvarlig</h3>

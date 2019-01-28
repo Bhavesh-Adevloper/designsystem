@@ -16,9 +16,8 @@
                 </a>
             </div>
             <div class="multiselect-list__flex">
-                {{> atoms-tekstfelt-autofullfor }}
+                {{> atoms-filterbox-valg:full_width }}
             </div>
-            <div class="align_right mrm mtn"><a href="#">Legg til</a></div>
         {{/ valgtFormidlingsansvarlig }}
 
 
@@ -31,8 +30,7 @@
                 </a>
             {{/ valgtFagansvarlig }}
             {{^ valgtFagansvarlig}}
-                {{> atoms-tekstfelt-autofullfor }}
-                <div class="align_right mrm mtn"><a href="#">Legg til</a></div>
+                {{> atoms-filterbox-valg:full_width }}
             {{/valgtFagansvarlig}}
         </div>
     </div>

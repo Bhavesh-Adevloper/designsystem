@@ -2,9 +2,11 @@
 {{> organisms-brodsmuler }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
 
-    <div class="page_header_container_with_org_menu">
-        {{> molecules-sideoverskrift-med-lenke(sidetittel: "{{ organisasjonsenhet.tittel }}", url: "{{ organisasjonsenhet.url }}") }}
-    </div>
+    {{# sideoverskriftMedLenke }}
+        <div class="page_header_container_with_org_menu">
+            {{> molecules-sideoverskrift-med-lenke }}
+        </div>
+    {{/ sideoverskriftMedLenke }}
 
     <div class="row">
         <div class="col_md_12 col_lg_4">
@@ -335,7 +337,7 @@ alt="Dans i bunadsparaden"></a>
                                 <!-- https://www.bergen.kommune.no/omkommunen/avdelinger/kemneren/9215 -->
                                 <div class="relatedContent relatedContentBox">
                                     <div class="tjenester">
-                                        <h3 class="related_content_header">Tjenester</h3>
+                                        <h2 class="related_content_header">Tjenester</h2>
                                         <ul>
                                             <li>
                                                 <a href="{{ link.pages-tjenestebeskrivelse }}">
@@ -366,7 +368,7 @@ alt="Dans i bunadsparaden"></a>
 <!-- includes/relaterteMultimediaLenker.jsp -->
                                 <div class="relatedContent relatedContentBox">
                                     <div class="multimedia">                                        
-                                        <h3 class="related_content_header">Tekst over relaterte filvedlegg:</h3>
+                                        <h2 class="related_content_header">Tekst over relaterte filvedlegg:</h2>
                                         <ul>
                                             <li>                                                
                                                 <a href="#" title="" class="multimedia_link">
@@ -466,7 +468,7 @@ alt="Dans i bunadsparaden"></a>
                                 <div class="relatedContent relatedContentBox">
                                     <div class="lenker">
 
-                                        <h3 class="related_content_header">Tekst over relaterte lenker:</h3>
+                                        <h2 class="related_content_header">Tekst over relaterte lenker:</h2>
 
                                         <ul>
                                             <li>
@@ -675,7 +677,7 @@ alt="Dans i bunadsparaden"></a>
                                 
                                 <div class="relatedContent noFloat">
                                     <div class="multimedia">                                        
-                                        <h3 class="related_content_header">Tekst over relaterte filvedlegg:</h3>
+                                        <h2 class="related_content_header">Tekst over relaterte filvedlegg:</h2>
                                         <ul>
                                             <li>                                                
                                                 <a href="#" title="" class="multimedia_link">

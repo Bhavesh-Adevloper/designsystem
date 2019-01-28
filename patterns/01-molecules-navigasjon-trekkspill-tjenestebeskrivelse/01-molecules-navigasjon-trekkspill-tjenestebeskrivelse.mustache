@@ -2,12 +2,12 @@
     
     {{# accordionItem }}
         <div class="accordion_item js_accordion_item {{ accordionItemStyleModifier }}">
-            <h3 class="accordion_header">
+            <h2 class="accordion_header">
                 <a class="js_toggle_accordion_link" title="{{ accordionTittel }}" href="#">
                     <span class="arrow-icon"></span>
                     {{ accordionTittel }}
                 </a>
-            </h3>
+            </h2>
             <div class="accordion_content">
                     
                 {{# accordionSkjemaListe }}
@@ -34,7 +34,7 @@
 
                 {{# accordionAvsnitt }}
                 
-                    <h4 class="accordion_inner_content_header">{{ accordionAvsnittTittel }}</h4>
+                    <h3 class="accordion_inner_content_header">{{ accordionAvsnittTittel }}</h3>
                 
                     {{# accordionAvsnittTekst }}
                         <div class="service_content_max_width">{{{ accordionAvsnittTekst }}}</div>
@@ -59,12 +59,12 @@
     {{/ accordionItem }}    
     
     <div class="accordion_item js_accordion_item">
-        <h3 class="accordion_header">
+        <h2 class="accordion_header">
             <a class="js_toggle_accordion_link" title="Har du spørsmål?" href="#">
                 <span class="arrow-icon"></span>
                 Har du spørsmål?
             </a>
-        </h3>
+        </h2>
         <div class="accordion_content">
             <p>
                 Kontakt                 

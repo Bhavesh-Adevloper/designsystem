@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1548155668621,
+  "timestamp": 1548676962015,
   "graph": {
     "options": {
       "directed": true,
@@ -261,19 +261,19 @@
         }
       },
       {
+        "v": "00-atoms/20-skjema-element/06-filterbox-valg.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-molecules-publisering-35-rediger-accordion-innholdsansvarlig/01-molecules-publisering-35-rediger-accordion-innholdsansvarlig.rendered.html",
+          "lineagePattern": "molecules-rediger-accordion-innholdsansvarlig"
+        }
+      },
+      {
         "v": "00-atoms/20-skjema-element/08-tekstfelt.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/01-molecules-15-skjema-kontaktskjema-med-captcha/01-molecules-15-skjema-kontaktskjema-med-captcha.rendered.html",
           "lineagePattern": "molecules-kontaktskjema-med-captcha"
-        }
-      },
-      {
-        "v": "00-atoms/20-skjema-element/09-tekstfelt-autofullfor.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-publisering-35-rediger-accordion-innholdsansvarlig/01-molecules-publisering-35-rediger-accordion-innholdsansvarlig.rendered.html",
-          "lineagePattern": "molecules-rediger-accordion-innholdsansvarlig"
         }
       },
       {
@@ -400,14 +400,6 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-20-Listesider-listeside-med-lenkebokser/03-templates-20-Listesider-listeside-med-lenkebokser.rendered.html",
           "lineagePattern": "templates-listeside-med-lenkebokser"
-        }
-      },
-      {
-        "v": "01-molecules/00-overskrifter/40-moduloverskrift-h3.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-10-Innholdssider-kontakt/03-templates-10-Innholdssider-kontakt.rendered.html",
-          "lineagePattern": "templates-kontakt"
         }
       },
       {
@@ -1370,7 +1362,7 @@
         "v": "03-templates/08-Navigasjon/30-innbyggerhjelpen-oversikt.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-72-Pub-ibh-02-rediger-ibh-oversikt/04-pages-72-Pub-ibh-02-rediger-ibh-oversikt.rendered.html",
+          "lineagePath": "../../patterns/04-pages-72-Pub-ibh-51-rediger-ibh-oversikt/04-pages-72-Pub-ibh-51-rediger-ibh-oversikt.rendered.html",
           "lineagePattern": "pages-rediger-ibh-oversikt"
         }
       },
@@ -1378,7 +1370,7 @@
         "v": "03-templates/08-Navigasjon/31-innbyggerhjelpen-kategori.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-72-Pub-ibh-03-rediger-ibh-kategori/04-pages-72-Pub-ibh-03-rediger-ibh-kategori.rendered.html",
+          "lineagePath": "../../patterns/04-pages-72-Pub-ibh-52-rediger-ibh-kategori/04-pages-72-Pub-ibh-52-rediger-ibh-kategori.rendered.html",
           "lineagePattern": "pages-rediger-ibh-kategori"
         }
       },
@@ -1615,7 +1607,9 @@
       {
         "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-72-Pub-ibh-01-ibh-kladd/04-pages-72-Pub-ibh-01-ibh-kladd.rendered.html",
+          "lineagePattern": "pages-ibh-kladd"
         }
       },
       {
@@ -2255,13 +2249,19 @@
         }
       },
       {
-        "v": "04-pages/72-Pub-ibh/02-rediger-ibh-oversikt.mustache",
+        "v": "04-pages/72-Pub-ibh/01-ibh-kladd.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "04-pages/72-Pub-ibh/03-rediger-ibh-kategori.mustache",
+        "v": "04-pages/72-Pub-ibh/51-rediger-ibh-oversikt.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/72-Pub-ibh/52-rediger-ibh-kategori.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -2438,7 +2438,7 @@
       },
       {
         "v": "01-molecules/publisering/35-rediger-accordion-innholdsansvarlig.mustache",
-        "w": "00-atoms/20-skjema-element/09-tekstfelt-autofullfor.mustache",
+        "w": "00-atoms/20-skjema-element/06-filterbox-valg.mustache",
         "value": {}
       },
       {
@@ -3723,7 +3723,7 @@
       },
       {
         "v": "03-templates/10-Innholdssider/kontakt.mustache",
-        "w": "01-molecules/00-overskrifter/40-moduloverskrift-h3.mustache",
+        "w": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
         "value": {}
       },
       {
@@ -6212,12 +6212,17 @@
         "value": {}
       },
       {
-        "v": "04-pages/72-Pub-ibh/02-rediger-ibh-oversikt.mustache",
+        "v": "04-pages/72-Pub-ibh/01-ibh-kladd.mustache",
+        "w": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/72-Pub-ibh/51-rediger-ibh-oversikt.mustache",
         "w": "03-templates/08-Navigasjon/30-innbyggerhjelpen-oversikt.mustache",
         "value": {}
       },
       {
-        "v": "04-pages/72-Pub-ibh/03-rediger-ibh-kategori.mustache",
+        "v": "04-pages/72-Pub-ibh/52-rediger-ibh-kategori.mustache",
         "w": "03-templates/08-Navigasjon/31-innbyggerhjelpen-kategori.mustache",
         "value": {}
       },

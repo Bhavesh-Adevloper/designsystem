@@ -412,6 +412,23 @@ function clearFilter() {
 }
 
 //Kun funksjonalitet i PL, Angular ellers
+function showHideFilterResults(){
+    if ( document.getElementById( "js_filter_search" ) != null ) {
+        $(".js_filter_search_input").on("keyup click input", function () {
+            if (this.value.length > 0) {
+                $(".js_filter_search_result").show();
+            } else {
+                $(".js_filter_search_result").hide();
+            }
+        });
+
+        $(".js_clear_search").on("click", function () {
+            $(".js_filter_search_result").hide();
+        });
+    }
+}
+
+//Kun funksjonalitet i PL, Angular ellers
 function openSearchFilter(){
     $(".js_search-checkbox-filter__toggle").click( function() {
         if ( $(this).parent().hasClass("search-checkbox-filter--open")) {
@@ -529,6 +546,7 @@ $(document).ready(function () {
     openEditorMenu();
     openModal();
     closeModal();
+    showHideFilterResults();
 });
 
 $(window).bind("load", function() {
