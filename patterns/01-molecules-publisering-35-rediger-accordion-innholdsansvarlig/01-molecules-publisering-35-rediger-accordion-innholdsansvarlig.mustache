@@ -10,7 +10,7 @@
         {{# valgtFormidlingsansvarlig }}
             <h3 class="helpers_header">Formidlingsansvarlig</h3>
             <div class="multiselect-list__flex">
-                <div class="multiselect-list__selected">{{valgtFormidlingsansvarlig}}</div>
+                <div class="multiselect-list__selected">{{ valgtFormidlingsansvarlig }}</div>
                 <a href="#" title="Fjern formidlingsansvarlig" class="button button--remove mbs">
                     Fjern
                 </a>
@@ -24,14 +24,14 @@
         <h3 class="helpers_header mtxl">Fagansvarlig</h3>
         <div class="multiselect-list__flex">
             {{# valgtFagansvarlig }}
-                <div class="multiselect-list__selected">{{valgtFagansvarlig}}</div>
+                <div class="multiselect-list__selected">{{ valgtFagansvarlig }}</div>
                 <a href="#" title="Fjern fagansvarlig" class="button button--remove mbs">
                     Fjern
                 </a>
             {{/ valgtFagansvarlig }}
             {{^ valgtFagansvarlig}}
                 {{> atoms-filterbox-valg:full_width }}
-            {{/valgtFagansvarlig}}
+            {{/ valgtFagansvarlig}}
         </div>
     </div>
 </div>
