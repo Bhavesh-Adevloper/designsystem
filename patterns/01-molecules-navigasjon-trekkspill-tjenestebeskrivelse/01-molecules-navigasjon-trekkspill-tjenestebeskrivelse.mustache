@@ -3,7 +3,7 @@
     {{# accordionItem }}
         <div class="accordion_item js_accordion_item {{ accordionItemStyleModifier }}">
             <h2 class="accordion_header">
-                <a class="js_toggle_accordion_link" title="{{ accordionTittel }}" href="#">
+                <a class="js_toggle_accordion_link" href="#">
                     <span class="arrow-icon"></span>
                     {{ accordionTittel }}
                 </a>
@@ -22,7 +22,7 @@
                         <ul>
                             {{# linkliste }}
                                 <li>
-                                    <a href="{{ url }}" title="{{ tittel }}">
+                                    <a href="{{ url }}">
                                         {{ tittel }}
                                     </a>
                                 </li>
@@ -44,7 +44,7 @@
                         <ul class="service_content_max_width">
                             {{# linkliste }}
                                 <li>
-                                    <a href="{{ url }}" title="{{ tittel }}">
+                                    <a href="{{ url }}">
                                         {{ tittel }}
                                     </a>
                                 </li>
@@ -60,7 +60,7 @@
     
     <div class="accordion_item js_accordion_item">
         <h2 class="accordion_header">
-            <a class="js_toggle_accordion_link" title="Har du spørsmål?" href="#">
+            <a class="js_toggle_accordion_link" href="#">
                 <span class="arrow-icon"></span>
                 Har du spørsmål?
             </a>
@@ -69,13 +69,13 @@
             <p>
                 Kontakt                 
                 {{# organisasjonsenhet }}
-                    <a href="{{ organisasjonsenhet.url }}" title="{{ organisasjonsenhet.tittel }}">
+                    <a href="{{ organisasjonsenhet.url }}">
                         {{ organisasjonsenhet.tittel }}
                     </a>
                 {{/ organisasjonsenhet }}
             </p>
             {{# kontaktkort }}
-                <a href="{{ bergenskartURL }}" title="Vis i kart" class="map_link" target="_blank">
+                <a href="{{ bergenskartURL }}" class="map_link" target="_blank">
                     <span class="icon-map grunt-icon grunt-icon--32"></span>
                     Vis i kart
                 </a>

@@ -1,18 +1,18 @@
 <div class="linkbox linkbox--with-category-link {{ styleModifier }}">
     <h2 class="linkbox__header">
-        <a href="{{ url }}" title="{{ tittel }}" class="linkbox__header-link">
+        <a href="{{ url }}" class="linkbox__header-link">
             <span class="arrow-icon"></span><span class="arrow-icon--2"></span>{{ tittel }}
         </a>
     </h2>
     <div class="linkbox__content">
         <ul>
             {{# linkliste }}
-                <li><a href="{{ url }}" title="{{ tittel }}">{{ tittel }}</a></li>
+                <li><a href="{{ url }}">{{ tittel }}</a></li>
             {{/ linkliste }}
         </ul>
     </div>
     <div class="linkbox__category-link-container">
-        <a href="{{ url }}" title="{{ tittel }}" class="read_more_link read_more_link--17">
+        <a href="{{ url }}" class="read_more_link read_more_link--17">
             Mer om <span class="lowercase">{{ tittel }}</span>
         </a>
     </div>

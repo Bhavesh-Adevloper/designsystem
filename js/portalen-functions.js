@@ -360,10 +360,7 @@ function selectYear() {
 
 // Filtersoek
 function filterSearch() {
-    if ( document.getElementById( "js_filter_search" ) != null ) {
-        // Focus
-        // Kommenterer dette ut i patternlab:
-        // $(".js_filter_search_input").focus();
+    if ( document.getElementsByClassName( "filter-search" ) != null ) {
         // Do filter
         $(".js_filter_search_input").on("keyup click input", function () {
             if (this.value.length > 0) {
@@ -413,7 +410,7 @@ function clearFilter() {
 
 //Kun funksjonalitet i PL, Angular ellers
 function showHideFilterResults(){
-    if ( document.getElementById( "js_filter_search" ) != null ) {
+    if ( document.getElementsByClassName( "filter-search" ) != null ) {
         $(".js_filter_search_input").on("keyup click input", function () {
             if (this.value.length > 0) {
                 $(".js_filter_search_result").show();

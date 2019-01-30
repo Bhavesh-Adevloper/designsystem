@@ -1,6 +1,6 @@
 {{# redigeringsmodus }}
 <nav id="js_org_menu_container" class="org_menu_container mbl {{styleModifier}}">
-    <a href="" title="Meny" class="org_menu_mobile_header">
+    <a href="" class="org_menu_mobile_header">
         Meny
         <span class="arrow-icon"></span>
     </a>
@@ -12,7 +12,7 @@
                     <span class="org_menu--editable__flex-container">
 
                         <!-- Menypunkt -->
-                        <a title="{{ tittel }}" href="{{ url }}" class="org_menu_link js-hide-this">
+                        <a href="{{ url }}" class="org_menu_link js-hide-this">
                             {{ tittel }}
                         </a>
                         
@@ -20,7 +20,7 @@
                         <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
 
                         <!-- Rediger-knapp -->
-                        <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                        <a href="#" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                             <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Rediger menypunktnavn</span>
                         </a>
@@ -40,21 +40,21 @@
                             </button>
                         </form>
                         <!-- Slett-knapp -->
-                        <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                        <a href="" class="edit-menu__edit-button edit-menu__removeitem">
                             <span class="icon-trash grunt-icon grunt-icon--32"></span>
                             <span class="screen-reader-text">Slett menypunkt</span>
                         </a>
 
                         <!-- Toggle-knapp -->
                         {{# harIkkeUndermeny }}
-                            <a href="" title="Lag ny undermeny" class="org_sub_menu_toggle_link">
+                            <a href="" class="org_sub_menu_toggle_link">
                                 <span class="plus-arrow-icon"></span>
                                 <span class="screen-reader-text">Lag ny undermeny</span>
                             </a>
                         {{/ harIkkeUndermeny }}
 
                         {{# harUndermeny }}
-                            <a href="" title="Undermeny" class="org_sub_menu_toggle_link">
+                            <a href="" class="org_sub_menu_toggle_link">
                                 <span class="arrow-icon"></span>
                                 <span class="screen-reader-text">Undermeny</span>
                             </a>
@@ -70,7 +70,7 @@
                                 <span class="org_menu--editable__flex-container">
 
                                     <!-- Menypunkt -->
-                                    <a title="{{ tittel }}" href="{{ url }}" class="org_sub_menu_link js-hide-this">
+                                    <a href="{{ url }}" class="org_sub_menu_link js-hide-this">
                                         {{ tittel }}
                                     </a>
                         
@@ -78,7 +78,7 @@
                                     <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
                                     
                                     <!-- Rediger-knapp -->
-                                    <a href="#" title="Rediger menypunktnavn" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
+                                    <a href="#" class="edit-menu__edit-button edit-menu__edit-title js-hide-and-show">
                                         <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Rediger menypunktnavn</span>
                                     </a>
@@ -98,7 +98,7 @@
                                         </button>
                                     </form>
                                     <!-- Slett-knapp -->
-                                    <a href="" title="Slett menypunkt" class="edit-menu__edit-button edit-menu__removeitem">
+                                    <a href="" class="edit-menu__edit-button edit-menu__removeitem">
                                         <span class="icon-trash grunt-icon grunt-icon--32"></span>
                                         <span class="screen-reader-text">Slett menypunkt</span>
                                     </a>
@@ -111,7 +111,7 @@
                     
                     <span class="add-menu-item add-menu-item--sub">
                         <!-- Ny-menypunkt-funksjon undermeny -->
-                        <a href="#" title="Legg til nytt undermenypunkt" class="add-menu-item__sub-link js-hide-and-show">
+                        <a href="#" class="add-menu-item__sub-link js-hide-and-show">
                             <span class="plus-icon"></span>Nytt menypunkt
                         </a>
                         <form class="form-element form-element--sub js-show-this hidden">
@@ -136,7 +136,7 @@
     
     <span class="add-menu-item">
         <!-- Ny-menypunkt-funksjon hovedmeny -->
-        <a href="#" title="Legg til nytt menypunkt" class="add-menu-item__link js-hide-and-show">
+        <a href="#" class="add-menu-item__link js-hide-and-show">
             <span class="plus-icon"></span>Nytt menypunkt
         </a>
         <form class="form-element js-show-this hidden">
