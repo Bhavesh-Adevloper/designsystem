@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1548857593366,
+  "timestamp": 1549365766142,
   "graph": {
     "options": {
       "directed": true,
@@ -432,6 +432,12 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-01-Inngangssider-35-byradsavdeling/03-templates-01-Inngangssider-35-byradsavdeling.rendered.html",
           "lineagePattern": "templates-byradsavdeling"
+        }
+      },
+      {
+        "v": "01-molecules/02-innhold/17-teaser.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
