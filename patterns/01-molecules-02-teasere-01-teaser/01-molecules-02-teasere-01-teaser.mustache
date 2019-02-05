@@ -1,0 +1,105 @@
+{{# teaserInfo }}
+    <div class="module_container module_box_style mbl">
+        <div class="module_content_container">
+            <div class="module_content_excerpt">            
+                <h2>Teaser</h2>
+                <p>Ny <i>pattern</i> som inneholder kun én lenke for både tittel óg bilde.</p>
+                <p><strong>Hvorfor?</strong><br>Når en lenke med en påfølgende ny lenke går til samme lenkemål (for eksempel et listebilde og en tilhørende tittel som går til samme artikkelside), resulterer dette i ekstra navigering og gjentakelse for brukere som benytter tastatur og skjermleser. Det kalles 'redundant links' og er irriterende.<p>
+                <p>Teaser skal etter hvert kunne erstatte <i>Escenic Teaser</i> og <i>Modul</i>. Og muligens <i>Tout</i>.</p>
+            </div>
+        </div>
+    </div>
+{{/ teaserInfo }}
+
+{{# teaserInfo }}
+    <p class="mbn"><code>Teaser default:</code></p>
+{{/ teaserInfo }}
+
+<div class="teaser mbl {{ styleModifier }}">
+    <a href="{{ url }}" class="teaser__link">
+        {{# bilde }}
+            <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="teaser__image" />
+        {{/ bilde }}
+
+        <div class="teaser__content-container">
+            <h2 class="teaser__title">
+                <span class="read_more_link read_more_link--22">
+                    {{ modulTittel }}
+                </span>
+            </h2>
+            {{# dato }}
+            <div class="teaser__date">
+                {{ dato }}
+            </div>
+            {{/ dato }}
+            <div class="teaser__excerpt">
+                <p>{{ ingress }}</p>
+            </div>
+        </div>
+    </a>
+    <p>
+        <a href="">Les mer (egen lenke eller noe annet)</a>
+    </p>
+</div>
+
+{{# teaserInfo }}
+    <p class="mbn"><code>Teaser 50/50 på desktop:</code></p>
+{{/ teaserInfo }}
+
+<div class="teaser teaser--50-50-desktop mbl {{ styleModifier }}">
+    <a href="{{ url }}" class="teaser__link">
+        {{# bilde }}
+            <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="teaser__image" />
+        {{/ bilde }}
+
+        <div class="teaser__content-container">
+            <h2 class="teaser__title">
+                <span class="read_more_link read_more_link--22">
+                    {{ modulTittel }}
+                </span>
+            </h2>
+            {{# dato }}
+            <div class="teaser__date">
+                {{ dato }}
+            </div>
+            {{/ dato }}
+            <div class="teaser__excerpt">
+                <p>{{ ingress }}</p>
+            </div>
+        </div>
+    </a>
+    <p>
+        <a href="">Les mer (egen lenke eller noe annet)</a>
+    </p>
+</div>
+
+{{# teaserInfo }}
+    <p class="mbn"><code>Teaser i boks:</code></p>
+{{/ teaserInfo }}
+
+<div class="teaser teaser--50-50-desktop teaser--box-style {{ styleModifier }}">
+    <a href="{{ url }}" class="teaser__link">
+        {{# bilde }}
+            <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="teaser__image" />
+        {{/ bilde }}
+
+        <div class="teaser__content-container">
+            <h2 class="teaser__title">
+                <span class="read_more_link read_more_link--22">
+                    {{ modulTittel }}
+                </span>
+            </h2>
+            {{# dato }}
+            <div class="teaser__date">
+                {{ dato }}
+            </div>
+            {{/ dato }}
+            <div class="teaser__excerpt">
+                <p>{{ ingress }}</p>
+            </div>
+        </div>
+    </a>
+    <p>
+        <a href="">Les mer (egen lenke eller noe annet)</a>
+    </p>
+</div>

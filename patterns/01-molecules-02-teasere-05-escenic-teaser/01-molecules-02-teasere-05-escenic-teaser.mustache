@@ -1,0 +1,116 @@
+<div class="ece_module_container{{# imgLandscape }} has_image{{/ imgLandscape }} {{ styleModifier }}">
+    {{# imgLandscape }}
+        <div class="ece_module_image_container">
+            <a href="{{ url }}" title="{{ tittel }}" class="ece_module_image_link">
+                <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="ece_module_image">
+            </a>
+        </div>
+    {{/ imgLandscape }}
+    <div class="ece_module_content_container">
+        
+        {{# toppdato }}
+            <div class="ece_module_kicker_date">{{ toppdato }}</div>
+        {{/ toppdato }}
+        
+        {{# stikktittel }}
+            <div class="ece_module_kicker">{{ stikktittel }}</div>
+        {{/ stikktittel }}
+        
+        <h2 class="ece_module_title">
+            <a href="{{ url }}">
+                <span class="read_more_link read_more_link--24">
+                    {{ tittel }}
+                </span>
+            </a>
+        </h2>
+        
+        {{# ingress }}
+        <div class="ece_module_excerpt">
+            <p>		
+                {{ ingress }}
+            </p>
+        </div>
+        {{/ ingress }}
+        
+        {{# meta }}
+        <div class="ece_module_meta">
+            <p>
+                {{# lesmertekst }}
+                    <a href="{{ url }}" class="read_more_link">{{ lesmertekst }}</a>
+                {{/ lesmertekst }}
+                
+                {{# seksjonslenke }}
+                    <a href="{{ url }}" class="section_link read_more_link">{{ seksjonslenke }}</a>
+                {{/ seksjonslenke }}
+                
+                {{# dato }}
+                    <span class="date">({{ dato }})</span>
+                {{/ dato }}
+            </p>
+        </div>
+        {{/ meta }}
+        
+        {{# kjopbillett }}
+            <div class="ece_module_meta">
+                {{> atoms-kjop-billett }}
+            </div>
+        {{/ kjopbillett }}
+        
+        {{# henvinsinger }}
+        <div class="ece_module_references">
+            
+            {{# multimedia }}
+                <ul class="multimedia_references">
+                    <li>
+                        <a href="#" class="multimedia_link">
+                            <span class="icon icon_pdf">icon_pdf</span>
+                            <span class="file_title">Ikke slå ribbefettet i vasken</span>
+                            <span class="file_size">[6.4 Mb]</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="multimedia_link">
+                            <span class="icon icon_word">icon_word</span>
+                            <span class="file_title">Slik får du en branntrygg jul også til neste år når det er  en ny sesong med sterinlys</span>
+                            <span class="file_size">[6.4 Mb]</span>
+                        </a>
+                    </li>
+                </ul>
+            {{/ multimedia }}
+            
+            {{# lenker }}
+            <ul class="link_references">
+                {{# linkliste }}
+                    <li>
+                        <a href="{{ url }}">
+                            {{ tittel }}
+                        </a>
+                    </li>
+                {{/ linkliste }}
+            </ul>
+            {{/ lenker }}
+            
+            {{# artikler }}
+            <ul class="article_references">
+                {{# linkliste }}
+                    <li>
+                        <a href="{{ url }}">
+                            {{ tittel }}
+                        </a>
+                    </li>
+                {{/ linkliste }}
+            </ul>
+            {{/ artikler }}
+            
+        </div>
+        {{/ henvinsinger }}
+        
+        {{# simplePublisingRedigering }}
+            <div class="sp_article_edit">
+                <a href="#" target="_blank" title="Rediger artikkel - Åpnes i nytt vindu" class="sp_edit_icon_link"><img src="https://www.bergen.kommune.no/internet/htdocs/simple-editor/icons/redigerblyant.gif" alt="Rediger artikkel"></a>
+                <a href="#" target="_blank" title="Slett artikkel - Åpnes i nytt vindu" class="sp_edit_icon_link"><img src="https://www.bergen.kommune.no/internet/htdocs/simple-editor/icons/trashcan.gif" alt="Slett artikkel"></a>
+            </div>
+        {{/ simplePublisingRedigering }}
+        
+    </div>
+</div>

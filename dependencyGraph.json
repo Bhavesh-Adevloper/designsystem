@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1549365766142,
+  "timestamp": 1549376236092,
   "graph": {
     "options": {
       "directed": true,
@@ -411,37 +411,21 @@
         }
       },
       {
-        "v": "01-molecules/02-innhold/01-notis.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-99-diverse-98-aktivitetsoversikt/04-pages-99-diverse-98-aktivitetsoversikt.rendered.html",
-          "lineagePattern": "pages-aktivitetsoversikt"
-        }
-      },
-      {
-        "v": "01-molecules/02-innhold/11-ekstern-url.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-fysio-institutt/04-pages-30-mikrotjenester-fysio-institutt.rendered.html",
-          "lineagePattern": "pages-fysio-institutt"
-        }
-      },
-      {
-        "v": "01-molecules/02-innhold/12-vis-underavdelinger.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-01-Inngangssider-35-byradsavdeling/03-templates-01-Inngangssider-35-byradsavdeling.rendered.html",
-          "lineagePattern": "templates-byradsavdeling"
-        }
-      },
-      {
-        "v": "01-molecules/02-innhold/17-teaser.mustache",
+        "v": "01-molecules/02-teasere/01-teaser.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "01-molecules/02-innhold/18-modul.mustache",
+        "v": "01-molecules/02-teasere/05-escenic-teaser.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-20-Listesider-artikkelliste/03-templates-20-Listesider-artikkelliste.rendered.html",
+          "lineagePattern": "templates-artikkelliste"
+        }
+      },
+      {
+        "v": "01-molecules/02-teasere/07-modul.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-10-Innholdssider-modul-helside/03-templates-10-Innholdssider-modul-helside.rendered.html",
@@ -449,7 +433,7 @@
         }
       },
       {
-        "v": "01-molecules/02-innhold/19-modul-viktig-nyhet.mustache",
+        "v": "01-molecules/02-teasere/08-modul-viktig-nyhet.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/01-molecules-lister-05-link-liste-with-meta/01-molecules-lister-05-link-liste-with-meta.rendered.html",
@@ -457,7 +441,7 @@
         }
       },
       {
-        "v": "01-molecules/02-innhold/30-tout.mustache",
+        "v": "01-molecules/02-teasere/10-tout.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
@@ -465,7 +449,31 @@
         }
       },
       {
-        "v": "01-molecules/02-innhold/31-tout-arbeidsplaner.mustache",
+        "v": "01-molecules/03-bokser/01-notis.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-99-diverse-98-aktivitetsoversikt/04-pages-99-diverse-98-aktivitetsoversikt.rendered.html",
+          "lineagePattern": "pages-aktivitetsoversikt"
+        }
+      },
+      {
+        "v": "01-molecules/03-bokser/11-ekstern-url.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-fysio-institutt/04-pages-30-mikrotjenester-fysio-institutt.rendered.html",
+          "lineagePattern": "pages-fysio-institutt"
+        }
+      },
+      {
+        "v": "01-molecules/03-bokser/12-vis-underavdelinger.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-01-Inngangssider-35-byradsavdeling/03-templates-01-Inngangssider-35-byradsavdeling.rendered.html",
+          "lineagePattern": "templates-byradsavdeling"
+        }
+      },
+      {
+        "v": "01-molecules/03-bokser/31-tout-arbeidsplaner.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
@@ -473,7 +481,7 @@
         }
       },
       {
-        "v": "01-molecules/02-innhold/31-tout-spesial.mustache",
+        "v": "01-molecules/03-bokser/31-tout-spesial.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
@@ -481,7 +489,7 @@
         }
       },
       {
-        "v": "01-molecules/02-innhold/32-tout-skoleruten.mustache",
+        "v": "01-molecules/03-bokser/32-tout-skoleruten.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
@@ -489,7 +497,7 @@
         }
       },
       {
-        "v": "01-molecules/02-innhold/33-tout-luftkvalitet-forside.mustache",
+        "v": "01-molecules/03-bokser/33-tout-luftkvalitet-forside.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-01-Inngangssider-00-forside/03-templates-01-Inngangssider-00-forside.rendered.html",
@@ -497,7 +505,7 @@
         }
       },
       {
-        "v": "01-molecules/02-innhold/33-tout-luftkvalitet.mustache",
+        "v": "01-molecules/03-bokser/33-tout-luftkvalitet.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-99-diverse-99-etjeneste-eksempler/04-pages-99-diverse-99-etjeneste-eksempler.rendered.html",
@@ -505,7 +513,7 @@
         }
       },
       {
-        "v": "01-molecules/02-innhold/40-promo.mustache",
+        "v": "01-molecules/03-bokser/40-promo.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-15-minside-15-eiendom/04-pages-15-minside-15-eiendom.rendered.html",
@@ -513,7 +521,7 @@
         }
       },
       {
-        "v": "01-molecules/02-innhold/50-tilbakemelding.mustache",
+        "v": "01-molecules/03-bokser/50-tilbakemelding.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-30-mikrotjenester-POU-motekalender/04-pages-30-mikrotjenester-POU-motekalender.rendered.html",
@@ -1132,14 +1140,6 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-20-Listesider-05-listeside-sas-med-kontaktinformasjon/03-templates-20-Listesider-05-listeside-sas-med-kontaktinformasjon.rendered.html",
           "lineagePattern": "templates-listeside-sas-med-kontaktinformasjon"
-        }
-      },
-      {
-        "v": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-20-Listesider-artikkelliste/03-templates-20-Listesider-artikkelliste.rendered.html",
-          "lineagePattern": "templates-artikkelliste"
         }
       },
       {
@@ -2363,6 +2363,11 @@
         "value": {}
       },
       {
+        "v": "01-molecules/02-teasere/05-escenic-teaser.mustache",
+        "w": "00-atoms/15-knapper/21-kjop-billett.mustache",
+        "value": {}
+      },
+      {
         "v": "01-molecules/14-sok-og-filtrering/sokefilter-avkrysningsbokser-avansert.mustache",
         "w": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
         "value": {}
@@ -2404,7 +2409,7 @@
       },
       {
         "v": "01-molecules/lister/05-link-liste-with-meta.mustache",
-        "w": "01-molecules/02-innhold/19-modul-viktig-nyhet.mustache",
+        "w": "01-molecules/02-teasere/08-modul-viktig-nyhet.mustache",
         "value": {}
       },
       {
@@ -2613,13 +2618,8 @@
         "value": {}
       },
       {
-        "v": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
-        "w": "00-atoms/15-knapper/21-kjop-billett.mustache",
-        "value": {}
-      },
-      {
         "v": "02-organisms/30-escenic/10-escenic-inngangsside.mustache",
-        "w": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
+        "w": "01-molecules/02-teasere/05-escenic-teaser.mustache",
         "value": {}
       },
       {
@@ -2629,7 +2629,7 @@
       },
       {
         "v": "02-organisms/30-escenic/15-escenic-artikkelliste.mustache",
-        "w": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
+        "w": "01-molecules/02-teasere/05-escenic-teaser.mustache",
         "value": {}
       },
       {
@@ -2649,7 +2649,7 @@
       },
       {
         "v": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
-        "w": "01-molecules/02-innhold/18-modul.mustache",
+        "w": "01-molecules/02-teasere/07-modul.mustache",
         "value": {}
       },
       {
@@ -2769,12 +2769,12 @@
       },
       {
         "v": "03-templates/01-Inngangssider/00-forside.mustache",
-        "w": "01-molecules/02-innhold/33-tout-luftkvalitet-forside.mustache",
+        "w": "01-molecules/03-bokser/33-tout-luftkvalitet-forside.mustache",
         "value": {}
       },
       {
         "v": "03-templates/01-Inngangssider/00-forside.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-teasere/10-tout.mustache",
         "value": {}
       },
       {
@@ -2809,7 +2809,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/03-hva-skjer.mustache",
-        "w": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
+        "w": "01-molecules/02-teasere/05-escenic-teaser.mustache",
         "value": {}
       },
       {
@@ -2864,12 +2864,12 @@
       },
       {
         "v": "03-templates/01-Inngangssider/05-tema.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-teasere/10-tout.mustache",
         "value": {}
       },
       {
         "v": "03-templates/01-Inngangssider/05-tema.mustache",
-        "w": "01-molecules/02-innhold/33-tout-luftkvalitet.mustache",
+        "w": "01-molecules/03-bokser/33-tout-luftkvalitet.mustache",
         "value": {}
       },
       {
@@ -2879,7 +2879,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/05-tema.mustache",
-        "w": "01-molecules/02-innhold/50-tilbakemelding.mustache",
+        "w": "01-molecules/03-bokser/50-tilbakemelding.mustache",
         "value": {}
       },
       {
@@ -2909,12 +2909,12 @@
       },
       {
         "v": "03-templates/01-Inngangssider/30-orgenhet.mustache",
-        "w": "01-molecules/02-innhold/01-notis.mustache",
+        "w": "01-molecules/03-bokser/01-notis.mustache",
         "value": {}
       },
       {
         "v": "03-templates/01-Inngangssider/30-orgenhet.mustache",
-        "w": "01-molecules/02-innhold/11-ekstern-url.mustache",
+        "w": "01-molecules/03-bokser/11-ekstern-url.mustache",
         "value": {}
       },
       {
@@ -2939,7 +2939,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/30-orgenhet.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-teasere/10-tout.mustache",
         "value": {}
       },
       {
@@ -2969,7 +2969,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/31-orgenhet-med-arrangement.mustache",
-        "w": "01-molecules/02-innhold/01-notis.mustache",
+        "w": "01-molecules/03-bokser/01-notis.mustache",
         "value": {}
       },
       {
@@ -2989,7 +2989,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/31-orgenhet-med-arrangement.mustache",
-        "w": "01-molecules/02-innhold/11-ekstern-url.mustache",
+        "w": "01-molecules/03-bokser/11-ekstern-url.mustache",
         "value": {}
       },
       {
@@ -3004,7 +3004,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/31-orgenhet-med-arrangement.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-teasere/10-tout.mustache",
         "value": {}
       },
       {
@@ -3034,12 +3034,12 @@
       },
       {
         "v": "03-templates/01-Inngangssider/35-byradsavdeling.mustache",
-        "w": "01-molecules/02-innhold/01-notis.mustache",
+        "w": "01-molecules/03-bokser/01-notis.mustache",
         "value": {}
       },
       {
         "v": "03-templates/01-Inngangssider/35-byradsavdeling.mustache",
-        "w": "01-molecules/02-innhold/12-vis-underavdelinger.mustache",
+        "w": "01-molecules/03-bokser/12-vis-underavdelinger.mustache",
         "value": {}
       },
       {
@@ -3054,7 +3054,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/35-byradsavdeling.mustache",
-        "w": "01-molecules/02-innhold/18-modul.mustache",
+        "w": "01-molecules/02-teasere/07-modul.mustache",
         "value": {}
       },
       {
@@ -3074,7 +3074,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/35-byradsavdeling.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-teasere/10-tout.mustache",
         "value": {}
       },
       {
@@ -3104,17 +3104,17 @@
       },
       {
         "v": "03-templates/01-Inngangssider/37-skole.mustache",
-        "w": "01-molecules/02-innhold/01-notis.mustache",
+        "w": "01-molecules/03-bokser/01-notis.mustache",
         "value": {}
       },
       {
         "v": "03-templates/01-Inngangssider/37-skole.mustache",
-        "w": "01-molecules/02-innhold/31-tout-arbeidsplaner.mustache",
+        "w": "01-molecules/03-bokser/31-tout-arbeidsplaner.mustache",
         "value": {}
       },
       {
         "v": "03-templates/01-Inngangssider/37-skole.mustache",
-        "w": "01-molecules/02-innhold/32-tout-skoleruten.mustache",
+        "w": "01-molecules/03-bokser/32-tout-skoleruten.mustache",
         "value": {}
       },
       {
@@ -3139,7 +3139,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/37-skole.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-teasere/10-tout.mustache",
         "value": {}
       },
       {
@@ -3169,7 +3169,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/38-leirskole.mustache",
-        "w": "01-molecules/02-innhold/01-notis.mustache",
+        "w": "01-molecules/03-bokser/01-notis.mustache",
         "value": {}
       },
       {
@@ -3194,7 +3194,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/38-leirskole.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-teasere/10-tout.mustache",
         "value": {}
       },
       {
@@ -3224,12 +3224,12 @@
       },
       {
         "v": "03-templates/01-Inngangssider/40-barnehage.mustache",
-        "w": "01-molecules/02-innhold/01-notis.mustache",
+        "w": "01-molecules/03-bokser/01-notis.mustache",
         "value": {}
       },
       {
         "v": "03-templates/01-Inngangssider/40-barnehage.mustache",
-        "w": "01-molecules/02-innhold/11-ekstern-url.mustache",
+        "w": "01-molecules/03-bokser/11-ekstern-url.mustache",
         "value": {}
       },
       {
@@ -3244,7 +3244,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/40-barnehage.mustache",
-        "w": "01-molecules/02-innhold/18-modul.mustache",
+        "w": "01-molecules/02-teasere/07-modul.mustache",
         "value": {}
       },
       {
@@ -3264,7 +3264,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/40-barnehage.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-teasere/10-tout.mustache",
         "value": {}
       },
       {
@@ -3299,7 +3299,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/42-politisk-enhet.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-teasere/10-tout.mustache",
         "value": {}
       },
       {
@@ -3334,7 +3334,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/44-bydel.mustache",
-        "w": "01-molecules/02-innhold/31-tout-spesial.mustache",
+        "w": "01-molecules/03-bokser/31-tout-spesial.mustache",
         "value": {}
       },
       {
@@ -3394,7 +3394,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/50-minside-inngang.mustache",
-        "w": "01-molecules/02-innhold/01-notis.mustache",
+        "w": "01-molecules/03-bokser/01-notis.mustache",
         "value": {}
       },
       {
@@ -3419,12 +3419,12 @@
       },
       {
         "v": "03-templates/01-Inngangssider/50-minside-inngang.mustache",
-        "w": "01-molecules/02-innhold/40-promo.mustache",
+        "w": "01-molecules/03-bokser/40-promo.mustache",
         "value": {}
       },
       {
         "v": "03-templates/01-Inngangssider/50-minside-inngang.mustache",
-        "w": "01-molecules/02-innhold/50-tilbakemelding.mustache",
+        "w": "01-molecules/03-bokser/50-tilbakemelding.mustache",
         "value": {}
       },
       {
@@ -3649,7 +3649,7 @@
       },
       {
         "v": "03-templates/10-Innholdssider/artikkel.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-teasere/10-tout.mustache",
         "value": {}
       },
       {
@@ -3674,7 +3674,7 @@
       },
       {
         "v": "03-templates/10-Innholdssider/innbyggerhjelp.mustache",
-        "w": "01-molecules/02-innhold/01-notis.mustache",
+        "w": "01-molecules/03-bokser/01-notis.mustache",
         "value": {}
       },
       {
@@ -3684,7 +3684,7 @@
       },
       {
         "v": "03-templates/10-Innholdssider/innbyggerhjelp.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-teasere/10-tout.mustache",
         "value": {}
       },
       {
@@ -3694,7 +3694,7 @@
       },
       {
         "v": "03-templates/10-Innholdssider/innbyggerhjelp.mustache",
-        "w": "01-molecules/02-innhold/50-tilbakemelding.mustache",
+        "w": "01-molecules/03-bokser/50-tilbakemelding.mustache",
         "value": {}
       },
       {
@@ -3794,7 +3794,7 @@
       },
       {
         "v": "03-templates/10-Innholdssider/modul-helside.mustache",
-        "w": "01-molecules/02-innhold/18-modul.mustache",
+        "w": "01-molecules/02-teasere/07-modul.mustache",
         "value": {}
       },
       {
@@ -3884,7 +3884,7 @@
       },
       {
         "v": "03-templates/10-Innholdssider/tjenestebeskrivelse.mustache",
-        "w": "01-molecules/02-innhold/01-notis.mustache",
+        "w": "01-molecules/03-bokser/01-notis.mustache",
         "value": {}
       },
       {
@@ -3899,7 +3899,7 @@
       },
       {
         "v": "03-templates/10-Innholdssider/tjenestebeskrivelse.mustache",
-        "w": "01-molecules/02-innhold/50-tilbakemelding.mustache",
+        "w": "01-molecules/03-bokser/50-tilbakemelding.mustache",
         "value": {}
       },
       {
@@ -4104,7 +4104,7 @@
       },
       {
         "v": "03-templates/20-Listesider/artikkelliste.mustache",
-        "w": "02-organisms/30-escenic/05-escenic-elementmal.mustache",
+        "w": "01-molecules/02-teasere/05-escenic-teaser.mustache",
         "value": {}
       },
       {
@@ -4139,7 +4139,7 @@
       },
       {
         "v": "03-templates/20-Listesider/avdelinger-organisatorisk.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-teasere/10-tout.mustache",
         "value": {}
       },
       {
@@ -4249,7 +4249,7 @@
       },
       {
         "v": "03-templates/20-Listesider/listeside-med-filtrering.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-teasere/10-tout.mustache",
         "value": {}
       },
       {
@@ -4339,7 +4339,7 @@
       },
       {
         "v": "03-templates/20-Listesider/medlemmer.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-teasere/10-tout.mustache",
         "value": {}
       },
       {
@@ -4379,7 +4379,7 @@
       },
       {
         "v": "03-templates/20-Listesider/minside-eiendommer.mustache",
-        "w": "01-molecules/02-innhold/50-tilbakemelding.mustache",
+        "w": "01-molecules/03-bokser/50-tilbakemelding.mustache",
         "value": {}
       },
       {
@@ -4439,7 +4439,7 @@
       },
       {
         "v": "03-templates/20-Listesider/skjema-alle.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-teasere/10-tout.mustache",
         "value": {}
       },
       {
@@ -5209,7 +5209,7 @@
       },
       {
         "v": "04-pages/15-minside/08-saker.mustache",
-        "w": "01-molecules/02-innhold/50-tilbakemelding.mustache",
+        "w": "01-molecules/03-bokser/50-tilbakemelding.mustache",
         "value": {}
       },
       {
@@ -5254,7 +5254,7 @@
       },
       {
         "v": "04-pages/15-minside/09-innsendte-skjema.mustache",
-        "w": "01-molecules/02-innhold/50-tilbakemelding.mustache",
+        "w": "01-molecules/03-bokser/50-tilbakemelding.mustache",
         "value": {}
       },
       {
@@ -5359,7 +5359,7 @@
       },
       {
         "v": "04-pages/15-minside/13-fakturaer.mustache",
-        "w": "01-molecules/02-innhold/01-notis.mustache",
+        "w": "01-molecules/03-bokser/01-notis.mustache",
         "value": {}
       },
       {
@@ -5419,7 +5419,7 @@
       },
       {
         "v": "04-pages/15-minside/15-eiendom.mustache",
-        "w": "01-molecules/02-innhold/40-promo.mustache",
+        "w": "01-molecules/03-bokser/40-promo.mustache",
         "value": {}
       },
       {
@@ -5689,7 +5689,7 @@
       },
       {
         "v": "04-pages/30-mikrotjenester/POU-motearkiv.mustache",
-        "w": "01-molecules/02-innhold/50-tilbakemelding.mustache",
+        "w": "01-molecules/03-bokser/50-tilbakemelding.mustache",
         "value": {}
       },
       {
@@ -5724,7 +5724,7 @@
       },
       {
         "v": "04-pages/30-mikrotjenester/POU-motekalender.mustache",
-        "w": "01-molecules/02-innhold/50-tilbakemelding.mustache",
+        "w": "01-molecules/03-bokser/50-tilbakemelding.mustache",
         "value": {}
       },
       {
@@ -5809,7 +5809,7 @@
       },
       {
         "v": "04-pages/30-mikrotjenester/fysio-institutt.mustache",
-        "w": "01-molecules/02-innhold/11-ekstern-url.mustache",
+        "w": "01-molecules/03-bokser/11-ekstern-url.mustache",
         "value": {}
       },
       {
@@ -5849,7 +5849,7 @@
       },
       {
         "v": "04-pages/30-mikrotjenester/kemner-betalingsbekreftelse.mustache",
-        "w": "01-molecules/02-innhold/01-notis.mustache",
+        "w": "01-molecules/03-bokser/01-notis.mustache",
         "value": {}
       },
       {
@@ -6289,7 +6289,7 @@
       },
       {
         "v": "04-pages/99-diverse/21-Politikker.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-teasere/10-tout.mustache",
         "value": {}
       },
       {
@@ -6334,7 +6334,7 @@
       },
       {
         "v": "04-pages/99-diverse/98-aktivitetsoversikt.mustache",
-        "w": "01-molecules/02-innhold/01-notis.mustache",
+        "w": "01-molecules/03-bokser/01-notis.mustache",
         "value": {}
       },
       {
@@ -6369,22 +6369,22 @@
       },
       {
         "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/02-innhold/30-tout.mustache",
+        "w": "01-molecules/02-teasere/10-tout.mustache",
         "value": {}
       },
       {
         "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/02-innhold/31-tout-spesial.mustache",
+        "w": "01-molecules/03-bokser/31-tout-spesial.mustache",
         "value": {}
       },
       {
         "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/02-innhold/31-tout-arbeidsplaner.mustache",
+        "w": "01-molecules/03-bokser/31-tout-arbeidsplaner.mustache",
         "value": {}
       },
       {
         "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/02-innhold/32-tout-skoleruten.mustache",
+        "w": "01-molecules/03-bokser/32-tout-skoleruten.mustache",
         "value": {}
       },
       {
@@ -6394,7 +6394,7 @@
       },
       {
         "v": "04-pages/99-diverse/99-etjeneste-eksempler.mustache",
-        "w": "01-molecules/02-innhold/33-tout-luftkvalitet.mustache",
+        "w": "01-molecules/03-bokser/33-tout-luftkvalitet.mustache",
         "value": {}
       },
       {
