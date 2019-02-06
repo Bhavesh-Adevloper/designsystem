@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1549376236092,
+  "timestamp": 1549438510901,
   "graph": {
     "options": {
       "directed": true,
@@ -41,7 +41,7 @@
         }
       },
       {
-        "v": "00-atoms/03-farger/11-gråskala.mustache",
+        "v": "00-atoms/03-farger/11-gråskala.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -408,12 +408,6 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-10-Innholdssider-tjenestebeskrivelse/03-templates-10-Innholdssider-tjenestebeskrivelse.rendered.html",
           "lineagePattern": "templates-tjenestebeskrivelse"
-        }
-      },
-      {
-        "v": "01-molecules/02-teasere/01-teaser.mustache",
-        "value": {
-          "compileState": "clean"
         }
       },
       {
@@ -846,6 +840,14 @@
       },
       {
         "v": "01-molecules/publisering/18-rediger-digitalt-skjema.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-ibh-artikkel"
+        }
+      },
+      {
+        "v": "01-molecules/publisering/19-rediger-nyttig-innhold.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
@@ -2339,13 +2341,13 @@
         }
       },
       {
-        "v": "/bergenkommune/designsystem/source/_meta/_00-head.mustache",
+        "v": "/home/mathiasm/git/bergenkommune/designsystem/source/_meta/_00-head.mustache",
         "value": {
           "compileState": null
         }
       },
       {
-        "v": "/bergenkommune/designsystem/source/_meta/_01-foot.mustache",
+        "v": "/home/mathiasm/git/bergenkommune/designsystem/source/_meta/_01-foot.mustache",
         "value": {
           "compileState": null
         }
@@ -4690,6 +4692,11 @@
       {
         "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/18-rediger-digitalt-skjema.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
+        "w": "01-molecules/publisering/19-rediger-nyttig-innhold.mustache",
         "value": {}
       },
       {
