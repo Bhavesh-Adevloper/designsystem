@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1549438510901,
+  "timestamp": 1549973858247,
   "graph": {
     "options": {
       "directed": true,
@@ -41,7 +41,7 @@
         }
       },
       {
-        "v": "00-atoms/03-farger/11-gråskala.mustache",
+        "v": "00-atoms/03-farger/11-gråskala.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -411,6 +411,26 @@
         }
       },
       {
+        "v": "01-molecules/02-teasere/01-teaser.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-molecules/02-teasere/02-teaser-med-50-50-deling.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-molecules/02-teasere/02-teaser-med-boks.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-01-Inngangssider-40-barnehage/03-templates-01-Inngangssider-40-barnehage.rendered.html",
+          "lineagePattern": "templates-barnehage"
+        }
+      },
+      {
         "v": "01-molecules/02-teasere/05-escenic-teaser.mustache",
         "value": {
           "compileState": "clean",
@@ -424,14 +444,6 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-10-Innholdssider-modul-helside/03-templates-10-Innholdssider-modul-helside.rendered.html",
           "lineagePattern": "templates-modul-helside"
-        }
-      },
-      {
-        "v": "01-molecules/02-teasere/08-modul-viktig-nyhet.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-lister-05-link-liste-with-meta/01-molecules-lister-05-link-liste-with-meta.rendered.html",
-          "lineagePattern": "molecules-link-liste-with-meta"
         }
       },
       {
@@ -2341,13 +2353,13 @@
         }
       },
       {
-        "v": "/home/mathiasm/git/bergenkommune/designsystem/source/_meta/_00-head.mustache",
+        "v": "/bergenkommune/designsystem/source/_meta/_00-head.mustache",
         "value": {
           "compileState": null
         }
       },
       {
-        "v": "/home/mathiasm/git/bergenkommune/designsystem/source/_meta/_01-foot.mustache",
+        "v": "/bergenkommune/designsystem/source/_meta/_01-foot.mustache",
         "value": {
           "compileState": null
         }
@@ -2411,7 +2423,7 @@
       },
       {
         "v": "01-molecules/lister/05-link-liste-with-meta.mustache",
-        "w": "01-molecules/02-teasere/08-modul-viktig-nyhet.mustache",
+        "w": "01-molecules/02-teasere/02-teaser-med-boks.mustache",
         "value": {}
       },
       {
@@ -3247,6 +3259,11 @@
       {
         "v": "03-templates/01-Inngangssider/40-barnehage.mustache",
         "w": "01-molecules/02-teasere/07-modul.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Inngangssider/40-barnehage.mustache",
+        "w": "01-molecules/02-teasere/02-teaser-med-boks.mustache",
         "value": {}
       },
       {

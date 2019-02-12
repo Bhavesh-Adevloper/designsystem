@@ -1,0 +1,32 @@
+<div class="teaser teaser--50-50-desktop {{ styleModifier }}"><!-- teaser--equal-heights -->
+    <a href="{{ url }}" class="teaser__link">
+        {{# bilde }}
+            <div class="teaser__image-container">
+                <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="teaser__image" />
+            </div>
+        {{/ bilde }}
+
+        <div class="teaser__content-container">
+            <h2 class="teaser__title">
+                <span class="read_more_link read_more_link--22">
+                    {{ tittel }}
+                </span>
+            </h2>
+            {{# dato }}
+                <div class="teaser__date">
+                    {{ dato }}
+                </div>
+            {{/ dato }}
+            {{# ingress }}
+                <div class="teaser__excerpt">
+                    <p>{{ ingress }}</p>
+                </div>
+            {{/ ingress }}
+        </div>
+    </a>
+    {{# testLenke }}
+        <p>
+            <a href="">Les mer (egen lenke eller noe annet)</a>
+        </p>
+    {{/ testLenke }}
+</div>
