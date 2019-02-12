@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1549973858247,
+  "timestamp": 1549974499291,
   "graph": {
     "options": {
       "directed": true,
@@ -3254,11 +3254,6 @@
       {
         "v": "03-templates/01-Inngangssider/40-barnehage.mustache",
         "w": "01-molecules/00-overskrifter/31-moduloverskrift-h2-med-lenke.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/40-barnehage.mustache",
-        "w": "01-molecules/02-teasere/07-modul.mustache",
         "value": {}
       },
       {
