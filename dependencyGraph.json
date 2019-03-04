@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1549974499291,
+  "timestamp": 1551609950601,
   "graph": {
     "options": {
       "directed": true,
@@ -41,7 +41,7 @@
         }
       },
       {
-        "v": "00-atoms/03-farger/11-gråskala.mustache",
+        "v": "00-atoms/03-farger/11-gråskala.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -264,8 +264,8 @@
         "v": "00-atoms/20-skjema-element/06-filterbox-valg.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-publisering-35-rediger-accordion-innholdsansvarlig/01-molecules-publisering-35-rediger-accordion-innholdsansvarlig.rendered.html",
-          "lineagePattern": "molecules-rediger-accordion-innholdsansvarlig"
+          "lineagePath": "../../patterns/01-molecules-publisering-36-rediger-accordion-ansvarlig-avdeling/01-molecules-publisering-36-rediger-accordion-ansvarlig-avdeling.rendered.html",
+          "lineagePattern": "molecules-rediger-accordion-ansvarlig-avdeling"
         }
       },
       {
@@ -932,6 +932,14 @@
       },
       {
         "v": "01-molecules/publisering/35-rediger-accordion-innholdsansvarlig.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-ibh-artikkel"
+        }
+      },
+      {
+        "v": "01-molecules/publisering/36-rediger-accordion-ansvarlig-avdeling.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
@@ -2353,13 +2361,13 @@
         }
       },
       {
-        "v": "/bergenkommune/designsystem/source/_meta/_00-head.mustache",
+        "v": "/home/stian/Workspace/Projects/BergenKommune/designsystem/source/_meta/_00-head.mustache",
         "value": {
           "compileState": null
         }
       },
       {
-        "v": "/bergenkommune/designsystem/source/_meta/_01-foot.mustache",
+        "v": "/home/stian/Workspace/Projects/BergenKommune/designsystem/source/_meta/_01-foot.mustache",
         "value": {
           "compileState": null
         }
@@ -2462,7 +2470,17 @@
         "value": {}
       },
       {
+        "v": "01-molecules/publisering/34-rediger-accordion-kategorivelger.mustache",
+        "w": "00-atoms/20-skjema-element/06-filterbox-valg.mustache",
+        "value": {}
+      },
+      {
         "v": "01-molecules/publisering/35-rediger-accordion-innholdsansvarlig.mustache",
+        "w": "00-atoms/20-skjema-element/06-filterbox-valg.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/publisering/36-rediger-accordion-ansvarlig-avdeling.mustache",
         "w": "00-atoms/20-skjema-element/06-filterbox-valg.mustache",
         "value": {}
       },
@@ -4739,6 +4757,11 @@
       {
         "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/35-rediger-accordion-innholdsansvarlig.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
+        "w": "01-molecules/publisering/36-rediger-accordion-ansvarlig-avdeling.mustache",
         "value": {}
       },
       {

@@ -13,7 +13,12 @@
             {{# enkelliste }}
                 <li>
                     <a href="#">
-                        <span class="icon-profile grunt-icon grunt-icon--32"></span>{{ tittel }}
+                        {{# icon }}
+                        <span class="icon-{{icon}} grunt-icon grunt-icon--32"></span>{{ tittel }}
+                        {{/ icon}}
+                        {{^ icon }}
+                            <span class="grunt-icon grunt-icon--32"></span>{{ tittel }}
+                        {{/ icon}}
                     </a>
                 </li>
             {{/ enkelliste }}

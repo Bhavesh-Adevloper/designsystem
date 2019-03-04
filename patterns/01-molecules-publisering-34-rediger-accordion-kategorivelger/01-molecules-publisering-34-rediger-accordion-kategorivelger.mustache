@@ -44,5 +44,18 @@
             {{/ kategorier }}
             </ul>
         {{/ velgNyKategori }}
+
+        {{# valgtKrysskobling }}
+            <h3 class="helpers_header">Krysskoblinger</h3>
+            <div class="multiselect-list__flex">
+                <div class="multiselect-list__selected">{{ valgtKrysskobling }}</div>
+                <a href="#" title="Fjern formidlingsansvarlig" class="button button--remove mbs">
+                    Fjern
+                </a>
+            </div>
+            <div class="multiselect-list__flex">
+                {{> atoms-filterbox-valg:full_width }}
+            </div>
+        {{/ valgtKrysskobling }}
     </div>
 </div>

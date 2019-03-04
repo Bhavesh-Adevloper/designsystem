@@ -1,0 +1,37 @@
+<div class="mbxxl">
+    <h2 class="sidebar-header sidebar-header--open mbm js_sidebar-accordion">
+        <a class="sidebar-header__toggle" href="#">
+            Ansvarlig avdeling
+            <span class="arrow-icon"></span>
+        </a>
+    </h2>
+
+    <div class="multiselect-list">
+        <h3 class="helpers_header">Valgt avdeling</h3>
+        <div class="multiselect-list__flex">
+            {{# valgtAvdeling }}
+                <div class="multiselect-list__selected">{{ valgtAvdeling }}</div>
+                <a href="#" title="Fjern hovedavdeling {{ valgtAvdeling }}" class="button button--remove mbs">
+                    Fjern
+                </a>
+            {{/ valgtAvdeling }}
+            {{^ valgtAvdeling}}
+                {{> atoms-filterbox-valg:full_width }}
+            {{/ valgtAvdeling}}
+        </div>
+
+        {{# visesOgsaaPaa }}
+            <h3 class="helpers_header mtm">Vises også på</h3>
+            <div class="multiselect-list__flex">
+                <div class="multiselect-list__selected">{{ visesOgsaaPaa }}</div>
+                <a href="#" title="Fjern ekstra avdeling {{ visesOgsaaPaa }}" class="button button--remove mbs">
+                    Fjern
+                </a>
+            </div>
+            <div class="multiselect-list__flex">
+                {{> atoms-filterbox-valg:full_width }}
+            </div>
+        {{/ visesOgsaaPaa }}
+
+    </div>
+</div>
