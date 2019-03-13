@@ -152,6 +152,18 @@ function toggleSidebarAccordion() {
     }
 }
 
+// ELP sidebar accordion toggle
+function togglePanel() {
+    if ( $(".js_panel")[0] ) {
+        // Click
+        $(".js_panel a").click( function() {
+            $(this).parent(".panel__header").parent(".js_panel").toggleClass("panel--open");
+            $(this).parent(".panel__header").next("div").toggle();
+            return false;
+        });
+    }
+}
+
 // Orgenhet menu toggles
 function orgMenuToggle() {
     
@@ -536,6 +548,7 @@ $(document).ready(function () {
     horisontalScroll();
     filterSearch();
     toggleAccordion();
+    togglePanel();
     toggle();
     openSearchFilter();
     openSearchFilterGroup();

@@ -147,50 +147,84 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 
 
     </div>
-
-<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+    <div class="panel_container smMa desktop_centered">
     
+        <div class="panel js_panel">
+                <h2 class="panel__header">
+                    <a class="panel__header__toggle" href="#">
+                        <span class="icon-profile grunt-icon grunt-icon--32"></span>
+                        Publiseringstilgang
+                        <span class="arrow-icon"></span>
+                    </a>
+                </h2>
+            <div class="panel__body">
+                <div class="multiselect-list">
+                            <div class="multiselect-list__flex">
+                                <div class="multiselect-list__selected">Trude Hansen</div>
+                                    <a href="#" title="Fjern tilgang for Trude Hansen" class="button button--remove mbs">
+                                        Fjern
+                                    </a>
+                            </div>
+                        <div class="multiselect-list__flex">
+                            <div name="sok" class="filter-search no_max_width full_width">
+    <label for="filter_search" class="filter-search__label">
+        <span class="icon-searchglass--small grunt-icon grunt-icon--32"></span>
+        <span class="screen-reader-text">Lorem ipsum (27 characters)</span>
+    </label>
+    <input type="search" id="filter_search" placeholder="Søk etter ansatt som skal få tilgang" class="js_filter_search_input filter-search__input mbn" />
+    <button class="filter-search__clear-search-button js_clear_search" style="display: none;">
+        <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+        <span class="screen-reader-text">Fjern søkeord</span>
+    </button>
+    <div class="js_filter_search_result filter-search__result">
+        <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon-profile grunt-icon grunt-icon--32"></span>Oskar Nilsen
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon-profile grunt-icon grunt-icon--32"></span>Janne Nilsen
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon-profile grunt-icon grunt-icon--32"></span>Gunnhild Svendsen
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon-profile grunt-icon grunt-icon--32"></span>Anders Olsen
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon-profile grunt-icon grunt-icon--32"></span>Nine Trulsen
+                    </a>
+                </li>
+        </ul>
+    </div>
+</div>
+
+
+                        </div>
+                </div>
+            </div>
+        </div>
+    
+
+    </div>
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
     <div class="page_header mbxl">
     <h1>
         Innbyggerhjelpen
     </h1>
 </div>
-    
-<!--    
-    <div class="row">
-        <div class="col_md_12 col_lg_4 float_change">
 
-            <h2 class="module_header mbs">
-    Mest brukte tjenester
-</h2>
-
-            <ul class="link_list_simple md_multicolumn">
-    <li>
-        <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">Ferie og fridager for barnehager og skoler i Bergen</a>
-    </li>
-    <li>
-        <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">Boligsoneparkering</a>
-    </li>
-    <li>
-        <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">Barnehageplass - barnehagesøknad</a>
-    </li>
-    <li>
-        <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">Skolefritidsordning - SFO</a>
-    </li>
-    <li>
-        <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">Parkering på gateplan</a>
-    </li>
-    <li>
-        <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">Svømmehaller - åpningstider og pris</a>
-    </li>
-</ul>
-
-        </div>
-        <div class="col_md_12 col_lg_8">
--->
-            <div class="row_no_clearfix service_link_container equal_height_container mbj">
-                    <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
-                        <div class="linkbox linkbox--servicecat mbm--mob mbl">
+    <div class="row_no_clearfix service_link_container equal_height_container mbj">
+            <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
+                <div class="linkbox linkbox--servicecat mbm--mob mbl">
         <div class="linkbox--servicecat__dragula-handle">
             <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
         </div>
@@ -216,9 +250,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         </ul>
     </div>
 </div>
-                    </div>
-                    <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
-                        <div class="linkbox linkbox--servicecat mbm--mob mbl">
+            </div>
+            <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
+                <div class="linkbox linkbox--servicecat mbm--mob mbl">
         <div class="linkbox--servicecat__dragula-handle">
             <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
         </div>
@@ -250,9 +284,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         </ul>
     </div>
 </div>
-                    </div>
-                    <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
-                        <div class="linkbox linkbox--servicecat mbm--mob mbl">
+            </div>
+            <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
+                <div class="linkbox linkbox--servicecat mbm--mob mbl">
         <div class="linkbox--servicecat__dragula-handle">
             <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
         </div>
@@ -274,9 +308,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         </ul>
     </div>
 </div>
-                    </div>
-                    <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
-                        <div class="linkbox linkbox--servicecat mbm--mob mbl">
+            </div>
+            <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
+                <div class="linkbox linkbox--servicecat mbm--mob mbl">
         <div class="linkbox--servicecat__dragula-handle">
             <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
         </div>
@@ -302,9 +336,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         </ul>
     </div>
 </div>
-                    </div>
-                    <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
-                        <div class="linkbox linkbox--servicecat mbm--mob mbl">
+            </div>
+            <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
+                <div class="linkbox linkbox--servicecat mbm--mob mbl">
         <div class="linkbox--servicecat__dragula-handle">
             <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
         </div>
@@ -328,9 +362,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         </ul>
     </div>
 </div>
-                    </div>
-                    <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
-                        <div class="linkbox linkbox--servicecat mbm--mob mbl">
+            </div>
+            <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
+                <div class="linkbox linkbox--servicecat mbm--mob mbl">
         <div class="linkbox--servicecat__dragula-handle">
             <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
         </div>
@@ -360,9 +394,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         </ul>
     </div>
 </div>
-                    </div>
-                    <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
-                        <div class="linkbox linkbox--servicecat mbm--mob mbl">
+            </div>
+            <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
+                <div class="linkbox linkbox--servicecat mbm--mob mbl">
         <div class="linkbox--servicecat__dragula-handle">
             <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
         </div>
@@ -394,9 +428,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         </ul>
     </div>
 </div>
-                    </div>
-                    <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
-                        <div class="linkbox linkbox--servicecat mbm--mob mbl">
+            </div>
+            <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
+                <div class="linkbox linkbox--servicecat mbm--mob mbl">
         <div class="linkbox--servicecat__dragula-handle">
             <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
         </div>
@@ -422,9 +456,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         </ul>
     </div>
 </div>
-                    </div>
-                    <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
-                        <div class="linkbox linkbox--servicecat mbm--mob mbl">
+            </div>
+            <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
+                <div class="linkbox linkbox--servicecat mbm--mob mbl">
         <div class="linkbox--servicecat__dragula-handle">
             <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
         </div>
@@ -448,9 +482,9 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         </ul>
     </div>
 </div>
-                    </div>
-                    <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
-                        <div class="linkbox linkbox--servicecat mbm--mob mbl">
+            </div>
+            <div class="col_md_6 col_lg_4 clear_col_md_6 clear_col_lg_4 equal_height_item linkbox-dragula-container">
+                <div class="linkbox linkbox--servicecat mbm--mob mbl">
         <div class="linkbox--servicecat__dragula-handle">
             <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
         </div>
@@ -472,14 +506,10 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         </ul>
     </div>
 </div>
-                    </div>
             </div>
-<!--            
-        </div>
     </div>
--->
-    
-    <section class="service_shortcut_container mbj">
+
+        <section class="service_shortcut_container mbj">
     <a href="http:&#x2F;&#x2F;feilmelding.bergen.kommune.no&#x2F;" class="service_shortcut_icon_link">
         <span class="icon-service-tool grunt-icon grunt-icon--64"></span>
         <span class="screen-reader-text">Meld feil til kommunen</span>
@@ -494,7 +524,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 </section>
 
 
-        
+
 </main>
 <footer>
     <div class="footer_mountain_container">

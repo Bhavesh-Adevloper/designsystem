@@ -1,0 +1,47 @@
+{{# panel }}
+    {{# visPanelListe }}
+        <div style="min-height: 200px">
+    {{/ visPanelListe }}
+    {{# panelinfo }}<p class="mbn"><code>{{ panelinfo }}</code></p>{{/ panelinfo }}
+        <div class="panel js_panel">
+            {{# header }}
+                <h2 class="panel__header">
+                    <a class="panel__header__toggle" href="#">
+                        <span class="icon-{{ icon }} grunt-icon grunt-icon--32"></span>
+                        {{ tekst }}
+                        <span class="arrow-icon"></span>
+                    </a>
+                </h2>
+            {{/ header }}
+            <div class="panel__body">
+                <div class="multiselect-list">
+                    {{# kanRedigere }}
+                        {{# harTilgang }}
+                            <div class="multiselect-list__flex">
+                                <div class="multiselect-list__selected">{{ navn }}</div>
+                                {{# fjern }}
+                                    <a href="#" title="Fjern tilgang for {{ navn }}" class="button button--remove mbs">
+                                        Fjern
+                                    </a>
+                                {{/ fjern }}
+                                {{^ fjern }}
+                                    <div><span class="icon-arrow-ordering grunt-icon grunt-icon--32"></span></div>
+                                {{/ fjern }}
+                            </div>
+                        {{/ harTilgang }}
+                        <div class="multiselect-list__flex">
+                            {{> atoms-filterbox-valg:full_width }}
+                        </div>
+                    {{/ kanRedigere }}
+                    {{^ kanRedigere }}
+                        {{# harTilgang }}
+                            <div class="multiselect-list__flex">
+                                <div class="multiselect-list__selected">{{ navn }}</div>
+                            </div>
+                        {{/ harTilgang }}
+                    {{/ kanRedigere }}
+                </div>
+            </div>
+        </div>
+    {{# visPanelListe }}</div>{{/ visPanelListe }}
+{{/ panel }}

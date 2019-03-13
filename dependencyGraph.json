@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1551609950601,
+  "timestamp": 1552473077656,
   "graph": {
     "options": {
       "directed": true,
@@ -264,8 +264,8 @@
         "v": "00-atoms/20-skjema-element/06-filterbox-valg.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-publisering-36-rediger-accordion-ansvarlig-avdeling/01-molecules-publisering-36-rediger-accordion-ansvarlig-avdeling.rendered.html",
-          "lineagePattern": "molecules-rediger-accordion-ansvarlig-avdeling"
+          "lineagePath": "../../patterns/01-molecules-publisering-80-panel/01-molecules-publisering-80-panel.rendered.html",
+          "lineagePattern": "molecules-panel"
         }
       },
       {
@@ -294,7 +294,7 @@
         "v": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-publisering-80-modal/01-molecules-publisering-80-modal.rendered.html",
+          "lineagePath": "../../patterns/01-molecules-publisering-90-modal/01-molecules-publisering-90-modal.rendered.html",
           "lineagePattern": "molecules-modal"
         }
       },
@@ -584,8 +584,8 @@
         "v": "01-molecules/lister/02-link-liste-enkel.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-08-Navigasjon-30-innbyggerhjelpen-oversikt/03-templates-08-Navigasjon-30-innbyggerhjelpen-oversikt.rendered.html",
-          "lineagePattern": "templates-innbyggerhjelpen-oversikt"
+          "lineagePath": "../../patterns/03-templates-08-Navigasjon-20-tjenestetilbud/03-templates-08-Navigasjon-20-tjenestetilbud.rendered.html",
+          "lineagePattern": "templates-tjenestetilbud"
         }
       },
       {
@@ -674,6 +674,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-20-Listesider-tjenester-og-skjema/03-templates-20-Listesider-tjenester-og-skjema.rendered.html",
           "lineagePattern": "templates-tjenester-og-skjema"
+        }
+      },
+      {
+        "v": "01-molecules/lister/54-innbyggerhjelpen-liste.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-20-Listesider-innbyggerhjelpen/03-templates-20-Listesider-innbyggerhjelpen.rendered.html",
+          "lineagePattern": "templates-innbyggerhjelpen"
         }
       },
       {
@@ -969,7 +977,15 @@
         }
       },
       {
-        "v": "01-molecules/publisering/80-modal.mustache",
+        "v": "01-molecules/publisering/80-panel.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-71-Pub-artikkel-20-sne-artikkelliste/04-pages-71-Pub-artikkel-20-sne-artikkelliste.rendered.html",
+          "lineagePattern": "pages-sne-artikkelliste"
+        }
+      },
+      {
+        "v": "01-molecules/publisering/90-modal.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-71-Pub-artikkel-20-sne-artikkelliste/04-pages-71-Pub-artikkel-20-sne-artikkelliste.rendered.html",
@@ -1537,6 +1553,14 @@
         }
       },
       {
+        "v": "03-templates/20-Listesider/innbyggerhjelpen.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-02-orgenhet-15-innbyggerhjelpen/04-pages-02-orgenhet-15-innbyggerhjelpen.rendered.html",
+          "lineagePattern": "pages-innbyggerhjelpen"
+        }
+      },
+      {
         "v": "03-templates/20-Listesider/listeside-med-avansert-filtrering.mustache",
         "value": {
           "compileState": "clean",
@@ -1762,6 +1786,12 @@
       },
       {
         "v": "04-pages/02-orgenhet/14-tjenester-og-skjema.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/02-orgenhet/15-innbyggerhjelpen.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -2490,12 +2520,17 @@
         "value": {}
       },
       {
-        "v": "01-molecules/publisering/80-modal.mustache",
+        "v": "01-molecules/publisering/80-panel.mustache",
+        "w": "00-atoms/20-skjema-element/06-filterbox-valg.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/publisering/90-modal.mustache",
         "w": "01-molecules/publisering/10-rediger-ingress.mustache",
         "value": {}
       },
       {
-        "v": "01-molecules/publisering/80-modal.mustache",
+        "v": "01-molecules/publisering/90-modal.mustache",
         "w": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
         "value": {}
       },
@@ -3541,17 +3576,12 @@
       },
       {
         "v": "03-templates/08-Navigasjon/30-innbyggerhjelpen-oversikt.mustache",
+        "w": "01-molecules/publisering/80-panel.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/08-Navigasjon/30-innbyggerhjelpen-oversikt.mustache",
         "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/08-Navigasjon/30-innbyggerhjelpen-oversikt.mustache",
-        "w": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/08-Navigasjon/30-innbyggerhjelpen-oversikt.mustache",
-        "w": "01-molecules/lister/02-link-liste-enkel.mustache",
         "value": {}
       },
       {
@@ -3577,6 +3607,11 @@
       {
         "v": "03-templates/08-Navigasjon/31-innbyggerhjelpen-kategori.mustache",
         "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/08-Navigasjon/31-innbyggerhjelpen-kategori.mustache",
+        "w": "01-molecules/publisering/80-panel.mustache",
         "value": {}
       },
       {
@@ -4176,6 +4211,41 @@
       },
       {
         "v": "03-templates/20-Listesider/avdelinger-organisatorisk.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/innbyggerhjelpen.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/innbyggerhjelpen.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/innbyggerhjelpen.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/innbyggerhjelpen.mustache",
+        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/innbyggerhjelpen.mustache",
+        "w": "01-molecules/00-overskrifter/20-moduloverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/innbyggerhjelpen.mustache",
+        "w": "01-molecules/lister/54-innbyggerhjelpen-liste.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/innbyggerhjelpen.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -4932,6 +5002,11 @@
       {
         "v": "04-pages/02-orgenhet/14-tjenester-og-skjema.mustache",
         "w": "03-templates/20-Listesider/tjenester-og-skjema.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/02-orgenhet/15-innbyggerhjelpen.mustache",
+        "w": "03-templates/20-Listesider/innbyggerhjelpen.mustache",
         "value": {}
       },
       {
@@ -6196,7 +6271,12 @@
       },
       {
         "v": "04-pages/71-Pub-artikkel/20-sne-artikkelliste.mustache",
-        "w": "01-molecules/publisering/80-modal.mustache",
+        "w": "01-molecules/publisering/90-modal.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/71-Pub-artikkel/20-sne-artikkelliste.mustache",
+        "w": "01-molecules/publisering/80-panel.mustache",
         "value": {}
       },
       {

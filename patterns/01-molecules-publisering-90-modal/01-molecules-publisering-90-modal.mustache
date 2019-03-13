@@ -1,0 +1,141 @@
+{{# modal }}
+    {{# modalinfo }}<p class="mbn"><code>{{ modalinfo }}</code></p>{{/ modalinfo }}
+    <div class="modal hidden {{ styleModifier }}"{{# visModaliliste }} style="display: block; position: inherit; margin-bottom: 1.75rem;"{{/ visModaliliste }}>
+        <div class="modal__window"{{# visModaliliste }} style="position: inherit; top: inherit; left: inherit; transform: none;"{{/ visModaliliste }}>
+            <h3 class="modal__window__title">{{ modalTittel }}</h3>
+            <div class="modal__window__content">
+                <form>
+
+                    {{# pekerInput }}
+                    <div class="{{ styleModifier }}">
+                        <div>
+                            <label for="url">URL-adresse</label>
+                            <input id="url" type="text" class="mbl{{# urlFeil }} error-input{{/ urlFeil }}" value="{{ url }}">
+                            {{# urlFeil }}
+                              <div class="error-text neg-mtml mbl"><span>URL mangler</span></div>
+                            {{/ urlFeil }}
+                        </div>
+                        <div>
+                            <label for="overskrift">Overskrift</label>
+                            <input id="overskrift" type="text" class="mbl{{# tittelFeil }} error-input{{/ tittelFeil }}" value="{{ tittel }}">
+                            {{# tittelFeil }}
+                              <div class="error-text neg-mtml mbl"><span>Tittel mangler</span></div>
+                            {{/ tittelFeil }}
+                        </div>
+                        {{>molecules-rediger-ingress}}
+                    </div>
+                    {{/ pekerInput }}
+
+                    {{#bildetekst}}
+                        <label for="image_upload" class="mbn">Listebilde</label>
+                        <p class="helpers_info mbs">Vises på sider med artikler i liste</p>
+                    {{/bildetekst}}
+
+                    {{# bildeopplasting }}
+                      <div class="file-upload-input mbl">
+                          <div class="file-upload-input__image-preview">
+                              {{# imgLandscape }}
+                                <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="js_preview_image">
+                              {{/ imgLandscape }}
+                          </div>
+                          <input id="image_upload" name="file" placeholder="Last opp bilde..." type="file">
+                          <label class="label" for="image_upload">Trykk her for å laste opp</label>
+                      </div>
+                    {{/ bildeopplasting }}
+                  
+                    {{# slettBildeLink }}
+                      <div class="text_align_center mbl neg-mtml">
+                        <a href="">Slett listebilde</a>
+                      </div>
+                    {{/ slettBildeLink }}
+                    
+                    {{# filopplasting }}
+                    <div class="file-upload-input mbl">
+                        <input class="fileupload" id="modalfil" name="file" placeholder="Last opp fil..." type="file">
+                        <label class="label" for="modalfil">Trykk her for å laste opp</label>
+                    </div>
+                    {{/ filopplasting }}
+
+                    <div class="mbs">
+                        {{# bildetekstInput }}
+                        <div>
+                            <label for="modalbildetekst">Bildetekst:</label>
+                            <input id="modalbildetekst" type="text" placeholder="Tekst til bildet">
+                        </div>
+                        {{/ bildetekstInput }}
+                        {{# alttekstInput }}
+                        <div>
+                            <label for="modalalttekst">Alternativ tekst (obligatorisk):</label>
+                            <input id="modalalttekst" type="text" placeholder="Beskrivelse for de som ikke kan se bildet">
+                        </div>
+                        {{/ alttekstInput }}
+                        {{# bildekredittInput }}
+                        <div>
+                            <label for="modalbildekreditt">Bildekreditt:</label>
+                            <input id="modalbildekreditt" type="text" placeholder="Fotograf">
+                        </div>
+                        {{/ bildekredittInput }}
+                        {{# lenkenavnInput }}
+                        <div>
+                            <label for="filtittel">Lenkenavn (obligatorisk):</label>
+                            <input id="filtittel" type="text" placeholder="">
+                        </div>
+                        {{/ lenkenavnInput }}
+                    
+                        {{# brukOgAvkryssingsboks }}
+                            {{> atoms-avkryssingsboks}}
+                        {{/ brukOgAvkryssingsboks }}
+                    </div>
+                    
+                    {{# bildeplasseringInput }}
+                        <fieldset class="modal__image-position mbl">
+                            <legend class="modal__image-position__legend" id="position_legend">Plassering:</legend>
+                            <div aria-labelledby="position_legend" class="modal__image-position__radiogroup" role="radiogroup">
+                                <div class="modal__image-position__button-container">
+                                    <input type="radio" class="modal__image-position__input-center" value="align_center">
+                                    <label class="modal__image-position__label-center" for="algin_center">Midtstilt</label>
+                                </div>
+                                <div class="modal__image-position__button-container">
+                                    <input type="radio" class="modal__image-position__input-right" value="align_right" checked>
+                                    <label class="modal__image-position__label-right" for="align_right">Høyrestilt</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    {{/ bildeplasseringInput }}
+
+                    {{# pekerByline }}
+                        <div class="modal__byline modal__byline--top-border mbxl">
+                            <div class="modal__byline-text">
+                                Peker laget av Anne Margrete Markstad - 15.03.2018
+                            </div>
+                        </div>
+                    {{/ pekerByline }}
+
+                    <div class="text_align_center">
+                      
+                        {{# sletteInfo }}
+                          <p>{{ sletteInfo }}</p>
+                        {{/ sletteInfo }} 
+                      
+                        {{#buttonButton}}
+                            <button class="button"{{#buttonDisabled}} disabled{{/buttonDisabled}}>{{buttonText}}</button>
+                        {{/buttonButton}}
+                        {{#buttonSubmit}}
+                            <button class="submit"{{#buttonDisabled}} disabled{{/buttonDisabled}}>{{buttonText}}</button>
+                        {{/buttonSubmit}}
+                        {{#buttonSuccess}}
+                            <button class="button button--success active" type="submit"{{#buttonDisabled}} disabled{{/buttonDisabled}}> {{buttonText}}</button>
+                        {{/buttonSuccess}}
+                        {{#buttonDanger}}
+                            <button class="button button--danger" type="submit"> {{buttonText}}</button>
+                        {{/buttonDanger}}
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <a href="" class="modal__cancel-link js_closeModal">
+          <span class="screen-reader-text">Avbryt og lukk</span>
+        </a>
+    </div>
+{{/ modal }}
