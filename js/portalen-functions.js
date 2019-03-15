@@ -124,6 +124,7 @@ function toggleAccordion() {
 }
 
 // Patternlab only
+//-----------------
 // Toggle
 function toggle() {
     if (document.getElementsByClassName(".js_toggle")) {
@@ -158,7 +159,6 @@ function togglePanel() {
         // Click
         $(".js_panel a").click( function() {
             $(this).parent(".panel__header").parent(".js_panel").toggleClass("panel--open");
-            $(this).parent(".panel__header").next("div").toggle();
             return false;
         });
     }
@@ -548,7 +548,6 @@ $(document).ready(function () {
     horisontalScroll();
     filterSearch();
     toggleAccordion();
-    togglePanel();
     toggle();
     openSearchFilter();
     openSearchFilterGroup();
@@ -562,6 +561,7 @@ $(document).ready(function () {
 $(window).bind("load", function() {
     breadcrumbs();
     toggleSidebarAccordion();
+    togglePanel();
 });
 
 $(window).resize(function () {

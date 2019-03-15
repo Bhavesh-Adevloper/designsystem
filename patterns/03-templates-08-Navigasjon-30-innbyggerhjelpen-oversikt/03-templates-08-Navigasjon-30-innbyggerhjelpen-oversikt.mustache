@@ -5,12 +5,12 @@
         {{> atoms-redigeringsmodusknapp }}
     </div>
 {{/ redigeringsmodusknapp }}
-{{# panel }}
-    <div class="panel_container smMa desktop_centered">
-        {{> molecules-panel }}
-    </div>
-{{/ panel }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
+    {{# panel }}
+        <div class="panel_container">
+            {{> molecules-panel }}
+        </div>
+    {{/ panel }}
     {{> molecules-sideoverskrift-h1:mbxl }}
 
     <div class="row_no_clearfix service_link_container equal_height_container mbj">
