@@ -154,11 +154,35 @@ function toggleSidebarAccordion() {
 }
 
 // ELP sidebar accordion toggle
+function toggleEditAccordion() {
+    if ( $(".js_edit-accordion")[0] ) {
+
+        $(".js_edit-accordion a").parent(".edit-accordion__bar").next().next().hide();
+
+        // Click
+        $(".js_edit-accordion a").click( function() {
+            $(this).parent(".edit-accordion__bar").toggleClass("edit-accordion__bar--open");
+
+            if($(this).parent(".edit-accordion__bar").hasClass("edit-accordion__bar--open")) {
+                $(this).html('Minimer<span class=\"arrow-icon\"></span>');
+                $(this).parent(".edit-accordion__bar").next().next().show();
+            }
+            else {
+                $(this).html('Rediger<span class=\"arrow-icon\"></span>');
+                $(this).parent(".edit-accordion__bar").next().next().hide();
+            }
+            return false;
+        });
+    }
+}
+
+// ELP sidebar accordion toggle
 function togglePanel() {
     if ( $(".js_panel")[0] ) {
         // Click
         $(".js_panel a").click( function() {
             $(this).parent(".panel__header").parent(".js_panel").toggleClass("panel--open");
+            $(this).parent(".panel__header").next("div").toggle();
             return false;
         });
     }
@@ -238,8 +262,11 @@ function hvaskjerMenuToggle() {
 // Redigeringstoggle i menyen - kun i PL
 function hideAndShowSiblings() {
     $(".js-hide-and-show").click( function() {
+
+        console.log("test");
+
         $(this).siblings(".js-hide-this").hide();
-        $(this).siblings(".js-show-this").show();
+        $(this).siblings(".js-show-this").show().css('display', 'flex');
         $(this).siblings().find(".form-element__textfield").focus();
         $(this).hide();
         return false;
@@ -548,6 +575,7 @@ $(document).ready(function () {
     horisontalScroll();
     filterSearch();
     toggleAccordion();
+    toggleEditAccordion();
     toggle();
     openSearchFilter();
     openSearchFilterGroup();

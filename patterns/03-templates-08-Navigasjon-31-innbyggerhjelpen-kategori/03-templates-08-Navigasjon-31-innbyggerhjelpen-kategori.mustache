@@ -9,7 +9,12 @@
     {{> molecules-sideoverskrift-h1:mbxl }}
 
     {{# tjenestekategoriNavigasjon }}
+        {{^ rediger }}
         {{> molecules-tjenestekategori-navigasjon }}
+        {{/ rediger }}
+        {{# rediger }}
+            {{> molecules-tjenestekategori-navigasjon--redigering }}
+        {{/ rediger }}
     {{/ tjenestekategoriNavigasjon }}
 
     <div class="row">

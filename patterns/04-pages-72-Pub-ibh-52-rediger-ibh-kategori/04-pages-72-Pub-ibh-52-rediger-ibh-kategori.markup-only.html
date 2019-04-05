@@ -159,7 +159,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
         <div class="panel_container">
     
-        <div class="panel js_panel">
+        <div class="panel js_panel panel--open">
                 <h2 class="panel__header">
                     <a class="panel__header__toggle" href="#">
                         <span class="icon-profile grunt-icon grunt-icon--32"></span>
@@ -231,184 +231,593 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     </h1>
 </div>
 
-        <div class="row category_navigation_container js_categories">
+            <div class="row category_navigation_container js_categories">
     <div class="col_md_6 col_lg_4">
 
-        <ul class="category_navigation_1 js_cat_1">
-            <li class="los ">
-                <a href="#">
-                    Båt og havn
-                    <span class="arrow-icon"></span>
-                    <span class="arrow-icon--2"></span>
-                </a>
-            </li>
-            <li class="los ">
-                <a href="#">
-                    Kjøretøy
-                    <span class="arrow-icon"></span>
-                    <span class="arrow-icon--2"></span>
-                </a>
-            </li>
-            <li class="los active">
-                <a href="#">
-                    Vei og veitrafikk
-                    <span class="arrow-icon"></span>
-                    <span class="arrow-icon--2"></span>
-                </a>
-                <ul class="category_navigation_2 js_cat_2 active">
-                    <li class="los2 ">
-                        <a href="#">
-                            Bompenger
+        <ul class="category_navigation_1 category_navigation--editable js_cat_1 ">
+                <li class="los ">
+                   <span class="category_navigation--editable__flex-container">
+                        <a href="" class="edit-button">
+                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Slett kategori</span>
+                        </a>
+                        <a href="#" class="edit-button js-hide-and-show">
+                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Rediger kategori</span>
+                        </a>
+                        <form class="form-element form-element--sub hidden js-show-this">
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Angre</span>
+                            </button>
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Lagre ny kategori</span>
+                            </button>
+                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                   class="form-element__textfield" value="Båt og havn">
+                        </form>
+                        <a href="#" class="title js-hide-this">
+                        Båt og havn
                             <span class="arrow-icon"></span>
                         </a>
-                    </li>
-                    <li class="los2 ">
-                        <a href="#">
-                            Brøyting
+                    </span>
+                </li>
+                <li class="los ">
+                   <span class="category_navigation--editable__flex-container">
+                        <a href="" class="edit-button">
+                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Slett kategori</span>
+                        </a>
+                        <a href="#" class="edit-button js-hide-and-show">
+                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Rediger kategori</span>
+                        </a>
+                        <form class="form-element form-element--sub hidden js-show-this">
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Angre</span>
+                            </button>
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Lagre ny kategori</span>
+                            </button>
+                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                   class="form-element__textfield" value="Kjøretøy">
+                        </form>
+                        <a href="#" class="title js-hide-this">
+                        Kjøretøy
                             <span class="arrow-icon"></span>
                         </a>
-                    </li>
-                    <li class="los2 ">
-                        <a href="#">
-                            Feiing og strøing
+                    </span>
+                </li>
+                <li class="los active">
+                   <span class="category_navigation--editable__flex-container">
+                        <a href="" class="edit-button">
+                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Slett kategori</span>
+                        </a>
+                        <a href="#" class="edit-button js-hide-and-show">
+                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Rediger kategori</span>
+                        </a>
+                        <form class="form-element form-element--sub hidden js-show-this">
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Angre</span>
+                            </button>
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Lagre ny kategori</span>
+                            </button>
+                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                   class="form-element__textfield" value="Vei og veitrafikk">
+                        </form>
+                        <a href="#" class="title js-hide-this">
+                        Vei og veitrafikk
                             <span class="arrow-icon"></span>
                         </a>
-                    </li>
-                    <li class="los2 ">
-                        <a href="#">
-                            Gangvei
-                            <span class="arrow-icon"></span>
-                        </a>
-                    </li>
-                    <li class="los2 ">
-                        <a href="#">
-                            Gatelys
-                            <span class="arrow-icon"></span>
-                        </a>
-                    </li>
-                    <li class="los2 ">
-                        <a href="#">
-                            Gravemelding
-                            <span class="arrow-icon"></span>
-                        </a>
-                    </li>
-                    <li class="los2 ">
-                        <a href="#">
-                            Miljøvennlig transport
-                            <span class="arrow-icon"></span>
-                        </a>
-                    </li>
-                    <li class="los2 active">
-                        <a href="#">
-                            Parkering
-                            <span class="arrow-icon"></span>
-                        </a>
-                        <ul class="category_navigation_3 js_cat_3 active">
-                            <li class="tjenestebeskrivelse add_new">
-                                <a href="#">
-                                    Ny innbyggerhjelp
-                                </a>
-                            </li>
-                            <li class="tjenestebeskrivelse">
-                                <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">
-                                    Betal parkering med mobilen
-                                    <span class="arrow-icon"></span>
-                                    <span class="arrow-icon--2"></span>
-                                </a>
-                            </li>
-                            <li class="tjenestebeskrivelse">
-                                <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">
-                                    Bobilparkering
-                                    <span class="arrow-icon"></span>
-                                    <span class="arrow-icon--2"></span>
-                                </a>
-                            </li>
-                            <li class="tjenestebeskrivelse">
-                                <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">
-                                    Boligsoneparkering
-                                    <span class="arrow-icon"></span>
-                                    <span class="arrow-icon--2"></span>
-                                </a>
-                            </li>
-                            <li class="tjenestebeskrivelse">
-                                <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">
-                                    Klage på parkeringsgebyr, kontrollsanksjoner og tilleggsgebyr
-                                    <span class="arrow-icon"></span>
-                                    <span class="arrow-icon--2"></span>
-                                </a>
-                            </li>
-                            <li class="tjenestebeskrivelse">
-                                <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">
-                                    Parkering og lading for elbil
-                                    <span class="arrow-icon"></span>
-                                    <span class="arrow-icon--2"></span>
-                                </a>
-                            </li>
-                            <li class="tjenestebeskrivelse">
-                                <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">
-                                    Parkering på gateplan
-                                    <span class="arrow-icon"></span>
-                                    <span class="arrow-icon--2"></span>
-                                </a>
-                            </li>
-                            <li class="tjenestebeskrivelse">
-                                <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">
-                                    Parkeringstillatelse for forflytningshemmede
-                                    <span class="arrow-icon"></span>
-                                    <span class="arrow-icon--2"></span>
-                                </a>
-                            </li>
-                            <li class="tjenestebeskrivelse">
-                                <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">
-                                    Sjekk hvor bilen er tauet inn
-                                    <span class="arrow-icon"></span>
-                                    <span class="arrow-icon--2"></span>
-                                </a>
-                            </li>
+                    </span>
+                        <ul class="category_navigation_2 js_cat_2 active">
+                                <li class="los2 ">
+                                    <span class="category_navigation--editable__flex-container">
+                                        <a href="" class="edit-button">
+                                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Slett kategori</span>
+                                        </a>
+                                        <a href="#" class="edit-button js-hide-and-show">
+                                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Rediger kategori</span>
+                                        </a>
+                                        <form class="form-element form-element--sub hidden js-show-this">
+                                            <button type="reset" class="button--clean js-clear-inline-style">
+                                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Angre</span>
+                                            </button>
+                                            <button type="submit" class="button--success active">
+                                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Lagre ny kategori</span>
+                                            </button>
+                                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                                   class="form-element__textfield" value="Bompenger">
+                                        </form>
+                                        <a href="#" class="title js-hide-this">
+                                        Bompenger
+                                            <span class="arrow-icon"></span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="los2 ">
+                                    <span class="category_navigation--editable__flex-container">
+                                        <a href="" class="edit-button">
+                                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Slett kategori</span>
+                                        </a>
+                                        <a href="#" class="edit-button js-hide-and-show">
+                                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Rediger kategori</span>
+                                        </a>
+                                        <form class="form-element form-element--sub hidden js-show-this">
+                                            <button type="reset" class="button--clean js-clear-inline-style">
+                                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Angre</span>
+                                            </button>
+                                            <button type="submit" class="button--success active">
+                                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Lagre ny kategori</span>
+                                            </button>
+                                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                                   class="form-element__textfield" value="Brøyting">
+                                        </form>
+                                        <a href="#" class="title js-hide-this">
+                                        Brøyting
+                                            <span class="arrow-icon"></span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="los2 ">
+                                    <span class="category_navigation--editable__flex-container">
+                                        <a href="" class="edit-button">
+                                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Slett kategori</span>
+                                        </a>
+                                        <a href="#" class="edit-button js-hide-and-show">
+                                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Rediger kategori</span>
+                                        </a>
+                                        <form class="form-element form-element--sub hidden js-show-this">
+                                            <button type="reset" class="button--clean js-clear-inline-style">
+                                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Angre</span>
+                                            </button>
+                                            <button type="submit" class="button--success active">
+                                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Lagre ny kategori</span>
+                                            </button>
+                                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                                   class="form-element__textfield" value="Feiing og strøing">
+                                        </form>
+                                        <a href="#" class="title js-hide-this">
+                                        Feiing og strøing
+                                            <span class="arrow-icon"></span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="los2 ">
+                                    <span class="category_navigation--editable__flex-container">
+                                        <a href="" class="edit-button">
+                                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Slett kategori</span>
+                                        </a>
+                                        <a href="#" class="edit-button js-hide-and-show">
+                                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Rediger kategori</span>
+                                        </a>
+                                        <form class="form-element form-element--sub hidden js-show-this">
+                                            <button type="reset" class="button--clean js-clear-inline-style">
+                                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Angre</span>
+                                            </button>
+                                            <button type="submit" class="button--success active">
+                                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Lagre ny kategori</span>
+                                            </button>
+                                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                                   class="form-element__textfield" value="Gangvei">
+                                        </form>
+                                        <a href="#" class="title js-hide-this">
+                                        Gangvei
+                                            <span class="arrow-icon"></span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="los2 ">
+                                    <span class="category_navigation--editable__flex-container">
+                                        <a href="" class="edit-button">
+                                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Slett kategori</span>
+                                        </a>
+                                        <a href="#" class="edit-button js-hide-and-show">
+                                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Rediger kategori</span>
+                                        </a>
+                                        <form class="form-element form-element--sub hidden js-show-this">
+                                            <button type="reset" class="button--clean js-clear-inline-style">
+                                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Angre</span>
+                                            </button>
+                                            <button type="submit" class="button--success active">
+                                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Lagre ny kategori</span>
+                                            </button>
+                                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                                   class="form-element__textfield" value="Gatelys">
+                                        </form>
+                                        <a href="#" class="title js-hide-this">
+                                        Gatelys
+                                            <span class="arrow-icon"></span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="los2 ">
+                                    <span class="category_navigation--editable__flex-container">
+                                        <a href="" class="edit-button">
+                                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Slett kategori</span>
+                                        </a>
+                                        <a href="#" class="edit-button js-hide-and-show">
+                                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Rediger kategori</span>
+                                        </a>
+                                        <form class="form-element form-element--sub hidden js-show-this">
+                                            <button type="reset" class="button--clean js-clear-inline-style">
+                                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Angre</span>
+                                            </button>
+                                            <button type="submit" class="button--success active">
+                                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Lagre ny kategori</span>
+                                            </button>
+                                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                                   class="form-element__textfield" value="Gravemelding">
+                                        </form>
+                                        <a href="#" class="title js-hide-this">
+                                        Gravemelding
+                                            <span class="arrow-icon"></span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="los2 ">
+                                    <span class="category_navigation--editable__flex-container">
+                                        <a href="" class="edit-button">
+                                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Slett kategori</span>
+                                        </a>
+                                        <a href="#" class="edit-button js-hide-and-show">
+                                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Rediger kategori</span>
+                                        </a>
+                                        <form class="form-element form-element--sub hidden js-show-this">
+                                            <button type="reset" class="button--clean js-clear-inline-style">
+                                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Angre</span>
+                                            </button>
+                                            <button type="submit" class="button--success active">
+                                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Lagre ny kategori</span>
+                                            </button>
+                                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                                   class="form-element__textfield" value="Miljøvennlig transport">
+                                        </form>
+                                        <a href="#" class="title js-hide-this">
+                                        Miljøvennlig transport
+                                            <span class="arrow-icon"></span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="los2 active">
+                                    <span class="category_navigation--editable__flex-container">
+                                        <a href="" class="edit-button">
+                                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Slett kategori</span>
+                                        </a>
+                                        <a href="#" class="edit-button js-hide-and-show">
+                                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Rediger kategori</span>
+                                        </a>
+                                        <form class="form-element form-element--sub hidden js-show-this">
+                                            <button type="reset" class="button--clean js-clear-inline-style">
+                                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Angre</span>
+                                            </button>
+                                            <button type="submit" class="button--success active">
+                                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Lagre ny kategori</span>
+                                            </button>
+                                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                                   class="form-element__textfield" value="Parkering">
+                                        </form>
+                                        <a href="#" class="title js-hide-this">
+                                        Parkering
+                                            <span class="arrow-icon"></span>
+                                        </a>
+                                    </span>
+                                        <ul class="category_navigation_3 js_cat_3 active">
+                                                <li class="tjenestebeskrivelse">
+                                                    <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">
+                                                        Betal parkering med mobilen
+                                                        <span class="arrow-icon"></span>
+                                                        <span class="arrow-icon--2"></span>
+                                                    </a>
+                                                </li>
+                                                <li class="tjenestebeskrivelse">
+                                                    <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">
+                                                        Bobilparkering
+                                                        <span class="arrow-icon"></span>
+                                                        <span class="arrow-icon--2"></span>
+                                                    </a>
+                                                </li>
+                                                <li class="tjenestebeskrivelse">
+                                                    <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">
+                                                        Boligsoneparkering
+                                                        <span class="arrow-icon"></span>
+                                                        <span class="arrow-icon--2"></span>
+                                                    </a>
+                                                </li>
+                                                <li class="tjenestebeskrivelse">
+                                                    <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">
+                                                        Klage på parkeringsgebyr, kontrollsanksjoner og tilleggsgebyr
+                                                        <span class="arrow-icon"></span>
+                                                        <span class="arrow-icon--2"></span>
+                                                    </a>
+                                                </li>
+                                                <li class="tjenestebeskrivelse">
+                                                    <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">
+                                                        Parkering og lading for elbil
+                                                        <span class="arrow-icon"></span>
+                                                        <span class="arrow-icon--2"></span>
+                                                    </a>
+                                                </li>
+                                                <li class="tjenestebeskrivelse">
+                                                    <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">
+                                                        Parkering på gateplan
+                                                        <span class="arrow-icon"></span>
+                                                        <span class="arrow-icon--2"></span>
+                                                    </a>
+                                                </li>
+                                                <li class="tjenestebeskrivelse">
+                                                    <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">
+                                                        Parkeringstillatelse for forflytningshemmede
+                                                        <span class="arrow-icon"></span>
+                                                        <span class="arrow-icon--2"></span>
+                                                    </a>
+                                                </li>
+                                                <li class="tjenestebeskrivelse">
+                                                    <a href="&#x2F;patterns&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering&#x2F;04-pages-11-innbyggerhjelpen-05-ibh-boligsoneparkering.rendered.html">
+                                                        Sjekk hvor bilen er tauet inn
+                                                        <span class="arrow-icon"></span>
+                                                        <span class="arrow-icon--2"></span>
+                                                    </a>
+                                                </li>
+                                                <li class="tjenestebeskrivelse add_new">
+                                                    <a href="#">
+                                                        <span class="plus-arrow-icon"></span>
+                                                        Ny innbyggerhjelp
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                </li>
+                                <li class="los2 ">
+                                    <span class="category_navigation--editable__flex-container">
+                                        <a href="" class="edit-button">
+                                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Slett kategori</span>
+                                        </a>
+                                        <a href="#" class="edit-button js-hide-and-show">
+                                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Rediger kategori</span>
+                                        </a>
+                                        <form class="form-element form-element--sub hidden js-show-this">
+                                            <button type="reset" class="button--clean js-clear-inline-style">
+                                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Angre</span>
+                                            </button>
+                                            <button type="submit" class="button--success active">
+                                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Lagre ny kategori</span>
+                                            </button>
+                                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                                   class="form-element__textfield" value="Skoleskyss">
+                                        </form>
+                                        <a href="#" class="title js-hide-this">
+                                        Skoleskyss
+                                            <span class="arrow-icon"></span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="los2 ">
+                                    <span class="category_navigation--editable__flex-container">
+                                        <a href="" class="edit-button">
+                                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Slett kategori</span>
+                                        </a>
+                                        <a href="#" class="edit-button js-hide-and-show">
+                                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Rediger kategori</span>
+                                        </a>
+                                        <form class="form-element form-element--sub hidden js-show-this">
+                                            <button type="reset" class="button--clean js-clear-inline-style">
+                                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Angre</span>
+                                            </button>
+                                            <button type="submit" class="button--success active">
+                                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Lagre ny kategori</span>
+                                            </button>
+                                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                                   class="form-element__textfield" value="Sykkel">
+                                        </form>
+                                        <a href="#" class="title js-hide-this">
+                                        Sykkel
+                                            <span class="arrow-icon"></span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="los2 ">
+                                    <span class="category_navigation--editable__flex-container">
+                                        <a href="" class="edit-button">
+                                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Slett kategori</span>
+                                        </a>
+                                        <a href="#" class="edit-button js-hide-and-show">
+                                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Rediger kategori</span>
+                                        </a>
+                                        <form class="form-element form-element--sub hidden js-show-this">
+                                            <button type="reset" class="button--clean js-clear-inline-style">
+                                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Angre</span>
+                                            </button>
+                                            <button type="submit" class="button--success active">
+                                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Lagre ny kategori</span>
+                                            </button>
+                                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                                   class="form-element__textfield" value="Tilrettelagt transport">
+                                        </form>
+                                        <a href="#" class="title js-hide-this">
+                                        Tilrettelagt transport
+                                            <span class="arrow-icon"></span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="los2 ">
+                                    <span class="category_navigation--editable__flex-container">
+                                        <a href="" class="edit-button">
+                                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Slett kategori</span>
+                                        </a>
+                                        <a href="#" class="edit-button js-hide-and-show">
+                                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Rediger kategori</span>
+                                        </a>
+                                        <form class="form-element form-element--sub hidden js-show-this">
+                                            <button type="reset" class="button--clean js-clear-inline-style">
+                                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Angre</span>
+                                            </button>
+                                            <button type="submit" class="button--success active">
+                                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Lagre ny kategori</span>
+                                            </button>
+                                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                                   class="form-element__textfield" value="Trafikkinformasjon">
+                                        </form>
+                                        <a href="#" class="title js-hide-this">
+                                        Trafikkinformasjon
+                                            <span class="arrow-icon"></span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="los2 ">
+                                    <span class="category_navigation--editable__flex-container">
+                                        <a href="" class="edit-button">
+                                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Slett kategori</span>
+                                        </a>
+                                        <a href="#" class="edit-button js-hide-and-show">
+                                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Rediger kategori</span>
+                                        </a>
+                                        <form class="form-element form-element--sub hidden js-show-this">
+                                            <button type="reset" class="button--clean js-clear-inline-style">
+                                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Angre</span>
+                                            </button>
+                                            <button type="submit" class="button--success active">
+                                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Lagre ny kategori</span>
+                                            </button>
+                                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                                   class="form-element__textfield" value="Veibygging">
+                                        </form>
+                                        <a href="#" class="title js-hide-this">
+                                        Veibygging
+                                            <span class="arrow-icon"></span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="los2 ">
+                                    <span class="category_navigation--editable__flex-container">
+                                        <a href="" class="edit-button">
+                                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Slett kategori</span>
+                                        </a>
+                                        <a href="#" class="edit-button js-hide-and-show">
+                                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Rediger kategori</span>
+                                        </a>
+                                        <form class="form-element form-element--sub hidden js-show-this">
+                                            <button type="reset" class="button--clean js-clear-inline-style">
+                                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Angre</span>
+                                            </button>
+                                            <button type="submit" class="button--success active">
+                                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Lagre ny kategori</span>
+                                            </button>
+                                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                                   class="form-element__textfield" value="Veivedlikehold">
+                                        </form>
+                                        <a href="#" class="title js-hide-this">
+                                        Veivedlikehold
+                                            <span class="arrow-icon"></span>
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="add_new">
+                                    <a href="#" class="js-hide-and-show">
+                                        <span class="plus-arrow-icon"></span>
+                                        Ny kategori
+                                    </a>
+                                    <form class="form-element form-element--sub hidden js-show-this">
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Angre</span>
+                                        </button>
+                                        <button type="submit" class="button--success active">
+                                            <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Lagre ny kategori</span>
+                                        </button>
+                                        <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                               class="form-element__textfield">
+                                    </form>
+                                </li>
                         </ul>
-                    </li>
-                    <li class="los2 ">
-                        <a href="#">
-                            Skoleskyss
-                            <span class="arrow-icon"></span>
-                        </a>
-                    </li>
-                    <li class="los2 ">
-                        <a href="#">
-                            Sykkel
-                            <span class="arrow-icon"></span>
-                        </a>
-                    </li>
-                    <li class="los2 ">
-                        <a href="#">
-                            Tilrettelagt transport
-                            <span class="arrow-icon"></span>
-                        </a>
-                    </li>
-                    <li class="los2 ">
-                        <a href="#">
-                            Trafikkinformasjon
-                            <span class="arrow-icon"></span>
-                        </a>
-                    </li>
-                    <li class="los2 ">
-                        <a href="#">
-                            Veibygging
-                            <span class="arrow-icon"></span>
-                        </a>
-                    </li>
-                    <li class="los2 ">
-                        <a href="#">
-                            Veivedlikehold
-                            <span class="arrow-icon"></span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
+                </li>
+                <li class="add_new">
+                    <a href="#" class="js-hide-and-show">
+                        <span class="plus-arrow-icon"></span>
+                        Ny kategori
+                    </a>
+                    <form class="form-element form-element--sub hidden js-show-this">
+                        <button type="reset" class="button--clean js-clear-inline-style">
+                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Angre</span>
+                        </button>
+                        <button type="submit" class="button--success active">
+                            <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Lagre ny kategori</span>
+                        </button>
+                        <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                               class="form-element__textfield">
+                    </form>
+                </li>
         </ul>
 
     </div>
 </div>
+
 
     <div class="row">
         

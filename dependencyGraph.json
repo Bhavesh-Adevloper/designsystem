@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1552657265805,
+  "timestamp": 1554453696693,
   "graph": {
     "options": {
       "directed": true,
@@ -328,6 +328,12 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/01-molecules-publisering-79-last-opp-fil/01-molecules-publisering-79-last-opp-fil.rendered.html",
           "lineagePattern": "molecules-last-opp-fil"
+        }
+      },
+      {
+        "v": "00-atoms/55-loader-minside/55-loader-minside.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -773,6 +779,14 @@
         }
       },
       {
+        "v": "01-molecules/navigasjon/tjenestekategori-navigasjon--redigering.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-08-Navigasjon-31-innbyggerhjelpen-kategori/03-templates-08-Navigasjon-31-innbyggerhjelpen-kategori.rendered.html",
+          "lineagePattern": "templates-innbyggerhjelpen-kategori"
+        }
+      },
+      {
         "v": "01-molecules/navigasjon/tjenestekategori-navigasjon.mustache",
         "value": {
           "compileState": "clean",
@@ -832,6 +846,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-70-Publisering-01-rediger-sne-artikkel/03-templates-70-Publisering-01-rediger-sne-artikkel.rendered.html",
           "lineagePattern": "templates-rediger-sne-artikkel"
+        }
+      },
+      {
+        "v": "01-molecules/publisering/09-rediger-varsel.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
       {
@@ -948,6 +970,14 @@
       },
       {
         "v": "01-molecules/publisering/36-rediger-accordion-ansvarlig-avdeling.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-ibh-artikkel"
+        }
+      },
+      {
+        "v": "01-molecules/publisering/36-rediger-accordion-varsel.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
@@ -3626,6 +3656,11 @@
       },
       {
         "v": "03-templates/08-Navigasjon/31-innbyggerhjelpen-kategori.mustache",
+        "w": "01-molecules/navigasjon/tjenestekategori-navigasjon--redigering.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/08-Navigasjon/31-innbyggerhjelpen-kategori.mustache",
         "w": "02-organisms/40-annet/30-service-snarvei.mustache",
         "value": {}
       },
@@ -4781,6 +4816,11 @@
       },
       {
         "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
+        "w": "01-molecules/publisering/09-rediger-varsel.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/10-rediger-ingress.mustache",
         "value": {}
       },
@@ -4807,6 +4847,11 @@
       {
         "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/30-rediger-accordion-bilde.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
+        "w": "01-molecules/publisering/36-rediger-accordion-varsel.mustache",
         "value": {}
       },
       {

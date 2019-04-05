@@ -1,42 +1,50 @@
 <h2 class="helpers_header">Avsnitt</h2>
 <p class="helpers_info mbl">Vises som åpne/lukke-avsnitt. Bruk lett forståelige overskrifter tilpasset innholdet.</p>
+<a href="#" class="edit-accordion__bar__toggle mbs">
+    Minimer
+    <span class="arrow-icon"></span>
+</a>
 {{# redigerAvsnittListe }}
     <div class="edit-accordion {{ styleModifier }}">
-        
-        <h3 class="helpers_header mbs" id="avsnittTittel{{ id }}">Overskrift (obligatorisk)</h3>
-        <input class="input--title mbml" value="{{ redigerAvsnittTittel }}" aria-labelledby="avsnittTittel{{ id }}">
-        <!--
-        <input class="input--title error-input mbml" value="" aria-labelledby="avsnittTittel{{ id }}">
-        <div class="error-text neg-mtm mbml">{{ redigerAvsnittTittel }}</div>
-        -->
-        
-        <h3 class="helpers_header">Innhold</h3>
-        <script src="https://cdn.ckeditor.com/4.8.0/basic/ckeditor.js"></script>
-        <div class="mbml">
-            <textarea name="{{ id }}" class="mbn"></textarea>
-            <script>
-                CKEDITOR.replace( '{{ id }}' );
-            </script>
+
+        <div class="edit-accordion__bar js_edit-accordion">
+            <h3 class="helpers_header mbs" id="avsnittTittel{{ id }}">Overskrift (obligatorisk)</h3>
+            <a href="#" class="edit-accordion__bar__toggle mbs">
+                Rediger
+                <span class="arrow-icon"></span>
+            </a>
         </div>
-        
+        <input class="input--title mbml" value="{{ redigerAvsnittTittel }}" aria-labelledby="avsnittTittel{{ id }}">
+
+        <div>
+            <h3 class="helpers_header">Innhold</h3>
+            <script src="https://cdn.ckeditor.com/4.8.0/basic/ckeditor.js"></script>
+            <div class="mbml">
+                <textarea name="{{ id }}" class="mbn"></textarea>
+                <script>
+                    CKEDITOR.replace('{{ id }}');
+                </script>
+            </div>
+        </div>
+
         <div class="edit-accordion__bar">
-    
+
             <div class="edit-accordion__sort">
                 {{# flyttAvsnitt }}
                     Flytt avsnitt:
                     {{# flyttOpp }}
-                    <a class="edit-accordion__sort__link" href="#">
-                      <span class="icon-arrow-ordering grunt-icon grunt-icon--32"></span>Opp
-                    </a>
+                        <a class="edit-accordion__sort__link" href="#">
+                            <span class="icon-arrow-ordering grunt-icon grunt-icon--32"></span>Opp
+                        </a>
                     {{/ flyttOpp }}
                     {{# flyttNed }}
-                    <a class="edit-accordion__sort__link" href="#">
-                      <span class="icon-arrow-ordering icon-arrow-ordering--down grunt-icon grunt-icon--32"></span>Ned
-                    </a>
+                        <a class="edit-accordion__sort__link" href="#">
+                            <span class="icon-arrow-ordering icon-arrow-ordering--down grunt-icon grunt-icon--32"></span>Ned
+                        </a>
                     {{/ flyttNed }}
                 {{/ flyttAvsnitt }}
             </div>
-            
+
             <a href="#" title="Slett avsnitt" class="button button--remove mbn mlml">
                 Slett
             </a>

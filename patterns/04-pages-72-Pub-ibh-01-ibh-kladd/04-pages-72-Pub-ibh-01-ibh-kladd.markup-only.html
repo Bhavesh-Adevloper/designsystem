@@ -195,6 +195,28 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     <input class="input--title mbxxl" value="Ny innbyggerhjelp" aria-labelledby="page_title">
 
 
+            <h2 class="helpers_header helpers_header--infobox">Infoboks
+    <a href="#" title="Slett avsnitt" class="button button--remove mbn mlml">Slett</a>
+</h2>
+<div class="notice notice--blue mbl">
+    <div class="notice__content">
+        <span class="icon-warning--circle grunt-icon" data-grunticon-embed></span>
+        <script src="https://cdn.ckeditor.com/4.8.0/basic/ckeditor.js"></script>
+        <div class="mbml">
+            <textarea name="" class="mbn"></textarea>
+            <script>
+                CKEDITOR.replace( '' );
+            </script>
+        </div>
+        <div class="mbm">
+            Gyldig til
+            <div class="edit-article-infobox__date_container mls">
+                <input type="date" value="2018-10-20" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" class="mbn">
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 
@@ -225,29 +247,37 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 
             <h2 class="helpers_header">Avsnitt</h2>
 <p class="helpers_info mbl">Vises som åpne/lukke-avsnitt. Bruk lett forståelige overskrifter tilpasset innholdet.</p>
+<a href="#" class="edit-accordion__bar__toggle mbs">
+    Minimer
+    <span class="arrow-icon"></span>
+</a>
     <div class="edit-accordion mbxxl">
-        
-        <h3 class="helpers_header mbs" id="avsnittTittelavsnitt1">Overskrift (obligatorisk)</h3>
-        <input class="input--title mbml" value="" aria-labelledby="avsnittTittelavsnitt1">
-        <!--
-        <input class="input--title error-input mbml" value="" aria-labelledby="avsnittTittelavsnitt1">
-        <div class="error-text neg-mtm mbml"></div>
-        -->
-        
-        <h3 class="helpers_header">Innhold</h3>
-        <script src="https://cdn.ckeditor.com/4.8.0/basic/ckeditor.js"></script>
-        <div class="mbml">
-            <textarea name="avsnitt1" class="mbn"></textarea>
-            <script>
-                CKEDITOR.replace( 'avsnitt1' );
-            </script>
+
+        <div class="edit-accordion__bar js_edit-accordion">
+            <h3 class="helpers_header mbs" id="avsnittTittelavsnitt1">Overskrift (obligatorisk)</h3>
+            <a href="#" class="edit-accordion__bar__toggle mbs">
+                Rediger
+                <span class="arrow-icon"></span>
+            </a>
         </div>
-        
+        <input class="input--title mbml" value="" aria-labelledby="avsnittTittelavsnitt1">
+
+        <div>
+            <h3 class="helpers_header">Innhold</h3>
+            <script src="https://cdn.ckeditor.com/4.8.0/basic/ckeditor.js"></script>
+            <div class="mbml">
+                <textarea name="avsnitt1" class="mbn"></textarea>
+                <script>
+                    CKEDITOR.replace('avsnitt1');
+                </script>
+            </div>
+        </div>
+
         <div class="edit-accordion__bar">
-    
+
             <div class="edit-accordion__sort">
             </div>
-            
+
             <a href="#" title="Slett avsnitt" class="button button--remove mbn mlml">
                 Slett
             </a>
@@ -256,6 +286,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 <a href="#" class="button mbxxl add-accordion-link">
     Legg til avsnitt
 </a>
+
 
     <div class="mbxxl">
         <h2 class="helpers_header">Digitalt skjema</h2>
@@ -300,6 +331,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     </div>
     
 </div>
+
 
                     <div class="mbxxl">
     <h2 class="sidebar-header sidebar-header--open mbm js_sidebar-accordion">

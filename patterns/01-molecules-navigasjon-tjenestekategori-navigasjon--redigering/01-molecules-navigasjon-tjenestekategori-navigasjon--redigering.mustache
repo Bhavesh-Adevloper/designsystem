@@ -1,0 +1,133 @@
+<div class="row category_navigation_container js_categories">
+    <div class="col_md_6 col_lg_4">
+
+        <ul class="category_navigation_1 category_navigation--editable js_cat_1 {{# visEmneordInfoBoks }}info_emneord_tjeneste{{/ visEmneordInfoBoks }}{{# visTjenesteInfoBoks }}info_tjeneste{{/ visTjenesteInfoBoks }}">
+            {{# cat_liste_1 }}
+                <li class="los {{# active1 }}active{{/ active1 }}">
+                   <span class="category_navigation--editable__flex-container">
+                        <a href="" class="edit-button">
+                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Slett kategori</span>
+                        </a>
+                        <a href="#" class="edit-button js-hide-and-show">
+                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Rediger kategori</span>
+                        </a>
+                        <form class="form-element form-element--sub hidden js-show-this">
+                            <button type="reset" class="button--clean js-clear-inline-style">
+                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Angre</span>
+                            </button>
+                            <button type="submit" class="button--success active">
+                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                <span class="screen-reader-text">Lagre ny kategori</span>
+                            </button>
+                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                   class="form-element__textfield" value="{{ tittel }}">
+                        </form>
+                        <a href="{{ url }}" class="title js-hide-this">
+                        {{ tittel }}
+                            <span class="arrow-icon"></span>
+                        </a>
+                    </span>
+                    {{# active1 }}
+                        <ul class="category_navigation_2 js_cat_2 active">
+                            {{# cat_liste_2 }}
+                                <li class="los2 {{# active2 }}active{{/ active2 }}">
+                                    <span class="category_navigation--editable__flex-container">
+                                        <a href="" class="edit-button">
+                                            <span class="icon-trash grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Slett kategori</span>
+                                        </a>
+                                        <a href="#" class="edit-button js-hide-and-show">
+                                            <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Rediger kategori</span>
+                                        </a>
+                                        <form class="form-element form-element--sub hidden js-show-this">
+                                            <button type="reset" class="button--clean js-clear-inline-style">
+                                                <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Angre</span>
+                                            </button>
+                                            <button type="submit" class="button--success active">
+                                                <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                                <span class="screen-reader-text">Lagre ny kategori</span>
+                                            </button>
+                                            <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                                   class="form-element__textfield" value="{{ tittel }}">
+                                        </form>
+                                        <a href="{{ url }}" class="title js-hide-this">
+                                        {{ tittel }}
+                                            <span class="arrow-icon"></span>
+                                        </a>
+                                    </span>
+                                    {{# active2 }}
+                                        <ul class="category_navigation_3 js_cat_3 active">
+                                            {{# tjenesteliste }}
+                                                <li class="tjenestebeskrivelse">
+                                                    <a href="{{ url }}">
+                                                        {{ tittel }}
+                                                        <span class="arrow-icon"></span>
+                                                        <span class="arrow-icon--2"></span>
+                                                    </a>
+                                                </li>
+                                            {{/ tjenesteliste }}
+                                            {{# nyInnbyggerhjelpLenke }}
+                                                <li class="tjenestebeskrivelse add_new">
+                                                    <a href="{{ url }}">
+                                                        <span class="plus-arrow-icon"></span>
+                                                        {{ tittel }}
+                                                    </a>
+                                                </li>
+                                            {{/ nyInnbyggerhjelpLenke }}
+                                        </ul>
+                                    {{/ active2 }}
+                                </li>
+                            {{/ cat_liste_2 }}
+                            {{# nyUnderkategoriLenke }}
+                                <li class="add_new">
+                                    <a href="{{ url }}" class="js-hide-and-show">
+                                        <span class="plus-arrow-icon"></span>
+                                        {{ tittel }}
+                                    </a>
+                                    <form class="form-element form-element--sub hidden js-show-this">
+                                        <button type="reset" class="button--clean js-clear-inline-style">
+                                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Angre</span>
+                                        </button>
+                                        <button type="submit" class="button--success active">
+                                            <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                                            <span class="screen-reader-text">Lagre ny kategori</span>
+                                        </button>
+                                        <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                                               class="form-element__textfield">
+                                    </form>
+                                </li>
+                            {{/ nyUnderkategoriLenke }}
+                        </ul>
+                    {{/ active1 }}
+                </li>
+            {{/ cat_liste_1 }}
+            {{# nyMellomkategoriLenke }}
+                <li class="add_new">
+                    <a href="{{ url }}" class="js-hide-and-show">
+                        <span class="plus-arrow-icon"></span>
+                        {{ tittel }}
+                    </a>
+                    <form class="form-element form-element--sub hidden js-show-this">
+                        <button type="reset" class="button--clean js-clear-inline-style">
+                            <span class="icon-close--small grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Angre</span>
+                        </button>
+                        <button type="submit" class="button--success active">
+                            <span class="icon-checkmark grunt-icon grunt-icon--32"></span>
+                            <span class="screen-reader-text">Lagre ny kategori</span>
+                        </button>
+                        <input id="newMainItem" type="text" placeholder="Kategorinavn"
+                               class="form-element__textfield">
+                    </form>
+                </li>
+            {{/ nyMellomkategoriLenke }}
+        </ul>
+
+    </div>
+</div>
