@@ -262,9 +262,6 @@ function hvaskjerMenuToggle() {
 // Redigeringstoggle i menyen - kun i PL
 function hideAndShowSiblings() {
     $(".js-hide-and-show").click( function() {
-
-        console.log("test");
-
         $(this).siblings(".js-hide-this").hide();
         $(this).siblings(".js-show-this").show().css('display', 'flex');
         $(this).siblings().find(".form-element__textfield").focus();
