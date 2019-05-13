@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1557223420616,
+  "timestamp": 1557732909609,
   "graph": {
     "options": {
       "directed": true,
@@ -979,9 +979,7 @@
       {
         "v": "01-molecules/publisering/36-rediger-accordion-varsel.mustache",
         "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
-          "lineagePattern": "templates-rediger-ibh-artikkel"
+          "compileState": "clean"
         }
       },
       {
@@ -4847,11 +4845,6 @@
       {
         "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/30-rediger-accordion-bilde.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
-        "w": "01-molecules/publisering/36-rediger-accordion-varsel.mustache",
         "value": {}
       },
       {
