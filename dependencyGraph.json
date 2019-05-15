@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1557732909609,
+  "timestamp": 1557918748292,
   "graph": {
     "options": {
       "directed": true,
@@ -849,14 +849,6 @@
         }
       },
       {
-        "v": "01-molecules/publisering/09-rediger-varsel.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
-          "lineagePattern": "templates-rediger-ibh-artikkel"
-        }
-      },
-      {
         "v": "01-molecules/publisering/10-rediger-ingress.mustache",
         "value": {
           "compileState": "clean",
@@ -979,7 +971,9 @@
       {
         "v": "01-molecules/publisering/36-rediger-accordion-varsel.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-ibh-artikkel"
         }
       },
       {
@@ -2540,6 +2534,11 @@
       {
         "v": "01-molecules/publisering/36-rediger-accordion-ansvarlig-avdeling.mustache",
         "w": "00-atoms/20-skjema-element/06-filterbox-valg.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/publisering/36-rediger-accordion-varsel.mustache",
+        "w": "01-molecules/03-bokser/01-notis.mustache",
         "value": {}
       },
       {
@@ -4814,11 +4813,6 @@
       },
       {
         "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
-        "w": "01-molecules/publisering/09-rediger-varsel.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/10-rediger-ingress.mustache",
         "value": {}
       },
@@ -4845,6 +4839,11 @@
       {
         "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
         "w": "01-molecules/publisering/30-rediger-accordion-bilde.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/70-Publisering/02-rediger-ibh-artikkel.mustache",
+        "w": "01-molecules/publisering/36-rediger-accordion-varsel.mustache",
         "value": {}
       },
       {

@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width"/>
 
-    <link rel="stylesheet" href="../../css/style.css?1557732905776" media="all"/>
-    <link rel="stylesheet" href="../../css/publisering.css?1557732905776" media="all"/>
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1557732905776" media="all"/>
+    <link rel="stylesheet" href="../../css/style.css?1557918744309" media="all"/>
+    <link rel="stylesheet" href="../../css/publisering.css?1557918744309" media="all"/>
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1557918744309" media="all"/>
 
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <!-- never cache patterns -->
@@ -17,8 +17,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1557732905776" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1557732905776" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1557918744309" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1557918744309" media="all" />
 
     <!-- End Pattern Lab -->
 
@@ -131,10 +131,10 @@
             }(grunticon, this)
         }();
 
-        grunticon(["../../images/icons/icons.data.svg.css?1557732905776", "../../images/icons/icons.data.png.css?1557732905776", "../../images/icons/icons.fallback.css?1557732905776"], grunticon.svgLoadedCallback);
+        grunticon(["../../images/icons/icons.data.svg.css?1557918744309", "../../images/icons/icons.data.png.css?1557918744309", "../../images/icons/icons.fallback.css?1557918744309"], grunticon.svgLoadedCallback);
     </script>
     <noscript>
-        <link href="../../images/icons/icons.fallback.css?1557732905776" rel="stylesheet">
+        <link href="../../images/icons/icons.fallback.css?1557918744309" rel="stylesheet">
     </noscript>
 
 </head>
@@ -147,25 +147,81 @@
             <span class="arrow-icon"></span>
         </a>
     </h2>
-    <div style="display: block;">
+    <div style="...">
+    <div class="notice notice--blue notice--small mtl mbm">
+        <div class="notice__content mbs">
+            <span class="icon-notice grunt-icon" data-grunticon-embed></span>
+            
+            Infoboks satt frem til 09.06.2019
+        </div>
+        <div class="notice__edit">
+            <a href="#" title="Slett varnselboks" class="button button--remove mbn mlml">Slett</a>
+            <a href="#" class="notice__edit--link">Endre</a>
+        </div>
+    </div>
+
+<!--
+
+OBS:
+Thymeleaf klarer ikke data-grunticon-embed
+
+Netaxept bruker thymeleaf. Der har vi brukt notice-boksene uten dette.
+
+****
+
+Notis-boksene trenger data-grunticon-embed hvis:
+- icon-warning--circle
+- icon-warning--triangle (mobil)
+
+
+-->
+
+    <div class="notice notice--red notice--small mtl mbm">
+        <div class="notice__content mbs">
+            <span class="icon-warning--circle grunt-icon" data-grunticon-embed></span>
+            
+            Varselboks satt frem til 09.06.2019
+        </div>
+        <div class="notice__edit">
+            <a href="#" title="Slett varnselboks" class="button button--remove mbn mlml">Slett</a>
+            <a href="#" class="notice__edit--link">Endre</a>
+        </div>
+    </div>
+
+<!--
+
+OBS:
+Thymeleaf klarer ikke data-grunticon-embed
+
+Netaxept bruker thymeleaf. Der har vi brukt notice-boksene uten dette.
+
+****
+
+Notis-boksene trenger data-grunticon-embed hvis:
+- icon-warning--circle
+- icon-warning--triangle (mobil)
+
+
+-->
+
         <button class="button button--fullwidth mrm mbm">
             <span class="button--icon--center">
                 <span class="icon-notice grunt-icon grunt-icon--24 grunt-icon--link_color"></span>
                 Legg til infoboks
             </span>
         </button>
-
         <button class="button button--danger button--fullwidth mrm mbn">
             <span class="button--icon--center">
-                <span class="icon-warning--triangle grunt-icon--24--32 grunt-icon grunt-icon--brand_danger" data-grunticon-embed></span>
+                <span class="icon-warning--circle grunt-icon--24--32 grunt-icon grunt-icon--brand_danger" data-grunticon-embed></span>
                 Legg til varselboks
             </span>
         </button>
     </div>
-</div>  
+</div>
+  
   <!--DO NOT REMOVE-->
   <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
-  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"publisering"},"patternExtension":"mustache","patternName":"Rediger Accordion Varsel","patternPartial":"molecules-rediger-accordion-varsel","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-notis","lineagePath":"../../patterns/01-molecules-03-bokser-01-notis/01-molecules-03-bokser-01-notis.rendered.html"}],"lineage":[{"lineagePattern":"molecules-notis","lineagePath":"../../patterns/01-molecules-03-bokser-01-notis/01-molecules-03-bokser-01-notis.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-rediger-ibh-artikkel","lineagePath":"../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html"}],"lineageR":[{"lineagePattern":"templates-rediger-ibh-artikkel","lineagePath":"../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"publisering"},"patternExtension":"mustache","patternName":"Rediger Accordion Varsel","patternPartial":"molecules-rediger-accordion-varsel","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 </script>
 
 <script>
@@ -201,10 +257,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1557732905776">
+<script id="pl-js-polyfill-insert-1557918744309">
   (function() {
     if (self != top) {
-      var cb = '1557732905776';
+      var cb = '1557918744309';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -214,10 +270,10 @@
   })();
 </script>
 
-<script id="pl-js-insert-1557732905776">
+<script id="pl-js-insert-1557918744309">
   (function() {
     if (self != top) {
-      var cb = '1557732905776';
+      var cb = '1557918744309';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

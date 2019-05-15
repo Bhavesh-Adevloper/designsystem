@@ -196,24 +196,6 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     <input class="input--title mbxxl" value="Ny innbyggerhjelp" aria-labelledby="page_title">
 
 
-        <h2 class="helpers_header mbs" id="page_title">Info- og varselboks</h2>
-        <div class="mbl">
-            <button class="button button--fullwidth mrm mbm">
-                    <span class="button--icon--center">
-                        <span class="icon-notice grunt-icon grunt-icon--24 grunt-icon--link_color"></span>
-                        Legg til infoboks
-                    </span>
-            </button>
-
-            <button class="button button--danger button--fullwidth mrm mbn">
-                    <span class="button--icon--center">
-                        <span class="icon-warning--triangle grunt-icon--24--32 grunt-icon grunt-icon--brand_danger" data-grunticon-embed></span>
-                        Legg til varselboks
-                    </span>
-            </button>
-        </div>
-
-
 
 
 
@@ -469,6 +451,46 @@ https://github.com/pattern-lab/patternlab-php/issues/304
     
 </div>
 
+                    <div class="mbxxl" xmlns="http://www.w3.org/1999/html">
+    <h2 class="sidebar-header sidebar-header--open mbm js_sidebar-accordion">
+        <a href="#" class="sidebar-header__toggle">
+            Info- og varselboks
+            <span class="arrow-icon"></span>
+        </a>
+    </h2>
+    <div style="...">
+    <div class="notice notice--blue notice--small mtl mbm">
+        <div class="notice__content mbs">
+            <span class="icon-notice grunt-icon" data-grunticon-embed></span>
+            
+            Infoboks satt frem til 09.06.2019
+        </div>
+        <div class="notice__edit">
+            <a href="#" title="Slett varnselboks" class="button button--remove mbn mlml">Slett</a>
+            <a href="#" class="notice__edit--link">Endre</a>
+        </div>
+    </div>
+
+<!--
+
+OBS:
+Thymeleaf klarer ikke data-grunticon-embed
+
+Netaxept bruker thymeleaf. Der har vi brukt notice-boksene uten dette.
+
+****
+
+Notis-boksene trenger data-grunticon-embed hvis:
+- icon-warning--circle
+- icon-warning--triangle (mobil)
+
+
+-->
+
+    </div>
+</div>
+
+
                     <div class="mbxxl">
     <h2 class="sidebar-header sidebar-header--open mbm js_sidebar-accordion">
         <a href="#" class="sidebar-header__toggle">
@@ -497,14 +519,14 @@ https://github.com/pattern-lab/patternlab-php/issues/304
             <h3 class="helpers_header mbs">Valgt kategori</h3>
             <div class="category-selector__flex">
                 Barnehageplass
-                <a href="#">Endre</a>
+                <a href="#" class="mrm">Endre</a>
             </div>
         
             <div class="mbl"></div>
         
             <div class="category-selector__flex">
                 <h3 class="helpers_header mbs">Velg ny kategori</h3>
-                <a href="#">Avbryt</a>
+                <a href="#" class="mrm">Avbryt</a>
             </div>
             <ul>
                 <li><span>Barn og familie</span>
