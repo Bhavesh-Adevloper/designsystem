@@ -2,9 +2,16 @@
 {{> organisms-brodsmuler }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
 
-    <div class="mbxl">
-        {{> molecules-sideoverskrift-h1(sidetittel: "{{ sidetittel }}") }}
-    </div>
+    {{# panel }}
+        <div class="panel_container">
+            {{> molecules-panel }}
+        </div>
+    {{/ panel }}
+    {{> molecules-sideoverskrift-h1:mbxl }}
+
+    {{# actionLine }}
+        {{> molecules-action-line }}
+    {{/ actionLine }}
 
     <div class="row">
         {{# tabs }}
@@ -12,6 +19,7 @@
                 {{> molecules-tabs }}
             </div>
         {{/ tabs }}
+        {{^ noFilter }}
         <div class="col_md_12 col_lg_4">
 
             {{# searchFilter }}
@@ -20,8 +28,9 @@
 
             {{> molecules-sokefilter-avkrysningsbokser-avansert:mbl }}
         </div>
+        {{/ noFilter }}
 
-        <div class="col_md_12 col_lg_8">
+        <div class="col_md_12 col_lg_8 {{# noFilter }}float_change{{/noFilter}}">
 
             {{# antallOverskrift }}
                 {{> molecules-moduloverskrift-h2-med-feillenke:mbml }}

@@ -1,0 +1,51 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    {{# sideoverskriftMedLenke }}
+        <div class="page_header_container_with_org_menu">
+            {{> molecules-sideoverskrift-med-lenke }}
+        </div>
+    {{/ sideoverskriftMedLenke }}
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+
+            {{> molecules-org-meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+            
+            <div class="rssicon_floatRight">
+                <a href="" type="application/rss+xml" rel="alternate" title="Abonner med RSS">RSS - abonner</a>
+            </div>
+            
+            <div class="ece_module_list mbj">
+                <h1 class="module_header">{{ modulTittel }}</h1>
+                
+               <div class="vannmaal">
+    
+    <ul> 
+       <li class="bade_kvalitet">          
+            <span class="bade_attributt">Vannkvalitet: </span>
+            <span class="bade_verdi">Bra</span>
+           <span class="bade_tidspkt">Sist målt: 25. mai</span>
+           
+        </li> 
+            
+       <li class="bade_temperatur">   
+       
+           <span class="bade_attributt">Sjøtemperatur:</span>           
+           <span class="bade_verdi">6.8°C</span> 
+           <span class="bade_tidspkt">Sist målt: 2. juni klokken 12:45</span>        
+               
+        </li>
+    </ul></div>
+              
+            </div>
+
+
+        </div>
+    </div>
+</main>
+{{> organisms-footer }}

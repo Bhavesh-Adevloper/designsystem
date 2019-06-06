@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1557918748292,
+  "timestamp": 1559819075263,
   "graph": {
     "options": {
       "directed": true,
@@ -272,8 +272,8 @@
         "v": "00-atoms/20-skjema-element/08-tekstfelt.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-15-skjema-kontaktskjema-med-captcha/01-molecules-15-skjema-kontaktskjema-med-captcha.rendered.html",
-          "lineagePattern": "molecules-kontaktskjema-med-captcha"
+          "lineagePath": "../../patterns/01-molecules-publisering-37-rediger-accordion-kunngjoringsdata/01-molecules-publisering-37-rediger-accordion-kunngjoringsdata.rendered.html",
+          "lineagePattern": "molecules-rediger-accordion-kunngjoringsdata"
         }
       },
       {
@@ -302,8 +302,8 @@
         "v": "00-atoms/20-skjema-element/14-radioknapp.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-14-sok-og-filtrering-sokefilter-avkrysningsbokser-avansert/01-molecules-14-sok-og-filtrering-sokefilter-avkrysningsbokser-avansert.rendered.html",
-          "lineagePattern": "molecules-sokefilter-avkrysningsbokser-avansert"
+          "lineagePath": "../../patterns/01-molecules-publisering-37-rediger-accordion-kunngjoringsdata/01-molecules-publisering-37-rediger-accordion-kunngjoringsdata.rendered.html",
+          "lineagePattern": "molecules-rediger-accordion-kunngjoringsdata"
         }
       },
       {
@@ -318,8 +318,8 @@
         "v": "00-atoms/20-skjema-element/18-datofelt.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/01-molecules-publisering-32-rediger-accordion-dato/01-molecules-publisering-32-rediger-accordion-dato.rendered.html",
-          "lineagePattern": "molecules-rediger-accordion-dato"
+          "lineagePath": "../../patterns/01-molecules-publisering-37-rediger-accordion-kunngjoringsdata/01-molecules-publisering-37-rediger-accordion-kunngjoringsdata.rendered.html",
+          "lineagePattern": "molecules-rediger-accordion-kunngjoringsdata"
         }
       },
       {
@@ -715,6 +715,12 @@
         }
       },
       {
+        "v": "01-molecules/lister/80-badevann.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "01-molecules/navigasjon/hva-skjer-meny.mustache",
         "value": {
           "compileState": "clean",
@@ -974,6 +980,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-70-Publisering-02-rediger-ibh-artikkel/03-templates-70-Publisering-02-rediger-ibh-artikkel.rendered.html",
           "lineagePattern": "templates-rediger-ibh-artikkel"
+        }
+      },
+      {
+        "v": "01-molecules/publisering/37-rediger-accordion-kunngjoringsdata.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-01-rediger-sne-artikkel/03-templates-70-Publisering-01-rediger-sne-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-sne-artikkel"
         }
       },
       {
@@ -1575,6 +1589,12 @@
         }
       },
       {
+        "v": "03-templates/20-Listesider/badevann.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "03-templates/20-Listesider/innbyggerhjelpen.mustache",
         "value": {
           "compileState": "clean",
@@ -1602,8 +1622,8 @@
         "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-fysio-liste/04-pages-30-mikrotjenester-fysio-liste.rendered.html",
-          "lineagePattern": "pages-fysio-liste"
+          "lineagePath": "../../patterns/04-pages-73-Pub-kunngjoring-02-rediger-kunngjoringer/04-pages-73-Pub-kunngjoring-02-rediger-kunngjoringer.rendered.html",
+          "lineagePattern": "pages-rediger-kunngjoringer"
         }
       },
       {
@@ -1674,8 +1694,8 @@
         "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-71-Pub-artikkel-11-artikkel-utgatt/04-pages-71-Pub-artikkel-11-artikkel-utgatt.rendered.html",
-          "lineagePattern": "pages-artikkel-utgatt"
+          "lineagePath": "../../patterns/04-pages-73-Pub-kunngjoring-01-kunngjoring-kladd/04-pages-73-Pub-kunngjoring-01-kunngjoring-kladd.rendered.html",
+          "lineagePattern": "pages-kunngjoring-kladd"
         }
       },
       {
@@ -2347,6 +2367,18 @@
         }
       },
       {
+        "v": "04-pages/73-Pub-kunngjoring/01-kunngjoring-kladd.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/73-Pub-kunngjoring/02-rediger-kunngjoringer.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "04-pages/99-diverse/01-sokeresultat.mustache",
         "value": {
           "compileState": "clean"
@@ -2360,6 +2392,12 @@
       },
       {
         "v": "04-pages/99-diverse/04-503.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/99-diverse/100-badeplass.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -2539,6 +2577,31 @@
       {
         "v": "01-molecules/publisering/36-rediger-accordion-varsel.mustache",
         "w": "01-molecules/03-bokser/01-notis.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/publisering/37-rediger-accordion-kunngjoringsdata.mustache",
+        "w": "00-atoms/20-skjema-element/14-radioknapp.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/publisering/37-rediger-accordion-kunngjoringsdata.mustache",
+        "w": "00-atoms/20-skjema-element/15-nedtrekksliste.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/publisering/37-rediger-accordion-kunngjoringsdata.mustache",
+        "w": "00-atoms/20-skjema-element/08-tekstfelt.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/publisering/37-rediger-accordion-kunngjoringsdata.mustache",
+        "w": "00-atoms/20-skjema-element/18-datofelt.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/publisering/37-rediger-accordion-kunngjoringsdata.mustache",
+        "w": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
         "value": {}
       },
       {
@@ -4247,6 +4310,31 @@
         "value": {}
       },
       {
+        "v": "03-templates/20-Listesider/badevann.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/badevann.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/badevann.mustache",
+        "w": "01-molecules/00-overskrifter/10-sideoverskrift-med-lenke.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/badevann.mustache",
+        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/badevann.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
         "v": "03-templates/20-Listesider/innbyggerhjelpen.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
@@ -4403,7 +4491,17 @@
       },
       {
         "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "w": "01-molecules/publisering/80-panel.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
         "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "w": "01-molecules/publisering/01-action-line.mustache",
         "value": {}
       },
       {
@@ -4784,6 +4882,11 @@
       {
         "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "01-molecules/publisering/33-rediger-accordion-plassering.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
+        "w": "01-molecules/publisering/37-rediger-accordion-kunngjoringsdata.mustache",
         "value": {}
       },
       {
@@ -6392,6 +6495,16 @@
         "value": {}
       },
       {
+        "v": "04-pages/73-Pub-kunngjoring/01-kunngjoring-kladd.mustache",
+        "w": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/73-Pub-kunngjoring/02-rediger-kunngjoringer.mustache",
+        "w": "03-templates/20-Listesider/listeside-med-lenkebokser.mustache",
+        "value": {}
+      },
+      {
         "v": "04-pages/99-diverse/01-sokeresultat.mustache",
         "w": "03-templates/20-Listesider/sokeresultat.mustache",
         "value": {}
@@ -6414,6 +6527,36 @@
       {
         "v": "04-pages/99-diverse/04-503.mustache",
         "w": "02-organisms/00-global/11-footer-503.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/100-badeplass.mustache",
+        "w": "02-organisms/00-global/_00-header-varianter.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/100-badeplass.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/100-badeplass.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/100-badeplass.mustache",
+        "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/100-badeplass.mustache",
+        "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/99-diverse/100-badeplass.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {

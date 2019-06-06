@@ -1,0 +1,58 @@
+<div class="mbxxl" xmlns="http://www.w3.org/1999/html">
+    <h2 class="sidebar-header sidebar-header--open mbm js_sidebar-accordion">
+        <a href="#" class="sidebar-header__toggle">
+            Kunngjøringsdata
+            <span class="arrow-icon"></span>
+        </a>
+    </h2>
+    <div style="...">
+
+        {{#type}}
+            <div class="form-element">
+                {{#etikett}}
+                    <label class="form-element__label {{#skjultEtikett}} screen-reader-text{{/skjultEtikett}} mbs"> {{etikett}} </label> {{/etikett}}
+                {{> atoms-radioknapp }}
+            </div>
+        {{/type}}
+
+        {{#kunngjoringsstatus}}
+            {{> atoms-nedtrekksliste:mbl }}
+        {{/kunngjoringsstatus}}
+
+        {{#saksnummer}}
+            {{> atoms-tekstfelt:mbm }}
+        {{/saksnummer}}
+
+        {{#arealplanId}}
+            {{> atoms-tekstfelt:mbl }}
+        {{/arealplanId}}
+
+        {{# annonseringsdato }}
+            {{> atoms-datofelt:mbm }}
+        {{/ annonseringsdato }}
+
+        {{# merknadsfrist }}
+            {{> atoms-datofelt:mbm }}
+        {{/ merknadsfrist }}
+
+        {{# klagefrist }}
+            {{> atoms-datofelt:mbm }}
+        {{/ klagefrist }}
+
+        {{#kobleSkjema}}
+            <div class="form-element mtl">
+                {{#etikett}}
+                    <label class="form-element__label {{#skjultEtikett}} screen-reader-text{{/skjultEtikett}}"> {{etikett}} </label> {{/etikett}}
+                {{> atoms-avkryssingsboks }}
+            </div>
+        {{/kobleSkjema}}
+
+        {{#bydel}}
+            <div class="form-element">
+                {{#etikett}}
+                    <label class="form-element__label {{#skjultEtikett}} screen-reader-text{{/skjultEtikett}}"> {{etikett}} </label> {{/etikett}}
+                {{> atoms-avkryssingsboks }}
+            </div>
+        {{/bydel}}
+    </div>
+</div>
