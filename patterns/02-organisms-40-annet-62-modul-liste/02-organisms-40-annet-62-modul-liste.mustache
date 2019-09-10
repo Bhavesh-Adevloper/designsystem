@@ -1,4 +1,12 @@
 <ul class="module_list_container {{ styleModifier }}">
+    {{#redigeringsmodus}}
+        <li class="add_new">
+            <a href="#">
+                <span class="plus-arrow-icon"></span>
+                {{verb}} {{type}}
+            </a>
+        </li>
+    {{/redigeringsmodus}}
     {{# modulListe }}
         <li>
             <div class="module_container module_equal_heights">
@@ -10,6 +18,7 @@
                 </div>
                 {{/ imgLandscape }}
                 <div class="module_content_container">
+                    <div class="module_content_top-bar">
                     <h2 class="module_content_title">
                         <a href="{{ link.pages-luftkvalitet }}">
                             <span class="read_more_link read_more_link--22">
@@ -17,6 +26,13 @@
                             </span>
                         </a>
                     </h2>
+                    {{#redigeringsmodus}}
+                        <div class="module_content_edit">
+                            <a class="edit-button" href=""><span class="icon-trash grunt-icon grunt-icon--32"></span><span class="screen-reader-text">Slett {{type}}</span></a>
+                            <a class="edit-button" href="#"><span class="icon-edit--small grunt-icon grunt-icon--32"></span><span class="screen-reader-text">Rediger {{type}}</span></a>
+                        </div>
+                    {{/redigeringsmodus}}
+                    </div>
                     <div class="module_content_excerpt">
                         <p>{{ ingress }}</p>
                     </div>

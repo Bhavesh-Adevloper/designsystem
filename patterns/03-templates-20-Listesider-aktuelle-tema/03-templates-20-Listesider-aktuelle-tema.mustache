@@ -1,22 +1,24 @@
 {{> organisms-header-varianter }}
 {{> organisms-brodsmuler }}
 <main id="innhold" tabindex="-1" class="smMa desktop_centered">
-    
+
     <div class="mbxl">
         {{> molecules-sideoverskrift-h1 }}
     </div>
-    
+
     <div class="row">
         <div class="col_md_12 col_lg_8">
 
-            {{> atoms-filterboks:no_max_width|mbl }}
-            
+            {{^redigeringsmodus}}
+                {{> atoms-filterboks:no_max_width|mbl }}
+            {{/redigeringsmodus}}
+
             <p class="js_empty_filter_search no_results" style="display: none;">
                 Beklager, ingen treff
             </p>
-            
+
             {{> organisms-modul-liste:mbj|js_filter_search_result_list }}
-            
+
         </div>
     </div>
 

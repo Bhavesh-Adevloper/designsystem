@@ -6,12 +6,14 @@
         </a>
     </h2>
     <div style="display: block;">
+        {{#sideoversikt}}
         <div class="form-element__helptext mbs">
             Artikkelen er {{ status-hjelpetekst }}. <a href="{{ link.pages-sidehistorikk }}">Se sidehistorikk</a>
         </div>
+        {{/sideoversikt}}
         {{# avpubliserKnapp }}
             <button class="button mrm mbn">Avpubliser</button>
         {{/ avpubliserKnapp }}
-        <button class="button button--danger mbn">Slett artikkel</button>
+        <button class="button button--danger mbn">{{sletteTekst}}</button>
     </div>
 </div>
