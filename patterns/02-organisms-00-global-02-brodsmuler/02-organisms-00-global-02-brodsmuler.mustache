@@ -2,7 +2,8 @@
 <div class="smMa desktop_centered bc_container js_breadcrumbs clearfix">
     
     {{> atoms-redigeringsmodusknapp }}
-    
+
+    {{^ breadcrumbs.skjul }}
     <div class="bc_label mobile">Gå tilbake til:</div>
     <div class="bc_label desktop">Du er her:</div>
     <div class="bc_list_container">
@@ -22,5 +23,6 @@
             
         </ul>
     </div>
+    {{/breadcrumbs.skjul }}
 </div>
 {{/ breadcrumbs }}

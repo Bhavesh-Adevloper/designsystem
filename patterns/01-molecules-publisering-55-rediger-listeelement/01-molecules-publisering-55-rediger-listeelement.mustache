@@ -4,21 +4,22 @@
         <div class="editor-article-list__menu-bar mbml">
             <span class="editor-article-list__title"><span class="screen-reader-text"> Artikkeltype </span>PEKER</span>
             <div class="editor-article-list__menu">
-                <a href="#" class="editor-article-list__menu-button"> Endre <span class="arrow-icon" onclick=""></span> </a>
+                <a href="#" class="editor-article-list__menu-button"> Endre <span class="arrow-icon" onclick=""></span>
+                </a>
                 <ul class="editor-article-list__menu-list">
                     <li class="editor-article-list__menu-list-item ">
-                      <a href="#js_openModalRedigerPeker" class="js_openModal">Rediger</a>
+                        <a href="#js_openModalRedigerPeker" class="js_openModal">Rediger</a>
                     </li>
                     <li class="editor-article-list__menu-list-item editor-article-list__menu-list-item--danger">
-                      <a href="#js_openModalSlettPeker" class="js_openModal" href="">Slett peker</a>
+                        <a href="#js_openModalSlettPeker" class="js_openModal" href="">Slett peker</a>
                     </li>
                 </ul>
             </div>
         </div>
     {{/ erPeker }}
-    
+
     <div class="ece_module_container{{# imgLandscape }} has_image{{/ imgLandscape }} {{ styleModifier }}">
-        
+
         {{# imgLandscape }}
             <div class="ece_module_image_container">
                 <a href="{{ url }}" title="{{ tittel }}" class="ece_module_image_link">
@@ -26,9 +27,9 @@
                 </a>
             </div>
         {{/ imgLandscape }}
-        
+
         <div class="ece_module_content_container">
-            
+
             <h2 class="ece_module_title">
                 <a href="{{ url }}">
                     <span class="read_more_link read_more_link--24">
@@ -36,48 +37,57 @@
                     </span>
                 </a>
             </h2>
-        
+
             {{# ingress }}
-            <div class="ece_module_excerpt">
-                <p>		
-                    {{ ingress }}
-                </p>
-            </div>
+                <div class="ece_module_excerpt">
+                    <p>
+                        {{ ingress }}
+                    </p>
+                </div>
             {{/ ingress }}
-        
+
             {{# meta }}
-            <div class="ece_module_meta">
-                <p>
-                    {{# lesmertekst }}
-                        <a href="{{ url }}" class="read_more_link">{{ lesmertekst }}</a>
-                    {{/ lesmertekst }}
+                <div class="ece_module_meta">
+                    <p>
+                        {{# lesmertekst }}
+                            <a href="{{ url }}" class="read_more_link">{{ lesmertekst }}</a>
+                        {{/ lesmertekst }}
 
-                    {{# seksjonslenke }}
-                        <a href="{{ url }}" class="section_link read_more_link">{{ seksjonslenke }}</a>
-                    {{/ seksjonslenke }}
+                        {{# seksjonslenke }}
+                            <a href="{{ url }}" class="section_link read_more_link">{{ seksjonslenke }}</a>
+                        {{/ seksjonslenke }}
 
-                    {{# dato }}
-                        <span class="date">({{ dato }})</span>
-                    {{/ dato }}
-                </p>
-            </div>
+                        {{# dato }}
+                            <span class="date">({{ dato }})</span>
+                        {{/ dato }}
+                    </p>
+                </div>
             {{/ meta }}
-            
+
         </div>
     </div>
-    
+
     <div class="editor-article-list__sort mbml">
-        Flytt artikkelen:
-        {{# flyttOpp }}
-        <a class="editor-article-list__sort__link" href="#">
-          <span class="icon-arrow-ordering grunt-icon grunt-icon--32"></span>Opp
-        </a>
-        {{/ flyttOpp }}
-        {{# flyttNed }}
-        <a class="editor-article-list__sort__link" href="#">
-          <span class="icon-arrow-ordering icon-arrow-ordering--down grunt-icon grunt-icon--32"></span>Ned
-        </a>
-        {{/ flyttNed }}
+        <div>
+            Flytt artikkelen:
+            {{# flyttOpp }}
+                <a class="editor-article-list__sort__link" href="#">
+                    <span class="icon-arrow-ordering grunt-icon grunt-icon--32"></span>Opp
+                </a>
+            {{/ flyttOpp }}
+            {{# flyttNed }}
+                <a class="editor-article-list__sort__link" href="#">
+                    <span class="icon-arrow-ordering icon-arrow-ordering--down grunt-icon grunt-icon--32"></span>Ned
+                </a>
+            {{/ flyttNed }}
+        </div>
+        {{# visPaaForsiden}}
+            <div class="editor-article-list__sort__show-on-frontpage">
+                <div class="form-element">
+                    {{> atoms-avkryssingsboks }}
+                </div>
+            </div>
+        {{/ visPaaForsiden}}
     </div>
 
 </div>

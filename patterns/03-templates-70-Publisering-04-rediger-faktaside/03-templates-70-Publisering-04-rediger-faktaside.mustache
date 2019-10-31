@@ -1,0 +1,36 @@
+{{> organisms-header-varianter }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+    
+    {{# actionLine }}
+    {{> molecules-action-line }}
+    {{/ actionLine }}
+
+    <div class="row">
+
+        <div class="col_md_12 col_lg_8">
+
+            {{> molecules-rediger-sidetittel }}
+
+            {{> molecules-rediger-ingress:mbxxl }}
+
+        </div>
+
+        {{# redigeringSidebar }}
+            <div id="js_sidebar-accordion-container" class="col_md_12 col_lg_4">
+
+                {{# redigerAccordionStatus }}
+                    {{> molecules-rediger-accordion-status }}
+                {{/ redigerAccordionStatus }}
+
+                {{# redigerAccordionSidetype }}
+                    {{> molecules-rediger-accordion-sidetype }}
+                {{/ redigerAccordionSidetype }}
+
+            </div>
+        {{/ redigeringSidebar }}
+
+    </div>
+    
+</main>
+{{> organisms-footer }}
