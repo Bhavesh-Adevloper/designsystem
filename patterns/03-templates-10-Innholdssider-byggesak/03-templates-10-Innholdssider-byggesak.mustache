@@ -1,0 +1,25 @@
+{{> organisms-header-4 }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+    {{> molecules-sideoverskrift-h1(sidetittel: "Tittel på byggesak") }}
+    <div class="row">
+        <div class="col_md_12 col_lg_8 mbm">
+            {{# saksinfo}}
+                {{> atoms-flex-tabell-grid }}
+            {{/ saksinfo }}
+            {{# saksgang }}
+                {{> atoms-flex-tabell }}
+            {{/saksgang}}
+            {{# saksdokumenter }}
+                {{> molecules-moduloverskrift-h2(tittel: "Saksdokumenter") }}
+                {{> molecules-trekkspill-med-tabell-og-indeks}}
+            {{/saksdokumenter}}
+        </div>
+        <div class="col_md_12 col_lg_4">
+            {{# tilbakemeldingsboks }}
+                {{> molecules-tilbakemelding }}
+            {{/tilbakemeldingsboks}}
+        </div>
+    </div>
+</main>
+{{> organisms-footer }}

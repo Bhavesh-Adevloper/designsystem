@@ -1,0 +1,47 @@
+<div id="js_accordion_container" class="accordion">
+    {{# accordionItem }}
+        <div class="accordion__item js_accordion_item">
+            <h3 class="accordion__item__header accordion__item__header--margin accordion__padding-bottom">
+                <a class="js_toggle_accordion_link" href="#">
+                    <span class="margin-id">{{{ id }}}</span>
+                    <span class="content">{{{ accordionTittel }}}</span>
+                    <span class="arrow-icon"></span>
+                </a>
+            </h3>
+            <div class="accordion__item__content accordion__item__content--decoration-list mbn">
+                {{# accordionItems }}
+                    <dl>
+                        {{#publisert}}
+                            <dd class="mbm">
+                                <a href="{{ url }}" class="file-link" target="_blank">
+                                    <span class="file-icon {{ fileType }}"></span>
+                                    <span class="file-title">{{{ tittel }}}</span>
+                                </a>
+                            </dd>
+                        {{/ publisert }}
+                        {{# ikkePublisert }}
+                            <dd class="mbm">
+                                <div class="file-link">
+                                    <span class="file-icon skjema"></span>
+                                    <span class="file-title">{{{ tittel }}}</span>
+                                </div>
+                            </dd>
+                        {{/ ikkePublisert}}
+                        {{#ingenFil}}
+                            <dd class="mbm">
+                                <span class="file-title">{{{ ingenFil }}}</span>
+                            </dd>
+                        {{/ingenFil}}
+                    </dl>
+                    {{# ikkePublisert }}
+                        <div class="notice__edit">
+                            <a href="#" class="notice__edit--link" target="_blank">
+                                Bestill innsyn
+                            </a>
+                        </div>
+                    {{/ikkePublisert}}
+                {{/ accordionItems }}
+            </div>
+        </div>
+    {{/ accordionItem }}
+</div>

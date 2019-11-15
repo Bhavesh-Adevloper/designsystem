@@ -8,7 +8,11 @@
 
         {{# sok }}
             <div class="col_md_12 col_lg_6 clear_left {{styleModifier }} mbm">
-                 {{> molecules-sokefilter }}
+                {{# beskrivelse }}
+                    {{{ beskrivelse }}}
+                {{/beskrivelse}}
+
+                {{> molecules-sokefilter }}
             </div>
         {{/ sok }}
 
@@ -32,8 +36,12 @@
             {{/ gammelLoesningInfo }}
         </div>
         {{/table}}
-        
-    </div>
 
+        {{# tilbakemeldingsboks }}
+            <div class="{{tableModifier}}">
+                {{> molecules-tilbakemelding }}
+            </div>
+        {{/tilbakemeldingsboks}}
+    </div>
 </main>
 {{> organisms-footer }}

@@ -1,17 +1,23 @@
 <div class="linkbox {{ styleModifier }}">
+    {{# redigeringsmodus }}
+        {{# draOgFlytt }}
+        <div class="linkbox__option linkbox__option--dragdrop">
+            <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
+        </div>
+        {{/ draOgFlytt }}
+        {{# rediger }}
+            <div class="linkbox__option linkbox__option--edit">
+                <a href="#">
+                    <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
+                    <span class="screen-reader-text">Rediger navigasjonsside</span>
+                </a>
+            </div>
+        {{/ rediger }}
+    {{/ redigeringsmodus }}
     <h2 class="linkbox__header">
         <a href="{{ url }}" class="linkbox__header-link">
             <span class="arrow-icon"></span><span class="arrow-icon--2"></span>{{ tittel }}
         </a>
-        {{#redigeringsmodus}}
-            <div class="linkbox__header-edit">
-                <a class="edit-button" href="#">
-                    <span class="icon-edit--small grunt-icon grunt-icon--32"></span>
-                    <span class="screen-reader-text">Rediger navigasjonsside</span>
-                </a>
-                <span class="icon-drag-drop grunt-icon grunt-icon--32"></span>
-            </div>
-        {{/redigeringsmodus}}
     </h2>
     <div class="linkbox__content">
         {{{ ingress }}}

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1572515349263,
+  "timestamp": 1573828137745,
   "graph": {
     "options": {
       "directed": true,
@@ -162,6 +162,14 @@
         "v": "00-atoms/10-tabeller/10-flex-tabell-eksempler.mustache",
         "value": {
           "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/10-tabeller/11-flex-tabell-grid.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-10-Innholdssider-byggesak/03-templates-10-Innholdssider-byggesak.rendered.html",
+          "lineagePattern": "templates-byggesak"
         }
       },
       {
@@ -810,6 +818,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-10-Innholdssider-innbyggerhjelp/03-templates-10-Innholdssider-innbyggerhjelp.rendered.html",
           "lineagePattern": "templates-innbyggerhjelp"
+        }
+      },
+      {
+        "v": "01-molecules/navigasjon/trekkspill-med-tabell-og-indeks.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-10-Innholdssider-byggesak/03-templates-10-Innholdssider-byggesak.rendered.html",
+          "lineagePattern": "templates-byggesak"
         }
       },
       {
@@ -1489,6 +1505,14 @@
         }
       },
       {
+        "v": "03-templates/10-Innholdssider/byggesak.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-IPOB-sak/04-pages-30-mikrotjenester-IPOB-sak.rendered.html",
+          "lineagePattern": "pages-IPOB-sak"
+        }
+      },
+      {
         "v": "03-templates/10-Innholdssider/innbyggerhjelp.mustache",
         "value": {
           "compileState": "clean",
@@ -2158,6 +2182,18 @@
       },
       {
         "v": "04-pages/20-navigasjon/33-alle-skoler.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/IPOB-sak.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/IPOB-saker.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -3916,6 +3952,51 @@
         "value": {}
       },
       {
+        "v": "03-templates/10-Innholdssider/byggesak.mustache",
+        "w": "02-organisms/00-global/_04-header-4.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/byggesak.mustache",
+        "w": "02-organisms/00-global/02-brodsmuler.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/byggesak.mustache",
+        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/byggesak.mustache",
+        "w": "00-atoms/10-tabeller/11-flex-tabell-grid.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/byggesak.mustache",
+        "w": "00-atoms/10-tabeller/09-flex-tabell.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/byggesak.mustache",
+        "w": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/byggesak.mustache",
+        "w": "01-molecules/navigasjon/trekkspill-med-tabell-og-indeks.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/byggesak.mustache",
+        "w": "01-molecules/03-bokser/50-tilbakemelding.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/byggesak.mustache",
+        "w": "02-organisms/00-global/01-footer.mustache",
+        "value": {}
+      },
+      {
         "v": "03-templates/10-Innholdssider/innbyggerhjelp.mustache",
         "w": "02-organisms/00-global/_00-header-varianter.mustache",
         "value": {}
@@ -4208,6 +4289,11 @@
       {
         "v": "03-templates/20-Listesider/01-listeside-sas.mustache",
         "w": "01-molecules/vis-flere/20-last-inn-flere.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/01-listeside-sas.mustache",
+        "w": "01-molecules/03-bokser/50-tilbakemelding.mustache",
         "value": {}
       },
       {
@@ -6113,6 +6199,16 @@
       {
         "v": "04-pages/20-navigasjon/33-alle-skoler.mustache",
         "w": "03-templates/20-Listesider/listeside-med-avansert-filtrering.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/IPOB-sak.mustache",
+        "w": "03-templates/10-Innholdssider/byggesak.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/30-mikrotjenester/IPOB-saker.mustache",
+        "w": "03-templates/20-Listesider/01-listeside-sas.mustache",
         "value": {}
       },
       {
