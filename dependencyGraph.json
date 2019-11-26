@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1573828137745,
+  "timestamp": 1574761997176,
   "graph": {
     "options": {
       "directed": true,
@@ -446,6 +446,14 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-templates-01-Inngangssider-40-barnehage/03-templates-01-Inngangssider-40-barnehage.rendered.html",
           "lineagePattern": "templates-barnehage"
+        }
+      },
+      {
+        "v": "01-molecules/02-teasere/03-teaser-uten-ingress.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-01-Inngangssider-03-hva-skjer/03-templates-01-Inngangssider-03-hva-skjer.rendered.html",
+          "lineagePattern": "templates-hva-skjer"
         }
       },
       {
@@ -3089,6 +3097,11 @@
       {
         "v": "03-templates/01-Inngangssider/03-hva-skjer.mustache",
         "w": "01-molecules/02-teasere/01-teaser.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/01-Inngangssider/03-hva-skjer.mustache",
+        "w": "01-molecules/02-teasere/03-teaser-uten-ingress.mustache",
         "value": {}
       },
       {

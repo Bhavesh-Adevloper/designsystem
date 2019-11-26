@@ -1,0 +1,31 @@
+{{# patternInfo }}
+    <div class="module_box_style mbl">
+        <h2 class="mtn">Teaser</h2>
+        <p>Ny <i>pattern</i> som inneholder kun én lenke for både tittel óg bilde.</p>
+        <p><strong>Hvorfor?</strong><br>Når en lenke med en påfølgende ny lenke går til samme lenkemål (for eksempel et listebilde og en tilhørende tittel som går til samme artikkelside), resulterer dette i ekstra navigering og gjentakelse for brukere som benytter tastatur og skjermleser. Det kalles 'redundant links' og er irriterende.<p>
+        <p>Teaser skal etter hvert kunne erstatte <i>Escenic Teaser</i>.</p>
+    </div>
+{{/ patternInfo }}
+
+<div class="teaser {{ styleModifier }}">
+    <a href="{{ url }}" class="teaser__link">
+        {{# bilde }}
+            <div class="teaser__image-container">
+                <img src="{{ imgLandscape.src }}" alt="{{ imgLandscape.alt }}" class="teaser__image" />
+            </div>
+        {{/ bilde }}
+
+        <div class="teaser__content-container">
+            <h2 class="teaser__title">
+                <span class="read_more_link read_more_link--22">
+                    {{ tittel }}
+                </span>
+            </h2>
+        </div>
+    </a>
+    {{# testLenke }}
+        <p>
+            <a href="">Les mer (egen lenke eller noe annet)</a>
+        </p>
+    {{/ testLenke }}
+</div>
