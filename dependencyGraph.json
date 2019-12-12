@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1574761997176,
+  "timestamp": 1576139643185,
   "graph": {
     "options": {
       "directed": true,
@@ -1027,6 +1027,14 @@
         }
       },
       {
+        "v": "01-molecules/publisering/39-rediger-accordion-kopier.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-70-Publisering-01-rediger-sne-artikkel/03-templates-70-Publisering-01-rediger-sne-artikkel.rendered.html",
+          "lineagePattern": "templates-rediger-sne-artikkel"
+        }
+      },
+      {
         "v": "01-molecules/publisering/55-rediger-listeelement.mustache",
         "value": {
           "compileState": "clean",
@@ -1738,8 +1746,8 @@
         "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-73-Pub-kunngjoring-01-kunngjoring-kladd/04-pages-73-Pub-kunngjoring-01-kunngjoring-kladd.rendered.html",
-          "lineagePattern": "pages-kunngjoring-kladd"
+          "lineagePath": "../../patterns/04-pages-73-Pub-kunngjoring-01-kunngjoring-publisert/04-pages-73-Pub-kunngjoring-01-kunngjoring-publisert.rendered.html",
+          "lineagePattern": "pages-kunngjoring-publisert"
         }
       },
       {
@@ -2453,7 +2461,7 @@
         }
       },
       {
-        "v": "04-pages/73-Pub-kunngjoring/01-kunngjoring-kladd.mustache",
+        "v": "04-pages/73-Pub-kunngjoring/01-kunngjoring-publisert.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -2662,6 +2670,16 @@
       {
         "v": "01-molecules/publisering/32-rediger-accordion-dato.mustache",
         "w": "00-atoms/20-skjema-element/18-datofelt.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/publisering/32-rediger-accordion-dato.mustache",
+        "w": "00-atoms/20-skjema-element/02-hjelpetekst.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/publisering/32-rediger-accordion-dato.mustache",
+        "w": "00-atoms/20-skjema-element/13-avkryssingsboks.mustache",
         "value": {}
       },
       {
@@ -5081,6 +5099,11 @@
       },
       {
         "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
+        "w": "01-molecules/publisering/39-rediger-accordion-kopier.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "w": "01-molecules/publisering/37-rediger-accordion-kunngjoringsdata.mustache",
         "value": {}
       },
@@ -6800,7 +6823,7 @@
         "value": {}
       },
       {
-        "v": "04-pages/73-Pub-kunngjoring/01-kunngjoring-kladd.mustache",
+        "v": "04-pages/73-Pub-kunngjoring/01-kunngjoring-publisert.mustache",
         "w": "03-templates/70-Publisering/01-rediger-sne-artikkel.mustache",
         "value": {}
       },
