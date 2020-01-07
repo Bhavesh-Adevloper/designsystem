@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1576139643185,
+  "timestamp": 1578388216956,
   "graph": {
     "options": {
       "directed": true,
@@ -556,8 +556,8 @@
         "v": "01-molecules/03-bokser/50-tilbakemelding.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-30-mikrotjenester-POU-motekalender/04-pages-30-mikrotjenester-POU-motekalender.rendered.html",
-          "lineagePattern": "pages-POU-motekalender"
+          "lineagePath": "../../patterns/04-pages-71-Pub-artikkel-50-sne-artikkel/04-pages-71-Pub-artikkel-50-sne-artikkel.rendered.html",
+          "lineagePattern": "pages-sne-artikkel"
         }
       },
       {
@@ -1341,6 +1341,14 @@
         }
       },
       {
+        "v": "02-organisms/40-annet/63-escenic-modul-liste.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-01-Inngangssider-03-hva-skjer/03-templates-01-Inngangssider-03-hva-skjer.rendered.html",
+          "lineagePattern": "templates-hva-skjer"
+        }
+      },
+      {
         "v": "02-organisms/40-annet/64-modul-link-liste.mustache",
         "value": {
           "compileState": "clean",
@@ -1802,18 +1810,6 @@
       },
       {
         "v": "04-pages/01-hva-skjer/02-kultur-og-idrett.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/01-hva-skjer/03-hs-artikkel.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/01-hva-skjer/04-hs-uk-artikkel.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -2569,13 +2565,13 @@
         }
       },
       {
-        "v": "/home/stian/Workspace/Projects/BergenKommune/designsystem/source/_meta/_00-head.mustache",
+        "v": "/home/stian/workspace/bergenkommune/designsystem/source/_meta/_00-head.mustache",
         "value": {
           "compileState": null
         }
       },
       {
-        "v": "/home/stian/Workspace/Projects/BergenKommune/designsystem/source/_meta/_01-foot.mustache",
+        "v": "/home/stian/workspace/bergenkommune/designsystem/source/_meta/_01-foot.mustache",
         "value": {
           "compileState": null
         }
@@ -2998,6 +2994,11 @@
         "value": {}
       },
       {
+        "v": "02-organisms/40-annet/63-escenic-modul-liste.mustache",
+        "w": "01-molecules/02-teasere/05-escenic-teaser.mustache",
+        "value": {}
+      },
+      {
         "v": "02-organisms/40-annet/64-modul-link-liste.mustache",
         "w": "01-molecules/00-overskrifter/31-moduloverskrift-h2-med-lenke.mustache",
         "value": {}
@@ -3129,12 +3130,12 @@
       },
       {
         "v": "03-templates/01-Inngangssider/03-hva-skjer.mustache",
-        "w": "02-organisms/40-annet/62-modul-liste.mustache",
+        "w": "02-organisms/40-annet/63-escenic-modul-liste.mustache",
         "value": {}
       },
       {
         "v": "03-templates/01-Inngangssider/03-hva-skjer.mustache",
-        "w": "01-molecules/vis-flere/10-les-mer-modul.mustache",
+        "w": "01-molecules/vis-flere/20-last-inn-flere.mustache",
         "value": {}
       },
       {
@@ -3979,6 +3980,11 @@
       },
       {
         "v": "03-templates/10-Innholdssider/artikkel.mustache",
+        "w": "01-molecules/03-bokser/50-tilbakemelding.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/10-Innholdssider/artikkel.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -4485,6 +4491,11 @@
       {
         "v": "03-templates/20-Listesider/artikkelliste.mustache",
         "w": "01-molecules/vis-flere/10-les-mer-modul.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-templates/20-Listesider/artikkelliste.mustache",
+        "w": "01-molecules/03-bokser/50-tilbakemelding.mustache",
         "value": {}
       },
       {
@@ -5365,36 +5376,6 @@
       {
         "v": "04-pages/01-hva-skjer/02-kultur-og-idrett.mustache",
         "w": "03-templates/01-Inngangssider/03-hva-skjer.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/03-hs-artikkel.mustache",
-        "w": "02-organisms/00-global/_01-header-1.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/03-hs-artikkel.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/03-hs-artikkel.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/04-hs-uk-artikkel.mustache",
-        "w": "02-organisms/00-global/_01-header-1.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/04-hs-uk-artikkel.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/01-hva-skjer/04-hs-uk-artikkel.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
       {
@@ -6800,6 +6781,11 @@
       {
         "v": "04-pages/71-Pub-artikkel/50-sne-artikkel.mustache",
         "w": "01-molecules/navigasjon/org-meny.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-pages/71-Pub-artikkel/50-sne-artikkel.mustache",
+        "w": "01-molecules/03-bokser/50-tilbakemelding.mustache",
         "value": {}
       },
       {

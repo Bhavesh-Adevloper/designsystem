@@ -49,14 +49,15 @@
             </div>
 
             <!-- TEMPLATE:   archiveLink_jsp -->
-            {{> molecules-les-mer-modul:toarchive|read_more_link_container--larger-font(lesMerTekst: "Arkiv", url: "{{ link.pages-arkivliste }}", antall: false) }}
+            {{> molecules-les-mer-modul:toarchive|read_more_link_container--larger-font(lesMerTekst: "Vis flere artikler", url: "{{ link.pages-arkivliste }}", antall: false) }}
 
             <div class="row_no_clearfix equal_height_container mbxl">
                 <div class="col_lg_6 col_md_6 equal_height_item">
                     {{> molecules-tout:etjeneste }}
                 </div>
             </div>
-            
+
+            {{> molecules-tilbakemelding}}
         </div>
     </div>
 </main>

@@ -1,30 +1,30 @@
 {{> organisms-header-1 }}
 <main id="innhold" tabindex="-1">
-        
+
     <div class="ece_hvaskjer_grid mbj">
-        
+
         <div class="smMa desktop_centered">
             
             <div class="page_header_container_with_org_menu page_header_container--hvaskjer">
-                
+
                 {{# hvaSkjerHovedsideOverskrift }}
                     {{> molecules-sideoverskrift-h1(sidetittel: "Hva skjer") }}
                 {{/ hvaSkjerHovedsideOverskrift }}
-                
+
                 {{# hvaSkjerUndersideOverskrift }}
                     {{> molecules-sideoverskrift-med-lenke(sidetittel: "Hva skjer", url: "{{ link.pages-hva-skjer }}") }}
                 {{/ hvaSkjerUndersideOverskrift }}
-                
+
             </div>
             
             {{# meny }}
                 {{> molecules-hva-skjer-meny }}
             {{/ meny }}
-            
+
             {{# hvaSkjerUndersideOverskrift }}
                 {{> molecules-sideoverskrift-h1(sidetittel: "{{ sidetittel }}") }}
             {{/ hvaSkjerUndersideOverskrift }}
-            
+
         </div><!-- end .smMa desktop_centered -->
 
         <div class="smMa desktop_centered">
@@ -122,7 +122,7 @@
         {{# temaboks }}
         <!-- Temaboks -->
         <div class="grey_box mbj">
-            <div class="smMa desktop_centered">            
+            <div class="smMa desktop_centered">
         
                 <div class="toppsak mbl">
                     {{# temaboksSak1 }}
@@ -150,13 +150,13 @@
         <div class="smMa desktop_centered">
             <div class="row">
                 <div class="col_md_12 col_lg_8">
-                    {{> organisms-modul-liste:mbs }}
+                    {{> organisms-escenic-modul-liste }}
                 </div>
             </div>
             <div class="row">
                 <div class="col_md_12 col_lg_8">
-                    {{> molecules-les-mer-modul:toarchive|read_more_link_container--larger-font|(lesMerTekst: "Arkiv", url: "{{ link.pages-arkivliste }}", antall: false) }}
-                </div>
+                    <!-- TEMPLATE:   archiveLink_jsp -->
+                    {{> molecules-last-inn-flere:neg-mtj|(lesMerTekst: "Vis flere artikler") }}</div>
             </div>
         </div>
     </div><!-- end .ece_hvaskjer_grid -->

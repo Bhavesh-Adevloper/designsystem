@@ -245,7 +245,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
             <!-- TEMPLATE:   archiveLink_jsp -->
             <div class="read_more_link_container toarchive read_more_link_container--larger-font">
     <a class="read_more_link read_more_link--17" href="&#x2F;patterns&#x2F;04-pages-50-escenic-52-arkivliste&#x2F;04-pages-50-escenic-52-arkivliste.rendered.html">
-        Arkiv
+        Vis flere artikler
     </a>
 </div>
 
@@ -267,7 +267,41 @@ https://github.com/pattern-lab/patternlab-php/issues/304
 </div>
                 </div>
             </div>
-            
+
+            <div id="js_feedback" class="feedback ">
+    <div class="feedback_header">Fornøyd med denne siden?</div>
+    <form class="feedback_form" name="sendTilbakemeldingForm" action="#">
+        <fieldset>
+
+            <legend id="feedback_legend" class="screen-reader-text"> Er du fornøyd med denne siden? Velg ja eller nei</legend>
+
+            <div class="feedback_yes_no clearfix" role="radiogroup" aria-labelledby="feedback_legend">
+                <button role="radio" type="button" class="feedback_btn yes">Ja</button>
+                <button role="radio" type="button" class="feedback_btn no">Nei</button>
+                <label class="hidden" style="display: none;" for="Radiobutton1">Ja</label>
+                <input class="hidden" type="radio" name="TilbakemeldingCheckbox" id="Radiobutton1" value="Ja" />
+                <label class="hidden" style="display: none;" for="Radiobutton2">Nei</label>
+                <input class="hidden" type="radio" name="TilbakemeldingCheckbox" id="Radiobutton2" value="Nei" />
+            </div>
+            <div id="js_feedback_text" class="feedback_collapsed clearfix">
+                <label class="error" for="tilbakemeldingSvarKommentar">
+                    <span class="screen-reader-text" id="tilbakemeldingsLabel"> Fortell oss hva du synes</span>
+                    <span style="display: none; height: 0;" id="tilbakemeldingSvarKommentar_error"> Fortell oss hva du synes! </span>
+                </label>
+                <textarea id="tilbakemeldingSvarKommentar" name="tilbakemeldingSvarKommentar" rows="4" cols="30" placeholder=""></textarea>
+                <div class="feedback_info">
+                    <strong>NB:</strong>
+                    <span>Tilbakemeldingen din er anonym og du vil ikke få svar.</span>
+                </div>
+                <button type="submit" class="feedback_submit align_right">Send</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <div class="feedback_is_submitted_message" id="takkForSvar">Takk for din tilbakemelding!</div>
+</div>
+
+
         </div>
     </div>
 </main>

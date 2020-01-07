@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width"/>
 
-    <link rel="stylesheet" href="../../css/style.css?1576139639557" media="all"/>
-    <link rel="stylesheet" href="../../css/publisering.css?1576139639557" media="all"/>
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1576139639557" media="all"/>
+    <link rel="stylesheet" href="../../css/style.css?1578388213876" media="all"/>
+    <link rel="stylesheet" href="../../css/publisering.css?1578388213876" media="all"/>
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1578388213876" media="all"/>
 
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <!-- never cache patterns -->
@@ -17,8 +17,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1576139639557" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1576139639557" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1578388213876" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1578388213876" media="all" />
 
     <!-- End Pattern Lab -->
 
@@ -131,10 +131,10 @@
             }(grunticon, this)
         }();
 
-        grunticon(["../../images/icons/icons.data.svg.css?1576139639557", "../../images/icons/icons.data.png.css?1576139639557", "../../images/icons/icons.fallback.css?1576139639557"], grunticon.svgLoadedCallback);
+        grunticon(["../../images/icons/icons.data.svg.css?1578388213876", "../../images/icons/icons.data.png.css?1578388213876", "../../images/icons/icons.fallback.css?1578388213876"], grunticon.svgLoadedCallback);
     </script>
     <noscript>
-        <link href="../../images/icons/icons.fallback.css?1576139639557" rel="stylesheet">
+        <link href="../../images/icons/icons.fallback.css?1578388213876" rel="stylesheet">
     </noscript>
 
 </head>
@@ -3596,12 +3596,46 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                 <!-- TEMPLATE:   archiveLink_jsp -->
                 <div class="read_more_link_container toarchive read_more_link_container--larger-font">
     <a class="read_more_link read_more_link--17" href="&#x2F;patterns&#x2F;04-pages-50-escenic-52-arkivliste&#x2F;04-pages-50-escenic-52-arkivliste.rendered.html">
-        Arkiv
+        Vis flere artikler
     </a>
 </div>
 
             </div>
-            
+
+            <div id="js_feedback" class="feedback ">
+    <div class="feedback_header">Fornøyd med denne siden?</div>
+    <form class="feedback_form" name="sendTilbakemeldingForm" action="#">
+        <fieldset>
+
+            <legend id="feedback_legend" class="screen-reader-text"> Er du fornøyd med denne siden? Velg ja eller nei</legend>
+
+            <div class="feedback_yes_no clearfix" role="radiogroup" aria-labelledby="feedback_legend">
+                <button role="radio" type="button" class="feedback_btn yes">Ja</button>
+                <button role="radio" type="button" class="feedback_btn no">Nei</button>
+                <label class="hidden" style="display: none;" for="Radiobutton1">Ja</label>
+                <input class="hidden" type="radio" name="TilbakemeldingCheckbox" id="Radiobutton1" value="Ja" />
+                <label class="hidden" style="display: none;" for="Radiobutton2">Nei</label>
+                <input class="hidden" type="radio" name="TilbakemeldingCheckbox" id="Radiobutton2" value="Nei" />
+            </div>
+            <div id="js_feedback_text" class="feedback_collapsed clearfix">
+                <label class="error" for="tilbakemeldingSvarKommentar">
+                    <span class="screen-reader-text" id="tilbakemeldingsLabel"> Fortell oss hva du synes</span>
+                    <span style="display: none; height: 0;" id="tilbakemeldingSvarKommentar_error"> Fortell oss hva du synes! </span>
+                </label>
+                <textarea id="tilbakemeldingSvarKommentar" name="tilbakemeldingSvarKommentar" rows="4" cols="30" placeholder=""></textarea>
+                <div class="feedback_info">
+                    <strong>NB:</strong>
+                    <span>Tilbakemeldingen din er anonym og du vil ikke få svar.</span>
+                </div>
+                <button type="submit" class="feedback_submit align_right">Send</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <div class="feedback_is_submitted_message" id="takkForSvar">Takk for din tilbakemelding!</div>
+</div>
+
+
         </div>
     </div>
 </main>
@@ -3719,6 +3753,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
       
       
 </footer>
+
   </div>
   <script type="text/json" id="sg-pattern-data-pages-artikkelliste" class="sg-pattern-data">
     {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"templates-artikkelliste","lineagePath":"../../patterns/03-templates-20-Listesider-artikkelliste/03-templates-20-Listesider-artikkelliste.rendered.html"}],"lineage":[{"lineagePattern":"templates-artikkelliste","lineagePath":"../../patterns/03-templates-20-Listesider-artikkelliste/03-templates-20-Listesider-artikkelliste.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"escenic"},"patternExtension":"mustache","patternName":"Artikkelliste","patternPartial":"pages-artikkelliste","patternState":"","patternEngineName":"mustache","extraOutput":{}}
@@ -4172,12 +4207,46 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                 <!-- TEMPLATE:   archiveLink_jsp -->
                 <div class="read_more_link_container toarchive read_more_link_container--larger-font">
     <a class="read_more_link read_more_link--17" href="&#x2F;patterns&#x2F;04-pages-50-escenic-52-arkivliste&#x2F;04-pages-50-escenic-52-arkivliste.rendered.html">
-        Arkiv
+        Vis flere artikler
     </a>
 </div>
 
             </div>
-            
+
+            <div id="js_feedback" class="feedback ">
+    <div class="feedback_header">Fornøyd med denne siden?</div>
+    <form class="feedback_form" name="sendTilbakemeldingForm" action="#">
+        <fieldset>
+
+            <legend id="feedback_legend" class="screen-reader-text"> Er du fornøyd med denne siden? Velg ja eller nei</legend>
+
+            <div class="feedback_yes_no clearfix" role="radiogroup" aria-labelledby="feedback_legend">
+                <button role="radio" type="button" class="feedback_btn yes">Ja</button>
+                <button role="radio" type="button" class="feedback_btn no">Nei</button>
+                <label class="hidden" style="display: none;" for="Radiobutton1">Ja</label>
+                <input class="hidden" type="radio" name="TilbakemeldingCheckbox" id="Radiobutton1" value="Ja" />
+                <label class="hidden" style="display: none;" for="Radiobutton2">Nei</label>
+                <input class="hidden" type="radio" name="TilbakemeldingCheckbox" id="Radiobutton2" value="Nei" />
+            </div>
+            <div id="js_feedback_text" class="feedback_collapsed clearfix">
+                <label class="error" for="tilbakemeldingSvarKommentar">
+                    <span class="screen-reader-text" id="tilbakemeldingsLabel"> Fortell oss hva du synes</span>
+                    <span style="display: none; height: 0;" id="tilbakemeldingSvarKommentar_error"> Fortell oss hva du synes! </span>
+                </label>
+                <textarea id="tilbakemeldingSvarKommentar" name="tilbakemeldingSvarKommentar" rows="4" cols="30" placeholder=""></textarea>
+                <div class="feedback_info">
+                    <strong>NB:</strong>
+                    <span>Tilbakemeldingen din er anonym og du vil ikke få svar.</span>
+                </div>
+                <button type="submit" class="feedback_submit align_right">Send</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <div class="feedback_is_submitted_message" id="takkForSvar">Takk for din tilbakemelding!</div>
+</div>
+
+
         </div>
     </div>
 </main>
@@ -4295,6 +4364,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
       
       
 </footer>
+
   </div>
   <script type="text/json" id="sg-pattern-data-pages-artikkelliste-2" class="sg-pattern-data">
     {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"templates-artikkelliste","lineagePath":"../../patterns/03-templates-20-Listesider-artikkelliste/03-templates-20-Listesider-artikkelliste.rendered.html"}],"lineage":[{"lineagePattern":"templates-artikkelliste","lineagePath":"../../patterns/03-templates-20-Listesider-artikkelliste/03-templates-20-Listesider-artikkelliste.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"escenic"},"patternExtension":"mustache","patternName":"Artikkelliste 2","patternPartial":"pages-artikkelliste-2","patternState":"","patternEngineName":"mustache","extraOutput":{}}
@@ -5331,12 +5401,46 @@ https://github.com/pattern-lab/patternlab-php/issues/304
                 <!-- TEMPLATE:   archiveLink_jsp -->
                 <div class="read_more_link_container toarchive read_more_link_container--larger-font">
     <a class="read_more_link read_more_link--17" href="&#x2F;patterns&#x2F;04-pages-50-escenic-52-arkivliste&#x2F;04-pages-50-escenic-52-arkivliste.rendered.html">
-        Arkiv
+        Vis flere artikler
     </a>
 </div>
 
             </div>
-            
+
+            <div id="js_feedback" class="feedback ">
+    <div class="feedback_header">Fornøyd med denne siden?</div>
+    <form class="feedback_form" name="sendTilbakemeldingForm" action="#">
+        <fieldset>
+
+            <legend id="feedback_legend" class="screen-reader-text"> Er du fornøyd med denne siden? Velg ja eller nei</legend>
+
+            <div class="feedback_yes_no clearfix" role="radiogroup" aria-labelledby="feedback_legend">
+                <button role="radio" type="button" class="feedback_btn yes">Ja</button>
+                <button role="radio" type="button" class="feedback_btn no">Nei</button>
+                <label class="hidden" style="display: none;" for="Radiobutton1">Ja</label>
+                <input class="hidden" type="radio" name="TilbakemeldingCheckbox" id="Radiobutton1" value="Ja" />
+                <label class="hidden" style="display: none;" for="Radiobutton2">Nei</label>
+                <input class="hidden" type="radio" name="TilbakemeldingCheckbox" id="Radiobutton2" value="Nei" />
+            </div>
+            <div id="js_feedback_text" class="feedback_collapsed clearfix">
+                <label class="error" for="tilbakemeldingSvarKommentar">
+                    <span class="screen-reader-text" id="tilbakemeldingsLabel"> Fortell oss hva du synes</span>
+                    <span style="display: none; height: 0;" id="tilbakemeldingSvarKommentar_error"> Fortell oss hva du synes! </span>
+                </label>
+                <textarea id="tilbakemeldingSvarKommentar" name="tilbakemeldingSvarKommentar" rows="4" cols="30" placeholder=""></textarea>
+                <div class="feedback_info">
+                    <strong>NB:</strong>
+                    <span>Tilbakemeldingen din er anonym og du vil ikke få svar.</span>
+                </div>
+                <button type="submit" class="feedback_submit align_right">Send</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <div class="feedback_is_submitted_message" id="takkForSvar">Takk for din tilbakemelding!</div>
+</div>
+
+
         </div>
     </div>
 </main>
@@ -5457,6 +5561,7 @@ https://github.com/pattern-lab/patternlab-php/issues/304
         </div>
       
 </footer>
+
   </div>
   <script type="text/json" id="sg-pattern-data-pages-artikkelliste-sp" class="sg-pattern-data">
     {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"templates-artikkelliste","lineagePath":"../../patterns/03-templates-20-Listesider-artikkelliste/03-templates-20-Listesider-artikkelliste.rendered.html"}],"lineage":[{"lineagePattern":"templates-artikkelliste","lineagePath":"../../patterns/03-templates-20-Listesider-artikkelliste/03-templates-20-Listesider-artikkelliste.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"escenic"},"patternExtension":"mustache","patternName":"Artikkelliste Sp","patternPartial":"pages-artikkelliste-sp","patternState":"","patternEngineName":"mustache","extraOutput":{}}
@@ -5504,10 +5609,10 @@ https://github.com/pattern-lab/patternlab-php/issues/304
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1576139639557">
+<script id="pl-js-polyfill-insert-1578388213876">
   (function() {
     if (self != top) {
-      var cb = '1576139639557';
+      var cb = '1578388213876';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -5517,10 +5622,10 @@ https://github.com/pattern-lab/patternlab-php/issues/304
   })();
 </script>
 
-<script id="pl-js-insert-1576139639557">
+<script id="pl-js-insert-1578388213876">
   (function() {
     if (self != top) {
-      var cb = '1576139639557';
+      var cb = '1578388213876';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
