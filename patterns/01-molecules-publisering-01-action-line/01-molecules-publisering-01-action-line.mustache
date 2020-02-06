@@ -2,7 +2,7 @@
 {{# kladdIkkeLagret }}
     <div class="action-line hidden-on-print {{ styleModifier }}">
         <div class="align_left">
-            <h1 class="action-line__status">KLADD</h1>
+            <div class="action-line__status">KLADD</div>
         </div>
         <div class="align_right">
             <span class="action-line__preview-link action-line__preview-link--disabled">
@@ -18,8 +18,13 @@
 {{# kladdLagret }}
     <div class="action-line hidden-on-print {{ styleModifier }}">
         <div class="align_left">
-            <h1 class="action-line__status">KLADD</h1>
+            <div class="action-line__status">KLADD</div>
         </div>
+        {{# varsel}}
+            <div>
+                <div class="action-line__warning">{{varsel}}</div>
+            </div>
+        {{/ varsel}}
         <div class="align_right">
             <a href="{{ url }}" class="action-line__preview-link">
                 <span class="icon-preview grunt-icon grunt-icon--32"></span>
@@ -33,8 +38,13 @@
 {{# publisert }}
     <div class="action-line hidden-on-print {{ styleModifier }}">
         <div class="align_left">
-            <h1 class="action-line__status">PUBLISERT</h1>
+            <div class="action-line__status">PUBLISERT</div>
         </div>
+        {{# varsel}}
+            <div>
+                <div class="action-line__warning">{{varsel}}</div>
+            </div>
+        {{/ varsel}}
         <div class="align_right">
             <a href="{{ url }}" class="action-line__preview-link">
                 <span class="icon-preview grunt-icon grunt-icon--32"></span>
@@ -49,6 +59,11 @@
         <div class="align_left">
             <div class="action-line__status">FORHÅNDSVISNING</div>
         </div>
+        {{# varsel}}
+            <div>
+                <div class="action-line__warning">{{varsel}}</div>
+            </div>
+        {{/ varsel}}
         <div class="align_right">
             <button class="button">Lukk forhåndsvisning</button>
         </div>
@@ -58,8 +73,13 @@
 {{# utgatt }}
     <div class="action-line hidden-on-print {{ styleModifier }}">
         <div class="align_left">
-            <h1 class="action-line__status">UTGÅTT</h1>
+            <div class="action-line__status">UTGÅTT</div>
         </div>
+        {{# varsel}}
+            <div>
+                <div class="action-line__warning">{{varsel}}</div>
+            </div>
+        {{/ varsel}}
         <div class="align_right">
             <a href="{{ url }}" class="action-line__preview-link">
                 <span class="icon-preview grunt-icon grunt-icon--32"></span>
@@ -84,6 +104,7 @@
 {{# patterninfo }}<p class="mbn"><code>artikkelliste:</code></p>{{/ patterninfo }}
 {{# artikkelliste }}
     <div class="action-line hidden-on-print {{ styleModifier }}">
+        <div class="align_left"></div>
         <div class="align_right">
             <a href="#js_openModalNyPeker" class="button js_openModal">Ny peker</a>
             <button class="button">Ny artikkel</button>
@@ -112,9 +133,10 @@
 {{# patterninfo }}<p class="mbn"><code>sideoversikt:</code></p>{{/ patterninfo }}
 {{# sideoversikt }}
     <div class="action-line hidden-on-print {{ styleModifier }}">
-        <h1 class="action-line__status">SIDEOVERSIKT</h1>
+        <div class="action-line__status">SIDEOVERSIKT</div>
     </div>
 {{/ sideoversikt }}
+{{# patterninfo }}<p class="mbn"><code>ny temaside:</code></p>{{/ patterninfo }}
 {{# ny-temaside }}
     <div class="action-line hidden-on-print {{ styleModifier }}">
         <div class="align_right">
@@ -123,6 +145,7 @@
         </div>
     </div>
 {{/ ny-temaside }}
+{{# patterninfo }}<p class="mbn"><code>redigering av temaside:</code></p>{{/ patterninfo }}
 {{# rediger-temaside }}
     <div class="action-line hidden-on-print {{ styleModifier }}">
         <div class="align_right">
@@ -131,6 +154,7 @@
         </div>
     </div>
 {{/ rediger-temaside }}
+{{# patterninfo }}<p class="mbn"><code>ny faktaside:</code></p>{{/ patterninfo }}
 {{# ny-faktaside }}
     <div class="action-line hidden-on-print {{ styleModifier }}">
         <div class="align_right">
@@ -139,6 +163,7 @@
         </div>
     </div>
 {{/ ny-faktaside }}
+{{# patterninfo }}<p class="mbn"><code>redigering av faktaside:</code></p>{{/ patterninfo }}
 {{# rediger-faktaside }}
     <div class="action-line hidden-on-print {{ styleModifier }}">
         <div class="align_left">
@@ -150,3 +175,20 @@
         </div>
     </div>
 {{/ rediger-faktaside }}
+{{# patterninfo }}<p class="mbn"><code>varsel om samtidig redigering</code></p>{{/ patterninfo }}
+{{# samtidig-redigering }}
+    <div class="action-line hidden-on-print {{ styleModifier }}">
+        <div class="align_left">
+            <div class="action-line__status">{{type}}</div>
+        </div>
+        {{# varsel}}
+        <div>
+            <div class="action-line__warning">{{varsel}}</div>
+        </div>
+        {{/ varsel}}
+        <div class="align_right">
+            <button class="button button--success active">Lagre</button>
+            <button class="button active">Lukk redigering</button>
+        </div>
+    </div>
+{{/ samtidig-redigering }}

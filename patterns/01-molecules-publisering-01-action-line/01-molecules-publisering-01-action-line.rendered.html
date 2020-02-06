@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width"/>
 
-    <link rel="stylesheet" href="../../css/style.css?1578388213876" media="all"/>
-    <link rel="stylesheet" href="../../css/publisering.css?1578388213876" media="all"/>
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1578388213876" media="all"/>
+    <link rel="stylesheet" href="../../css/style.css?1580986560270" media="all"/>
+    <link rel="stylesheet" href="../../css/publisering.css?1580986560270" media="all"/>
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1580986560270" media="all"/>
 
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <!-- never cache patterns -->
@@ -17,8 +17,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1578388213876" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1578388213876" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1580986560270" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1580986560270" media="all" />
 
     <!-- End Pattern Lab -->
 
@@ -131,10 +131,10 @@
             }(grunticon, this)
         }();
 
-        grunticon(["../../images/icons/icons.data.svg.css?1578388213876", "../../images/icons/icons.data.png.css?1578388213876", "../../images/icons/icons.fallback.css?1578388213876"], grunticon.svgLoadedCallback);
+        grunticon(["../../images/icons/icons.data.svg.css?1580986560270", "../../images/icons/icons.data.png.css?1580986560270", "../../images/icons/icons.fallback.css?1580986560270"], grunticon.svgLoadedCallback);
     </script>
     <noscript>
-        <link href="../../images/icons/icons.fallback.css?1578388213876" rel="stylesheet">
+        <link href="../../images/icons/icons.fallback.css?1580986560270" rel="stylesheet">
     </noscript>
 
 </head>
@@ -143,7 +143,7 @@
 <p class="mbn"><code>kladd ikke lagret:</code></p>
     <div class="action-line hidden-on-print mbs">
         <div class="align_left">
-            <h1 class="action-line__status">KLADD</h1>
+            <div class="action-line__status">KLADD</div>
         </div>
         <div class="align_right">
             <span class="action-line__preview-link action-line__preview-link--disabled">
@@ -157,8 +157,11 @@
 <p class="mbn"><code>kladd lagret:</code></p>
     <div class="action-line hidden-on-print mbs">
         <div class="align_left">
-            <h1 class="action-line__status">KLADD</h1>
+            <div class="action-line__status">KLADD</div>
         </div>
+            <div>
+                <div class="action-line__warning">OBS! Ragnar Bøe redigerer denne siden nå.</div>
+            </div>
         <div class="align_right">
             <a href="#" class="action-line__preview-link">
                 <span class="icon-preview grunt-icon grunt-icon--32"></span>
@@ -170,7 +173,7 @@
 <p class="mbn"><code>publisert:</code></p>
     <div class="action-line hidden-on-print mbs">
         <div class="align_left">
-            <h1 class="action-line__status">PUBLISERT</h1>
+            <div class="action-line__status">PUBLISERT</div>
         </div>
         <div class="align_right">
             <a href="#" class="action-line__preview-link">
@@ -191,7 +194,7 @@
 <p class="mbn"><code>utgatt:</code></p>
     <div class="action-line hidden-on-print mbs">
         <div class="align_left">
-            <h1 class="action-line__status">UTGÅTT</h1>
+            <div class="action-line__status">UTGÅTT</div>
         </div>
         <div class="align_right">
             <a href="#" class="action-line__preview-link">
@@ -213,6 +216,7 @@
     </div>
 <p class="mbn"><code>artikkelliste:</code></p>
     <div class="action-line hidden-on-print mbs">
+        <div class="align_left"></div>
         <div class="align_right">
             <a href="#js_openModalNyPeker" class="button js_openModal">Ny peker</a>
             <button class="button">Ny artikkel</button>
@@ -235,29 +239,46 @@
     </div>
 <p class="mbn"><code>sideoversikt:</code></p>
     <div class="action-line hidden-on-print mbxl">
-        <h1 class="action-line__status">SIDEOVERSIKT</h1>
+        <div class="action-line__status">SIDEOVERSIKT</div>
     </div>
+<p class="mbn"><code>ny temaside:</code></p>
     <div class="action-line hidden-on-print mbxl">
         <div class="align_right">
             <button class="button button--success active">Opprett</button>
             <button class="button active">Lukk redigering</button>
         </div>
     </div>
+<p class="mbn"><code>redigering av temaside:</code></p>
     <div class="action-line hidden-on-print mbxl">
         <div class="align_right">
             <button class="button button--success active">Lagre</button>
             <button class="button active">Lukk redigering</button>
         </div>
     </div>
+<p class="mbn"><code>ny faktaside:</code></p>
     <div class="action-line hidden-on-print mbxl">
         <div class="align_right">
             <button class="button button--success active">Opprett</button>
             <button class="button active">Lukk redigering</button>
         </div>
     </div>
+<p class="mbn"><code>redigering av faktaside:</code></p>
     <div class="action-line hidden-on-print mbxl">
         <div class="align_left">
             <div class="action-line__status">NAVIGASJONSSIDE</div>
+        </div>
+        <div class="align_right">
+            <button class="button button--success active">Lagre</button>
+            <button class="button active">Lukk redigering</button>
+        </div>
+    </div>
+<p class="mbn"><code>varsel om samtidig redigering</code></p>
+    <div class="action-line hidden-on-print mbxl">
+        <div class="align_left">
+            <div class="action-line__status">KLADD</div>
+        </div>
+        <div>
+            <div class="action-line__warning">OBS! Ragnar Bøe, Agnete Larsson Gullaksen og Knut Buen redigerer denne siden nå.</div>
         </div>
         <div class="align_right">
             <button class="button button--success active">Lagre</button>
@@ -303,10 +324,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1578388213876">
+<script id="pl-js-polyfill-insert-1580986560270">
   (function() {
     if (self != top) {
-      var cb = '1578388213876';
+      var cb = '1580986560270';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -316,10 +337,10 @@
   })();
 </script>
 
-<script id="pl-js-insert-1578388213876">
+<script id="pl-js-insert-1580986560270">
   (function() {
     if (self != top) {
-      var cb = '1578388213876';
+      var cb = '1580986560270';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
