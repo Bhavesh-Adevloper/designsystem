@@ -29,33 +29,22 @@
                     {{> molecules-tout-skoleruten:mbxxl }}
                 </div>
             </div>
-            
+
             {{# sisteNytt }}
             {{> organisms-siste-nytt }}
             {{/ sisteNytt }}
-            
-            {{# tjenester }}
+
+            {{# innbyggerhjelp }}
             {{> organisms-modul-link-liste:mbj }}
-            {{/ tjenester }}
-            
+            {{/ innbyggerhjelp }}
+
             {{# kontaktLiten }}
             {{> organisms-kontakt-liten }}
             {{/ kontaktLiten }}
 
-            {{# etjenester100 }}
-            {{> organisms-modul-med-overskrift }}
-            {{/ etjenester100 }}
-                        
-            <div class="row_no_clearfix equal_height_container mbxl">
-                
-                {{# touts }}
-                    <div class="col_md_6 col_lg_6 equal_height_item">
-                        {{> molecules-tout }}
-                    </div>
-                {{/ touts }}
-                
-            </div>
-            
+            {{#temaliste}}
+                {{> organisms-modul-tema-liste-orgenhet:mbj }}
+            {{/temaliste}}
         </div>
     </div>
 </main>

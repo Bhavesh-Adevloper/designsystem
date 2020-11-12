@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1580986563311,
+  "timestamp": 1605185028453,
   "graph": {
     "options": {
       "directed": true,
@@ -558,6 +558,12 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-71-Pub-artikkel-50-sne-artikkel/04-pages-71-Pub-artikkel-50-sne-artikkel.rendered.html",
           "lineagePattern": "pages-sne-artikkel"
+        }
+      },
+      {
+        "v": "01-molecules/03-bokser/60-handlekurv.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -1264,8 +1270,8 @@
         "v": "02-organisms/30-escenic/10-escenic-inngangsside.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-01-Inngangssider-42-politisk-enhet/03-templates-01-Inngangssider-42-politisk-enhet.rendered.html",
-          "lineagePattern": "templates-politisk-enhet"
+          "lineagePath": "../../patterns/03-templates-01-Inngangssider-05-tema/03-templates-01-Inngangssider-05-tema.rendered.html",
+          "lineagePattern": "templates-tema"
         }
       },
       {
@@ -1365,6 +1371,14 @@
         }
       },
       {
+        "v": "02-organisms/40-annet/67-modul-tema-liste-orgenhet.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-templates-01-Inngangssider-40-barnehage/03-templates-01-Inngangssider-40-barnehage.rendered.html",
+          "lineagePattern": "templates-barnehage"
+        }
+      },
+      {
         "v": "02-organisms/40-annet/70-forsidenyheter.mustache",
         "value": {
           "compileState": "clean",
@@ -1408,8 +1422,8 @@
         "v": "03-templates/01-Inngangssider/30-orgenhet.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-02-orgenhet-04-VA-etaten/04-pages-02-orgenhet-04-VA-etaten.rendered.html",
-          "lineagePattern": "pages-VA-etaten"
+          "lineagePath": "../../patterns/04-pages-02-orgenhet-00-fagavdeling-BS/04-pages-02-orgenhet-00-fagavdeling-BS.rendered.html",
+          "lineagePattern": "pages-fagavdeling-BS"
         }
       },
       {
@@ -1448,14 +1462,6 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/04-pages-03-skole-og-barnehage-03-arnatveit-barnehage/04-pages-03-skole-og-barnehage-03-arnatveit-barnehage.rendered.html",
           "lineagePattern": "pages-arnatveit-barnehage"
-        }
-      },
-      {
-        "v": "03-templates/01-Inngangssider/42-politisk-enhet.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/04-pages-02-orgenhet-10-byradet/04-pages-02-orgenhet-10-byradet.rendered.html",
-          "lineagePattern": "pages-byradet"
         }
       },
       {
@@ -1863,18 +1869,6 @@
         }
       },
       {
-        "v": "04-pages/02-orgenhet/02-barnevernvakten.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/02-orgenhet/04-VA-etaten.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
         "v": "04-pages/02-orgenhet/06-Fana-kulturhus.mustache",
         "value": {
           "compileState": "clean"
@@ -1882,12 +1876,6 @@
       },
       {
         "v": "04-pages/02-orgenhet/08-byradsavd-BBSI.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "04-pages/02-orgenhet/10-byradet.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -2565,13 +2553,13 @@
         }
       },
       {
-        "v": "/home/stian/workspace/bergenkommune/designsystem/source/_meta/_00-head.mustache",
+        "v": "/home/mathiasm/git/bergenkommune/designsystem/source/_meta/_00-head.mustache",
         "value": {
           "compileState": null
         }
       },
       {
-        "v": "/home/stian/workspace/bergenkommune/designsystem/source/_meta/_01-foot.mustache",
+        "v": "/home/mathiasm/git/bergenkommune/designsystem/source/_meta/_01-foot.mustache",
         "value": {
           "compileState": null
         }
@@ -3029,6 +3017,11 @@
         "value": {}
       },
       {
+        "v": "02-organisms/40-annet/67-modul-tema-liste-orgenhet.mustache",
+        "w": "01-molecules/02-teasere/03-teaser-uten-ingress.mustache",
+        "value": {}
+      },
+      {
         "v": "02-organisms/40-annet/70-forsidenyheter.mustache",
         "w": "01-molecules/00-overskrifter/31-moduloverskrift-h2-med-lenke.mustache",
         "value": {}
@@ -3255,12 +3248,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/30-orgenhet.mustache",
-        "w": "02-organisms/40-annet/10-siste-nytt.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/30-orgenhet.mustache",
-        "w": "01-molecules/02-teasere/10-tout.mustache",
+        "w": "02-organisms/40-annet/67-modul-tema-liste-orgenhet.mustache",
         "value": {}
       },
       {
@@ -3365,26 +3353,6 @@
       },
       {
         "v": "03-templates/01-Inngangssider/35-byradsavdeling.mustache",
-        "w": "01-molecules/00-overskrifter/31-moduloverskrift-h2-med-lenke.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/35-byradsavdeling.mustache",
-        "w": "01-molecules/00-overskrifter/30-moduloverskrift-h2.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/35-byradsavdeling.mustache",
-        "w": "01-molecules/02-teasere/07-modul.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/35-byradsavdeling.mustache",
-        "w": "02-organisms/40-annet/10-siste-nytt.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/35-byradsavdeling.mustache",
         "w": "02-organisms/20-kontakt/kontakt-liten.mustache",
         "value": {}
       },
@@ -3395,7 +3363,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/35-byradsavdeling.mustache",
-        "w": "01-molecules/02-teasere/10-tout.mustache",
+        "w": "02-organisms/40-annet/67-modul-tema-liste-orgenhet.mustache",
         "value": {}
       },
       {
@@ -3455,12 +3423,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/37-skole.mustache",
-        "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/37-skole.mustache",
-        "w": "01-molecules/02-teasere/10-tout.mustache",
+        "w": "02-organisms/40-annet/67-modul-tema-liste-orgenhet.mustache",
         "value": {}
       },
       {
@@ -3510,12 +3473,7 @@
       },
       {
         "v": "03-templates/01-Inngangssider/38-leirskole.mustache",
-        "w": "02-organisms/40-annet/06-modul-med-overskrift.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/38-leirskole.mustache",
-        "w": "01-molecules/02-teasere/10-tout.mustache",
+        "w": "02-organisms/40-annet/67-modul-tema-liste-orgenhet.mustache",
         "value": {}
       },
       {
@@ -3585,46 +3543,11 @@
       },
       {
         "v": "03-templates/01-Inngangssider/40-barnehage.mustache",
-        "w": "01-molecules/02-teasere/10-tout.mustache",
+        "w": "02-organisms/40-annet/67-modul-tema-liste-orgenhet.mustache",
         "value": {}
       },
       {
         "v": "03-templates/01-Inngangssider/40-barnehage.mustache",
-        "w": "02-organisms/00-global/01-footer.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/42-politisk-enhet.mustache",
-        "w": "02-organisms/00-global/_00-header-varianter.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/42-politisk-enhet.mustache",
-        "w": "02-organisms/00-global/02-brodsmuler.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/42-politisk-enhet.mustache",
-        "w": "01-molecules/00-overskrifter/00-sideoverskrift-h1.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/42-politisk-enhet.mustache",
-        "w": "01-molecules/navigasjon/org-meny.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/42-politisk-enhet.mustache",
-        "w": "02-organisms/30-escenic/10-escenic-inngangsside.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/42-politisk-enhet.mustache",
-        "w": "01-molecules/02-teasere/10-tout.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/01-Inngangssider/42-politisk-enhet.mustache",
         "w": "02-organisms/00-global/01-footer.mustache",
         "value": {}
       },
@@ -5459,16 +5382,6 @@
         "value": {}
       },
       {
-        "v": "04-pages/02-orgenhet/02-barnevernvakten.mustache",
-        "w": "03-templates/01-Inngangssider/30-orgenhet.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/04-VA-etaten.mustache",
-        "w": "03-templates/01-Inngangssider/30-orgenhet.mustache",
-        "value": {}
-      },
-      {
         "v": "04-pages/02-orgenhet/06-Fana-kulturhus.mustache",
         "w": "03-templates/01-Inngangssider/31-orgenhet-med-arrangement.mustache",
         "value": {}
@@ -5476,11 +5389,6 @@
       {
         "v": "04-pages/02-orgenhet/08-byradsavd-BBSI.mustache",
         "w": "03-templates/01-Inngangssider/35-byradsavdeling.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-pages/02-orgenhet/10-byradet.mustache",
-        "w": "03-templates/01-Inngangssider/42-politisk-enhet.mustache",
         "value": {}
       },
       {

@@ -8,52 +8,37 @@
 
     <div class="row">
         <div class="col_md_12 col_lg_4">
-            
+
             {{# meny }}
-            {{> molecules-org-meny }}
+                {{> molecules-org-meny }}
             {{/ meny }}
 
         </div>
         <div class="col_md_12 col_lg_8 org_main_col">
-        
-            {{# notis }}
-            {{> molecules-notis }}
-            {{/ notis }}
-            
-            {{# eksternURL }}
-            {{> molecules-ekstern-url }}
-            {{/ eksternURL }}
-            
-            {{# kontaktLiten }}
-            {{> organisms-kontakt-liten }}
-            {{/ kontaktLiten }}
-            
-            {{# profil }}
-            {{> organisms-modul-med-overskrift }}
-            {{/ profil }}
-            
-            {{# tjenester }}
-            {{> organisms-modul-link-liste:mbj }}
-            {{/ tjenester }}
-            
-            {{# sisteNytt }}
-            {{> organisms-siste-nytt }}
-            {{/ sisteNytt }}
 
-            {{# etjenester100 }}
-            {{> organisms-modul-med-overskrift }}
-            {{/ etjenester100 }}
-                        
-            <div class="row_no_clearfix equal_height_container mbxl">
-                
-                {{# touts }}
-                    <div class="col_md_6 col_lg_6 equal_height_item">
-                        {{> molecules-tout }}
-                    </div>
-                {{/ touts }}
-                
-            </div>
-            
+            {{# notis }}
+                {{> molecules-notis }}
+            {{/ notis }}
+
+            {{# eksternURL }}
+                {{> molecules-ekstern-url }}
+            {{/ eksternURL }}
+
+            {{# kontaktLiten }}
+                {{> organisms-kontakt-liten }}
+            {{/ kontaktLiten }}
+
+            {{# profil }}
+                {{> organisms-modul-med-overskrift }}
+            {{/ profil }}
+
+            {{# innbyggerhjelp }}
+                {{> organisms-modul-link-liste:mbj }}
+            {{/ innbyggerhjelp }}
+
+            {{#temaliste}}
+                {{> organisms-modul-tema-liste-orgenhet:mbj }}
+            {{/temaliste}}
         </div>
     </div>
 </main>

@@ -20,6 +20,15 @@
                 {{> molecules-tilbakemelding }}
             {{/tilbakemeldingsboks}}
         </div>
+
+		<div class="handlekurv col_md_12 col_lg_4">
+			{{> molecules-handlekurv(
+			styleModifier: "mbn",
+			tittel: "Din Handlekurv",
+			handlekurvListe: "1",
+			tekst: "Vedrørende plangrense 2",
+			bestilleKnapp: "Bestill innsyn")}}
+		</div>
     </div>
 </main>
 {{> organisms-footer }}
