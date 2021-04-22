@@ -1,0 +1,23 @@
+{{# loggetInnSomAnsatt }}
+    <div class="web-editor-info--header clearfix">
+        <div class="smMa desktop_centered">
+            <div class="web-editor-info--header--application text">
+                <span class="mrm">BkPublisering</span>
+            </div>
+
+            {{# adminTilside }}
+            <a href="{{ link.pages-sideoversikt }}" class="button inverted mbn">Administrasjon</a>
+            {{/adminTilside}}
+
+            {{# tilgangTilSide }}
+            <a href="{{ link.pages-sideoversikt }}" class="button inverted mbn">Til sideoversikt</a>
+            {{/tilgangTilSide}}
+
+            <div class="web-editor-info--header--profil text">
+                Innlogget som: {{ loggetInnSomAnsatt }}
+                <span class="seperator">|</span>
+                <a href="#" class="external_link">Logg ut</a>
+            </div>
+        </div>
+    </div>
+{{/ loggetInnSomAnsatt }}

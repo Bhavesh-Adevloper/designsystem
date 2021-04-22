@@ -19,6 +19,17 @@
                 {{> atoms-filterbox-valg:full_width }}
             </div>
         {{/ valgtFormidlingsansvarlig }}
+         {{# valgtInholdssansvarlig }}
+            <div class="multiselect-list__flex">
+                <div class="multiselect-list__selected">{{ valgtInholdssansvarlig }}</div>
+                <a href="#" title="Fjern formidlingsansvarlig" class="button button--remove mbs">
+                    Fjern
+                </a>
+            </div>
+            <div class="multiselect-list__flex">
+                {{> atoms-filterbox-valg:full_width }}
+            </div>
+        {{/ valgtInholdssansvarlig }}
 
         <h3 class="helpers_header mtml">Fagansvarlig</h3>
         <div class="multiselect-list__flex">
@@ -28,9 +39,6 @@
                     Fjern
                 </a>
             {{/ valgtFagansvarlig }}
-            {{^ valgtFagansvarlig}}
-                {{> atoms-filterbox-valg:full_width }}
-            {{/ valgtFagansvarlig}}
         </div>
     </div>
 </div>

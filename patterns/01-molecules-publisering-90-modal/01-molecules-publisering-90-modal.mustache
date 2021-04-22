@@ -87,6 +87,27 @@
                                 <input id="filtittel" type="text" placeholder="">
                             </div>
                         {{/ lenkenavnInput }}
+                        {{# kortadresse }}
+                            <div>
+                                <label for="filtittel">Kort adresse:</label>
+                                <input id="overskrift" type="text" placeholder=""
+                                       class="mbl{{# tittelFeil }} error-input{{/ tittelFeil }}" value="{{ tittel }}">
+                                {{# tittelFeil }}
+                                    <div class="error-text neg-mtml mbl"><span>Finnes allerede</span></div>
+                                {{/ tittelFeil }}
+                                
+                            </div>
+                        {{/ kortadresse }}
+                        {{# pekermotside }}
+                            <div>
+                                <label for="filtittel">Peker mot side(lim in URL):</label>
+                                <input id="url" type="text" placeholder="" class="mbl{{# urlFeil }} error-input{{/ urlFeil }}"
+                                       value="{{ url }}">
+                                {{# urlFeil }}
+                                    <div class="error-text neg-mtml mbl"><span>URL mangler</span></div>
+                                {{/ urlFeil }}
+                            </div>
+                        {{/ pekermotside }}
 
                         {{# brukOgAvkryssingsboks }}
                             {{> atoms-avkryssingsboks}}
@@ -155,6 +176,23 @@
                             </div>
                         </div>
                     {{/ pekerByline }}
+                    
+                    {{# sokeFilter }}
+                            <label class="form-element__label" >Hvem skal få ny tilgang?</label>
+                            {{> atoms-filterbox-valg:mbl }}
+                            {{> molecules-sokefilter-avkrysningsbokser:mbl }}
+                    {{/ sokeFilter }}
+
+                    {{# nedtrekksliste }}
+                            <label class="form-element__label" >Rolle</label>
+                            {{> atoms-nedtrekksliste:mbl }}
+                    {{/ nedtrekksliste }}
+
+                    {{# sokeFilter2 }}
+                            <label class="form-element__label" >Skal ha tilgang til</label>
+                            {{> atoms-filterbox-valg:mbxl }}
+                            {{> molecules-sokefilter-avkrysningsbokser:mbl }}
+                    {{/ sokeFilter2 }}                   
 
                     <div class="text_align_center">
 
@@ -190,3 +228,5 @@
         </a>
     </div>
 {{/ modal }}
+
+

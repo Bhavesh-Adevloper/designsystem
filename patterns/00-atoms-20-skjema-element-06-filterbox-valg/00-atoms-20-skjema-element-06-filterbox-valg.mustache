@@ -14,12 +14,13 @@
                 <li>
                     <a href="#">
                         {{# icon }}
-                        <span class="icon-{{icon}} grunt-icon grunt-icon--32"></span>{{ tittel }}
+                        <span class="icon-{{icon}} grunt-icon grunt-icon--32"></span>{{{ tittel }}}<span>{{{ test }}}</span>
                         {{/ icon}}
                         {{^ icon }}
-                            <span class="grunt-icon grunt-icon--32"></span>{{ tittel }}
+                            <span class="grunt-icon grunt-icon--32"></span>{{{ tittel }}}<span>{{{ test }}}</span>
                         {{/ icon}}
                     </a>
+                
                 </li>
             {{/ enkelliste }}
         </ul>

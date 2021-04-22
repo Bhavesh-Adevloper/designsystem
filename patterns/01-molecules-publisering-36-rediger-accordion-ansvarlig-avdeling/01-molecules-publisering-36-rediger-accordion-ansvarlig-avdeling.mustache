@@ -1,13 +1,23 @@
 <div class="mbxxl">
     <h2 class="sidebar-header sidebar-header--open mbm js_sidebar-accordion">
         <a class="sidebar-header__toggle" href="#">
-            Ansvarlig avdeling
+            {{# tittel }}
+                {{tittel}}
+            {{/ tittel }}
+            {{^ tittel}}
+                Ansvarlig avdeling
+            {{/ tittel}}
             <span class="arrow-icon"></span>
         </a>
     </h2>
 
     <div class="multiselect-list">
-        <h3 class="helpers_header">Valgt avdeling</h3>
+        {{# info }}
+            {{info}}
+        {{/ info }}
+        {{# valgtAvdeling }}
+            <h3 class="helpers_header">Valgt avdeling</h3>
+        {{/ valgtAvdeling }}
         <div class="multiselect-list__flex">
             {{# valgtAvdeling }}
                 <div class="multiselect-list__selected">{{ valgtAvdeling }}</div>

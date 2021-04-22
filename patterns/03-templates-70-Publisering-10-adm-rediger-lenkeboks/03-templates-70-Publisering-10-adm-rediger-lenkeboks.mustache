@@ -1,0 +1,62 @@
+{{> organisms-header-admin }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    {{# sideoverskriftMedLenke }}
+        <div class="page_header_container_with_org_menu">
+            {{> molecules-sideoverskrift-med-lenke }}
+        </div>
+    {{/ sideoverskriftMedLenke }}
+    
+    <div class="article">
+        
+        {{# actionLine }}
+        {{> molecules-action-line }}
+        {{/ actionLine }}
+
+        <div class="row">
+
+            <div class="col_md_12 col_lg_8">
+
+                {{#overskrift}}
+                    {{> atoms-tekstfelt:mbl }}
+                {{/overskrift}}
+                {{#overskriftslenke}}
+                    {{> atoms-tekstfelt:mbl }}
+                {{/overskriftslenke}}
+
+                {{> molecules-rediger-adm-hovedtekst }}
+
+            </div>
+
+            {{# redigeringSidebar }}
+                <div id="js_sidebar-accordion-container" class="col_md_12 col_lg_4">
+                    
+                    {{#type}}
+                        {{> molecules-rediger-accordion-sidetype}}
+                    {{/type}}
+
+                    {{# redigerAccordionBilde }}
+                        {{> molecules-rediger-accordion-bilde }}
+                    {{/ redigerAccordionBilde }}
+                    
+                    {{# redigeraccordionansvarligavdeling}}
+                        {{> molecules-rediger-accordion-ansvarlig-avdeling }}
+                    {{/ redigeraccordionansvarligavdeling }}
+
+                    {{# redigerAccordionDato }}
+                        {{> molecules-rediger-accordion-dato }}
+                    {{/ redigerAccordionDato }}
+
+                    {{# redigerAccordionInnholdsPlasering }}
+                        {{> molecules-rediger-accordion-innholdsansvarlig }}
+                    {{/ redigerAccordionInnholdsPlasering }}
+
+                </div>
+            {{/ redigeringSidebar }}
+
+        </div>
+    </div>
+
+</main>
+{{> organisms-footer }}

@@ -1,0 +1,68 @@
+{{> organisms-header-admin }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    {{# sideoverskriftMedLenke }}
+        <div class="page_header_container_with_org_menu">
+            {{> molecules-sideoverskrift-med-lenke }}
+        </div>
+    {{/ sideoverskriftMedLenke }}
+
+    <div class="row">
+        <div class="col_md_12 col_lg_4">
+
+            {{> molecules-org-meny }}
+
+        </div>
+        <div class="col_md_12 col_lg_8 org_main_col">
+
+
+
+
+            <section class="mbj">
+                {{> molecules-moduloverskrift-h1:mbm(tittel: "Kontakt") }}
+                {{#valgtBoks}}
+                    {{>molecules-notis}}
+                {{/valgtBoks}}
+                {{#saksnummer}}
+                    {{> atoms-tekstfelt:mbl }}
+                {{/saksnummer}}
+                {{#saksnummer2}}
+                    {{> atoms-tekstfelt:mbl }}
+                {{/saksnummer2}}
+                {{#saksnummer3}}
+                    {{> atoms-tekstfelt:mbl }}
+                {{/saksnummer3}}
+                {{#saksnummer4}}
+                    {{> atoms-tekstfelt:mbl }}
+                {{/saksnummer4}}
+                {{#saksnummer5}}
+                    {{> atoms-tekstfelt:mbl }}
+                {{/saksnummer5}}
+                {{#saksnummer6}}
+                    {{> atoms-tekstfelt:mbl }}
+                {{/saksnummer6}}
+                {{#saksnummer7}}
+                    <h2 class="helpers_header mbs">Innhold</h2>
+                    <p class="helpers_info mbs">Maks 300 tegn</p>
+                    <script src="https://cdn.ckeditor.com/4.8.0/basic/ckeditor.js"></script>
+                    <div class="mbxxl">
+                        <textarea name="editor1" class="mbn"></textarea>
+                        <script>
+                            CKEDITOR.replace( 'editor1' );
+                        </script>
+                    </div>
+                {{/saksnummer7}}
+                <div style="display: flex; flex-direction: row; margin-top: 12px;">
+                    <button class="button button--danger">Avbryt</button>
+                    <button class="button button--success active" style="margin-left: 6px">Oppdater</button>
+                </div>
+            </section>
+        
+                                
+
+        </div>
+    </div>
+</main>
+
+{{> organisms-footer }}

@@ -17,6 +17,12 @@
         <div class="flex-table__cell {{#styleModifier}} flex-table__cell--{{styleModifier}}{{/styleModifier}}" role="gridcell">
             {{#mobileHeader}}<span class="flex-table__cell-item flex-table__cell-item--mobile-header">{{mobileHeader}}</span>{{/mobileHeader}}
             {{#content}}<span class="flex-table__cell-item flex-table__cell-item--text {{#contentModifier}} flex-table__cell-item--{{contentModifier}}{{/contentModifier}}">{{{content}}}</span>{{/content}}
+            {{# icon }}
+                <span class="icon-{{icon}} grunt-icon grunt-icon--32">
+            {{/ icon}}
+            {{^ icon }}
+                <span class="grunt-icon grunt-icon--32">
+            {{/ icon}}
             {{#twoitemscontent}}<span class="flex-table__cell-item">{{{twoitemscontent}}}</span>{{/twoitemscontent}}
         </div>
         {{/cell}}

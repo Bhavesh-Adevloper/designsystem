@@ -26,9 +26,11 @@
             </div>
         {{/ varsel}}
         <div class="align_right">
+            {{#url}}
             <a href="{{ url }}" class="action-line__preview-link">
                 <span class="icon-preview grunt-icon grunt-icon--32"></span>
                 Forhåndsvis</a>
+            {{/url}}
             <button class="button button--success active">Lagre kladd</button>
             <button class="button">Publiser</button>
         </div>
@@ -119,6 +121,27 @@
         </div>
     </div>
 {{/ kunngjoringsliste }}
+{{# tilgangsliste }}
+    <div class="action-line hidden-on-print {{ styleModifier }}">
+        <div class="align_right">
+            <button class="button">Ny tilgang</button>
+        </div>
+    </div>
+{{/ tilgangsliste }}
+{{# korturlliste }}
+    <div class="action-line hidden-on-print {{ styleModifier }}">
+        <div class="align_right">
+            <button class="button">Ny kort-URL</button>
+        </div>
+    </div>
+{{/ korturlliste }}
+{{# lenkeboks }}
+    <div class="action-line hidden-on-print {{ styleModifier }}">
+        <div class="align_right">
+            <button class="button">Ny lenkeboks</button>
+        </div>
+    </div>
+{{/ lenkeboks }}
 {{# patterninfo }}<p class="mbn"><code>sidehistorikk:</code></p>{{/ patterninfo }}
 {{# sidehistorikk }}
     <div class="action-line hidden-on-print {{ styleModifier }}">
@@ -192,3 +215,46 @@
         </div>
     </div>
 {{/ samtidig-redigering }}
+
+{{# patterninfo }}<p class="mbn"><code>Tilganger</code></p>{{/ patterninfo }}
+{{# tilganger }}
+    <div class="action-line dark-text hidden-on-print {{ styleModifier }}">
+        <div class="align_left" style="margin-top: 12px;">
+            {{# sokeFilter }} 
+                <label class="form-element__label" style="color: white">Hvem skal få ny tilgang?</label>
+                {{> atoms-filterbox-valg:mbs }}
+                {{> molecules-sokefilter-avkrysningsbokser:mbl }}
+            {{/ sokeFilter }}
+        </div>
+        <div class="align_left" style="margin-left: 12px; margin-top: 12px;">
+            {{# nedtrekksliste }}
+                <label class="form-element__label" style="color: white">Rolle</label>
+                {{> atoms-nedtrekksliste:mbs }}
+            {{/ nedtrekksliste }}
+        </div>
+        <div class="align_left" style="margin-left: 12px; margin-top: 12px;">
+            {{# sokeFilter2 }}
+                <label class="form-element__label" style="color: white">Skal ha tilgang til</label>
+                {{> atoms-filterbox-valg:mbs }}
+                {{> molecules-sokefilter-avkrysningsbokser:mbl }}
+            {{/ sokeFilter2 }}
+        </div>
+        <div class="align_right">
+            <button class="button button--success active" style="margin-top: 18px;">Lagre</button>
+        </div>
+    </div>
+{{/ tilganger }}
+
+{{# patterninfo }}<p class="mbn"><code>Promoteringer:</code></p>{{/ patterninfo }}
+{{# promoteringer }}
+    <div class="action-line hidden-on-print {{ styleModifier }}">
+        {{# varsel}}
+            <div>
+                <div class="action-line__warning">{{varsel}}</div>
+            </div>
+        {{/ varsel}}
+        <div class="align_right">
+            <button class="button">Ny promotering</button>
+        </div>
+    </div>
+{{/ promoteringer }}

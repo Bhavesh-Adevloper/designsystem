@@ -1,0 +1,34 @@
+{{> organisms-header-admin }}
+{{> organisms-brodsmuler }}
+<main id="innhold" tabindex="-1" class="smMa desktop_centered">
+
+    {{> molecules-sideoverskrift-h1:mbxl }}
+
+    {{# actionLine }}
+        {{> molecules-action-line }}
+    {{/ actionLine }}
+    
+    {{# tabs }}
+        {{> molecules-tabs:mbl }}
+    {{/ tabs }}
+    
+    {{# ingress }}
+        <p>		
+            {{{ ingress }}}
+        </p>
+    {{/ ingress }}
+    
+    {{# searchFilter }}
+        {{> atoms-filterboks:mbml }}
+    {{/ searchFilter }}
+        
+    {{# table }}
+        <div class="{{tableModifier}}">
+            {{> atoms-flex-tabell }}
+        </div>
+    {{/ table }}
+
+    <button type="submit">Eksporter til Excel</button>
+    
+</main>
+{{> organisms-footer }}
